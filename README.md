@@ -4,7 +4,7 @@
 
 ### Pak extracter
 
-```
+```powershell
 .\pak-extracter.exe ^
     -assets "C:\Program Files (x86)\Steam\steamapps\common\New World\assets" ^
     -output ".\extract" ^
@@ -13,7 +13,7 @@
 
 ### Datasheet converter
 
-```
+```powershell
 .\datasheet-converter.exe ^
     -input ".\extract" ^
     -output ".\extract\datasheets"
