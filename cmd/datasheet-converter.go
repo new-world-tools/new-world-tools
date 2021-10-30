@@ -8,6 +8,8 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strconv"
+	"strings"
 )
 
 func main() {
@@ -47,10 +49,6 @@ func main() {
 			log.Fatalf("datasheet.Parse: %s", err)
 		}
 
-		//base := filepath.Base(file.GetPath())
-		//name := strings.TrimSuffix(base, filepath.Ext(base))
-		//csvPath := filepath.Join(	outputDir, "datasheets", strings.ReplaceAll(filepath.Dir(file.GetPath()), outputDir, ""), fmt.Sprintf("%s-%s-%s.csv", ds.DataType, ds.UniqueId, name))
-
 		csvPath := filepath.Join(outputDir, "datasheets", ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
 		err = os.MkdirAll(filepath.Dir(csvPath), 0755)
 		if err != nil {
@@ -79,7 +77,7 @@ func main() {
 		for i, row := range ds.Rows {
 			record := make([]string, len(row))
 			for j, cell := range row {
-				record[j] = cell
+				record[j] = normalizeCellValue(ds.Columns[j], cell)
 			}
 			err = csvWriter.Write(record)
 			if err != nil {
@@ -100,4 +98,32 @@ func main() {
 
 		file.Close()
 	}
+}
+
+func normalizeCellValue(column datasheet.Column, str string) string {
+	if column.ColumnType == datasheet.ColumnTypeString {
+		return str
+	}
+
+	if column.ColumnType == datasheet.ColumnTypeNumber {
+		if strings.Index(str, ".") > 0 || strings.Index(str, "E") > 0 {
+			f, err := strconv.ParseFloat(str, 64)
+			if err != nil {
+				return str
+			}
+
+			return strconv.FormatFloat(f, 'f', -1, 64)
+		}
+	}
+
+	if column.ColumnType == datasheet.ColumnTypeBoolean {
+		if str == "1" {
+			return "true"
+		}
+		if str == "2" {
+			return "false"
+		}
+	}
+
+	return str
 }

@@ -383,7 +383,7 @@ type DataSheet struct {
 type ColumnType int32
 
 const (
-	ColumnTypeFloat ColumnType = iota + 1
+	ColumnTypeString ColumnType = iota + 1
 	ColumnTypeNumber
 	ColumnTypeBoolean
 )
