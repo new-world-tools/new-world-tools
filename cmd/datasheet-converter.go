@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	inputDirPtr := flag.String("input", "", "directory path")
-	outputDirPtr := flag.String("output", "./datasheets", "directory path")
+	inputDirPtr := flag.String("input", ".\\assets", "directory path")
+	outputDirPtr := flag.String("output", ".\\assets\\datasheets", "directory path")
 	flag.Parse()
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
