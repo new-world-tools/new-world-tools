@@ -8,10 +8,10 @@ import (
 	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/extracter/datasheet"
 	"log"
+	"math"
 	"os"
 	"path/filepath"
 	"strconv"
-	"strings"
 )
 
 const (
@@ -116,7 +116,7 @@ func storeToCsv(ds *datasheet.DataSheet, path string) error {
 	for i, row := range ds.Rows {
 		record := make([]string, len(row))
 		for j, cell := range row {
-			record[j] = normalizeCellValue(ds.Columns[j], cell)
+			record[j] = toString(normalizeCellValue(ds.Columns[j], cell))
 		}
 		err = csvWriter.Write(record)
 		if err != nil {
@@ -173,30 +173,55 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 	return nil
 }
 
-func normalizeCellValue(column datasheet.Column, str string) string {
+func normalizeCellValue(column datasheet.Column, str string) interface{} {
 	if column.ColumnType == datasheet.ColumnTypeString {
 		return str
 	}
 
 	if column.ColumnType == datasheet.ColumnTypeNumber {
-		if strings.Index(str, ".") > 0 || strings.Index(str, "E") > 0 {
-			f, err := strconv.ParseFloat(str, 64)
-			if err != nil {
-				return str
-			}
-
-			return strconv.FormatFloat(f, 'f', -1, 64)
+		val, err := strconv.ParseFloat(str, 64)
+		if err != nil {
+			return nil
 		}
+
+		// ugly rounding fix
+		pow := math.Pow(10, 6)
+		return math.Round(val*pow) / pow
 	}
 
 	if column.ColumnType == datasheet.ColumnTypeBoolean {
-		if str == "1" {
-			return "true"
+		val, err := strconv.ParseBool(str)
+		if err != nil {
+			return nil
 		}
-		if str == "2" {
-			return "false"
-		}
+
+		return val
 	}
 
 	return str
+}
+
+func toString(val interface{}) string {
+	str, ok := val.(string)
+	if ok {
+		return str
+	}
+
+	f, ok := val.(float64)
+	if ok {
+		return strconv.FormatFloat(f, 'f', -1, 64)
+	}
+
+	b, ok := val.(bool)
+	if ok {
+		return strconv.FormatBool(b)
+	}
+
+	if val == nil {
+		return ""
+	}
+
+	log.Fatalf("not supported value")
+
+	return ""
 }
