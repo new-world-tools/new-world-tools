@@ -13,8 +13,11 @@
 
 ### Datasheet converter
 
+Supported formats are `csv` (default) and `json`
+
 ```powershell
 .\datasheet-converter.exe ^
     -input ".\extract" ^
-    -output ".\extract\datasheets"
+    -output ".\extract\datasheets" ^
+    -format csv
 ```

@@ -2,8 +2,10 @@ package main
 
 import (
 	"encoding/csv"
+	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/extracter/datasheet"
 	"log"
 	"os"
@@ -12,10 +14,27 @@ import (
 	"strings"
 )
 
+const (
+	formatCsv  = "csv"
+	formatJson = "json"
+)
+
+var formats = map[string]bool{
+	formatCsv:  true,
+	formatJson: true,
+}
+
 func main() {
 	inputDirPtr := flag.String("input", ".\\assets", "directory path")
 	outputDirPtr := flag.String("output", ".\\assets\\datasheets", "directory path")
+	formatPtr := flag.String("format", "csv", "csv or json")
 	flag.Parse()
+
+	format := *formatPtr
+
+	if formats[format] != true {
+		log.Fatalf("Unsupported format: %s", format)
+	}
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -49,55 +68,109 @@ func main() {
 			log.Fatalf("datasheet.Parse: %s", err)
 		}
 
-		csvPath := filepath.Join(outputDir, "datasheets", ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
-		err = os.MkdirAll(filepath.Dir(csvPath), 0755)
-		if err != nil {
-			log.Fatalf("os.MkdirAll: %s", err)
+		if format == formatCsv {
+			csvPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
+			err = storeToCsv(ds, csvPath)
+			if err != nil {
+				log.Fatalf("storeToCsv: %s", err)
+			}
 		}
 
-		file, err := os.Create(csvPath)
-		if err != nil {
-			log.Fatalf("os.Create: %s", err)
+		if format == formatJson {
+			csvPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.json", ds.UniqueId))
+			err = storeToJson(ds, csvPath)
+			if err != nil {
+				log.Fatalf("storeToJson: %s", err)
+			}
 		}
+	}
+}
 
-		csvWriter := csv.NewWriter(file)
-		csvWriter.UseCRLF = false
-		//csvWriter.Comma = ';'
+func storeToCsv(ds *datasheet.DataSheet, path string) error {
+	err := os.MkdirAll(filepath.Dir(path), 0755)
+	if err != nil {
+		return err
+	}
 
-		record := make([]string, len(ds.Columns))
-		for i, column := range ds.Columns {
-			record[i] = fmt.Sprintf("%s", column.Name)
+	file, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+
+	defer file.Close()
+
+	csvWriter := csv.NewWriter(file)
+	csvWriter.UseCRLF = false
+	//csvWriter.Comma = ';'
+
+	record := make([]string, len(ds.Columns))
+	for i, column := range ds.Columns {
+		record[i] = fmt.Sprintf("%s", column.Name)
+	}
+
+	err = csvWriter.Write(record)
+	if err != nil {
+		return err
+	}
+
+	for i, row := range ds.Rows {
+		record := make([]string, len(row))
+		for j, cell := range row {
+			record[j] = normalizeCellValue(ds.Columns[j], cell)
 		}
-
 		err = csvWriter.Write(record)
 		if err != nil {
-			log.Fatalf("csvWriter.Write: %s", err)
+			return err
 		}
 
-		for i, row := range ds.Rows {
-			record := make([]string, len(row))
-			for j, cell := range row {
-				record[j] = normalizeCellValue(ds.Columns[j], cell)
-			}
-			err = csvWriter.Write(record)
-			if err != nil {
-				log.Fatalf("csvWriter.Write: %s", err)
-			}
-
-			if i%100 == 0 {
-				csvWriter.Flush()
-			}
+		if i%100 == 0 {
+			csvWriter.Flush()
 		}
-
-		csvWriter.Flush()
-
-		err = csvWriter.Error()
-		if err != nil {
-			log.Fatalf(" csvWriter.Error: %s", err)
-		}
-
-		file.Close()
 	}
+
+	csvWriter.Flush()
+
+	err = csvWriter.Error()
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func storeToJson(ds *datasheet.DataSheet, path string) error {
+	err := os.MkdirAll(filepath.Dir(path), 0755)
+	if err != nil {
+		return err
+	}
+
+	file, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+
+	defer file.Close()
+
+	result := make([]mapslice.MapSlice, len(ds.Rows))
+
+	for i, row := range ds.Rows {
+		record := make(mapslice.MapSlice, len(row))
+		for j, cell := range row {
+			record[j] = mapslice.MapItem{Key: fmt.Sprintf("%s", ds.Columns[j].Name), Value: normalizeCellValue(ds.Columns[j], cell)}
+		}
+
+		result[i] = record
+	}
+
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", "    ")
+
+	err = encoder.Encode(result)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
 
 func normalizeCellValue(column datasheet.Column, str string) string {
