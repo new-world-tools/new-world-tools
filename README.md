@@ -1,5 +1,9 @@
 # New World tools
 
+## Downloads
+
+Download the compiled binaries in [Releases](https://github.com/new-world-tools/new-world-tools/releases)
+
 ## Usage
 
 ### Pak extracter
@@ -21,3 +25,4 @@ Supported formats are `csv` (default) and `json`
     -output ".\extract\datasheets" ^
     -format csv
 ```
+
