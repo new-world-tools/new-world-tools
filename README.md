@@ -12,6 +12,7 @@ Download the compiled binaries in [Releases](https://github.com/new-world-tools/
 .\pak-extracter.exe ^
     -assets "C:\Program Files (x86)\Steam\steamapps\common\New World\assets" ^
     -output ".\extract" ^
+    -threads 5 ^
     -filter .ext1,.ext2
 ```
 
@@ -23,6 +24,7 @@ Supported formats are `csv` (default) and `json`
 .\datasheet-converter.exe ^
     -input ".\extract" ^
     -output ".\extract\datasheets" ^
-    -format csv
+    -format csv ^
+    -threads 5
 ```
 
