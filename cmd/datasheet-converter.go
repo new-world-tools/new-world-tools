@@ -103,6 +103,8 @@ func main() {
 		id++
 		addTask(id, file)
 	}
+
+	pool.Wait()
 }
 
 func addTask(id int64, file *datasheet.DataSheetFile) {
