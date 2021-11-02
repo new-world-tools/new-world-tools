@@ -3,15 +3,28 @@ package main
 import (
 	"encoding/csv"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/extracter/datasheet"
+	workerpool "github.com/zelenin/go-worker-pool"
 	"log"
 	"math"
 	"os"
 	"path/filepath"
 	"strconv"
+)
+
+const (
+	defaultThreads = 5
+	maxThreads     = 10
+)
+
+var (
+	pool      *workerpool.Pool
+	outputDir string
+	format    string
 )
 
 const (
@@ -28,13 +41,20 @@ func main() {
 	inputDirPtr := flag.String("input", ".\\assets", "directory path")
 	outputDirPtr := flag.String("output", ".\\assets\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv or json")
+	threadsPtr := flag.Int("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	flag.Parse()
 
-	format := *formatPtr
+	format = *formatPtr
 
 	if formats[format] != true {
 		log.Fatalf("Unsupported format: %s", format)
 	}
+
+	threads := *threadsPtr
+	if threads < 1 || threads > maxThreads {
+		threads = defaultThreads
+	}
+	log.Printf("The number of threads is set to %d", threads)
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -46,7 +66,7 @@ func main() {
 		log.Fatalf("'%s' does not exist", inputDir)
 	}
 
-	outputDir, err := filepath.Abs(filepath.Clean(*outputDirPtr))
+	outputDir, err = filepath.Abs(filepath.Clean(*outputDirPtr))
 	if err != nil {
 		log.Fatalf("filepath.Abs: %s", err)
 	}
@@ -61,18 +81,43 @@ func main() {
 		log.Fatalf("datasheet.FindAll: %s", err)
 	}
 
+	pool = workerpool.NewPool(5, 1000)
+
+	go func() {
+		errorChan := pool.Errors()
+
+		for {
+			err, ok := <-errorChan
+			if !ok {
+				break
+			}
+
+			taskId := err.(workerpool.TaskError).Id
+			err = errors.Unwrap(err)
+			log.Printf("task #%d err: %s", taskId, err)
+		}
+	}()
+
+	var id int64
 	for _, file := range files {
+		id++
+		addTask(id, file)
+	}
+}
+
+func addTask(id int64, file *datasheet.DataSheetFile) {
+	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
 		log.Printf("Working: %s", file.GetPath())
-		ds, _ := datasheet.Parse(file)
+		ds, err := datasheet.Parse(file)
 		if err != nil {
-			log.Fatalf("datasheet.Parse: %s", err)
+			return err
 		}
 
 		if format == formatCsv {
 			csvPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
 			err = storeToCsv(ds, csvPath)
 			if err != nil {
-				log.Fatalf("storeToCsv: %s", err)
+				return err
 			}
 		}
 
@@ -80,10 +125,12 @@ func main() {
 			csvPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.json", ds.UniqueId))
 			err = storeToJson(ds, csvPath)
 			if err != nil {
-				log.Fatalf("storeToJson: %s", err)
+				return err
 			}
 		}
-	}
+
+		return nil
+	}))
 }
 
 func storeToCsv(ds *datasheet.DataSheet, path string) error {
