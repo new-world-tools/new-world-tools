@@ -22,7 +22,7 @@ Supported formats are `csv` (default) and `json`
 
 ```powershell
 .\datasheet-converter.exe ^
-    -input ".\extract" ^
+    -input ".\extract\sharedassets\springboardentitites\datatables" ^
     -output ".\extract\datasheets" ^
     -format csv ^
     -threads 5
