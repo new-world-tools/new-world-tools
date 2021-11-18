@@ -8,6 +8,7 @@ import (
 	"github.com/new-world-tools/extracter/hash"
 	"github.com/new-world-tools/extracter/pak"
 	"github.com/new-world-tools/extracter/profiler"
+	"github.com/new-world-tools/go-oodle"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"io"
 	"log"
