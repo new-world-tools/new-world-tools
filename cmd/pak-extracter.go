@@ -1,16 +1,19 @@
 package main
 
 import (
+	"crypto/sha1"
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/new-world-tools/extracter/hash"
 	"github.com/new-world-tools/extracter/pak"
-	"github.com/new-world-tools/go-oodle"
+	"github.com/new-world-tools/extracter/profiler"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"io"
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 )
 
@@ -20,13 +23,18 @@ const (
 )
 
 var (
-	pool      *workerpool.Pool
-	filters   map[string]bool
-	assetsDir string
-	outputDir string
+	pool         *workerpool.Pool
+	filters      map[string]bool
+	assetsDir    string
+	outputDir    string
+	hashSumFile  string
+	hashRegistry *hash.Registry
+	pr           *profiler.Profiler
 )
 
 func main() {
+	pr = profiler.New()
+
 	_, err := os.Stat("oo2core_9_win64.dll")
 	if os.IsNotExist(err) {
 		err := oodle.Download()
@@ -39,6 +47,7 @@ func main() {
 	outputDirPtr := flag.String("output", "./extract", "directory path")
 	filterPtr := flag.String("filter", "", "comma separated file extensions")
 	threadsPtr := flag.Int("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
+	hashSumFilePtr := flag.String("hash", "", "hash sum path")
 	flag.Parse()
 
 	assetsDir, err = filepath.Abs(filepath.Clean(*assetsDirPtr))
@@ -67,6 +76,15 @@ func main() {
 		threads = defaultThreads
 	}
 	log.Printf("The number of threads is set to %d", threads)
+
+	hashSumFile = *hashSumFilePtr
+	if hashSumFile != "" {
+		hashSumFile, err = filepath.Abs(filepath.Clean(hashSumFile))
+		if err != nil {
+			log.Fatalf("filepath.Abs: %s", err)
+		}
+		hashRegistry = hash.NewRegistry()
+	}
 
 	err = os.MkdirAll(outputDir, 0755)
 	if err != nil {
@@ -113,6 +131,30 @@ func main() {
 	}
 
 	pool.Wait()
+
+	if hashSumFile != "" {
+		log.Printf("Writing %s", hashSumFile)
+
+		hashes := hashRegistry.Hashes()
+		sort.Slice(hashes, func(i, j int) bool {
+			return hashes[i].FileName < hashes[j].FileName
+		})
+
+		hashSumsFile, err := os.Create(hashSumFile)
+		if err != nil {
+			log.Fatalf("os.Create: %s", err)
+		}
+		defer hashSumsFile.Close()
+
+		for _, fileHash := range hashes {
+			_, err = hashSumsFile.WriteString(fmt.Sprintf("%x *%s\n", fileHash.Hash, fileHash.FileName))
+			if err != nil {
+				log.Fatalf("hashSumsFile.WriteString: %s", err)
+			}
+		}
+	}
+
+	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 }
 
 func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
@@ -133,15 +175,29 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		}
 		defer dest.Close()
 
-		reader, err := file.Decompress()
+		decompressReader, err := file.Decompress()
 		if err != nil {
 			return err
 		}
-		defer reader.Close()
+		defer decompressReader.Close()
 
-		_, err = io.Copy(dest, reader)
-		if err != nil {
-			return err
+		if hashSumFile == "" {
+			reader := decompressReader
+
+			_, err = io.Copy(dest, reader)
+			if err != nil {
+				return err
+			}
+		} else {
+			hasher := sha1.New()
+			reader := io.TeeReader(decompressReader, hasher)
+
+			_, err = io.Copy(dest, reader)
+			if err != nil {
+				return err
+			}
+
+			hashRegistry.Add(file.Name, hasher.Sum(nil))
 		}
 
 		return nil

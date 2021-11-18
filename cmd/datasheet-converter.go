@@ -6,8 +6,8 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/extracter/datasheet"
+	"github.com/new-world-tools/extracter/profiler"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"log"
 	"math"
@@ -25,6 +25,7 @@ var (
 	pool      *workerpool.Pool
 	outputDir string
 	format    string
+	pr        *profiler.Profiler
 )
 
 const (
@@ -38,6 +39,8 @@ var formats = map[string]bool{
 }
 
 func main() {
+	pr = profiler.New()
+
 	inputDirPtr := flag.String("input", ".\\assets", "directory path")
 	outputDirPtr := flag.String("output", ".\\assets\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv or json")
@@ -105,6 +108,8 @@ func main() {
 	}
 
 	pool.Wait()
+
+	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 }
 
 func addTask(id int64, file *datasheet.DataSheetFile) {
