@@ -6,6 +6,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/extracter/datasheet"
 	"github.com/new-world-tools/extracter/profiler"
 	workerpool "github.com/zelenin/go-worker-pool"
