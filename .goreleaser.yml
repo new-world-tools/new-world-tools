@@ -1,6 +1,5 @@
 builds:
-    -
-        id: pak-extracter
+    -   id: pak-extracter
         main: ./cmd/pak-extracter.go
         binary: pak-extracter
         flags:
@@ -9,8 +8,7 @@ builds:
             - -s -w -X main.build={{.Version}}
         targets:
             - windows_amd64
-    -
-        id: datasheet-converter
+    -   id: datasheet-converter
         main: ./cmd/datasheet-converter.go
         binary: datasheet-converter
         flags:
@@ -21,6 +19,5 @@ builds:
             - windows_amd64
 
 archives:
-    -
-        format: zip
+    -   format: zip
         name_template: "{{ .ProjectName  }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"

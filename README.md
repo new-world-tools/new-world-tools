@@ -27,4 +27,3 @@ Supported formats are `csv` (default) and `json`
     -format csv ^
     -threads 5
 ```
-
