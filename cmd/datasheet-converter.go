@@ -122,16 +122,16 @@ func addTask(id int64, file *datasheet.DataSheetFile) {
 		}
 
 		if format == formatCsv {
-			csvPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
-			err = storeToCsv(ds, csvPath)
+			outputPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
+			err = storeToCsv(ds, outputPath)
 			if err != nil {
 				return err
 			}
 		}
 
 		if format == formatJson {
-			csvPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.json", ds.UniqueId))
-			err = storeToJson(ds, csvPath)
+			outputPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.json", ds.UniqueId))
+			err = storeToJson(ds, outputPath)
 			if err != nil {
 				return err
 			}
