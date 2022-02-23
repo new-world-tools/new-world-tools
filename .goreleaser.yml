@@ -1,6 +1,6 @@
 builds:
     -   id: pak-extracter
-        main: ./cmd/pak-extracter.go
+        main: ./cmd/pak-extracter/main.go
         binary: pak-extracter
         flags:
             - -trimpath
@@ -9,7 +9,7 @@ builds:
         targets:
             - windows_amd64
     -   id: datasheet-converter
-        main: ./cmd/datasheet-converter.go
+        main: ./cmd/datasheet-converter/main.go
         binary: datasheet-converter
         flags:
             - -trimpath

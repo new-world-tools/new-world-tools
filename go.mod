@@ -1,4 +1,4 @@
-module github.com/new-world-tools/extracter
+module github.com/new-world-tools/new-world-tools
 
 go 1.17
 
