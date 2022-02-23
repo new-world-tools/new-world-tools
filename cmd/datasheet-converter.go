@@ -18,8 +18,8 @@ import (
 )
 
 const (
-	defaultThreads = 5
-	maxThreads     = 10
+	defaultThreads int64 = 5
+	maxThreads     int64 = 10
 )
 
 var (
@@ -45,7 +45,7 @@ func main() {
 	inputDirPtr := flag.String("input", ".\\assets", "directory path")
 	outputDirPtr := flag.String("output", ".\\assets\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv or json")
-	threadsPtr := flag.Int("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
+	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	flag.Parse()
 
 	format = *formatPtr

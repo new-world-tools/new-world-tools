@@ -19,8 +19,8 @@ import (
 )
 
 const (
-	defaultThreads = 5
-	maxThreads     = 10
+	defaultThreads int64 = 5
+	maxThreads     int64 = 10
 )
 
 var (
@@ -47,7 +47,7 @@ func main() {
 	assetsDirPtr := flag.String("assets", "C:\\Program Files (x86)\\Steam\\steamapps\\common\\New World\\assets", "directory path")
 	outputDirPtr := flag.String("output", "./extract", "directory path")
 	filterPtr := flag.String("filter", "", "comma separated file extensions")
-	threadsPtr := flag.Int("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
+	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
 	flag.Parse()
 
