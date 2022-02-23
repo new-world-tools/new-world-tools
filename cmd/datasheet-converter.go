@@ -85,7 +85,7 @@ func main() {
 		log.Fatalf("datasheet.FindAll: %s", err)
 	}
 
-	pool = workerpool.NewPool(5, 1000)
+	pool = workerpool.NewPool(threads, 1000)
 
 	go func() {
 		errorChan := pool.Errors()
