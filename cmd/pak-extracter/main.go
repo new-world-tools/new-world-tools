@@ -36,8 +36,7 @@ var (
 func main() {
 	pr = profiler.New()
 
-	_, err := os.Stat("oo2core_9_win64.dll")
-	if os.IsNotExist(err) {
+	if !oodle.IsDllExist() {
 		err := oodle.Download()
 		if err != nil {
 			log.Fatalf("no oo2core_9_win64.dll")
