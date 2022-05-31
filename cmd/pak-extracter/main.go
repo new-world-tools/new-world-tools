@@ -36,6 +36,8 @@ var (
 func main() {
 	pr = profiler.New()
 
+	var err error
+
 	if !oodle.IsDllExist() {
 		err := oodle.Download()
 		if err != nil {
