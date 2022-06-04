@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/new-world-tools/datasheet"
+	"github.com/new-world-tools/new-world-tools/localization"
 	"github.com/new-world-tools/new-world-tools/profiler"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"log"
@@ -15,6 +16,7 @@ import (
 	"os"
 	"path/filepath"
 	"strconv"
+	"strings"
 )
 
 const (
@@ -23,10 +25,11 @@ const (
 )
 
 var (
-	pool      *workerpool.Pool
-	outputDir string
-	format    string
-	pr        *profiler.Profiler
+	pool            *workerpool.Pool
+	localizationMap map[string]string
+	outputDir       string
+	format          string
+	pr              *profiler.Profiler
 )
 
 const (
@@ -42,13 +45,15 @@ var formats = map[string]bool{
 func main() {
 	pr = profiler.New()
 
-	inputDirPtr := flag.String("input", ".\\assets", "directory path")
-	outputDirPtr := flag.String("output", ".\\assets\\datasheets", "directory path")
+	inputDirPtr := flag.String("input", ".\\extract\\sharedassets\\springboardentitites\\datatables", "directory path")
+	localizationDirPtr := flag.String("localization", ".\\extract\\localization\\en-us", "localization path")
+	outputDirPtr := flag.String("output", ".\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv or json")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	flag.Parse()
 
 	format = *formatPtr
+	localizationDir := *localizationDirPtr
 
 	if formats[format] != true {
 		log.Fatalf("Unsupported format: %s", format)
@@ -68,6 +73,22 @@ func main() {
 	_, err = os.Stat(inputDir)
 	if os.IsNotExist(err) {
 		log.Fatalf("'%s' does not exist", inputDir)
+	}
+
+	if localizationDir != "" {
+		localizationDir, err = filepath.Abs(filepath.Clean(localizationDir))
+		if err != nil {
+			log.Fatalf("filepath.Abs: %s", err)
+		}
+
+		_, err = os.Stat(localizationDir)
+		if os.IsNotExist(err) {
+			log.Fatalf("'%s' does not exist", localizationDir)
+		}
+		localizationMap, err = localization.Get(localizationDir)
+		if err != nil {
+			log.Fatalf("localization.Get: %s", err)
+		}
 	}
 
 	outputDir, err = filepath.Abs(filepath.Clean(*outputDirPtr))
@@ -211,7 +232,10 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 	for i, row := range ds.Rows {
 		record := make(mapslice.MapSlice, len(row))
 		for j, cell := range row {
-			record[j] = mapslice.MapItem{Key: fmt.Sprintf("%s", ds.Columns[j].Name), Value: normalizeCellValue(ds.Columns[j], cell)}
+			record[j] = mapslice.MapItem{
+				Key:   fmt.Sprintf("%s", ds.Columns[j].Name),
+				Value: normalizeCellValue(ds.Columns[j], cell),
+			}
 		}
 
 		result[i] = record
@@ -230,7 +254,7 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 
 func normalizeCellValue(column datasheet.Column, str string) interface{} {
 	if column.ColumnType == datasheet.ColumnTypeString {
-		return str
+		return resolveValue(str)
 	}
 
 	if column.ColumnType == datasheet.ColumnTypeNumber {
@@ -279,4 +303,17 @@ func toString(val interface{}) string {
 	log.Fatalf("not supported value")
 
 	return ""
+}
+
+func resolveValue(key string) string {
+	if localizationMap == nil || !strings.HasPrefix(key, "@") {
+		return key
+	}
+
+	translation, ok := localizationMap[strings.TrimPrefix(key, "@")]
+	if ok {
+		return translation
+	}
+
+	return key
 }
