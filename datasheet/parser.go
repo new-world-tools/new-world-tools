@@ -13,7 +13,6 @@ func Parse(dataSheetFile *DataSheetFile) (*DataSheet, error) {
 	if err != nil {
 		return nil, err
 	}
-
 	defer file.Close()
 
 	meta, err := parseMeta(file)
@@ -27,6 +26,44 @@ func Parse(dataSheetFile *DataSheetFile) (*DataSheet, error) {
 	}
 
 	return dataSheet, nil
+}
+
+type Meta struct {
+	UniqueId string
+	DataType string
+}
+
+func ParseMeta(dataSheetFile *DataSheetFile) (*Meta, error) {
+	file, err := os.Open(dataSheetFile.GetPath())
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+
+	meta, err := parseMeta(file)
+	if err != nil {
+		return nil, err
+	}
+
+	_, err = readNullTerminatedString(file)
+	if err != nil {
+		return nil, err
+	}
+
+	uniqueId, err := readNullTerminatedStringByOffset(file, meta.bodyOffset+meta.uniqueIdOffset)
+	if err != nil {
+		return nil, err
+	}
+
+	dataType, err := readNullTerminatedStringByOffset(file, meta.bodyOffset+meta.dataTypeOffset)
+	if err != nil {
+		return nil, err
+	}
+
+	return &Meta{
+		UniqueId: uniqueId,
+		DataType: dataType,
+	}, nil
 }
 
 func parseMeta(r *os.File) (*meta, error) {
@@ -244,7 +281,6 @@ func parseMeta(r *os.File) (*meta, error) {
 }
 
 func parseBody(r *os.File, meta *meta) (*DataSheet, error) {
-	// OUTPUT
 	_, err := readNullTerminatedString(r)
 	if err != nil {
 		return nil, err
@@ -378,6 +414,15 @@ type DataSheet struct {
 	DataType string
 	Columns  []Column
 	Rows     [][]string
+}
+
+func (dataSheet *DataSheet) GetColumnIndexes() map[string]int {
+	indexes := make(map[string]int, len(dataSheet.Columns))
+	for i, column := range dataSheet.Columns {
+		indexes[column.Name] = i
+	}
+
+	return indexes
 }
 
 type ColumnType int32
