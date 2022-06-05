@@ -3,18 +3,33 @@ package localization
 import (
 	"encoding/xml"
 	"errors"
+	"fmt"
 	"io/fs"
-	"log"
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 )
 
 var ErrNotFound = errors.New("not found")
 
 var reXml = regexp.MustCompile(`.xml`)
 
-func Get(root string) (map[string]string, error) {
+type Localization struct {
+	values map[string]string
+}
+
+func (loc *Localization) Has(key string) bool {
+	_, ok := loc.values[strings.TrimPrefix(strings.ToLower(key), "@")]
+	return ok
+}
+
+func (loc *Localization) Get(key string) string {
+	val, _ := loc.values[strings.TrimPrefix(strings.ToLower(key), "@")]
+	return val
+}
+
+func New(root string) (*Localization, error) {
 	files := []string{}
 
 	err := filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
@@ -35,7 +50,10 @@ func Get(root string) (map[string]string, error) {
 		return nil, err
 	}
 
-	keyValue := map[string]string{}
+	localizationData := &Localization{
+		values: map[string]string{},
+	}
+
 	for _, xmlPath := range files {
 		xmlFile, err := os.Open(xmlPath)
 		if err != nil {
@@ -49,17 +67,18 @@ func Get(root string) (map[string]string, error) {
 		}
 
 		for _, resource := range resources.Strings {
-			val, ok := keyValue[resource.Key]
-			if ok && val == resource.Key {
-				log.Fatalf("multiple keys: %s", resource.Key)
+			key := strings.ToLower(resource.Key)
+			val, ok := localizationData.values[key]
+			if ok && val != resource.Value {
+				return nil, fmt.Errorf("multiple values: %s = %q and %q", key, val, resource.Value)
 			}
 			if !ok {
-				keyValue[resource.Key] = resource.Value
+				localizationData.values[key] = resource.Value
 			}
 		}
 	}
 
-	return keyValue, nil
+	return localizationData, nil
 }
 
 type Resources struct {

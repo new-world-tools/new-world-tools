@@ -25,11 +25,11 @@ const (
 )
 
 var (
-	pool            *workerpool.Pool
-	localizationMap map[string]string
-	outputDir       string
-	format          string
-	pr              *profiler.Profiler
+	pool             *workerpool.Pool
+	localizationData *localization.Localization
+	outputDir        string
+	format           string
+	pr               *profiler.Profiler
 )
 
 const (
@@ -85,7 +85,8 @@ func main() {
 		if os.IsNotExist(err) {
 			log.Fatalf("'%s' does not exist", localizationDir)
 		}
-		localizationMap, err = localization.Get(localizationDir)
+
+		localizationData, err = localization.New(localizationDir)
 		if err != nil {
 			log.Fatalf("localization.Get: %s", err)
 		}
@@ -306,13 +307,12 @@ func toString(val interface{}) string {
 }
 
 func resolveValue(key string) string {
-	if localizationMap == nil || !strings.HasPrefix(key, "@") {
+	if localizationData == nil || !strings.HasPrefix(key, "@") {
 		return key
 	}
 
-	translation, ok := localizationMap[strings.TrimPrefix(key, "@")]
-	if ok {
-		return translation
+	if localizationData.Has(key) {
+		return localizationData.Get(key)
 	}
 
 	return key
