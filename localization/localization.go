@@ -67,7 +67,12 @@ func New(root string) (*Localization, error) {
 		}
 
 		for _, resource := range resources.Strings {
+			if resource.Nil {
+				continue
+			}
+
 			key := strings.ToLower(resource.Key)
+
 			val, ok := localizationData.values[key]
 			if ok && val != resource.Value {
 				return nil, fmt.Errorf("multiple values: %s = %q and %q", key, val, resource.Value)
@@ -90,4 +95,5 @@ type String struct {
 	XMLName xml.Name `xml:"string"`
 	Key     string   `xml:"key,attr"`
 	Value   string   `xml:",chardata"`
+	Nil     bool     `xml:"http://www.w3.org/2001/XMLSchema-instance nil,attr"`
 }
