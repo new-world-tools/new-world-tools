@@ -88,7 +88,7 @@ func main() {
 
 		localizationData, err = localization.New(localizationDir)
 		if err != nil {
-			log.Fatalf("localization.Get: %s", err)
+			log.Fatalf("localization.New: %s", err)
 		}
 	}
 
