@@ -3,7 +3,6 @@ package localization
 import (
 	"encoding/xml"
 	"errors"
-	"fmt"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -75,11 +74,11 @@ func New(root string) (*Localization, error) {
 
 			val, ok := localizationData.values[key]
 			if ok && val != resource.Value {
-				return nil, fmt.Errorf("multiple values: %s = %q and %q", key, val, resource.Value)
+				//return nil, fmt.Errorf("multiple values: %s = %q and %q", key, val, resource.Value)
 			}
-			if !ok {
-				localizationData.values[key] = resource.Value
-			}
+			//if !ok {
+			localizationData.values[key] = resource.Value
+			//}
 		}
 	}
 
