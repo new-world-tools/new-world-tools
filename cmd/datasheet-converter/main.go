@@ -46,7 +46,7 @@ func main() {
 	pr = profiler.New()
 
 	inputDirPtr := flag.String("input", ".\\extract\\sharedassets\\springboardentitites\\datatables", "directory path")
-	localizationDirPtr := flag.String("localization", ".\\extract\\localization\\en-us", "localization path")
+	localizationDirPtr := flag.String("localization", "", "localization path")
 	outputDirPtr := flag.String("output", ".\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv or json")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
