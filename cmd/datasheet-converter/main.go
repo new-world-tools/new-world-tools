@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/new-world-tools/datasheet"
+	"github.com/new-world-tools/new-world-tools/internal"
 	"github.com/new-world-tools/new-world-tools/localization"
 	"github.com/new-world-tools/new-world-tools/profiler"
 	workerpool "github.com/zelenin/go-worker-pool"
@@ -26,7 +27,7 @@ const (
 
 var (
 	pool             *workerpool.Pool
-	localizationData *localization.Localization
+	localizationData *internal.Store[string]
 	outputDir        string
 	format           string
 	pr               *profiler.Profiler

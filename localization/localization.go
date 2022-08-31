@@ -3,6 +3,7 @@ package localization
 import (
 	"encoding/xml"
 	"errors"
+	"github.com/new-world-tools/new-world-tools/internal"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -14,21 +15,7 @@ var ErrNotFound = errors.New("not found")
 
 var reXml = regexp.MustCompile(`.xml`)
 
-type Localization struct {
-	values map[string]string
-}
-
-func (loc *Localization) Has(key string) bool {
-	_, ok := loc.values[strings.TrimPrefix(strings.ToLower(key), "@")]
-	return ok
-}
-
-func (loc *Localization) Get(key string) string {
-	val, _ := loc.values[strings.TrimPrefix(strings.ToLower(key), "@")]
-	return val
-}
-
-func New(root string) (*Localization, error) {
+func New(root string) (*internal.Store[string], error) {
 	files := []string{}
 
 	err := filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
@@ -49,9 +36,9 @@ func New(root string) (*Localization, error) {
 		return nil, err
 	}
 
-	localizationData := &Localization{
-		values: map[string]string{},
-	}
+	localizationStore := internal.NewStore[string](func(key string) string {
+		return strings.TrimPrefix(strings.ToLower(key), "@")
+	})
 
 	for _, xmlPath := range files {
 		xmlFile, err := os.Open(xmlPath)
@@ -70,19 +57,16 @@ func New(root string) (*Localization, error) {
 				continue
 			}
 
-			key := strings.ToLower(resource.Key)
-
-			val, ok := localizationData.values[key]
-			if ok && val != resource.Value {
+			if localizationStore.Has(resource.Key) && localizationStore.Get(resource.Key) != resource.Value {
 				//return nil, fmt.Errorf("multiple values: %s = %q and %q", key, val, resource.Value)
 			}
 			//if !ok {
-			localizationData.values[key] = resource.Value
+			localizationStore.Add(resource.Key, resource.Value)
 			//}
 		}
 	}
 
-	return localizationData, nil
+	return localizationStore, nil
 }
 
 type Resources struct {
