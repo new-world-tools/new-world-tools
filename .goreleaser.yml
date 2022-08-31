@@ -2,6 +2,7 @@ builds:
     -   id: pak-extracter
         main: ./cmd/pak-extracter/main.go
         binary: pak-extracter
+        gobinary: "go1.9"
         flags:
             - -trimpath
         ldflags:
@@ -11,6 +12,7 @@ builds:
     -   id: datasheet-converter
         main: ./cmd/datasheet-converter/main.go
         binary: datasheet-converter
+        gobinary: "go1.9"
         flags:
             - -trimpath
         ldflags:
