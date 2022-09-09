@@ -125,8 +125,21 @@ func main() {
 		}
 	}()
 
+	keys := map[string]bool{}
+
 	var id int64
 	for _, file := range files {
+		meta, err := datasheet.ParseMeta(file)
+		if err != nil {
+			log.Fatalf("datasheet.ParseMeta err: %s", err)
+		}
+		key := fmt.Sprintf("%s.%s", meta.DataType, meta.UniqueId)
+		_, ok := keys[key]
+		if ok {
+			log.Printf("duplicate key: %q (%s)", key, file.GetPath())
+			continue
+		}
+		keys[key] = true
 		id++
 		addTask(id, file)
 	}

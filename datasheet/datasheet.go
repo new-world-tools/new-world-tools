@@ -4,6 +4,7 @@ import (
 	"io/fs"
 	"path/filepath"
 	"regexp"
+	"sort"
 )
 
 type DataSheetFile struct {
@@ -42,6 +43,10 @@ func FindAll(root string) ([]*DataSheetFile, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	sort.Slice(files, func(i, j int) bool {
+		return files[i].GetPath() < files[j].GetPath()
+	})
 
 	return files, nil
 }
