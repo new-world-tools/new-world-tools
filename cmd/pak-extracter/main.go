@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	defaultThreads int64 = 5
+	defaultThreads int64 = 3
 	maxThreads     int64 = 10
 	azcsSignature        = "AZCS"
 )
