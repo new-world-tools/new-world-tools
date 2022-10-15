@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"crypto/sha1"
 	"errors"
 	"flag"
@@ -9,6 +10,7 @@ import (
 	"github.com/new-world-tools/new-world-tools/hash"
 	"github.com/new-world-tools/new-world-tools/pak"
 	"github.com/new-world-tools/new-world-tools/profiler"
+	"github.com/new-world-tools/new-world-tools/reader/azcs"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"io"
 	"log"
@@ -21,16 +23,18 @@ import (
 const (
 	defaultThreads int64 = 5
 	maxThreads     int64 = 10
+	azcsSignature        = "AZCS"
 )
 
 var (
-	pool         *workerpool.Pool
-	filters      map[string]bool
-	assetsDir    string
-	outputDir    string
-	hashSumFile  string
-	hashRegistry *hash.Registry
-	pr           *profiler.Profiler
+	pool           *workerpool.Pool
+	filters        map[string]bool
+	assetsDir      string
+	outputDir      string
+	hashSumFile    string
+	decompressAzcs bool
+	hashRegistry   *hash.Registry
+	pr             *profiler.Profiler
 )
 
 func main() {
@@ -50,6 +54,7 @@ func main() {
 	filterPtr := flag.String("filter", "", "comma separated file extensions")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
+	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "hash sum path")
 	flag.Parse()
 
 	assetsDir, err = filepath.Abs(filepath.Clean(*assetsDirPtr))
@@ -87,6 +92,8 @@ func main() {
 		}
 		hashRegistry = hash.NewRegistry()
 	}
+
+	decompressAzcs = *decompressAzcsPtr
 
 	err = os.MkdirAll(outputDir, 0755)
 	if err != nil {
@@ -183,16 +190,36 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		}
 		defer decompressReader.Close()
 
-		if hashSumFile == "" {
-			reader := decompressReader
+		var r io.Reader
 
-			_, err = io.Copy(dest, reader)
+		if decompressAzcs {
+			bufReader := bufio.NewReaderSize(decompressReader, 16)
+
+			data, err := bufReader.Peek(4)
+			if err != nil {
+				return err
+			}
+
+			if string(data) == azcsSignature {
+				r, err = azcs.NewReader(bufReader)
+				if err != nil {
+					return err
+				}
+			} else {
+				r = bufReader
+			}
+		} else {
+			r = decompressReader
+		}
+
+		if hashSumFile == "" {
+			_, err = io.Copy(dest, r)
 			if err != nil {
 				return err
 			}
 		} else {
 			hasher := sha1.New()
-			reader := io.TeeReader(decompressReader, hasher)
+			reader := io.TeeReader(r, hasher)
 
 			_, err = io.Copy(dest, reader)
 			if err != nil {
