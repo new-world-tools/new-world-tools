@@ -8,7 +8,7 @@ import (
 	"io"
 )
 
-var ErrUnsupportedMethod = errors.New("Unsupported method.")
+var ErrUnsupportedMethod = errors.New("unsupported method")
 
 func Parse(pak *Pak) ([]*File, error) {
 	zipReader, err := zip.OpenReader(pak.GetPath())
@@ -16,12 +16,12 @@ func Parse(pak *Pak) ([]*File, error) {
 		return nil, err
 	}
 
-	files := []*File{}
-	for _, archivedFile := range zipReader.File {
-		files = append(files, &File{
+	files := make([]*File, len(zipReader.File))
+	for i, archivedFile := range zipReader.File {
+		files[i] = &File{
 			zipFile: archivedFile,
 			Name:    archivedFile.Name,
-		})
+		}
 	}
 
 	return files, nil
