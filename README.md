@@ -12,9 +12,15 @@ Powershell:
 ```powershell
 .\pak-extracter.exe `
     -assets "C:\Program Files (x86)\Steam\steamapps\common\New World\assets" `
-    -output ".\extract" `
-    -threads 5 `
-    -filter .ext1,.ext2
+    -output ".\extract"
+```
+
+Optional:
+```powershell
+    -threads 3 `
+    -filter .ext1,.ext2 `
+    -decompress-azcs `
+    -hash ".\extract\files.sha1"
 ```
 
 ### Datasheet converter
@@ -26,6 +32,11 @@ Powershell:
 .\datasheet-converter.exe `
     -input ".\extract\sharedassets\springboardentitites\datatables" `
     -output ".\extract\datasheets" `
-    -format csv `
-    -threads 5
+    -format csv
+```
+
+Optional:
+```powershell
+    -threads 3 `
+    -localization ".\extract\localization\en-us"
 ```
