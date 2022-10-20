@@ -51,6 +51,7 @@ func New(root string) (*internal.Store[string], error) {
 		if err != nil {
 			return nil, err
 		}
+		xmlFile.Close()
 
 		for _, resource := range resources.Strings {
 			if resource.Nil {
