@@ -5,8 +5,8 @@ import (
 	"io"
 )
 
-func ReadBytes(r io.Reader, size int) ([]byte, error) {
-	buf := make([]byte, size)
+func ReadBytes(r io.Reader, count int) ([]byte, error) {
+	buf := make([]byte, count)
 
 	_, err := io.ReadFull(r, buf)
 	if err != nil {
@@ -14,6 +14,15 @@ func ReadBytes(r io.Reader, size int) ([]byte, error) {
 	}
 
 	return buf, nil
+}
+
+func SkipBytes(r io.Reader, count int64) error {
+	_, err := io.CopyN(io.Discard, r, count)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
 
 func ReadUint8(r io.Reader) (uint8, error) {
