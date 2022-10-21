@@ -20,6 +20,7 @@ Optional:
     -threads 3 `
     -filter .ext1,.ext2 `
     -decompress-azcs `
+    -fix-luac `
     -hash ".\extract\files.sha1"
 ```
 

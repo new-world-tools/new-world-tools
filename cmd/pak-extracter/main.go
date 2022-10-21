@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"bytes"
 	"crypto/sha1"
 	"errors"
 	"flag"
@@ -10,6 +11,7 @@ import (
 	"github.com/new-world-tools/new-world-tools/hash"
 	"github.com/new-world-tools/new-world-tools/pak"
 	"github.com/new-world-tools/new-world-tools/profiler"
+	"github.com/new-world-tools/new-world-tools/reader"
 	"github.com/new-world-tools/new-world-tools/reader/azcs"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"io"
@@ -23,7 +25,6 @@ import (
 const (
 	defaultThreads int64 = 3
 	maxThreads     int64 = 10
-	azcsSignature        = "AZCS"
 )
 
 var (
@@ -33,6 +34,7 @@ var (
 	outputDir      string
 	hashSumFile    string
 	decompressAzcs bool
+	fixLuac        bool
 	hashRegistry   *hash.Registry
 	pr             *profiler.Profiler
 )
@@ -54,7 +56,8 @@ func main() {
 	filterPtr := flag.String("filter", "", "comma separated file extensions")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
-	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "hash sum path")
+	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "decompress AZCS (Amazon Object Stream)")
+	fixLuacPtr := flag.Bool("fix-luac", false, "fix .luac header for unluac")
 	flag.Parse()
 
 	assetsDir, err = filepath.Abs(filepath.Clean(*assetsDirPtr))
@@ -94,6 +97,7 @@ func main() {
 	}
 
 	decompressAzcs = *decompressAzcsPtr
+	fixLuac = *fixLuacPtr
 
 	err = os.MkdirAll(outputDir, 0755)
 	if err != nil {
@@ -166,14 +170,19 @@ func main() {
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 }
 
+var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
+var luacSig = []byte{0x04, 0x00, 0x1b, 0x4c, 0x75, 0x61}
+
 func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
+		var err error
+
 		ext := filepath.Ext(file.Name)
 		if filters[ext] {
 			return nil
 		}
 		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), assetsDir, ""), file.Name)))
-		err := os.MkdirAll(filepath.Dir(fpath), 0755)
+		err = os.MkdirAll(filepath.Dir(fpath), 0755)
 		if err != nil {
 			return err
 		}
@@ -192,24 +201,31 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 		var r io.Reader
 
+		bufReader := bufio.NewReaderSize(decompressReader, 16)
+
+		sigData, err := bufReader.Peek(8)
+		if err != nil && err != io.EOF {
+			return err
+		}
+
+		r = bufReader
+
 		if decompressAzcs {
-			bufReader := bufio.NewReaderSize(decompressReader, 16)
-
-			data, err := bufReader.Peek(4)
-			if err != nil && err != io.EOF {
-				return err
-			}
-
-			if string(data) == azcsSignature {
-				r, err = azcs.NewReader(bufReader)
+			if bytes.Equal(azcsSig, sigData[:len(azcsSig)]) {
+				r, err = azcs.NewReader(r)
 				if err != nil {
 					return err
 				}
-			} else {
-				r = bufReader
 			}
-		} else {
-			r = decompressReader
+		}
+
+		if fixLuac {
+			if bytes.Equal(luacSig, sigData[:len(luacSig)]) {
+				err = reader.SkipBytes(r, 2)
+				if err != nil {
+					return err
+				}
+			}
 		}
 
 		if hashSumFile == "" {
