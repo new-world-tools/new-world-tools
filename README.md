@@ -55,5 +55,6 @@ Powershell:
 
 Optional:
 ```powershell
+    -with-indents ^
     -threads 3
 ```

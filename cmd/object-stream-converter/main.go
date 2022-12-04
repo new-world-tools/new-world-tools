@@ -30,9 +30,10 @@ const (
 )
 
 var (
-	pool      *workerpool.Pool
-	outputDir string
-	pr        *profiler.Profiler
+	pool        *workerpool.Pool
+	outputDir   string
+	withIndents bool
+	pr          *profiler.Profiler
 )
 
 const typeField = "__type"
@@ -44,6 +45,8 @@ func main() {
 	inputDirPtr := flag.String("input", ".\\extract", "directory path")
 	outputDirPtr := flag.String("output", ".\\json", "directory path")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
+	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
+	poolCapacityPtr := flag.Int64("pool-capacity", 1000, "pool capacity")
 	flag.Parse()
 
 	threads := *threadsPtr
@@ -51,6 +54,9 @@ func main() {
 		threads = defaultThreads
 	}
 	log.Printf("The number of threads is set to %d", threads)
+
+	withIndents = *withIndentsPtr
+	poolCapacity := *poolCapacityPtr
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -72,7 +78,7 @@ func main() {
 		log.Fatalf("MkdirAll: %s", err)
 	}
 
-	pool = workerpool.NewPool(threads, 1000)
+	pool = workerpool.NewPool(threads, poolCapacity)
 
 	go func() {
 		errorChan := pool.Errors()
@@ -215,7 +221,10 @@ func addTask(id int64, job Job) {
 		}
 
 		enc := json.NewEncoder(jf)
-		enc.SetIndent("", "    ")
+
+		if withIndents {
+			enc.SetIndent("", "    ")
+		}
 
 		err = enc.Encode(data)
 		if err != nil {
