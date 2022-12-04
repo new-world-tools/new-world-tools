@@ -2,6 +2,8 @@ github.com/ake-persson/mapslice-json v0.0.0-20210720081907-22c8edf57807 h1:w3nrG
 github.com/ake-persson/mapslice-json v0.0.0-20210720081907-22c8edf57807/go.mod h1:fGnnfniJiO/ajHAVHqMSUSL8sE9LmU9rzclCtoeB+y8=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/fzipp/gocyclo v0.3.1/go.mod h1:DJHO6AUmbdqj2ET4Z9iArSuwWgYDRryYt2wASxc7x3E=
+github.com/gofrs/uuid v4.3.0+incompatible h1:CaSVZxm5B+7o45rtab4jC2G37WGYX1zQfuU2i6DSvnc=
+github.com/gofrs/uuid v4.3.0+incompatible/go.mod h1:b2aQJv3Z4Fp6yNu3cdSllBxTCLRxnplIgP/c0N/04lM=
 github.com/gordonklaus/ineffassign v0.0.0-20210522101830-0589229737b2/go.mod h1:M9mZEtGIsR1oDaZagNPNG9iq9n2HrhZ17dsXk73V3Lw=
 github.com/itchio/lzma v0.0.0-20190703113020-d3e24e3e3d49 h1:+YrBMf3rkLjkT10zIHyVE4S7ma4hqvfjl6XgnzZwS6o=
 github.com/itchio/lzma v0.0.0-20190703113020-d3e24e3e3d49/go.mod h1:avNrevQMli1pYPsz1+HIHMvx95pk6O+6otbWqCZPeZI=
@@ -13,8 +15,8 @@ github.com/ozankasikci/go-image-merge v0.2.3-0.20220620190453-66fdff081378/go.mo
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
-github.com/zelenin/go-worker-pool v0.0.1 h1:7QBVffccaCwPEJ8xiJdvuQ3naZ6XZFLwTgBxkyWQLkU=
-github.com/zelenin/go-worker-pool v0.0.1/go.mod h1:3ULMxCS2Kw35nbI6OuYzKPb5JaYvVuIukup6VnHIfPo=
+github.com/zelenin/go-worker-pool v0.0.2 h1:7XBlbmO+EW3nXFZSBRRiFsKBB+LUjYcag3TPBRf3RpU=
+github.com/zelenin/go-worker-pool v0.0.2/go.mod h1:3ULMxCS2Kw35nbI6OuYzKPb5JaYvVuIukup6VnHIfPo=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=

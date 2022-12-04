@@ -143,6 +143,8 @@ func main() {
 		pakFile.Close()
 	}
 
+	pool.Close()
+
 	pool.Wait()
 
 	if hashSumFile != "" {
