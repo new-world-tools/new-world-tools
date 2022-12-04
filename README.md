@@ -41,3 +41,19 @@ Optional:
     -threads 3 `
     -localization ".\extract\localization\en-us"
 ```
+
+### Object stream converter
+
+Converts object streams (slices, timelines, various .*db) to json. Supports `Amazon Compressed Stream` (AZCS) by default.
+
+Powershell:
+```powershell
+.\object-stream-converter.exe `
+    -input ".\extract\slices" `
+    -output ".\extract\objects-streams"
+```
+
+Optional:
+```powershell
+    -threads 3
+```

@@ -17,6 +17,15 @@ builds:
             - -s -w -X main.build={{.Version}}
         targets:
             - windows_amd64
+    -   id: object-stream-converter
+        main: ./cmd/object-stream-converter/main.go
+        binary: object-stream-converter
+        flags:
+            - -trimpath
+        ldflags:
+            - -s -w -X main.build={{.Version}}
+        targets:
+            - windows_amd64
 
 archives:
     -   format: zip
