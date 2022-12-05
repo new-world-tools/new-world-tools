@@ -6,11 +6,11 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/ake-persson/mapslice-json"
 	"github.com/new-world-tools/new-world-tools/datasheet"
 	"github.com/new-world-tools/new-world-tools/internal"
 	"github.com/new-world-tools/new-world-tools/localization"
 	"github.com/new-world-tools/new-world-tools/profiler"
+	"github.com/new-world-tools/new-world-tools/structure"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"log"
 	"math"
@@ -30,6 +30,7 @@ var (
 	localizationData *internal.Store[string]
 	outputDir        string
 	format           string
+	withIndents      bool
 	pr               *profiler.Profiler
 )
 
@@ -51,10 +52,12 @@ func main() {
 	outputDirPtr := flag.String("output", ".\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv or json")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
+	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
 	flag.Parse()
 
 	format = *formatPtr
 	localizationDir := *localizationDirPtr
+	withIndents = *withIndentsPtr
 
 	if formats[format] != true {
 		log.Fatalf("Unsupported format: %s", format)
@@ -244,22 +247,20 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 
 	defer file.Close()
 
-	result := make([]mapslice.MapSlice, len(ds.Rows))
-
+	result := make([]*structure.OrderedMap[string, any], len(ds.Rows))
 	for i, row := range ds.Rows {
-		record := make(mapslice.MapSlice, len(row))
+		record := structure.NewOrderedMap[string, any]()
 		for j, cell := range row {
-			record[j] = mapslice.MapItem{
-				Key:   fmt.Sprintf("%s", ds.Columns[j].Name),
-				Value: normalizeCellValue(ds.Columns[j], cell),
-			}
+			record.Add(fmt.Sprintf("%s", ds.Columns[j].Name), normalizeCellValue(ds.Columns[j], cell))
 		}
 
 		result[i] = record
 	}
 
 	encoder := json.NewEncoder(file)
-	encoder.SetIndent("", "    ")
+	if withIndents {
+		encoder.SetIndent("", "    ")
+	}
 
 	err = encoder.Encode(result)
 	if err != nil {
@@ -269,7 +270,7 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 	return nil
 }
 
-func normalizeCellValue(column datasheet.Column, str string) interface{} {
+func normalizeCellValue(column datasheet.Column, str string) any {
 	if column.ColumnType == datasheet.ColumnTypeString {
 		return resolveValue(str)
 	}
