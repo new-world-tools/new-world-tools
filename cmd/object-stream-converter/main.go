@@ -20,6 +20,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -33,7 +34,13 @@ var (
 	pool        *workerpool.Pool
 	outputDir   string
 	withIndents bool
+	debug       bool
 	pr          *profiler.Profiler
+)
+
+var (
+	notResolvedHashes = map[string]bool{}
+	notResolvedTypes  = map[string]bool{}
 )
 
 const typeField = "__type"
@@ -47,6 +54,7 @@ func main() {
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
 	poolCapacityPtr := flag.Int64("pool-capacity", 1000, "pool capacity")
+	debugPtr := flag.Bool("debug", false, "")
 	flag.Parse()
 
 	threads := *threadsPtr
@@ -57,6 +65,7 @@ func main() {
 
 	withIndents = *withIndentsPtr
 	poolCapacity := *poolCapacityPtr
+	debug = *debugPtr
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -173,8 +182,15 @@ func main() {
 	pool.Close()
 	pool.Wait()
 
-	//log.Printf("Converted %d files", id)
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
+	if debug {
+		if len(notResolvedHashes) > 0 {
+			log.Printf("Not resolved hashes: %s", strings.Join(sortMap(notResolvedHashes), ", "))
+		}
+		if len(notResolvedTypes) > 0 {
+			log.Printf("Not resolved types: %s", strings.Join(sortMap(notResolvedTypes), ", "))
+		}
+	}
 }
 
 func addTask(id int64, job Job) {
@@ -592,7 +608,11 @@ func resolveHash(element *azcs.Element) string {
 		return azcs.DefaultHashRegistry.Get(hash)
 	}
 
-	return fmt.Sprintf("0x%08x", hash)
+	formattedHash := fmt.Sprintf("0x%08x", hash)
+
+	notResolvedHashes[formattedHash] = true
+
+	return formattedHash
 }
 
 func resolveType(element *azcs.Element) string {
@@ -602,8 +622,10 @@ func resolveType(element *azcs.Element) string {
 	}
 
 	if azcs.DefaultTypeRegistry.Has(typ) {
-		typ = azcs.DefaultTypeRegistry.Get(typ)
+		return azcs.DefaultTypeRegistry.Get(typ)
 	}
+
+	notResolvedTypes[typ] = true
 
 	return typ
 }
@@ -715,4 +737,17 @@ func (v *JsonFloat32) UnmarshalJSON(b []byte) error {
 		*v = JsonFloat32(n)
 	}
 	return nil
+}
+
+func sortMap(data map[string]bool) []string {
+	values := make([]string, len(data))
+	i := 0
+	for value, _ := range data {
+		values[i] = value
+		i++
+	}
+
+	sort.Strings(values)
+
+	return values
 }
