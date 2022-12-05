@@ -13,6 +13,7 @@ import (
 	"github.com/new-world-tools/new-world-tools/profiler"
 	"github.com/new-world-tools/new-world-tools/reader"
 	azcs2 "github.com/new-world-tools/new-world-tools/reader/azcs"
+	"github.com/new-world-tools/new-world-tools/structure"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"io"
 	"io/fs"
@@ -23,6 +24,7 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 )
 
 const (
@@ -38,10 +40,16 @@ var (
 	pr          *profiler.Profiler
 )
 
-var (
-	notResolvedHashes = map[string]bool{}
-	notResolvedTypes  = map[string]bool{}
-)
+type DebugData struct {
+	mu                sync.Mutex
+	notResolvedHashes map[string]bool
+	notResolvedTypes  map[string]bool
+}
+
+var debugData = &DebugData{
+	notResolvedHashes: map[string]bool{},
+	notResolvedTypes:  map[string]bool{},
+}
 
 const typeField = "__type"
 const valueField = "__value"
@@ -184,11 +192,11 @@ func main() {
 
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 	if debug {
-		if len(notResolvedHashes) > 0 {
-			log.Printf("Not resolved hashes: %s", strings.Join(sortMap(notResolvedHashes), ", "))
+		if len(debugData.notResolvedHashes) > 0 {
+			log.Printf("Not resolved hashes: %s", strings.Join(sortMap(debugData.notResolvedHashes), ", "))
 		}
-		if len(notResolvedTypes) > 0 {
-			log.Printf("Not resolved types: %s", strings.Join(sortMap(notResolvedTypes), ", "))
+		if len(debugData.notResolvedTypes) > 0 {
+			log.Printf("Not resolved types: %s", strings.Join(sortMap(debugData.notResolvedTypes), ", "))
 		}
 	}
 }
@@ -285,12 +293,9 @@ type Job struct {
 }
 
 func resolveNode(element *azcs.Element) any {
-	node := OrderedMap{
-		{
-			Key:   typeField,
-			Value: resolveType(element),
-		},
-	}
+	node := structure.NewOrderedMap[string, any]()
+
+	node.Add(typeField, resolveType(element))
 
 	switch element.ResolveType().String() {
 	case
@@ -311,10 +316,7 @@ func resolveNode(element *azcs.Element) any {
 			f32s[i] = f32
 		}
 
-		node = append(node, KeyValue{
-			Key:   valueField,
-			Value: f32s,
-		})
+		node.Add(valueField, f32s)
 
 		return node
 
@@ -327,30 +329,21 @@ func resolveNode(element *azcs.Element) any {
 			log.Fatalf("reader.ReadBytes: %s", err)
 		}
 		id, _ := uuid.FromBytes(data)
-		node = append(node, KeyValue{
-			Key:   "id",
-			Value: id.String(),
-		})
+		node.Add("id", id.String())
 
 		data, err = reader.ReadBytes(buf, 16)
 		if err != nil {
 			log.Fatalf("reader.ReadBytes: %s", err)
 		}
 		id, _ = uuid.FromBytes(data)
-		node = append(node, KeyValue{
-			Key:   "unknown",
-			Value: id.String(),
-		})
+		node.Add("unknown", id.String())
 
 		data, err = reader.ReadBytes(buf, 16)
 		if err != nil {
 			log.Fatalf("reader.ReadBytes: %s", err)
 		}
 		id, _ = uuid.FromBytes(data)
-		node = append(node, KeyValue{
-			Key:   "type",
-			Value: id.String(),
-		})
+		node.Add("type", id.String())
 
 		u64, err := reader.ReadUint64(buf, binary.BigEndian)
 		if err != nil {
@@ -361,16 +354,15 @@ func resolveNode(element *azcs.Element) any {
 			if err != nil {
 				log.Fatalf("reader.ReadBytes: %s", err)
 			}
-			node = append(node, KeyValue{
-				Key:   "hint",
-				Value: string(data),
-			})
+			node.Add("hint", id.String())
 		}
 
 		return node
 	}
 
-	switch node[0].Value {
+	_, v, _ := node.GetByPosition(0)
+
+	switch v {
 	case "bool":
 		var b bool
 		l := len(element.Data)
@@ -573,27 +565,25 @@ func resolveNode(element *azcs.Element) any {
 
 	default:
 		if len(element.Data) > 0 {
-			checkId, err := uuid.FromString(node[0].Value.(string))
+			_, v, _ := node.GetByPosition(0)
+
+			vs := v.(string)
+
+			checkId, err := uuid.FromString(vs)
 			if err != nil || checkId.IsNil() {
 				if len(element.Data) > 24 {
-					log.Fatalf("unsupported data type: %s, type: %s, stype: %s", node[0].Value, element.Type.String(), element.SpecializedType.String())
+					log.Fatalf("unsupported data type: %s, type: %s, stype: %s", vs, element.Type.String(), element.SpecializedType.String())
 				}
-				log.Fatalf("unsupported data type: %s, type: %s, stype: %s data: %x", node[0].Value, element.Type.String(), element.SpecializedType.String(), element.Data)
+				log.Fatalf("unsupported data type: %s, type: %s, stype: %s data: %x", vs, element.Type.String(), element.SpecializedType.String(), element.Data)
 			} else {
-				node = append(node, KeyValue{
-					Key:   valueField,
-					Value: element.Data,
-				})
+				node.Add(valueField, element.Data)
 			}
 		} else {
 			for _, element := range element.Elements {
 				key := resolveHash(element)
 				value := resolveNode(element)
 
-				node = append(node, KeyValue{
-					Key:   key,
-					Value: value,
-				})
+				node.Add(key, value)
 			}
 		}
 	}
@@ -610,7 +600,9 @@ func resolveHash(element *azcs.Element) string {
 
 	formattedHash := fmt.Sprintf("0x%08x", hash)
 
-	notResolvedHashes[formattedHash] = true
+	debugData.mu.Lock()
+	debugData.notResolvedHashes[formattedHash] = true
+	debugData.mu.Unlock()
 
 	return formattedHash
 }
@@ -625,44 +617,11 @@ func resolveType(element *azcs.Element) string {
 		return azcs.DefaultTypeRegistry.Get(typ)
 	}
 
-	notResolvedTypes[typ] = true
+	debugData.mu.Lock()
+	debugData.notResolvedTypes[typ] = true
+	debugData.mu.Unlock()
 
 	return typ
-}
-
-type KeyValue struct {
-	Key   string
-	Value any
-}
-
-type OrderedMap []KeyValue
-
-func (omap OrderedMap) MarshalJSON() ([]byte, error) {
-	var buf bytes.Buffer
-
-	buf.WriteString("{")
-	for i, kv := range omap {
-		if i != 0 {
-			buf.WriteString(",")
-		}
-
-		key, err := json.Marshal(kv.Key)
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(key)
-		buf.WriteString(":")
-
-		val, err := json.Marshal(kv.Value)
-		if err != nil {
-			return nil, err
-
-		}
-		buf.Write(val)
-	}
-
-	buf.WriteString("}")
-	return buf.Bytes(), nil
 }
 
 type JsonFloat64 float64
