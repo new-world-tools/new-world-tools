@@ -1,6 +1,6 @@
 package azcs
 
-var defaultHashes = map[uint32]string{
+var hashPropertiesData = map[uint32]string{
 	0x000155bb: "ishandlingevents",
 	0x0011df3f: "m_sphereradius",
 	0x002554d7: "optionselectedactionname",
