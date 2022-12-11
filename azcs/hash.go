@@ -14,6 +14,9 @@ var DefaultHashRegistry *HashRegistry
 func init() {
 	DefaultHashRegistry = NewHashRegistry()
 
+	for _, value := range hashBuffBucketsData {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashPropertiesData {
 		DefaultHashRegistry.Add(value)
 	}
