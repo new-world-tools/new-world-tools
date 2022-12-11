@@ -33,11 +33,12 @@ const (
 )
 
 var (
-	pool        *workerpool.Pool
-	outputDir   string
-	withIndents bool
-	debug       bool
-	pr          *profiler.Profiler
+	pool             *workerpool.Pool
+	outputDir        string
+	withIndents      bool
+	resolveHashValue bool
+	debug            bool
+	pr               *profiler.Profiler
 )
 
 type DebugData struct {
@@ -61,6 +62,7 @@ func main() {
 	outputDirPtr := flag.String("output", ".\\json", "directory path")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
+	resolveHashValuePtr := flag.Bool("resolve-hash-value", false, "")
 	poolCapacityPtr := flag.Int64("pool-capacity", 1000, "pool capacity")
 	debugPtr := flag.Bool("debug", false, "")
 	flag.Parse()
@@ -72,6 +74,7 @@ func main() {
 	log.Printf("The number of threads is set to %d", threads)
 
 	withIndents = *withIndentsPtr
+	resolveHashValue = *resolveHashValuePtr
 	poolCapacity := *poolCapacityPtr
 	debug = *debugPtr
 
@@ -584,6 +587,15 @@ func resolveNode(element *azcs.Element) any {
 				value := resolveNode(element)
 
 				node.Add(key, value)
+			}
+			if v == "Crc32" && resolveHashValue {
+				value, ok := node.Get("value")
+				if ok {
+					hash := value.(uint32)
+					if azcs.DefaultHashRegistry.Has(hash) {
+						node.Add(valueField, azcs.DefaultHashRegistry.Get(hash))
+					}
+				}
 			}
 		}
 	}
