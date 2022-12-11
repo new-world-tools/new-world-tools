@@ -39,7 +39,8 @@ Powershell:
 Optional:
 ```powershell
     -threads 3 `
-    -localization ".\extract\localization\en-us"
+    -localization ".\extract\localization\en-us" ^
+    -keep-structure
 ```
 
 ### Object stream converter

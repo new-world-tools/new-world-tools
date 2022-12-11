@@ -28,9 +28,11 @@ const (
 var (
 	pool             *workerpool.Pool
 	localizationData *internal.Store[string]
+	inputDir         string
 	outputDir        string
 	format           string
 	withIndents      bool
+	keepStructure    bool
 	pr               *profiler.Profiler
 )
 
@@ -45,6 +47,7 @@ var formats = map[string]bool{
 }
 
 func main() {
+	var err error
 	pr = profiler.New()
 
 	inputDirPtr := flag.String("input", ".\\extract\\sharedassets\\springboardentitites\\datatables", "directory path")
@@ -53,11 +56,13 @@ func main() {
 	formatPtr := flag.String("format", "csv", "csv or json")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
+	keepStructurePtr := flag.Bool("keep-structure", false, "keep original file structure")
 	flag.Parse()
 
 	format = *formatPtr
 	localizationDir := *localizationDirPtr
 	withIndents = *withIndentsPtr
+	keepStructure = *keepStructurePtr
 
 	if formats[format] != true {
 		log.Fatalf("Unsupported format: %s", format)
@@ -69,7 +74,7 @@ func main() {
 	}
 	log.Printf("The number of threads is set to %d", threads)
 
-	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
+	inputDir, err = filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
 		log.Fatalf("filepath.Abs: %s", err)
 	}
@@ -162,8 +167,19 @@ func addTask(id int64, file *datasheet.DataSheetFile) {
 			return err
 		}
 
+		var outputPath string
+		if keepStructure {
+			relPath, err := filepath.Rel(inputDir, file.GetPath())
+			if err != nil {
+				return err
+			}
+			outputPath = strings.TrimSuffix(filepath.Join(outputDir, relPath), ".datasheet")
+		} else {
+			outputPath = filepath.Join(outputDir, ds.DataType, ds.UniqueId)
+		}
+
 		if format == formatCsv {
-			outputPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.csv", ds.UniqueId))
+			outputPath = outputPath + ".csv"
 			err = storeToCsv(ds, outputPath)
 			if err != nil {
 				return err
@@ -171,7 +187,7 @@ func addTask(id int64, file *datasheet.DataSheetFile) {
 		}
 
 		if format == formatJson {
-			outputPath := filepath.Join(outputDir, ds.DataType, fmt.Sprintf("%s.json", ds.UniqueId))
+			outputPath = outputPath + ".json"
 			err = storeToJson(ds, outputPath)
 			if err != nil {
 				return err
