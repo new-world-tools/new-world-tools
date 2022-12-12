@@ -17,6 +17,15 @@ func init() {
 	for _, value := range hashBuffBucketsData {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashGatherablesData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashLoreData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashNpcData {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashPropertiesData {
 		DefaultHashRegistry.Add(value)
 	}
