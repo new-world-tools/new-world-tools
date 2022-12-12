@@ -548,7 +548,8 @@ func resolveNode(element *azcs.Element) any {
 
 	case
 		"AZStd::intrusive_ptr",
-		"AZStd::shared_ptr":
+		"AZStd::shared_ptr",
+		"AZStd::unique_ptr":
 		if len(element.Elements) == 0 {
 			return nil
 		}
