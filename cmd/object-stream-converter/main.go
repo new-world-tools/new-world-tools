@@ -21,6 +21,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"reflect"
 	"sort"
 	"strconv"
 	"strings"
@@ -267,7 +268,6 @@ var uncompressedSignatures = [][]byte{
 	{0x00, 0x00, 0x00, 0x00, 0x02},
 	{0x00, 0x00, 0x00, 0x00, 0x01},
 }
-
 var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
 
 func isUncompressed(data []byte) bool {
@@ -295,6 +295,56 @@ type Job struct {
 	IsCompressed bool
 }
 
+type float32s interface {
+	float32 | JsonFloat32
+}
+
+type float64s interface {
+	float64 | JsonFloat64
+}
+
+type floats interface {
+	float32s | float64s
+}
+
+func createFloatArray[T floats](data []byte) ([]T, error) {
+	var z T
+	dataTypeSize := int(reflect.Indirect(reflect.ValueOf(z)).Type().Size())
+
+	fs := make([]T, len(data)/dataTypeSize)
+	for i := 0; i < len(fs); i++ {
+		var f T
+		buf := bytes.NewReader(data[i*4 : (i+1)*4])
+		err := binary.Read(buf, binary.BigEndian, &f)
+		if err != nil {
+			return nil, err
+		}
+		fs[i] = f
+	}
+
+	return fs, nil
+}
+
+func maxFloat[T floats](data []T) T {
+	var max T
+	for i, f := range data {
+		if i == 0 {
+			max = f
+		} else {
+			if f > max {
+				max = f
+			}
+		}
+	}
+
+	return max
+}
+
+//func colLen(floats []JsonFloat32) JsonFloat32 {
+//	lengthSq := floats[0]*floats[0] + floats[1]*floats[1] + floats[2]*floats[2]
+//	return JsonFloat32(math.Sqrt(float64(lengthSq)))
+//}
+
 func resolveNode(element *azcs.Element) any {
 	node := structure.NewOrderedMap[string, any]()
 
@@ -303,20 +353,74 @@ func resolveNode(element *azcs.Element) any {
 	switch element.ResolveType().String() {
 	case
 		// Transform
-		"5d9958e9-9f1e-4985-b532-fffde75fedfd",
+		"5d9958e9-9f1e-4985-b532-fffde75fedfd":
+		switch element.Version {
+		case 0:
+			if len(element.Data) != 48 {
+				log.Fatalf("wrong size: %d", len(element.Data))
+			}
+			col0, err := createFloatArray[JsonFloat32](element.Data[0:12])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+			col1, err := createFloatArray[JsonFloat32](element.Data[12:24])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+			col2, err := createFloatArray[JsonFloat32](element.Data[24:36])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+			col3, err := createFloatArray[JsonFloat32](element.Data[36:48])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+
+			tnode := structure.NewOrderedMap[string, any]()
+
+			tnode.Add("rotation/scale", []JsonFloat32{col0[0], col0[1], col0[2], col1[0], col1[1], col1[2], col2[0], col2[1], col2[2]})
+			tnode.Add("translation", col3)
+
+			node.Add(valueField, tnode)
+
+		case 1:
+			if len(element.Data) != 40 {
+				log.Fatalf("wrong size: %d", len(element.Data))
+			}
+			rotation, err := createFloatArray[JsonFloat32](element.Data[0:16])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+			vectorScale, err := createFloatArray[JsonFloat32](element.Data[16:28])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+			translation, err := createFloatArray[JsonFloat32](element.Data[28:40])
+			if err != nil {
+				log.Fatalf("createFloatArrray: %s", err)
+			}
+			scale := maxFloat[JsonFloat32](vectorScale)
+
+			tnode := structure.NewOrderedMap[string, any]()
+
+			tnode.Add("rotation", rotation)
+			tnode.Add("scale", scale)
+			tnode.Add("translation", translation)
+
+			node.Add(valueField, tnode)
+
+		default:
+			log.Fatalf("unsupported version: %d", element.Version)
+		}
+
+		return node
+
+	case
 		// Color
 		"7894072a-9050-4f0f-901b-34b1a0d29417":
-		l := len(element.Data)
-
-		f32s := make([]JsonFloat32, l/4)
-		for i := 0; i < len(f32s); i++ {
-			var f32 JsonFloat32
-			buf := bytes.NewReader(element.Data[i*4 : (i+1)*4])
-			err := binary.Read(buf, binary.BigEndian, &f32)
-			if err != nil {
-				log.Fatalf("binary.Read: %s", err)
-			}
-			f32s[i] = f32
+		f32s, err := createFloatArray[JsonFloat32](element.Data)
+		if err != nil {
+			log.Fatalf("createFloatArrray: %s", err)
 		}
 
 		node.Add(valueField, f32s)
