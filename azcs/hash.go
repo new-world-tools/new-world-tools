@@ -35,6 +35,9 @@ func init() {
 	for _, value := range hashVitalsData {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashVitalsModifiersData {
+		DefaultHashRegistry.Add(value)
+	}
 }
 
 func NewHashRegistry() *HashRegistry {
