@@ -461,7 +461,7 @@ func resolveNode(element *azcs.Element) any {
 			if err != nil {
 				log.Fatalf("reader.ReadBytes: %s", err)
 			}
-			node.Add("hint", id.String())
+			node.Add("hint", string(data))
 		}
 
 		return node
