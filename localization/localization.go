@@ -46,12 +46,23 @@ func New(root string) (*internal.Store[string], error) {
 			return nil, err
 		}
 
+		var isLegacyFile bool
+
 		var resources Resources
 		err = xml.NewDecoder(xmlFile).Decode(&resources)
 		if err != nil {
-			return nil, err
+			if strings.Contains(err.Error(), "expected element type") {
+				isLegacyFile = true
+			}
+			if !isLegacyFile {
+				return nil, err
+			}
 		}
 		xmlFile.Close()
+
+		if isLegacyFile {
+			continue
+		}
 
 		for _, resource := range resources.Strings {
 			if resource.Nil {

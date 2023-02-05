@@ -297,7 +297,7 @@ func normalizeCellValue(column datasheet.Column, str string) any {
 			return nil
 		}
 
-		// ugly rounding fix
+		//ugly rounding fix
 		pow := math.Pow(10, 6)
 		return math.Round(val*pow) / pow
 	}
