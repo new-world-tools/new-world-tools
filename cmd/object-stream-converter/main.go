@@ -436,14 +436,14 @@ func resolveNode(element *azcs.Element) any {
 			log.Fatalf("reader.ReadBytes: %s", err)
 		}
 		id, _ := uuid.FromBytes(data)
-		node.Add("id", id.String())
+		node.Add("guid", id.String())
 
 		data, err = reader.ReadBytes(buf, 16)
 		if err != nil {
 			log.Fatalf("reader.ReadBytes: %s", err)
 		}
 		id, _ = uuid.FromBytes(data)
-		node.Add("unknown", id.String())
+		node.Add("subId", id.String())
 
 		data, err = reader.ReadBytes(buf, 16)
 		if err != nil {
