@@ -18,9 +18,12 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 )
+
+var rePak = regexp.MustCompile(`.pak$`)
 
 const (
 	defaultThreads int64 = 3
@@ -30,7 +33,7 @@ const (
 var (
 	pool           *workerpool.Pool
 	filters        map[string]bool
-	assetsDir      string
+	inputPath      string
 	outputDir      string
 	hashSumFile    string
 	decompressAzcs bool
@@ -51,7 +54,9 @@ func main() {
 		}
 	}
 
-	assetsDirPtr := flag.String("assets", "C:\\Program Files (x86)\\Steam\\steamapps\\common\\New World\\assets", "directory path")
+	// remove in the future
+	assetsDirPtr := flag.String("assets", "", "directory path")
+	inputPathPtr := flag.String("input", "", "directory or .pak path")
 	outputDirPtr := flag.String("output", "./extract", "directory path")
 	filterPtr := flag.String("filter", "", "comma separated file extensions")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
@@ -60,15 +65,24 @@ func main() {
 	fixLuacPtr := flag.Bool("fix-luac", false, "fix .luac header for unluac")
 	flag.Parse()
 
-	assetsDir, err = filepath.Abs(filepath.Clean(*assetsDirPtr))
+	assetsDir := *assetsDirPtr
+	inputPath = *inputPathPtr
+
+	if inputPath == "" && assetsDir != "" {
+		inputPath = assetsDir
+	}
+
+	inputPath, err = filepath.Abs(filepath.Clean(inputPath))
 	if err != nil {
 		log.Fatalf("filepath.Abs: %s", err)
 	}
 
-	_, err = os.Stat(assetsDir)
+	fi, err := os.Stat(inputPath)
 	if os.IsNotExist(err) {
-		log.Fatalf("'%s' does not exist", assetsDir)
+		log.Fatalf("'%s' does not exist", inputPath)
 	}
+
+	isDir := fi.IsDir()
 
 	outputDir, err = filepath.Abs(filepath.Clean(*outputDirPtr))
 	if err != nil {
@@ -104,9 +118,17 @@ func main() {
 		log.Fatalf("MkdirAll: %s", err)
 	}
 
-	pakFiles, err := pak.FindAll(assetsDir)
-	if err != nil {
-		log.Fatalf("pak.FindAll: %s", err)
+	var pakFiles []*pak.Pak
+	if isDir {
+		pakFiles, err = pak.FindAll(inputPath)
+		if err != nil {
+			log.Fatalf("pak.FindAll: %s", err)
+		}
+	} else {
+		if !rePak.MatchString(inputPath) {
+			log.Fatalf("Not valid .pak: %s", inputPath)
+		}
+		pakFiles = []*pak.Pak{pak.NewPak(inputPath)}
 	}
 
 	pool = workerpool.NewPool(threads, 1000)
@@ -179,11 +201,16 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
 		var err error
 
+		basePath := inputPath
+		if rePak.MatchString(inputPath) {
+			basePath = filepath.Dir(inputPath)
+		}
+
 		ext := filepath.Ext(file.Name)
 		if filters[ext] {
 			return nil
 		}
-		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), assetsDir, ""), file.Name)))
+		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), file.Name)))
 		err = os.MkdirAll(filepath.Dir(fpath), 0755)
 		if err != nil {
 			return err

@@ -11,9 +11,17 @@ Download the compiled binaries in [Releases](https://github.com/new-world-tools/
 Powershell:
 ```powershell
 .\pak-extracter.exe `
-    -assets "C:\Program Files (x86)\Steam\steamapps\common\New World\assets" `
+    -input "C:\Program Files (x86)\Steam\steamapps\common\New World\assets" `
     -output ".\extract"
 ```
+or
+```powershell
+.\pak-extracter.exe `
+    -input "C:\Program Files (x86)\Steam\steamapps\common\New World\assets\server\server.pak" `
+    -output ".\extract"
+```
+
+Note: The -assets parameter is left for compatibility.
 
 Optional:
 ```powershell

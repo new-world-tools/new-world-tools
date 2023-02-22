@@ -34,9 +34,9 @@ func NewPak(path string) *Pak {
 	}
 }
 
-func FindAll(root string) ([]*Pak, error) {
-	rePak := regexp.MustCompile(`.pak$`)
+var rePak = regexp.MustCompile(`.pak$`)
 
+func FindAll(root string) ([]*Pak, error) {
 	files := []*Pak{}
 
 	err := filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
