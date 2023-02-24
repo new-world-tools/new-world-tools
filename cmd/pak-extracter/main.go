@@ -33,6 +33,7 @@ const (
 var (
 	pool           *workerpool.Pool
 	filters        map[string]bool
+	negatedFilters bool
 	inputPath      string
 	outputDir      string
 	hashSumFile    string
@@ -89,7 +90,11 @@ func main() {
 		log.Fatalf("filepath.Abs: %s", err)
 	}
 
-	filters = map[string]bool{}
+	filters = map[string]bool{}	
+	negatedFilters = strings.HasPrefix(*filterPtr, "!")
+	if negatedFilters {
+		*filterPtr = *(filterPtr)[1:]
+	}
 	filterParts := strings.Split(*filterPtr, ",")
 	for _, ext := range filterParts {
 		filters[fmt.Sprintf(".%s", strings.TrimPrefix(ext, "."))] = true
@@ -207,7 +212,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		}
 
 		ext := filepath.Ext(file.Name)
-		if filters[ext] {
+		if filters[ext] != negatedFilters {
 			return nil
 		}
 		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), file.Name)))
