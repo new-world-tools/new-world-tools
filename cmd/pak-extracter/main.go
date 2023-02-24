@@ -93,7 +93,7 @@ func main() {
 	filters = map[string]bool{}	
 	negatedFilters = strings.HasPrefix(*filterPtr, "!")
 	if negatedFilters {
-		*filterPtr = *(filterPtr)[1:]
+		*filterPtr = (*filterPtr)[1:]
 	}
 	filterParts := strings.Split(*filterPtr, ",")
 	for _, ext := range filterParts {
