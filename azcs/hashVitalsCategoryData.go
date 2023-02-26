@@ -138,6 +138,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x0566bc77: "ancientguardian_mage_16bs03", // 90618999
     0x0566c868: "undead_berserker_24", // 90622056
     0x056acd37: "risen_whole_body_12mb10a", // 90885431
+    0x05753c8e: "corruptedlegion_cyclops_loc_boss_00", // 91569294
     0x057cde85: "swamp_fiend_05wc08", // 92069509
     0x058545d7: "corruptedlegion_cyclops_16bs08d", // 92620247
     0x05856b54: "boar_strange_16bs01", // 92629844
@@ -361,6 +362,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x0d991a6a: "undead_navigator_43_15ec00", // 228137578
     0x0d9c16c3: "bearelemental_65_elite", // 228333251
     0x0da4287b: "blight_fiend_named_13wf02a_02", // 228862075
+    0x0dac1e92: "legion_legionnaire_loc_boss", // 229383826
     0x0dbb19a1: "sand_elemental_soldier_16bs08", // 230365601
     0x0dc624b7: "swamp_dryad_soldier_named_00", // 231089335
     0x0dc9e203: "dynasty_summoner_08qp01a", // 231334403
@@ -1239,6 +1241,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x2f47ecd9: "corrupted_ogre_07sm06b_elite", // 793242841
     0x2f51c170: "drowned_sailor_1h_sword_04nw10", // 793887088
     0x2f5533ec: "legion_villager_pickaxe_16bs02", // 794113004
+    0x2f562ca7: "legion_legionnaire_ethereal_loc_boss", // 794176679
     0x2f69464e: "undead_grenadier_molotov_39", // 795428430
     0x2f6bd571: "damned_villager_pickaxe_04nw09b", // 795596145
     0x2f76bced: "damned_bowman_m-f_07sm05d", // 796310765
@@ -1853,6 +1856,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x467b8304: "drowned_miner_12mb06a", // 1182499588
     0x467b85b6: "undead_berserker_named_fr_mar_01", // 1182500278
     0x46819303: "boar_08qp07", // 1182896899
+    0x468896bc: "legion_sagittarii_loc_boss", // 1183356604
     0x4689e5c0: "bloated_corpse_57", // 1183442368
     0x4690e636: "ghost_shipwrecked_11md00d", // 1183901238
     0x4691453e: "earthward", // 1183925566
@@ -2251,6 +2255,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x55cfab86: "withered_brute_27", // 1439673222
     0x55dcf60a: "legion_villager_cleaver_16bs05", // 1440544266
     0x55e5c4ad: "swamp_dryad_soldier_named_dg_edengrove_00", // 1441121453
+    0x55e5de54: "totem_loc_boss", // 1441128020
     0x55e72776: "ghost_starved_11md00d", // 1441212278
     0x55ef331b: "skeleton_mage_12mb08", // 1441739547
     0x55fd841c: "ghost_shackled_named_06_eggreataxe", // 1442677788
@@ -3012,6 +3017,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x7261f8fe: "undead_berserker_25", // 1919023358
     0x7265cd6c: "corruptedlegion_cyclops_16bs06b", // 1919274348
     0x7267a8cc: "damned_villager_pitchfork_16bs05", // 1919396044
+    0x72720c18: "corruptedlegion_cyclops_loc_boss_01", // 1920076824
     0x72808f15: "drowned_sailor_1h_sword_shield_44", // 1921027861
     0x728125e9: "swamp_dryad_prowler_elite_05wc10", // 1921066473
     0x728d7046: "risen_regurgitator_06sw09a", // 1921871942
@@ -3383,6 +3389,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0x80a6f050: "withered_beetle_11md08", // 2158424144
     0x80adc041: "undead_officer_56", // 2158870593
     0x80b03fc4: "desert_scorpion_named_01", // 2159034308
+    0x80c170fe: "legion_legionnaire_noshield_loc_boss", // 2160161022
     0x80cb7d1a: "damned_villager_skinning_knife_04nw10b", // 2160819482
     0x80d17da9: "alligator_black_52", // 2161212841
     0x80d6669f: "withered_beetle_15ec04b", // 2161534623
@@ -5062,6 +5069,7 @@ var hashVitalsCategoryData = map[uint32]string{
     0xc04e1c79: "elk_stag_36", // 3226344569
     0xc0534777: "damned_villager_cleaver_08qp07", // 3226683255
     0xc05c1f0d: "damned_villager_hammer_03gc05", // 3227262733
+    0xc061b00a: "legion_signifer_loc_boss", // 3227627530
     0xc08d0b47: "withered_brute_named_01", // 3230468935
     0xc0911341: "undead_pistoleer_55", // 3230733121
     0xc09d181d: "skeleton_mage_13wf07", // 3231520797

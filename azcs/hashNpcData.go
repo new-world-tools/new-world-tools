@@ -540,7 +540,6 @@ var hashNpcData = map[uint32]string{
     0xe99be308: "1605_akila_marcella", // 3919307528
     0xe99fe10c: "9815_marauderguard_f", // 3919569164
     0xea2cf54a: "1011_stranger", // 3928814922
-    0xea4eaae0: "0424_yeti_ww_npc", // 3931024096
     0xead611b8: "1623_fisher", // 3939897784
     0xeb330c3d: "9816_pavel", // 3945991229
     0xebd12990: "9931_vk_caoimhe", // 3956353424
