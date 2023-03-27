@@ -14,7 +14,16 @@ var DefaultHashRegistry *HashRegistry
 func init() {
 	DefaultHashRegistry = NewHashRegistry()
 
+	for _, value := range hashAchievementData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashBlueprintItemDefinitions {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashBuffBucketsData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashGameEventData {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashGatherablesData {
@@ -23,10 +32,25 @@ func init() {
 	for _, value := range hashLoreData {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashMasterItemDefinitions {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashNpcData {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashPerkBucketData {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashPropertiesData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashRewardModifierData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashStatusEffectData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashTerritoryProgressionData {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashVitalsCategoryData {

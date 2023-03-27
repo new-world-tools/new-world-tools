@@ -243,6 +243,7 @@ var hashPropertiesData = map[uint32]string{
 	0x0f26fef6: "speed",
 	0x0f3224ca: "m_enablecrouchresizetest",
 	0x0f3e7b73: "m_onstateenter",
+	0x0f4784c9: "m_enabledebugtracelogging",
 	0x0f85eee9: "m_beamdata",
 	0x0fa5c7a3: "meter settings",
 	0x0fb8577e: "m_defenderlimit",
