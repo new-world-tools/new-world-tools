@@ -489,6 +489,25 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 			return value, nil
 		}
 
+	case
+		"EntityId":
+		if len(element.Elements) != 1 {
+			return nil, fmt.Errorf("wrong elements count: %d", len(element.Elements))
+		}
+		for _, element := range element.Elements {
+			key := hashResolver(element)
+			value, err := resolveNode(element, typeResolver, hashResolver)
+			if err != nil {
+				return nil, err
+			}
+
+			if key != "id" {
+				return nil, fmt.Errorf("wrong key: %s", key)
+			}
+
+			return value, nil
+		}
+
 	default:
 		if len(element.Data) > 0 {
 			_, v, _ := node.GetByPosition(0)
