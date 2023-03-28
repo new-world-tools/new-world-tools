@@ -6,6 +6,7 @@ var hashRewardModifierData = map[uint32]string{
     0x1401363b: "solo+", // 335623739
     0x144d21c7: "quest-", // 340599239
     0x14d9bba1: "elite+", // 349813665
+    0x1e871cd9: "dungeon+_nocurrency", // 512171225
     0x1f99399e: "eliteminiboss", // 530135454
     0x26e52ecf: "war_t2", // 652553935
     0x2c91dfdb: "arena", // 747757531
@@ -36,6 +37,7 @@ var hashRewardModifierData = map[uint32]string{
     0x886f8205: "objectivepoi+", // 2289009157
     0x8e8e7f96: "dungeon+", // 2391703446
     0x9067f23c: "mission", // 2422731324
+    0x90c6960a: "dungeon_nocurrency", // 2428933642
     0x98197a65: "player", // 2551806565
     0x98b7098f: "darknessminor", // 2562132367
     0xa0eaecfb: "dungeonminiboss", // 2699750651
@@ -59,6 +61,7 @@ var hashRewardModifierData = map[uint32]string{
     0xd9606339: "outpostrush_t4", // 3646972729
     0xe4de4845: "critter", // 3839772741
     0xecb15fa7: "darkness", // 3971047335
+    0xf1bab939: "dungeon-_nocurrency", // 4055546169
     0xf2bed121: "named_solo", // 4072591649
     0xf2e793ef: "arena3v3_loss", // 4075262959
     0xf7353d56: "outpostrushelite", // 4147461462

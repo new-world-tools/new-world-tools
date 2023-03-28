@@ -4,6 +4,7 @@ var hashVitalsModifiersData = map[uint32]string{
     0x0f000411: "solo", // 251659281
     0x1401363b: "solo+", // 335623739
     0x14d9bba1: "elite+", // 349813665
+    0x1e871cd9: "dungeon+_nocurrency", // 512171225
     0x1f99399e: "eliteminiboss", // 530135454
     0x3225b842: "named_solo+", // 841332802
     0x34666e73: "solo+_starterbeach", // 879128179
@@ -16,6 +17,7 @@ var hashVitalsModifiersData = map[uint32]string{
     0x67eddaa3: "dungeon-", // 1743641251
     0x7d458c26: "outpostrushgroup+", // 2101709862
     0x8e8e7f96: "dungeon+", // 2391703446
+    0x90c6960a: "dungeon_nocurrency", // 2428933642
     0x98197a65: "player", // 2551806565
     0xa0eaecfb: "dungeonminiboss", // 2699750651
     0xb74c624b: "eliteboss", // 3075236427
@@ -26,6 +28,7 @@ var hashVitalsModifiersData = map[uint32]string{
     0xd78d9e11: "elite", // 3616382481
     0xd826f064: "outpostrushsolo", // 3626430564
     0xe4de4845: "critter", // 3839772741
+    0xf1bab939: "dungeon-_nocurrency", // 4055546169
     0xf2bed121: "named_solo", // 4072591649
     0xfd62930e: "solo-", // 4251095822
     0xfdba1e94: "elite-", // 4256833172

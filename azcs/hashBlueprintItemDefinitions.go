@@ -5,6 +5,7 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x02d6f3d8: "engineeringt1", // 47641560
     0x0302fbb2: "seedcornt1", // 50527154
     0x038799b6: "siege_fortgate_m_t2", // 59218358
+    0x03e68b89: "campskin_firelight01_b", // 65440649
     0x03ff708a: "munitionspilet5", // 67072138
     0x04f73176: "fencestonecorner", // 83308918
     0x05bb37c1: "engineeringt5", // 96155585
@@ -56,8 +57,10 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x2a6feab4: "seedherbt1", // 711977652
     0x2b6eb9f2: "claimt1_40m_t2", // 728676850
     0x2bab491f: "claimt1_80m_t3", // 732645663
+    0x2c379178: "platformrepeatert3autobuild", // 741839224
     0x2cb03798: "claimt1_15m", // 749746072
     0x2d273292: "claimt1_15m_t5", // 757543570
+    0x2e59bc80: "campskin_silvercrowsfire01_a", // 777632896
     0x2eb68522: "windmillt2", // 783713570
     0x2ef689c1: "claimt1_25m", // 787909057
     0x2f89570d: "seedwheatt1", // 797529869
@@ -119,6 +122,7 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x62e7e86c: "fenceironwoodgate", // 1659365484
     0x63214d00: "cookingt3", // 1663126784
     0x6353cf4c: "claimt1_20m_t5", // 1666436940
+    0x63b9f98a: "platformcannont3autobuild", // 1673132426
     0x64b2b70c: "fencewoodcorner", // 1689433868
     0x64e82667: "claimt1_100m_t3", // 1692935783
     0x66a618f9: "claimt1_60m_t2", // 1722161401
@@ -132,6 +136,7 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x72bc0757: "engineeringt4", // 1924925271
     0x72debd0e: "weavingt4", // 1927200014
     0x7480a920: "siege_fortgate_m_t3", // 1954588960
+    0x7496e1e2: "platformfirelaunchert3autobuild", // 1956045282
     0x752f6be2: "trapfire", // 1966042082
     0x763a13c2: "wallgatet1", // 1983517634
     0x76ffc10b: "craterswitch2", // 1996472587
@@ -162,6 +167,7 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x8a306a79: "claimt1_20m_t3", // 2318428793
     0x8a42e835: "cookingt5", // 2319640629
     0x8b028fd8: "seedmandraket1", // 2332200920
+    0x8c7b92b4: "platformcannont2autobuild", // 2356908724
     0x8c8cd124: "seedpuffballfungust1", // 2358038820
     0x8d2f2c2c: "cookingt1", // 2368678956
     0x8d5efd41: "fenceironwoodcorner", // 2371812673
@@ -170,6 +176,7 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x8e8068f4: "turretballistat1", // 2390780148
     0x8fb6a6de: "wallxshapet2", // 2411112158
     0x8fc5bdcc: "claimt1_60m_t4", // 2412101068
+    0x9169ebaf: "season_01_spriggan_event_flame_brazier", // 2439637935
     0x91a419bd: "or_armory_t1", // 2443450813
     0x92506ffd: "or_armorsmith_t1", // 2454745085
     0x93ba0e38: "or_powderkeg", // 2478444088
@@ -186,6 +193,8 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0x99435754: "campskin_love01_a", // 2571327316
     0x99e2cfaa: "graveyard", // 2581778346
     0x9a8ec80c: "siege_fortgate_m_t1", // 2593048588
+    0x9aefda33: "campskin_firelight01_a", // 2599410227
+    0x9b548adc: "platformfirelaunchert2autobuild", // 2606009052
     0x9bbd183b: "weavingt2", // 2612860987
     0x9bdfa262: "engineeringt2", // 2615124578
     0x9fca1a02: "animalpent3", // 2680822274
@@ -225,6 +234,7 @@ var hashBlueprintItemDefinitions = map[uint32]string{
     0xc18b5f44: "platformcannont2", // 3247136580
     0xc20d1cc7: "claimt1_40m_t4", // 3255639239
     0xc2c8ec2a: "claimt1_80m_t5", // 3267947562
+    0xc3f5fa46: "platformrepeatert2autobuild", // 3287677510
     0xc44497a7: "claimt1_15m_t3", // 3292829607
     0xc446898c: "siege_fortgate_s_t3", // 3292957068
     0xc4927a65: "fencelogcorner", // 3297933925
