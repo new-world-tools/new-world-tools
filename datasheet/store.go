@@ -2,7 +2,7 @@ package datasheet
 
 import (
 	"fmt"
-	"github.com/new-world-tools/new-world-tools/internal"
+	"github.com/new-world-tools/new-world-tools/store"
 	"sort"
 )
 
@@ -13,7 +13,7 @@ func NewStore(dataTableDir string) (*Store, error) {
 	}
 
 	store := &Store{
-		store:     internal.NewSimpleStore[*DataSheetFile](),
+		store:     store.NewSimpleStore[*DataSheetFile](),
 		dataTypes: map[string]map[string]*DataSheetFile{},
 	}
 
@@ -45,7 +45,7 @@ func NewStore(dataTableDir string) (*Store, error) {
 }
 
 type Store struct {
-	store     *internal.Store[*DataSheetFile]
+	store     *store.Store[*DataSheetFile]
 	dataTypes map[string]map[string]*DataSheetFile
 }
 

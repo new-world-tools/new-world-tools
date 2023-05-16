@@ -1,4 +1,4 @@
-package internal
+package store
 
 type Store[T any] struct {
 	values        map[string]T
