@@ -42,6 +42,12 @@ var (
 	pr             *profiler.Profiler
 )
 
+var (
+	excludeRe       *regexp.Regexp
+	includeRe       *regexp.Regexp
+	includePriority bool
+)
+
 func main() {
 	pr = profiler.New()
 
@@ -58,12 +64,32 @@ func main() {
 	assetsDirPtr := flag.String("assets", "", "directory path")
 	inputPathPtr := flag.String("input", "", "directory or .pak path")
 	outputDirPtr := flag.String("output", "./extract", "directory path")
+	// remove in the future
 	filterPtr := flag.String("filter", "", "comma separated file extensions")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
 	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "decompress AZCS (Amazon Object Stream)")
 	fixLuacPtr := flag.Bool("fix-luac", false, "fix .luac header for unluac")
+	excludePtr := flag.String("exclude", "", "regexp")
+	includePtr := flag.String("include", "", "regexp")
+	includePriorityPtr := flag.Bool("include-priority", false, "include flag priority")
 	flag.Parse()
+
+	if *excludePtr != "" {
+		re, err := regexp.Compile(*excludePtr)
+		if err != nil {
+			log.Fatalf("regexp.Compile: %s", err)
+		}
+		excludeRe = re
+	}
+	if *includePtr != "" {
+		re, err := regexp.Compile(*includePtr)
+		if err != nil {
+			log.Fatalf("regexp.Compile: %s", err)
+		}
+		includeRe = re
+	}
+	includePriority = *includePriorityPtr
 
 	assetsDir := *assetsDirPtr
 	inputPath = *inputPathPtr
@@ -159,7 +185,9 @@ func main() {
 		}
 
 		for _, file := range files {
-			addTask(id, pakFile, file)
+			if match(file.Name) {
+				addTask(id, pakFile, file)
+			}
 		}
 
 		pakFile.Close()
@@ -276,4 +304,30 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 		return nil
 	}))
+}
+
+func match(fileName string) bool {
+	if excludeRe == nil && includeRe != nil {
+		return includeRe.MatchString(fileName)
+	}
+	if excludeRe != nil && includeRe == nil {
+		return !excludeRe.MatchString(fileName)
+	}
+	if excludeRe != nil && includeRe != nil {
+		if includePriority {
+			if includeRe.MatchString(fileName) {
+				return true
+			} else {
+				return !excludeRe.MatchString(fileName)
+			}
+		} else {
+			if excludeRe.MatchString(fileName) {
+				return false
+			} else {
+				return includeRe.MatchString(fileName)
+			}
+		}
+	}
+
+	return true
 }

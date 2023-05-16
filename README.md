@@ -26,10 +26,16 @@ Note: The -assets parameter is left for compatibility.
 Optional:
 ```powershell
     -threads 3 `
-    -filter .ext1,.ext2 `
     -decompress-azcs `
     -fix-luac `
     -hash ".\extract\files.sha1"
+```
+
+Optional regexp filters:
+```powershell
+    -include "\.datasheet$" `
+    -exclude "^coatgen|^slices" `
+    -include-priority
 ```
 
 ### Datasheet converter
