@@ -7,9 +7,9 @@ import (
 	"flag"
 	"fmt"
 	"github.com/new-world-tools/new-world-tools/datasheet"
-	"github.com/new-world-tools/new-world-tools/internal"
 	"github.com/new-world-tools/new-world-tools/localization"
 	"github.com/new-world-tools/new-world-tools/profiler"
+	"github.com/new-world-tools/new-world-tools/store"
 	"github.com/new-world-tools/new-world-tools/structure"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"log"
@@ -27,7 +27,7 @@ const (
 
 var (
 	pool             *workerpool.Pool
-	localizationData *internal.Store[string]
+	localizationData *store.Store[string]
 	inputDir         string
 	outputDir        string
 	format           string
