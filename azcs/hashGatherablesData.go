@@ -34,6 +34,7 @@ var hashGatherablesData = map[uint32]string{
     0x05324b70: "mountain_lion", // 87182192
     0x053c03a1: "hotspot_secret_56", // 87819169
     0x057f8668: "0804_junkpile", // 92243560
+    0x05a8bf58: "springtide_wispybloom", // 94945112
     0x05be3ec5: "cattaillarge", // 96353989
     0x05e3b369: "95_s01_01_crow_gracelessrequest", // 98808681
     0x05f11ce1: "hotspot_rare_47", // 99687649
@@ -360,6 +361,7 @@ var hashGatherablesData = map[uint32]string{
     0x400b8576: "explorevista_westeverfall01", // 1074496886
     0x400d51b5: "hotspot_secret_77", // 1074614709
     0x401e2576: "0306_corrritualpillar", // 1075717494
+    0x4091d808: "springtide_wispyspritzplantsite", // 1083299848
     0x40a5c94e: "mb_msq2_placeflowers_lily", // 1084606798
     0x40bf81f0: "0905_bloodtracking_b", // 1086292464
     0x40d883cb: "1624_0901_buriedtrunk", // 1087931339
@@ -648,6 +650,7 @@ var hashGatherablesData = map[uint32]string{
     0x717d1ae4: "0701_anticorruptionbomb", // 1904024292
     0x719b9a40: "darknessmajorportaldt3", // 1906022976
     0x71c57ebd: "dungeonedengrove_imbuedfont", // 1908768445
+    0x7205507d: "springtideglowmelon", // 1912950909
     0x7206bf4d: "1524_doubloong", // 1913044813
     0x722fec34: "99c_msq2_blightbomba", // 1915743284
     0x723748f3: "dungeoneverfall00_azothshrine", // 1916225779
@@ -689,6 +692,7 @@ var hashGatherablesData = map[uint32]string{
     0x79175797: "brimstonemedium", // 2031572887
     0x797829e8: "darknessmajormonolithdt3", // 2037918184
     0x79855bc0: "settlementwell", // 2038782912
+    0x79bb87f3: "springtidebloom_villagegiftbag", // 2042333171
     0x79c1124d: "msq_flag", // 2042696269
     0x79e1d60e: "farmmandrake", // 2044843534
     0x7a009d61: "1130_arcanefocus2", // 2046860641
@@ -793,6 +797,7 @@ var hashGatherablesData = map[uint32]string{
     0x8acc41d3: "treehardwoodlarge", // 2328642003
     0x8ad267c7: "darknesspylondt2", // 2329044935
     0x8ae4c5b9: "1655_0201_table_03", // 2330248633
+    0x8afe4918: "springtidebloom_settlementgiftbag", // 2331920664
     0x8b1e5c39: "06a_msq_11_piratecrates", // 2334022713
     0x8b467271: "lootmediumt1", // 2336649841
     0x8b575476: "msq_0008_ancientplaquea", // 2337756278
@@ -974,6 +979,7 @@ var hashGatherablesData = map[uint32]string{
     0xabbc4f40: "turkeynest", // 2881244992
     0xac4bf668: "04a_side02_05_armillarysphere", // 2890659432
     0xac532b65: "spearfishing", // 2891131749
+    0xac664dc1: "springtidevillage_prismabloom", // 2892385729
     0xac8187f1: "0405_glowingore", // 2894170097
     0xacb29526: "1403_wyrdwoodgrowth", // 2897384742
     0xacf7c4e0: "0902_gunpowdercask", // 2901918944

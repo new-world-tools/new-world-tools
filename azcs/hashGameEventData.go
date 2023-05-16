@@ -448,6 +448,7 @@ var hashGameEventData = map[uint32]string{
     0x2118133d: "9801_pktraceabsorbera_04_interact", // 555225917
     0x212658e9: "pvpfaction-v2_22", // 556161257
     0x2128609f: "pvpfactionv2_23", // 556294303
+    0x21363f1c: "sb_wispybloomcraft", // 557203228
     0x21377c89: "pvpfaction+v2_51", // 557284489
     0x2139abd4: "genesiskeyreplacement", // 557427668
     0x2156bee1: "13a_sq_16_navarroskitchen_success", // 559333089
@@ -822,6 +823,7 @@ var hashGameEventData = map[uint32]string{
     0x3f80494d: "95_s01_02_skyetrail3_interact", // 1065371981
     0x3fa7c880: "95_s01_09_temp_faceless_success", // 1067960448
     0x3fae9694: "99b_msq_06_morgengraveb_interact", // 1068406420
+    0x3fd9fef0: "1530_02_spring_bloom_success", // 1071251184
     0x3ff122fd: "factionintro_marauders_01_success", // 1072767741
     0x3ffcb758: "faction++v2_61", // 1073526616
     0x3ffd67c3: "cmission_success_kill_turket_med", // 1073571779
@@ -961,6 +963,7 @@ var hashGameEventData = map[uint32]string{
     0x49b3647b: "0607_clothtraild_interact", // 1236493435
     0x49dbfd74: "16_side_01_glyphs_success", // 1239154036
     0x49ea0568: "msq_0017_corruption_interact", // 1240073576
+    0x49f077cb: "1530_01_spring_spritz_success", // 1240496075
     0x49fa7a39: "0321_0106_azureravager_shardsaboveandbelow_success", // 1241152057
     0x4a09ecca: "gather_miningt1", // 1242164426
     0x4a0dc6e9: "12a_msq_24_defeatgawain_success", // 1242416873
@@ -1300,6 +1303,7 @@ var hashGameEventData = map[uint32]string{
     0x63929641: "factionv2_5", // 1670551105
     0x63a73338: "1418_0105_rd_04_success", // 1671902008
     0x63bafc32: "0313_0101_descentfrostedslumber_success", // 1673198642
+    0x63d36ead: "gather_springtide_wispybloom", // 1674800813
     0x63d6d40d: "faction++v2_50", // 1675023373
     0x640f7996: "azothstaff_10_success", // 1678735766
     0x6438a5c3: "craftammo2", // 1681434051
@@ -2421,6 +2425,7 @@ var hashGameEventData = map[uint32]string{
     0xbd01f38e: "06a_b_01_returnbrushes_success", // 3171021710
     0xbd0da922: "0901_0107_preciouscargo_success", // 3171789090
     0xbd1e7cf2: "1679_0101_striderofthesands_success", // 3172891890
+    0xbd3103c8: "gather_wispyspritzplantsite", // 3174106056
     0xbd3b390b: "04a_side05_01_playflute_interact", // 3174775051
     0xbd4b7e8b: "faction+v2_40", // 3175841419
     0xbd4f6e6f: "factionv2_24", // 3176099439
@@ -2459,6 +2464,7 @@ var hashGameEventData = map[uint32]string{
     0xbf7c9dbd: "0232_0202_hiddensecrets_success", // 3212615101
     0xbf844ea6: "cmission_success_tanningprojectid2", // 3213119142
     0xbfa1a492: "craft_weavingt51", // 3215041682
+    0xbfacd468: "sb_towncenterpiecegather", // 3215774824
     0xbfd6cafc: "mission_success_explorer_t1", // 3218524924
     0xbfec7f75: "war_t1", // 3219947381
     0xc02b24d1: "msq_shipwheel_interact", // 3224052945
@@ -2506,6 +2512,7 @@ var hashGameEventData = map[uint32]string{
     0xc37381f3: "pvp_coinlarge3_50", // 3279127027
     0xc3c40844: "9801_pktraceabsorbera_03_interact", // 3284404292
     0xc3c94baf: "msq_0017_weapons_interact", // 3284749231
+    0xc3e25387: "sb_waspgoocraft", // 3286389639
     0xc3fe12d2: "factionv2_29", // 3288208082
     0xc4253ebe: "msq_shipmanifest_interact", // 3290775230
     0xc442244e: "0509_stonetablet_03_interact", // 3292669006
@@ -2550,6 +2557,7 @@ var hashGameEventData = map[uint32]string{
     0xc7ac6459: "craft_jewelcraftingt5", // 3349963865
     0xc7e71777: "craft_engineeringt0", // 3353810807
     0xc7ed107d: "cmission_success_smeltingprojectid3", // 3354202237
+    0xc7ffd2c0: "event_springtide_wispybloom", // 3355431616
     0xc814d2be: "95_s01_01_corruptedcampsupplies3_interact", // 3356807870
     0xc841d618: "0423_0101_fq03_success", // 3359757848
     0xc845fddc: "pvpfaction-v2_24", // 3360030172
@@ -3130,6 +3138,7 @@ var hashGameEventData = map[uint32]string{
     0xf472f4e0: "weaponhit2", // 4101174496
     0xf48f6a85: "pvp_xpmedium2_50", // 4103039621
     0xf49aeaa4: "killftue_sailor_t1_2", // 4103793316
+    0xf4a49887: "sb_villagegiftbagsgather", // 4104427655
     0xf4b9d2ca: "06a_msq_19_talktonewspeaker_success", // 4105818826
     0xf4bb5c56: "9926_0103_lostscarecrow_success", // 4105919574
     0xf4c64462: "gather_skinningt5", // 4106634338
