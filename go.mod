@@ -5,7 +5,6 @@ go 1.19
 require (
 	github.com/gofrs/uuid v4.3.0+incompatible
 	github.com/new-world-tools/go-oodle v0.1.2
-	github.com/ozankasikci/go-image-merge v0.2.3-0.20220620190453-66fdff081378
 	github.com/zelenin/go-worker-pool v0.0.2
 )
 
