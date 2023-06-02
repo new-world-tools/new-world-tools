@@ -1,6 +1,6 @@
 package azcs
 
-var hashLoreData = map[uint32]string{
+var hashLoreDataLoreLoreID = map[uint32]string{
     0x002226d8: "13_weaversfen_title_11_05", // 2238168
     0x009d9a05: "excavation_chapter_01", // 10328581
     0x00f2baab: "00_aeternum_title_14_01", // 15907499

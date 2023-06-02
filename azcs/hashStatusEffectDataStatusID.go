@@ -1,6 +1,6 @@
 package azcs
 
-var hashStatusEffectData = map[uint32]string{
+var hashStatusEffectDataStatusID = map[uint32]string{
     0x0015596a: "mut_curse2_voi_major_buff", // 1399146
     0x00229a9d: "ai_corruptedpriest_doomimpact", // 2267805
     0x0039efa5: "mut_curse1_vfx_3_ability", // 3796901

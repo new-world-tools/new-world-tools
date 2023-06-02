@@ -1,6 +1,6 @@
 package azcs
 
-var hashStatusEffectCategoryData = map[uint32]string{
+var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x00000000: "", // 0
     0x01970eea: "frost", // 26676970
     0x059278a3: "dot", // 93485219

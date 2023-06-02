@@ -1,6 +1,6 @@
 package azcs
 
-var hashBlueprintItemDefinitions = map[uint32]string{
+var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x026e1934: "seedcranberryt1", // 40769844
     0x02d6f3d8: "engineeringt1", // 47641560
     0x0302fbb2: "seedcornt1", // 50527154

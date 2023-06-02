@@ -1,6 +1,6 @@
 package azcs
 
-var hashAchievementData = map[uint32]string{
+var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x000310d3: "fc_recipe_pattern_mossborne_heavy_boots", // 200915
     0x0003f4cf: "fc_gauntletice_wintert5_foc", // 259279
     0x00146911: "fc_runeglass_case_empty_mana", // 1337617

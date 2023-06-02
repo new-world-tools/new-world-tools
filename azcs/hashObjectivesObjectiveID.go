@@ -1,6 +1,6 @@
 package azcs
 
-var hashObjectives = map[uint32]string{
+var hashObjectivesObjectiveID = map[uint32]string{
     0x0003b29b: "fm_s_1164_objective", // 242331
     0x00280c37: "fm_0404_objective", // 2624567
     0x004cdaca: "1023_0101_fq06", // 5036746

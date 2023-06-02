@@ -1,6 +1,6 @@
 package azcs
 
-var hashGatherablesData = map[uint32]string{
+var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x00a23ba1: "16bs_legionstonetomb_16bs03b", // 10632097
     0x00d9f2a3: "farmmorningglory", // 14283427
     0x00db3af8: "treeironwoodhuge", // 14367480

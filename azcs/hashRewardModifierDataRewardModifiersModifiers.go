@@ -1,6 +1,6 @@
 package azcs
 
-var hashRewardModifierData = map[uint32]string{
+var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x0f000411: "solo", // 251659281
     0x1165d0d6: "pvpkill_extrahigh", // 291885270
     0x1401363b: "solo+", // 335623739

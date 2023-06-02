@@ -1,6 +1,6 @@
 package azcs
 
-var hashNpcData = map[uint32]string{
+var hashNPCDataNPCId = map[uint32]string{
     0x0031c4d4: "0210a_barkeep", // 3261652
     0x00965409: "13a_agnes_00", // 9851913
     0x014f8583: "12_hamzakillic", // 21988739

@@ -1,6 +1,6 @@
 package azcs
 
-var hashPerkBucketData = map[uint32]string{
+var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x003bef9b: "perkbucket_ectoplasmt1", // 3927963
     0x006ebb97: "perkbucket_mutatorvoid", // 7256983
     0x00a0b0eb: "globalattributebucketchancet2_weights", // 10531051

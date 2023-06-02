@@ -1,6 +1,6 @@
 package azcs
 
-var hashMasterItemDefinitions = map[uint32]string{
+var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0001eb09: "1hgauntletvoid_sinistermalicet2", // 125705
     0x00024260: "1302_1305_ancienthealerskit", // 148064
     0x00093d1b: "thespianfeet", // 605467

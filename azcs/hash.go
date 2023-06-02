@@ -14,58 +14,58 @@ var DefaultHashRegistry *HashRegistry
 func init() {
 	DefaultHashRegistry = NewHashRegistry()
 
-	for _, value := range hashAchievementData {
+	for _, value := range hashAchievementDataAchievementDataTableAchievementID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashBlueprintItemDefinitions {
+	for _, value := range hashBlueprintItemDefinitionsBlueprintBlueprintID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashBuffBucketsData {
+	for _, value := range hashBuffBucketDataBuffBucketsBuffBucketId {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashGameEventData {
+	for _, value := range hashGameEventDataEventID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashGatherablesData {
+	for _, value := range hashGatherableDataGatherablesGatherableID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashLoreData {
+	for _, value := range hashLoreDataLoreLoreID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashMasterItemDefinitions {
+	for _, value := range hashMasterItemDefinitionsItemID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashNpcData {
+	for _, value := range hashNPCDataNPCId {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashObjectives {
+	for _, value := range hashObjectivesObjectiveID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashPerkBucketData {
+	for _, value := range hashPerkBucketDataPerkBucketsPerkBucketID {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashPropertiesData {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashRewardModifierData {
+	for _, value := range hashRewardModifierDataRewardModifiersModifiers {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashStatusEffectCategoryData {
+	for _, value := range hashStatusEffectDataEffectCategories {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashStatusEffectData {
+	for _, value := range hashStatusEffectDataStatusID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashTerritoryProgressionData {
+	for _, value := range hashTerritoryProgressionDataTerritoryProgressionProjectId {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashVitalsCategoryData {
+	for _, value := range hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashVitalsData {
+	for _, value := range hashVitalsDataVitalsVitalsID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashVitalsModifiersData {
+	for _, value := range hashVitalsModifierDataVitalsModifiersCategoryId {
 		DefaultHashRegistry.Add(value)
 	}
 }

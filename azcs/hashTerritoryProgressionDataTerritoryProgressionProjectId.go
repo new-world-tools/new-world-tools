@@ -1,6 +1,6 @@
 package azcs
 
-var hashTerritoryProgressionData = map[uint32]string{
+var hashTerritoryProgressionDataTerritoryProgressionProjectId = map[uint32]string{
     0x008fff93: "hornupgradeprojectid2", // 9437075
     0x0105ec48: "fortgatesprojectid2", // 17165384
     0x08a39b77: "engineeringprojectid3", // 144939895

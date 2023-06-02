@@ -1,6 +1,6 @@
 package azcs
 
-var hashVitalsModifiersData = map[uint32]string{
+var hashVitalsModifierDataVitalsModifiersCategoryId = map[uint32]string{
     0x0f000411: "solo", // 251659281
     0x1401363b: "solo+", // 335623739
     0x14d9bba1: "elite+", // 349813665

@@ -1,6 +1,6 @@
 package azcs
 
-var hashBuffBucketsData = map[uint32]string{
+var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x002ad3e9: "mutation_eternal_dungeonplus_tier1", // 2806761
     0x009a6878: "barbarylionnamed03buffs", // 10119288
     0x017ab938: "mutation_icebound_dungeonminus_tier2_death_probs", // 24820024

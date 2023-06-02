@@ -1,6 +1,6 @@
 package azcs
 
-var hashGameEventData = map[uint32]string{
+var hashGameEventDataEventID = map[uint32]string{
     0x00020d1c: "1304_ectoplasmc_interact", // 134428
     0x00184be3: "95_s01_09_temp_faceless_wavecomplete", // 1592291
     0x001a1429: "0828_heirlooms_b_interact", // 1709097
