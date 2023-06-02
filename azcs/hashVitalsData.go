@@ -4864,7 +4864,6 @@ var hashVitalsData = map[uint32]string{
     0xc7283e9e: "undead_berserker_12", // 3341303454
     0xc74b33b1: "damnedhound_dt4", // 3343594417
     0xc7506fb3: "damned_hound_28", // 3343937459
-    0xc75078e8: "wispy_wasp_swarm", // 3343939816
     0xc7853d0d: "damned_1h_swordsman_m-f_07sm06", // 3347397901
     0xc78fadfd: "legion_sagittarii_named_01", // 3348082173
     0xc790c9c7: "damned_villager_hammer_26", // 3348154823

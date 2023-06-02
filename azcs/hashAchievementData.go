@@ -4749,7 +4749,6 @@ var hashAchievementData = map[uint32]string{
     0x74376f2d: "fc_shieldkite_wintert5_con", // 1949789997
     0x743c46e0: "lore_unlock_11_mourningdale_title_02_05", // 1950107360
     0x744e7250: "fc_procedural_amuletcarneliant2", // 1951298128
-    0x7453dfcc: "springtidebloom_topic2", // 1951653836
     0x745eeacd: "fc_recipe_pattern_lostraider_medium_head", // 1952377549
     0x746117db: "swapactive_13a_monsterhunter_4", // 1952520155
     0x7470f3e1: "greywolf_den_30132_charted", // 1953559521
@@ -5106,7 +5105,6 @@ var hashAchievementData = map[uint32]string{
     0x7d313278: "lore_unlock_11_mourningdale_title_10_02", // 2100376184
     0x7d31a123: "fc_scarab_str_muskett5", // 2100404515
     0x7d39a316: "weaponquest_rimelash_06", // 2100929302
-    0x7d3bc4c1: "springtidebloom_quest2", // 2101068993
     0x7d404a65: "fc_house_housingitem_chair_pirate_chair01_d", // 2101365349
     0x7d4acb0e: "veilpiercert5", // 2102053646
     0x7d4f4eda: "lore_unlock_09_firstlight_title_13_01", // 2102349530
@@ -9274,7 +9272,6 @@ var hashAchievementData = map[uint32]string{
     0xe41bec66: "09_quest_22", // 3827035238
     0xe4238d10: "fc_shard_foc_hatchett5", // 3827535120
     0xe430f2ac: "weaponquest_rimelash_05", // 3828413100
-    0xe432957b: "springtidebloom_quest1", // 3828520315
     0xe43863c2: "lore_unlock_11_mourningdale_title_10_01", // 3828900802
     0xe439095b: "fc_foodcondext2", // 3828943195
     0xe43ae0a6: "fc_runeglass_gem_malachite_heal", // 3829063846
@@ -9647,7 +9644,6 @@ var hashAchievementData = map[uint32]string{
     0xed419819: "lost_ruins_30150_charted", // 3980498969
     0xed4a58b4: "15_quest_08", // 3981072564
     0xed55b834: "weaponquest_azureravager_08", // 3981817908
-    0xed5a8e76: "springtidebloom_topic1", // 3982134902
     0xed5cc117: "legion_supply_train_20305_charted", // 3982278935
     0xed64fb0d: "fc_recipe_pattern_mossborne_heavy_head", // 3982818061
     0xed6ebae1: "fc_recipe_pattern_sprigganbane_medium_head", // 3983456993

@@ -38,6 +38,9 @@ func init() {
 	for _, value := range hashNpcData {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashObjectives {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashPerkBucketData {
 		DefaultHashRegistry.Add(value)
 	}
@@ -45,6 +48,9 @@ func init() {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashRewardModifierData {
+		DefaultHashRegistry.Add(value)
+	}
+	for _, value := range hashStatusEffectCategoryData {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashStatusEffectData {

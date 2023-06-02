@@ -251,7 +251,6 @@ var hashNpcData = map[uint32]string{
     0x5393d308: "1675_alchemist3", // 1402196744
     0x53bbb49c: "1038_quiggleyquorus", // 1404810396
     0x5436d3bc: "1102_magistrate", // 1412879292
-    0x552164e1: "1530_femalebeekeepercultist1", // 1428251873
     0x55218e01: "9806_stroudahia_00", // 1428262401
     0x5524605f: "0725_prospector", // 1428447327
     0x55d8588e: "99b_sun_p2", // 1440241806
@@ -273,7 +272,6 @@ var hashNpcData = map[uint32]string{
     0x5b86a0c1: "1605_akila_ennead", // 1535549633
     0x5bfb663b: "0405a_artificerpetrowski_01", // 1543202363
     0x5c26756c: "06_kathrijnjanssen03", // 1546024300
-    0x5c4e1306: "1532_femalebeekeepercultist2", // 1548620550
     0x5c55fbe9: "99a_anthurus", // 1549138921
     0x5cdd06b9: "06_lizihan", // 1557989049
     0x5ceaafe2: "01_graceww_00", // 1558884322
@@ -346,7 +344,6 @@ var hashNpcData = map[uint32]string{
     0x71c727ce: "1504_overseer", // 1908877262
     0x7236f1d0: "1632_titus", // 1916203472
     0x72c11cb1: "1104_overseer", // 1925258417
-    0x72d2822e: "1533_bloomherald", // 1926398510
     0x73f1da9c: "12_serpaynebennett_03", // 1945229980
     0x7472217e: "12_mb_grace_01", // 1953636734
     0x748b32aa: "1606_ambrosius_p2", // 1955279530
@@ -591,7 +588,6 @@ var hashNpcData = map[uint32]string{
     0xcd90678f: "0208_alchemist", // 3448792975
     0xce5fac5f: "0724_fisher", // 3462376543
     0xce94e5b9: "9809_covenantguard_m", // 3465864633
-    0xceb6f972: "1531_malebeekeepercultist2", // 3468097906
     0xcf011dcd: "13a_monsterhunter_03", // 3472956877
     0xcf27e8e9: "9821_syndicateguard_f", // 3475499241
     0xcfd93ac5: "0405a_artificerpetrowski", // 3487120069
@@ -609,7 +605,6 @@ var hashNpcData = map[uint32]string{
     0xd5ac7c1c: "12_donquixolay", // 3584850972
     0xd5e7a4ca: "06_nessaharrower01", // 3588728010
     0xd6139493: "9501_grace_s01_08", // 3591607443
-    0xd6238ec9: "1529_malebeekeepercultist1", // 3592654537
     0xd65cd6db: "0832_alvaro_final", // 3596408539
     0xd66c81f6: "06_yelenapajitnova02", // 3597435382
     0xd6c21168: "06_medea02", // 3603042664

@@ -127,6 +127,7 @@ var hashPropertiesData = map[uint32]string{
 	0x0781bd80: "m_bannertitlelabeltext",
 	0x078764a6: "colorcorrectionyellowcurve",
 	0x07958da9: "m_contributionpointsheet",
+	0x079d8c34: "m_despawnontimeend",
 	0x07b4db46: "max armor mitigation",
 	0x07b6f2f0: "credit health threshold percentage",
 	0x07c77a4b: "m_materialparamscurves",

@@ -14,8 +14,8 @@ func NewStore(dataTableDir string) (*Store, error) {
 	}
 
 	store := &Store{
-		store:     store.NewSimpleStore[*DataSheetFile](),
-		dataTypes: map[string]map[string]*DataSheetFile{},
+		store: store.NewSimpleStore[*DataSheetFile](),
+		types: map[string]map[string]*DataSheetFile{},
 	}
 
 	keys := map[string]bool{}
@@ -42,19 +42,19 @@ func NewStore(dataTableDir string) (*Store, error) {
 		keys[key] = true
 
 		store.store.Add(fmt.Sprintf("%s.%s", meta.Type, meta.UniqueId), file)
-		_, ok = store.dataTypes[meta.Type]
+		_, ok = store.types[meta.Type]
 		if !ok {
-			store.dataTypes[meta.Type] = map[string]*DataSheetFile{}
+			store.types[meta.Type] = map[string]*DataSheetFile{}
 		}
-		store.dataTypes[meta.Type][meta.UniqueId] = file
+		store.types[meta.Type][meta.UniqueId] = file
 	}
 
 	return store, nil
 }
 
 type Store struct {
-	store     *store.Store[*DataSheetFile]
-	dataTypes map[string]map[string]*DataSheetFile
+	store *store.Store[*DataSheetFile]
+	types map[string]map[string]*DataSheetFile
 }
 
 func (store *Store) GetDataSheet(key string) (*DataSheet, error) {
@@ -102,25 +102,25 @@ func (store *Store) GetDataSheetMeta(key string) (*Meta, error) {
 	return dsMeta, nil
 }
 
-func (store *Store) GetDataTypes() []string {
-	dataTypes := make([]string, len(store.dataTypes))
+func (store *Store) GetTypes() []string {
+	types := make([]string, len(store.types))
 
 	var i int
-	for dataType, _ := range store.dataTypes {
-		dataTypes[i] = dataType
+	for typ, _ := range store.types {
+		types[i] = typ
 		i++
 	}
 
-	sort.Strings(dataTypes)
+	sort.Strings(types)
 
-	return dataTypes
+	return types
 }
 
 func (store *Store) GetKeys() []string {
 	keys := []string{}
-	for dataType, files := range store.dataTypes {
+	for typ, files := range store.types {
 		for uniqueId, _ := range files {
-			key := fmt.Sprintf("%s.%s", dataType, uniqueId)
+			key := fmt.Sprintf("%s.%s", typ, uniqueId)
 			keys = append(keys, key)
 		}
 	}
@@ -130,8 +130,8 @@ func (store *Store) GetKeys() []string {
 	return keys
 }
 
-func (store *Store) GetDataSheetFiles(dataType string) []*DataSheetFile {
-	files, ok := store.dataTypes[dataType]
+func (store *Store) GetDataSheetFiles(typ string) []*DataSheetFile {
+	files, ok := store.types[typ]
 	if !ok {
 		return []*DataSheetFile{}
 	}
@@ -147,7 +147,7 @@ func (store *Store) GetDataSheetFiles(dataType string) []*DataSheetFile {
 	sort.Strings(uniqueIds)
 
 	for i, uniqueId := range uniqueIds {
-		dataSheetFiles[i] = store.dataTypes[dataType][uniqueId]
+		dataSheetFiles[i] = store.types[typ][uniqueId]
 	}
 
 	return dataSheetFiles
