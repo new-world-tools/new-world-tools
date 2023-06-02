@@ -137,11 +137,19 @@ func main() {
 
 	var id int64
 	for _, file := range files {
-		meta, err := datasheet.ParseMeta(file)
+		f, err := os.Open(file.GetPath())
+		if err != nil {
+			log.Fatalf("os.Open: %s", err)
+		}
+
+		meta, err := datasheet.ParseMeta(f)
 		if err != nil {
 			log.Fatalf("datasheet.ParseMeta err: %s", err)
 		}
-		key := fmt.Sprintf("%s.%s", meta.DataType, meta.UniqueId)
+
+		f.Close()
+
+		key := fmt.Sprintf("%s.%s", meta.Type, meta.UniqueId)
 		_, ok := keys[key]
 		if ok {
 			log.Printf("duplicate key: %q (%s)", key, file.GetPath())
@@ -175,7 +183,7 @@ func addTask(id int64, file *datasheet.DataSheetFile) {
 			}
 			outputPath = strings.TrimSuffix(filepath.Join(outputDir, relPath), ".datasheet")
 		} else {
-			outputPath = filepath.Join(outputDir, ds.DataType, ds.UniqueId)
+			outputPath = filepath.Join(outputDir, ds.Type, ds.UniqueId)
 		}
 
 		if format == formatCsv {
@@ -286,7 +294,7 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 	return nil
 }
 
-func normalizeCellValue(column datasheet.Column, str string) any {
+func normalizeCellValue(column datasheet.ColumnData, str string) any {
 	if column.ColumnType == datasheet.ColumnTypeString {
 		return resolveValue(str)
 	}

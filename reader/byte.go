@@ -1,6 +1,7 @@
 package reader
 
 import (
+	"bytes"
 	"encoding/binary"
 	"io"
 )
@@ -59,4 +60,48 @@ func ReadUint64(r io.Reader, byteOrder binary.ByteOrder) (uint64, error) {
 	}
 
 	return byteOrder.Uint64(b), nil
+}
+
+func ReadNullTerminatedString(r io.Reader) (string, error) {
+	buf := bytes.NewBuffer(nil)
+
+	for {
+		b := make([]byte, 1)
+		_, err := r.Read(b)
+		if err != nil {
+			return "", err
+		}
+
+		if b[0] == 0x00 {
+			break
+		}
+
+		_, err = buf.Write(b)
+		if err != nil {
+			return "", err
+		}
+	}
+
+	return buf.String(), nil
+}
+
+func ReadNullTerminatedStringByOffset(r io.ReadSeeker, offset int64) (string, error) {
+	pos, err := r.Seek(0, io.SeekCurrent)
+	if err != nil {
+		return "", err
+	}
+
+	defer r.Seek(pos, io.SeekStart)
+
+	_, err = r.Seek(offset, io.SeekStart)
+	if err != nil {
+		return "", err
+	}
+
+	str, err := ReadNullTerminatedString(r)
+	if err != nil {
+		return "", err
+	}
+
+	return str, nil
 }

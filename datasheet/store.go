@@ -3,6 +3,7 @@ package datasheet
 import (
 	"fmt"
 	"github.com/new-world-tools/new-world-tools/store"
+	"os"
 	"sort"
 )
 
@@ -20,12 +21,19 @@ func NewStore(dataTableDir string) (*Store, error) {
 	keys := map[string]bool{}
 
 	for _, file := range files {
-		meta, err := ParseMeta(file)
+		f, err := os.Open(file.GetPath())
 		if err != nil {
 			return nil, err
 		}
 
-		key := fmt.Sprintf("%s.%s", meta.DataType, meta.UniqueId)
+		meta, err := ParseMeta(f)
+		if err != nil {
+			return nil, err
+		}
+
+		f.Close()
+
+		key := fmt.Sprintf("%s.%s", meta.Type, meta.UniqueId)
 		_, ok := keys[key]
 		if ok {
 			continue
@@ -33,12 +41,12 @@ func NewStore(dataTableDir string) (*Store, error) {
 
 		keys[key] = true
 
-		store.store.Add(fmt.Sprintf("%s.%s", meta.DataType, meta.UniqueId), file)
-		_, ok = store.dataTypes[meta.DataType]
+		store.store.Add(fmt.Sprintf("%s.%s", meta.Type, meta.UniqueId), file)
+		_, ok = store.dataTypes[meta.Type]
 		if !ok {
-			store.dataTypes[meta.DataType] = map[string]*DataSheetFile{}
+			store.dataTypes[meta.Type] = map[string]*DataSheetFile{}
 		}
-		store.dataTypes[meta.DataType][meta.UniqueId] = file
+		store.dataTypes[meta.Type][meta.UniqueId] = file
 	}
 
 	return store, nil
@@ -80,7 +88,13 @@ func (store *Store) GetDataSheetMeta(key string) (*Meta, error) {
 		return nil, fmt.Errorf("%q is not exists", key)
 	}
 
-	dsMeta, err := ParseMeta(store.store.Get(key))
+	f, err := os.Open(store.store.Get(key).GetPath())
+	if err != nil {
+		return nil, err
+	}
+	defer f.Close()
+
+	dsMeta, err := ParseMeta(f)
 	if err != nil {
 		return nil, fmt.Errorf("datasheet.ParseMeta: %s", err)
 	}
