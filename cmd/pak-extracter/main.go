@@ -32,7 +32,6 @@ const (
 
 var (
 	pool           *workerpool.Pool
-	filters        map[string]bool
 	inputPath      string
 	outputDir      string
 	hashSumFile    string
@@ -60,12 +59,8 @@ func main() {
 		}
 	}
 
-	// remove in the future
-	assetsDirPtr := flag.String("assets", "", "directory path")
 	inputPathPtr := flag.String("input", "", "directory or .pak path")
 	outputDirPtr := flag.String("output", "./extract", "directory path")
-	// remove in the future
-	filterPtr := flag.String("filter", "", "comma separated file extensions")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
 	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "decompress AZCS (Amazon Object Stream)")
@@ -91,12 +86,7 @@ func main() {
 	}
 	includePriority = *includePriorityPtr
 
-	assetsDir := *assetsDirPtr
 	inputPath = *inputPathPtr
-
-	if inputPath == "" && assetsDir != "" {
-		inputPath = assetsDir
-	}
 
 	inputPath, err = filepath.Abs(filepath.Clean(inputPath))
 	if err != nil {
@@ -113,12 +103,6 @@ func main() {
 	outputDir, err = filepath.Abs(filepath.Clean(*outputDirPtr))
 	if err != nil {
 		log.Fatalf("filepath.Abs: %s", err)
-	}
-
-	filters = map[string]bool{}
-	filterParts := strings.Split(*filterPtr, ",")
-	for _, ext := range filterParts {
-		filters[fmt.Sprintf(".%s", strings.TrimPrefix(ext, "."))] = true
 	}
 
 	threads := *threadsPtr
@@ -234,10 +218,6 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			basePath = filepath.Dir(inputPath)
 		}
 
-		ext := filepath.Ext(file.Name)
-		if filters[ext] {
-			return nil
-		}
 		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), file.Name)))
 		err = os.MkdirAll(filepath.Dir(fpath), 0755)
 		if err != nil {

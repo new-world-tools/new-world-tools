@@ -21,8 +21,6 @@ or
     -output ".\extract"
 ```
 
-Note: The -assets parameter is left for compatibility.
-
 Optional:
 ```powershell
     -threads 3 `
