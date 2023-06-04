@@ -152,9 +152,9 @@ func main() {
 				break
 			}
 
-			taskId := err.(workerpool.TaskError).Id
 			err = errors.Unwrap(err)
-			log.Printf("task #%d err: %s", taskId, err)
+
+			log.Printf("Error: %s", err)
 		}
 	}()
 
@@ -209,6 +209,24 @@ func main() {
 var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
 var luacSig = []byte{0x04, 0x00, 0x1b, 0x4c, 0x75, 0x61}
 
+type TaskError struct {
+	Pak  string
+	Path string
+	Err  error
+}
+
+func (err *TaskError) Error() string {
+	return fmt.Sprintf("[%s:/%s] %s", err.Pak, err.Path, err.Err)
+}
+
+func newTaskError(pak string, path string, err error) *TaskError {
+	return &TaskError{
+		Pak:  pak,
+		Path: path,
+		Err:  err,
+	}
+}
+
 func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
 		var err error
@@ -221,18 +239,18 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), file.Name)))
 		err = os.MkdirAll(filepath.Dir(fpath), 0755)
 		if err != nil {
-			return err
+			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
 
 		dest, err := os.Create(fpath)
 		if err != nil {
-			return err
+			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
 		defer dest.Close()
 
 		decompressReader, err := file.Decompress()
 		if err != nil {
-			return err
+			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
 		defer decompressReader.Close()
 
@@ -242,7 +260,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 		sigData, err := bufReader.Peek(8)
 		if err != nil && err != io.EOF {
-			return err
+			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
 
 		r = bufReader
@@ -251,7 +269,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			if bytes.Equal(azcsSig, sigData[:len(azcsSig)]) {
 				r, err = azcs.NewReader(r)
 				if err != nil {
-					return err
+					return newTaskError(pakFile.GetPath(), file.Name, err)
 				}
 			}
 		}
@@ -260,7 +278,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			if bytes.Equal(luacSig, sigData[:len(luacSig)]) {
 				err = reader.SkipBytes(r, 2)
 				if err != nil {
-					return err
+					return newTaskError(pakFile.GetPath(), file.Name, err)
 				}
 			}
 		}
@@ -268,7 +286,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		if hashSumFile == "" {
 			_, err = io.Copy(dest, r)
 			if err != nil {
-				return err
+				return newTaskError(pakFile.GetPath(), file.Name, err)
 			}
 		} else {
 			hasher := sha1.New()
@@ -276,7 +294,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 			_, err = io.Copy(dest, reader)
 			if err != nil {
-				return err
+				return newTaskError(pakFile.GetPath(), file.Name, err)
 			}
 
 			hashRegistry.Add(file.Name, hasher.Sum(nil))
