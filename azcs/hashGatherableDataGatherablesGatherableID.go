@@ -69,6 +69,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x0a83cc9a: "06a_msq_nessa_trapped", // 176409754
     0x0a87653f: "strawberry", // 176645439
     0x0ad17df0: "msq_0052_bombcargo4", // 181501424
+    0x0b2b4c8f: "summermedley_musicalhotspot_maudlin", // 187387023
     0x0b3b3ce6: "dyeplantyellow", // 188431590
     0x0b65cca8: "0604_corruptednoduled", // 191220904
     0x0be34bdf: "99b_msq_05_yonasretreatprox", // 199445471
@@ -104,6 +105,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x11017351: "04a_side02_02_encounterstart_01", // 285307729
     0x113ec78e: "pigmentplanttan", // 289326990
     0x115cbfa6: "99b_msq_06_mementofindb", // 291291046
+    0x116a0c32: "summermedley_stage_t1", // 292162610
     0x116ab512: "soulboid", // 292205842
     0x117960ce: "treeironwoodmedium", // 293167310
     0x119e054c: "mb_msq2_collectglass_glass", // 295568716
@@ -120,6 +122,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x125e05cc: "msq_0008_ancientplaqueb", // 308151756
     0x12b1238a: "deathstone", // 313598858
     0x12dd0114: "04a_side02_03_proximity_investigate_01", // 316473620
+    0x1306697e: "95a_s02_puzzle_sphere", // 319187326
     0x1313bec0: "fishinghotspot_broad", // 320061120
     0x132bd70f: "flamecore_forge", // 321640207
     0x13326d36: "1225_constructpoint", // 322071862
@@ -152,6 +155,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x17e9691b: "06a_z_02_wyrdwood", // 401172763
     0x1803bd9d: "dungeonrestlessshores_sprigganshrine", // 402898333
     0x182db438: "1126_ancientdevice_b", // 405648440
+    0x1868a16f: "hotspot_summermedley_1", // 409510255
     0x18b8bc2f: "oreveinlarge", // 414759983
     0x18bef228: "mb_msq2_banner_gawain", // 415167016
     0x18deb6b4: "95_s01_06_cageunlock", // 417248948
@@ -184,6 +188,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x1fac4a5c: "bobcat", // 531384924
     0x1fcf38dd: "treehardwoodhugedowned", // 533674205
     0x1fd20ab4: "0804_altarofthedeparted", // 533858996
+    0x2008181b: "13_summer_drumt1", // 537401371
     0x200f021f: "lootbox", // 537854495
     0x2029ef6a: "99a_msq_05_popclot", // 539619178
     0x204044b1: "hempsmallt4", // 541082801
@@ -260,6 +265,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x2d228462: "farmcabbage", // 757236834
     0x2d23a785: "hotspot_broad_25", // 757311365
     0x2d2a2bb8: "0513_lighthouselure", // 757738424
+    0x2db77113: "13_summer_mandolint1", // 766996755
     0x2dc12795: "1624_0303_ancientselectorb", // 767633301
     0x2e115062: "hotspot_secret_66", // 772886626
     0x2e2278ec: "hotspot_broad_2", // 774011116
@@ -287,6 +293,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x3154d7e5: "99c_msq2_corpsetorcha", // 827643877
     0x319401ef: "dungeonshattermtn00_statue03", // 831783407
     0x31bbe89a: "outpostrush_treesmall", // 834398362
+    0x31d53b80: "13_summer_carpenter2", // 836057984
     0x322d6bf4: "fm_1619_portal_03", // 841837556
     0x3331015a: "1204_corruptednoduleb", // 858849626
     0x339dbddf: "dungeonrestlessshores_sprigganlock_key2", // 865975775
@@ -312,6 +319,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x371a476c: "explorevista_eastcutlass01", // 924469100
     0x377c90f2: "gimmick_fire_dropper_poi", // 930910450
     0x37875fd8: "oreveinstarmetalsmall", // 931618776
+    0x378da5af: "13_summer_apiary", // 932029871
     0x3792e039: "0300_epicweapons_malevolence", // 932372537
     0x37b8b166: "0905_bloodtracking_c", // 934850918
     0x37bae88b: "9932_0104_romacnotebook", // 934996107
@@ -333,6 +341,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x3b2877bf: "12a_whisper_04", // 992507839
     0x3b656386: "msq_0036_thorpe_proximity", // 996500358
     0x3b974f2f: "98_covenant_whisper_01", // 999771951
+    0x3becf485: "test_generic_interact", // 1005384837
     0x3c10bf44: "1225_startouchedwater", // 1007730500
     0x3c152018: "broccoli", // 1008017432
     0x3c15a9b4: "1127_malignnodea", // 1008052660
@@ -344,6 +353,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x3cd1ab68: "0804_graveb", // 1020373864
     0x3cd30996: "1656_0201_supplies_02", // 1020463510
     0x3cea604e: "1104_medallionchest", // 1021993038
+    0x3d05262c: "summermedley_dancefloorboogie", // 1023747628
     0x3d26dd7d: "16bs_ancienttowerdoor", // 1025957245
     0x3d780cf0: "1625_0601_azothreflectorb", // 1031277808
     0x3d82b304: "99b_msq_09_keyringb", // 1031975684
@@ -356,6 +366,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x3f96375f: "99c_msq2_ritualobject3", // 1066809183
     0x3fbcc922: "darknessminorhivedt2", // 1069336866
     0x3fcb53b6: "99b_msq_08_pureazothwater", // 1070289846
+    0x3fdc7319: "13_summer_flowerboxc", // 1071411993
     0x3fed592d: "1130_cursedaxe", // 1072519469
     0x400b8576: "explorevista_westeverfall01", // 1074496886
     0x400d51b5: "hotspot_secret_77", // 1074614709
@@ -382,6 +393,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x4393e092: "rootlarge", // 1133764754
     0x439c6434: "hempmediumt4", // 1134322740
     0x43e2ed46: "1655_0301_launcher_01", // 1138945350
+    0x43e4a4b5: "gimmick_azothchallenge_start", // 1139057845
     0x43e91959: "0505_towermural", // 1139349849
     0x4404c8ec: "95_s01_02_cliffedge", // 1141164268
     0x443631cc: "1204_corruptednodulec", // 1144402380
@@ -415,6 +427,8 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x48788ae3: "cyclic_06a_msq_puzzle1_stone1", // 1215859427
     0x489107c9: "99c_msq2_ritualobject2", // 1217464265
     0x48bbf9b4: "darknessminorhivedt3", // 1220278708
+    0x48db438f: "13_summer_flowerboxb", // 1222329231
+    0x48ea7c4d: "door_enter", // 1223326797
     0x48f77507: "1624_0302_ritualouroboros", // 1224176903
     0x49a8daac: "hotspot_broad_82", // 1235802796
     0x49f79cc3: "farmhemp", // 1240964291
@@ -549,6 +563,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x5e7ba4ed: "hotspot_secret_63", // 1585161453
     0x5e9cbe5f: "treeironwoodlarge", // 1587330655
     0x5ea1e933: "fm_1615_schematic", // 1587669299
+    0x5ea747d5: "summermedley_bonfireblast", // 1588021205
     0x5ec6e08c: "16_side_13_wormspined", // 1590091916
     0x5f156392: "99b_msq_10_igc_caerduncurse", // 1595237266
     0x5f73b1eb: "lifeboid", // 1601417707
@@ -585,6 +600,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x64964aae: "platinumlarge_dungeon", // 1687571118
     0x64a80b03: "boulderlodestonemedium", // 1688734467
     0x64eaa495: "1655_0201_table_01", // 1693099157
+    0x64f55273: "13_summer_urbasst1", // 1693799027
     0x651908aa: "farmturkey", // 1696139434
     0x6533e96e: "1124_vistapoint2", // 1697900910
     0x6548135d: "lootmediumt3", // 1699222365
@@ -614,6 +630,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x69fbadfd: "1602_0101_tablet", // 1778101757
     0x6a198af0: "morningglorymedium", // 1780058864
     0x6a511699: "rabbit", // 1783699097
+    0x6ab05756: "95a_s02_geyser_puzzle_boulderpile", // 1789941590
     0x6ab0abb7: "msq_salvagepile_a", // 1789963191
     0x6ac74bf6: "0507_ancientrubble", // 1791446006
     0x6bc972c1: "cactus_bush_pricklypear_small", // 1808364225
@@ -657,10 +674,12 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x72b27df2: "treeironwoodsmall", // 1924300274
     0x72f62c77: "hotspot_rare_46", // 1928735863
     0x733ff3c3: "9801_pktraceabsorbera_02", // 1933571011
+    0x73a4477a: "13_summer_ovendirty_01", // 1940146042
     0x73b32d6b: "dyeplantred", // 1941122411
     0x73d013a9: "1625_0701_imhotepc", // 1943016361
     0x73d81ab6: "npchostage_instanced", // 1943542454
     0x73ed2073: "0231_wolcottseasele", // 1944920179
+    0x740e679c: "summermedley_musicalhotspot_shredlyfairhard", // 1947101084
     0x745237da: "9801_pktraceabsorbera_06", // 1951545306
     0x7480e46a: "0231_wolcottseasela", // 1954604138
     0x7483f9cd: "farmgrass", // 1954806221
@@ -732,6 +751,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x7f3b7653: "99a_msq_09_lastcache", // 2134603347
     0x7f4332c0: "oreveinorichalcumlarge_dungeon", // 2135110336
     0x7f5759c0: "1624_0401_orcuspoolb", // 2136431040
+    0x7fa48863: "summermedley_maudlindust_particle", // 2141489251
     0x7ff9a330: "pvp_0001_deaddropgiveitem", // 2147066672
     0x8007655a: "msq_treasure_b", // 2147968346
     0x804d2a7e: "1650_0301_tomb", // 2152540798
@@ -775,6 +795,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x880822eb: "04a_side02_02_encounterstart_02", // 2282234603
     0x88483166: "mb_msq2_inspectstatue_tablet", // 2286432614
     0x8855ee1c: "99b_msq_06_mementofinda", // 2287332892
+    0x88635d88: "summermedley_stage_t2", // 2288213384
     0x88afc8f3: "crystalsmall", // 2293221619
     0x88c948ad: "farmcranberry", // 2294892717
     0x8913ffc0: "98_marauders_03_explosiveplacementb", // 2299789248
@@ -810,6 +831,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x8dd62cf6: "95_s01_01_corruptedcampsupplies6", // 2379623670
     0x8e13cf6d: "95_s01_04_azothsap", // 2383662957
     0x8e14bbb8: "msq_0026_stormwallbattery", // 2383723448
+    0x8e4d7819: "95a_s02_geyser_puzzle_boulder_interactfake", // 2387441689
     0x8e74b47e: "1625_0201_imhotepcagenoduleb2", // 2390013054
     0x8ea3ab36: "dungeonedengrove_imbuedshrine", // 2393090870
     0x8edd2984: "1679_0101_frostcliffberryer", // 2396858756
@@ -894,6 +916,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x9cf84d5b: "hotspot_rare_44", // 2633518427
     0x9d381190: "blueberrybushlarge", // 2637697424
     0x9d674122: "0203_mosspuffball", // 2640789794
+    0x9daa2656: "13_summer_ovendirty_03", // 2645173846
     0x9dcc2e99: "explorevista_northwindsward01", // 2647404185
     0x9dde7285: "1625_0701_imhotepa", // 2648601221
     0x9de3415f: "0231_wolcottseaselg", // 2648916319
@@ -919,6 +942,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xa1d85c81: "darknessminorhivedt5", // 2715311233
     0xa2754ca2: "elk", // 2725596322
     0xa2b388af: "04a_side03_02_0101_ancientscroll", // 2729674927
+    0xa2d1ba78: "13_summer_azflutet1", // 2731653752
     0xa2da4aa3: "melon", // 2732214947
     0xa2f67e39: "pigmentplantlightpurple", // 2734063161
     0xa30b2aa5: "16bs_ancientglyphlock_chest", // 2735418021
@@ -950,6 +974,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xa6a07cc5: "farmsquirtberry", // 2795535557
     0xa6a0a58f: "99a_msq_10_silverdeposit", // 2795545999
     0xa6b59898: "darknessminorhivedt1", // 2796918936
+    0xa6d947b9: "13_summer_guitart1", // 2799257529
     0xa6e2827e: "treehardwoodsmall", // 2799862398
     0xa70e1939: "1102_stoneorb", // 2802719033
     0xa779e01e: "gatecrater1", // 2809782302
@@ -957,6 +982,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xa7b57cb2: "hotspot_secret_79", // 2813689010
     0xa85d865f: "99c_msq2_corpsetorchb", // 2824701535
     0xa8b5ebed: "pigmentplantwhite", // 2830494701
+    0xa8dc6a3a: "13_summer_carpenter1", // 2833017402
     0xa940aa6f: "whisper_test_03", // 2839587439
     0xa9439167: "0802_earthshrine", // 2839777639
     0xa950c5d6: "gatemaltemple3", // 2840643030
@@ -1114,11 +1140,13 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xbf44ac4b: "99a_msq_10_ezraanvil", // 3208948811
     0xbf47c439: "dungeon_brimstonesands00_translateglyph_f", // 3209151545
     0xbf671632: "msq_0022_amrinemachine", // 3211204146
+    0xbff3b649: "95a_s02_geyser_puzzle_boulder_interact", // 3220420169
     0xc005b56f: "amrinedungeon_spectralshrine", // 3221599599
     0xc00c5fee: "goldsmall_dungeon", // 3222036462
     0xc01f314e: "hotspot_secret_64", // 3223269710
     0xc04e8cae: "99b_msq_01_walshamgravec", // 3226373294
     0xc0706e1f: "0607_clothtrailb", // 3228593695
+    0xc0992459: "gimmick_breakingwallscannon_vignette", // 3231261785
     0xc0a2752f: "16_side_13_wormspinec", // 3231872303
     0xc0f5e1b2: "dungeon_ancientconsole", // 3237339570
     0xc12dd08d: "04a_side04_02_proximity_investigationspot_02", // 3241005197
@@ -1145,6 +1173,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xc4c14ff6: "95_s01_03_interviews_se", // 3301003254
     0xc5274e7a: "hardwoodstumplarge", // 3307687546
     0xc5bfc68a: "pigmentplantlightblue", // 3317679754
+    0xc5d1d6aa: "95a_eggchamber_door", // 3318863530
     0xc61f891c: "wintertreemedium", // 3323955484
     0xc627ac53: "fm_1624_banners", // 3324488787
     0xc63404e9: "fishinghotspot_rare", // 3325297897
@@ -1174,6 +1203,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xc981e157: "1225_truffle", // 3380732247
     0xc9a97d65: "hotspot_secret_68", // 3383328101
     0xc9e958c9: "msq_0008_clearingvines_b", // 3387513033
+    0xca42e96b: "95a_eggchamber_door_exit", // 3393382763
     0xca5e9418: "farmwheat", // 3395195928
     0xca7b4370: "sliceswap_noninstanced", // 3397075824
     0xca879c3a: "oreveinstarmetalmedium", // 3397884986
@@ -1214,6 +1244,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xd123b3d3: "treedamneddowned", // 3508777939
     0xd171db59: "cyclic_06a_msq_puzzle1_stone2", // 3513899865
     0xd181c57f: "dungeon_reekwater_monster_closet", // 3514942847
+    0xd1d21235: "13_summer_flowerboxa", // 3520205365
     0xd1d2b250: "fm_1606_altar", // 3520246352
     0xd1e1c0cf: "0601_0101_weapon_03_bow", // 3521233103
     0xd21bc898: "1127_malignnodec", // 3525036184
@@ -1254,6 +1285,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xd8608db9: "dungeon_cutlasskeys00_gunpowdercask", // 3630206393
     0xd904000f: "hotspot_secret_74", // 3640918031
     0xd92cb4d3: "dungeon_corruption_fragment", // 3643585747
+    0xd9528ce2: "dynasty_gong_fast", // 3646065890
     0xd99079f3: "0504_ancientbookcase", // 3650124275
     0xd9b6d04a: "0905_bloodtracking_a", // 3652636746
     0xd9d6806f: "98_marauders_03_captiveb", // 3654713455
@@ -1328,6 +1360,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xe3b2d8c5: "msq_0052_bombcargo2", // 3820148933
     0xe40769cb: "0521_wyrdwoodseedpod", // 3825691083
     0xe40de2bd: "darknessminorfissuredt3", // 3826115261
+    0xe42da604: "or_corrupted_portal_encounter_gatherable", // 3828196868
     0xe48140f1: "msq_gracesflag", // 3833676017
     0xe4df1cdc: "msq_0052_bombcargo6", // 3839827164
     0xe554ef9d: "boulderlodestonelarge", // 3847548829
@@ -1366,6 +1399,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xe9dab699: "1225_chasoncampchest", // 3923424921
     0xea36a279: "9801_pktraceabsorbera_01", // 3929449081
     0xea719bc0: "bouldermedium", // 3933313984
+    0xeaad16c0: "13_summer_ovendirty_02", // 3937212096
     0xeab9ebc7: "msq_0012_overseaunderstone_interact", // 3938053063
     0xeaded697: "16_adianaakhet_se", // 3940472471
     0xeae471c9: "0231_wolcottseaself", // 3940839881
@@ -1428,6 +1462,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xf5faad38: "season_1_trial_flamekeeper_kindling", // 4126846264
     0xf60b9585: "99b_msq_10_sealcurse", // 4127954309
     0xf6428cfb: "99b_msq_04_azothdetectorb", // 4131556603
+    0xf6576b29: "summermedley_musicalhotspot_shredlyfairmedium", // 4132924201
     0xf6585e4b: "99c_msq2_glowingmushroom", // 4132986443
     0xf70055cc: "msq_treasure_c", // 4143994316
     0xf7761fb7: "01_whisper_beach_02", // 4151713719
@@ -1456,6 +1491,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xfc3ab8d4: "1124_vistapoint1", // 4231706836
     0xfc5f5cc7: "corn", // 4234108103
     0xfc6179de: "medea_crystal", // 4234246622
+    0xfc79e2d9: "summermedley_musicalhotspot_shredlyfaireasy", // 4235846361
     0xfca7c88f: "lifestone", // 4238854287
     0xfcd36038: "04a_side02_03_proximity_investigate_03", // 4241711160
     0xfd510c6d: "turkeyvulture", // 4249947245
@@ -1474,6 +1510,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xfec20c9c: "06a_msq_05_foodcart", // 4274130076
     0xff15ab8c: "0702_blightnodule", // 4279610252
     0xff4a8d2c: "bushlargeremains", // 4283075884
+    0xff646d1e: "summermedley_stage_t3", // 4284771614
     0xff91eb3f: "04a_side05_01_playguitar", // 4287753023
     0xffed1339: "0601_0101_weapon_01_hatchet", // 4293727033
     0xfff3c1e4: "azothspire", // 4294164964

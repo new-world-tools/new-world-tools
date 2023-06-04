@@ -65,6 +65,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x2ef689c1: "claimt1_25m", // 787909057
     0x2f89570d: "seedwheatt1", // 797529869
     0x3085daac: "or_outpost_gate_t2", // 814078636
+    0x337f10ee: "campskin_bloodsand01_a", // 863965422
     0x349686bc: "alchemyt2", // 882280124
     0x35d7d59f: "claimt1_25m_t2", // 903337375
     0x36189ac5: "tradingpostt2", // 907582149
@@ -147,6 +148,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x7bf1fbb3: "turretrepeatert2", // 2079456179
     0x7c5e0ed1: "or_armorsmith_t3", // 2086538961
     0x7e56fff4: "claimt1_50m_t5", // 2119630836
+    0x7ede2cbd: "campskin_frontierwaste01_a", // 2128489661
     0x7faa7891: "or_armory_t3", // 2141878417
     0x7fd2f769: "smeltingt4", // 2144532329
     0x7ff000f8: "rampartcorneroutt2", // 2146435320

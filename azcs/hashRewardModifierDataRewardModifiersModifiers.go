@@ -6,6 +6,8 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x1401363b: "solo+", // 335623739
     0x144d21c7: "quest-", // 340599239
     0x14d9bba1: "elite+", // 349813665
+    0x198fe96f: "raid10miniboss", // 428861807
+    0x1d5adc54: "raid20boss", // 492493908
     0x1e871cd9: "dungeon+_nocurrency", // 512171225
     0x1f99399e: "eliteminiboss", // 530135454
     0x26e52ecf: "war_t2", // 652553935
@@ -22,9 +24,11 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x4317f817: "quest", // 1125644311
     0x4704f69a: "outpostrush_t3", // 1191507610
     0x4f8a6557: "missionpvp+", // 1334469975
+    0x514049a6: "raid20+", // 1363167654
     0x51410db8: "mission+", // 1363217848
     0x51e21e59: "war_t3", // 1373773401
     0x51ed51bd: "arena3v3_win_3_round", // 1374507453
+    0x5306f7ff: "raid10+", // 1392965631
     0x5a0a89bc: "darknessmajor", // 1510640060
     0x5afd75ae: "missionpvp", // 1526560174
     0x5b954ee4: "solo_starterbeach", // 1536511716
@@ -38,14 +42,19 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x8e8e7f96: "dungeon+", // 2391703446
     0x9067f23c: "mission", // 2422731324
     0x90c6960a: "dungeon_nocurrency", // 2428933642
+    0x9123ec3c: "raid20", // 2435050556
     0x98197a65: "player", // 2551806565
     0x98b7098f: "darknessminor", // 2562132367
+    0x9bceaefa: "raid10boss", // 2614013690
     0xa0eaecfb: "dungeonminiboss", // 2699750651
     0xa6e9c062: "missionpvp-", // 2800336994
     0xa90a97b6: "outpostrush_t1", // 2836043702
     0xb14b7709: "invasion_t3", // 2974512905
     0xb74c624b: "eliteboss", // 3075236427
     0xb822a88d: "mission-", // 3089279117
+    0xb823ec93: "raid20-", // 3089362067
+    0xba0ebfff: "raid10", // 3121528831
+    0xba6552ca: "raid10-", // 3127202506
     0xbfec7f75: "war_t1", // 3219947381
     0xc64c479f: "invasion_t2", // 3326887839
     0xc6724094: "arena3v3_win_1_round", // 3329376404
@@ -62,6 +71,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0xe4de4845: "critter", // 3839772741
     0xecb15fa7: "darkness", // 3971047335
     0xf1bab939: "dungeon-_nocurrency", // 4055546169
+    0xf2b8526c: "raid20miniboss", // 4072165996
     0xf2bed121: "named_solo", // 4072591649
     0xf2e793ef: "arena3v3_loss", // 4075262959
     0xf7353d56: "outpostrushelite", // 4147461462

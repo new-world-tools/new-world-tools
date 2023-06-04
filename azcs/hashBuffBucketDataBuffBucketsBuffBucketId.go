@@ -380,6 +380,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x8115519d: "mutation_eternal_dungeon_tier2", // 2165658013
     0x818b8d52: "mutation_hellfire_dungeonplus_tier2_probs", // 2173406546
     0x819a8894: "mutation_overgrown_dungeonminus_tier2", // 2174388372
+    0x8274a7a6: "aisiegebreakerbuff", // 2188683174
     0x82bbb9dd: "dynastysummonernamed00buffs_probs", // 2193340893
     0x82c0e984: "desertcoyotenamed03buffs_probs", // 2193680772
     0x82c1a169: "eliteanubianguardianpanthernamed00buffs_probs", // 2193727849
@@ -474,6 +475,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xa1a48b03: "champcombofiredestructbuff_probs", // 2711915267
     0xa1f42b52: "mutation_hellfire_dungeonminus_tier4_probs", // 2717133650
     0xa2010a6b: "eliteundeadofficernamed01buffs_probs", // 2717977195
+    0xa21c7fb7: "aisiegebreakerbuff_probs", // 2719776695
     0xa2853948: "ainoreactionsbuff_probs", // 2726639944
     0xa2857d2a: "mutation_overgrown_dungeonplus_tier2_probs", // 2726657322
     0xa296907e: "mutation_hellfire_dungeonplus_tier4_promo_probs", // 2727776382

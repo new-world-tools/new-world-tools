@@ -17,6 +17,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x153e9a58: "anointed", // 356424280
     0x16a1723b: "nondispellabledebuff", // 379679291
     0x16f4f95b: "root", // 385153371
+    0x1a237df1: "housingdmgbeasts", // 438533617
     0x1fcf5da8: "rend", // 533683624
     0x21f8847e: "resistboost", // 569934974
     0x253efcc2: "throwingaxe", // 624884930
@@ -47,10 +48,12 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x55521d04: "burn", // 1431444740
     0x56642768: "boost", // 1449404264
     0x56ff898d: "mutatorhearty", // 1459587469
+    0x5838412a: "exhaustedstate", // 1480081706
     0x5f0b8b89: "slow&stun", // 1594592137
     0x61e3e397: "tradeskill", // 1642324887
     0x62c04ae9: "focus", // 1656769257
     0x64d9d4e5: "huntervision", // 1691997413
+    0x66a32e6b: "carryboulder", // 1721970283
     0x6795d70d: "fishingbuff", // 1737873165
     0x6910ce50: "mutatorempower", // 1762709072
     0x6a23fc9c: "stoneform", // 1780743324

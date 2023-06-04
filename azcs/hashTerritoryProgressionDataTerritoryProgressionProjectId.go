@@ -8,6 +8,7 @@ var hashTerritoryProgressionDataTerritoryProgressionProjectId = map[uint32]strin
     0x1430ac42: "haleandheartyprojectid", // 338734146
     0x19e85cb6: "huntersbountyprojectid", // 434658486
     0x1cef7b9e: "ballistaupgradeprojectid", // 485456798
+    0x1d267a79: "eventsummerprojectid2", // 489060985
     0x2591c412: "communityprojectid", // 630309906
     0x2cdd06a0: "firebarrelupgradeprojectid", // 752682656
     0x2f229202: "weavingprojectid", // 790794754
@@ -26,6 +27,7 @@ var hashTerritoryProgressionDataTerritoryProgressionProjectId = map[uint32]strin
     0x62f6c182: "arcanewisdomprojectid", // 1660338562
     0x676772a4: "alchemistprojectid", // 1734832804
     0x695c4dc2: "blacksmithtemperamentprojectid", // 1767656898
+    0x6a214aef: "eventsummerprojectid3", // 1780566767
     0x723c0b77: "tanningprojectid2", // 1916537719
     0x730704d3: "chefspassionprojectid", // 1929839827
     0x7fa4abe1: "engineeringprojectid2", // 2141498337
@@ -33,6 +35,7 @@ var hashTerritoryProgressionDataTerritoryProgressionProjectId = map[uint32]strin
     0x845be178: "outfittingprojectid", // 2220614008
     0x96ae666c: "carpentryprojectid2", // 2528011884
     0x9af9df4b: "stalwartprojectid", // 2600066891
+    0x9e006d04: "eventsummerprojectid", // 2650828036
     0xa0ba75e5: "blacksmithprojectid2", // 2696574437
     0xa17e6461: "farmersharvestprojectid", // 2709415009
     0xa4ef8675: "forthardpointsprojectid", // 2767160949

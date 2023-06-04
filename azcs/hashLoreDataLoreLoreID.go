@@ -60,6 +60,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x0b30cd42: "03_greatcleave_title_05_02", // 187747650
     0x0b5f6655: "expedition_chapter_01", // 190801493
     0x0b7ad028: "eastburn_chapter_01", // 192598056
+    0x0bd649dc: "95a_bloodofthesands_chapter_01", // 198592988
     0x0c14d4a8: "15_restlessshore_title_02_04", // 202691752
     0x0c538b2e: "tales_of_brimstone_sands_title_03_04", // 206801710
     0x0c9ece20: "talesofexpeditions_title_06_01", // 211734048
@@ -323,6 +324,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x3f95eca6: "talesofexpeditions_chapter_06", // 1066790054
     0x3f9e5711: "talesofexpeditions_title_04_02", // 1067341585
     0x3ff6caec: "tales_of_brimstone_sands_title_28_03", // 1073138412
+    0x40691ba4: "topic_95a_bloodofthesands", // 1080630180
     0x40b4193e: "00_aeternum_chapter_12", // 1085544766
     0x41242da0: "sealedcommission", // 1092890016
     0x413b3d22: "00_aeternum_title_07_10", // 1094401314
@@ -451,6 +453,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x5852991e: "07_shatteredmountain_title_02_06", // 1481808158
     0x5878c5d5: "10_cutlasskeys_title_03_01", // 1484309973
     0x59157ffb: "15_restlessshore_title_04_01", // 1494581243
+    0x59324beb: "95a_bloodofthesands_title_04_01", // 1496468459
     0x59465e10: "tales_of_brimstone_sands_title_30_04", // 1497783824
     0x5952207d: "tales_of_brimstone_sands_title_05_01", // 1498554493
     0x59a0227f: "kubikirisburden_title_01_04", // 1503666815
@@ -571,6 +574,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x6ea728db: "combat_afflictions", // 1856448731
     0x6eab3469: "03_greatcleave_chapter_09", // 1856713833
     0x6ecb8fc9: "15_restlessshore_title_01_01", // 1858834377
+    0x6eecbbd9: "95a_bloodofthesands_title_01_01", // 1861008345
     0x6ef539ea: "09_firstlight_chapter_09", // 1861564906
     0x6f2d708e: "13_weaversfen_chapter_08", // 1865248910
     0x6f61c73b: "bookofshadows_title_01_06", // 1868678971
@@ -643,8 +647,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x7b13e43e: "15_restlessshore_title_02_05", // 2064901182
     0x7b2baea8: "topicwindsward", // 2066460328
     0x7b5f28d6: "09_firstlight_title_02_01", // 2069833942
+    0x7bbcbd53: "95a_bloodofthesands_chapter_04", // 2075966803
     0x7c37fdd4: "03_greatcleave_title_05_03", // 2084044244
     0x7c397fa1: "tales_of_brimstone_sands_title_03_01", // 2084143009
+    0x7c591437: "95a_bloodofthesands_title_02_01", // 2086212663
     0x7c7e2027: "15_restlessshore_title_02_01", // 2088640551
     0x7cf43aaf: "talesofexpeditions_title_06_04", // 2096380591
     0x7d139a09: "10_cutlasskeys_title_05_01", // 2098436617
@@ -762,6 +768,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x925637ef: "expedition_chapter_02", // 2455123951
     0x9270410b: "15_restlessshore_title_02_03", // 2456830219
     0x929db37a: "combat_overview", // 2459808634
+    0x92df1866: "95a_bloodofthesands_chapter_02", // 2464094310
     0x9337a7ee: "07_shatteredmountain_title_04_04", // 2469898222
     0x933b8cc2: "summermedleyfaire_title_04_04", // 2470153410
     0x936e06c7: "06_arch_01_04", // 2473461447
@@ -1037,6 +1044,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xc4b8789a: "12_monarchsbluffs_chapter_03", // 3300423834
     0xc4c24742: "15_restlessshore_title_03_01", // 3301066562
     0xc4c797d6: "12_monarchsbluffs_title_01_05", // 3301414870
+    0xc4e57352: "95a_bloodofthesands_title_03_01", // 3303371602
     0xc51310bb: "99a_msq_soulwardenintro_chapter_02", // 3306361019
     0xc549aac6: "08_ebonscalereach_chapter_06", // 3309939398
     0xc581fce9: "15_restlessshore_chapter_07", // 3313630441
@@ -1212,6 +1220,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe52e248c: "11_mourningdale_chapter_11", // 3845006476
     0xe5302e1b: "tales_of_brimstone_sands_title_03_02", // 3845139995
     0xe577719d: "15_restlessshore_title_02_02", // 3849810333
+    0xe5d828f0: "95a_bloodofthesands_chapter_03", // 3856148720
     0xe5e97d9b: "00_aeternum_title_05_18", // 3857284507
     0xe6216b75: "progression_xp", // 3860949877
     0xe6430ca6: "06_windsward_title_17_01", // 3863153830
