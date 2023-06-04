@@ -5,6 +5,8 @@ import (
 	"io/fs"
 	"path/filepath"
 	"regexp"
+	"sort"
+	"strconv"
 )
 
 type Pak struct {
@@ -35,6 +37,7 @@ func NewPak(path string) *Pak {
 }
 
 var rePak = regexp.MustCompile(`.pak$`)
+var reSortPak = regexp.MustCompile(`^((.*)[^\d]+)([\d].*).pak$`)
 
 func FindAll(root string) ([]*Pak, error) {
 	files := []*Pak{}
@@ -56,6 +59,35 @@ func FindAll(root string) ([]*Pak, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	// @todo natural sorting
+	sort.Slice(files, func(i, j int) bool {
+		aPath := files[i].GetPath()
+		bPath := files[j].GetPath()
+
+		aMatches := reSortPak.FindAllStringSubmatch(aPath, -1)
+		bMatches := reSortPak.FindAllStringSubmatch(bPath, -1)
+
+		if aMatches == nil || bMatches == nil {
+			return aPath < bPath
+		}
+
+		if aMatches[0][1] != bMatches[0][1] {
+			return aPath < bPath
+		}
+
+		intA, err := strconv.Atoi(aMatches[0][3])
+		if err != nil {
+			return aPath < bPath
+		}
+
+		intB, err := strconv.Atoi(bMatches[0][3])
+		if err != nil {
+			return aPath < bPath
+		}
+
+		return intA < intB
+	})
 
 	return files, nil
 }
