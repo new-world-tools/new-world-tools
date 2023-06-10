@@ -100,6 +100,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x101aae7a: "98_marauders_03_explosiveplacementa", // 270184058
     0x1098b5c4: "astersmall", // 278443460
     0x10b3bcde: "lootlarget1_standing", // 280214750
+    0x10ba7a4b: "sandwormtrial_drum", // 280656459
     0x10bddf89: "sandstonelarge", // 280878985
     0x11014d6e: "darknesscorruptedorb", // 285298030
     0x11017351: "04a_side02_02_encounterstart_01", // 285307729
@@ -324,6 +325,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x37b8b166: "0905_bloodtracking_c", // 934850918
     0x37bae88b: "9932_0104_romacnotebook", // 934996107
     0x38276d49: "darknessstarterpack", // 942107977
+    0x382b3283: "sandwormtrial_redbutton", // 942355075
     0x383b283d: "herblarge", // 943401021
     0x38676892: "1602_0101_note", // 946301074
     0x38889b33: "soulstone", // 948476723
@@ -339,6 +341,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x3ab4f8f2: "damned_rifleman", // 984938738
     0x3ada7ea9: "hotspot_rare_32", // 987397801
     0x3b2877bf: "12a_whisper_04", // 992507839
+    0x3b3f40a1: "sandworm_arenaencounter_wormpellet", // 994001057
     0x3b656386: "msq_0036_thorpe_proximity", // 996500358
     0x3b974f2f: "98_covenant_whisper_01", // 999771951
     0x3becf485: "test_generic_interact", // 1005384837
@@ -386,6 +389,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x4177845a: "0903_hilltophops", // 1098351706
     0x420a9c33: "flintmedium", // 1107991603
     0x423c3cf2: "bushxsmall", // 1111244018
+    0x425ffd3a: "sandworm_cannon", // 1113587002
     0x4268259d: "1624_0401_diskatumdamagea", // 1114121629
     0x429eb426: "bushwithered", // 1117697062
     0x42cae4ff: "95_s01_01_corruptedtent", // 1120593151
@@ -646,6 +650,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x6dcfd323: "02a_side08_coffind", // 1842336547
     0x6de03d49: "1656_0401_tent_01", // 1843412297
     0x6e7f4e0d: "01_whisper_beach_01", // 1853836813
+    0x6f16cada: "season_02_pve_event_trigger_gatherable", // 1863764698
     0x6f2a84ae: "1126_ancientdevice_c", // 1865057454
     0x6f4bdd41: "99b_msq_04_azothdetectora", // 1867242817
     0x6f7f583b: "0602_spicesackyellow", // 1870616635
@@ -1283,6 +1288,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xd8111ac3: "99b_msq_06_mementoplacea", // 3624999619
     0xd85a5ae2: "darknessminormonolithdt2", // 3629800162
     0xd8608db9: "dungeon_cutlasskeys00_gunpowdercask", // 3630206393
+    0xd8e104b1: "sandwormtrial_bluebutton", // 3638625457
     0xd904000f: "hotspot_secret_74", // 3640918031
     0xd92cb4d3: "dungeon_corruption_fragment", // 3643585747
     0xd9528ce2: "dynasty_gong_fast", // 3646065890
@@ -1444,6 +1450,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xf2a5bbda: "goldpile00", // 4070947802
     0xf2df1ef2: "mushroomsmall", // 4074708722
     0xf2e7056a: "99b_msq_02_deggengravec", // 4075226474
+    0xf349d13a: "sandworm_cannonball", // 4081701178
     0xf3ab4680: "02a_side08_coffinc", // 4088088192
     0xf3b9fa0d: "msq_salvagepile_b", // 4089051661
     0xf3ed4900: "1656_0101_report", // 4092414208

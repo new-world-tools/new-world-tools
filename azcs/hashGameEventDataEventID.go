@@ -2349,6 +2349,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xaf9aaf3f: "0607_clothtraila_interact", // 2946150207
     0xaf9e0412: "1624_0303_handinjar_interact", // 2946368530
     0xaf9f97e0: "0922_1502_returntravel_success", // 2946471904
+    0xafc707be: "sandwormelitetrial_reward", // 2949056446
     0xafce31c5: "mutatorkeyreplacement", // 2949525957
     0xafd45a8f: "04a_side06_01_defeatbear_success", // 2949929615
     0xafd5c636: "mb_msq2_crate_interact_interact", // 2950022710

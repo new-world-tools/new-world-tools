@@ -2702,6 +2702,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x6366c02a: "drowned_sailor_1h_sword_shield_65_elite", // 1667678250
     0x63686e56: "undead_shaman_15ec02c", // 1667788374
     0x636cb677: "alligator_strange_54", // 1668068983
+    0x63ad1216: "season_02_event_sulfur_elemental_heavy", // 1672286742
     0x63adefe3: "skeleton_archer_11md00f", // 1672343523
     0x63cbcfb0: "sand_elemental_heavy_16bs02", // 1674301360
     0x63cce88d: "elk_male_02bw05", // 1674373261
@@ -3886,6 +3887,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x8f4a05ba: "withered_swarmancer_named_12mb05c", // 2403993018
     0x8f4cce6d: "damned_hound_11md00j", // 2404175469
     0x8f4ea757: "dynasty_archer_empress", // 2404296535
+    0x8f5659b0: "season_02_event_sulfur_elemental_shaman", // 2404800944
     0x8f79dcfb: "alligator_black_38_15ec00", // 2407128315
     0x8f8c33f2: "skeleton_crawler_27", // 2408330226
     0x8f92be10: "damned_1h_swordsman_m-f_43", // 2408758800
@@ -4733,6 +4735,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xaefc3783: "wolf_minion_08qp05", // 2935764867
     0xaf1144f1: "damned_villager_cleaver_13wf05", // 2937144561
     0xaf15387f: "anubianguardian_brute_16bs03", // 2937403519
+    0xaf19a345: "sandworm", // 2937692997
     0xaf19f1c7: "legion_legionnaire_60", // 2937713095
     0xaf3087ca: "yeti_named_07sm08b", // 2939193290
     0xaf42900d: "pig_domestic_02bw06", // 2940375053
@@ -5679,6 +5682,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xd279e2e7: "or_withered_grunt", // 3531203303
     0xd28176f9: "skeleton_crawler_07sm07", // 3531699961
     0xd29bd984: "ghost_starved_05wc05a", // 3533429124
+    0xd29d29b8: "season_02_event_sulfur_elemental_soldier", // 3533515192
     0xd2a352e8: "legion_villager_cleaver_16bs12", // 3533918952
     0xd2b00f64: "withered_brute_30", // 3534753636
     0xd2b382af: "risen_l-r_arm_15", // 3534979759
