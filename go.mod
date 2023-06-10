@@ -8,4 +8,7 @@ require (
 	github.com/zelenin/go-worker-pool v0.0.2
 )
 
-require github.com/itchio/lzma v0.0.0-20190703113020-d3e24e3e3d49 // indirect
+require (
+	github.com/itchio/lzma v0.0.0-20190703113020-d3e24e3e3d49 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
+)

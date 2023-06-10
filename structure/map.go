@@ -113,3 +113,17 @@ func (orderedMap *OrderedMap[K, V]) MarshalJSON() ([]byte, error) {
 	buf.WriteRune('}')
 	return buf.Bytes(), nil
 }
+
+func (orderedMap *OrderedMap[K, V]) ToMap() map[K]V {
+	m := make(map[K]V)
+	orderedMap.Reset()
+	for orderedMap.Has() {
+		key, value := orderedMap.Next()
+		m[key] = value
+	}
+	return m
+}
+
+func (orderedMap *OrderedMap[K, V]) MarshalYAML() (any, error) {
+	return orderedMap.ToMap(), nil
+}

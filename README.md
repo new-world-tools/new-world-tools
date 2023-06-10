@@ -69,5 +69,6 @@ Powershell:
 Optional:
 ```powershell
     -with-indents ^
+    -indents-size 2 ^
     -threads 3
 ```

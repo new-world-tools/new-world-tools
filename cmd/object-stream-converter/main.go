@@ -12,6 +12,7 @@ import (
 	azcs2 "github.com/new-world-tools/new-world-tools/reader/azcs"
 	"github.com/new-world-tools/new-world-tools/structure"
 	workerpool "github.com/zelenin/go-worker-pool"
+	"gopkg.in/yaml.v3"
 	"io"
 	"io/fs"
 	"log"
@@ -27,10 +28,21 @@ const (
 	maxThreads     int64 = 10
 )
 
+const (
+	formatYml  = "yml"
+	formatJson = "json"
+)
+
+var formats = map[string]bool{
+	formatYml:  true,
+	formatJson: true,
+}
+
 var (
 	pool             *workerpool.Pool
 	outputDir        string
 	withIndents      bool
+	indentsSize      int
 	resolveHashValue bool
 	debug            bool
 	pr               *profiler.Profiler
@@ -54,10 +66,17 @@ func main() {
 	outputDirPtr := flag.String("output", ".\\json", "directory path")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
+	iIndentsSizePtr := flag.Int("indents-size", 4, "indents size")
 	resolveHashValuePtr := flag.Bool("resolve-hash-value", false, "")
 	poolCapacityPtr := flag.Int64("pool-capacity", 1000, "pool capacity")
 	debugPtr := flag.Bool("debug", false, "")
+	formatPtr := flag.String("format", "json", "yml or json")
 	flag.Parse()
+
+	format := *formatPtr
+	if formats[format] != true {
+		log.Fatalf("Unsupported format: %s", format)
+	}
 
 	threads := *threadsPtr
 	if threads < 1 || threads > maxThreads {
@@ -66,6 +85,7 @@ func main() {
 	log.Printf("The number of threads is set to %d", threads)
 
 	withIndents = *withIndentsPtr
+	indentsSize = *iIndentsSizePtr
 	resolveHashValue = *resolveHashValuePtr
 	poolCapacity := *poolCapacityPtr
 	debug = *debugPtr
@@ -167,11 +187,20 @@ func main() {
 			return err
 		}
 
+		output := filepath.Join(outputDir, relPath)
+		if format == formatJson {
+			output += ".json"
+		}
+		if format == formatYml {
+			output += ".yml"
+		}
+
 		job := Job{
 			Input:        path,
-			Output:       filepath.Join(outputDir, relPath) + ".json",
+			Output:       output,
 			RelPath:      relPath,
 			IsCompressed: isCompressedFile,
+			Format:       format,
 		}
 
 		addTask(id, job)
@@ -237,20 +266,43 @@ func addTask(id int64, job Job) {
 			return err
 		}
 
-		jf, err := os.Create(job.Output)
-		if err != nil {
-			return err
+		var of *os.File
+
+		if job.Format == formatYml {
+			of, err = os.Create(job.Output)
+			if err != nil {
+				return err
+			}
+
+			enc := yaml.NewEncoder(of)
+
+			enc.SetIndent(indentsSize)
+
+			err = enc.Encode(streamNode)
+			if err != nil {
+				return err
+			}
+			enc.Close()
+			of.Close()
 		}
 
-		enc := json.NewEncoder(jf)
+		if job.Format == formatJson {
+			of, err = os.Create(job.Output)
+			if err != nil {
+				return err
+			}
 
-		if withIndents {
-			enc.SetIndent("", "    ")
-		}
+			enc := json.NewEncoder(of)
 
-		err = enc.Encode(streamNode)
-		if err != nil {
-			return err
+			if withIndents {
+				enc.SetIndent("", strings.Repeat(" ", indentsSize))
+			}
+
+			err = enc.Encode(streamNode)
+			if err != nil {
+				return err
+			}
+			of.Close()
 		}
 
 		return nil
@@ -287,6 +339,7 @@ type Job struct {
 	Output       string
 	RelPath      string
 	IsCompressed bool
+	Format       string
 }
 
 func sortMap(data map[string]bool) []string {
