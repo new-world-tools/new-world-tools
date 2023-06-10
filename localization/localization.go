@@ -64,7 +64,7 @@ func New(root string) (*store.Store[string], error) {
 			continue
 		}
 
-		for _, resource := range resources.Strings {
+		for _, resource := range resources.Resources {
 			if resource.Nil {
 				continue
 			}
@@ -82,13 +82,15 @@ func New(root string) (*store.Store[string], error) {
 }
 
 type Resources struct {
-	XMLName xml.Name  `xml:"resources"`
-	Strings []*String `xml:"string"`
+	XMLName   xml.Name   `xml:"resources"`
+	Resources []Resource `xml:"string"`
 }
 
-type String struct {
-	XMLName xml.Name `xml:"string"`
-	Key     string   `xml:"key,attr"`
-	Value   string   `xml:",chardata"`
+type Resource struct {
+	Key        string `xml:"key,attr"`
+	RelVersion string `xml:"rel_version,attr"`
+	Comment    string `xml:"comment,attr"`
+	Value      string `xml:",innerxml"`
+
 	Nil     bool     `xml:"http://www.w3.org/2001/XMLSchema-instance nil,attr"`
 }
