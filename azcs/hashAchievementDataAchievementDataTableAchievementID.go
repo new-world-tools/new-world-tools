@@ -5338,6 +5338,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x7ad4717e: "spiritshrine_30340_charted", // 2060743038
     0x7ad836bd: "violentdissentt4", // 2060990141
     0x7aeecc2c: "fc_house_housingitem_settler_decor_wall_curtain01_b", // 2062470188
+    0x7af42941: "rewardclaim_primeday2023_prime", // 2062821697
     0x7af432d0: "fc_lightlegs_summert5_dex", // 2062824144
     0x7af4a511: "mp_perfect_yaaahhhheasy", // 2062853393
     0x7af5fff7: "99c_morgaine_voicedlorenote_01", // 2062942199
@@ -10876,6 +10877,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0xfbad56d7: "fc_shard_int_amulettopazt5", // 4222441175
     0xfbb084f5: "azure_fissure_40236_discovered", // 4222649589
     0xfbb9bd70: "reekwater8_9166_charted", // 4223253872
+    0xfbbad017: "fc_artisan_fishingpolet5", // 4223324183
     0xfbc62dfb: "fc_2hkiteshieldcrafteddungeon4t4", // 4224069115
     0xfbcc7ae0: "fc_1hrapiercrafteddungeon11t5", // 4224482016
     0xfbcd5071: "fc_procedural_earringsapphiret5", // 4224536689
