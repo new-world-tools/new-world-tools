@@ -21,6 +21,7 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+	"time"
 )
 
 var rePak = regexp.MustCompile(`.pak$`)
@@ -246,7 +247,6 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		if err != nil {
 			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
-		defer dest.Close()
 
 		decompressReader, err := file.Decompress()
 		if err != nil {
@@ -298,6 +298,13 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			}
 
 			hashRegistry.Add(file.Name, hasher.Sum(nil))
+		}
+
+		dest.Close()
+
+		err = os.Chtimes(fpath, time.Now(), file.GetModifiedTime())
+		if err != nil {
+			return err
 		}
 
 		return nil

@@ -6,6 +6,7 @@ import (
 	"errors"
 	"github.com/new-world-tools/go-oodle"
 	"io"
+	"time"
 )
 
 var ErrUnsupportedMethod = errors.New("unsupported method")
@@ -62,4 +63,8 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 	}
 
 	return nil, ErrUnsupportedMethod
+}
+
+func (file *File) GetModifiedTime() time.Time {
+	return file.zipFile.Modified
 }
