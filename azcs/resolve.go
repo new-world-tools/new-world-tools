@@ -445,6 +445,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		"AZStd::list",
 		"AZStd::map",
 		"AZStd::unordered_map",
+		"AZStd::unordered_flat_map",
 		"5f9f78d5-bdf7-5531-961d-8a91dfa2e126",
 		"c2fd8c07-90d3-5d02-bab7-b1fac968c43f",
 		"fdbd40b4-8a70-5b23-bce7-a717ba039a86",
