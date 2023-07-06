@@ -2,22 +2,58 @@ package datasheet
 
 import (
 	"io/fs"
+	"os"
 	"path/filepath"
 	"regexp"
 	"sort"
 )
 
 type DataSheetFile struct {
-	path string
+	path    string
+	relPath string
+	meta    *Meta
 }
 
-func (dataSheet DataSheetFile) GetPath() string {
-	return dataSheet.path
+func (dataSheetFile DataSheetFile) GetPath() string {
+	return dataSheetFile.path
 }
 
-func NewDataSheet(path string) *DataSheetFile {
+func (dataSheetFile DataSheetFile) GetRelPath() string {
+	return dataSheetFile.relPath
+}
+
+func (dataSheetFile *DataSheetFile) GetMeta() (*Meta, error) {
+	if dataSheetFile.meta == nil {
+		f, err := os.Open(dataSheetFile.GetPath())
+		if err != nil {
+			return nil, err
+		}
+		defer f.Close()
+
+		meta, err := ParseMeta(f)
+		if err != nil {
+			return nil, err
+		}
+
+		dataSheetFile.meta = meta
+	}
+
+	return dataSheetFile.meta, nil
+}
+
+func (dataSheetFile *DataSheetFile) GetData() (*DataSheet, error) {
+	ds, err := Parse(dataSheetFile)
+	if err != nil {
+		return nil, err
+	}
+
+	return ds, nil
+}
+
+func NewDataSheet(path string, relPath string) *DataSheetFile {
 	return &DataSheetFile{
-		path: path,
+		path:    path,
+		relPath: relPath,
 	}
 }
 
@@ -36,7 +72,12 @@ func FindAll(root string) ([]*DataSheetFile, error) {
 			return err
 		}
 
-		files = append(files, NewDataSheet(path))
+		relPath, err := filepath.Rel(filepath.FromSlash(root), filepath.FromSlash(path))
+		if err != nil {
+			return err
+		}
+
+		files = append(files, NewDataSheet(path, relPath))
 
 		return nil
 	})

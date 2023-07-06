@@ -12,18 +12,18 @@ import (
 var headerSize = reflect.TypeOf(Header{}).NumField() * 4
 
 func Parse(dataSheetFile *DataSheetFile) (*DataSheet, error) {
-	file, err := os.Open(dataSheetFile.GetPath())
-	if err != nil {
-		return nil, err
-	}
-	defer file.Close()
-
-	meta, err := ParseMeta(file)
+	meta, err := dataSheetFile.GetMeta()
 	if err != nil {
 		return nil, err
 	}
 
-	dataSheet, err := ParseBody(file, meta)
+	f, err := os.Open(dataSheetFile.GetPath())
+	if err != nil {
+		return nil, err
+	}
+	defer f.Close()
+
+	dataSheet, err := ParseBody(f, meta)
 	if err != nil {
 		return nil, err
 	}
@@ -305,8 +305,8 @@ func ParseBody(r io.ReadSeeker, meta *Meta) (*DataSheet, error) {
 }
 
 type DataSheet struct {
-	UniqueId string
 	Type     string
+	UniqueId string
 	Columns  []ColumnData
 	Rows     [][]string
 }
