@@ -34,7 +34,7 @@ const (
 )
 
 var formats = map[string]bool{
-	formatYml:  true,
+	//formatYml:  true,
 	formatJson: true,
 }
 
