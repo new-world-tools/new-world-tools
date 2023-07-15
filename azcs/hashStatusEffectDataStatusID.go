@@ -329,6 +329,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x204752d6: "voidgauntlet_harvest_reducedcostlowmana", // 541545174
     0x205184dd: "status_passive_firestaff_firemage_dmgnodmg", // 542213341
     0x20addcac: "honingstonet2", // 548265132
+    0x20b72d25: "sandworm_acid_pit", // 548875557
     0x2103369b: "dungeon_botkillradius", // 553858715
     0x2127cca4: "turkeyvision", // 556256420
     0x21367e26: "resurgestavestatus1", // 557219366
@@ -2024,6 +2025,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xd3d596e3: "atb_dex_bonus_100_2_effect", // 3553990371
     0xd3fadeb8: "lucky3", // 3556433592
     0xd42a11a5: "status_passive_greataxe_mauler_armorwhenfoesnear", // 3559526821
+    0xd43ba311: "sandworm_permanent_debuffresilience", // 3560678161
     0xd44cdd77: "blockspeedperk1", // 3561807223
     0xd44cfc11: "rune_bilebomb_greater", // 3561815057
     0xd45e9fab: "foodweaponsmitht3", // 3562971051

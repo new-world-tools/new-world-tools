@@ -834,6 +834,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x61fb578d: "perkbucket_tallowt1", // 1643861901
     0x6230d98c: "diamondcutt1", // 1647368588
     0x623139ec: "perkbucket_warbucketchancet5", // 1647393260
+    0x625a0d01: "singlestat_attributest5_guarantee_weights", // 1650068737
     0x62dd75cd: "intconbonust3_weights", // 1658680781
     0x62e32ddb: "runeglass_gem_jasper_stamina_weights", // 1659055579
     0x62e35024: "amethystcutt3_weights", // 1659064356
@@ -1804,6 +1805,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xd1d724b5: "perkbucket_myrkgardbucket_weights", // 3520537781
     0xd1d88362: "flamecoreattributeblunderbusst5_weights", // 3520627554
     0xd1fb651f: "intbonust4", // 3522913567
+    0xd20581bc: "singlestat_attributest5_guarantee", // 3523576252
     0xd21e3cb5: "craftingattributebuckett2", // 3525196981
     0xd241a743: "perkbucket_swordcharmt2_weights", // 3527518019
     0xd241da44: "perkbucket_hornt3", // 3527531076
