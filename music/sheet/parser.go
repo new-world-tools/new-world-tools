@@ -56,7 +56,7 @@ func Parse(r io.Reader) (*MusicSheet, error) {
 		}
 		track, ok := trackMapping[u8]
 		if !ok {
-			return nil, fmt.Errorf("unknown string: 0x%02x", u8)
+			return nil, fmt.Errorf("unknown track: 0x%02x", u8)
 		}
 		note.Track = track
 
