@@ -1,19 +1,15 @@
 package main
 
 import (
-	"bufio"
-	"bytes"
 	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
 	"github.com/new-world-tools/new-world-tools/azcs"
 	"github.com/new-world-tools/new-world-tools/profiler"
-	azcs2 "github.com/new-world-tools/new-world-tools/reader/azcs"
 	"github.com/new-world-tools/new-world-tools/structure"
 	workerpool "github.com/zelenin/go-worker-pool"
 	"gopkg.in/yaml.v3"
-	"io"
 	"io/fs"
 	"log"
 	"os"
@@ -138,40 +134,12 @@ func main() {
 			return err
 		}
 
-		f, err := os.Open(path)
+		isAzcsFile, isCompressed, err := azcs.IsAzcsFile(path)
 		if err != nil {
 			return err
 		}
-		defer f.Close()
 
-		size := info.Size()
-
-		if size < 5 {
-			return nil
-		}
-
-		dataSize := 5
-
-		br := bufio.NewReader(f)
-		data, err := br.Peek(dataSize)
-		if err != nil && err != io.EOF {
-			return err
-		}
-
-		var isCompressedFile bool
-		var isAzcs bool
-
-		if isCompressed(data) {
-			isCompressedFile = true
-			isAzcs = true
-		}
-
-		if isUncompressed(data) {
-			isCompressedFile = false
-			isAzcs = true
-		}
-
-		if !isAzcs {
+		if !isAzcsFile {
 			return nil
 		}
 
@@ -199,7 +167,7 @@ func main() {
 			Input:        path,
 			Output:       output,
 			RelPath:      relPath,
-			IsCompressed: isCompressedFile,
+			IsCompressed: isCompressed,
 			Format:       format,
 		}
 
@@ -230,24 +198,13 @@ func addTask(id int64, job Job) {
 		log.Printf("Working: %s", job.RelPath)
 		//defer log.Printf("Done: [#%06d] %s", id, job.Input)
 
-		f, err := os.Open(job.Input)
+		rc, err := azcs.GetReader(job.Input, job.IsCompressed)
 		if err != nil {
 			return err
 		}
-		defer f.Close()
+		defer rc.Close()
 
-		var r io.Reader
-
-		r = f
-
-		if job.IsCompressed {
-			r, err = azcs2.NewReader(r)
-			if err != nil {
-				return err
-			}
-		}
-
-		stream, err := azcs.Parse(r)
+		stream, err := azcs.Parse(rc)
 		if err != nil {
 			log.Fatalf("azcs.Parse: %s", err)
 		}
@@ -307,31 +264,6 @@ func addTask(id int64, job Job) {
 
 		return nil
 	}))
-}
-
-var uncompressedSignatures = [][]byte{
-	{0x00, 0x00, 0x00, 0x00, 0x03},
-	{0x00, 0x00, 0x00, 0x00, 0x02},
-	{0x00, 0x00, 0x00, 0x00, 0x01},
-}
-var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
-
-func isUncompressed(data []byte) bool {
-	for _, uncompressedSignature := range uncompressedSignatures {
-		if len(data) >= len(uncompressedSignature) && bytes.Equal(uncompressedSignature, data[:len(uncompressedSignature)]) {
-			return true
-		}
-	}
-
-	return false
-}
-
-func isCompressed(data []byte) bool {
-	if len(data) < len(azcsSig) {
-		return false
-	}
-
-	return bytes.Equal(azcsSig, data[:len(azcsSig)])
 }
 
 type Job struct {

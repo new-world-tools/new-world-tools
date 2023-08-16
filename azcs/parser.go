@@ -1,12 +1,15 @@
 package azcs
 
 import (
+	"bytes"
 	"encoding/binary"
 	"errors"
 	"fmt"
 	"github.com/gofrs/uuid"
 	"github.com/new-world-tools/new-world-tools/reader"
+	azcsReader "github.com/new-world-tools/new-world-tools/reader/azcs"
 	"io"
+	"os"
 )
 
 const streamTag uint8 = 0x00
@@ -195,4 +198,88 @@ func readElement(r io.Reader, stream *Stream) (*Element, error) {
 	}
 
 	return nil, errors.New("unexpected end")
+}
+
+func IsAzcsFile(path string) (bool, bool, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return false, false, err
+	}
+	defer f.Close()
+
+	fi, err := f.Stat()
+	if err != nil {
+		return false, false, err
+	}
+	if fi.IsDir() {
+		return false, false, nil
+	}
+
+	sampleSize := 5
+
+	size := int(fi.Size())
+	if size < sampleSize {
+		return false, false, nil
+	}
+
+	sampleData, err := reader.ReadBytes(f, sampleSize)
+	if err != nil {
+		return false, false, err
+	}
+
+	if isCompressed(sampleData) {
+		return true, true, nil
+	}
+
+	if isUncompressed(sampleData) {
+		return true, false, nil
+	}
+
+	return false, false, nil
+}
+
+var uncompressedSignatures = [][]byte{
+	{0x00, 0x00, 0x00, 0x00, 0x03},
+	{0x00, 0x00, 0x00, 0x00, 0x02},
+	{0x00, 0x00, 0x00, 0x00, 0x01},
+}
+var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
+
+func isUncompressed(data []byte) bool {
+	for _, uncompressedSignature := range uncompressedSignatures {
+		if len(data) >= len(uncompressedSignature) && bytes.Equal(uncompressedSignature, data[:len(uncompressedSignature)]) {
+			return true
+		}
+	}
+
+	return false
+}
+
+func isCompressed(data []byte) bool {
+	if len(data) < len(azcsSig) {
+		return false
+	}
+
+	return bytes.Equal(azcsSig, data[:len(azcsSig)])
+}
+
+func GetReader(path string, isCompressed bool) (io.ReadCloser, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return nil, err
+	}
+
+	var rc io.ReadCloser
+
+	rc = f
+
+	if isCompressed {
+		r, err := azcsReader.NewReader(rc)
+		if err != nil {
+			return nil, err
+		}
+		rc = io.NopCloser(r)
+	}
+
+	return rc, nil
 }
