@@ -1,6 +1,6 @@
 module github.com/new-world-tools/new-world-tools
 
-go 1.21.0
+go 1.21
 
 require (
 	github.com/goccy/go-yaml v1.11.0
