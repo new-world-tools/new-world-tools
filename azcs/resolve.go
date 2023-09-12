@@ -149,6 +149,22 @@ func ResolveStream(stream *Stream, typeResolver TypeResolver, hashResolver HashR
 	return node, nil
 }
 
+func vectorMagnitude(vec []float32) float32 {
+	sumOfSquares := float32(0)
+	for _, v := range vec {
+		sumOfSquares += v * v
+	}
+	return float32(math.Sqrt(float64(sumOfSquares)))
+}
+
+func normalizeVector(vec []float32, scale float32) []float32 {
+	normalized := make([]float32, len(vec))
+	for i, v := range vec {
+		normalized[i] = v / scale
+	}
+	return normalized
+}
+
 func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashResolver) (any, error) {
 	node := structure.NewOrderedMap[string, any]()
 
@@ -163,6 +179,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 			if len(element.Data) != 48 {
 				return nil, fmt.Errorf("wrong size: %d", len(element.Data))
 			}
+
 			col0, err := createFloatArray[JsonFloat32](element.Data[0:12])
 			if err != nil {
 				return nil, fmt.Errorf("createFloatArrray: %s", err)
@@ -182,7 +199,18 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 
 			tnode := structure.NewOrderedMap[string, any]()
 
-			tnode.Add("rotation/scale", []JsonFloat32{col0[0], col0[1], col0[2], col1[0], col1[1], col1[2], col2[0], col2[1], col2[2]})
+			scaleX := JsonFloat32(math.Sqrt(float64(col0[0]*col0[0] + col1[0]*col1[0] + col2[0]*col2[0])))
+			scaleY := JsonFloat32(math.Sqrt(float64(col0[1]*col0[1] + col1[1]*col1[1] + col2[1]*col2[1])))
+			scaleZ := JsonFloat32(math.Sqrt(float64(col0[2]*col0[2] + col1[2]*col1[2] + col2[2]*col2[2])))
+
+			// Calculate the rotation matrix
+			rotationMatrix := [3][3]JsonFloat32{
+				{col0[0] / scaleX, col0[1] / scaleX, col0[2] / scaleX},
+				{col1[0] / scaleY, col1[1] / scaleY, col1[2] / scaleY},
+				{col2[0] / scaleZ, col2[1] / scaleZ, col2[2] / scaleZ},
+			}
+
+			tnode.Add("rotation", rotationMatrix)
 			tnode.Add("translation", col3)
 
 			node.Add(ValueField, tnode)

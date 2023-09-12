@@ -67,6 +67,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x02710e5e: "wolf_elemental_ice_46",                                        // 40963678
 	0x0275cebf: "ghost_shackled_35",                                            // 41275071
 	0x02772ff1: "undead_javelineer_55",                                         // 41365489
+	0x0280d0d6: "spriggan_adolescent",                                          // 41996502
 	0x028108cb: "withered_swarmancer_minion",                                   // 42010827
 	0x028353c3: "skeleton_crawler_61",                                          // 42161091
 	0x02899f0d: "wolf_t4",                                                      // 42573581
@@ -100,6 +101,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x03ffd1eb: "skeleton_archer_39",                                           // 67097067
 	0x04031789: "damned_acolyte_07sm06c_elite",                                 // 67311497
 	0x0403eaac: "bearelemental_59",                                             // 67365548
+	0x040a11e0: "corrupted_leviathan",                                          // 67768800
 	0x041341b8: "legion_villager_pickaxe_elite",                                // 68370872
 	0x0429e2f9: "totem_scorpion_nest_elite",                                    // 69853945
 	0x0443568f: "risen_whole_body_49",                                          // 71521935
@@ -298,6 +300,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x0bdb48b4: "bear_corrupted_dt1",                                           // 198920372
 	0x0be3c2ec: "skeleton_club_34",                                             // 199475948
 	0x0beca11a: "damned_greataxeman_m-f_52",                                    // 200057114
+	0x0bf9c1da: "ancient_guardian_mage_named_09a_s7",                           // 200917466
 	0x0c00eb61: "elk_corrupted_dt4",                                            // 201386849
 	0x0c03d1b6: "turkey_vulture_63",                                            // 201576886
 	0x0c13f53a: "undead_berserker_12mb06c_named",                               // 202634554
@@ -366,6 +369,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x0e34d15e: "undead_grenadier_molotov_58",                                  // 238342494
 	0x0e3b1fb4: "swamp_dryad_soldier_59_waveevent",                             // 238755764
 	0x0e3bee10: "drowned_sailor_2h_axe_48",                                     // 238808592
+	0x0e41598f: "corrupted_leviathan_eyeball",                                  // 239163791
 	0x0e53e94f: "dunewalker_waterseeker_lifestaff",                             // 240380239
 	0x0e811a96: "rabbit_corrupted_58",                                          // 243341974
 	0x0e8b8101: "risen_l-r_arm_37",                                             // 244023553
@@ -394,6 +398,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x0faefbe2: "damned_villager_hammer_41",                                    // 263125986
 	0x0fb5d57f: "dynasty_warrior_dg_shattermtn_00",                             // 263574911
 	0x0fc2e57d: "undead_pistoleer_36",                                          // 264430973
+	0x0fca69f4: "evil_knight_mace_named_waveevent",                             // 264923636
 	0x0fdc8b87: "drowned_sailor_1h_club_dg_cutlass_00",                         // 266111879
 	0x0fdf2e94: "lynx_53",                                                      // 266284692
 	0x0ff77b50: "drowned_sailor_1h_sword_shield_14",                            // 267877200
@@ -572,10 +577,12 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x16e8562d: "damned_villager_cleaver_07sm06a",                              // 384325165
 	0x1702dbe1: "rabbit_spotted_34",                                            // 386063329
 	0x1703a421: "alligator_black_59",                                           // 386114593
+	0x1705dfe6: "wolf_elemental_earth_57_named_waveevent",                      // 386260966
 	0x17106c70: "cow_35",                                                       // 386952304
 	0x17143bc6: "darkness_monolith_shell_dt4",                                  // 387201990
 	0x1720df51: "drowned_sailor_2h_axe_58",                                     // 388030289
 	0x172fe01f: "undead_grenadier_molotov_48",                                  // 389013535
+	0x175d3c78: "elk_motherwell_stag",                                          // 391986296
 	0x177d36f2: "anubianguardian_archer_67",                                    // 394082034
 	0x177f0332: "elk_elemental",                                                // 394199858
 	0x178ef511: "damned_villager_pitchfork_7",                                  // 395244817
@@ -1048,6 +1055,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x2a9e1584: "ghost_shackled_58",                                            // 715003268
 	0x2aa63833: "skeleton_2h_sword_42",                                         // 715536435
 	0x2aadfc9e: "drowned_sailor_1h_sword_1",                                    // 716045470
+	0x2ab08c28: "hercyne_boar_alpha",                                           // 716213288
 	0x2abe55fc: "skeleton_club_55",                                             // 717116924
 	0x2abe85f4: "corruption_swarmer_60",                                        // 717129204
 	0x2b048545: "ftue_corrupted_sailor_z1",                                     // 721716549
@@ -1105,6 +1113,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x2ccccd02: "starved_bandit_1h_club_60",                                    // 751619330
 	0x2cd7728b: "ghost_frozen_57",                                              // 752317067
 	0x2cd78fba: "alligator_young_dg_cutlass_00",                                // 752324538
+	0x2cd7a039: "hercyne_reindeer",                                             // 752328761
 	0x2cdb894e: "ancientguardian_spearman_51",                                  // 752585038
 	0x2cdbef2d: "mountain_lion_36",                                             // 752611117
 	0x2ced7464: "damned_cultist_27",                                            // 753759332
@@ -1379,6 +1388,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x3810ad66: "damned_villager_shovel_35",                                    // 940617062
 	0x38127653: "desert_scorpion_61",                                           // 940734035
 	0x38130b29: "drowned_sailor_1h_sword_36",                                   // 940772137
+	0x38144489: "hercyne_reindeer_briar_turret_alpha",                          // 940852361
 	0x38147043: "damned_rifleman_m-f_55",                                       // 940863555
 	0x381955c5: "ancientguardian_reaver_named_01",                              // 941184453
 	0x381f5285: "dryad_shaman_62",                                              // 941576837
@@ -1428,6 +1438,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x39877674: "anubianguardian_archer_named_01",                              // 965178996
 	0x399a3baa: "damned_villager_skinning_knife_33",                            // 966409130
 	0x399bb33c: "damned_bowman_41",                                             // 966505276
+	0x39b92e7b: "hercyne_corvid_alpha",                                         // 968437371
 	0x39be1429: "dryad_prowler_62",                                             // 968758313
 	0x39d5a06e: "skeleton_club_14",                                             // 970301550
 	0x39de107f: "undead_gravedigger_52",                                        // 970854527
@@ -1495,6 +1506,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x3cbde383: "risen_l-r_arm_17",                                             // 1019077507
 	0x3cbe6e48: "withered_brute_32",                                            // 1019113032
 	0x3cc564b6: "boar_66",                                                      // 1019569334
+	0x3cd40ac7: "motherwell_staff_barrier",                                     // 1020529351
 	0x3cd7f395: "season_01_event_dryad_prowler",                                // 1020785557
 	0x3cf43d94: "damned_villager_lumberaxe_45",                                 // 1022639508
 	0x3d08d836: "wolf_black_24",                                                // 1023989814
@@ -1530,6 +1542,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x3e3b4d69: "bison_59",                                                     // 1044073833
 	0x3e3f2d2e: "elk_elemental_52",                                             // 1044327726
 	0x3e42e0b9: "tendril_corruption_dt2",                                       // 1044570297
+	0x3e5ccf82: "anubianguardian_horus_09a_s9",                                 // 1046269826
 	0x3e61f087: "dryad_prowler_62_elite",                                       // 1046605959
 	0x3e6eb973: "skeleton_crawler_49",                                          // 1047443827
 	0x3e7073bc: "ghost_shipwrecked_12mb06c_named",                              // 1047557052
@@ -1544,6 +1557,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x3ef67725: "damned_bowman_45",                                             // 1056339749
 	0x3ef7ffb3: "damned_villager_skinning_knife_37",                            // 1056440243
 	0x3f0db788: "ancientguardian_reaver_53",                                    // 1057863560
+	0x3f161f8e: "rat_hercynerat",                                               // 1058414478
 	0x3f16843a: "damned_villager_axethrower_f_named_00",                        // 1058440250
 	0x3f1b67fa: "damned_axeman_m-f_52",                                         // 1058760698
 	0x3f29cdf8: "skeleton_spear_46",                                            // 1059704312
@@ -1584,6 +1598,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x405c7c82: "elk_stag_25",                                                  // 1079803010
 	0x405cc631: "undead_hunter_50",                                             // 1079821873
 	0x405d3dd0: "boar_stripped_56",                                             // 1079852496
+	0x4069d75b: "damned_villager_pickaxe_54_minion",                            // 1080678235
 	0x406cd575: "damned_villager_hammer_dg_ebonscale_00",                       // 1080874357
 	0x40707fb3: "corrupted_tiger_57",                                           // 1081114547
 	0x40739d35: "damned_pistoleer_m-f_03gc07",                                  // 1081318709
@@ -1706,6 +1721,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x4568a6c0: "dryad_shaman_32",                                              // 1164486336
 	0x456c4d9b: "risen_corruption_impaler_61",                                  // 1164725659
 	0x457a7837: "bobcat_56",                                                    // 1165654071
+	0x457e12d4: "explosive_sprout_fire_pulse",                                  // 1165890260
 	0x457edb4d: "ghost_starved_dg_windsward_00",                                // 1165941581
 	0x4593d28a: "undead_hunter_named_02",                                       // 1167315594
 	0x459cb1aa: "damned_cultist_32",                                            // 1167897002
@@ -1880,6 +1896,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x4c5eeaa8: "wolf_grey_49",                                                 // 1281288872
 	0x4c67412a: "wolf_timber_38",                                               // 1281835306
 	0x4c6902c8: "damned_acolyte_56",                                            // 1281950408
+	0x4c701a4f: "megaflora_razorlotus",                                         // 1282415183
 	0x4c9ec91b: "damned_villager_lumberaxe_40",                                 // 1285474587
 	0x4ca3c9c9: "undead_gravedigger",                                           // 1285802441
 	0x4caf9039: "boar_63",                                                      // 1286574137
@@ -2033,6 +2050,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x51d48627: "ghost_plagued_26",                                             // 1372882471
 	0x51d705bd: "drowned_sailor_2h_axe_24",                                     // 1373046205
 	0x51d83af3: "undead_grenadier_molotov_34",                                  // 1373125363
+	0x51dc76ce: "hercyne_boar_waveevent",                                       // 1373402830
 	0x51e58828: "damned_longswordsman_commander_55_elite",                      // 1373997096
 	0x51e7b69c: "cow_49",                                                       // 1374140060
 	0x51f5010d: "rabbit_spotted_48",                                            // 1375011085
@@ -2050,6 +2068,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x529035e4: "wolf_alpha_59",                                                // 1385182692
 	0x529c5c0d: "alligator_strange_29",                                         // 1385978893
 	0x52d57a0a: "withered_grunt_61",                                            // 1389722122
+	0x52daf1a9: "elk_motherwell_doe",                                           // 1390080425
 	0x52e83c43: "damned_villager_lumberaxe_54",                                 // 1390951491
 	0x52f6a9c0: "damned_villager_ladel_67",                                     // 1391897024
 	0x52fcd838: "damned_villager_rake_35",                                      // 1392302136
@@ -2094,6 +2113,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x5462882f: "dryad_archer_52",                                              // 1415743535
 	0x54690c61: "dynasty_maiden",                                               // 1416170593
 	0x54791df8: "wolf_black_31",                                                // 1417223672
+	0x5481683d: "anubian_scarab_09a_s9",                                        // 1417766973
 	0x549517cf: "bloated_corpse_named_01",                                      // 1419057103
 	0x5495bf37: "bear_black_47",                                                // 1419099959
 	0x549889d8: "lynx_66",                                                      // 1419282904
@@ -2108,6 +2128,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x554a61a3: "withered_grunt_8",                                             // 1430938019
 	0x555454c0: "evil_knight_greataxe_firevariant",                             // 1431590080
 	0x5566aabd: "structure_piston",                                             // 1432791741
+	0x55673910: "hercyne_corvid",                                               // 1432828176
 	0x557c706b: "wolf_timber_28",                                               // 1434218603
 	0x5585f85a: "damned_villager_lumberaxe_50",                                 // 1434843226
 	0x55911c21: "damned_villager_rake_31",                                      // 1435573281
@@ -2173,6 +2194,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x577e0c6f: "blight_fiend_43",                                              // 1467878511
 	0x5787054e: "skeleton_2h_sword_10ws02",                                     // 1468466510
 	0x5787b2eb: "damned_bowman_50",                                             // 1468510955
+	0x5796c51d: "explosive_sprout_poison",                                      // 1469498653
 	0x5799a1f6: "anubianguardian_horus_dg_brimstonesands_named_00",             // 1469686262
 	0x579c7f42: "undead_hunter_48",                                             // 1469873986
 	0x57c211a8: "undead_gravedigger_43",                                        // 1472336296
@@ -2544,6 +2566,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x670e1fc7: "corrupted_ogre_07sm06a",                                       // 1728978887
 	0x6715ed46: "undead_officer_58",                                            // 1729490246
 	0x6717c27d: "anubianguardian_archer_62",                                    // 1729610365
+	0x672e8a80: "evil_knight_heavy_dg_greatcleave_02",                          // 1731103360
 	0x673403ef: "damned_priest_hound_65",                                       // 1731462127
 	0x67475bcc: "tiger",                                                        // 1732729804
 	0x6765ef54: "elk_doe_29",                                                   // 1734733652
@@ -2842,6 +2865,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x7304da3a: "bearelemental_58",                                             // 1929697850
 	0x731998ac: "dryad_shaman_62_elite",                                        // 1931057324
 	0x73446619: "risen_whole_body_48",                                          // 1933862425
+	0x7356de13: "bear_damned_03gc05",                                           // 1935072787
 	0x737f5c92: "undead_navigator_48",                                          // 1937726610
 	0x7384f271: "boar_16",                                                      // 1938092657
 	0x739bcffd: "anubianguardian_reaver_named_02",                              // 1939591165
@@ -3001,6 +3025,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x79dd0abd: "dunewalker_warmonger_warhammer_trial_named",                   // 2044529341
 	0x79e1c19b: "risen_l-r_arm_10ws03",                                         // 2044838299
 	0x79f829c9: "withered_grunt_51",                                            // 2046306761
+	0x79ff8cb4: "hercyne_boar",                                                 // 2046790836
 	0x7a03e778: "damned_villager_lumberaxe_39",                                 // 2047076216
 	0x7a05ee4a: "dryad_soldier_32",                                             // 2047209034
 	0x7a114777: "icedryad_range_frostgrip_65_elite",                            // 2047952759
@@ -3241,10 +3266,12 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x82fb878f: "damned_villager_sickle_38",                                    // 2197522319
 	0x83043d00: "cow_63",                                                       // 2198093056
 	0x83168a91: "rabbit_spotted_62",                                            // 2199292561
+	0x833e7bf0: "ghost_charred_elite_09a_s18",                                  // 2201910256
 	0x83447f5c: "undead_berserker_12mb06c",                                     // 2202304348
 	0x834733cc: "risen_grunt",                                                  // 2202481612
 	0x834dc0a7: "goat_mountain_60",                                             // 2202910887
 	0x83573c64: "bear_grizzly_39",                                              // 2203532388
+	0x835e22a1: "hercyne_reindeer_alpha",                                       // 2203984545
 	0x836091d5: "dynasty_musketeer_50",                                         // 2204144085
 	0x837b1025: "damned_acolyte_named_03gc06_msq",                              // 2205880357
 	0x839fc220: "bobcat_39",                                                    // 2208285216
@@ -3324,6 +3351,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x8666c9ad: "undead_pistoleer_29",                                          // 2254883245
 	0x868689fb: "corrupted_ogre_dt6",                                           // 2256964091
 	0x8689a82d: "drowned_sailor_1h_club_60_waveevent",                          // 2257168429
+	0x869b9845: "explosive_sprout_physical",                                    // 2258344005
 	0x86a2b18f: "damned_bowman_27",                                             // 2258809231
 	0x86a33919: "damned_villager_skinning_knife_55",                            // 2258843929
 	0x86ad4962: "barbary_lion_named_02",                                        // 2259503458
@@ -3400,6 +3428,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x88b5c6e7: "evil_knight_flame_grunt_reforged",                             // 2293614311
 	0x88bd419f: "undead_pistoleer_21",                                          // 2294104479
 	0x88c37ba2: "unstable_swamp_fiend_bog_minion",                              // 2294512546
+	0x88cdd1a3: "tendril_leviathan",                                            // 2295189923
 	0x88d15f00: "damned_villager_hammer_56",                                    // 2295422720
 	0x88d59a5c: "damned_villager_pickaxe_10ws02",                               // 2295700060
 	0x88e1bee8: "skeleton_spear_10ws04",                                        // 2296495848
@@ -3881,6 +3910,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x9c159bfd: "wolf_elemental_ice_41",                                        // 2618661885
 	0x9c2976ab: "skeleton_2h_sword_28",                                         // 2619963051
 	0x9c3c848b: "alligator_strange_named_dg_cutlass_00",                        // 2621211787
+	0x9c3d754c: "ancientguardian_mage_named_dg_greatcleave_00",                 // 2621273420
 	0x9c3da879: "drowned_sailor_2h_axe_08qp05",                                 // 2621286521
 	0x9c3e7892: "damned_greataxeman_m-f_59",                                    // 2621339794
 	0x9c4d6829: "risen_corruption_entity_61",                                   // 2622318633
@@ -3968,6 +3998,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0x9ffc238d: "undead_gravedigger_24",                                        // 2684101517
 	0xa026751a: "tendril_corruption_dt5",                                       // 2686874906
 	0xa02e7852: "training_dummy",                                               // 2687400018
+	0xa034d0df: "explosive_sprout_physical_pulse",                              // 2687815903
 	0xa04b9386: "evil_knight_longsword_20",                                     // 2689307526
 	0xa05bb88d: "elk_elemental_55",                                             // 2690365581
 	0xa06b5c02: "blight_fiend_51",                                              // 2691390466
@@ -4026,6 +4057,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xa226225e: "jackrabbit_66",                                                // 2720408158
 	0xa23beeb4: "swamp_dryad_archer_59",                                        // 2721836724
 	0xa2426fd5: "dryad_tendril_dg_cutlass_00",                                  // 2722262997
+	0xa244fa0b: "destructible_wall_01_fl",                                      // 2722429451
 	0xa245353d: "pig_domestic_12",                                              // 2722444605
 	0xa26763e4: "damned_acolyte_54",                                            // 2724684772
 	0xa26f0d33: "drowned_miner_10ws08",                                         // 2725186867
@@ -4078,6 +4110,8 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xa457fd4d: "ghost_shackled_43",                                            // 2757229901
 	0xa46dee24: "undead_officer_dg_cutlass_00",                                 // 2758667812
 	0xa46fd0fa: "skeleton_2h_sword_59",                                         // 2758791418
+	0xa471477f: "angryearth_overgrownbeetle",                                   // 2758887295
+	0xa4788e9e: "damned_rifleman_m-f_53_minion",                                // 2759364254
 	0xa491c8da: "damned_villager_hammer_62",                                    // 2761017562
 	0xa4981d0e: "undead_pistoleer_12mb10",                                      // 2761432334
 	0xa4a16031: "skeleton_crawler_17",                                          // 2762039345
@@ -4830,6 +4864,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xc37c7419: "damned_villager_pickaxe_52",                                   // 3279713305
 	0xc37e7ffd: "dryad_shaman_named_04",                                        // 3279847421
 	0xc3942c9b: "damned_villager_cleaver_28",                                   // 3281267867
+	0xc3a4b8f7: "hercyne_reindeer_briar_tangle",                                // 3282352375
 	0xc3a4c519: "swamp_dryad_shaman_minion_62",                                 // 3282355481
 	0xc3b051a7: "dryad_archer_59",                                              // 3283112359
 	0xc3c59d06: "skeleton_2h_sword_44",                                         // 3284507910
@@ -5233,6 +5268,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xd43fe88c: "undead_javelineer_26",                                         // 3560958092
 	0xd443cb0c: "undead_berserker_53",                                          // 3561212684
 	0xd44f2d2e: "damned_villager_hammer_03gc09_elite",                          // 3561958702
+	0xd451ba1c: "yonas_msq2",                                                   // 3562125852
 	0xd45495e8: "damned_villager_cleaver_30",                                   // 3562313192
 	0xd45cc68b: "legion_signifer_65",                                           // 3562849931
 	0xd466347e: "dynasty_summoner_dg_ebonscale_00",                             // 3563467902
@@ -5265,6 +5301,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xd5961afc: "withered_grunt_25_dg_windsward_00",                            // 3583384316
 	0xd596ab00: "damned_villager_pitchfork_59",                                 // 3583421184
 	0xd59798a1: "damned_villager_lumberaxe_43",                                 // 3583482017
+	0xd5a16416: "ghost_charred_66_09a_s18",                                     // 3584123926
 	0xd5a6c183: "boar_60",                                                      // 3584475523
 	0xd5c4efd7: "desert_scorpion_medium_66",                                    // 3586453463
 	0xd5c565a6: "bobcat_59",                                                    // 3586483622
@@ -5430,6 +5467,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xdc61f77a: "dryad_shaman_31",                                              // 3697407866
 	0xdc651c21: "risen_corruption_impaler_62",                                  // 3697613857
 	0xdc68d85f: "tiger_56",                                                     // 3697858655
+	0xdc6b1938: "damned_axeman_m-f_55_minion",                                  // 3698006328
 	0xdc6b8756: "withered_brute_38",                                            // 3698034518
 	0xdc6e0899: "damned_villager_shovel_66",                                    // 3698198681
 	0xdc73298d: "bobcat_55",                                                    // 3698534797
@@ -5571,6 +5609,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xe2733dad: "skeleton_1h_sword_26",                                         // 3799203245
 	0xe28067d9: "skeleton_club_32",                                             // 3800066009
 	0xe288c899: "damned_pistoleer_m-f_dg_shattermtn_00",                        // 3800615065
+	0xe28b1cc4: "anubianguardian_archer_09a_s9",                                // 3800767684
 	0xe28f042f: "damned_greataxeman_m-f_54",                                    // 3801023535
 	0xe2a73fd0: "turkey_46",                                                    // 3802611664
 	0xe2ae6080: "damned_villager_kitchenknife_27",                              // 3803078784
@@ -5829,6 +5868,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xecd68490: "withered_grunt_named_12mb10",                                  // 3973481616
 	0xecde9e70: "damned_axeman_m-f_03gc08",                                     // 3974012528
 	0xece41ab6: "drowned_sailor_1h_sword_shield_43",                            // 3974372022
+	0xece5787b: "dryad_soldier_57_waveevent",                                   // 3974461563
 	0xece78658: "damned_villager_sickle_29",                                    // 3974596184
 	0xece9ccb6: "evil_knight_bow_32",                                           // 3974745270
 	0xed04a3fa: "pig_domestic_62",                                              // 3976504314
@@ -5837,11 +5877,13 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xed4b3db3: "bear_grizzly_28",                                              // 3981131187
 	0xed55ba50: "damned_pistoleer_m-f_07sm06a_elite",                           // 3981818448
 	0xed83c3f7: "bobcat_28",                                                    // 3984835575
+	0xed949bb2: "hercyne_reindeer_briar_turret",                                // 3985939378
 	0xeda63ec9: "barbary_lion_64",                                              // 3987095241
 	0xedac5ab7: "icedryad_range_frostgrip_61",                                  // 3987495607
 	0xedc5da8b: "damned_villager_rake_53",                                      // 3989166731
 	0xedd00d51: "damned_villager_pitchfork_28",                                 // 3989835089
 	0xedd13ef0: "damned_villager_lumberaxe_32",                                 // 3989913328
+	0xeddd04a2: "explosive_sprout_fire",                                        // 3990684834
 	0xeddd2be0: "desert_coyote_named_00",                                       // 3990694880
 	0xede067d2: "boar_11",                                                      // 3990906834
 	0xedf00d3a: "peacock_49",                                                   // 3991932218
@@ -5975,6 +6017,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xf2b78cc5: "bear_black_31",                                                // 4072115397
 	0xf2ba78e1: "evil_knight_longsword_19",                                     // 4072306913
 	0xf2be9180: "dune_phantom_tank_named_01",                                   // 4072575360
+	0xf2cdda39: "anubianguardian_reaver_09a_s9",                                // 4073577017
 	0xf2cf1f49: "waterfowl_47",                                                 // 4073660233
 	0xf2da33f5: "undead_admiral_brute_blackpowderkeg",                          // 4074386421
 	0xf2f127b3: "ancientguardian_mage_48",                                      // 4075890611
@@ -5992,6 +6035,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xf3515c54: "drowned_sailor_1h_club_12mb01b",                               // 4082195540
 	0xf35f6933: "target_dummy",                                                 // 4083116339
 	0xf36ec98f: "cow_66",                                                       // 4084124047
+	0xf37382cc: "blight_fiend_51_minion",                                       // 4084433612
 	0xf39df6b8: "mountain_lion_10ws06",                                         // 4087215800
 	0xf3a7cba8: "damned_villager_lumberaxe_26",                                 // 4087860136
 	0xf3b32fd3: "damned_villager_rake_47",                                      // 4088606675
@@ -6247,9 +6291,11 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xfe0bee87: "wolf_alpha_9",                                                 // 4262194823
 	0xfe1149e3: "primal_lion_59",                                               // 4262545891
 	0xfe1e93c7: "anubianguardian_archer_61",                                    // 4263416775
+	0xfe4bd6e5: "explosive_sprout_poison_pulse",                                // 4266383077
 	0xfe617ed4: "rabbit_spotted_32",                                            // 4267802324
 	0xfe73c945: "cow_33",                                                       // 4269001029
 	0xfe779ef3: "darkness_monolith_shell_dt2",                                  // 4269252339
+	0xfe7a99b9: "anubianguardian_brute_09a_s9",                                 // 4269447609
 	0xfe85c986: "ancientguardian_reaver_38",                                    // 4270180742
 	0xfe878d2b: "withered_grunt_46",                                            // 4270296363
 	0xfe88319c: "ancientguardian_spearman_62_waveevent",                        // 4270338460
@@ -6278,6 +6324,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
 	0xff37735d: "tendril_corruption_58",                                        // 4281824093
 	0xff44d36c: "damned_villager_pickaxe_07sm04_elite",                         // 4282700652
 	0xff49c388: "legion_villager_hammer_62",                                    // 4283024264
+	0xff540704: "anubianguardian_panther_09a_s9",                               // 4283696900
 	0xff643f63: "boar_stripped_30",                                             // 4284759907
 	0xff657e31: "elk_stag_43",                                                  // 4284841521
 	0xff65c482: "undead_hunter_36",                                             // 4284859522
