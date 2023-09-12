@@ -38,7 +38,7 @@ Optional regexp filters:
 
 ### Datasheet converter
 
-Supported formats are `csv` (default) and `json`
+Supported formats are `csv` (default), `json` and `yaml`
 
 Powershell:
 ```powershell

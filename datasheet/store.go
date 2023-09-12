@@ -2,6 +2,7 @@ package datasheet
 
 import (
 	"github.com/new-world-tools/new-world-tools/store"
+	"sort"
 )
 
 func NewStore(dataTableDir string) (*Store, error) {
@@ -74,4 +75,31 @@ func (store *Store) GetAll() []*DataSheetFile {
 	}
 
 	return dsFiles
+}
+
+func (store *Store) GetTypes() ([]string, error) {
+	keys := store.store.GetKeys()
+
+	typesMap := map[string]bool{}
+	for _, key := range keys {
+		dsFile := store.store.Get(key)
+
+		meta, err := dsFile.GetMeta()
+		if err != nil {
+			return nil, err
+		}
+
+		typesMap[meta.Type] = true
+	}
+
+	types := make([]string, len(typesMap))
+	var i int
+	for typ, _ := range typesMap {
+		types[i] = typ
+		i++
+	}
+
+	sort.Strings(types)
+
+	return types, nil
 }

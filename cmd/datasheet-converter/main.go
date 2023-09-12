@@ -6,6 +6,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/goccy/go-yaml"
 	"github.com/new-world-tools/new-world-tools/datasheet"
 	"github.com/new-world-tools/new-world-tools/localization"
 	"github.com/new-world-tools/new-world-tools/profiler"
@@ -39,11 +40,13 @@ var (
 const (
 	formatCsv  = "csv"
 	formatJson = "json"
+	formatYaml = "yaml"
 )
 
 var formats = map[string]bool{
 	formatCsv:  true,
 	formatJson: true,
+	formatYaml: true,
 }
 
 func main() {
@@ -53,7 +56,7 @@ func main() {
 	inputDirPtr := flag.String("input", ".\\extract\\sharedassets\\springboardentitites\\datatables", "directory path")
 	localizationDirPtr := flag.String("localization", "", "localization path")
 	outputDirPtr := flag.String("output", ".\\datasheets", "directory path")
-	formatPtr := flag.String("format", "csv", "csv or json")
+	formatPtr := flag.String("format", "csv", "csv, json, yaml")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
 	keepStructurePtr := flag.Bool("keep-structure", false, "keep original file structure")
@@ -202,6 +205,14 @@ func addTask(id int64, file *datasheet.DataSheetFile) {
 			}
 		}
 
+		if format == formatYaml {
+			outputPath = outputPath + ".yml"
+			err = storeToYaml(ds, outputPath)
+			if err != nil {
+				return err
+			}
+		}
+
 		return nil
 	}))
 }
@@ -285,6 +296,39 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 	if withIndents {
 		encoder.SetIndent("", "    ")
 	}
+
+	err = encoder.Encode(result)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func storeToYaml(ds *datasheet.DataSheet, path string) error {
+	err := os.MkdirAll(filepath.Dir(path), 0755)
+	if err != nil {
+		return err
+	}
+
+	file, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+
+	defer file.Close()
+
+	result := make([]*structure.OrderedMap[string, any], len(ds.Rows))
+	for i, row := range ds.Rows {
+		record := structure.NewOrderedMap[string, any]()
+		for j, cell := range row {
+			record.Add(fmt.Sprintf("%s", ds.Columns[j].Name), normalizeCellValue(ds.Columns[j], cell))
+		}
+
+		result[i] = record
+	}
+
+	encoder := yaml.NewEncoder(file, yaml.Indent(2))
 
 	err = encoder.Encode(result)
 	if err != nil {

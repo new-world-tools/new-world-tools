@@ -3,6 +3,7 @@ package structure
 import (
 	"bytes"
 	"encoding/json"
+	"github.com/goccy/go-yaml"
 	"sync"
 )
 
@@ -77,6 +78,13 @@ func (orderedMap *OrderedMap[K, V]) Next() (K, V) {
 	return key, value
 }
 
+func (orderedMap *OrderedMap[K, V]) Size() int {
+	orderedMap.mu.Lock()
+	defer orderedMap.mu.Unlock()
+
+	return orderedMap.position
+}
+
 func (orderedMap *OrderedMap[K, V]) MarshalJSON() ([]byte, error) {
 	var data []byte
 	var err error
@@ -114,6 +122,18 @@ func (orderedMap *OrderedMap[K, V]) MarshalJSON() ([]byte, error) {
 	return buf.Bytes(), nil
 }
 
+func (orderedMap *OrderedMap[K, V]) MarshalYAML() (any, error) {
+	mapSlice := yaml.MapSlice{}
+
+	orderedMap.Reset()
+	for orderedMap.Has() {
+		key, value := orderedMap.Next()
+		mapSlice = append(mapSlice, yaml.MapItem{key, value})
+	}
+
+	return mapSlice, nil
+}
+
 func (orderedMap *OrderedMap[K, V]) ToMap() map[K]V {
 	m := make(map[K]V)
 	orderedMap.Reset()
@@ -122,8 +142,4 @@ func (orderedMap *OrderedMap[K, V]) ToMap() map[K]V {
 		m[key] = value
 	}
 	return m
-}
-
-func (orderedMap *OrderedMap[K, V]) MarshalYAML() (any, error) {
-	return orderedMap.ToMap(), nil
 }
