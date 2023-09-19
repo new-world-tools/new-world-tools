@@ -82,6 +82,10 @@ type HashRegistry struct {
 }
 
 func (registry *HashRegistry) Add(value string) error {
+	if value == "" {
+		return nil
+	}
+
 	lowerValue := strings.ToLower(value)
 	hash := crc32.ChecksumIEEE([]byte(lowerValue))
 
