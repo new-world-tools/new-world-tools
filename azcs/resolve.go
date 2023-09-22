@@ -477,6 +477,36 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		"5f9f78d5-bdf7-5531-961d-8a91dfa2e126",
 		"c2fd8c07-90d3-5d02-bab7-b1fac968c43f",
 		"fdbd40b4-8a70-5b23-bce7-a717ba039a86",
+		"98f0b819-838f-5548-b645-4cf0959f2d43",
+		"3edc016a-52cf-5bb9-b450-2550db28f9e2",
+		"363ed6cd-26b0-5fb8-bf5c-a0320f380286",
+		"15b4f50e-8c6e-5262-8555-e181a9b6ffac",
+		"777e8fda-6a1b-55fd-baf9-8aff3c0b7397",
+		"7ff36f26-644e-5051-84bb-ae54534c84d4",
+		"f31f64ea-e384-5536-acd6-8f01849730fc",
+		"2a3d1e1e-a69f-5860-8934-00c3bfe920cc",
+		"b27b9a2c-895b-5dbe-813d-dd7a16ebe833",
+		"b6e08b3f-f4e1-50c2-8752-3cf3c4ab414a",
+		"bf40ff0c-c902-53c4-9b81-38881bb92e54",
+		"0b66e343-c513-5eb3-b152-770c4628bb73",
+		"3c9d208a-2e62-51e2-8aa1-5b6bb7473a52",
+		"2f09439e-051f-5360-859e-55eab094feb5",
+		"344f38ea-4d1d-5d55-83c1-5f6060c0a09d",
+		"a3be97b0-be01-51c4-9717-7cdd03c6c10e",
+		"283f62d6-a310-5d1e-a38e-409db6c165a4",
+		"b42a39d8-87f7-5e12-a7c6-9fd44de9c93b",
+		"bd28477a-6d73-5d2e-b509-5fd32a06f475",
+		"03090b25-4079-5d2e-9650-e7c26505d3a4",
+		"f6e6495e-59a8-5724-8de1-d6b68162db92",
+		"d65e4f21-2dc2-5ff9-b67e-8a79eb8a0082",
+		"6434a20b-a21d-5575-aec5-5a7319fbc3fb",
+		"eddf6989-9c69-5031-be72-6493e2fa3a39",
+		"12e435dd-b28e-5082-8e17-67f1bbc894b1",
+		"945d6962-df72-5875-861b-52d14d233d65",
+		"65cdd55c-be9b-5689-8e2c-a4117ff26f6e",
+		"bd7e940e-6d84-5185-87c3-99d6c8db63e0",
+		"e876f68c-57d8-54f0-826c-9adc5d082850",
+		"77b3bc35-e577-5281-aebe-11c0e1b622bf",
 		"9c719dd5-f8d3-59d3-b55b-627422922a43":
 		values := make([]any, len(element.Elements))
 		for i, element := range element.Elements {
@@ -497,7 +527,10 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 	case
 		"AZStd::intrusive_ptr",
 		"AZStd::shared_ptr",
-		"AZStd::unique_ptr":
+		"AZStd::unique_ptr",
+		"9e2cccea-8515-5470-9c31-2b72dbff5d97",
+		"ea418fc5-62ce-52a8-abb4-299f072b6629",
+		"33c158b9-7c9d-54c1-ae8e-ed3c7f5b77c6":
 		if len(element.Elements) == 0 {
 			return nil, nil
 		}
