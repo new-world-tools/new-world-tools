@@ -1,7 +1,6 @@
 package azcs
 
 var hashStatusEffectDataEffectCategories = map[uint32]string{
-	0x00000000: "",                              // 0
 	0x01970eea: "frost",                         // 26676970
 	0x059278a3: "dot",                           // 93485219
 	0x06a98af5: "tokengatherboost",              // 111774453
@@ -88,6 +87,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
 	0x90ea6d55: "ignoredebuffs",                 // 2431282517
 	0x9145c383: "debilitate",                    // 2437268355
 	0x934dd900: "ccdurreduction",                // 2471352576
+	0x96240334: "nondispellableslow",            // 2518942516
 	0x963ebda8: "luck",                          // 2520694184
 	0x9821eb23: "ai_neutral",                    // 2552359715
 	0x98c692d4: "bblastchance",                  // 2563150548

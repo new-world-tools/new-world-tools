@@ -2526,6 +2526,7 @@ var hashPropertiesData = map[uint32]string{
 	0x8989a70a: "m_repositionkeepawaydistance",
 	0x899a993c: "rules",
 	0x899e579c: "m_darknesspercentthreshold",
+	0x89a11f3c: "loot biasing exception item classes",
 	0x89ab626a: "reflectparticles",
 	0x89cab72d: "m_interactorcomponent",
 	0x89cc1c63: "m_numericprecision",

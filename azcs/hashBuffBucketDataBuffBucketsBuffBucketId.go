@@ -98,6 +98,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0x1eedbd35: "elitelegioncyclopsnamed02buffs_probs",              // 518896949
 	0x1f5a3c9f: "champaimagicdamagebuff",                            // 526007455
 	0x1f7d1062: "champrndoffutilbuff",                               // 528289890
+	0x202a9f39: "debuffresilience_66_buff_probs",                    // 539664185
 	0x2055e262: "elitedynastywarriornamed00buffs_probs",             // 542499426
 	0x20979f87: "legionsignifernamed00buffs_probs",                  // 546807687
 	0x21413c21: "elemental mutators - icebound",                     // 557923361
@@ -270,8 +271,10 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0x580a9aa2: "desertscorpionnamed00buffs",                        // 1477089954
 	0x5814e6c3: "mutation_overgrown_dungeonminus_tier2_death",       // 1477764803
 	0x58825959: "mutation_eternal_dungeonplus_tier4_promo",          // 1484937561
+	0x594f2529: "debuffresilience_66_buff",                          // 1498359081
 	0x5a1ba1c9: "aipoisononhitbuff",                                 // 1511760329
 	0x5a43b369: "eliteundeadofficernamed00buffs",                    // 1514386281
+	0x5bba9b3d: "debuffresilience_33_buff",                          // 1538956093
 	0x5c1b1d79: "champcombomagicbuff_probs",                         // 1545280889
 	0x5c624cd1: "legionlegionnairenamed00buffs_probs",               // 1549946065
 	0x5c6b5734: "swarmerdarkness01buffs",                            // 1550538548
@@ -331,6 +334,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0x72149bde: "elitealligatorblacknamed00buffs_probs",             // 1913953246
 	0x721a1f38: "mutation_hellfire_dungeonplus_tier2_promo2",        // 1914314552
 	0x72ab109e: "elitebloatedcorpsenamed00buffs_probs",              // 1923813534
+	0x72dd5617: "debuffresilience_50_buff_probs",                    // 1927108119
 	0x7350efa7: "champrndoffbuff",                                   // 1934684071
 	0x7381b0fb: "mutation_overgrown_dungeonplus_tier4_promo1",       // 1937879291
 	0x740767ab: "aimagicresistbuff",                                 // 1946642347
@@ -355,6 +359,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0x7944b9e2: "mutation_overgrown_dungeonplus_tier3_promo1",       // 2034547170
 	0x79460e78: "champcombodamagearmorbuff",                         // 2034634360
 	0x79686837: "acolytedarkness00buffs",                            // 2036885559
+	0x79ac5c33: "debuffresilience_75_buff",                          // 2041338931
 	0x79c53b41: "mutation_hellfire_dungeonminus_tier4",              // 2042968897
 	0x7a395043: "aiprojectileshieldbuff",                            // 2050576451
 	0x7a4b9439: "legionsignifernamed01buffs",                        // 2051773497
@@ -408,6 +413,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0x877e6765: "mutation_eternal_dungeonplus_tier3_promo2_probs",   // 2273208165
 	0x88d958f9: "dungeonhealthbuff",                                 // 2295945465
 	0x8a09031b: "mutation_eternal_dungeon_tier2_probs",              // 2315846427
+	0x8a22944c: "debuffresilience_75_buff_probs",                    // 2317521996
 	0x8a3647cb: "randomutilitybuff_probs",                           // 2318813131
 	0x8a3e593e: "dungeonlightningdamagebuff",                        // 2319341886
 	0x8a980b40: "elitedamnedhoundnamed00buffs_probs",                // 2325220160
@@ -496,6 +502,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0xa4c1e3ae: "champaidamagebuff",                                 // 2764170158
 	0xa511f384: "legionvillagerpickaxenamed00buffs",                 // 2769417092
 	0xa5619aa5: "mutation_hellfire_dungeonplus_tier3",               // 2774637221
+	0xa5a65b3a: "debuffresilience_33_buff_probs",                    // 2779142970
 	0xa618c090: "champailightningdamagebuff",                        // 2786640016
 	0xa621459d: "alligatorstrangenamed01buffs_probs",                // 2787198365
 	0xa64a619b: "champaiselfdestructcorruptionbuff_probs",           // 2789892507
@@ -587,6 +594,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
 	0xbe2ead81: "aifiredamagebuff",                                  // 3190730113
 	0xbe4b6c2b: "eliteghostshipwreckednamed00buffs",                 // 3192613931
 	0xbeb01fa6: "mutation_hellfire_dungeonplus_tier3_promo2",        // 3199213478
+	0xbefedca9: "debuffresilience_50_buff",                          // 3204373673
 	0xbf0e74f5: "anubianguardianreavernamed02buffs",                 // 3205395701
 	0xc0bbddc9: "eliteundeadberserkernamed00buffs",                  // 3233537481
 	0xc0d326a9: "elkdarkness00buffs",                                // 3235063465

@@ -87,6 +87,7 @@ var hashNPCDataNPCId = map[uint32]string{
 	0x13396de5: "0440a_atticusdelphi",                 // 322530789
 	0x13790f04: "09a_shirzad",                         // 326700804
 	0x138ba64a: "9503_dog_s01_05",                     // 327919178
+	0x14af43d8: "09a_fionn_sc",                        // 347030488
 	0x14af7734: "1624_imhotep_v3p1",                   // 347043636
 	0x14e66253: "9503_dog_s01_01",                     // 350642771
 	0x156d1d03: "1624_imhotep_v2p1",                   // 359472387
