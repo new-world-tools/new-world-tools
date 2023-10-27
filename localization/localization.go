@@ -65,14 +65,14 @@ func New(root string) (*store.Store[string], error) {
 		}
 
 		for _, resource := range resources.Resources {
-			if resource.Nil {
+			if resource.Nil || resource.Key == "" {
 				continue
 			}
 
 			if localizationStore.Has(resource.Key) && localizationStore.Get(resource.Key) != resource.Value {
 				//return nil, fmt.Errorf("multiple values: %s = %q and %q", key, val, resource.Value)
 			}
-			//if !ok {
+			//if !ok {w
 			localizationStore.Add(resource.Key, resource.Value)
 			//}
 		}
@@ -87,10 +87,33 @@ type Resources struct {
 }
 
 type Resource struct {
-	Key        string `xml:"key,attr"`
-	RelVersion string `xml:"rel_version,attr"`
-	Comment    string `xml:"comment,attr"`
-	Value      string `xml:",innerxml"`
+	Key                     string `xml:"key,attr"`
+	RelVersion              string `xml:"rel_version,attr"`
+	RelVerstion             string `xml:"rel_verstion,attr"`
+	Comment                 string `xml:"comment,attr"`
+	VO                      string `xml:"VO,attr"`
+	VOStatus                string `xml:"VO_Status,attr"`
+	VOType                  string `xml:"VO_Type,attr"`
+	CameraEnterBlendTime    string `xml:"cameraEnterBlendTime,attr"`
+	CameraExitBlendTime     string `xml:"cameraExitBlendTime,attr"`
+	CameraState             string `xml:"cameraState,attr"`
+	CameraStateLookAt       string `xml:"cameraStateLookAt,attr"`
+	CameraStateOrigin       string `xml:"cameraStateOrigin,attr"`
+	DialogueNext            string `xml:"dialogue-next,attr"`
+	DialoguePrompt          string `xml:"dialogue-prompt,attr"`
+	End                     string `xml:"end,attr"`
+	Gender                  string `xml:"gender,attr"`
+	HideNearbyPlayerAvatars string `xml:"hideNearbyPlayerAvatars,attr"`
+	HidePlayerAvatar        string `xml:"hidePlayerAvatar,attr"`
+	LineId                  string `xml:"line_id,attr"`
+	Location                string `xml:"location,attr"`
+	Name                    string `xml:"name,attr"`
+	OriginEnterBlendTime    string `xml:"originEnterBlendTime,attr"`
+	QuestId                 string `xml:"quest_id,attr"`
+	Speaker                 string `xml:"speaker,attr"`
+	Start                   string `xml:"start,attr"`
 
-	Nil     bool     `xml:"http://www.w3.org/2001/XMLSchema-instance nil,attr"`
+	Value string `xml:",innerxml"`
+
+	Nil bool `xml:"http://www.w3.org/2001/XMLSchema-instance nil,attr"`
 }
