@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"io"
+	"math"
 )
 
 func ReadBytes(r io.Reader, count int) ([]byte, error) {
@@ -60,6 +61,24 @@ func ReadUint64(r io.Reader, byteOrder binary.ByteOrder) (uint64, error) {
 	}
 
 	return byteOrder.Uint64(b), nil
+}
+
+func ReadFloat32(r io.Reader, byteOrder binary.ByteOrder) (float32, error) {
+	b, err := ReadBytes(r, 4)
+	if err != nil {
+		return 0, err
+	}
+
+	return math.Float32frombits(byteOrder.Uint32(b)), nil
+}
+
+func ReadFloat64(r io.Reader, byteOrder binary.ByteOrder) (float64, error) {
+	b, err := ReadBytes(r, 8)
+	if err != nil {
+		return 0, err
+	}
+
+	return math.Float64frombits(byteOrder.Uint64(b)), nil
 }
 
 func ReadNullTerminatedString(r io.Reader) (string, error) {
