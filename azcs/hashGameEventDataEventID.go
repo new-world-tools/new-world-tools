@@ -6,6 +6,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x001a1429: "0828_heirlooms_b_interact", // 1709097
     0x0027ae27: "0720_0102_hs_01_success", // 2600487
     0x0032bc1c: "1203_0401_fashion_success", // 3324956
+    0x004b8814: "95_s04_06_lizardstatue3_interact", // 4950036
     0x006aeb99: "pvpfaction+v2_30", // 7007129
     0x006e145f: "azothstaff_17_success", // 7214175
     0x00729329: "0402_0413_renee_success", // 7508777
@@ -69,17 +70,20 @@ var hashGameEventDataEventID = map[uint32]string{
     0x03effc5b: "1524_doubloonc_interact", // 66059355
     0x03f27e70: "eventbagofjuniperberrieslvl1", // 66223728
     0x03f513e8: "campcraft3", // 66393064
+    0x0400c254: "gather_winterconv_lostpresent_standard", // 67158612
     0x042c83a9: "pvpfactionv2_9", // 70026153
     0x042dfd9c: "greatermastery_miningxp", // 70122908
     0x044e1296: "0330_0102_sketchingb_interact", // 72225430
     0x045937bb: "1210_0101_devilhoney_success", // 72955835
     0x0491486c: "msq_gracesflag_interact", // 76630124
+    0x04be5829: "95_s04_06_lizardstatue1_interact", // 79583273
     0x04c57f23: "explorevista_northwindsward02", // 80052003
     0x04cf7d9a: "pvpfaction-v2_1", // 80706970
     0x04d9dfbc: "mount_grantridingxp_medium", // 81387452
     0x04e4f9dc: "16_exp_glyphb_interact", // 82115036
     0x04e82139: "io_06a_msq_13_jewel_interact", // 82321721
     0x04e8f86e: "0902_gunpowdercask_interact", // 82376814
+    0x04eb0090: "95_s04_03_round1_moverook_f1_interact", // 82509968
     0x04ec3c7f: "cmission_failure_blacksmithprojectid", // 82590847
     0x04f13582: "0923_0101_fq04_success", // 82916738
     0x04f25121: "1330_0201_startingthefire_success", // 82989345
@@ -149,6 +153,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x08307327: "ef_tour_2_success", // 137392935
     0x08389ff8: "06a_ts_01_gatherandrefine_success", // 137928696
     0x083bea95: "cmission_success_carpentryprojectid2", // 138144405
+    0x084865bd: "95_s04_06_seefallslore_hint", // 138962365
     0x0853bbd6: "95a_s02_sharifcage_interact", // 139705302
     0x0857d32c: "04a_side05_01_guitar_interact", // 139973420
     0x085f1749: "99e_msq_02_myrddinclues_success", // 140449609
@@ -159,7 +164,9 @@ var hashGameEventDataEventID = map[uint32]string{
     0x08bd07dd: "09a_s6_migrationevidence_interact", // 146606045
     0x08c87ec8: "craft_leatherworkingt1", // 147357384
     0x08d624c3: "0721_0106_tf_05_success", // 148251843
+    0x08dd8dd4: "95_s04_03_boat_hint", // 148737492
     0x08f23af1: "pvp_xpsmall3_50", // 150092529
+    0x08fc0933: "95_s04_03_selectpiece_interact", // 150735155
     0x091a1f05: "09a_s18_siphonplace_interact", // 152706821
     0x091a3e58: "sm_bonfireblast_reward", // 152714840
     0x09272c04: "16_side_07_helphistorian_success", // 153562116
@@ -287,6 +294,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x0f8a3ea3: "mb_coinpurse2_event", // 260718243
     0x0f8fe82a: "1421_0202_toronesuccess", // 261089322
     0x0f95499b: "0321_0109_azureravager_gleamingedge_success", // 261441947
+    0x0f99bd37: "95_s04_06_mordredfallsnote_vln", // 261733687
     0x0fa5bad1: "craft_leatherworkingt5", // 262519505
     0x0fa7f981: "msq_0052_bombcargo2_interact", // 262666625
     0x0fc83747: "1127_malignnoded_interact", // 264779591
@@ -325,12 +333,14 @@ var hashGameEventDataEventID = map[uint32]string{
     0x114468c0: "gather_miningt17", // 289695936
     0x114eb7f7: "1403a_0301_gkw_success", // 290371575
     0x1157272a: "0411_armillary_interact_success", // 290924330
+    0x1158af78: "95_s04_04_magedoor2_interact", // 291024760
     0x1166e300: "02a_side08_03_music_success", // 291955456
     0x11677d8f: "wm_bow_0104_bowmastery_04_success", // 291995023
     0x1168061e: "99e_msq_05_galahadkey_interact", // 292029982
     0x116e40a1: "musicreward_amazing_buff_04", // 292438177
     0x1173b715: "msq_0023_amrinetemplealtar_interact", // 292796181
     0x117afa31: "0202_0103_heldbelowthesurface_success", // 293272113
+    0x11b8a9bd: "95_s04_01_mordredtracks4_interact", // 297314749
     0x11cd1fc2: "16bs_heartgemupgrade_interact", // 298655682
     0x11ef3dc7: "musicreward_okay_buff_03", // 300891591
     0x1216c854: "99a_isabellawhisper_09_interact", // 303482964
@@ -340,7 +350,9 @@ var hashGameEventDataEventID = map[uint32]string{
     0x1286d980: "pvpfaction+v2_2", // 310827392
     0x12ce2532: "faction-v2_49", // 315499826
     0x12ff78e4: "award_skin_feet_marauderlegatust5_box", // 318732516
+    0x130a5398: "95_s04_tp_stage3_door1_interact", // 319443864
     0x130d493a: "9902_0015_itmustflow_success", // 319637818
+    0x130e6a84: "95_s04_04_jehan_03_vln", // 319711876
     0x13193e8e: "99e_msq2_spinning_rings_03_interact", // 320421518
     0x131f40b1: "1004_0103_hiltleather_quest_success", // 320815281
     0x1321a476: "0324_0101_fq12_success", // 320971894
@@ -393,6 +405,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x166cca05: "standinggrantcutlasskeys", // 376228357
     0x166ddee5: "azothstaff_5_success", // 376299237
     0x16744db3: "faction+v2_63", // 376720819
+    0x16801d8c: "95_s04_02_daichidojocomplete", // 377494924
     0x1682f9de: "musicreward_okay_buff_07", // 377682398
     0x1695174e: "0519_emptyazothpowersource_interact", // 378869582
     0x16a3b48e: "0724_0101_fq13_success", // 379827342
@@ -404,6 +417,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x16f3d8a9: "0203_0102_ancientproblemsancientsolutions_success", // 385079465
     0x1702d8a2: "9402_race_success", // 386062498
     0x1705b1e0: "s_xmarksthespot_success", // 386249184
+    0x170854b0: "95_s04_01_pedestallore_hint", // 386421936
     0x17131788: "reward_mounts_ridingtradeskill_160", // 387127176
     0x1715001c: "azothstaff_16_success", // 387252252
     0x171d6476: "mb_msq2_robes_chest_interact", // 387802230
@@ -421,6 +435,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x17e886ca: "faction+v2_6", // 401114826
     0x17eceeb3: "99e_msq2_spinning_rings_01_interact", // 401403571
     0x17edeebe: "1420_0504_cvthreesuccess", // 401469118
+    0x17ff83a5: "95_s04_tp_stage3_door3_interact", // 402621349
     0x17ffe6ed: "craft_arcanat4", // 402646765
     0x1806bb90: "0503_0202_burdenofatonement_success", // 403094416
     0x18074348: "cmission_failure_farmersharvestprojectid", // 403129160
@@ -437,8 +452,10 @@ var hashGameEventDataEventID = map[uint32]string{
     0x18bee1e1: "faction-v2_18", // 415162849
     0x18c11f14: "1666_0101_charmionscroll_interact", // 415309588
     0x18d80c8a: "musicreward_amazing_buff_08", // 416812170
+    0x18defb6b: "95_s04_03_selectmove_interact", // 417266539
     0x19004811: "explorevista_southmourningdale01", // 419448849
     0x19022c86: "1303_1311_protective_wyrd_gear_v2_success", // 419572870
+    0x190bc6c2: "95_s04_03_zandermumbling_hint", // 420202178
     0x191a1d40: "award_skin_chest_covenantinquisitort5_box", // 421141824
     0x1920a2b5: "98_syndicate_03_waterbarrel_interact", // 421569205
     0x1940a35a: "award_skin_chest_marauderlegatust5_box", // 423666522
@@ -447,6 +464,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x196575d4: "0722_0107_fl_06_success", // 426079700
     0x196ec6ce: "pvpfactionv2_52", // 426690254
     0x1971dad8: "pvpfaction+v2_20", // 426891992
+    0x1973e05b: "95_s04_mordred_trial_complete", // 427024475
     0x1997004b: "craft4", // 429326411
     0x19a01d17: "12a_msq_16_fasttravel_success", // 429923607
     0x19a7145e: "98_c_01b_fenredemption_success", // 430380126
@@ -491,6 +509,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x1c405c5e: "14_sq_05_plant_01_interact", // 473979998
     0x1c630f43: "io_99c_msq2_ritualobject3_interact", // 476254019
     0x1c839336: "1435_0102_poppableblossom_interact", // 478384950
+    0x1ca6d9fa: "95_s04_01_mordredtracks2_interact", // 480696826
     0x1ca8f212: "1332_0203_packfromhell_success", // 480834066
     0x1caf6dad: "06a_ww_voicedlorenote_02_interact", // 481258925
     0x1cc31c7b: "1004_0103_captainsblade_quest_success", // 482548859
@@ -508,6 +527,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x1d714b4c: "factionintro_syndicate_recruitment_success", // 493964108
     0x1d96a15c: "cmission_failure_forthardpointsprojectid", // 496410972
     0x1da5e157: "gather_skinningt3", // 497410391
+    0x1da728a5: "0424_0101_convergence_success", // 497494181
     0x1dc5b6ff: "pvp_xplarge3_50", // 499496703
     0x1ddf55e7: "craft_engineeringlowt1", // 501175783
     0x1de6a32b: "1104_medallionchest_interact", // 501654315
@@ -570,6 +590,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x21b923f0: "we_cmission_success_crafting_provisiont1_med", // 565781488
     0x21c69db4: "16_bs_whisper_imhotepjournala_interact", // 566664628
     0x21cc9699: "99b_msq_07_digmoira_interact", // 567056025
+    0x21d7637a: "95_s04_06_seelizardart_hint", // 567763834
     0x21dc742e: "mentor_harvestingxp", // 568095790
     0x21ee7dd8: "majormastery_loggingxp", // 569277912
     0x21fff4f9: "cmission_success_hornupgradeprojectid2", // 570422521
@@ -618,6 +639,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x25524bc4: "0231_wolcottseaselh_interact", // 626150340
     0x256461c0: "99e_msq_04_blightenc_added", // 627335616
     0x256cd298: "04a_side05_01_chooseinstrument_success", // 627888792
+    0x25d63400: "95_s04_03_rescueshen_interact", // 634795008
     0x25edc300: "9801_pktraceabsorbera_06_interact", // 636338944
     0x25f132d3: "chisel5refund", // 636564179
     0x25f5c379: "02a_side07_01_memories_success", // 636863353
@@ -666,6 +688,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x28b1d7e8: "darkness_minor_tier_2_diff_3", // 682743784
     0x28c5e74a: "processloggingexpbonust3", // 684058442
     0x28cf19b7: "msq_0053_specialazothwater_interact", // 684661175
+    0x28f5b60e: "95_s04_03_round2_movequeen_g1_interact", // 687191566
     0x2905fd88: "mb_msq2_destroyrune_tablet_interact", // 688258440
     0x2907fdae: "craft_weaponsmithingt52", // 688389550
     0x291cf2f4: "1421_0206_torfivesuccess", // 689763060
@@ -762,6 +785,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x2e46ca23: "0410_0406_topofarcturus_success", // 776391203
     0x2e46e3f8: "reward_mountreward_box_29", // 776397816
     0x2e5f3395: "io_99c_msq2_blightbombc_interact", // 777991061
+    0x2e6e4334: "95_s04_04_jehan_02_vln", // 778978100
     0x2e7442ab: "craft_furnishingstaint4", // 779371179
     0x2e89f92d: "06a_g_01_defeatpirates_success", // 780794157
     0x2e8c9f95: "09a_s11_brazierd_interact", // 780967829
@@ -838,6 +862,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x33177e8c: "territorystandingsuppliest4", // 857177740
     0x332142f5: "majormastery_miningxp", // 857817845
     0x335d5da6: "factionintro_covenant_01_crest_interact", // 861756838
+    0x336ea51b: "95_s04_q2_buildfire_a_interact", // 862889243
     0x33846454: "gather_loggingt7", // 864314452
     0x338c4e44: "09a_m3_volorenote_riches_interact", // 864833092
     0x3393b222: "faction-v2_28", // 865317410
@@ -891,12 +916,15 @@ var hashGameEventDataEventID = map[uint32]string{
     0x36e67e1b: "cmission_success_ballistaupgradeprojectid2", // 921075227
     0x36f7c5fa: "pvpfaction+v2_49", // 922207738
     0x371a476c: "explorevista_eastcutlass01", // 924469100
+    0x371edd5f: "gather_winterconv_gleamiteshard", // 924769631
     0x372d2375: "craft_furnishingt5", // 925705077
     0x37379c3f: "1601_0101_cursedcenturies_success", // 926391359
     0x373aff47: "13a_sq_01_hakenstadtdoll_success", // 926613319
     0x373dd018: "salvagereserach_arcanet5", // 926797848
+    0x375772ee: "0424_gleamiteio_interact", // 928477934
     0x37630eb0: "playerkill", // 929238704
     0x37931d56: "coingranttreasurechest", // 932388182
+    0x379b7526: "95_s04_q2_buildfire_c_interact", // 932934950
     0x37a2c43a: "pvp_xpsmall1", // 933413946
     0x37ad9e3e: "09a_s4_lureswarmpin_interact", // 934125118
     0x37ebc7fa: "mutdiff6t1", // 938199034
@@ -928,6 +956,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x3937a44d: "killevent", // 959947853
     0x393886ea: "pvp_coinmedium2", // 960005866
     0x394cb862: "cmission_success_weavingprojectid2", // 961329250
+    0x399742c7: "95_s04_02_daichiseals_vln", // 966214343
     0x39b4ecdd: "13_summer_guitart1_interact", // 968158429
     0x39c06e64: "98_s_0001_rankup_success", // 968912484
     0x39d5d8e6: "95a_s02_droneeggdestructible_interact", // 970316006
@@ -936,6 +965,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x39f2f745: "99b_msq_08_azothtree_success", // 972224325
     0x39fa25ea: "0802_watershrine_interact", // 972695018
     0x3a109426: "0318_0208_rampantconviction_avileharvest_success", // 974165030
+    0x3a1901bd: "gather_winterconv_gleamitechunk", // 974717373
     0x3a1eedc0: "06a_msq_03_visitmarket_success", // 975105472
     0x3a1f4380: "09a_m5_defenseencounter_participate", // 975127424
     0x3a25fe09: "faction-v2_24", // 975568393
@@ -971,8 +1001,10 @@ var hashGameEventDataEventID = map[uint32]string{
     0x3c2b4d6f: "0511_powderkega_wavecomplete", // 1009470831
     0x3c39d1d0: "1435_0102_wayuphigh_success", // 1010422224
     0x3c4eaaf9: "explorevista_northebonscale01", // 1011788537
+    0x3c547935: "95_s04_05_winterrune_interact", // 1012169013
     0x3c8330a5: "msq_0021_forgestaffa_interact", // 1015230629
     0x3c870129: "pvpfaction+v2_18", // 1015480617
+    0x3c89afff: "95_s04_03_boat_interact", // 1015656447
     0x3c90dbcf: "0899_0801_liberation_success", // 1016126415
     0x3ca852ac: "16_imhotepritual_se_interact", // 1017664172
     0x3cb33324: "1403_0301_blightstrength_success", // 1018376996
@@ -990,6 +1022,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x3d75035d: "salvagereserach_jewelryt5", // 1031078749
     0x3d75eaf0: "mutdiff8t1", // 1031138032
     0x3d81d6dd: "1419_0204_reformation_polishpure_success", // 1031919325
+    0x3d885674: "95_s04_05_retrieverune_success", // 1032345204
     0x3dd26d98: "09a_s3_gorillabloodtrailb_interact", // 1037200792
     0x3de371f9: "salvagecoingrantt5", // 1038316025
     0x3e0a12d0: "95_s01_06_temp_supplychains_success", // 1040847568
@@ -1027,6 +1060,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x3fa7c880: "95_s01_09_temp_faceless_success", // 1067960448
     0x3fae9694: "99b_msq_06_morgengraveb_interact", // 1068406420
     0x3fd7eaf8: "reward_mounts_ridingtradeskill_40", // 1071115000
+    0x3ff0ab63: "gather_winterconv_treeoflife_t1", // 1072737123
     0x3ff122fd: "factionintro_marauders_01_success", // 1072767741
     0x3ffcb758: "faction++v2_61", // 1073526616
     0x3ffd67c3: "cmission_success_kill_turket_med", // 1073571779
@@ -1055,6 +1089,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x415da938: "bs_rally_2_success", // 1096657208
     0x4174802c: "14_sq_05_nimuefriends_success", // 1098154028
     0x41b631a8: "faction++v2_2", // 1102459304
+    0x41b7e1fc: "95_s04_06_seefirstrune_hint", // 1102569980
     0x41bbadc2: "0802_airshrine_interact", // 1102818754
     0x41d4931e: "13a_sq_11_findspousecanopus_success", // 1104450334
     0x41da5842: "1303_1311_05_hat_success", // 1104828482
@@ -1165,6 +1200,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x482e07e8: "04a_side04_04_killnamed_success", // 1210976232
     0x4830b127: "darkness_minor_tier_1_diff_1", // 1211150631
     0x483d9b3e: "award_skin_marauderheavy_box", // 1211996990
+    0x48421f47: "dungeon_greatcleave_00_icegathera_interact", // 1212292935
     0x4846b947: "pvpfaction+v2_44", // 1212594503
     0x48579d27: "pvpfaction-v2_37", // 1213701415
     0x4859a551: "pvpfactionv2_36", // 1213834577
@@ -1178,6 +1214,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x48a199c6: "1010_0102_eternal_mixes_success", // 1218550214
     0x48b8afa9: "grandmastery_miningxp", // 1220063145
     0x48c3710a: "9903_0041_somethinglefttosave_success", // 1220768010
+    0x48c61e78: "s04_gt_expd_rpt_success", // 1220943480
     0x48cfb882: "mentor_fishingxp", // 1221572738
     0x48f499a6: "0905_0701_artificersgratitude_success", // 1223989670
     0x48fb87ce: "faction++v2_60", // 1224443854
@@ -1212,6 +1249,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x4a7233cb: "salvagereserach_jewelryt4", // 1248998347
     0x4a9ccfa3: "1111_0402_corruptedenergy_success", // 1251790755
     0x4ab8b9f1: "99e_msq_05_myrddindeviceb_right_interact", // 1253620209
+    0x4ad39ab7: "0424_0105_joyrecaptured_success", // 1255381687
     0x4ae4416f: "salvagecoingrantt4", // 1256472943
     0x4af19ff7: "minormastery_loggingxp", // 1257349111
     0x4af95110: "azothstaff_12_success", // 1257853200
@@ -1239,12 +1277,14 @@ var hashGameEventDataEventID = map[uint32]string{
     0x4c2e4864: "0231_0203_wolcottsmasterpiece_success", // 1278101604
     0x4c330de0: "pvp_xpmedium3_50", // 1278414304
     0x4c50cb2f: "faction++v2_39", // 1280363311
+    0x4c5cb886: "95_s04_01_mordredpedestal_vln", // 1281144966
     0x4c6aa7b6: "09a_s4_lureingre2_interact", // 1282058166
     0x4c6ac457: "1426_0101_burnsawmill_interact", // 1282065495
     0x4c6b3c5f: "99b_msq_01_lorenote_umberto1_interact", // 1282096223
     0x4c9f027e: "gather_harvestingt15", // 1285489278
     0x4cae7732: "06a_msq_puzzle1_stone1_interact", // 1286502194
     0x4cb6113d: "99c_msq_08_settlement02_success", // 1287000381
+    0x4cb7cf7a: "dungeon_greatcleave_00_icegatherc_interact", // 1287114618
     0x4d22ce9f: "faction-v2_25", // 1294126751
     0x4d33eaff: "faction+v2_56", // 1295248127
     0x4d37fa1b: "factionv2_32", // 1295514139
@@ -1264,6 +1304,8 @@ var hashGameEventDataEventID = map[uint32]string{
     0x4e4b88f4: "cmission_success_weavingprojectid3", // 1313573108
     0x4e60c397: "1602_0101_note_interact", // 1314964375
     0x4e63c39f: "99b_msq_02_isabella_whisper1_interact", // 1315160991
+    0x4e736f91: "95_s04_03_chessexitkey_interact", // 1316188049
+    0x4e7e20a5: "95_s04_07_wrapfrost_success", // 1316888741
     0x4e816a1d: "reward_mountreward_box_30", // 1317104157
     0x4e83a696: "0722_0102_fl_01_success", // 1317250710
     0x4e8e738c: "pvpmission_success_r2_sm", // 1317958540
@@ -1296,6 +1338,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x500ea087: "pvp_factiontokenssmall3_50", // 1343135879
     0x500fa572: "99a_msq_09_gethaft_success", // 1343202674
     0x5015344c: "0721_0104_bw_03_success", // 1343566924
+    0x503af9cb: "95_s04_03_round2_movequeen_h2_interact", // 1346042315
     0x50486b26: "0325_0106_rl_05_success", // 1346923302
     0x507c7f79: "1434_0104_encstart_blightranger_interact", // 1350336377
     0x508df5db: "msq_0048_blightbombs5_interact", // 1351480795
@@ -1328,6 +1371,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x52447695: "cmission_success_kill_elk_large", // 1380218517
     0x524dd00d: "read_loreitem", // 1380831245
     0x52770fb9: "cmission_success_chefspassionprojectid", // 1383534521
+    0x527b4784: "factiontokensmall", // 1383810948
     0x528a1492: "1140_halloween_01_success", // 1384780946
     0x529f7973: "0703_baetylusluckstone_interact", // 1386183027
     0x52c3dd06: "io_99c_msq2_shakingcoffina_interact", // 1388567814
@@ -1335,6 +1379,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x52daf849: "1105_0202_excommunication_success", // 1390082121
     0x53048ec4: "eventexquisitelypackedbacket_lvl15", // 1392807620
     0x530d2b59: "99a_msq_06_tincturegatherable_02_interact", // 1393371993
+    0x531c297e: "95_s04_q2_shootrocket_d_interact", // 1394354558
     0x53410f43: "factionv2_26", // 1396772675
     0x53450258: "pvp_azothsalt_vial_reward_2", // 1397031512
     0x53451fa7: "faction+v2_42", // 1397039015
@@ -1363,6 +1408,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5448d453: "award_skin_maraudermediumt6_box", // 1414059091
     0x5460e324: "99b_msq_06_mementofindc_interact", // 1415635748
     0x54637a2b: "1424_0101_fq11_success", // 1415805483
+    0x546407dc: "processengineeringexpbonus", // 1415841756
     0x546b2b52: "09a_m3_foulplant_interact", // 1416309586
     0x5496f4d8: "0319_0101_rainbowheartshadowintent_success", // 1419179224
     0x54b066d8: "13a_sq_14_gettorches_success", // 1420846808
@@ -1388,6 +1434,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x56360d3b: "io_99c_msq2_shakingcoffinc_interact", // 1446382907
     0x5641332d: "99a_faction_vector_success", // 1447113517
     0x564e151c: "0325_0105_rl_04_success", // 1447957788
+    0x5655790a: "95_s04_tp_stage2_door2_interact", // 1448442122
     0x5676d71d: "craft_smeltingt52", // 1450628893
     0x56a36663: "1225_abandonedbags_interact", // 1453549155
     0x56f20502: "mb_msq2_setfiretopiratesupplies_interact", // 1458701570
@@ -1396,6 +1443,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x570c9435: "standinggrantebonscale", // 1460442165
     0x570f8fad: "1130_arcanefocus4_interact", // 1460637613
     0x57106eaa: "04a_side03_02_ancientscrolls_success", // 1460694698
+    0x5716dc73: "95_s04_01_icevarang_hint", // 1461116019
     0x5726ee20: "worldevent_s2_success_moderate", // 1462169120
     0x572b33f3: "darkness_major_dt5_t2", // 1462449139
     0x57419a9a: "cmission_success_stalwartprojectid", // 1463917210
@@ -1458,6 +1506,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5a3ff4bd: "0904_0302_snuffingcandle_success", // 1514140861
     0x5a4041ed: "09a_s21_intriguingartifacts_interact", // 1514160621
     0x5a4ece94: "1223_0101_fq05_success", // 1515114132
+    0x5a6cb881: "0424_0102_treeoflight_success", // 1517074561
     0x5a7c1760: "12a_mb_whisper_01_interact", // 1518081888
     0x5a869ced: "9403_vectorbs_success", // 1518771437
     0x5a96a20a: "0722_0108_fl_07_success", // 1519821322
@@ -1484,6 +1533,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5bd5e7d2: "9902_0052_saboteur_v2_success", // 1540745170
     0x5bf9e380: "cmission_success_crafting_geart2_large", // 1543103360
     0x5c19c838: "0721_0102_bw_01_success", // 1545193528
+    0x5c1de82b: "95_s04_06_secondrune_interact", // 1545463851
     0x5c3bdc62: "pvpmission_success_r1_sm", // 1547426914
     0x5c48e37b: "95_s01_04_crow_zanderthered_success", // 1548280699
     0x5c4efb85: "1004_0103_grindstone_quest_success", // 1548680069
@@ -1491,6 +1541,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5c6e51a7: "sm_cmission_success_gather_refinedt3_small", // 1550733735
     0x5c782607: "04a_side02_02_obeliskdefenders_success", // 1551377927
     0x5c7d5e00: "petrifiedbeast_encounter", // 1551719936
+    0x5c87b951: "95_s04_03_round1_moverook_d1_interact", // 1552398673
     0x5cbb5eb5: "1526_1521_lynxevidence3_interact", // 1555783349
     0x5cbf15a9: "darkness_minor_dt4_t2", // 1556026793
     0x5cc6234e: "award_skin_head_covenantinquisitort6_box", // 1556489038
@@ -1512,6 +1563,8 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5debdea6: "9401_t1_5_races_success", // 1575739046
     0x5dffb89d: "99a_msq_07_corruptedplans_success", // 1577040029
     0x5e002e8a: "9901_0014_oldfoesoldfavors_success", // 1577070218
+    0x5e025939: "95_s04_q2_shootrocket_b_interact", // 1577212217
+    0x5e108f33: "95_s04_03_round1_movequeen_g1_interact", // 1578143539
     0x5e15542b: "io_99d_msq_02_fountain_interact", // 1578456107
     0x5e314dc7: "1432_0102_belongingstrail_interact", // 1580289479
     0x5e341c5f: "09a_m7_bosswaveevent_complete", // 1580473439
@@ -1536,6 +1589,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5ef88c92: "99e_msq_07_corrstaffenc_complete", // 1593347218
     0x5f04edf8: "pvp_factiontokensmedium1_50", // 1594158584
     0x5f19e611: "award_skin_covenantheavy_box", // 1595532817
+    0x5f1c2d96: "95_s04_06_solvedpuzzle_hint", // 1595682198
     0x5f30f781: "0721_0103_tf_02_success", // 1597044609
     0x5f451625: "invasion_t1", // 1598363173
     0x5f479eb4: "9902_0049_recipeforfailure_success", // 1598529204
@@ -1713,6 +1767,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x697fa244: "99e_msq_01_prox_muralbreadcrumbsc_interact", // 1769972292
     0x698d4d7e: "reward_mounts_ridingtradeskill_20", // 1770868094
     0x69bd5253: "1201_0104_xmarksthespot_p1_success", // 1774015059
+    0x69ce39e4: "95_s04_04_jehan_01_vln", // 1775122916
     0x69e4858a: "0713_0101_explorerift_success", // 1776584074
     0x69e8fd0b: "95_s01_05_prieststealing_se_interact", // 1776876811
     0x69fdf4c4: "craft1", // 1778250948
@@ -1754,6 +1809,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x6c34cc0b: "salvagereserach_armort2", // 1815399435
     0x6c3874de: "cmission_success_repeaterupgradeprojectid2", // 1815639262
     0x6c44553e: "0904_0303_curseebonyhawk_success", // 1816417598
+    0x6c561d9c: "95_s04_03_idriscrownstolen_vln", // 1817583004
     0x6c59372e: "12a_msq_19_meetpercilla_success", // 1817786158
     0x6c6a6d0b: "factionv2_53", // 1818914059
     0x6c6e7def: "faction+v2_37", // 1819180527
@@ -1909,6 +1965,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x74e9dd22: "0823_0101_fq14_success", // 1961483554
     0x74f2237e: "campcraft2", // 1962025854
     0x752085ef: "99b_msq_11_weaversvector_success", // 1965065711
+    0x755b4991: "processarmoringexpbonus", // 1968916881
     0x756468ce: "faction-v2_54", // 1969514702
     0x75670382: "13_summer_04_carpenter_success", // 1969685378
     0x75715c4a: "factionv2_43", // 1970363466
@@ -1945,6 +2002,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x778f904e: "0321_0108_azureravager_stickingtotheplan_success", // 2005897294
     0x77a94d7b: "award_skin_covenantlightt6_box", // 2007584123
     0x77b51d5a: "mb_msq2_artifactshards_box_interact", // 2008358234
+    0x77bd5c30: "95_s04_01_viewcinematic_interact", // 2008898608
     0x77d0e586: "faction++v2_15", // 2010178950
     0x77d7202d: "cmission_success_crafting_geart2_small", // 2010587181
     0x77e293a2: "09a_m1_sick_druidb_interact", // 2011337634
@@ -1952,6 +2010,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x77ff8c9a: "1421_0201_torrentsuccess", // 2013236378
     0x78153573: "cmission_failure_forthardpointsprojectid2", // 2014655859
     0x782934ec: "99d_isabella_whisper_gc_00_interact", // 2015966444
+    0x785ae6c2: "95_s04_q2_cyclic_bonfire_1_interact", // 2019223234
     0x786c5c80: "factionv2_16", // 2020367488
     0x7882bafc: "9401_vectorwf_success", // 2021833468
     0x788f3974: "1030_0205_perfectcompanion_success", // 2022652276
@@ -1965,6 +2024,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x78d095fd: "bs_rally_1_success", // 2026935805
     0x78d4a3d1: "sporepod_beasts_gathered", // 2027201489
     0x78d778be: "cmission_success_quest_shatteredmountain_07", // 2027387070
+    0x78dd3e80: "0424_lostpresentio_interact", // 2027765376
     0x78e650b6: "1310_1314_ancientwood_quest_success", // 2028359862
     0x78eec77e: "1304_1302_undeadpresent_success", // 2028914558
     0x79049071: "0810_0814_temple_success", // 2030342257
@@ -1983,6 +2043,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x79d7ab36: "gather2", // 2044177206
     0x79f2e0ed: "ew_tour_1_success", // 2045960429
     0x7a01ea68: "ef_rally_1_success", // 2046945896
+    0x7a09b76c: "95_s04_04_destroywall_interact", // 2047457132
     0x7a135abd: "02a_side08_05_reunion_success", // 2048088765
     0x7a2703d2: "12a_msq_10_confrontlochnir_success", // 2049377234
     0x7a2782f9: "16_side_12_gathereggs_success", // 2049409785
@@ -2028,6 +2089,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x7c7aecdc: "09a_s6_migrationevidence3_interact", // 2088430812
     0x7c7c3c14: "1140_halloween_03_success", // 2088516628
     0x7c886075: "09a_s2_rescuerangerb_subtitle_interact", // 2089312373
+    0x7caf36ff: "95_s04_q2_cyclic_bonfire_3_interact", // 2091857663
     0x7cb1f0e1: "1625_0701_imhotepb_interact", // 2092036321
     0x7cc877f2: "sporepod_angryearth_elite_gathered", // 2093512690
     0x7cd224e5: "faction-v2_58", // 2094146789
@@ -2046,6 +2108,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x7d1d1fdc: "pvpfaction+v2_60", // 2099060700
     0x7d53d043: "1225_0101_downpayment_success", // 2102644803
     0x7d5c64ff: "95_s01_08_temp_aidyn_wavecomplete", // 2103207167
+    0x7d6127b3: "95_s04_03_round1_movepawn_h5_interact", // 2103519155
     0x7d618014: "1624_0501_powerofthegods_success", // 2103541780
     0x7d64ec9e: "1655_0201_table02_interact", // 2103766174
     0x7d65d8f5: "0333_0104_anofferingforoffspring_success", // 2103826677
@@ -2065,6 +2128,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x7e288a37: "cmission_failure_arcaneblessingprojectid", // 2116586039
     0x7e2ddc1a: "99c_msq_puzzle1_stone1_interact", // 2116934682
     0x7e4fd156: "12a_msq_26_toyonas_success", // 2119160150
+    0x7e558429: "factiontokenlarge", // 2119533609
     0x7e5b9415: "pvp_factiontokenslarge1", // 2119930901
     0x7e66a9ad: "faction++v2_19", // 2120657325
     0x7e680242: "09a_whisperplant_scalefangenclave_interact", // 2120745538
@@ -2090,6 +2154,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x7f542392: "0524_0103_shiveringtimbers_success", // 2136220562
     0x7f67bd68: "1624_0901_buriedtrunk_interact", // 2137505128
     0x7f7c0c0a: "12a_msq_06_tomiclot_success", // 2138835978
+    0x7f9dcdf8: "95_s04_tp_stage1_door2_interact", // 2141048312
     0x7fb08534: "1624_0401_diskatumdamagea_interact", // 2142274868
     0x7fb35682: "12a_msq_03_vaulttutorial_success", // 2142459522
     0x7fde8a0a: "99e_msq_07_staffheadpiece_interact", // 2145290762
@@ -2119,6 +2184,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x8186506c: "craft_stonecuttingbreacht3", // 2173063276
     0x818bf6e5: "99c_msq_05_findmorgaine_success", // 2173433573
     0x81c099ff: "99e_msq_myrddin_whisper_eg_01_interact", // 2176883199
+    0x81d1fc03: "95_s04_01_crackedshell_hint", // 2178022403
     0x81de2173: "0325_0101_rl_00_success", // 2178818419
     0x81e0b5dc: "pvp_0001_deaddroptakeitem_interact", // 2178987484
     0x81fb7551: "gather_miningt18", // 2180740433
@@ -2134,10 +2200,12 @@ var hashGameEventDataEventID = map[uint32]string{
     0x82640c27: "factionv2_51", // 2187594791
     0x826ed817: "09a_m6_jihoonkim_voicelorenote03_interact", // 2188302359
     0x827138a3: "faction-v2_46", // 2188458147
+    0x827299ea: "95_s04_03_round1_selectpawn_interact", // 2188548586
     0x82c046d6: "award_skin_legs_covenantinquisitort5_box", // 2193639126
     0x82c0a7a6: "1205_0301_broken_weapons_success", // 2193663910
     0x82c19ee2: "9401_befriendhorse_success", // 2193727202
     0x82c8c767: "16_bs_whisper_05_interact", // 2194196327
+    0x82de7016: "95_s04_03_frozenstatues_hint", // 2195615766
     0x82ecdbfa: "12a_msq_12_camptutorial_success", // 2196560890
     0x82f35c75: "read_loreitem_monument_small", // 2196986997
     0x8334aafe: "0300_epicweapons_periville_interact_success", // 2201266942
@@ -2165,6 +2233,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x84b30465: "1222_1501_intrototravel_success", // 2226324581
     0x84d6045d: "craft_engineeringlowt2", // 2228618333
     0x84ff55e3: "0410_0414_rabbit_success", // 2231326179
+    0x85048fd4: "processweaponsmithingexpbonus", // 2231668692
     0x8504ba25: "io_99d_msq_ballista_interact", // 2231679525
     0x8509c83e: "factionv2_55", // 2232010814
     0x850dd8da: "faction+v2_31", // 2232277210
@@ -2180,6 +2249,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x8557693e: "salvagereserach_armort4", // 2237098302
     0x85600adc: "09a_s9_defendhacker_interact", // 2237663964
     0x857539c5: "salvageresearch_stonecuttingt2", // 2239052229
+    0x857a237d: "95_s04_03_rescueelsa_interact", // 2239374205
     0x857e4f1b: "99a_msq_01_02_vines_fake_interact", // 2239647515
     0x85b290c9: "1102_0301_musslebeard_success", // 2243072201
     0x85c38966: "09a_m15_success", // 2244184422
@@ -2309,6 +2379,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x8db6226a: "09a_whisperplant_medusa_interact", // 2377523818
     0x8dd8b521: "faction++v2_52", // 2379789601
     0x8ddbe6f1: "io_gimmick_breakingwallscannon_interact", // 2379998961
+    0x8de83902: "gather_winterconv_lostpresent_rare", // 2380806402
     0x8dfafdd6: "cmission_success_gather_rawt3_small", // 2382036438
     0x8e2cc115: "0726_0104_riseofisabella_success", // 2385297685
     0x8e2ec748: "factionmission_success_r4_lg", // 2385430344
@@ -2317,6 +2388,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x8e742eb3: "salvagereserach_weaponst3", // 2389978803
     0x8e7f60a4: "gather_harvestingt0", // 2390712484
     0x8e9d0038: "9901_0057_insoulinstone_success", // 2392653880
+    0x8ea16f37: "processmusicianexpbonus", // 2392944439
     0x8eadae92: "event_myrkgardkeyfragment4", // 2393747090
     0x8eaff7b6: "98_m_q5_02_goldstash_interact", // 2393896886
     0x8eb22730: "pvpfaction-v2_58", // 2394040112
@@ -2345,6 +2417,8 @@ var hashGameEventDataEventID = map[uint32]string{
     0x90151055: "99a_msq_12_returnstaff_success", // 2417299541
     0x90515c00: "0407_0101_marauderquest1_success", // 2421251072
     0x9055f539: "pvp_factiontokenslarge3", // 2421552441
+    0x905691e1: "95_s04_mordredcinematic2d_interact", // 2421592545
+    0x905fa6c6: "95_s04_tp_stage1_door3_interact", // 2422187718
     0x90874a31: "salvagereserach_arcanet51", // 2424785457
     0x908b0b47: "reward_mounts_ridingtradeskill_190", // 2425031495
     0x909ba48a: "1656_0201_supplies_interact", // 2426119306
@@ -2382,6 +2456,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x931e8fef: "99d_isabella_whisper_gc_03_interact", // 2468253679
     0x9326ff0b: "99b_msq_01_searchwalsham_success", // 2468806411
     0x9362a5f4: "reward_mounts_ridingtradeskill_80", // 2472715764
+    0x936d5dc1: "95_s04_q2_cyclic_bonfire_2_interact", // 2473418177
     0x936e4889: "0232_0204_azothtreeachene_success", // 2473478281
     0x93739bdf: "1625_0701_imhotepc_interact", // 2473827295
     0x939e4471: "0404_0103_introtoartificer_success", // 2476622961
@@ -2402,6 +2477,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x94939e38: "pvpfactionv2_6", // 2492702264
     0x94950335: "war_reload", // 2492793653
     0x94a4f291: "salvage4", // 2493837969
+    0x94aa76fb: "95_s04_tp_stage1_door1_interact", // 2494199547
     0x94b36f41: "0726_0103_isabellascorruption_success", // 2494787393
     0x94c38460: "faction++v2_42", // 2495841376
     0x94dc54f3: "1604_0201_heronomore_success", // 2497467635
@@ -2428,6 +2504,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x96c260f0: "0318_0207_rampantconviction_intoburningdepths_success", // 2529321200
     0x96eb3ee1: "eventbagofjuniperberrieslvl30", // 2531999457
     0x96f05efb: "1625_0701_quinttrailf_interact", // 2532335355
+    0x9719b787: "95_s04_01_ringpedestal_interact", // 2535044999
     0x971be24e: "buildingfinish3", // 2535187022
     0x972b0354: "16_side_26_sandthing_success", // 2536178516
     0x9734b9df: "1432_0102_dryadthieves_success", // 2536815071
@@ -2491,6 +2568,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x9b3cbd38: "minormastery_harvestingxp", // 2604449080
     0x9b46e64b: "cmission_failure", // 2605114955
     0x9b6a09e2: "faction-v2_56", // 2607417826
+    0x9b6cffe8: "95_s04_03_round2_selectqueen_interact", // 2607611880
     0x9b77a0a1: "0401_0103_boarproblem_success", // 2608308385
     0x9b7b2d82: "faction+v2_25", // 2608541058
     0x9b7ed49a: "0502_0103_pathsunseen_success", // 2608780442
@@ -2529,6 +2607,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x9dc7f025: "1002_0104_01_boots_success", // 2647126053
     0x9dcbb6cf: "0828_0802_trinkets_success", // 2647373519
     0x9dcc2e99: "explorevista_northwindsward01", // 2647404185
+    0x9dcd4655: "0424_0103_wintertokens_success", // 2647475797
     0x9dd7ead4: "pvpfactionv2_18", // 2648173268
     0x9dd9d2a2: "pvpfaction-v2_19", // 2648298146
     0x9def1291: "0910_0201_zoneofcontrol_success", // 2649690769
@@ -2539,12 +2618,14 @@ var hashGameEventDataEventID = map[uint32]string{
     0x9e5edd0e: "cmission_success_crafting_geart5_large", // 2657017102
     0x9e631c4a: "99e_msq_10_cine_brokenpole_interact", // 2657295434
     0x9e6deb98: "1625_0701_imhotepe_interact", // 2658003864
+    0x9e732d86: "95_s04_q2_cyclic_bonfire_4_interact", // 2658348422
     0x9e8948b3: "1510_1512_payingrespects_success", // 2659797171
     0x9ea6f7a5: "09a_s6_migrationevidence4_interact", // 2661742501
     0x9eb340b3: "faction++v2_13", // 2662547635
     0x9ebb4019: "95a_s02_followsharif4_interact", // 2663071769
     0x9ec4a714: "04a_side05_02_playformagistrate_interact", // 2663687956
     0x9ee9160d: "1301_forgingtongs_interact", // 2666075661
+    0x9ef0d8c0: "95_s04_05_collectwinterrune_interact", // 2666584256
     0x9ef23b9b: "pvpfactionv2_61-64", // 2666675099
     0x9efa9b99: "13a_sq_09_andrometusstones_success", // 2667223961
     0x9f15ecc3: "0722_0105_fl_04_success", // 2669014211
@@ -2559,6 +2640,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x9f9060b1: "cmission_success_fortgatesprojectid2", // 2677039281
     0x9f90eeee: "1224_sherveys_swordshield_interact", // 2677075694
     0x9f92cb26: "musicreward_bad_buff_02", // 2677197606
+    0x9f9e50f3: "95_s04_03_round1_movequeen_f1_interact", // 2677952755
     0x9fadb8df: "0904_corruptednoduleb_interact", // 2678962399
     0x9fb8f7e7: "1655_0201_table05_interact", // 2679699431
     0x9fc3b0af: "06a_msq_22_talktosoulwarden_success", // 2680402095
@@ -2572,13 +2654,16 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa04dcf02: "craft_woodworkingt5", // 2689453826
     0xa06a96e2: "9904_0048_enemyofmyenemy_success", // 2691340002
     0xa07c791e: "02a_side05_02_achene_success", // 2692512030
+    0xa08b4045: "95_s04_03_slotchessexitkey_interact", // 2693480517
     0xa0b6e3f2: "processharvestingexpbonust3", // 2696340466
     0xa0c7ff07: "0716_0101_malevolentofferings_success", // 2697461511
     0xa0d18550: "9404_t4_15_races_success", // 2698085712
     0xa0e876d2: "99b_msq_04_isabella_whisper2_interact", // 2699589330
     0xa0f42f8f: "98_m_01b_fenravager_success", // 2700357519
     0xa0f4b5da: "0204_0104_infernalcoagulant_quest_success", // 2700391898
+    0xa1238188: "0424_0106_yetisabound_success", // 2703458696
     0xa1251c72: "pvpfaction+v2_42", // 2703563890
+    0xa12eb694: "95_s04_04_jehan_04_vln", // 2704193172
     0xa130e926: "13a_sq_18_killboar_success", // 2704337190
     0xa133953d: "explorevista_midrestless01", // 2704512317
     0xa1343812: "pvpfaction-v2_31", // 2704554002
@@ -2600,6 +2685,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa1efb66f: "worldevent_piscarianfishery_limit_reached", // 2716841583
     0xa206c6bc: "mb_msq2_defeatgawain_crown_interact", // 2718353084
     0xa20a37cb: "cmission_success_crafting_provisiont5_med", // 2718578635
+    0xa21452a8: "95_s04_03_round1_selectqueen_interact", // 2719240872
     0xa2752750: "1032_0202_bridgetonowhere_success", // 2725586768
     0xa2996dd7: "msq_0009_azothwell_interact", // 2727964119
     0xa29cd8f1: "1524_1516_trueterror_success", // 2728188145
@@ -2616,6 +2702,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa33debfd: "factionintro_syndicate_02_success", // 2738744317
     0xa34e2df6: "1225_constructpoint_interact", // 2739809782
     0xa36a49ff: "gather_miningt7", // 2741651967
+    0xa375a444: "dungeon_greatcleave_00_icegatherb_interact", // 2742395972
     0xa37f7408: "0712_0101_layerspastandpresent_success", // 2743038984
     0xa387e45a: "salvagecoingrantt2", // 2743592026
     0xa3a120c8: "factionmission_success_r4_sm", // 2745245896
@@ -2650,15 +2737,20 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa4dd5c63: "eventbagofjuniperberrieslvl10", // 2765970531
     0xa507855e: "1204_corruptednoduled_interact", // 2768733534
     0xa5097725: "0701_anticorruptionbombb_interact", // 2768860965
+    0xa509e699: "s04_gt_expd_01_success", // 2768889497
     0xa52f4821: "95_s01_06_temp_supplychain_rescue2_interact", // 2771339297
     0xa549d862: "mission_failure_merchant_t3", // 2773080162
+    0xa55385e7: "95_s04_06_entermordredtrial_hint", // 2773714407
     0xa568040f: "09a_m6_success", // 2775057423
+    0xa56b783f: "0424_0108_winterwarrior_success", // 2775283775
     0xa579d19a: "pvp_xplarge2_50", // 2776224154
     0xa5828991: "09a_s5_success", // 2776795537
     0xa5b8fdac: "06a_p_02_defeatkisare_success", // 2780364204
     0xa5bed17d: "mutdiff9t2", // 2780746109
+    0xa5c090b2: "95_s04_tp_init_door3_interact", // 2780860594
     0xa5ca6d9f: "99c_morgaine_voicedlorenote_06_interact", // 2781506975
     0xa5fca74b: "gather_harvestingt13", // 2784798539
+    0xa6133bc5: "winterwarrior_boss", // 2786278341
     0xa6247df1: "1418_0108_rd_07_success", // 2787409393
     0xa63ed00b: "darkness_minor_tier_1_diff_3", // 2789134347
     0xa645a6a5: "mb_msq2_gathergift_keepsake_interact", // 2789582501
@@ -2677,6 +2769,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa6be3243: "0330_0103_pickingupthepieces_success", // 2797482563
     0xa6f52fbb: "processfishingexpbonust2", // 2801086395
     0xa6f5e6e2: "faction++v2_62", // 2801133282
+    0xa6f9fad9: "gather_winterconv_treeoflife_t2", // 2801400537
     0xa7200b1b: "craft_woodworkingt1", // 2803895067
     0xa720217c: "worldevent_lakeside_limit_reached", // 2803900796
     0xa737b206: "1205_0101_craftforartificer_success", // 2805445126
@@ -2684,6 +2777,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa752da01: "war_t4_with_defender_bonus", // 2807224833
     0xa75c875c: "99b_msq_01_lorenote_umberto2_interact", // 2807859036
     0xa769f895: "msq_0050_fungus4_interact", // 2808739989
+    0xa798b6c1: "0424_2022_wc_04_success", // 2811803329
     0xa799cc31: "06a_msq_puzzle1_stone2_interact", // 2811874353
     0xa7aa2bd1: "ancientguardian_heavy_boss_named_dg_everfall_00", // 2812947409
     0xa819f519: "1204_corruptednoduleb_interact", // 2820273433
@@ -2711,6 +2805,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa949b6d6: "craft_furnishingt2", // 2840180438
     0xa94f5a6c: "99a_msq_09_discoverdoor_interact", // 2840549996
     0xa951f5ae: "0702_blightnodule_interact", // 2840720814
+    0xa95867c3: "95_s04_q2_collectwood_interact", // 2841143235
     0xa95945bb: "salvagereserach_arcanet2", // 2841200059
     0xa962b478: "craft_armoringt1", // 2841818232
     0xa9912ed6: "worldevent_s1_success", // 2844864214
@@ -2766,6 +2861,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xacc2f137: "1605_0201_immortalgems_success", // 2898456887
     0xacc89ca3: "1679_0101_frostcliffberry_interact", // 2898828451
     0xacce4cda: "io_99d_msq_01_supplycrateweapons_interact", // 2899201242
+    0xacd965c5: "0424_0104_gleamites_success", // 2899928517
     0xacdf7875: "1612_0101_praetorians_success", // 2900326517
     0xace6664b: "io_06a_msq_21_thornhalljewel_interact", // 2900780619
     0xacf5119a: "isabella_phase2_dg_shattermtn_00", // 2901741978
@@ -2837,6 +2933,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xb043ee42: "0805_0806_shrinecleansing_success", // 2957241922
     0xb04e5d94: "pvp_xpsmall2_50", // 2957925780
     0xb0567e41: "faction+v2_15", // 2958458433
+    0xb086e052: "95_s04_04_artoriusmissive_vln", // 2961629266
     0xb0ab54cf: "craft_jewelcraftingt4", // 2964018383
     0xb0abb14a: "99e_msq_01_cyclic_ancienttumblerb_interact", // 2964042058
     0xb0c44fd8: "0524_0102_queensgambit_success", // 2965655512
@@ -2860,6 +2957,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xb1a44a4f: "1403_0203_blightpox_success", // 2980334159
     0xb1aa294d: "craft_armoringlowt5", // 2980718925
     0xb1b88652: "darkness_minor_tier_2_diff_0", // 2981660242
+    0xb1c03207: "95_s04_q2_shootrocket_c_interact", // 2982162951
     0xb213104c: "09a_m7_success", // 2987593804
     0xb2189fa9: "1004_0102_missing_features_success", // 2987958185
     0xb223db2d: "solariumkhepri_eliteoverlord_minorsuccess", // 2988694317
@@ -2919,13 +3017,16 @@ var hashGameEventDataEventID = map[uint32]string{
     0xb4f92244: "factionv2_28", // 3036226116
     0xb4f9ab6f: "98_c_04_thepathtodarkness_success", // 3036261231
     0xb5165e53: "1625_0601_azothprojector_interact", // 3038142035
+    0xb5273430: "95_s04_03_round1_movequeen_g2_interact", // 3039245360
     0xb52d922e: "factionintro_covenant_recruitment_success", // 3039662638
     0xb53049f1: "9901_0008_oldstoneremembers_v2_success", // 3039840753
+    0xb535e23a: "95_s04_q2_shootrocket_a_interact", // 3040207418
     0xb55c4562: "1625_0903_ambientgroupb_interact", // 3042723170
     0xb59e1370: "faction++v2_23", // 3047035760
     0xb5d394d4: "1130_arcanefocus3_interact", // 3050542292
     0xb5f2c55d: "04a_side04_07_tohuntsman02_success", // 3052586333
     0xb603d48f: "99e_msq_11_shatteredvector_success", // 3053704335
+    0xb6257959: "95_s04_06_firstrune_interact", // 3055909209
     0xb628701d: "0410_0408_reclaiming_success", // 3056103453
     0xb636bc80: "mission_failure_explorer_t4", // 3057040512
     0xb658a915: "cmission_success_quest_brimstonesands_16", // 3059263765
@@ -2992,6 +3093,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xb967be54: "1434_0103_encounter_pyre_success", // 3110583892
     0xb976540f: "cmission_success_haleandheartyprojectid", // 3111539727
     0xb9943a70: "reward_mountreward_box_22", // 3113499248
+    0xb9971234: "95_s04_tp_stage2_door3_interact", // 3113685556
     0xb9985384: "musicreward_bad_shredly", // 3113767812
     0xb99d783d: "gather_skinningt52", // 3114104893
     0xb9a425d4: "cmission_success_kill_elk_med", // 3114542548
@@ -3031,10 +3133,12 @@ var hashGameEventDataEventID = map[uint32]string{
     0xbb53916c: "0512_powderkegb_interact", // 3142816108
     0xbb7b2e82: "1322_1316_reprieveforrestless_success", // 3145412226
     0xbb826d4a: "95_s01_05_crow_canonandcoin_success", // 3145887050
+    0xbb91c307: "processarcanaexpbonus", // 3146892039
     0xbba2881a: "99b_msq_06_mementofindb_interact", // 3147991066
     0xbba4aa9f: "0802_0808_corruptedcritics_success", // 3148130975
     0xbba8028e: "cmission_success_forthardpointsprojectid3", // 3148350094
     0xbbb42084: "98_s_0203_rankup_success", // 3149144196
+    0xbbc56bd2: "95_s04_04_porticullisunlocked_hint", // 3150277586
     0xbbcec42e: "io_06a_msq_05_windmillb_interact", // 3150890030
     0xbbd306f6: "cmission_success_gather_refinedt4_med", // 3151169270
     0xbbf29830: "darknesscoinbag", // 3153238064
@@ -3053,7 +3157,9 @@ var hashGameEventDataEventID = map[uint32]string{
     0xbd4f6e6f: "factionv2_24", // 3176099439
     0xbd5a5aeb: "faction-v2_33", // 3176815339
     0xbd610b60: "0203_0103_menderscloth_quest_success", // 3177253728
+    0xbd62c209: "95_s04_tp_stage2_door1_interact", // 3177366025
     0xbd6887ad: "cmission_failure_blacksmithtemperamentprojectid", // 3177744301
+    0xbd7008bb: "95_s04_01_hearmorgaine_hint", // 3178236091
     0xbd7e7eb7: "craft_smeltingt4", // 3179183799
     0xbdc028ea: "pvp_0002_deaddropgiveitem_interact", // 3183487210
     0xbdc1e300: "0401_0102_campandtools_success", // 3183600384
@@ -3062,6 +3168,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xbdf2e951: "74_0101_devworldreddefendobjectquest_interact", // 3186813265
     0xbdfae358: "1334_0201_olfactoryoptimization_success", // 3187336024
     0xbdfd0ebf: "0699_0101_barkimedes_success", // 3187478207
+    0xbe13f516: "95_s04_01_searchcabin_hint", // 3188978966
     0xbe18be93: "cmission_success_gather_refinedt3_small", // 3189292691
     0xbe27b364: "io_99c_msq2_corpsetorchd_interact", // 3190272868
     0xbe3d8519: "1418_0104_rd_03_success", // 3191702809
@@ -3088,6 +3195,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xbf78f837: "pvp_factiontokenssmall2_200", // 3212376119
     0xbf7c9dbd: "0232_0202_hiddensecrets_success", // 3212615101
     0xbf844ea6: "cmission_success_tanningprojectid2", // 3213119142
+    0xbf946c6a: "95_s04_04_mordredtrystaff_hint", // 3214175338
     0xbfa1a492: "craft_weavingt51", // 3215041682
     0xbfb95cee: "09a_s4_explosivebarrelp_interact", // 3216596206
     0xbfd6cafc: "mission_success_explorer_t1", // 3218524924
@@ -3159,6 +3267,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xc3bf77f4: "99e_msq_02_myrddincrystalsb_interact", // 3284105204
     0xc3c40844: "9801_pktraceabsorbera_03_interact", // 3284404292
     0xc3c94baf: "msq_0017_weapons_interact", // 3284749231
+    0xc3f9db08: "0424_2022_wc_03_success", // 3287931656
     0xc3fe12d2: "factionv2_29", // 3288208082
     0xc4253ebe: "msq_shipmanifest_interact", // 3290775230
     0xc43e6f58: "94_cage_interact2", // 3292426072
@@ -3245,6 +3354,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xc9fda295: "09a_s16_reroutepylon_interactb", // 3388842645
     0xca1dcba5: "95a_s02_heirofthesands_success", // 3390950309
     0xca374464: "16_side_13_wormspine_interact", // 3392619620
+    0xca458dce: "corrupted_ogre_dg_greatcleave_00", // 3393555918
     0xca485ef9: "factionv2_25", // 3393740537
     0xca4c4e1d: "faction+v2_41", // 3393998365
     0xca5d6a7d: "faction-v2_32", // 3395119741
@@ -3353,6 +3463,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd10c388f: "04a_side09_01_alchemybottle_interact", // 3507239055
     0xd1196767: "06a_s_01_findarcheologists_success", // 3508103015
     0xd139e09d: "darkness_minor_tier_1_diff_2", // 3510231197
+    0xd14093c6: "december2022_eventprogression", // 3510670278
     0xd14fe8fd: "pvpfaction+v2_47", // 3511675133
     0xd150f4eb: "pvpfactionv2_35", // 3511743723
     0xd15dff82: "0203_0103_hopecatalyst_quest_success", // 3512598402
@@ -3371,6 +3482,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd1f21f2d: "processfishingexpbonust3", // 3522305837
     0xd1f2d674: "faction++v2_63", // 3522352756
     0xd1f48ffa: "99e_msq_02_obs_crystalcaveb_interact", // 3522465786
+    0xd1feca4f: "gather_winterconv_treeoflife_t3", // 3523136079
     0xd2055d8e: "swamp_dryad_beast_named_dg_edengrove_00", // 3523566990
     0xd20bd6dc: "12a_msq_01_speaklochnir_success", // 3523991260
     0xd21006a6: "09a_s3_gorillabloodtrailc_interact", // 3524265638
@@ -3378,6 +3490,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd224491e: "damned_longswordsman_commander_named_dg_restless_00", // 3525593374
     0xd229e636: "0905_bloodtracking_d_interact", // 3525961270
     0xd23590f9: "1130_04_thebridge_success", // 3526725881
+    0xd243e310: "95_s04_03_entercastle_success", // 3527664400
     0xd24ee8f4: "mission_failure_merchant_t2", // 3528386804
     0xd28f7f6c: "msq_0008_clearingvines_c_interact", // 3532619628
     0xd291ddb5: "0726_bookofisabella_interact", // 3532774837
@@ -3411,6 +3524,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd4591049: "0231_wolcottseaselg_interact", // 3562606665
     0xd46d7969: "gather_miningt6", // 3563944297
     0xd480d4cc: "salvagecoingrantt3", // 3565212876
+    0xd482cf4b: "0424_2022_wc_02_success", // 3565342539
     0xd4847b0e: "worldevent_scallywagshore_limit_reached", // 3565452046
     0xd4871977: "99b_msq_11_brightwatchhistory_interact", // 3565623671
     0xd4992d97: "99b_msq_06_morgengravea_interact", // 3566808471
@@ -3420,6 +3534,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd4e4cb31: "98_s_04_ciphercryptic_success", // 3571764017
     0xd515c4e1: "98_covenant_02_captive_interact", // 3574973665
     0xd51d15e4: "msq_corruptednodule_1_interact", // 3575453156
+    0xd5476e5f: "95_s04_q2_buildfire_d_interact", // 3578228319
     0xd549cbb2: "greatermastery_harvestingxp", // 3578383282
     0xd554f00a: "04a_side08_01_getreagents_success", // 3579113482
     0xd567bd4f: "01_06_pillageship_success", // 3580345679
@@ -3465,6 +3580,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd77595f1: "musicreward_amazing_waltz", // 3614807537
     0xd775b078: "pvp_coinlarge3_15", // 3614814328
     0xd78dc20a: "09a_s17_rangersupplies_interact", // 3616391690
+    0xd7926509: "processfurnishingexpbonus", // 3616695561
     0xd795171c: "pvp_factiontokenslarge4_200", // 3616872220
     0xd7b1d364: "processharvestingexpbonust2", // 3618755428
     0xd7b48ba6: "msq_0021_forgestaffb_interact", // 3618933670
@@ -3481,6 +3597,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xd849a4a4: "darkness_major_dt1_t2", // 3628704932
     0xd85727bd: "99d_msq_08_thorpefight_success", // 3629590461
     0xd8584896: "salvagereserach_engineert3", // 3629664406
+    0xd8591e18: "95_s04_q2_buildfire_b_interact", // 3629719064
     0xd8624708: "craftcooking5", // 3630319368
     0xd87ebe7d: "0804_corruptednodule_interact", // 3632184957
     0xd88225c6: "cmission_failure_explosiveupgradeprojectid", // 3632408006
@@ -3521,6 +3638,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xda6172b8: "mutdiff4t3", // 3663819448
     0xda63271d: "craft_jewelcraftingcompt3", // 3663931165
     0xda6b3e9c: "cmission_failure_blacksmithprojectid2", // 3664461468
+    0xda6e8651: "95_s04_04_magicdoormovement_hint", // 3664676433
     0xda74dbb9: "territorystandingsuppliest2", // 3665091513
     0xda869173: "isabella_dg_ebonscale_00", // 3666252147
     0xda87bae3: "0803_0811_tigertiger_success", // 3666328291
@@ -3538,6 +3656,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xdb2e084e: "pvpfaction-v2_65", // 3677227086
     0xdb3f2c2e: "pvpfaction+v2_16", // 3678350382
     0xdb69bba2: "98_m_01_combatprowess_success", // 3681139618
+    0xdb6d2a03: "95_s04_04_fightmage_success", // 3681364483
     0xdb8212a7: "faction++v2_32", // 3682734759
     0xdb8568fc: "award_skin_feet_syndicateplaguedoctort6_box", // 3682953468
     0xdba3188f: "mutdiff5t3", // 3684898959
@@ -3688,6 +3807,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe4a970ef: "faction++v2_47", // 3836309743
     0xe4cb5def: "0901_0101_culldrowned_success", // 3838533103
     0xe4ce061e: "salvage1", // 3838707230
+    0xe4d2d71d: "95_s04_06_seeentrance_hint", // 3839022877
     0xe4e3ad72: "s_introtooverseer_success", // 3840126322
     0xe4ee128e: "99e_msq_04_motherwellclues_success", // 3840807566
     0xe4f96ab7: "pvpfactionv2_3", // 3841551031
@@ -3697,6 +3817,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe5476af5: "1126_0102_atoast_success", // 3846662901
     0xe576d03f: "09a_m13_arcaneritual_1_interact", // 3849769023
     0xe5849e6e: "9904_0047_greatminds_success", // 3850673774
+    0xe5869ca3: "io_0424_0108_yetirune_interact", // 3850804387
     0xe5993aed: "gather_loggingt20", // 3852024557
     0xe5b7169b: "09a_s16_throwswitch_interact", // 3853981339
     0xe5c6371f: "1524_doubloonf_interact", // 3854972703
@@ -3711,6 +3832,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe60764af: "cmission_success_quest_cutlasskeys_10", // 3859244207
     0xe608c923: "factionv2_11", // 3859335459
     0xe612c765: "98_covenant_whisper_01_interact", // 3859990373
+    0xe61e8011: "processcookingexpbonus", // 3860758545
     0xe638e2a5: "16_exp_glyphe_interact", // 3862487717
     0xe63ac56b: "pvp_xpmedium1_50", // 3862611307
     0xe6587759: "1004_0103_quenchingoil_quest_success", // 3864557401
@@ -3738,6 +3860,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe7e843e4: "99a_isabellawhisper_04_interact", // 3890758628
     0xe809e07a: "0726_0105_deathofheretic_success", // 3892961402
     0xe80a6581: "naga_angryearth", // 3892995457
+    0xe81aad96: "0424_0107_wandererreborn_success", // 3894062486
     0xe81ed66b: "98_covenant_03_pyre_interact", // 3894335083
     0xe8281c11: "0520_stygianchannelsegmentc_interact", // 3894942737
     0xe84aa9c4: "craft_arcanaalkahestt3", // 3897207236
@@ -3767,6 +3890,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe93ea845: "1427_0109_wastenot_success", // 3913197637
     0xe949a8a0: "1102_0201_abandonedduties_success", // 3913918624
     0xe95d2431: "mission_failure_bounty_t1", // 3915195441
+    0xe97b69ce: "95_s04_03_round2_movequeen_f1_interact", // 3917179342
     0xe9837a67: "pvp_factiontokenslarge2_15", // 3917707879
     0xe98e32c5: "msq_0052_bombcargo7_interact", // 3918410437
     0xe99cf042: "09a_m2_volorenote_oakes_02_interact", // 3919376450
@@ -3814,15 +3938,18 @@ var hashGameEventDataEventID = map[uint32]string{
     0xec63035b: "pvpmission_success_r6_lg", // 3965911899
     0xec6d3974: "faction-v2_57", // 3966581108
     0xec780df0: "factionv2_40", // 3967290864
+    0xec79f20d: "95_s04_01_survivors_hint", // 3967414797
     0xec7c1d14: "faction+v2_24", // 3967556884
     0xec831645: "1624_0401_orcuspoold_interact", // 3968013893
     0xec8aad9c: "1525_1520_rations_success", // 3968511388
+    0xec9d811d: "95_s04_06_collectfirstrune_hint", // 3969745181
     0xecc16961: "craft_outfittingt52", // 3972098401
     0xecddcc2c: "0520_stygianchannelsegmenta_interact", // 3973958700
     0xecf1eac0: "06a_s_02_powerspheres_success", // 3975277248
     0xecf64e9a: "1605_0401_insufficientfaith_success", // 3975564954
     0xed01280b: "95a_s02_jackalsong_interact", // 3976275979
     0xed05845e: "16_side_27_redeem19th_success", // 3976561758
+    0xed0ff38e: "0424_2022_wc_01_success", // 3977245582
     0xed142c3e: "1127_malignnodec_interact", // 3977522238
     0xed17cf7e: "songcompletedeasy", // 3977760638
     0xed19935c: "9907_0053_blessingofearth_ixia_success", // 3977876316
@@ -3862,6 +3989,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xef43f75b: "09a_whisperplant_mahantaram_interact", // 4014208859
     0xef523f77: "pvp_coinmedium1_50", // 4015144823
     0xef79a995: "0330_0102_sketchinga_interact", // 4017727893
+    0xef89e32a: "95_s04_06_lizardstatue2_interact", // 4018791210
     0xef975496: "darkness_major_dt4_t2", // 4019672214
     0xefa08fff: "explorevista_eastedengrove01", // 4020277247
     0xefa3ba99: "9901_0019_forgethestaff_success", // 4020484761
@@ -3922,6 +4050,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xf31b0a05: "1625_0701_challengingpharaoh_success", // 4078635525
     0xf31e50ed: "io_99d_msq_barricadesdamage3_interact", // 4078850285
     0xf3314eaf: "0503_0201_excisingtheblightedroot_success", // 4080094895
+    0xf364b2c4: "95_s04_01_mordredtracks3_interact", // 4083462852
     0xf36d0693: "06a_ww_voicedlorenote_03_interact", // 4084008595
     0xf38105c7: "standinggrantwindsward", // 4085319111
     0xf3a1647d: "io_99c_msq2_ritualobject2_interact", // 4087440509
@@ -3988,6 +4117,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xf777e75d: "14_sq_05_plant_02_interact", // 4151830365
     0xf777f340: "cmission_success_outfittingprojectid3", // 4151833408
     0xf77fbbf4: "pvpfaction+v2_22", // 4152343540
+    0xf79162f9: "95_s04_01_mordredtracks1_interact", // 4153500409
     0xf798d6ae: "06a_ww_voicedlorenote_01_interact", // 4153988782
     0xf79a5a09: "arena3v3_win_2_round", // 4154087945
     0xf79b8739: "1031_0201_adisturbingsilence_success", // 4154165049
@@ -4001,6 +4131,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xf80e7017: "01_whisper_beach_07_event", // 4161695767
     0xf81bfce5: "0425_0101_truffles_success", // 4162583781
     0xf827cdf5: "gather_miningt11", // 4163358197
+    0xf83de89b: "95_s04_tp_stage3_door2_interact", // 4164806811
     0xf84b347f: "95a_s02_royalegg1_interact", // 4165678207
     0xf851961b: "9904_0029_thestormwall_success", // 4166096411
     0xf85afc68: "14_sq_pioneerlament_success", // 4166712424
@@ -4016,6 +4147,8 @@ var hashGameEventDataEventID = map[uint32]string{
     0xf8a99d19: "cmission_success_quest_edengrove_14", // 4171865369
     0xf8ab8cfb: "95a_s02_precariousposition_success", // 4171992315
     0xf8d882e7: "pvp_factiontokenssmall1_200", // 4174938855
+    0xf9031175: "95_s04_03_round1_selectrook_interact", // 4177727861
+    0xf90476a4: "95_s04_01_searchring_success", // 4177819300
     0xf90cd5c3: "amrinekeyreplacement", // 4178367939
     0xf91b555a: "0201_dirtpile_interact", // 4179318106
     0xf937cc84: "95a_s02_secondthoughts_success", // 4181183620
@@ -4029,6 +4162,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xf9c5dd7b: "1432_0103_lostdog_success", // 4190494075
     0xf9c75fbe: "mission_success_bounty_t2", // 4190592958
     0xf9d04f69: "0719_0101_reflectionsmountainheart_success", // 4191178601
+    0xf9d547ea: "gather_winterconv_giftbag_t1", // 4191504362
     0xf9e32216: "explorevista_southfirstlight01", // 4192412182
     0xf9e6e7e6: "faction+v2_4", // 4192659430
     0xf9ea5d9b: "95a_s02_falseprofits_success", // 4192886171
@@ -4042,12 +4176,15 @@ var hashGameEventDataEventID = map[uint32]string{
     0xfa44a86d: "cmission_failure_hornupgradeprojectid", // 4198803565
     0xfa4cd965: "0905_0101_craftforartificer_success", // 4199340389
     0xfa5c3060: "craftammo5", // 4200345696
+    0xfa5c97c4: "95_s04_06_stopdevice_success", // 4200372164
+    0xfa6f147b: "95_s04_04_magedoor1_interact", // 4201583739
     0xfa745b6d: "1431_0104_myceliumpatch03_interact", // 4201929581
     0xfa774746: "95_s01_03_interviews_se_interact", // 4202121030
     0xfa79e61f: "1426_0101_burnforge_interact", // 4202292767
     0xfa9bc7fb: "factionv2_6", // 4204513275
     0xfad06778: "categoricalprogressionrankup", // 4207961976
     0xfadf85b7: "faction++v2_53", // 4208952759
+    0xfaf6e756: "legacyofcrassus_boss", // 4210485078
     0xfafbcc0b: "io_99c_msq2_glowingorbsd_interact", // 4210805771
     0xfb036079: "musicreward_great_buff_03", // 4211302521
     0xfb0f07ac: "1524_doubloonh_interact", // 4212066220
@@ -4070,6 +4207,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xfc4e4363: "arena_swampbeast_reekwater", // 4232987491
     0xfc54c41f: "0906_cargosupplies_interact", // 4233413663
     0xfc6ea460: "musicreward_great_buff_07", // 4235109472
+    0xfca2626e: "95_s04_02_getdaichi_success", // 4238500462
     0xfcb4f669: "pvp_factiontokenssmall2_15", // 4239717993
     0xfcd1607e: "faction+v2_38", // 4241580158
     0xfcdb55b0: "99e_msq2_spinning_rings_02_interact", // 4242232752
@@ -4100,6 +4238,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xfe75034f: "0905_0301_evolutioncorruption_pt1_success", // 4269081423
     0xfe818b50: "1431_0104_myceliumpatch01_interact", // 4269902672
     0xfe827120: "9903_0026_heartsandsouls_success", // 4269961504
+    0xfe9ac446: "95_s04_04_magedoor3_interact", // 4271555654
     0xfe9c43d8: "craft_arcanat2", // 4271653848
     0xfec75a1d: "event_myrkgardkeyfragment1", // 4274477597
     0xfed31cf2: "09a_m6_breakbars_interact", // 4275248370

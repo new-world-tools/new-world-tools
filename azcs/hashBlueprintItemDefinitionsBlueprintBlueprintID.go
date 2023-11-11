@@ -73,6 +73,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x36189ac5: "tradingpostt2", // 907582149
     0x366b894a: "claimt1_30m_t2", // 913017162
     0x3a616d76: "wallstraightt1", // 979463542
+    0x3a92a19d: "campskin_ronin_01", // 982688157
     0x3ac2c046: "fencelog", // 985841734
     0x3bd18a41: "masonryt3", // 1003588161
     0x3bf91588: "platformbase", // 1006179720
@@ -207,6 +208,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xa3683ccc: "wallstraightt2", // 2741517516
     0xa37d4888: "or_turretballista", // 2742896776
     0xa3aed4f0: "seedcarrott1", // 2746143984
+    0xa58fd8ae: "campskin_thetower_a", // 2777667758
     0xa5b51fe2: "masonryt4", // 2780110818
     0xa80f1ce9: "claimt1_30m_t5", // 2819562729
     0xa83b654b: "fenceloggate", // 2822464843
@@ -277,6 +279,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xe1b662ca: "smeltingt3", // 3786826442
     0xe2b5da39: "siege_supplygenerator_t2", // 3803568697
     0xe2f8aa09: "turretrepeatert1", // 3807947273
+    0xe3156ec6: "campskin_igloo_a", // 3809832646
     0xe36d3218: "craterlight1", // 3815584280
     0xe3dd0ba7: "campskin_winter01_a", // 3822914471
     0xe4d4a37b: "campskin_winter05_a", // 3839140731

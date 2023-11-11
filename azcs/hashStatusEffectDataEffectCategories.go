@@ -56,6 +56,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x61e3e397: "tradeskill", // 1642324887
     0x62c04ae9: "focus", // 1656769257
     0x64d9d4e5: "huntervision", // 1691997413
+    0x64de2725: "frozen", // 1692280613
     0x66a32e6b: "carryboulder", // 1721970283
     0x6795d70d: "fishingbuff", // 1737873165
     0x6910ce50: "mutatorempower", // 1762709072
@@ -77,6 +78,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x82fd433c: "stance", // 2197635900
     0x83af03fd: "weaken", // 2209285117
     0x847dd78f: "nondispellableempower", // 2222839695
+    0x8598e584: "hasteduration", // 2241389956
     0x880baad1: "exhaust", // 2282466001
     0x887f6925: "ridingobjectivebuff", // 2290051365
     0x897a6808: "mammothempowered", // 2306500616
@@ -99,6 +101,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xa5e6215b: "family", // 2783322459
     0xa6e62e58: "defboost", // 2800103000
     0xa77733c7: "unclampedslow", // 2809607111
+    0xa87c621c: "tracking", // 2826723868
     0xa9287eae: "heal", // 2838003374
     0xa92e9684: "allydamagesplit", // 2838402692
     0xac632aaf: "tracker", // 2892180143

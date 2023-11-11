@@ -13,7 +13,9 @@ var hashNPCDataNPCId = map[uint32]string{
     0x01e73c68: "06_flcrier2", // 31931496
     0x02097f56: "9514_fergus_s01_01", // 34176854
     0x0254d746: "07_outfitter", // 39114566
+    0x02caa179: "95_s04_rima_p04", // 46834041
     0x02e0a7ba: "gc_rally_2", // 48277434
+    0x02e3cf79: "95_s04_daichi_p04", // 48484217
     0x033c63fe: "0907_commander", // 54289406
     0x033e121b: "1129_jaansen_note", // 54399515
     0x0345e70c: "0251a_headstone", // 54912780
@@ -30,6 +32,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x0686da60: "1344_fishmounter", // 109501024
     0x069e6832: "0438a_jacobevans", // 111044658
     0x06d3e1b1: "1429_cultofficer_02", // 114549169
+    0x074943a4: "9504_shailyn_s04_01", // 122241956
     0x07a60cc0: "0437a_felixlivius", // 128322752
     0x07d56ede: "03_heyl", // 131428062
     0x080a0ac1: "1123_fisher", // 134875841
@@ -45,13 +48,17 @@ var hashNPCDataNPCId = map[uint32]string{
     0x0a1e7c0c: "0728_kesava", // 169769996
     0x0a2744df: "0439a_anwirhughes", // 170345695
     0x0a384a21: "09a_josephine_hh", // 171461153
+    0x0a4035e6: "95_s04_dog_p06", // 171980262
     0x0a409469: "0250a_baldr_1", // 172004457
     0x0b156b42: "0449a_heronnote", // 185953090
+    0x0b558352: "95_s04_daichi_p08", // 190153554
+    0x0b7ced52: "95_s04_rima_p08", // 192736594
     0x0b821a66: "1666_razin", // 193075814
     0x0c97f0af: "99d_pedrocarrillo_b", // 211284143
     0x0ce166e1: "0805_artificer", // 216098529
     0x0cffdafc: "1323_fisher", // 218094332
     0x0d290d19: "0608_alchemist", // 220794137
+    0x0d2df1ff: "95_s04_dog_p02", // 221114879
     0x0d69bbbc: "0443a_oushen", // 225033148
     0x0e20f4a8: "09a_trahern_sd", // 237040808
     0x0e7de044: "9905c_msq_rima", // 243130436
@@ -62,6 +69,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x0f431df6: "99b_yonas_p3", // 256056822
     0x0f581440: "06_michaellewis03", // 257430592
     0x0f67b84e: "9808_cleo_01", // 258455630
+    0x0f7b5277: "95_dogcamp_p01", // 259740279
     0x0fafee61: "dungeon_cutlasskeys00_scalleywag_00", // 263188065
     0x0fc620a4: "9201_cleric", // 264642724
     0x0fd3ef1a: "13a_pyro_01", // 265547546
@@ -114,6 +122,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x1a88f34b: "1681_innkeep", // 445182795
     0x1ab89680: "13a_guard1", // 448304768
     0x1b77bca7: "0402a_magistrate", // 460831911
+    0x1ba51457: "95_s04_morgaine_p01", // 463803479
     0x1bac2f3e: "9918_msq_researcher4", // 464269118
     0x1bbbe7b4: "1626_hermogenes", // 465299380
     0x1c65c6e6: "9505_skye_s01_09", // 476432102
@@ -157,8 +166,10 @@ var hashNPCDataNPCId = map[uint32]string{
     0x2685e11a: "99a_adiana_00", // 646308122
     0x26940c01: "09a_ranger_ep_m", // 647236609
     0x27038157: "06_fudehinode", // 654541143
+    0x271a082a: "95_skyecamp_p01", // 656017450
     0x2764e3b9: "1525_angryearth", // 660923321
     0x281a6101: "99e_sun_p3", // 672817409
+    0x2822f0e6: "95_s04_zander_p01i", // 673378534
     0x2873c573: "0230a_ranger_1", // 678675827
     0x288e06e3: "1643_gaius", // 680396515
     0x28cbc6ee: "99e_sun_p13", // 684443374
@@ -193,6 +204,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x2e6f7909: "1001_watcher", // 779057417
     0x2edf1ad7: "0715_watcher", // 786373335
     0x2f1f8274: "06_graceww_04", // 790594164
+    0x2f220877: "95_s04_zander_p01", // 790759543
     0x2f510978: "01_reeseww_03", // 793839992
     0x2f77a518: "99e_sun_p7", // 796370200
     0x2fa602f7: "99e_sun_p17", // 799408887
@@ -217,6 +229,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x33c1bb12: "1435_sirendryad_02", // 868334354
     0x34201064: "09a_barug", // 874516580
     0x34275f47: "1622_innkeep", // 874995527
+    0x34385683: "95_s04_skye_p04", // 876107395
     0x3455f7d1: "03_vinkle", // 878049233
     0x3484d19a: "99b_galahad_p4", // 881119642
     0x349d4858: "1428_cultdaughter", // 882722904
@@ -285,10 +298,13 @@ var hashNPCDataNPCId = map[uint32]string{
     0x42e6c1ec: "0320_ranger", // 1122419180
     0x431203d2: "03_simone", // 1125254098
     0x433279c4: "09a_james", // 1127381444
+    0x433f6615: "95_s04_skye_p05", // 1128228373
     0x434a8948: "9917_msq_researcher3", // 1128958280
     0x4383e10c: "99b_galahad_p5", // 1132716300
     0x439bf714: "0802_magistrate", // 1134294804
     0x43efb664: "0249a_aethelwynn_2a", // 1139783268
+    0x440ff809: "95_s04_magicdoor_p01", // 1141897225
+    0x4452a20c: "95_s04_skye_p01", // 1146266124
     0x4494dba2: "reekwater_dungeon_scylla_04", // 1150606242
     0x449890d4: "09a_morgaine_sm", // 1150849236
     0x449dd7a3: "09a_taurus_gp", // 1151195043
@@ -423,6 +439,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x5f1b8e2e: "9926_vk_abigailroseb", // 1595641390
     0x5f1d5197: "99e_sun_p2", // 1595756951
     0x5f27d42d: "0242a_ede", // 1596445741
+    0x5f48fcf8: "95_s04_zander_p04", // 1598618872
     0x5f521b9b: "1433_aedog_01", // 1599216539
     0x5f58dcb6: "0337_ranger", // 1599659190
     0x5f7576fb: "06_graceww_01", // 1601533691
@@ -458,6 +475,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x6538bfe0: "09a_crespo", // 1698217952
     0x65616f0b: "0335_beast", // 1700884235
     0x65b1dcf8: "0435_announcer", // 1706155256
+    0x65e963a3: "95_s04_mordred_p01", // 1709794211
     0x663c7607: "1225_giacomo_fl", // 1715238407
     0x667ab7fa: "01_gracemb_01", // 1719318522
     0x66a1a556: "1601_gideon", // 1721869654
@@ -499,6 +517,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x6ea07cbc: "09a_riches_note", // 1856011452
     0x6efc748c: "7507_swap", // 1862038668
     0x6f392fc8: "95a_sharif_s02_11", // 1866018760
+    0x6f3a2188: "95_s04_elsa_p01", // 1866080648
     0x6f3da9c8: "1679_tomash_gc", // 1866312136
     0x6f4dd3e8: "ew_tour_1", // 1867371496
     0x6f62699b: "0333_arcanist01", // 1868720539
@@ -517,6 +536,8 @@ var hashNPCDataNPCId = map[uint32]string{
     0x7189b925: "1111_stranger", // 1904851237
     0x71c727ce: "1504_overseer", // 1908877262
     0x7236f1d0: "1632_titus", // 1916203472
+    0x72893bf6: "95_s04_daichi_p01", // 1921596406
+    0x72a055f6: "95_s04_rima_p01", // 1923110390
     0x72a771ea: "9405_firstlion", // 1923576298
     0x72c11cb1: "1104_overseer", // 1925258417
     0x73037b04: "02_outfitter", // 1929607940
@@ -528,8 +549,11 @@ var hashNPCDataNPCId = map[uint32]string{
     0x74d56326: "1403_survivalista", // 1960141606
     0x75a0db7a: "09a_zayden_rescue", // 1973476218
     0x75a847d0: "09a_eldred", // 1973962704
+    0x75cd91ef: "95_s04_rima_p05", // 1976406511
+    0x75e4ffef: "95_s04_daichi_p05", // 1977941999
     0x761c7879: "0333_arcanist", // 1981577337
     0x76221e89: "95a_sharif_s02_01", // 1981947529
+    0x767e4b60: "95_s04_shen_p01", // 1987988320
     0x768d3c9c: "1603_barnabas_coronation", // 1988967580
     0x76de31a4: "1527_wader", // 1994273188
     0x76e8e7c4: "9903e_msq_emile", // 1994975172
@@ -545,7 +569,9 @@ var hashNPCDataNPCId = map[uint32]string{
     0x7956769b: "09a_marwa_hhop", // 2035709595
     0x7977d8ab: "0723_innkeep", // 2037897387
     0x797878a3: "9915_msq_researcher1", // 2037938339
+    0x79d60b83: "95_s04_grace_p02", // 2044070787
     0x7a10af70: "0428_jones", // 2047913840
+    0x7a2ac169: "95_s04_dog_p03", // 2049622377
     0x7a600daf: "0209_adjudicator", // 2053115311
     0x7b30f2c5: "1423_innkeep", // 2066805445
     0x7b376383: "06_lioneldelarue02", // 2067227523
@@ -557,10 +583,13 @@ var hashNPCDataNPCId = map[uint32]string{
     0x7c20f1ae: "1338_masterofceremonies", // 2082533806
     0x7c335506: "14_aife", // 2083738886
     0x7c4886bd: "0503_survivalist", // 2085127869
+    0x7c52b3c4: "95_s04_daichi_p09", // 2085794756
+    0x7c7bddc4: "95_s04_rima_p09", // 2088492484
     0x7c8e2daf: "1009_adjudicator", // 2089692591
     0x7ca24f03: "9505_skye_s01_10", // 2091011843
     0x7ca5a7d9: "95a_sharif_s02_01a", // 2091231193
     0x7d350ba4: "1030_tamer", // 2100628388
+    0x7d470570: "95_s04_dog_p07", // 2101806448
     0x7db5aa95: "13a_niall_00", // 2109057685
     0x7e4d3884: "9815_marauderguard_m", // 2118989956
     0x7e5b236f: "06_lijsbetdevries02", // 2119902063
@@ -569,6 +598,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x7f1dc489: "13a_maria_00", // 2132657289
     0x7f29e979: "99b_yonas_p6", // 2133453177
     0x8046f4b1: "0803_survivalist", // 2152133809
+    0x80f68ae1: "95_s04_daichi_p03i", // 2163641057
     0x81374ee4: "95a_sharif_s02_13", // 2167885540
     0x8143b2c4: "ew_tour_3", // 2168697540
     0x815357ff: "03_hotspur_b", // 2169722879
@@ -576,6 +606,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x8293ffcd: "1629_elissa", // 2190737357
     0x8295467b: "1432_homesteader", // 2190820987
     0x829674f7: "1031_swampwalker", // 2190898423
+    0x82ac45ed: "95_s04_morgaine_p02", // 2192328173
     0x8376812d: "09a_shawforth", // 2205581613
     0x83848a60: "0244a_sebastion", // 2206501472
     0x839258c7: "0208a_alchemist", // 2207406279
@@ -620,6 +651,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x8def33e9: "9503_dog_s01_02", // 2381263849
     0x8e22f2e0: "1624_imhotep_v1p2", // 2384655072
     0x8e3ec241: "09a_ramla_hh", // 2386477633
+    0x8e4c4e2f: "95_s04_mordredguard1_p01", // 2387365423
     0x8e4cc172: "0321_ranger", // 2387394930
     0x8e58ba36: "0249a_aethelwynn_6", // 2388179510
     0x8e9c45ed: "1110_barkeep", // 2392606189
@@ -635,10 +667,12 @@ var hashNPCDataNPCId = map[uint32]string{
     0x91941a3e: "1683_zahur", // 2442402366
     0x91ac2380: "08_outfitter", // 2443977600
     0x9314884a: "06_margotemerson02", // 2467596362
+    0x9349645c: "95_s04_dog_p05", // 2471060572
     0x9349c5d3: "0250a_baldr_2", // 2471085523
     0x93f2dc28: "0336_ranger", // 2482166824
     0x93f7b63a: "9202_hunter", // 2482484794
     0x940f8844: "0446a_ancientscroll", // 2484045892
+    0x9424a045: "95_s04_dog_p01", // 2485428293
     0x94607cdd: "12_innkeepbiton", // 2489351389
     0x94da6506: "0231a_painter", // 2497340678
     0x959ea115: "99d_pedrocarrillo_a", // 2510201109
@@ -651,6 +685,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x96ee216e: "9805_tibbs_01", // 2532188526
     0x97084811: "9401_firsthorse", // 2533902353
     0x974df88d: "09a_soldierguard_m", // 2538469517
+    0x977a8d1a: "95_rimacamp_p01", // 2541391130
     0x97e5a52e: "0203a_survivalist_2", // 2548409646
     0x982c7fa5: "95a_sharif_s02_03", // 2553053093
     0x985aa998: "9512_marty_s01_01", // 2556078488
@@ -671,8 +706,12 @@ var hashNPCDataNPCId = map[uint32]string{
     0x9b664612: "1430_cultleader_01", // 2607171090
     0x9b933ede: "9812_peta", // 2610118366
     0x9bb6b147: "04_outfitter", // 2612441415
+    0x9bc3f0c3: "95_s04_rima_p07", // 2613309635
     0x9be9f600: "gc_rally_1", // 2615801344
+    0x9bea9ec3: "95_s04_daichi_p07", // 2615844547
     0x9c857974: "12_hugomolina_01", // 2625993076
+    0x9c875ada: "95_s04_daichi_p03", // 2626116314
+    0x9cae34da: "95_s04_rima_p03", // 2628662490
     0x9d964177: "09a_abandonedlist", // 2643870071
     0x9dd4a9e4: "1422_innkeep_postfeb", // 2647960036
     0x9de4d0fb: "9924_msq_wardeneliza", // 2649018619
@@ -705,6 +744,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xa29a76aa: "09a_trahern_end", // 2728031914
     0xa326a6a2: "9511_dicunhobday_s01_01", // 2737219234
     0xa335658f: "1663_esoeris", // 2738185615
+    0xa4017ffe: "95_s04_scholar_p01", // 2751561726
     0xa423d23b: "12_fionamurphy", // 2753811003
     0xa46ce4ae: "1307_commander", // 2758599854
     0xa494ab51: "0909_adjudicator", // 2761206609
@@ -732,6 +772,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xa9cbd6d2: "0430_pvparena", // 2848708306
     0xaa2c1352: "1602_crassus_scout", // 2855015250
     0xaa55e425: "9903_msq_emile", // 2857755685
+    0xaa5cc320: "95_s04_skye_p03", // 2858205984
     0xaab428f9: "1604_charmion", // 2863933689
     0xaac8eaa8: "1435_sirendryad_01", // 2865293992
     0xaae04439: "99b_galahad_p3", // 2866824249
@@ -777,6 +818,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xb40ff3d6: "99d_yash_d", // 3020944342
     0xb41742bb: "95a_dog_s02_07", // 3021423291
     0xb41866dc: "0334_baker", // 3021498076
+    0xb42de60c: "95_s04_aowei", // 3022906892
     0xb43f936e: "0209a_adjudicator", // 3024065390
     0xb4b984bd: "1646_froderico", // 3032057021
     0xb4e7f26c: "14_eva", // 3035099756
@@ -786,6 +828,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xb5aef67e: "1680_buhawi", // 3048142462
     0xb5c36cc7: "1676_adjudicator3", // 3049483463
     0xb5dbcd97: "09a_josephine_rescue", // 3051081111
+    0xb62b59cd: "95_s04_zander_p02", // 3056294349
     0xb66ac8b5: "9807_aventus_01", // 3060451509
     0xb67ef4a2: "99e_sun_p4", // 3061773474
     0xb6af534d: "99e_sun_p14", // 3064943437
@@ -809,6 +852,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xbba3a331: "99e_morgaine_p1", // 3148063537
     0xbba9a5f7: "09a_kievan_hh", // 3148457463
     0xbbf913d3: "95a_zander_s02_04", // 3153662931
+    0xbc1b6051: "95_s04_daichi_p01a", // 3155910737
     0xbc474e11: "99d_yonas_g", // 3158789649
     0xbc4e4a73: "09a_kievan", // 3159247475
     0xbcbbfdbb: "99b_sun_p4", // 3166436795
@@ -821,9 +865,11 @@ var hashNPCDataNPCId = map[uint32]string{
     0xbf809cfb: "1225_giacomo_ww", // 3212877051
     0xbf8bf9ab: "1124_pierreauguste", // 3213621675
     0xbfc8b889: "99e_sun_p8", // 3217602697
+    0xbfc8eaa0: "95_daichicamp_p01", // 3217615520
     0xc000dd56: "09a_fionn", // 3221282134
     0xc06f757b: "0523_fisher", // 3228530043
     0xc111e358: "06_graceww_06", // 3239175000
+    0xc12c695b: "95_s04_zander_p03", // 3240913243
     0xc15385e5: "1602_crassus_pavilion", // 3243476453
     0xc15f6854: "01_reeseww_01", // 3244255316
     0xc16df823: "9807_aventus_00", // 3245209635
@@ -850,6 +896,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xc4650759: "99d_yash_a", // 3294955353
     0xc47db634: "95a_dog_s02_02", // 3296572980
     0xc4aedf8f: "12_alchemisttuit", // 3299794831
+    0xc4b37b3b: "95_s04_skye_p02i", // 3300096827
     0xc532aaa8: "03_giri", // 3308432040
     0xc575f647: "1109_adjudicator", // 3312842311
     0xc5792a9d: "09a_artemis_ep", // 3313052317
@@ -883,6 +930,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xc96fbc6b: "1657_tamouthis", // 3379543147
     0xc98243d2: "12_flcrier2", // 3380757458
     0xc9aeab29: "0323_innkeep", // 3383667497
+    0xc9ec34ff: "95_s04_mordredguard2_p01", // 3387700479
     0xca3020df: "1685_acario", // 3392151775
     0xca6bd057: "99e_galahad_p3a", // 3396063319
     0xcb407e87: "99d_yonas_f", // 3410001543
@@ -952,6 +1000,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xd9495686: "1625_ghazi_p7", // 3645462150
     0xd9828387: "99e_adiana", // 3649209223
     0xd9f32467: "0331_tracker", // 3656590439
+    0xda3637af: "95_s04_skye_p06", // 3660986287
     0xda5395f5: "0923_fisher", // 3662910965
     0xda8ab0b6: "99b_galahad_p6", // 3666522294
     0xdac66743: "1658_mihri", // 3670435651
@@ -961,6 +1010,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xdc929504: "1022_innkeep", // 3700593924
     0xdca8f810: "1618_caeso", // 3702061072
     0xdcbdedda: "1034_navigator", // 3703434714
+    0xdd5bf3b6: "95_s04_skye_p02", // 3713790902
     0xddc86cd9: "1627_mevia", // 3720899801
     0xdde774af: "99b_galahad_p2", // 3722933423
     0xde0d7d8d: "1639_leo", // 3725426061
@@ -978,6 +1028,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xe02e6276: "1605_akila_coronation", // 3761136246
     0xe0796388: "1687_clarisse", // 3766051720
     0xe0b4eacf: "0425_herbalistww_town", // 3769952975
+    0xe0df5a39: "95_s04_grace_p01", // 3772734009
     0xe1416f2c: "0316_warden", // 3779161900
     0xe14d7cda: "99b_yonas_p1", // 3779951834
     0xe156756c: "06_michaellewis01", // 3780539756
@@ -998,6 +1049,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xe33db1c2: "1223_fisher", // 3812471234
     0xe3ef70b8: "09a_trahern_rr", // 3824119992
     0xe41226a2: "1633_murdoch", // 3826394786
+    0xe44e54ca: "95_s04_dog_p04", // 3830338762
     0xe4e6c89c: "1424_fisher", // 3840329884
     0xe4f5dc5d: "0207_commander", // 3841317981
     0xe549aa33: "09a_adjudicator", // 3846810163
@@ -1028,23 +1080,30 @@ var hashNPCDataNPCId = map[uint32]string{
     0xe99be308: "1605_akila_marcella", // 3919307528
     0xe99fe10c: "9815_marauderguard_f", // 3919569164
     0xea2cf54a: "1011_stranger", // 3928814922
+    0xea4eaae0: "0424_yeti_ww_npc", // 3931024096
     0xea6f4da0: "03_tapas", // 3933162912
     0xeac3133a: "03_kazu_1", // 3938652986
     0xeacde10f: "95a_grace_s02_02", // 3939361039
     0xead611b8: "1623_fisher", // 3939897784
     0xeb330c3d: "9816_pavel", // 3945991229
     0xeb5d5c6c: "14_zorzi", // 3948764268
+    0xeb806a4c: "95_s04_daichi_p02", // 3951061580
+    0xeba9044c: "95_s04_rima_p02", // 3953722444
     0xebd12990: "9931_vk_caoimhe", // 3956353424
     0xec602c53: "1684_tahirah", // 3965725779
     0xeca1fb3d: "9905d_msq_rima", // 3970038589
+    0xecc4c055: "95_s04_rima_p06", // 3972317269
+    0xecedae55: "95_s04_daichi_p06", // 3974999637
     0xed1c10df: "0313_watcher", // 3978039519
     0xed454bd8: "9914_msq_hunter", // 3980741592
     0xed55ea37: "1108_alchemist", // 3981830711
     0xed7b70c4: "12_mb_grace_02", // 3984289988
     0xedf9e60c: "1601_gideon_coronation", // 3992577548
     0xee4243c9: "0411a_williamheron_01", // 3997320137
+    0xee6389d5: "95_s04_quam_p01", // 3999500757
     0xef2b4f33: "95a_sharif_s02_02", // 4012592947
     0xef67cc2b: "0232a_naturalist_3", // 4016557099
+    0xef771ada: "95_s04_shen_p02", // 4017560282
     0xef96f4e8: "99b_yonas_p9", // 4019647720
     0xf01c68cc: "0609_adjudicator", // 4028393676
     0xf0731ea8: "09a_innkeep", // 4034076328
@@ -1067,6 +1126,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xf5347af9: "1651_enez", // 4113857273
     0xf59d16ff: "1027_commander", // 4120712959
     0xf6307e72: "95a_sharif_s02_12", // 4130373234
+    0xf6337032: "95_s04_elsa_p02", // 4130566194
     0xf6448252: "ew_tour_2", // 4131684946
     0xf6546769: "03_hotspur_c", // 4132726633
     0xf6d032a7: "wf_rally_1", // 4140839591
@@ -1095,6 +1155,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xfc29f87b: "9823_amelia", // 4230609019
     0xfcb02ff8: "9505_skye_s01_03", // 4239405048
     0xfcd5fecf: "1032_watcher", // 4241882831
+    0xfce03219: "95_s04_mordred_p02", // 4242551321
     0xfcfb4504: "9502_zander_s01_04", // 4244325636
     0xfd152378: "9822_abayomi", // 4246020984
     0xfd85c766: "9503_dog_s01_07", // 4253402982

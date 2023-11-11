@@ -33,6 +33,7 @@ var hashTerritoryProgressionDataTerritoryProgressionProjectId = map[uint32]strin
     0x7fa4abe1: "engineeringprojectid2", // 2141498337
     0x8095e314: "hornupgradeprojectid", // 2157306644
     0x845be178: "outfittingprojectid", // 2220614008
+    0x913be8e5: "eventprojectid", // 2436622565
     0x96ae666c: "carpentryprojectid2", // 2528011884
     0x9af9df4b: "stalwartprojectid", // 2600066891
     0x9e006d04: "eventsummerprojectid", // 2650828036
@@ -43,10 +44,12 @@ var hashTerritoryProgressionDataTerritoryProgressionProjectId = map[uint32]strin
     0xa959530a: "masonryprojectid2", // 2841203466
     0xac8a5d86: "explosiveupgradeprojectid2", // 2894749062
     0xbc0e8e18: "alchemistprojectid3", // 3155070488
+    0xbd23a384: "eventprojectid3", // 3173229444
     0xbffdedf4: "blacksmithprojectid", // 3221089780
     0xc1cc2a58: "engineeringprojectid", // 3251382872
     0xc73aa560: "repeaterupgradeprojectid", // 3342509408
     0xc751ad1e: "arcaneblessingprojectid", // 3344018718
+    0xca249312: "eventprojectid2", // 3391394578
     0xcb09be8e: "alchemistprojectid2", // 3406413454
     0xcc2fc0e3: "firebarrelupgradeprojectid2", // 3425681635
     0xd1f73e55: "fortgatesprojectid", // 3522641493
