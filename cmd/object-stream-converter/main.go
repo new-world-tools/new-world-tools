@@ -41,18 +41,19 @@ var (
 	indentsSize      int
 	resolveHashValue bool
 	debug            bool
+	debugLog         string
 	pr               *profiler.Profiler
 )
 
 type DebugData struct {
 	mu                sync.Mutex
-	notResolvedHashes map[string]bool
-	notResolvedTypes  map[string]bool
+	NotResolvedHashes map[string]bool
+	NotResolvedTypes  map[string]bool
 }
 
 var debugData = &DebugData{
-	notResolvedHashes: map[string]bool{},
-	notResolvedTypes:  map[string]bool{},
+	NotResolvedHashes: map[string]bool{},
+	NotResolvedTypes:  map[string]bool{},
 }
 
 func main() {
@@ -66,6 +67,7 @@ func main() {
 	resolveHashValuePtr := flag.Bool("resolve-hash-value", false, "")
 	poolCapacityPtr := flag.Int64("pool-capacity", 1000, "pool capacity")
 	debugPtr := flag.Bool("debug", false, "")
+	debugLogPtr := flag.String("debug-log", ".\\debug.log", "debug log path")
 	formatPtr := flag.String("format", "json", "yml or json")
 	flag.Parse()
 
@@ -85,6 +87,7 @@ func main() {
 	resolveHashValue = *resolveHashValuePtr
 	poolCapacity := *poolCapacityPtr
 	debug = *debugPtr
+	debugLog = *debugLogPtr
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -184,11 +187,17 @@ func main() {
 
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 	if debug {
-		if len(debugData.notResolvedHashes) > 0 {
-			log.Printf("Not resolved hashes: %s", strings.Join(sortMap(debugData.notResolvedHashes), ", "))
+		if len(debugData.NotResolvedHashes) > 0 {
+			log.Printf("Not resolved hashes: %s", strings.Join(sortMap(debugData.NotResolvedHashes), ", "))
 		}
-		if len(debugData.notResolvedTypes) > 0 {
-			log.Printf("Not resolved types: %s", strings.Join(sortMap(debugData.notResolvedTypes), ", "))
+		if len(debugData.NotResolvedTypes) > 0 {
+			log.Printf("Not resolved types: %s", strings.Join(sortMap(debugData.NotResolvedTypes), ", "))
+		}
+	}
+	if debugLog != "" {
+		err = storeDebug(debugLog)
+		if err != nil {
+			log.Fatalf("storeDebug: %s", err)
 		}
 	}
 }
@@ -297,7 +306,7 @@ func resolveHash(element *azcs.Element) string {
 	formattedHash := fmt.Sprintf("0x%08x", hash)
 
 	debugData.mu.Lock()
-	debugData.notResolvedHashes[formattedHash] = true
+	debugData.NotResolvedHashes[formattedHash] = true
 	debugData.mu.Unlock()
 
 	return formattedHash
@@ -314,7 +323,7 @@ func resolveType(element *azcs.Element) string {
 	}
 
 	debugData.mu.Lock()
-	debugData.notResolvedTypes[typ] = true
+	debugData.NotResolvedTypes[typ] = true
 	debugData.mu.Unlock()
 
 	return typ
@@ -349,4 +358,37 @@ func hook(data any) {
 		}
 		return
 	}
+}
+
+func storeDebug(debugLog string) error {
+	var oldDebugData = DebugData{
+		NotResolvedHashes: map[string]bool{},
+		NotResolvedTypes:  map[string]bool{},
+	}
+
+	f, err := os.Open(debugLog)
+	if err == nil {
+		json.NewDecoder(f).Decode(&oldDebugData)
+		f.Close()
+	}
+
+	for k, _ := range oldDebugData.NotResolvedHashes {
+		debugData.NotResolvedHashes[k] = true
+	}
+	for k, _ := range oldDebugData.NotResolvedTypes {
+		debugData.NotResolvedTypes[k] = true
+	}
+
+	f, err = os.Create(debugLog)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+
+	err = json.NewEncoder(f).Encode(debugData)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
