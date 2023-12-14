@@ -83,6 +83,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x887f6925: "ridingobjectivebuff", // 2290051365
     0x897a6808: "mammothempowered", // 2306500616
     0x8cc0104e: "unclampeddisease", // 2361397326
+    0x8ce0d087: "boltcaster", // 2363543687
     0x8d2e6b33: "gatherboost", // 2368629555
     0x8dbf1fb2: "unclampedrend", // 2378112946
     0x8f7ce27e: "frostbuff", // 2407326334

@@ -129,6 +129,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x056569cd: "corruption_heavy_62", // 90532301
     0x0566c868: "undead_berserker_24", // 90622056
     0x0571968c: "damned_villager_cleaver_47", // 91330188
+    0x05753c8e: "corruptedlegion_cyclops_loc_boss_00", // 91569294
     0x058479bb: "skeleton_club_msq_defense_encounter", // 92567995
     0x05870477: "undead_grenadier_disease_25", // 92734583
     0x0587bf83: "drowned_sailor_1h_sword_shield_45", // 92782467
@@ -352,6 +353,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x0d9c16c3: "bearelemental_65_elite", // 228333251
     0x0da4287b: "blight_fiend_named_13wf02a_02", // 228862075
     0x0da7ec36: "damned_grunt_dg_greatcleave_00", // 229108790
+    0x0dac1e92: "legion_legionnaire_loc_boss", // 229383826
     0x0db0e374: "damned_cultist_46", // 229696372
     0x0db5a687: "bearelemental_55", // 230008455
     0x0db8085a: "legion_sagittarii_dg_brimstonesands_minion", // 230164570
@@ -1188,6 +1190,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x2f450270: "alligator_black_28", // 793051760
     0x2f47ecd9: "corrupted_ogre_07sm06b_elite", // 793242841
     0x2f4a550c: "pig_domestic_54", // 793400588
+    0x2f562ca7: "legion_legionnaire_ethereal_loc_boss", // 794176679
     0x2f56ca21: "cow_44", // 794216993
     0x2f667900: "drowned_sailor_2h_axe_29", // 795244800
     0x2f69464e: "undead_grenadier_molotov_39", // 795428430
@@ -1782,6 +1785,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x466ef248: "goat_mountain_52", // 1181676104
     0x467a54f2: "legion_legionnaire_66", // 1182422258
     0x46819303: "boar_08qp07", // 1182896899
+    0x468896bc: "legion_sagittarii_loc_boss", // 1183356604
     0x4689e5c0: "bloated_corpse_57", // 1183442368
     0x4690b680: "wolf_elemental_earth_52", // 1183889024
     0x46a1d1db: "damned_villager_shovel_38", // 1185010139
@@ -2181,6 +2185,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x55cfab86: "withered_brute_27", // 1439673222
     0x55d0aa2e: "damned_grunt_61", // 1439738414
     0x55e5c4ad: "swamp_dryad_soldier_named_dg_edengrove_00", // 1441121453
+    0x55e5de54: "totem_loc_boss", // 1441128020
     0x55f0d70d: "target_dummy_boss55", // 1441847053
     0x55fd841c: "ghost_shackled_named_06_eggreataxe", // 1442677788
     0x56087194: "damned_rifleman_m-f_44", // 1443393940
@@ -2907,6 +2912,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x721f3a30: "ghost_shackled_30", // 1914649136
     0x7261f8fe: "undead_berserker_25", // 1919023358
     0x72671e39: "wolf_white_40", // 1919360569
+    0x72720c18: "corruptedlegion_cyclops_loc_boss_01", // 1920076824
     0x7276a61a: "damned_villager_cleaver_46", // 1920378394
     0x72808f15: "drowned_sailor_1h_sword_shield_44", // 1921027861
     0x728125e9: "swamp_dryad_prowler_elite_05wc10", // 1921066473
@@ -3264,6 +3270,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x80adc041: "undead_officer_56", // 2158870593
     0x80b03fc4: "desert_scorpion_named_01", // 2159034308
     0x80ba923a: "wolf_alpha_4", // 2159710778
+    0x80c170fe: "legion_legionnaire_noshield_loc_boss", // 2160161022
     0x80ddc253: "elk_doe_27", // 2162016851
     0x80ebc384: "damned_pistoleer_female_named_03gc06_msq", // 2162934660
     0x80f18543: "ghost_plagued_51", // 2163311939
@@ -4904,6 +4911,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0xc04f5d2b: "boar_stripped_45", // 3226426667
     0xc054e3f5: "damned_villager_skinning_knife_29", // 3226788853
     0xc05c1f0d: "damned_villager_hammer_03gc05", // 3227262733
+    0xc061b00a: "legion_signifer_loc_boss", // 3227627530
     0xc0621f48: "corrupted_tiger_44", // 3227656008
     0xc08d0b47: "withered_brute_named_01", // 3230468935
     0xc0911341: "undead_pistoleer_55", // 3230733121

@@ -524,6 +524,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2cefb1cf: "mut_ice_resist_2_buff", // 753906127
     0x2cf2d199: "mut_curse1_minor_orbcount", // 754110873
     0x2d091de5: "status_perk_weapon_oncritbleed", // 755572197
+    0x2d19555f: "status_perk_artifact_set1_bow_staticcharge", // 756634975
     0x2d531276: "housingdmgcorruptedt0", // 760418934
     0x2d8a6c4c: "oakfleshbalmt2", // 764046412
     0x2de45372: "botanistmastery1", // 769938290
@@ -751,6 +752,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x40c33cfb: "potionmanat2", // 1086536955
     0x40d9eb3b: "ai_medusa_poison_pool", // 1088023355
     0x40dc9628: "ai_isabella_phase2_shoulderslash_wave_damage", // 1088198184
+    0x40f0c9aa: "status_perk_artifact_set1_bow_staticcharge_removal", // 1089522090
     0x415b79d3: "mut_lifesteal_1_buff", // 1096514003
     0x41684fde: "mut_disease_2_buff", // 1097355230
     0x417bba23: "spear_skewer_empoweroncrit", // 1098627619
@@ -1622,6 +1624,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x8d4e4552: "voidgauntlet_nullchamber_nullify_aoe", // 2370717010
     0x8d66cb84: "foodrecoveryt4", // 2372324228
     0x8d866b3f: "status_perk_firestaff_burnout_manaregen", // 2374396735
+    0x8d88fdb8: "ai_season_04_iceguardian_clearhypothermia", // 2374565304
     0x8dbb16d1: "ai_ice_torso_boss_phase_transition_protect", // 2377848529
     0x8dc00eae: "mut_ice_curse3_minor_cast", // 2378174126
     0x8dd6bebd: "mut_nat_curse3_minor_buff", // 2379660989
@@ -2068,6 +2071,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb34e43de: "skinnermastery1", // 3008250846
     0xb3578a18: "foodstrt52", // 3008858648
     0xb369cb0b: "legion_equip_herooflegion_staminahit", // 3010054923
+    0xb37d5180: "ai_ice_torso_boss_empower_fortify", // 3011334528
     0xb3b22c0a: "housingmingearbonusprovisioningt1", // 3014798346
     0xb3df1992: "status_flail_charge_fortify", // 3017742738
     0xb3e865b4: "status_rune_firestorm_major", // 3018352052
@@ -2669,6 +2673,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xe5c25b1b: "shrine_motherslove", // 3854719771
     0xe5ededef: "se_artemisboonsecondaryd4_t4", // 3857575407
     0xe612b620: "weaponcoatingeffect_ancient_t2", // 3859985952
+    0xe62554e2: "status_perk_artifact_set1_bow_staticdischarge", // 3861206242
     0xe62fa3cd: "ai_sulfurburn", // 3861881805
     0xe63f5836: "pvparena_foodstrt4", // 3862911030
     0xe65e40f5: "se_artemisboonsecondaryd3_t3", // 3864936693

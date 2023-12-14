@@ -1830,6 +1830,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x6d0d5c3f: "faction++v2_58", // 1829592127
     0x6d2d8088: "0905_0302_theoryoldworld_success", // 1831698568
     0x6d3e59ab: "seasonpass_exp5", // 1832802731
+    0x6d44fc18: "kill_terrorturkey_lootlimitoverride", // 1833237528
     0x6d46e845: "award_skin_warhammer_turkeyterror2023", // 1833363525
     0x6d72c354: "craft_woodworkingt51", // 1836237652
     0x6d7ba55a: "weaponhit1", // 1836819802
@@ -3276,6 +3277,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xc45ed463: "1201_0108_introtosettlement_success", // 3294549091
     0xc47956ef: "pvp_coinlarge2", // 3296286447
     0xc497c62f: "faction+v2_49", // 3298281007
+    0xc49c543b: "castgypsum_darkmatter", // 3298579515
     0xc4a38574: "craft_weaponsmithinglowt3", // 3299050868
     0xc4a6ebf4: "99e_msq_05_myrddindeviceb_left_interact", // 3299273716
     0xc4b11d7e: "msq_whisper_03", // 3299941758
@@ -3818,6 +3820,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe576d03f: "09a_m13_arcaneritual_1_interact", // 3849769023
     0xe5849e6e: "9904_0047_greatminds_success", // 3850673774
     0xe5869ca3: "io_0424_0108_yetirune_interact", // 3850804387
+    0xe587d57f: "95_s04_05_solo_trial_complete", // 3850884479
     0xe5993aed: "gather_loggingt20", // 3852024557
     0xe5b7169b: "09a_s16_throwswitch_interact", // 3853981339
     0xe5c6371f: "1524_doubloonf_interact", // 3854972703
