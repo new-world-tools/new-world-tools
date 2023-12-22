@@ -1,5 +1,9 @@
 # New World tools
 
+## Support me
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/zelenin)
+
 ## Downloads
 
 Download the compiled binaries in [Releases](https://github.com/new-world-tools/new-world-tools/releases)
