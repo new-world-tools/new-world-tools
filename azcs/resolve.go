@@ -274,8 +274,8 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		if err != nil {
 			return nil, fmt.Errorf("reader.ReadBytes: %s", err)
 		}
-		id, _ = uuid.FromBytes(data)
-		node.Add("subId", id.String())
+		u32 := binary.BigEndian.Uint32(data[0:4])
+		node.Add("subId", u32)
 
 		data, err = reader.ReadBytes(buf, 16)
 		if err != nil {
