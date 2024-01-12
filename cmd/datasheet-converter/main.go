@@ -28,7 +28,7 @@ const (
 
 var (
 	pool             *workerpool.Pool
-	localizationData *store.Store[string]
+	localizationData *store.Store[string, string]
 	inputDir         string
 	outputDir        string
 	format           string
