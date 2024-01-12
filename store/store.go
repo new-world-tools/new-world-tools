@@ -1,31 +1,32 @@
 package store
 
 import (
+	"cmp"
 	"sort"
 	"strings"
 )
 
-type Store[T any] struct {
-	values        map[string]T
-	keyNormalizer func(key string) string
+type Store[K cmp.Ordered, V any] struct {
+	values        map[K]V
+	keyNormalizer func(key K) K
 }
 
-func (store *Store[T]) Add(key string, item T) {
+func (store *Store[K, V]) Add(key K, item V) {
 	store.values[store.keyNormalizer(key)] = item
 }
 
-func (store *Store[T]) Has(key string) bool {
+func (store *Store[K, V]) Has(key K) bool {
 	_, ok := store.values[store.keyNormalizer(key)]
 	return ok
 }
 
-func (store *Store[T]) Get(key string) T {
+func (store *Store[K, V]) Get(key K) V {
 	val, _ := store.values[store.keyNormalizer(key)]
 	return val
 }
 
-func (store *Store[T]) GetKeys() []string {
-	keys := make([]string, len(store.values))
+func (store *Store[K, V]) GetKeys() []K {
+	keys := make([]K, len(store.values))
 
 	var i int
 	for key, _ := range store.values {
@@ -33,31 +34,33 @@ func (store *Store[T]) GetKeys() []string {
 		i++
 	}
 
-	sort.Strings(keys)
+	sort.Slice(keys, func(i, j int) bool {
+		return keys[i] < keys[j]
+	})
 
 	return keys
 }
 
-func NewSimpleStore[T any]() *Store[T] {
-	return &Store[T]{
-		values: map[string]T{},
-		keyNormalizer: func(key string) string {
+func NewSimpleStore[K cmp.Ordered, V any]() *Store[K, V] {
+	return &Store[K, V]{
+		values: map[K]V{},
+		keyNormalizer: func(key K) K {
 			return key
 		},
 	}
 }
 
-func NewCaseInsensitiveStore[T any]() *Store[T] {
-	return &Store[T]{
-		values: map[string]T{},
+func NewCaseInsensitiveStore[V any]() *Store[string, V] {
+	return &Store[string, V]{
+		values: map[string]V{},
 		keyNormalizer: func(key string) string {
 			return strings.ToLower(key)
 		},
 	}
 }
-func NewStore[T any](keyNormalizer func(key string) string) *Store[T] {
-	return &Store[T]{
-		values:        map[string]T{},
+func NewStore[K cmp.Ordered, V any](keyNormalizer func(key K) K) *Store[K, V] {
+	return &Store[K, V]{
+		values:        map[K]V{},
 		keyNormalizer: keyNormalizer,
 	}
 }

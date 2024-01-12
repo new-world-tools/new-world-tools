@@ -23,7 +23,7 @@ func NewStore(dataTableDir string) (*Store, error) {
 }
 
 type Store struct {
-	store *store.Store[*DataSheetFile]
+	store *store.Store[string, *DataSheetFile]
 }
 
 func (store *Store) GetByUniqueId(typ string, uniqueId string) (*DataSheetFile, error) {

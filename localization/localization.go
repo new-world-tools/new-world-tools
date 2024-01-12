@@ -15,7 +15,7 @@ var ErrNotFound = errors.New("not found")
 
 var reXml = regexp.MustCompile(`.xml`)
 
-func New(root string) (*store.Store[string], error) {
+func New(root string) (*store.Store[string, string], error) {
 	files := []string{}
 
 	err := filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
@@ -36,7 +36,7 @@ func New(root string) (*store.Store[string], error) {
 		return nil, err
 	}
 
-	localizationStore := store.NewStore[string](func(key string) string {
+	localizationStore := store.NewStore[string, string](func(key string) string {
 		return strings.TrimPrefix(strings.ToLower(key), "@")
 	})
 
