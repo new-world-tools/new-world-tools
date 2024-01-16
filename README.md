@@ -76,3 +76,12 @@ Optional:
     -indents-size 2 ^
     -threads 3
 ```
+
+### Asset catalog parser
+
+Powershell:
+```powershell
+.\asset-catalog-parser.exe `
+    -input ".\extract\assetcatalog.catalog" `
+    -asset-info-output "./asset-info.csv"
+```
