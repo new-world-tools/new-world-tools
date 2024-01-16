@@ -79,6 +79,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0x02e7ad9a: "evil_knight_bow_30", // 48737690
     0x02ea7b9a: "drowned_sailor_1h_sword_shield_41", // 48921498
     0x02f40a17: "damned_villager_pickaxe_39", // 49547799
+    0x0307fddd: "dynasty_maiden_named_lunarnewyear", // 50855389
     0x030ac2d6: "pig_domestic_60", // 51036886
     0x030af06d: "evil_knight_warhammer_29", // 51048557
     0x031f7c6f: "wolf_grey_39", // 52395119
@@ -5010,6 +5011,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0xc413bbe4: "dryad_shaman_named_00", // 3289627620
     0xc41f860c: "drowned_miner_42", // 3290400268
     0xc42aa2a6: "bear_black_48", // 3291128486
+    0xc433f409: "dynasty_heavy_lunarnewyear", // 3291739145
     0xc4436ea4: "skeleton_1h_sword_43", // 3292753572
     0xc4514e71: "damned_spearman_m-f_03gc05", // 3293662833
     0xc47455d0: "sulfur_dragon_named_00", // 3295958480

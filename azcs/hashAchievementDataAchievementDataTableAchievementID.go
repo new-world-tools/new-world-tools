@@ -367,6 +367,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x073063ad: "sliceswap_1526_09_04_lore_on", // 120611757
     0x0730ee12: "fc_house_housingitem_table_dynasty_bedsidetable_a", // 120647186
     0x07328e1e: "fc_heavylegs_wintert5_str", // 120753694
+    0x073c9fbc: "dungeonreekwater00maxrank", // 121413564
     0x0743fdf6: "ancient_lookout_highcliff_60403_discovered", // 121896438
     0x074b6827: "fish_hotspot_30142_charted", // 122382375
     0x0750f797: "fc_procedural_shieldtowert5", // 122746775
@@ -3194,6 +3195,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x3ac83415: "04_quest_12", // 986199061
     0x3ac978f2: "fc_house_housingitem_table_legion_table01_b", // 986282226
     0x3acd52a8: "fc_house_housingitem_bed_dynasty_bed01_a", // 986534568
+    0x3acf1855: "dungeongreatcleave01maxrank", // 986650709
     0x3ae32056: "fc_prismaticscarab_foc_ring_mythril_t52", // 987963478
     0x3aef13d8: "weaponquest_umbrasreach_09", // 988746712
     0x3af4a031: "gc_tour_6_complete", // 989110321
@@ -3870,6 +3872,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x46f9ef1d: "fc_2hbowcrafteddungeon6t5", // 1190784797
     0x46fcc9cd: "fc_scarab_int_ringaquamarinet5", // 1190971853
     0x46fcfe24: "lore_unlock_08_ebonscalereach_title_08_02", // 1190985252
+    0x470319dc: "dungeonshattermtn00maxrank", // 1191385564
     0x47035643: "06a_ww_whisper_04", // 1191401027
     0x47103f5e: "azure_fissure_50219_discovered", // 1192247134
     0x471eb77c: "fc_1hlongswordcrafteddungeon12t5", // 1193195388
@@ -5208,6 +5211,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x60b58b90: "mp_blacksmitharm_urbass_part1_page3", // 1622510480
     0x60c14c73: "lore_unlock_expedition_title_01_01", // 1623280755
     0x60c35da7: "fc_foodcont4", // 1623416231
+    0x60c9c940: "dungeonbrimstonesands00maxrank", // 1623836992
     0x60d0bc4f: "swapactive_1624_imhotep_v4p4_a_on", // 1624292431
     0x60de06e9: "lore_unlock_99_msq_aeternum_title_2_03", // 1625163497
     0x60e4847d: "schematic_house_housingitem_chair_pirate_chair01_c", // 1625588861
@@ -6208,6 +6212,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x72ef455c: "fc_2hwarhammercrafteddungeon12t5", // 1928283484
     0x72f599de: "s_factionchoiceready", // 1928698334
     0x72f5ac42: "rewardclaim_may2023_prime", // 1928703042
+    0x72f79242: "dungeonrestlessshores01maxrank", // 1928827458
     0x72fd6775: "shipwreck_30202_discovered", // 1929209717
     0x73061cba: "fc_shard_dex_medium_bal_headt5", // 1929780410
     0x7306269a: "fc_shard_str_longswordt52", // 1929782938
@@ -6266,6 +6271,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x73be0cd9: "swapactive_1605_charmionjournala_on", // 1941834969
     0x73bfd347: "fc_heavylegs_li_boss_mutt5", // 1941951303
     0x73c4b194: "swapactive_95_s04_zander_p01", // 1942270356
+    0x73ce6aea: "dungeonfirstlight01maxrank", // 1942907626
     0x73d05011: "fc_house_housingitem_buff_fishing_bonus_t2", // 1943031825
     0x73d3feb3: "fc_procedural_lighthead_dresst5", // 1943273139
     0x73da5cb6: "fc_heavychest_li_boss_mutt5", // 1943690422
@@ -6714,6 +6720,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x7c55da27: "weaponquest_falmeaswrath_00", // 2086001191
     0x7c5b0875: "fc_2hgreatsword_lightbladet5", // 2086340725
     0x7c5bdd89: "corrupted_camp_40302_discovered", // 2086395273
+    0x7c63b584: "dungeonebonscale00maxrank", // 2086909316
     0x7c64a366: "10_quest_09", // 2086970214
     0x7c657213: "lore_unlock_backstorylore6", // 2087023123
     0x7c717319: "swapactive_9801_florina_02_on", // 2087809817
@@ -8424,6 +8431,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x9bf551ae: "swapactive_1605_akilamenefir_off", // 2616545710
     0x9bfec07d: "mp_perfect_flourishmedium", // 2617163901
     0x9bfee872: "fc_recipe_pattern_lostraider_medium_boots", // 2617174130
+    0x9c033bd9: "dungeonedengrove00maxrank", // 2617457625
     0x9c0b5ed0: "08_quest_29", // 2617990864
     0x9c1809eb: "99_msq_16", // 2618821099
     0x9c189b54: "crater_spriggan_50322_charted", // 2618858324
@@ -9746,6 +9754,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0xb48316ba: "fc_artemisboonpotiond1_t1", // 3028489914
     0xb483424d: "ancient_ruins_40155_discovered", // 3028501069
     0xb4888e46: "fc_mediumlegs_dungeon13_articvalkyrian", // 3028848198
+    0xb492acee: "dungeoncutlass00maxrank", // 3029511406
     0xb4959906: "30344_charted", // 3029702918
     0xb49626f9: "lore_unlock_08_ebonscalereach_title_05_02", // 3029739257
     0xb497d006: "fc_heavyhead_crafteddungeon2t3", // 3029848070
@@ -10387,6 +10396,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0xc12d40bc: "lore_unlock_09_firstlight_title_15_02", // 3240968380
     0xc1317aab: "legion_barracks_20304_charted", // 3241245355
     0xc131e82b: "beastencounter_30301_discovered", // 3241273387
+    0xc1338b57: "dungeoneverfall00maxrank", // 3241380695
     0xc148741e: "unlock_animation_orbmovementa", // 3242751006
     0xc150b178: "09a_shadowawakenscinematic_unlock", // 3243291000
     0xc15c93e2: "99e_isabella_whisper_eg_03", // 3244069858
@@ -13198,6 +13208,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0xf6589b92: "12_quest_12", // 4133002130
     0xf661e953: "schematic_house_housingitem_lighting_pirate_lightwall01_a", // 4133611859
     0xf6649576: "mp_perfect_ancienteasy", // 4133786998
+    0xf66518cb: "dungeongreatcleave00maxrank", // 4133820619
     0xf669c901: "withered_farm_1_30118_charted", // 4134127873
     0xf66de4ae: "lore_unlock_00_aeternum_title_02_02", // 4134397102
     0xf66e2b08: "unlock_animation_ancientlockedchestopen", // 4134415112

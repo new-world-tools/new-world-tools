@@ -2382,6 +2382,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xce44fa65: "tse_exhaustpot_dec_10pct", // 3460627045
     0xce46f9b0: "ai_turret_buff", // 3460757936
     0xce4b0b0e: "status_passive_lifestaff_protection_fortifyonbasic", // 3461024526
+    0xce5a9679: "lny_spicy_hotpot", // 3462043257
     0xce7ce1ed: "ai_admiralbrute_phase2_queuereaction", // 3464290797
     0xceaf0ea9: "ai_isabella_phase1_health_modifier", // 3467579049
     0xcebae787: "ai_evil_knight_fire_champion_spin_f_tick", // 3468355463
