@@ -16,6 +16,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x12271997: "harvestmana", // 304552343
     0x153e9a58: "anointed", // 356424280
     0x16a1723b: "nondispellabledebuff", // 379679291
+    0x16cbdd3f: "nondispellablecc", // 382459199
     0x16f4f95b: "root", // 385153371
     0x1a237df1: "housingdmgbeasts", // 438533617
     0x1edb2c8a: "unclampedempower", // 517680266
@@ -24,6 +25,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x253efcc2: "throwingaxe", // 624884930
     0x271689ad: "debuff", // 655788461
     0x2c975ce7: "threat", // 748117223
+    0x2ed8c5f1: "nonstorymode", // 785958385
     0x319b9e70: "attributes", // 832282224
     0x350771dd: "slow", // 889680349
     0x356410d3: "unclampedfortify", // 895750355
@@ -65,6 +67,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x6ad0de1a: "timer", // 1792073242
     0x6b4075c6: "iceroot", // 1799386566
     0x72cbd1b6: "sporeoffense", // 1925960118
+    0x72f128fd: "immunitytoslow", // 1928407293
     0x7348d0bc: "unclampedfactionresourcemod", // 1934151868
     0x75274263: "buff", // 1965507171
     0x75516071: "passivefoodregen", // 1968267377
@@ -114,8 +117,10 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xb31a5bff: "dmg", // 3004849151
     0xb69f6a5c: "fortify", // 3063900764
     0xb6d04d9b: "regen", // 3067104667
+    0xb7c678c3: "taunt", // 3083237571
     0xbcb318ff: "siegeonly", // 3165853951
     0xbcf55e04: "crit", // 3170196996
+    0xc6d9ee81: "difficultyflag", // 3336171137
     0xc92581e4: "azothstaff", // 3374678500
     0xca5ea8cd: "stancedefense", // 3395201229
     0xcacc3a47: "foodutility", // 3402381895
@@ -138,6 +143,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xe0608d29: "essencerupturet1", // 3764423977
     0xe493e3cb: "uninterruptible", // 3834897355
     0xe702b4b1: "carrycannonball", // 3875714225
+    0xea62f36e: "corruptednagacoreresist", // 3932353390
     0xed3eb615: "armorrend", // 3980310037
     0xf120340f: "lifestaffbuff", // 4045419535
     0xf1cf77b4: "cleanse", // 4056905652

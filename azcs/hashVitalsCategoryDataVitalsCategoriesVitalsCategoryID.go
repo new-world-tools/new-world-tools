@@ -1786,6 +1786,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x3d206e39: "undead_berserker_55", // 1025535545
     0x3d3e40a8: "ancientguardian_javelineer_named_dg_everfall_01", // 1027489960
     0x3d3f63be: "legion_signifer_63", // 1027564478
+    0x3d55308b: "evil_knight_flamekeeper_boss", // 1028993163
     0x3d55ddb5: "evil_knight_caster_elite_08qp02", // 1029037493
     0x3d5a3dcc: "anubianguardian_panther_67", // 1029324236
     0x3d5aa9da: "withered_grunt_13wf01", // 1029351898
@@ -2477,6 +2478,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x54ab4615: "undead_officer_42_15ec00", // 1420510741
     0x54b067e8: "undead_grenadier_disease_41", // 1420847080
     0x54b72b92: "anubianguardian_reaver_16bs11", // 1421290386
+    0x54cb6b0e: "isabella_msq2", // 1422617358
     0x54d8de26: "swamp_dryad_prowler_named_dg_edengrove_00", // 1423498790
     0x55042173: "starvault", // 1426334067
     0x550731ea: "ancientguardian_spearman_58", // 1426534890
@@ -3104,6 +3106,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x6a522714: "corruption_impaler_08qp06", // 1783768852
     0x6a580dee: "drowned_sailor_1h_club_12mb01a", // 1784155630
     0x6a646dd3: "undead_navigator_58", // 1784966611
+    0x6a6504c8: "anubianguardian_horus_elite_named_01", // 1785005256
     0x6a679835: "cow_65", // 1785174069
     0x6a69c149: "potbelly", // 1785315657
     0x6a71f875: "anubianguardian_scarab_16bs02f", // 1785854069
@@ -3426,6 +3429,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x75c0145c: "damned_rifleman_m-f_11md07", // 1975522396
     0x75c0f128: "alligator_young_10ws03", // 1975578920
     0x75cd6de3: "darkness_hive_membrane_dt4", // 1976397283
+    0x75d4ea90: "fl_armored_dragon_elite_09fl12", // 1976887952
     0x75d8d521: "undead_pistoleer_62", // 1977144609
     0x75de91c7: "risen_corruption_impaler_03gc03_elite", // 1977520583
     0x75e09d0c: "evil_knight_bow_31", // 1977654540
@@ -4014,6 +4018,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x8882e0d4: "drowned_sailor_1h_sword_shield_4", // 2290278612
     0x88a08a76: "lynx_44", // 2292222582
     0x88adbc99: "bear_black_65", // 2293087385
+    0x88afd2b0: "undead_siren", // 2293224112
     0x88bd419f: "undead_pistoleer_21", // 2294104479
     0x88bdd826: "dune_phantom_tank_16bs07", // 2294143014
     0x88be3c25: "moonwake", // 2294168613

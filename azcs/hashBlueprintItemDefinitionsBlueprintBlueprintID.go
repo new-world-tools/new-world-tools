@@ -133,6 +133,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x66a618f9: "claimt1_60m_t2", // 1722161401
     0x6707f39c: "siege_warcamp_gate_t1", // 1728574364
     0x6726f913: "carpentryt3", // 1730607379
+    0x67e51ec2: "campskin_hecate01_a", // 1743068866
     0x6a1bc056: "storaget1", // 1780203606
     0x6a58dbfc: "or_weaponsmith_t2", // 1784208380
     0x6caa8d63: "campt4", // 1823116643
@@ -255,6 +256,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xc9a388d7: "wallcornert1", // 3382937815
     0xcc3cce45: "siege_fortgate_l_t3", // 3426537029
     0xcdfe0e48: "or_azothdeposit", // 3455979080
+    0xceaf0548: "campskin_reaper01_a", // 3467576648
     0xceaf1970: "supporthornofresiliencet1", // 3467581808
     0xcf4d8359: "outfittingt3", // 3477963609
     0xd07d0b8d: "campskin_fortune01_a", // 3497855885
