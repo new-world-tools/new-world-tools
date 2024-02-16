@@ -47,7 +47,7 @@ func main() {
 		if err != nil {
 			log.Fatalf("ref.Load: %s", err)
 		}
-		assetMap[assetInfo.AssetId.String()] = assetInfo
+		assetMap[fmt.Sprintf("{%s}:%08x", assetInfo.AssetId.Guid, assetInfo.AssetId.SubId)] = assetInfo
 	}
 
 	keys := make([]string, len(assetMap))
