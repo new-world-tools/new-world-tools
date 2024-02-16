@@ -28,8 +28,6 @@ type AssetCatalog struct {
 	AssetPathToId                        []*AssetPathToIdRef
 	LegacyAssetIdToRealAssetIdNumEntries uint32
 	LegacyAssetIdToRealAssetId           []*LegacyAssetIdToRealAssetIdRef
-	Unknown2                             uint32
-	Unknown3                             uint32
 }
 
 type AssetId struct {
@@ -209,10 +207,7 @@ type LegacyAssetIdToRealAssetId struct {
 var signature = []byte("RASC")
 
 func ParseAssetCatalog(r io.Reader) (*AssetCatalog, error) {
-	cat := &AssetCatalog{
-		AssetIdToInfo: []*AssetIdToInfoRef{},
-		AssetPathToId: []*AssetPathToIdRef{},
-	}
+	cat := &AssetCatalog{}
 
 	var data []byte
 	var u32 uint32
@@ -424,18 +419,6 @@ func ParseAssetCatalog(r io.Reader) (*AssetCatalog, error) {
 
 		cat.LegacyAssetIdToRealAssetId[i] = datum
 	}
-
-	u32, err = reader.ReadUint32(r, binary.LittleEndian)
-	if err != nil {
-		return nil, err
-	}
-	cat.Unknown2 = u32
-
-	u32, err = reader.ReadUint32(r, binary.LittleEndian)
-	if err != nil {
-		return nil, err
-	}
-	cat.Unknown3 = u32
 
 	return cat, nil
 }
