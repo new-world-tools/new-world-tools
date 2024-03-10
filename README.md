@@ -8,6 +8,10 @@
 
 Download the compiled binaries in [Releases](https://github.com/new-world-tools/new-world-tools/releases)
 
+### Dependencies
+
+[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+
 ## Usage
 
 ### Pak extracter
