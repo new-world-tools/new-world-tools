@@ -37,6 +37,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x0267ecf0: "blunderbuss_lingeringflow", // 40365296
     0x029fb971: "se_artemisboonpotiond1_t1", // 44022129
     0x02c308ce: "foodfocdext2", // 46336206
+    0x02cebde2: "status_perk_artifact_set2_amuletdeath", // 47103458
     0x03058599: "status_perk_tool_motelife", // 50693529
     0x032e6487: "icemagic_pylonhitcheck", // 53372039
     0x03471c47: "status_crossbow_poison_aoe", // 54991943
