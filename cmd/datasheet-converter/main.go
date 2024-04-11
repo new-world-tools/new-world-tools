@@ -6,7 +6,9 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/expr-lang/expr"
 	"github.com/goccy/go-yaml"
+	expr2 "github.com/new-world-tools/new-world-tools/cmd/datasheet-converter/expr"
 	"github.com/new-world-tools/new-world-tools/datasheet"
 	"github.com/new-world-tools/new-world-tools/localization"
 	"github.com/new-world-tools/new-world-tools/profiler"
@@ -17,6 +19,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strconv"
 	"strings"
 )
@@ -29,6 +32,8 @@ const (
 var (
 	pool             *workerpool.Pool
 	localizationData *store.Store[string, string]
+	resolveExpr      bool
+	resolveContext   *ResolveContext
 	inputDir         string
 	outputDir        string
 	format           string
@@ -49,12 +54,21 @@ var formats = map[string]bool{
 	formatYaml: true,
 }
 
+type ResolveContext struct {
+	CharacterLevel      int64
+	GearScore           int64
+	StatusEffectPotency map[string]float64
+	ConsumablePotency   map[string]float64
+	PerkScaling         map[string]*expr2.Scaling
+}
+
 func main() {
 	var err error
 	pr = profiler.New()
 
 	inputDirPtr := flag.String("input", ".\\extract\\sharedassets\\springboardentitites\\datatables", "directory path")
 	localizationDirPtr := flag.String("localization", "", "localization path")
+	resolveExprPtr := flag.Bool("resolve-expr", false, "resolve expressions in strings")
 	outputDirPtr := flag.String("output", ".\\datasheets", "directory path")
 	formatPtr := flag.String("format", "csv", "csv, json, yaml")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
@@ -64,6 +78,7 @@ func main() {
 
 	format = *formatPtr
 	localizationDir := *localizationDirPtr
+	resolveExpr = *resolveExprPtr
 	withIndents = *withIndentsPtr
 	keepStructure = *keepStructurePtr
 
@@ -114,9 +129,32 @@ func main() {
 		log.Fatalf("MkdirAll: %s", err)
 	}
 
-	files, err := datasheet.FindAll(inputDir)
+	dsStore, err := datasheet.NewStore(inputDir)
 	if err != nil {
-		log.Fatalf("datasheet.FindAll: %s", err)
+		log.Fatalf("datasheet.NewStore: %s", err)
+	}
+
+	resolveContext = &ResolveContext{
+		CharacterLevel:      65,
+		GearScore:           700,
+		StatusEffectPotency: make(map[string]float64),
+		ConsumablePotency:   make(map[string]float64),
+		PerkScaling:         make(map[string]*expr2.Scaling),
+	}
+
+	if resolveExpr {
+		statusEffectPotency, consumablePotency, err := expr2.GetConsumablePotencies(dsStore)
+		if err != nil {
+			log.Fatalf("expr2.GetConsumablePotencies: %s", err)
+		}
+		resolveContext.StatusEffectPotency = statusEffectPotency
+		resolveContext.ConsumablePotency = consumablePotency
+
+		perkScaling, _, err := expr2.GetPerkMultipliers(dsStore)
+		if err != nil {
+			log.Fatalf("expr2.GetPerkMultipliers: %s", err)
+		}
+		resolveContext.PerkScaling = perkScaling
 	}
 
 	pool = workerpool.NewPool(threads, 1000)
@@ -139,7 +177,7 @@ func main() {
 	keys := map[string]bool{}
 
 	var id int64
-	for _, file := range files {
+	for _, file := range dsStore.GetAll() {
 		f, err := os.Open(file.GetPath())
 		if err != nil {
 			log.Fatalf("os.Open: %s", err)
@@ -247,6 +285,9 @@ func storeToCsv(ds *datasheet.DataSheet, path string) error {
 	for i, row := range ds.Rows {
 		record := make([]string, len(row))
 		for j, cell := range row {
+			if ds.Columns[j].ColumnType == datasheet.ColumnTypeString {
+				cell = resolveValue(cell, row, ds)
+			}
 			record[j] = toString(normalizeCellValue(ds.Columns[j], cell))
 		}
 		err = csvWriter.Write(record)
@@ -286,6 +327,9 @@ func storeToJson(ds *datasheet.DataSheet, path string) error {
 	for i, row := range ds.Rows {
 		record := structure.NewOrderedMap[string, any]()
 		for j, cell := range row {
+			if ds.Columns[j].ColumnType == datasheet.ColumnTypeString {
+				cell = resolveValue(cell, row, ds)
+			}
 			record.Add(fmt.Sprintf("%s", ds.Columns[j].Name), normalizeCellValue(ds.Columns[j], cell))
 		}
 
@@ -322,6 +366,9 @@ func storeToYaml(ds *datasheet.DataSheet, path string) error {
 	for i, row := range ds.Rows {
 		record := structure.NewOrderedMap[string, any]()
 		for j, cell := range row {
+			if ds.Columns[j].ColumnType == datasheet.ColumnTypeString {
+				cell = resolveValue(cell, row, ds)
+			}
 			record.Add(fmt.Sprintf("%s", ds.Columns[j].Name), normalizeCellValue(ds.Columns[j], cell))
 		}
 
@@ -340,7 +387,7 @@ func storeToYaml(ds *datasheet.DataSheet, path string) error {
 
 func normalizeCellValue(column datasheet.ColumnData, str string) any {
 	if column.ColumnType == datasheet.ColumnTypeString {
-		return resolveValue(str)
+		return str
 	}
 
 	if column.ColumnType == datasheet.ColumnTypeNumber {
@@ -350,8 +397,7 @@ func normalizeCellValue(column datasheet.ColumnData, str string) any {
 		}
 
 		//ugly rounding fix
-		pow := math.Pow(10, 6)
-		return math.Round(val*pow) / pow
+		return floatFix(val)
 	}
 
 	if column.ColumnType == datasheet.ColumnTypeBoolean {
@@ -391,14 +437,102 @@ func toString(val interface{}) string {
 	return ""
 }
 
-func resolveValue(key string) string {
+var exprRe = regexp.MustCompile(`{\[[^-.0-9(]*([^]]+)\]}`)
+
+func resolveValue(key string, row []string, ds *datasheet.DataSheet) string {
 	if localizationData == nil || !strings.HasPrefix(key, "@") {
 		return key
 	}
 
 	if localizationData.Has(key) {
-		return localizationData.Get(key)
+		val := localizationData.Get(key)
+		if resolveExpr {
+			matches := exprRe.FindAllStringSubmatch(val, -1)
+			if len(matches) > 0 {
+				for _, match := range matches {
+					exprStr := match[1]
+					env := map[string]any{}
+					if ds.Type == "StatusEffectData" {
+						id, err := ds.GetCellValueByColumnName(row, "StatusID")
+						if err != nil {
+							break
+						}
+						env["perkMultiplier"] = float64(1)
+						potency, ok := resolveContext.StatusEffectPotency[strings.ToLower(id)]
+						if ok {
+							env["ConsumablePotency"] = potency * float64(resolveContext.CharacterLevel)
+						}
+						exprStr = normalizeExpr(exprStr)
+					}
+					if ds.Type == "MasterItemDefinitions" {
+						id, err := ds.GetCellValueByColumnName(row, "ItemID")
+						if err != nil {
+							break
+						}
+						potency, ok := resolveContext.ConsumablePotency[strings.ToLower(id)]
+						if ok {
+							env["ConsumablePotency"] = potency * float64(resolveContext.CharacterLevel)
+						}
+						exprStr = normalizeExpr(exprStr)
+					}
+					if ds.Type == "PerkData" {
+						id, err := ds.GetCellValueByColumnName(row, "PerkID")
+						if err != nil {
+							break
+						}
+						scaling, ok := resolveContext.PerkScaling[strings.ToLower(id)]
+						if ok {
+							env["perkMultiplier"] = scaling.GetScaling(resolveContext.GearScore)
+						} else {
+							env["perkMultiplier"] = float64(1)
+						}
+						exprStr = normalizeExpr(exprStr)
+					}
+
+					program, err := expr.Compile(exprStr, expr.Env(env), expr.AsFloat64())
+					if err != nil {
+						log.Printf("expr.Compile: %s", err)
+						continue
+					}
+					output, err := expr.Run(program, env)
+					if err != nil {
+						log.Fatalf("expr.Run: %s", err)
+					}
+					f64, ok := output.(float64)
+					if !ok {
+						log.Fatalf("not float64: %v", output)
+					}
+					f64 = floatFix(f64)
+					val = strings.Replace(val, match[0], strconv.FormatFloat(f64, 'f', -1, 64), 1)
+				}
+			}
+		}
+		return val
 	}
 
 	return key
+}
+
+func floatFix(f64 float64) float64 {
+	pow := math.Pow(10, 6)
+	return math.Round(f64*pow) / pow
+}
+
+var re1 = regexp.MustCompile(`{([\w]+)}`)
+var re2 = regexp.MustCompile(`[\d]([\s]+{[\w]+})`)
+
+func normalizeExpr(exprStr string) string {
+	var matches [][]string
+
+	matches = re2.FindAllStringSubmatch(exprStr, 1)
+	if len(matches) > 0 {
+		exprStr = strings.Replace(exprStr, matches[0][1], " *"+matches[0][1], 1)
+	}
+
+	matches = re1.FindAllStringSubmatch(exprStr, 1)
+	if len(matches) > 0 {
+		exprStr = strings.Replace(exprStr, matches[0][0], matches[0][1], 1)
+	}
+
+	return exprStr
 }

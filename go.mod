@@ -11,6 +11,7 @@ require (
 )
 
 require (
+	github.com/expr-lang/expr v1.16.3 // indirect
 	github.com/fatih/color v1.10.0 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect

@@ -2,11 +2,13 @@ package datasheet
 
 import (
 	"encoding/binary"
+	"fmt"
 	"github.com/new-world-tools/new-world-tools/reader"
 	"io"
 	"log"
 	"os"
 	"reflect"
+	"strings"
 )
 
 var headerSize = reflect.TypeOf(Header{}).NumField() * 4
@@ -318,6 +320,16 @@ func (dataSheet *DataSheet) GetColumnIndexes() map[string]int {
 	}
 
 	return indexes
+}
+
+func (dataSheet *DataSheet) GetCellValueByColumnName(row []string, columnName string) (string, error) {
+	for i, column := range dataSheet.Columns {
+		if strings.ToLower(column.Name) == strings.ToLower(columnName) {
+			return row[i], nil
+		}
+	}
+
+	return "", fmt.Errorf("column %q was not found", columnName)
 }
 
 type ColumnType int32
