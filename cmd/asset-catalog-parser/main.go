@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	inputPtr := flag.String("input", "", "directory or .pak path")
+	inputPtr := flag.String("input", "", "assetcatalog.catalog path")
 	assetInfoOutputPtr := flag.String("asset-info-output", "./asset-info-output.csv", ".csv path")
 	flag.Parse()
 
