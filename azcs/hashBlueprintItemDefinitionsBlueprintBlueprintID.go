@@ -8,6 +8,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x03e68b89: "campskin_firelight01_b", // 65440649
     0x03ff708a: "munitionspilet5", // 67072138
     0x04f73176: "fencestonecorner", // 83308918
+    0x058f6eac: "campskin_spring01_a", // 93286060
     0x05bb37c1: "engineeringt5", // 96155585
     0x064d51d9: "campskin_firstlightelven_02", // 105730521
     0x0650e74d: "wallgatet4", // 105965389

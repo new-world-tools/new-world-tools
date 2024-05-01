@@ -5101,6 +5101,7 @@ var hashVitalsDataVitalsVitalsID = map[uint32]string{
     0xc74b33b1: "damnedhound_dt4", // 3343594417
     0xc74e12c1: "evil_knight_hound_dg_greatcleave_00_00", // 3343782593
     0xc7506fb3: "damned_hound_28", // 3343937459
+    0xc75078e8: "wispy_wasp_swarm", // 3343939816
     0xc7853d0d: "damned_1h_swordsman_m-f_07sm06", // 3347397901
     0xc78fadfd: "legion_sagittarii_named_01", // 3348082173
     0xc790c9c7: "damned_villager_hammer_26", // 3348154823

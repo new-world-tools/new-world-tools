@@ -600,6 +600,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x2118133d: "9801_pktraceabsorbera_04_interact", // 555225917
     0x212658e9: "pvpfaction-v2_22", // 556161257
     0x2128609f: "pvpfactionv2_23", // 556294303
+    0x21363f1c: "sb_wispybloomcraft", // 557203228
     0x21377c89: "pvpfaction+v2_51", // 557284489
     0x2139abd4: "genesiskeyreplacement", // 557427668
     0x21432697: "09a_s17_cannon_interact", // 558048919
@@ -1751,6 +1752,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x63a73338: "1418_0105_rd_04_success", // 1671902008
     0x63b6b4f3: "cyclic_09a_m14_natureritual_interact", // 1672918259
     0x63bafc32: "0313_0101_descentfrostedslumber_success", // 1673198642
+    0x63d36ead: "gather_springtide_wispybloom", // 1674800813
     0x63d4c94c: "ew_rally_1b_success", // 1674889548
     0x63d6d40d: "faction++v2_50", // 1675023373
     0x6405c23d: "event_mushroomflaskt1_consumed", // 1678099005
@@ -3310,6 +3312,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xbd01f38e: "06a_b_01_returnbrushes_success", // 3171021710
     0xbd0da922: "0901_0107_preciouscargo_success", // 3171789090
     0xbd1e7cf2: "1679_0101_striderofthesands_success", // 3172891890
+    0xbd3103c8: "gather_wispyspritzplantsite", // 3174106056
     0xbd3b390b: "04a_side05_01_playflute_interact", // 3174775051
     0xbd4a9df4: "95a_s02_wordofwater_interact", // 3175783924
     0xbd4b7e8b: "faction+v2_40", // 3175841419
@@ -3359,6 +3362,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xbf844ea6: "cmission_success_tanningprojectid2", // 3213119142
     0xbf946c6a: "95_s04_04_mordredtrystaff_hint", // 3214175338
     0xbfa1a492: "craft_weavingt51", // 3215041682
+    0xbfacd468: "sb_towncenterpiecegather", // 3215774824
     0xbfb95cee: "09a_s4_explosivebarrelp_interact", // 3216596206
     0xbfd6cafc: "mission_success_explorer_t1", // 3218524924
     0xbfec7f75: "war_t1", // 3219947381
@@ -3431,6 +3435,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xc3bf77f4: "99e_msq_02_myrddincrystalsb_interact", // 3284105204
     0xc3c40844: "9801_pktraceabsorbera_03_interact", // 3284404292
     0xc3c94baf: "msq_0017_weapons_interact", // 3284749231
+    0xc3e25387: "sb_waspgoocraft", // 3286389639
     0xc3f9db08: "0424_2022_wc_03_success", // 3287931656
     0xc3fe12d2: "factionv2_29", // 3288208082
     0xc4253ebe: "msq_shipmanifest_interact", // 3290775230
@@ -3492,6 +3497,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xc7d0d5cd: "98_m_04_bullseye_success", // 3352352205
     0xc7e71777: "craft_engineeringt0", // 3353810807
     0xc7ed107d: "cmission_success_smeltingprojectid3", // 3354202237
+    0xc7ffd2c0: "event_springtide_wispybloom", // 3355431616
     0xc814d2be: "95_s01_01_corruptedcampsupplies3_interact", // 3356807870
     0xc841d618: "0423_0101_fq03_success", // 3359757848
     0xc845fddc: "pvpfaction-v2_24", // 3360030172
@@ -4269,6 +4275,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xf47b92ee: "craft_woodworkingt52", // 4101739246
     0xf48f6a85: "pvp_xpmedium2_50", // 4103039621
     0xf49aeaa4: "killftue_sailor_t1_2", // 4103793316
+    0xf4a49887: "sb_villagegiftbagsgather", // 4104427655
     0xf4b9d2ca: "06a_msq_19_talktonewspeaker_success", // 4105818826
     0xf4bb5c56: "9926_0103_lostscarecrow_success", // 4105919574
     0xf4c64462: "gather_skinningt5", // 4106634338

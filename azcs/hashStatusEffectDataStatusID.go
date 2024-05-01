@@ -272,6 +272,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x156f7879: "tse_debuffdur_dec_10pct", // 359626873
     0x1582d078: "tse_silencepot_dec_10pct", // 360894584
     0x159bbf67: "ai_anubianguardian_horusboss_instrumentofjudgement_ontick", // 362528615
+    0x15a28383: "wispy_wasp_swarm_tick", // 362972035
     0x16021cba: "greaterpotionfocus", // 369237178
     0x160932c8: "ai_anubian_sunspots_heal", // 369701576
     0x1609925b: "pvparena_potionhealt4", // 369726043
@@ -457,6 +458,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2636cdd5: "arcanistmastery2", // 641125845
     0x265b1fa8: "curse 3 major (shrivelled)", // 643506088
     0x265f06b2: "blunderbuss_lastchancecooldown", // 643761842
+    0x267b0795: "wispy_wasp_swarm_attractant", // 645597077
     0x268af03a: "halloweenboss_reap_damage", // 646639674
     0x2692bb87: "foodcorruptedt4", // 647150471
     0x26dc9e16: "ai_hercyneboar_thorn_ally", // 651992598
@@ -1241,6 +1243,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x691c5e68: "haleandheartylsb", // 1763466856
     0x69221107: "ai_yeti_2022_remove_fortify", // 1763840263
     0x692289ff: "pvparena_foodintt3", // 1763871231
+    0x694f54fe: "wispy_wasp_swarm_agitated", // 1766806782
     0x6950635d: "ai_armoreddragon_bleed", // 1766875997
     0x6963258e: "leatherworkermastery2", // 1768105358
     0x696b8374: "spear_fortifyonhvyhit", // 1768653684
@@ -2366,6 +2369,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xc6f58ba9: "rapier_finish_stam_mod2", // 3337980841
     0xc6fbb7ee: "lifestaff_staminaregen_onhit", // 3338385390
     0xc71889e6: "ai_dptank_sanddevil_bleed_cyclone", // 3340274150
+    0xc75078e8: "wispy_wasp_swarm", // 3343939816
     0xc757dc9a: "siege_postmatch_keepalive", // 3344424090
     0xc7b7e6a0: "status_perk_earring_manaonpotion", // 3350718112
     0xc7c6153a: "status_flail_passive_afterabilityheavy", // 3351647546

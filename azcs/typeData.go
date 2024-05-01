@@ -1623,6 +1623,7 @@ var defaultTypes = map[string]string{
     "9ec84e0a-f296-5212-8b69-4de48e695d61": "AZStd::unordered_map",
     "9ecff158-0ec3-4c37-b04c-2723999a49cf": "ReadingInteractionComponentServerFacet",
     "9eece8bd-2355-4600-bef0-49415caf72e8": "RainComponent",
+    "9f075247-7119-4232-9b69-f930c20fbc07": "InteractSpawnerData",
     "9f3f5302-3390-407a-a6f7-2e011e3bb686": "AZStd::pair",
     "9f4e062e-06a0-46d4-85df-e0da96467d3a": "Crc32",
     "9f7d842d-d93d-458b-af2b-af61e2f6c2f6": "AISpawnPositionTrackingComponentServerFacet",
