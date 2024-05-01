@@ -5,6 +5,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/new-world-tools/new-world-tools/asset"
 	"github.com/new-world-tools/new-world-tools/azcs"
 	"github.com/new-world-tools/new-world-tools/profiler"
 	"github.com/new-world-tools/new-world-tools/structure"
@@ -42,6 +43,7 @@ var (
 	resolveHashValue bool
 	debug            bool
 	debugLog         string
+	assetMap         map[string]*asset.AssetInfo
 	pr               *profiler.Profiler
 )
 
@@ -63,12 +65,13 @@ func main() {
 	outputDirPtr := flag.String("output", ".\\json", "directory path")
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	withIndentsPtr := flag.Bool("with-indents", false, "enable indents in json")
-	iIndentsSizePtr := flag.Int("indents-size", 4, "indents size")
+	indentsSizePtr := flag.Int("indents-size", 4, "indents size")
 	resolveHashValuePtr := flag.Bool("resolve-hash-value", false, "")
 	poolCapacityPtr := flag.Int64("pool-capacity", 1000, "pool capacity")
 	debugPtr := flag.Bool("debug", false, "")
 	debugLogPtr := flag.String("debug-log", ".\\debug.log", "debug log path")
 	formatPtr := flag.String("format", "json", "yml or json")
+	assetCatalogInputPtr := flag.String("asset-catalog", "", "assetcatalog.catalog path")
 	flag.Parse()
 
 	format := *formatPtr
@@ -83,11 +86,12 @@ func main() {
 	log.Printf("The number of threads is set to %d", threads)
 
 	withIndents = *withIndentsPtr
-	indentsSize = *iIndentsSizePtr
+	indentsSize = *indentsSizePtr
 	resolveHashValue = *resolveHashValuePtr
 	poolCapacity := *poolCapacityPtr
 	debug = *debugPtr
 	debugLog = *debugLogPtr
+	assetCatalogInput := *assetCatalogInputPtr
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -107,6 +111,40 @@ func main() {
 	err = os.MkdirAll(outputDir, 0755)
 	if err != nil {
 		log.Fatalf("MkdirAll: %s", err)
+	}
+
+	if assetCatalogInput != "" {
+		assetCatalogInput, err = filepath.Abs(filepath.Clean(assetCatalogInput))
+		if err != nil {
+			log.Fatalf("filepath.Abs: %s", err)
+		}
+
+		_, err = os.Stat(assetCatalogInput)
+		if os.IsNotExist(err) {
+			log.Fatalf("'%s' does not exist", assetCatalogInput)
+		}
+
+		f, err := os.Open(assetCatalogInput)
+		if err != nil {
+			log.Fatalf("os.Open: %s", err)
+		}
+
+		log.Printf("Parsing the catalog...")
+		cat, err := asset.ParseAssetCatalog(f)
+		if err != nil {
+			log.Fatalf("asset.ParseAssetCatalog: %s", err)
+		}
+
+		assetMap = make(map[string]*asset.AssetInfo, cat.AssetIdToInfoNumEntries)
+		for _, ref := range cat.AssetIdToInfo {
+			assetInfo, err := ref.Load(f, cat)
+			if err != nil {
+				log.Fatalf("ref.Load: %s", err)
+			}
+			assetMap[assetInfo.AssetId.String()] = assetInfo
+		}
+
+		f.Close()
 	}
 
 	pool = workerpool.NewPool(threads, poolCapacity)
@@ -218,7 +256,7 @@ func addTask(id int64, job Job) {
 			log.Fatalf("azcs.Parse: %s", err)
 		}
 
-		streamNode, err := azcs.ResolveStream(stream, resolveType, resolveHash)
+		streamNode, err := azcs.ResolveStream(stream, resolveType, resolveHash, assetMap)
 		if err != nil {
 			log.Fatalf("azcs.ResolveStream: %s", err)
 		}

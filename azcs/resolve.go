@@ -5,6 +5,7 @@ import (
 	"encoding/binary"
 	"fmt"
 	"github.com/gofrs/uuid"
+	"github.com/new-world-tools/new-world-tools/asset"
 	"github.com/new-world-tools/new-world-tools/reader"
 	"github.com/new-world-tools/new-world-tools/structure"
 	"math"
@@ -136,12 +137,12 @@ func maxFloat[T floats](data []T) T {
 	return max
 }
 
-func ResolveStream(stream *Stream, typeResolver TypeResolver, hashResolver HashResolver) (any, error) {
+func ResolveStream(stream *Stream, typeResolver TypeResolver, hashResolver HashResolver, assetMap map[string]*asset.AssetInfo) (any, error) {
 	if len(stream.Elements) > 1 {
 		return nil, fmt.Errorf("too much elements")
 	}
 
-	node, err := resolveNode(stream.Elements[0], typeResolver, hashResolver)
+	node, err := resolveNode(stream.Elements[0], typeResolver, hashResolver, assetMap)
 	if err != nil {
 		return nil, err
 	}
@@ -165,7 +166,7 @@ func normalizeVector(vec []float32, scale float32) []float32 {
 	return normalized
 }
 
-func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashResolver) (any, error) {
+func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashResolver, assetMap map[string]*asset.AssetInfo) (any, error) {
 	node := structure.NewOrderedMap[string, any]()
 
 	node.Add(TypeField, typeResolver(element))
@@ -294,6 +295,49 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 				return nil, fmt.Errorf("reader.ReadBytes: %s", err)
 			}
 			node.Add("hint", string(data))
+		}
+		if assetMap != nil {
+			guid, _ := node.Get("guid")
+			subId, _ := node.Get("subId")
+			assetId := &asset.AssetId{
+				Guid:  guid.(string),
+				SubId: subId.(uint32),
+			}
+			assetInfo, ok := assetMap[assetId.String()]
+			if ok {
+				node.Add("path", assetInfo.RelativePath)
+			}
+		}
+
+		return node, nil
+
+	// AssetId
+	case "652ed536-3402-439b-aebe-4a5dbc554085":
+		for _, element := range element.Elements {
+			key := hashResolver(element)
+			value, err := resolveNode(element, typeResolver, hashResolver, assetMap)
+			if err != nil {
+				return nil, err
+			}
+
+			if key == "subid" {
+				key = "subId"
+			}
+
+			node.Add(key, value)
+		}
+
+		if assetMap != nil {
+			guid, _ := node.Get("guid")
+			subId, _ := node.Get("subId")
+			assetId := &asset.AssetId{
+				Guid:  guid.(string),
+				SubId: subId.(uint32),
+			}
+			assetInfo, ok := assetMap[assetId.String()]
+			if ok {
+				node.Add("path", assetInfo.RelativePath)
+			}
 		}
 
 		return node, nil
@@ -433,7 +477,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		nodes := make([]any, len(element.Elements))
 
 		for i, element := range element.Elements {
-			value, err := resolveNode(element, typeResolver, hashResolver)
+			value, err := resolveNode(element, typeResolver, hashResolver, assetMap)
 			if err != nil {
 				return nil, err
 			}
@@ -512,7 +556,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		values := make([]any, len(element.Elements))
 		for i, element := range element.Elements {
 			key := hashResolver(element)
-			value, err := resolveNode(element, typeResolver, hashResolver)
+			value, err := resolveNode(element, typeResolver, hashResolver, assetMap)
 			if err != nil {
 				return nil, err
 			}
@@ -540,7 +584,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		}
 		for _, element := range element.Elements {
 			key := hashResolver(element)
-			value, err := resolveNode(element, typeResolver, hashResolver)
+			value, err := resolveNode(element, typeResolver, hashResolver, assetMap)
 			if err != nil {
 				return nil, err
 			}
@@ -559,7 +603,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		}
 		for _, element := range element.Elements {
 			key := hashResolver(element)
-			value, err := resolveNode(element, typeResolver, hashResolver)
+			value, err := resolveNode(element, typeResolver, hashResolver, assetMap)
 			if err != nil {
 				return nil, err
 			}
@@ -589,7 +633,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		} else {
 			for _, element := range element.Elements {
 				key := hashResolver(element)
-				value, err := resolveNode(element, typeResolver, hashResolver)
+				value, err := resolveNode(element, typeResolver, hashResolver, assetMap)
 				if err != nil {
 					return nil, err
 				}
