@@ -256,7 +256,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 		var r io.Reader
 
-		bufReader := bufio.NewReaderSize(decompressReader, 16)
+		bufReader := bufio.NewReaderSize(decompressReader, 4096)
 
 		sigData, err := bufReader.Peek(8)
 		if err != nil && err != io.EOF {
