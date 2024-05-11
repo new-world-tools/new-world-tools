@@ -184,18 +184,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 
 			tnode := structure.NewOrderedMap[string, any]()
 
-			scaleX := JsonFloat32(math.Sqrt(float64(col0[0]*col0[0] + col1[0]*col1[0] + col2[0]*col2[0])))
-			scaleY := JsonFloat32(math.Sqrt(float64(col0[1]*col0[1] + col1[1]*col1[1] + col2[1]*col2[1])))
-			scaleZ := JsonFloat32(math.Sqrt(float64(col0[2]*col0[2] + col1[2]*col1[2] + col2[2]*col2[2])))
-
-			// Calculate the rotation matrix
-			rotationMatrix := [3][3]JsonFloat32{
-				{col0[0] / scaleX, col0[1] / scaleX, col0[2] / scaleX},
-				{col1[0] / scaleY, col1[1] / scaleY, col1[2] / scaleY},
-				{col2[0] / scaleZ, col2[1] / scaleZ, col2[2] / scaleZ},
-			}
-
-			tnode.Add("rotation", rotationMatrix)
+			tnode.Add("rotation/scale", []JsonFloat32{col0[0], col0[1], col0[2], col1[0], col1[1], col1[2], col2[0], col2[1], col2[2]})
 			tnode.Add("translation", col3)
 
 			node.Add(ValueField, tnode)
