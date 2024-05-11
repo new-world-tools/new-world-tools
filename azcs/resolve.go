@@ -150,22 +150,6 @@ func ResolveStream(stream *Stream, typeResolver TypeResolver, hashResolver HashR
 	return node, nil
 }
 
-func vectorMagnitude(vec []float32) float32 {
-	sumOfSquares := float32(0)
-	for _, v := range vec {
-		sumOfSquares += v * v
-	}
-	return float32(math.Sqrt(float64(sumOfSquares)))
-}
-
-func normalizeVector(vec []float32, scale float32) []float32 {
-	normalized := make([]float32, len(vec))
-	for i, v := range vec {
-		normalized[i] = v / scale
-	}
-	return normalized
-}
-
 func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashResolver, assetMap map[string]*asset.AssetInfo) (any, error) {
 	node := structure.NewOrderedMap[string, any]()
 
@@ -183,19 +167,19 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 
 			col0, err := createFloatArray[JsonFloat32](element.Data[0:12])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 			col1, err := createFloatArray[JsonFloat32](element.Data[12:24])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 			col2, err := createFloatArray[JsonFloat32](element.Data[24:36])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 			col3, err := createFloatArray[JsonFloat32](element.Data[36:48])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 
 			tnode := structure.NewOrderedMap[string, any]()
@@ -222,15 +206,15 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 			}
 			rotation, err := createFloatArray[JsonFloat32](element.Data[0:16])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 			vectorScale, err := createFloatArray[JsonFloat32](element.Data[16:28])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 			translation, err := createFloatArray[JsonFloat32](element.Data[28:40])
 			if err != nil {
-				return nil, fmt.Errorf("createFloatArrray: %s", err)
+				return nil, fmt.Errorf("createFloatArray: %s", err)
 			}
 			scale := maxFloat[JsonFloat32](vectorScale)
 
