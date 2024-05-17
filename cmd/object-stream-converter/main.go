@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"errors"
 	"flag"
@@ -59,6 +60,17 @@ var debugData = &DebugData{
 }
 
 func main() {
+	//f, err := os.Create("cpu.prof")
+	//if err != nil {
+	//	log.Fatal("could not create CPU profile: ", err)
+	//}
+	//defer f.Close()
+	//
+	//if err := pprof.StartCPUProfile(f); err != nil {
+	//	log.Fatal("could not start CPU profile: ", err)
+	//}
+	//defer pprof.StopCPUProfile()
+
 	pr = profiler.New()
 
 	inputDirPtr := flag.String("input", ".\\extract", "directory path")
@@ -251,7 +263,7 @@ func addTask(id int64, job Job) {
 		}
 		defer rc.Close()
 
-		stream, err := azcs.Parse(rc)
+		stream, err := azcs.Parse(bufio.NewReader(rc))
 		if err != nil {
 			log.Fatalf("azcs.Parse: %s", err)
 		}
