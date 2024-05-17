@@ -2,10 +2,10 @@ package main
 
 import (
 	"bufio"
-	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/goccy/go-json"
 	"github.com/new-world-tools/new-world-tools/asset"
 	"github.com/new-world-tools/new-world-tools/azcs"
 	"github.com/new-world-tools/new-world-tools/profiler"
@@ -23,7 +23,7 @@ import (
 
 const (
 	defaultThreads int64 = 3
-	maxThreads     int64 = 10
+	maxThreads     int64 = 50
 )
 
 const (
@@ -60,7 +60,7 @@ var debugData = &DebugData{
 }
 
 func main() {
-	//f, err := os.Create("cpu.prof")
+	//f, err := os.Create("cpu3.prof")
 	//if err != nil {
 	//	log.Fatal("could not create CPU profile: ", err)
 	//}

@@ -3,6 +3,8 @@ module github.com/new-world-tools/new-world-tools
 go 1.21.0
 
 require (
+	github.com/expr-lang/expr v1.16.3
+	github.com/goccy/go-json v0.10.2
 	github.com/goccy/go-yaml v1.11.0
 	github.com/gofrs/uuid v4.3.0+incompatible
 	github.com/new-world-tools/go-oodle v0.2.2
@@ -11,7 +13,6 @@ require (
 )
 
 require (
-	github.com/expr-lang/expr v1.16.3 // indirect
 	github.com/fatih/color v1.10.0 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
