@@ -8,7 +8,7 @@ import (
 )
 
 type OrderedMap[K comparable, V any] struct {
-	mu       sync.Mutex
+	mu       sync.RWMutex
 	keys     []K
 	values   map[K]V
 	position int
@@ -38,8 +38,8 @@ func (orderedMap *OrderedMap[K, V]) Add(key K, value V) {
 }
 
 func (orderedMap *OrderedMap[K, V]) Get(key K) (V, bool) {
-	orderedMap.mu.Lock()
-	defer orderedMap.mu.Unlock()
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
 
 	value, ok := orderedMap.values[key]
 
@@ -47,8 +47,8 @@ func (orderedMap *OrderedMap[K, V]) Get(key K) (V, bool) {
 }
 
 func (orderedMap *OrderedMap[K, V]) GetByPosition(position int) (key K, value V, ok bool) {
-	orderedMap.mu.Lock()
-	defer orderedMap.mu.Unlock()
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
 
 	if len(orderedMap.keys) > position {
 		key := orderedMap.keys[position]
@@ -61,8 +61,8 @@ func (orderedMap *OrderedMap[K, V]) GetByPosition(position int) (key K, value V,
 }
 
 func (orderedMap *OrderedMap[K, V]) Has() bool {
-	orderedMap.mu.Lock()
-	defer orderedMap.mu.Unlock()
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
 
 	return len(orderedMap.keys) > orderedMap.position
 }
@@ -79,23 +79,23 @@ func (orderedMap *OrderedMap[K, V]) Next() (K, V) {
 }
 
 func (orderedMap *OrderedMap[K, V]) Size() int {
-	orderedMap.mu.Lock()
-	defer orderedMap.mu.Unlock()
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
 
-	return orderedMap.position
+	return len(orderedMap.keys)
 }
 
 func (orderedMap *OrderedMap[K, V]) MarshalJSON() ([]byte, error) {
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
+
 	var data []byte
 	var err error
+
 	var buf bytes.Buffer
-
 	buf.WriteRune('{')
-	orderedMap.Reset()
-	var i int
-	for orderedMap.Has() {
-		key, value := orderedMap.Next()
 
+	for i, key := range orderedMap.keys {
 		if i > 0 {
 			buf.WriteRune(',')
 		}
@@ -104,18 +104,14 @@ func (orderedMap *OrderedMap[K, V]) MarshalJSON() ([]byte, error) {
 		if err != nil {
 			return nil, err
 		}
-
 		buf.Write(data)
 		buf.WriteRune(':')
 
-		data, err = json.Marshal(value)
+		data, err = json.Marshal(orderedMap.values[key])
 		if err != nil {
 			return nil, err
 		}
-
 		buf.Write(data)
-
-		i++
 	}
 
 	buf.WriteRune('}')
@@ -123,23 +119,26 @@ func (orderedMap *OrderedMap[K, V]) MarshalJSON() ([]byte, error) {
 }
 
 func (orderedMap *OrderedMap[K, V]) MarshalYAML() (any, error) {
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
+
 	mapSlice := yaml.MapSlice{}
 
-	orderedMap.Reset()
-	for orderedMap.Has() {
-		key, value := orderedMap.Next()
-		mapSlice = append(mapSlice, yaml.MapItem{key, value})
+	for _, key := range orderedMap.keys {
+		value := orderedMap.values[key]
+		mapSlice = append(mapSlice, yaml.MapItem{Key: key, Value: value})
 	}
 
 	return mapSlice, nil
 }
 
 func (orderedMap *OrderedMap[K, V]) ToMap() map[K]V {
+	orderedMap.mu.RLock()
+	defer orderedMap.mu.RUnlock()
+
 	m := make(map[K]V)
-	orderedMap.Reset()
-	for orderedMap.Has() {
-		key, value := orderedMap.Next()
-		m[key] = value
+	for _, key := range orderedMap.keys {
+		m[key] = orderedMap.values[key]
 	}
 	return m
 }
