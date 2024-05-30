@@ -8,6 +8,7 @@ builds:
             - -s -w -X main.build={{.Version}}
         targets:
             - windows_amd64
+            - linux_amd64
     -   id: datasheet-converter
         main: ./cmd/datasheet-converter/main.go
         binary: datasheet-converter
@@ -17,6 +18,7 @@ builds:
             - -s -w -X main.build={{.Version}}
         targets:
             - windows_amd64
+            - linux_amd64
     -   id: object-stream-converter
         main: ./cmd/object-stream-converter/main.go
         binary: object-stream-converter
@@ -26,6 +28,7 @@ builds:
             - -s -w -X main.build={{.Version}}
         targets:
             - windows_amd64
+            - linux_amd64
     -   id: asset-catalog-parser
         main: ./cmd/asset-catalog-parser/main.go
         binary: asset-catalog-parser
@@ -35,6 +38,7 @@ builds:
             - -s -w -X main.build={{.Version}}
         targets:
             - windows_amd64
+            - linux_amd64
 archives:
     -   format: zip
         name_template: "{{ .ProjectName  }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"

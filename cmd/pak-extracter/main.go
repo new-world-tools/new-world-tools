@@ -53,10 +53,10 @@ func main() {
 
 	var err error
 
-	if !oodle.IsDllExist() {
-		err := oodle.Download()
+	if !oodle.IsLibExists() {
+		err = oodle.Download()
 		if err != nil {
-			log.Fatalf("no oo2core_9_win64.dll")
+			log.Fatalf("no oo2core library")
 		}
 	}
 
