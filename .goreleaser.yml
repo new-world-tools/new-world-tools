@@ -15,9 +15,6 @@ builds:
               {{- if eq .Os "windows" }}
                 {{- if eq .Arch "amd64" }}CC=x86_64-w64-mingw32-gcc{{- end }}
               {{- end }}
-        hooks:
-            pre:
-                - apt install -y gcc-mingw-w64
     -   id: datasheet-converter
         main: ./cmd/datasheet-converter/main.go
         binary: datasheet-converter
