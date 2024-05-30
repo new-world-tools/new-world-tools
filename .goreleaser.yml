@@ -9,6 +9,8 @@ builds:
         targets:
             - windows_amd64
             - linux_amd64
+        env:
+            - CGO_ENABLED=1
     -   id: datasheet-converter
         main: ./cmd/datasheet-converter/main.go
         binary: datasheet-converter
