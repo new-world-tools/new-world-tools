@@ -2824,6 +2824,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xa1e9fbf1: "factionmission_failure", // 2716466161
     0xa1eb7038: "98_m_0001_rankup_success", // 2716561464
     0xa1efb66f: "worldevent_piscarianfishery_limit_reached", // 2716841583
+    0xa1fc6429: "rr_chestskin_box", // 2717672489
     0xa206c6bc: "mb_msq2_defeatgawain_crown_interact", // 2718353084
     0xa20a37cb: "cmission_success_crafting_provisiont5_med", // 2718578635
     0xa21452a8: "95_s04_03_round1_selectqueen_interact", // 2719240872
@@ -3903,6 +3904,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xdead83df: "starstonekeyreplacement", // 3735913439
     0xdeb311a9: "08a05_08a09_studyingreen_success", // 3736277417
     0xdec4cec7: "0301_buriedchesta_interact", // 3737439943
+    0xdedc61d7: "rr_rabbitpetemote_box", // 3738984919
     0xdee0c88f: "09a_s7_waveeventcomplete_interact", // 3739273359
     0xdeec0e0a: "mutdiff2t3", // 3740012042
     0xdef24ac8: "12a_msq_25_crownregent_success", // 3740420808

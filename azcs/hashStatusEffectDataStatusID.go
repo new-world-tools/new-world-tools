@@ -665,6 +665,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x36df2efc: "ai_dryadsiren_spin_phase2_c_tick", // 920596220
     0x3724c7b5: "legion_firerainburn_crassus_debuff", // 925157301
     0x3725943e: "mut_curse1_nat_major_damage_cleanse", // 925209662
+    0x37369e66: "status_perk_flail_rabbitflail", // 926326374
     0x373a7e1d: "villagerfrenzy", // 926580253
     0x37407b58: "musicbuff_groupxpsharing_t1_bad", // 926972760
     0x375485c7: "tse_resethealth", // 928286151
