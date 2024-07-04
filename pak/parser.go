@@ -2,7 +2,11 @@ package pak
 
 import (
 	"archive/zip"
+	"bufio"
 	"bytes"
+	"compress/flate"
+	"compress/zlib"
+	"encoding/binary"
 	"errors"
 	"github.com/new-world-tools/go-oodle"
 	"io"
@@ -34,13 +38,39 @@ type File struct {
 }
 
 func (file *File) Decompress() (io.ReadCloser, error) {
-	if file.zipFile.Method == 0x00 || file.zipFile.Method == 0x08 {
-		reader, err := file.zipFile.Open()
+	var rc io.ReadCloser
+	var err error
+
+	if file.zipFile.Method == 0x00 {
+		rc, err = file.zipFile.Open()
 		if err != nil {
 			return nil, err
 		}
 
-		return reader, nil
+		return rc, nil
+	}
+
+	if file.zipFile.Method == 0x08 {
+		r, err := file.zipFile.OpenRaw()
+		if err != nil {
+			return nil, err
+		}
+
+		bufReader := bufio.NewReaderSize(r, 4096)
+
+		sigData, err := bufReader.Peek(2)
+		if err == nil {
+			if isZlib(sigData) {
+				rc, err = zlib.NewReader(bufReader)
+				if err != nil {
+					return nil, err
+				}
+			} else {
+				rc = flate.NewReader(bufReader)
+			}
+		}
+
+		return rc, nil
 	}
 
 	if file.zipFile.Method == 0x0f {
@@ -67,4 +97,40 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 
 func (file *File) GetModifiedTime() time.Time {
 	return file.zipFile.Modified
+}
+
+type zlibHeader struct {
+	cmf struct {
+		cm    uint8 // 8
+		cinfo uint8 // <=7
+	}
+	flg struct {
+		fcheck uint8
+		fdict  uint8 // 0-1
+		flevel uint8 // 0-3
+	}
+}
+
+func isZlib(sigData []byte) bool {
+	cmfByte := sigData[0]
+	flgByte := sigData[1]
+	zh := &zlibHeader{
+		cmf: struct {
+			cm    uint8
+			cinfo uint8
+		}{
+			cm:    (cmfByte >> 0) & 0b1111,
+			cinfo: (cmfByte >> 4) & 0b1111,
+		},
+		flg: struct {
+			fcheck uint8
+			fdict  uint8
+			flevel uint8
+		}{
+			fcheck: (flgByte >> 0) & 0b11111,
+			fdict:  (flgByte >> 5) & 0b1,
+			flevel: (flgByte >> 6) & 0b11,
+		},
+	}
+	return zh.cmf.cm == 0x08 && zh.cmf.cinfo <= 0x07 && zh.flg.fdict <= 0x01 && zh.flg.flevel <= 0x03 && binary.BigEndian.Uint16(sigData)%31 == 0
 }
