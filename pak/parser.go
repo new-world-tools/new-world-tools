@@ -68,6 +68,8 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 			} else {
 				rc = flate.NewReader(bufReader)
 			}
+		} else {
+			rc = flate.NewReader(bufReader)
 		}
 
 		return rc, nil
