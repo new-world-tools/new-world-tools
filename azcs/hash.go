@@ -14,6 +14,11 @@ var DefaultHashRegistry *HashRegistry
 func init() {
 	DefaultHashRegistry = NewHashRegistry()
 
+	// deprecated
+	for _, value := range hashVitalsDataVitalsVitalsID {
+		DefaultHashRegistry.Add(value)
+	}
+
 	for _, value := range hashAchievementDataAchievementDataTableAchievementID {
 		DefaultHashRegistry.Add(value)
 	}
@@ -59,13 +64,16 @@ func init() {
 	for _, value := range hashTerritoryProgressionDataTerritoryProgressionProjectId {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashVitalsBaseDataVitalsID {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashVitalsDataVitalsVitalsID {
+	for _, value := range hashVitalsModifierDataVitalsModifiersCategoryId {
 		DefaultHashRegistry.Add(value)
 	}
-	for _, value := range hashVitalsModifierDataVitalsModifiersCategoryId {
+	for _, value := range hashVitalsLevelVariantDataVitalsID {
 		DefaultHashRegistry.Add(value)
 	}
 }

@@ -1,6 +1,7 @@
 package azcs
 
 import (
+	"bufio"
 	"bytes"
 	"compress/zlib"
 	"encoding/binary"
@@ -27,6 +28,9 @@ type zLibSeekPoint struct {
 }
 
 func NewReader(r io.Reader) (io.Reader, error) {
+	buf := bufio.NewReaderSize(r, 1024*1024)
+	r = buf
+
 	headerData := &header{}
 
 	data, err := reader.ReadBytes(r, len([]byte(signature)))

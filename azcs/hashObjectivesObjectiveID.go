@@ -3,6 +3,7 @@ package azcs
 var hashObjectivesObjectiveID = map[uint32]string{
     0x0003b29b: "fm_s_1164_objective", // 242331
     0x00280c37: "fm_0404_objective", // 2624567
+    0x00303012: "fm_10_exp2_05_objective", // 3158034
     0x004cdaca: "1023_0101_fq06", // 5036746
     0x0065360a: "1303_1311_protective_wyrd_gear_v2", // 6632970
     0x006585c3: "fm_13_pvp_poachspot_marauder_objective", // 6653379
@@ -15,6 +16,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x01460793: "12a_side_16_togooduse", // 21366675
     0x01873c4a: "fm_08_pvp_poach_syndicate_objective", // 25640010
     0x018c8cb5: "13a_sq_09_andrometusstones", // 25988277
+    0x01bdb878: "12a_msq_25_crownregent_soldier", // 29210744
     0x01d00488: "fm_c_0602_objective", // 30409864
     0x020e3610: "1525_1520_rations", // 34485776
     0x022df19d: "ac_test_33", // 36565405
@@ -27,6 +29,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x02d17f5a: "98_c_03_thepathtodarkness", // 47284058
     0x02e0a7ba: "gc_rally_2", // 48277434
     0x02f65c23: "09a_s5_saveprivateer", // 49699875
+    0x02fdd530: "1689_exp_coins_objective", // 50189616
     0x030091ce: "99b_msq_02_meetgalahad", // 50368974
     0x0300c272: "12a_side_13_devilhoney", // 50381426
     0x0303bb22: "fm_c_1108_objective", // 50576162
@@ -37,12 +40,15 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x0370d3cd: "fm_0807_objective", // 57725901
     0x037629af: "08a11_08a03_endofherreign", // 58075567
     0x0379b681: "12a_msq_26_toyonas_alt", // 58308225
+    0x037af07f: "99f_msq_er_fightliang_soldier", // 58388607
     0x037d008f: "74_0101_devworldreddefendobjectquest", // 58523791
     0x037fac69: "m_killtoken", // 58698857
     0x0382590a: "fm_c_1266_objective", // 58874122
     0x03be0e33: "1527_1524_steadfast", // 62787123
     0x03ccf560: "0721_0103_bw_02", // 63763808
+    0x03ef0a44: "0525_exp_ancienthearts", // 65997380
     0x03f0124e: "0831_0107_lastargument_darkness", // 66064974
+    0x0408fb56: "06_recoveritems_occultist", // 67697494
     0x04194f08: "1606_0101_lost_manticore", // 68767496
     0x042e4fc7: "1403a_0301_gkw", // 70143943
     0x043556fb: "fm_c_16_exp_14_objective", // 70604539
@@ -98,7 +104,9 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x0a2817ce: "1305_1315_unhallowedwater_quest", // 170399694
     0x0a329ef0: "fm_0408_objective", // 171089648
     0x0a456a36: "0504_0101_anexpandingthreat", // 172321334
+    0x0a48e977: "06_survivors_soldier", // 172550519
     0x0a70ccbf: "06a_msq_22_talktosoulwarden_alt", // 175164607
+    0x0a80eea1: "objective_artifact_set2_ring1", // 176221857
     0x0a98c274: "fm_s_1206_objective", // 177783412
     0x0aa779bd: "12a_msq_21_findgrace", // 178747837
     0x0aaa81b5: "12_survivors", // 178946485
@@ -113,6 +121,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x0bf055b6: "98_c_04_justforinjust", // 200299958
     0x0c0ca62d: "fm_0301_objective", // 202155565
     0x0c42f9ec: "fm_c_0668_objective", // 205715948
+    0x0c6ad286: "06_recoveritems_soldier", // 208327302
     0x0c88ec07: "1225_0302_insuringinvestmentb", // 210299911
     0x0cb7dd30: "fm_07_pvp_poach_covenant_objective", // 213376304
     0x0cc31bc4: "fm_c_0506_objective", // 214113220
@@ -145,6 +154,8 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x0f9bc43e: "fm_c_0905_objective", // 261866558
     0x0fa02561: "fm_15_pvp_controlspot_marauder_objective", // 262153569
     0x0fa6f310: "fm_c_1563_objective", // 262599440
+    0x0fb06191: "c10a_s3r_aeternumtriangle", // 263217553
+    0x0fb59ad9: "95_s01_x2_expd_empyreanrepeat_v2", // 263559897
     0x0fc09758: "1033_0202_trailofthemisanthrope", // 264279896
     0x103f5473: "fm_r09_pvp_controlspot_marauder_objective", // 272585843
     0x1060f4c9: "7504_0101_devworldbluekillwolfquest", // 274789577
@@ -195,6 +206,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x13bef555: "fm_c_1462_objective", // 331281749
     0x13d19c43: "fm_07_pvp_control_syndicate_objective", // 332504131
     0x140badd8: "fm_c_0862_objective", // 336309720
+    0x1416ef56: "99f_msq_er_fightliang_occultist", // 337047382
     0x14369af6: "fm_c_1404_objective", // 339122934
     0x147c8835: "0802_0801_theshowmustgoon", // 343705653
     0x14d299b3: "fm_s_0763_objective", // 349346227
@@ -202,6 +214,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x15012fa0: "fm_c_1005_objective", // 352399264
     0x1501a973: "fm_16_exp_03_objective", // 352430451
     0x1504d94c: "fm_15_pvp_spyspot_covenant_objective", // 352639308
+    0x151767d5: "c10a_q5r_souls", // 353855445
     0x1529ebdf: "99c_msq_01_periville", // 355068895
     0x15cd7274: "0503_0101_onfloralfauna", // 365785716
     0x15ce9249: "fm_1602_objective", // 365859401
@@ -216,7 +229,9 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x1680c431: "fm_s_1307_objective", // 377537585
     0x16ab7a9d: "fm_0667_objective", // 380336797
     0x16be0d71: "fm_1210_objective", // 381554033
+    0x16c4e1ab: "1403a_0301_gkw_v2", // 382001579
     0x16e4b5a8: "08a05_08a06_shrinecleansing", // 384087464
+    0x171ce89f: "objective_artifact_set2_mediumhands", // 387770527
     0x1727a958: "12a_side_08_gatherfangs", // 388475224
     0x1729c2bd: "98_s_0102_rankup", // 388612797
     0x172eaa88: "16_side_26_sandthing", // 388934280
@@ -232,6 +247,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x17dac958: "0424_0108_winterwarrior", // 400214360
     0x181230ec: "fm_c_1301_objective", // 403845356
     0x1877d181: "fm_s_0308_objective", // 410505601
+    0x1881d60c: "12a_msq_25_crownregent_musketeer", // 411162124
     0x18b5d7ae: "1605_0901_finalseal", // 414570414
     0x18dd8d05: "fm_1506_objective", // 417172741
     0x18dedd21: "fm_huntx_anywhere", // 417258785
@@ -255,12 +271,14 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x1a1845eb: "1030_0202_snaggletooth", // 437798379
     0x1a18f463: "1030_0203_catnipping", // 437843043
     0x1a20e6eb: "fm_04_pvp_controlspot_marauder_objective", // 438363883
+    0x1a29e8d7: "c10a_s8r_snaggletooth", // 438954199
     0x1a406d6e: "fm_c_0765_objective", // 440429934
     0x1a40e462: "fm_08_exp_02_objective", // 440460386
     0x1a829803: "0318_0204_rampantconviction_bonesoftheancients", // 444766211
     0x1a995905: "fm_s_0864_objective", // 446257413
     0x1aa46e2b: "fm_s_1402_objective", // 446983723
     0x1abe6023: "fm_98_03_exp_03_objective", // 448684067
+    0x1abec86d: "c91_fq_05_gildedtombs", // 448710765
     0x1adf2ed6: "04a_side06_02_townbrag", // 450834134
     0x1ae30fe7: "06a_t_02_defeatbear", // 451088359
     0x1aef2f68: "06a_s_02_powerspheres", // 451882856
@@ -292,11 +310,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x1dc802cd: "fm_c_0703_objective", // 499647181
     0x1dcfbe68: "0334_0101_perfectpiroshkis", // 500153960
     0x1de98c94: "09a_s6_trackbeasts", // 501845140
+    0x1de9aee9: "06_demonstorm2_occultist", // 501853929
     0x1e2c0831: "fm_c_1408_objective", // 506202161
     0x1e49e95c: "fm_s_0401_objective", // 508160348
     0x1e6257f0: "fm_1161_objective", // 509761520
     0x1e893e6b: "16_side_20_helpbastet", // 512310891
     0x1e9e1f45: "1004_0103_hiltleather_quest", // 513679173
+    0x1ec4c24e: "vector_crafting_ww_pushquest", // 516211278
     0x1eca786c: "04a_side07_01_getmead", // 516585580
     0x1eff1f60: "factionintro_syndicate_vector", // 520036192
     0x1f1bbd67: "fm_c_1009_objective", // 521911655
@@ -313,15 +333,19 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x20a7a971: "12a_msq_19_meetpercilla", // 547858801
     0x20c63f23: "fm_s_0264_objective", // 549863203
     0x20d36e35: "factionintro_covenant_vector_02", // 550727221
+    0x20e61f42: "06_recoveritems_ranger", // 551952194
     0x21158930: "fm_c_1502_objective", // 555059504
     0x2119a3af: "1032_0203_onebridgetoofar", // 555328431
     0x2128be1e: "fm_c_0964_objective", // 556318238
+    0x21426955: "c10a_q2_freepirates", // 558000469
     0x21628af9: "fm_04_exp_03a_objective", // 560106233
     0x2166128a: "m_explorer_aquire_x_items_kill_x_enemies", // 560337546
+    0x217011aa: "c10a_s6_lightningbottletest", // 560992682
     0x21d6be58: "06_survivors", // 567721560
     0x21d6e9ec: "ac_test_43_d_s", // 567732716
     0x21d9ce48: "0430_0101_arena", // 567922248
     0x21da34d9: "fm_1305_objective", // 567948505
+    0x21f0df6d: "fm_doubloon_location", // 569433965
     0x21f18a75: "fm_s_0665_objective", // 569477749
     0x2215f2b8: "04a_side08_03_deliverpotions", // 571863736
     0x22651608: "fm_c_1110_objective", // 577050120
@@ -330,9 +354,11 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x22f183cc: "fm_c_0609_objective", // 586253260
     0x23273fd0: "fm_05_pvp_spyspot_syndicate_objective", // 589774800
     0x2333dbde: "objective_artifact_set1_lighthead", // 590601182
+    0x2350b2f4: "12a_msq_25_crownregent_occultist", // 592491252
     0x2388695b: "fm_0761_objective", // 596142427
     0x23a3d7f7: "fm_s_1201_objective", // 597940215
     0x23ae0e48: "0331_0103_thebeastreturns", // 598609480
+    0x23b721f5: "vector_kiln_pushquest", // 599204341
     0x23c6369a: "fm_c_0208_objective", // 600192666
     0x23d51f8c: "objective_artifact_set2_lightfeet", // 601169804
     0x23d775be: "1434_0104_outofhismisery", // 601322942
@@ -349,6 +375,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x24a98bc7: "fm_16_pvp_controlspot_syndicate_objective", // 615091143
     0x24aa5a7c: "fm_s_1109_objective", // 615144060
     0x24c21257: "cm_procurer_acquire_x_items", // 616698455
+    0x25377f39: "12_recoveritems_ranger", // 624394041
     0x2537b3ae: "fm_0306_objective", // 624407470
     0x25765bdc: "12a_side_05_artifactshards", // 628513756
     0x259def2a: "fm_s_1508_objective", // 631107370
@@ -357,6 +384,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x25c86111: "06a_z_02_spreadjoy", // 633889041
     0x25ea34dd: "02a_side05_01_tea", // 636105949
     0x25f80e47: "fm_c_0501_objective", // 637013575
+    0x2638ca11: "06_demonstorm2_musketeer", // 641255953
     0x26485cfb: "9906_0050_thescenicroute", // 642276603
     0x26525b7a: "fm_1363_objective", // 642931578
     0x2658eaa5: "pvp_killx_location", // 643361445
@@ -368,7 +396,9 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x26a0d1bd: "fm_c_0902_objective", // 648073661
     0x26a9b862: "12a_msq_10_confrontlochnir_alt", // 648656994
     0x27024404: "99g_msq_sm_healally", // 654459908
+    0x274aaf5a: "vector_crafting_mb_pushquest", // 659205978
     0x274e5080: "fm_s_0202_objective", // 659443840
+    0x277a71bb: "c10a_q3_revelation", // 662335931
     0x279d8ead: "99a_msq_15_ritual", // 664637101
     0x27aa53c5: "fm_c_1165_objective", // 665473989
     0x27bf202d: "06a_ts_03_learntownboard", // 666837037
@@ -378,19 +408,25 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x28251952: "12a_msq_02_inntutorial", // 673519954
     0x28322560: "fm_s_0904_objective", // 674375008
     0x2865f449: "fm_05_exp_03_objective", // 677770313
+    0x2883fd7e: "06_crewmates_destroyer", // 679738750
     0x28e27113: "0332_0102_fabulousfurs", // 685928723
     0x28eb110b: "fm_c_0605_objective", // 686493963
+    0x28fa2f05: "c10a_q4_spectralartifacts", // 687484677
+    0x290b2591: "fm_10_exp2_02_objective", // 688596369
     0x291319b4: "fm_0403_objective", // 689117620
     0x29195170: "0511_0205_umbrasreach_astitchofshade", // 689525104
     0x2938a718: "fm_s_1163_objective", // 691578648
+    0x293c7dfd: "99d_msq_09_outpost_ranger", // 691830269
     0x29b28917: "objective_artifact_set1_2hgreatsword", // 699566359
     0x29d7c733: "1032_0204_burningbridges", // 702007091
     0x29dca45d: "fm_c_0204_objective", // 702325853
     0x29eeb13b: "pvp_fetch", // 703508795
     0x2a25732d: "fm_08_pvp_poach_marauder_objective", // 707097389
     0x2a76f160: "fm_1466_objective", // 712438112
+    0x2a776929: "12_pillageship_swordsman", // 712468777
     0x2a78282b: "98_c_02_soulsalvation", // 712517675
     0x2ab94c89: "fm_c_1261_objective", // 716786825
+    0x2abb8063: "99b_msq_09_killumberto_mystic", // 716931171
     0x2ad6625c: "99c_msq_10_andrometus", // 718692956
     0x2adcade4: "fm_s_0268_objective", // 719105508
     0x2aef7aad: "1503_1504_lupine", // 720337581
@@ -407,17 +443,21 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x2beb18b2: "fm_s_0669_objective", // 736827570
     0x2c00c8d6: "fm_02_h_03_objective", // 738248918
     0x2c0626f6: "fm_10_h_03_objective", // 738600694
+    0x2c1ad46f: "c10a_q6_citadel", // 739955823
     0x2c663f8d: "cm_explorer_acquire_x_items_poitag_territory", // 744898445
     0x2c7f7ed0: "9902_0049_recipeforfailure", // 746553040
     0x2c877454: "fm_c_1568_objective", // 747074644
     0x2cc92b95: "fm_1001_objective", // 751381397
     0x2ce29539: "fm_s_0561_objective", // 753046841
     0x2d0563aa: "factionintro_marauders_recruitment", // 755327914
+    0x2d1ab9b1: "c10a_m1_cutlasskeys", // 756726193
     0x2d2454c6: "fm_c_0670_objective", // 757355718
     0x2d296cd2: "0505_0101_pruningandirrigation", // 757689554
     0x2d31232a: "fm_c_1207_objective", // 758194986
     0x2d330d77: "objective_artifact_set1_2hblunderbuss", // 758320503
     0x2d3da9fa: "1526_1523_toothclaw", // 759015930
+    0x2d529d05: "12_crewmates_destroyer", // 760388869
+    0x2d6b5ff5: "06a_msq_21_defeatboss_swordsman", // 762011637
     0x2d90a5a5: "0423_0101_fq03", // 764454309
     0x2d92e877: "fm_loot_location", // 764602487
     0x2da2973b: "1123_0101_fq10", // 765630267
@@ -427,6 +467,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x2dc60624: "fm_09_pvp_area3_marauder_objective", // 767952420
     0x2dcf82d5: "9806_c_0001_rankup", // 768574165
     0x2e0a31fa: "9401_tutorialfood", // 772420090
+    0x2e182f4f: "c91_fq_04_melancholybait", // 773336911
     0x2e4ff548: "1599_1513_nekumanesh", // 776992072
     0x2e54cbfe: "fm_c_0262_objective", // 777309182
     0x2e9b7617: "fm_0465_objective", // 781940247
@@ -441,10 +482,12 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x2f877ded: "fm_s_1504_objective", // 797408749
     0x2fa46fdd: "1225_0101_downpayment_fl", // 799305693
     0x2fba4ac3: "fm_s_0962_objective", // 800737987
+    0x2fc78bae: "99f_msq_er_fightliang_musketeer", // 801606574
     0x2fd6968c: "0720_0108_hs_07", // 802592396
     0x300be7d5: "fm_c_0370_objective", // 806086613
     0x301b931f: "ac_test_13", // 807113503
     0x302f8197: "0811_0803_endofherreign", // 808419735
+    0x303dd20b: "99f_msq_er_fightliang_ranger", // 809357835
     0x3055b8bc: "0823_0101_fq14", // 810924220
     0x305b932c: "0424_0104_gleamites", // 811307820
     0x306e889b: "objective_artifact_set1_1htowershield", // 812550299
@@ -461,6 +504,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x31528371: "ef_tour_3", // 827491185
     0x3160c572: "0205_0102_04_gauntlets", // 828425586
     0x316d3969: "s_getoffbeach", // 829241705
+    0x3170c376: "c91_fq_06_rotshead", // 829473654
     0x3194dc6f: "fm_s_98_03_gt_exp_05_objective", // 831839343
     0x31a8c747: "fm_c_1068_objective", // 833144647
     0x31d11b0e: "0502_0102_hopespringseternal", // 835787534
@@ -473,6 +517,8 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x32a8cefe: "fm_s_1004_objective", // 849923838
     0x32c2bc1c: "0325_0106_rl_05", // 851622940
     0x3349d9f5: "1004_0103_grindstone_quest", // 860477941
+    0x335e4b5e: "06a_msq_21_defeatboss_destroyer", // 861817694
+    0x336789ae: "12_crewmates_swordsman", // 862423470
     0x337b78ed: "fm_c_0762_objective", // 863729901
     0x338575a0: "fm_98_03_exp_04_objective", // 864384416
     0x339f7ba8: "fm_s_1405_objective", // 866089896
@@ -481,6 +527,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x3409c673: "16_side_19_helpwarden", // 873055859
     0x3417140b: "fm_s_1463_objective", // 873927691
     0x342a2325: "fm_s_0805_objective", // 875176741
+    0x34427d82: "12_pillageship_destroyer", // 876772738
     0x344b6bca: "1010_0102_eternal_mixes", // 877358026
     0x3481b238: "fm_14_pvp_control_marauder_objective", // 880915000
     0x349dffbc: "0505_0103_thedryadpromenade", // 882769852
@@ -505,6 +552,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x36628fbc: "99c_msq_02_karburg", // 912428988
     0x366ef725: "fm_1567_objective", // 913241893
     0x369e3862: "02a_side03_01_infernal", // 916338786
+    0x36b6e9d5: "06_crewmates_swordsman", // 917957077
     0x36c4aba1: "fm_s_0369_objective", // 918858657
     0x36d20982: "objective_artifact_set1_2hgreataxe", // 919734658
     0x36ef150d: "fm_1609_objective", // 921638157
@@ -515,9 +563,11 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x37670a02: "06a_msq_11_lootpiratecrates", // 929499650
     0x3772fcdf: "fm_s_0406_objective", // 930282719
     0x37bc041e: "objective_artifact_set1_mediumchest", // 935068702
+    0x37cd9d35: "99g_msq_sm_bidfarewell_ranger", // 936222005
     0x37d8a05b: "fm_1208_objective", // 936943707
     0x37f07df6: "fm_11_pvp_controlspot_marauder_objective", // 938507766
     0x380fd740: "ac_test_2", // 940562240
+    0x3813db85: "c91_fq_02_undreamedshores", // 940825477
     0x381800bd: "fm_0606_objective", // 941097149
     0x382e320c: "12a_side_10_breakcurse", // 942551564
     0x3833be11: "fm_s_1366_objective", // 942915089
@@ -537,6 +587,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x39b40bc0: "0722_0102_fl_01", // 968100800
     0x39b9b5b1: "fm_14_h_02_objective", // 968471985
     0x39bf5b91: "fm_06_h_02_objective", // 968842129
+    0x3a250d45: "c10a_s10r_tamingthelionhearted", // 975506757
     0x3a2b756a: "0805_0809_studyingreen", // 975926634
     0x3a2b8a45: "12a_msq_13_stormbeach", // 975931973
     0x3a4a5d3f: "fm_1262_objective", // 977952063
@@ -580,6 +631,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x3e09abd1: "fm_15_exp_02_objective", // 1040821201
     0x3e2d39e8: "1427_0106_umbragetrial", // 1043151336
     0x3e30b1e2: "fm_s_0809_objective", // 1043378658
+    0x3e4de44b: "0699_0101_barkimedes_v2", // 1045292107
     0x3e649483: "99a_msq_09_gethaft", // 1046779011
     0x3e86e855: "fm_s_16_exp_11_objective", // 1049028693
     0x3ea7da48: "fm_0261_objective", // 1051187784
@@ -587,15 +639,18 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x3eb2ada4: "fm_1616_objective", // 1051897252
     0x3ee7ee63: "1124_0101_enpleinaire", // 1055387235
     0x3f2a4281: "12a_msq_01_speaklochnir", // 1059734145
+    0x3f4a5f0a: "c10a_s1r_seadogbrew", // 1061838602
     0x3f4aa51b: "fm_c_1410_objective", // 1061856539
     0x3f621359: "ac_test_6", // 1063392089
     0x3f6352a0: "99a_msq_11_forgestaff", // 1063473824
     0x3f6e247c: "13_summer_02_maudlinbugs", // 1064182908
     0x3f8df1c3: "1625_0102_preemptivestrike", // 1066267075
     0x3f954739: "0319_0501_primeresolve", // 1066747705
+    0x3fd99fae: "06_recoveritems_musketeer", // 1071226798
     0x3fde30df: "fm_c_0309_objective", // 1071526111
     0x3ff905c3: "06a_f_02_recoverspices", // 1073284547
     0x4009e76d: "pvp_delivery", // 1074390893
+    0x40104920: "09a_s19_destroybadplants_v2", // 1074809120
     0x40198e22: "cm_explorer_aquire_x_items_kill_x_enemies", // 1075416610
     0x406c11e8: "0721_0109_tf_08", // 1080824296
     0x407650a4: "fm_06_pvp_controlspot_covenant_objective", // 1081495716
@@ -605,31 +660,39 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x40b134c4: "fm_1504_objective", // 1085355204
     0x412f5824: "fm_06_pvp_spyspot_marauder_objective", // 1093621796
     0x41385ea5: "04a_side03_03_ancienttalismans", // 1094213285
+    0x41468eea: "12_pillageship_ranger", // 1095143146
     0x414b1dd9: "fm_timetrial_bridge_objective", // 1095441881
     0x414cdb72: "objective_artifact_set2_2hgreataxe", // 1095555954
     0x41868192: "fm_1105_objective", // 1099334034
     0x418854ca: "0524_0102_queensgambit", // 1099453642
     0x4192959b: "0828_0801_deadeye", // 1100125595
     0x41ad3f3e: "fm_s_0465_objective", // 1101872958
+    0x41bb821e: "06_boarfeast_soldier", // 1102807582
     0x41cd12fb: "fm_0931_objective", // 1103958779
     0x42093449: "0828_0803_legacy", // 1107899465
     0x421a2dd5: "12a_msq_20_collectcrown", // 1109011925
     0x4239a343: "fm_c_1310_objective", // 1111073603
+    0x424a8df4: "0899_0801_liberation_2", // 1112182260
     0x425d7bc3: "m_procurer_craft_workorder_items", // 1113422787
     0x426fe79e: "0722_0109_fl_08", // 1114630046
     0x42759c57: "13a_sq_13_spousereunion", // 1115003991
     0x42c0f469: "12a_msq_15_defeatnavigator", // 1119941737
     0x42d2d9e2: "fm_98_03_exp_01_objective", // 1121114594
+    0x42e04e50: "12a_msq_25_crownregent_mystic", // 1121996368
     0x42f5e0c4: "fm_s_0866_objective", // 1123410116
     0x42f62ba8: "06a_p_01_recovertools", // 1123429288
     0x4311ac37: "fm_10_exp_01_objective", // 1125231671
     0x431b61f9: "fm_c_0366_objective", // 1125868025
+    0x432650b7: "99g_msq_sm_desertvector", // 1126584503
+    0x43907d23: "06_recoveritems_swordsman", // 1133542691
     0x43c0b973: "9401_befriendhorse", // 1136703859
     0x43cf22df: "0313_0101_descentfrostedslumber", // 1137648351
     0x43d4dc10: "fm_0561_objective", // 1138023440
+    0x43d7df22: "06_boarfeast_ranger", // 1138220834
     0x43e068a7: "fm_11_h_02_objective", // 1138780327
     0x43e68687: "fm_03_h_02_objective", // 1139181191
     0x43ff62bc: "fm_s_1001_objective", // 1140810428
+    0x44443c37: "06_demonstorm2_destroyer", // 1145322551
     0x4449c45f: "fm_1170_objective", // 1145685087
     0x4452865b: "12_recoveritems", // 1146259035
     0x445cb3b3: "fm_0507_objective", // 1146926003
@@ -647,21 +710,26 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x4625509d: "fm_s_0403_objective", // 1176850589
     0x4655b3e7: "ef_tour_2", // 1180021735
     0x46683d52: "12a_side_15_collectresources", // 1181236562
+    0x468d6114: "c10a_m7r_cleansingtreasure", // 1183670548
     0x4690c582: "fm_03_pvp_controlspot_marauder_objective", // 1183892866
     0x46afd190: "m_explorer_acquire_x_items_territory", // 1185927568
     0x46b0585f: "12a_msq_24_defeatgawain", // 1185962079
     0x46f110f9: "fm_14_pvp_poach_covenant_objective", // 1190203641
     0x47046c49: "fm_0904_objective", // 1191472201
+    0x4713e8fe: "c10a_s15r_treasureisland", // 1192487166
     0x471ca389: "ac_test_12", // 1193059209
     0x47395b67: "fm_1562_objective", // 1194941287
     0x47409273: "12a_msq_09_returnregent", // 1195414131
     0x47823785: "fm_03_pvp_controlspot_syndicate_objective", // 1199716229
+    0x479b19e4: "12_boarfeast_mystic", // 1201347044
     0x47ef22c5: "fm_12_pvp_poacharea_covenant_objective", // 1206854341
     0x47f6e68e: "fm_c_1365_objective", // 1207363214
     0x48092e8f: "bs_rally_2", // 1208561295
     0x480a113c: "1225_0401_siteinspection", // 1208619324
     0x4844703a: "06a_f_01_collectjam", // 1212444730
+    0x485600ba: "c10a_q2r_freepirates", // 1213595834
     0x486523cf: "ac_test_7", // 1214587855
+    0x487777b5: "06_pillageship_mystic", // 1215788981
     0x487819a9: "fm_0202_objective", // 1215830441
     0x487dff49: "m_killx_location", // 1216216905
     0x487e6e4c: "06a_msq_08_rescuegideon", // 1216245324
@@ -685,6 +753,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x4adba150: "09a_s1_saveanimals", // 1255907664
     0x4ae5f9c2: "fm_c_1061_objective", // 1256585666
     0x4af5e3ad: "fm_killx_with_weapon_spear", // 1257628589
+    0x4aff0b58: "06_crewmates_musketeer", // 1258228568
     0x4b088691: "fm_0610_objective", // 1258849937
     0x4b0cff64: "1427_0103_pilgrimmage02", // 1259143012
     0x4b1df17d: "fm_1267_objective", // 1260253565
@@ -714,6 +783,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x4d978bc9: "13a_sq_14_gettorches", // 1301777353
     0x4db3c5c1: "objective_artifact_set1_1hflail", // 1303627201
     0x4dbac598: "0320_0107_requiem", // 1304085912
+    0x4dbb7d88: "99f_msq_er_fightliang_destroyer", // 1304133000
     0x4dddfd71: "1605_0101_sleepingvessels", // 1306393969
     0x4dec7449: "fm_c_1369_objective", // 1307341897
     0x4dfe7eed: "objective_artifact_set1_1hkiteshield", // 1308524269
@@ -728,6 +798,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x4eec7df0: "fm_s_1305_objective", // 1324121584
     0x4f08e7d6: "ac_test_3", // 1325983702
     0x4f2a3adc: "fm_16_exp_12_objective", // 1328167644
+    0x4f2e6b23: "12_crewmates_musketeer", // 1328442147
     0x4f3fcbe3: "fm_c_0463_objective", // 1329581027
     0x4f4b07cd: "fm_killx_with_weapon_greataxe", // 1330317261
     0x4f4e581d: "0319_0503_prtwo", // 1330534429
@@ -746,8 +817,10 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x507f125c: "fm_c_0961_objective", // 1350505052
     0x509b92fd: "9903_0041_somethinglefttosave", // 1352372989
     0x509e0962: "02a_side04_01_location", // 1352534370
+    0x50d2658a: "06_demonstorm2_mystic", // 1355965834
     0x50efb227: "0714_0105_baetylusheadpiece", // 1357885991
     0x5106f8cb: "fm_0809_objective", // 1359411403
+    0x5122bd78: "06a_msq_21_defeatboss_musketeer", // 1361231224
     0x512d29fb: "99a_msq_06_corruptiontincture", // 1361914363
     0x513990d5: "0333_0102_redasblood", // 1362727125
     0x514fafb1: "0505_0102_downstreameffects", // 1364176817
@@ -758,6 +831,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x51ba2050: "factionintro_marauders_01", // 1371152464
     0x51f4720c: "fm_c_1268_objective", // 1374974476
     0x5204b348: "0204_0104_bladebrute_quest", // 1376039752
+    0x52104ea7: "06_crewmates_soldier", // 1376800423
     0x5215d958: "1004_0102_missing_features", // 1377163608
     0x5243c566: "1001_0101b_heads_tails_survivalist", // 1380173158
     0x5249a824: "1510_1508_damnation", // 1380558884
@@ -767,6 +841,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x5327cda6: "fm_c_0562_objective", // 1395117478
     0x5333ca28: "objective_artifact_set1_mediumhead", // 1395903016
     0x5389ec9e: "99f_msq_er_meetwiseman", // 1401547934
+    0x538e6923: "99f_msq_er_fightliang_swordsman", // 1401841955
     0x53e8704f: "fm_0365_objective", // 1407742031
     0x54045793: "fm_c_16_exp_09_objective", // 1409570707
     0x54601fec: "fm_0303_objective", // 1415585772
@@ -779,15 +854,19 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x55a0aabf: "1102_0401_march", // 1436592831
     0x55bde139: "1004_0103_weapon_keen_temper_v2", // 1438507321
     0x55cfc168: "fm_corruption_breach", // 1439678824
+    0x55d3accc: "objective_artifact_set2_2hgreatsword", // 1439935692
     0x55fd1e7a: "s04_gt_expd_rpt", // 1442651770
     0x56052c65: "1038_0101_cleansingtreasure", // 1443179621
     0x5619fcc2: "fm_s_0207_objective", // 1444543682
     0x56273582: "fm_0310_objective", // 1445410178
     0x563d0188: "99b_msq_10_cleansefort", // 1446838664
+    0x563e8ba4: "12_pillageship_musketeer", // 1446939556
     0x565ffbe0: "fm_15_h_03_objective", // 1449130976
+    0x567d5f3b: "c10a_s7r_animalinstincts", // 1451056955
     0x56919e8e: "1510_1507_scouting", // 1452383886
     0x56b3a046: "fm_1409_objective", // 1454612550
     0x5705f738: "fm_1366_objective", // 1460008760
+    0x570f40f7: "c10a_m5_admiralblackpowder", // 1460617463
     0x572ca35a: "09a_s16_destroyabomination", // 1462543194
     0x572e4994: "fm_s_0606_objective", // 1462651284
     0x5732f959: "0319_0509_preight", // 1462958425
@@ -796,6 +875,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x57841510: "fm_1008_objective", // 1468273936
     0x579f5213: "06a_ir_02_getsword", // 1470059027
     0x579fd83e: "99b_msq_11_weaversvector", // 1470093374
+    0x57bda6f9: "99d_msq_09_outpost_soldier", // 1472046841
     0x57ca4ad1: "fm_c_1561_objective", // 1472875217
     0x57f77dff: "fm_c_0907_objective", // 1475837439
     0x581837db: "95a_s02_heirofthesands", // 1477982171
@@ -806,6 +886,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x588641df: "0726_0101_mightytempest", // 1485193695
     0x588b081f: "fm_c_0201_objective", // 1485506591
     0x58b3ba0a: "factionintro_syndicate_01", // 1488173578
+    0x58c96764: "12_crewmates_ranger", // 1489594212
     0x58eee972: "fm_s_1208_objective", // 1492052338
     0x59094865: "1427_0104_oath", // 1493780581
     0x590d9184: "12a_side_04_explodebarrels", // 1494061444
@@ -816,10 +897,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x59658922: "fm_s_0901_objective", // 1499826466
     0x5966774c: "fm_1470_objective", // 1499887436
     0x59c868d7: "98_m_0102_rankup", // 1506306263
+    0x59e39cd5: "12_demonstorm2_ranger", // 1508089045
     0x59f2e288: "fm_0369_objective", // 1509089928
+    0x5a109e3e: "0726_0107_repeatable_v2", // 1511038526
     0x5a16e874: "fm_1062_objective", // 1511450740
     0x5a3d56d8: "fm_s_0502_objective", // 1513969368
     0x5a3e9b03: "1323_0101_fq08", // 1514052355
+    0x5a71289c: "06_demonstorm2_swordsman", // 1517365404
     0x5aad1417: "1605_0301_awakenanubis", // 1521292311
     0x5b16ba8c: "ac_test_41_d_s", // 1528216204
     0x5b1b301a: "9401_vectorwf", // 1528508442
@@ -836,6 +920,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x5c29a739: "06a_msq_07_meetironrose", // 1546233657
     0x5c4bce73: "fm_13_pvp_spyspot_covenant_objective", // 1548471923
     0x5c668f68: "fm_c_1202_objective", // 1550225256
+    0x5c85a1a2: "06_crewmates_mystic", // 1552261538
     0x5c9405af: "fm_0863_objective", // 1553204655
     0x5ca93281: "fm_1405_objective", // 1554592385
     0x5cab96e2: "98_m_03_darkvengeance", // 1554749154
@@ -849,6 +934,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x5d6a88aa: "wf_tour_1", // 1567262890
     0x5d9e87d7: "fm_1004_objective", // 1570670551
     0x5da22bc5: "fm_13_h_01_objective", // 1570909125
+    0x5da56988: "06_recoveritems_destroyer", // 1571121544
     0x5da5f4bf: "0332_0103_puredelight", // 1571157183
     0x5db5397b: "fm_s_0564_objective", // 1572157819
     0x5dbb36f9: "0720_0103_hs_02", // 1572550393
@@ -870,10 +956,12 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x5fe19b13: "1420_0509_cveight", // 1608620819
     0x5ff6d5ec: "fm_12_pvp_area3_marauder_objective", // 1610012140
     0x60176ad7: "fm_1621_objective", // 1612147415
+    0x60555289: "c10a_q5_souls", // 1616204425
     0x605f07d0: "fm_s_1364_objective", // 1616840656
     0x6074b97c: "fm_0604_objective", // 1618262396
     0x6079c575: "pvp_explorer_aquire_x_items_kill_x_enemies_poitag_territory", // 1618593141
     0x60aa3350: "fm_07_pvp_control_covenant_objective", // 1621766992
+    0x60d1a080: "c10a_q1_build", // 1624350848
     0x60e5489b: "04a_side04_03_tohuntsman", // 1625639067
     0x61430c2a: "fm_0205_objective", // 1631783978
     0x6168d1f7: "bs_tour_3", // 1634259447
@@ -885,6 +973,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x617a8972: "1004_0103_quenchingoil_quest", // 1635420530
     0x618c9da4: "99a_msq_08_toyonas", // 1636605348
     0x618cb1c3: "fm_c_0402_objective", // 1636610499
+    0x6192b468: "c10a_s14_heartofthemarsh", // 1637004392
     0x61aa2550: "1403_0202_tincturequest", // 1638540624
     0x61adeb8f: "04a_side09_01_lostalchemy", // 1638787983
     0x61b4bddd: "98_c_0304_rankup", // 1639235037
@@ -892,6 +981,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x620db670: "1036_0101_admiralblackpowder", // 1645065840
     0x62629d97: "16_side_17_huntscorpion", // 1650630039
     0x6271c67b: "1524_1515_footstepsbeach", // 1651623547
+    0x6278d1e2: "12_demonstorm2_soldier", // 1652085218
     0x627ce63f: "09a_s15_researchdarkmagic", // 1652352575
     0x62c56cf7: "0720_0102_hs_01", // 1657105655
     0x62cb5ec1: "0318_0101_facetslightdarkness", // 1657495233
@@ -913,6 +1003,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x64993e0b: "fm_1607_objective", // 1687764491
     0x64a960de: "fm_exp_r0903_objective", // 1688821982
     0x64b280a7: "fm_s_0367_objective", // 1689419943
+    0x64c83481: "12a_msq_25_crownregent_swordsman", // 1690842241
     0x64d112a9: "1435_0103_wayuphigh", // 1691423401
     0x64f09dbb: "1111_0201_deluge", // 1693490619
     0x65021074: "0333_0103_blackasebony", // 1694634100
@@ -921,6 +1012,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x655c019a: "fm_c_0867_objective", // 1700528538
     0x656136b4: "fm_c_1401_objective", // 1700869812
     0x658535f1: "fm_s_0766_objective", // 1703228913
+    0x6596bf35: "c10a_q1r_build", // 1704378165
     0x659ed072: "m_killx_killtoken_location", // 1704906866
     0x65aa854f: "09a_m9_meetshirzad", // 1705674063
     0x65ae8b5d: "fm_1206_objective", // 1705937757
@@ -931,16 +1023,20 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x6657cce0: "1604_0201_heronomore", // 1717030112
     0x6676933c: "ac_test_40_d_s", // 1719046972
     0x6686e2d7: "ac_test_16_12", // 1720115927
+    0x66878141: "c10a_s1_seadogbrew", // 1720156481
     0x66addf0c: "1524_1516_trueterror", // 1722670860
     0x66c7e679: "0715_0101_varietiesofheat", // 1724376697
     0x66cb6389: "fm_0263_objective", // 1724605321
     0x66de1465: "fm_1614_objective", // 1725830245
     0x6753c77b: "1416_0201_sabotage", // 1733543803
+    0x67a9b199: "06_demonstorm2_soldier", // 1739174297
     0x67a9b726: "0424_2022_wc_02", // 1739175718
     0x67d76873: "fm_s_1302_objective", // 1742170227
     0x67fa4abe: "fm_killx_with_weapon_hatchet", // 1744456382
     0x67fcd6df: "fm_0662_objective", // 1744623327
     0x680ce9aa: "0625_0101_truffles", // 1745676714
+    0x6822a082: "06a_msq_21_defeatboss_ranger", // 1747099778
+    0x6822a659: "12_survivors_ranger", // 1747101273
     0x682b8db6: "cm_explorer_aquire_x_items_kill_x_enemies_poitag", // 1747684790
     0x68962abd: "fm_s_0462_objective", // 1754671805
     0x68b2f438: "objective_artifact_set1_1hlongsword", // 1756558392
@@ -969,6 +1065,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x6ad21deb: "1305_1315_l40fstaff_falmeaswrath_v2", // 1792155115
     0x6aec42da: "16_side_27_redeem19th", // 1793868506
     0x6aefc993: "fm_0566_objective", // 1794099603
+    0x6af3d980: "06a_msq_21_defeatboss_occultist", // 1794365824
     0x6b405e9f: "fm_16_pvp_controlspot_marauder_objective", // 1799380639
     0x6b599eed: "fm_0209_objective", // 1801035501
     0x6b5a1243: "1104_01a01_crashing", // 1801065027
@@ -984,6 +1081,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x6c1e4ca7: "fm_c_0468_objective", // 1813925031
     0x6c447c60: "fm_14_pvp_control_syndicate_objective", // 1816427616
     0x6c469ae4: "fm_s_0807_objective", // 1816566500
+    0x6c6e609f: "06_survivors_mystic", // 1819173023
     0x6c7710dc: "9905_0045_thebox", // 1819742428
     0x6c7badca: "fm_s_1461_objective", // 1820044746
     0x6c9c3d28: "06a_p_03_recovereyepiece", // 1822178600
@@ -1001,6 +1099,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x6da6cbb9: "fm_13_pvp_controlspot_covenant_objective", // 1839647673
     0x6da81bd9: "fm_c_0307_objective", // 1839733721
     0x6dd1aa34: "13a_sq_11_findspousecanopus", // 1842457140
+    0x6defef5c: "12_pillageship_occultist", // 1844440924
     0x6df2c870: "99e_msq_09_themotherwell", // 1844627568
     0x6e024ee4: "fm_1565_objective", // 1845645028
     0x6e1a746e: "0511_0206_umbrasreach_indarkestshadow", // 1847227502
@@ -1030,6 +1129,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x7092df26: "fm_c_1270_objective", // 1888673574
     0x70c45370: "0829_0802_stringsoffate", // 1891914608
     0x70eb29d6: "fm_pvp_control_point_s", // 1894459862
+    0x712e6fa0: "06_crewmates_occultist", // 1898868640
     0x7136b703: "fm_killx_with_weapon_firestaff", // 1899411203
     0x713fa6cc: "1129_0101_soulmusic", // 1899996876
     0x71541ed9: "fm_s_1161_objective", // 1901338329
@@ -1038,6 +1138,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x71b01d9c: "fm_c_0206_objective", // 1907367324
     0x721a48a1: "fm_1464_objective", // 1914325153
     0x72277f8f: "fm_0802_objective", // 1915191183
+    0x7235f76b: "c91_fq_05_vector", // 1916139371
     0x72470512: "ac_test_36", // 1917256978
     0x7277eb44: "1679_0101_striderofthesands_sm", // 1920461636
     0x72d5f548: "fm_c_1263_objective", // 1926624584
@@ -1050,11 +1151,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x738b98a6: "fm_c_98_03_exp_05_objective", // 1938528422
     0x73b05e5a: "fm_04_pvp_controlspot_syndicate_objective", // 1940938330
     0x73cc2c58: "0318_0202_rampantconviction_unbalancedscales", // 1942760536
+    0x73e2f5c2: "c10a_q3r_revelation", // 1944253890
     0x73fe6600: "0321_0101_azureravager", // 1946052096
     0x740a7541: "m_explorer_acquire_x_items_poitag", // 1946842433
     0x7417a9f5: "12a_msq_04_meetpayne", // 1947707893
     0x741e1945: "0699_0101_barkimedes", // 1948129605
     0x742d9617: "0325_0105_rl_04", // 1949144599
+    0x743ef904: "objective_artifact_set2_1hflail", // 1950284036
     0x7455d715: "02a_side08_03_music", // 1951782677
     0x746a9f37: "fm_10_h_01_objective", // 1953144631
     0x746c7117: "fm_02_h_01_objective", // 1953263895
@@ -1065,6 +1168,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x74a59254: "fm_1003_objective", // 1957007956
     0x74a7f1bb: "0722_0108_fl_07", // 1957163451
     0x74ef3c89: "1434_0103_pyre", // 1961835657
+    0x74ff0fdb: "12_crewmates_occultist", // 1962872795
     0x75302508: "12a_side_09_collectglass", // 1966089480
     0x75331cef: "95a_s02_glimpseofthepast", // 1966284015
     0x755d9aeb: "fm_c_1205_objective", // 1969068779
@@ -1103,6 +1207,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x784e85a7: "fm_c_1101_objective", // 2018411943
     0x785c679b: "fm_09_pvp_area3_syndicate_objective", // 2019321755
     0x78aa86e2: "fm_s_0266_objective", // 2024441570
+    0x78f0fe72: "c91_fq_02_vector", // 2029059698
     0x78fc8d7d: "0320_0109_sonata", // 2029817213
     0x790d1a10: "09a_s7_stopplague", // 2030901776
     0x79376f30: "fm_1069_objective", // 2033676080
@@ -1126,6 +1231,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x7a675521: "95a_s02_falseprofits", // 2053592353
     0x7a8d1d1b: "0204_0104_executioner_lvl40_weapon_v2", // 2056068379
     0x7ad365cc: "fm_0362_objective", // 2060674508
+    0x7afd202a: "12a_msq_25_crownregent_destroyer", // 2063409194
     0x7b019e17: "1129_0102_newperspective", // 2063703575
     0x7b6aa6c5: "9902_0046_stemthetide", // 2070587077
     0x7bb9fb80: "0424_0103_wintertokens", // 2075786112
@@ -1143,9 +1249,11 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x7d58d7bd: "0721_0101_tf_00", // 2102974397
     0x7d5b0a6f: "fm_0304_objective", // 2103118447
     0x7d94b786: "fm_c_0503_objective", // 2106898310
+    0x7dbbe0a0: "vector_mounts_pushquest", // 2109464736
     0x7df6f8de: "1002_0104_01_boots", // 2113337566
     0x7e155c17: "fm_s_0601_objective", // 2115329047
     0x7e3ee2bb: "fm_1361_objective", // 2118050491
+    0x7e46adce: "objective_artifact_set2_mediumlegs", // 2118561230
     0x7e46b0e7: "1624_0801_agodawakens", // 2118562023
     0x7e55d34a: "98_m_0203_rankup", // 2119553866
     0x7e5dd4c7: "0503_0301_theeternalpool", // 2120078535
@@ -1170,9 +1278,12 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x8043cd3b: "fm_0930_objective", // 2151927099
     0x809e39df: "m_explorer_aquire_x_items_kill_x_enemies_poitag_territory", // 2157853151
     0x80aa8fcb: "ac_test_17_9", // 2158661579
+    0x80cff6fc: "12_crewmates_mystic", // 2161112828
     0x80dc84af: "1418_0109_rd_08", // 2161935535
     0x80dfcb3b: "fm_08_h_01_objective", // 2162150203
     0x8102dc2a: "fm_0963_objective", // 2164448298
+    0x81339750: "c10a_s12_disturbingsilence", // 2167641936
+    0x81370078: "c10a_s10_tamingthelionhearted", // 2167865464
     0x813feb04: "fm_1505_objective", // 2168449796
     0x8143b2c4: "ew_tour_3", // 2168697540
     0x815cc4fa: "9404_rally", // 2170340602
@@ -1182,6 +1293,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x81b4e3e8: "fm_10_pvp_spy_syndicate_objective", // 2176115688
     0x81d4cba3: "06a_msq_19_talktonewspeaker", // 2178206627
     0x81e36a09: "fm_08_pvp_poach_covenant_objective", // 2179164681
+    0x81e50d4d: "12_demonstorm2_mystic", // 2179272013
     0x81f056ed: "fm_c_1302_objective", // 2180011757
     0x82607523: "ac_test_32_d_d", // 2187359523
     0x82685947: "fm_03_h_03_objective", // 2187876679
@@ -1193,6 +1305,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x832ba9b2: "1129_0102_jaanseninthenorth", // 2200676786
     0x8346082a: "fm_s_1401_objective", // 2202404906
     0x83692bc3: "9901_0036_masterofthetempest_solo", // 2204707779
+    0x8375a054: "06_survivors_musketeer", // 2205524052
     0x83796347: "m_fetch_killx_killtoken_location", // 2205770567
     0x837b3f04: "fm_s_0867_objective", // 2205892356
     0x83a14df8: "9809_m_0001_rankup", // 2208386552
@@ -1206,6 +1319,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x8461b630: "1502_1502_stolen", // 2220996144
     0x84643b0d: "fm_0269_objective", // 2221161229
     0x84699a21: "02a_side06_01_bears", // 2221513249
+    0x8483303a: "06_crewmates_ranger", // 2223190074
     0x84b3dffa: "98_c_0203_rankup", // 2226380794
     0x84ce6789: "fm_s_1467_objective", // 2228119433
     0x84de9bf8: "0831_0104_lastargument_lock", // 2229181432
@@ -1224,10 +1338,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x85f9d2df: "fm_s_1066_objective", // 2247742175
     0x86001f00: "fm_09_pvp_area3_covenant_objective", // 2248154880
     0x86438e41: "99d_msq_04_destroymines", // 2252574273
+    0x8647dfd3: "12_survivors_soldier", // 2252857299
     0x8678394e: "fm_c_1364_objective", // 2256025934
     0x868ab389: "fm_0905_objective", // 2257236873
+    0x86a4c02f: "12_survivors_musketeer", // 2258944047
     0x86b2f87d: "0319_0504_prthree", // 2259875965
     0x86b784a7: "fm_1563_objective", // 2260173991
+    0x86d4c8f6: "vector_faction_pushquest", // 2262092022
     0x870f761d: "0325_0101_rl_00", // 2265937437
     0x87627f68: "fm_10_pvp_poach_syndicate_objective", // 2271379304
     0x87789c3f: "fm_12_pvp_spyspot_syndicate_objective", // 2272828479
@@ -1238,7 +1355,9 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x884f55b5: "ac_test_71", // 2286900661
     0x88c1733f: "fm_0602_objective", // 2294379327
     0x88c75806: "1613_0401_lastcenturion", // 2294765574
+    0x88d4f412: "06_demonstorm2_ranger", // 2295657490
     0x88eacd93: "fm_s_1362_objective", // 2297089427
+    0x892118a8: "c10a_s5_lightningbottle", // 2300647592
     0x89397b80: "fm_c_0404_objective", // 2302245760
     0x8940920c: "06a_w_01_getpatterns", // 2302710284
     0x894560df: "06a_ir_03_deliverletter", // 2303025375
@@ -1255,6 +1374,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x8a5c9354: "fm_c_1461_objective", // 2321322836
     0x8a61a47a: "fm_c_0807_objective", // 2321654906
     0x8a7668d0: "objective_artifact_set2_mediumchest", // 2323015888
+    0x8a8715c4: "12_boarfeast_destroyer", // 2324108740
     0x8a932ebd: "fm_1266_objective", // 2324901565
     0x8a9586c3: "99f_msq_er_createincense", // 2325055171
     0x8a9651ff: "09a_m13_attunestaff", // 2325107199
@@ -1299,24 +1419,30 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x8ee21d1a: "99g_msq_sm_gatherrelics", // 2397183258
     0x8f018a75: "0718_0103_ultimatedefense", // 2399242869
     0x8f02fcf5: "1524_1514_firstthing", // 2399337717
+    0x8f1d7372: "12_recoveritems_swordsman", // 2401071986
     0x8f491c9c: "fm_0664_objective", // 2403933340
     0x8f50327e: "fm_05_pvp_controlspot_marauder_objective", // 2404397694
+    0x8f5675bf: "06_boarfeast_destroyer", // 2404808127
     0x8f62a230: "fm_s_1304_objective", // 2405605936
     0x8f66b0db: "bs_tour_1", // 2405871835
     0x8f827ea1: "12a_side_02_gathergift", // 2407693985
     0x8f95859f: "16_side_01_glyphs", // 2408940959
     0x8fb1194a: "13a_sq_28_bearurine", // 2410748234
+    0x9071e62d: "06_pillageship_ranger", // 2423383597
     0x907aadcc: "fm_c_1269_objective", // 2423958988
     0x9088270b: "fm_0808_objective", // 2424841995
     0x90951976: "99e_msq_06_myrddinsprison", // 2425690486
+    0x90a38e85: "c10a_s11_perfectcompanion", // 2426637957
     0x90dad322: "fm_15_pvp_poacharea_syndicate_objective", // 2430260002
     0x90e0813f: "99d_msq_10_caerdun", // 2430632255
     0x90ed0cb5: "fm_08_pvp_control_marauder_objective", // 2431454389
     0x90fb4fe4: "fm_c_1107_objective", // 2432389092
     0x9103475b: "fm_1301_objective", // 2432911195
     0x9127439c: "0319_0505_prfour", // 2435269532
+    0x912867d9: "12_recoveritems_destroyer", // 2435344345
     0x9128f9f7: "fm_s_0661_objective", // 2435381751
     0x9157f78e: "fm_12_pvp_area2_covenant_objective", // 2438461326
+    0x91636114: "06_boarfeast_swordsman", // 2439209236
     0x91a2643f: "99d_msq_01_rescuewarden", // 2443338815
     0x91ccfab2: "fm_c_1506_objective", // 2446129842
     0x91d013d4: "13_summer_08_poet", // 2446332884
@@ -1331,6 +1457,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x937aa475: "fm_s_1205_objective", // 2474288245
     0x938ae20a: "13a_sq_01_hakenstadtdoll", // 2475352586
     0x9393be99: "fm_12_pvp_poacharea_syndicate_objective", // 2475933337
+    0x93ade83b: "c10a_m6_mysteriesofdeep", // 2477647931
     0x93c9a3fe: "09a_m14_getinfusedseed", // 2479465470
     0x93cb5477: "0204_0104_hangmansbinding_quest", // 2479576183
     0x93f635fc: "ac_test_44_d_s", // 2482386428
@@ -1341,8 +1468,10 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x946b0f90: "1031_0203_heartofthemarsh", // 2490044304
     0x946b233c: "fm_06_pvp_poachspot_syndicate_objective", // 2490049340
     0x948205c1: "13a_sq_15_getilluminationessences", // 2491549121
+    0x9499a8c6: "c10a_m3_medusaraidvector", // 2493098182
     0x949e7ebd: "1030_0201_animalinstincts", // 2493415101
     0x94ab4e76: "95_s01_02a_temp_thecurse", // 2494254710
+    0x94b2016f: "12_boarfeast_swordsman", // 2494693743
     0x94c667c4: "9919_0037_planb", // 2496030660
     0x94c82ecb: "0320_0103_adagio", // 2496147147
     0x94d9757a: "fm_0703_objective", // 2497279354
@@ -1371,8 +1500,10 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x96e3254f: "06_demonstorm2", // 2531468623
     0x970d9205: "95a_s02_wordofathief", // 2534248965
     0x973d7f86: "fm_1408_objective", // 2537389958
+    0x9746d489: "06a_msq_21_defeatboss_soldier", // 2538001545
     0x9748b65e: "99b_msq_03_lostvillages_alt", // 2538124894
     0x975036a0: "ac_test_20_9", // 2538616480
+    0x976cff11: "99b_msq_09_killumberto_musketeer", // 2540502801
     0x97732047: "fm_c_1161_objective", // 2540904519
     0x97972302: "fm_s_0206_objective", // 2543264514
     0x97bc9551: "99a_msq_01b_learnsoulwardens", // 2545718609
@@ -1391,20 +1522,25 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x990f1322: "95_s04_04_fightmage", // 2567901986
     0x993f6442: "16_side_02_minescarabs", // 2571068482
     0x993fb0b0: "12a_msq_18_inspectstatue", // 2571088048
+    0x99401f72: "12_pillageship_mystic", // 2571116402
+    0x995a0bfd: "c10a_s4r_explosiveprospecting", // 2572815357
     0x996036b2: "fm_s_1209_objective", // 2573219506
     0x998ee861: "99f_msq_er_gatherallies", // 2576279649
     0x998efffb: "0315_0102_twistedmetamorphosis", // 2576285691
     0x99c8240f: "9806_s_0001_rankup", // 2580030479
     0x99ca6a36: "fm_0407_objective", // 2580179510
+    0x99d25613: "fm_10_exp2_06_objective", // 2580698643
     0x99df1dda: "fm_1070_objective", // 2581536218
     0x99e1d49a: "fm_s_1167_objective", // 2581714074
     0x9a4a6811: "13a_sq_20_killwolfleader", // 2588567569
+    0x9a5bf5ff: "c10a_s9_catnipping", // 2589718015
     0x9a603f0b: "fm_c_1265_objective", // 2589998859
     0x9a8d8bc1: "12a_side_01_placeflowers", // 2592967617
     0x9a8f90ea: "fm_06_exp_01_objective", // 2593100010
     0x9a8fc3e6: "13_summer_05_florist", // 2593113062
     0x9a92b5cc: "fm_0804_objective", // 2593306060
     0x9aaf82e2: "fm_1462_objective", // 2595193570
+    0x9ae6dfc8: "12a_msq_25_crownregent_ranger", // 2598821832
     0x9b24a027: "ac_test_30", // 2602868775
     0x9b52b16d: "98_m_0304_rankup", // 2605887853
     0x9b9837b4: "fm_1063_objective", // 2610444212
@@ -1412,6 +1548,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x9bb38918: "fm_s_0503_objective", // 2612234520
     0x9bbacde5: "1031_0202_trackingbyteeth", // 2612710885
     0x9bc8cd9c: "0831_0102_lastargument_stock", // 2613628316
+    0x9bd14eba: "06_boarfeast_mystic", // 2614185658
     0x9bde3175: "13a_sq_07_studyruins", // 2615030133
     0x9be40e4a: "14_sq_04_avernalwater", // 2615414346
     0x9be9f600: "gc_rally_1", // 2615801344
@@ -1427,6 +1564,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x9c570ef7: "0802_0808_corruptedcritics", // 2622951159
     0x9c79d3f1: "99c_msq_06_witchmagic", // 2625229809
     0x9c8e69d7: "99b_msq_08_azothtree", // 2626578903
+    0x9c906a5d: "12_demonstorm2_occultist", // 2626710109
     0x9c9866e6: "fm_09_pvp_area1_syndicate_objective", // 2627233510
     0x9ca69135: "0320_0108_passepied", // 2628161845
     0x9cbe52ee: "0502_0106_primevalcyclops", // 2629718766
@@ -1435,6 +1573,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x9d27ed41: "fm_1404_objective", // 2636639553
     0x9d2d99e6: "99e_msq_11_shatteredvector", // 2637011430
     0x9d7a7df9: "95a_t01_riseofthebeast", // 2642050553
+    0x9dcd075a: "c10a_m4_medusaraid", // 2647459674
     0x9de10898: "99a_msq_14_heartgemsolo", // 2648770712
     0x9de850a8: "fm_c_1203_objective", // 2649247912
     0x9e079bd4: "1421_0209_toreight", // 2651298772
@@ -1449,6 +1588,8 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x9f71d32d: "04a_side05_03_earnaudience", // 2675036973
     0x9f8fecc6: "ac_test_69", // 2677009606
     0x9f901a94: "fm_c_16_exp_04_objective", // 2677021332
+    0x9f998e27: "c10a_s9r_catnipping", // 2677640743
+    0x9f9d887c: "12_boarfeast_ranger", // 2677901436
     0x9f9f217f: "0524_0101_ahungerforfreedom", // 2678006143
     0x9fa09385: "04a_side02_06_amrine", // 2678100869
     0x9faf7ac6: "fm_c_1210_objective", // 2679077574
@@ -1476,9 +1617,11 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xa245446d: "fm_c_0410_objective", // 2722448493
     0xa2503381: "fm_c_1067_objective", // 2723165057
     0xa261a586: "objective_artifact_set1_ring2", // 2724308358
+    0xa26ae243: "99d_msq_09_outpost_destroyer", // 2724913731
     0xa2912253: "98_m_02_ultimatewarrior", // 2727420499
     0xa2cdf37b: "0318_0209_rampantconviction_thelivingcrystal", // 2731406203
     0xa2d1d1a9: "fm_c_1309_objective", // 2731659689
+    0xa2d2da32: "c91_fq_03_deboshedfish", // 2731727410
     0xa32e6467: "98_c_0102_rankup", // 2737726567
     0xa36786d7: "fm_c_1466_objective", // 2741470935
     0xa37a2cc5: "1613_0201_hydrasbreath", // 2742693061
@@ -1494,6 +1637,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xa4352371: "fm_0670_objective", // 2754945905
     0xa4663c45: "fm_15_pvp_controlspot_covenant_objective", // 2758163525
     0xa47cb03b: "13a_sq_02_krummholmtransmutations", // 2759635003
+    0xa48d2f04: "c10a_s4_explosiveprospecting", // 2760716036
     0xa4a1b6b5: "fm_1169_objective", // 2762061493
     0xa4afe17d: "0316_0101_maliceaforethought", // 2762989949
     0xa4c0c0ef: "factionintro_covenant_02", // 2764095727
@@ -1516,6 +1660,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xa6a49f4a: "9901_0036_masterofthetempest", // 2795806538
     0xa6ded663: "0424_0102_treeoflight", // 2799621731
     0xa71846e5: "99d_msq_06_destroyportals", // 2803386085
+    0xa7410ea5: "12_demonstorm2_musketeer", // 2806058661
     0xa745bc49: "fm_0262_objective", // 2806365257
     0xa750cba5: "fm_1615_objective", // 2807090085
     0xa7648e54: "fm_s_16_exp_12_objective", // 2808385108
@@ -1524,6 +1669,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xa79ff09f: "fm_16_exp_14_objective", // 2812276895
     0xa7d356a1: "1140_halloween_02", // 2815645345
     0xa7d67b2b: "99f_msq_er_meetempress", // 2815851307
+    0xa7dc56d5: "09a_m1_enterzone_bs", // 2816235221
     0xa7ebcdd0: "fm_15_exp_01_objective", // 2817248720
     0xa7fdd1e8: "0715_0102_luckonlylends", // 2818429416
     0xa804fe87: "fm_1502_objective", // 2818899591
@@ -1535,6 +1681,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xa8b7f050: "m_explorer_aquire_x_items_kill_x_enemies_territory", // 2830626896
     0xa8c249a4: "95a_s02_precariousposition", // 2831305124
     0xa8cb436e: "fm_c_1305_objective", // 2831893358
+    0xa91214c3: "99g_msq_sm_bidfarewell_destroyer", // 2836534467
     0xa912c2a5: "ac_test_10", // 2836578981
     0xa918f57d: "fm_s_0463_objective", // 2836985213
     0xa92150d5: "0830_0801_inevitable", // 2837532885
@@ -1552,6 +1699,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xaab278fc: "0511_0208_umbrasreach_duskyfocus", // 2863823100
     0xaad68451: "objective_artifact_set1_mediumhands", // 2866185297
     0xaad7412d: "fm_0208_objective", // 2866233645
+    0xab0ead9d: "06_pillageship_swordsman", // 2869865885
     0xab4aa8ff: "fm_s_1007_objective", // 2873796863
     0xab4d0ad7: "1605_0501_miraclesmadness", // 2873952983
     0xab4ded62: "0831_0109_lastargument_ignition", // 2874010978
@@ -1569,6 +1717,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xac4eb117: "95a_t02_riseofthehero", // 2890838295
     0xac5ff89f: "cm_explorer_aquire_x_items_kill_x_enemies_poitag_territory", // 2891970719
     0xac82b1bf: "1419_0206_reformation_bindingstight", // 2894246335
+    0xacbd9be9: "99b_msq_09_killumberto_occultist", // 2898107369
     0xacc2c75c: "fm_s_1061_objective", // 2898446172
     0xace979f0: "fm_0501_objective", // 2900982256
     0xad0406a3: "fm_c_1370_objective", // 2902722211
@@ -1598,10 +1747,14 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xafb95deb: "09a_s18_scanelafrymagic", // 2948161003
     0xafdd0ec8: "ac_test_9", // 2950500040
     0xb0177ef0: "0319_0508_prseven", // 2954329840
+    0xb024311a: "06a_msq_21_defeatboss_mystic", // 2955161882
+    0xb02437c1: "12_survivors_mystic", // 2955163585
     0xb03ec25c: "fm_c_0207_objective", // 2956903004
     0xb05529eb: "fm_07_pvp_spy_covenant_objective", // 2958371307
     0xb057a421: "0317_0201_windingmtnpath", // 2958533665
     0xb0c9b58b: "14_sq_05_nimuefriends", // 2966009227
+    0xb0e94390: "fm_10_exp2_01_objective", // 2968077200
+    0xb0eb3028: "c10a_s8_snaggletooth", // 2968203304
     0xb109770a: "fm_c_0606_objective", // 2970187530
     0xb11cc7c8: "1002_0103_skull_fort", // 2971453384
     0xb16cfb78: "0721_0104_bw_03", // 2976709496
@@ -1631,7 +1784,9 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xb403650d: "0318_0208_rampantconviction_avileharvest", // 3020121357
     0xb41cf8c2: "fm_1403_objective", // 3021797570
     0xb421cfec: "fm_0865_objective", // 3022114796
+    0xb45afeec: "c91_fq_03_vector", // 3025862380
     0xb45e4665: "03_sq_05_mokoshglyphs", // 3026077285
+    0xb468f107: "06_survivors_ranger", // 3026776327
     0xb46a5fd6: "0722_0104_fl_03", // 3026870230
     0xb4a2bf05: "ac_test_59", // 3030564613
     0xb4a2e8bd: "1310_1314_wyrdwoodresin_quest", // 3030575293
@@ -1642,11 +1797,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xb500f338: "fm_s_0562_objective", // 3036738360
     0xb524aa8a: "98_m_0405_rankup", // 3039079050
     0xb52b4d94: "fm_1002_objective", // 3039514004
+    0xb53bb936: "06_pillageship_destroyer", // 3040590134
     0xb55acd29: "pvp_fetch_location", // 3042626857
     0xb5a9df36: "09a_s12_traverselioncave", // 3047808822
     0xb5ae9ec7: "1414_0101_toreekwater", // 3048120007
     0xb5cd4c62: "12a_msq_06_tomiclot", // 3050130530
     0xb614928a: "1418_0108_rd_07", // 3054801546
+    0xb6432f72: "objective_artifact_set2_heavychest", // 3057856370
     0xb6582cc2: "fm_s_0961_objective", // 3059231938
     0xb65bd2ac: "fm_1410_objective", // 3059471020
     0xb6651bec: "fm_s_1507_objective", // 3060079596
@@ -1658,6 +1815,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xb6cf4768: "fm_0309_objective", // 3067037544
     0xb6d40df3: "99g_msq_sm_bidfarewell", // 3067350515
     0xb7120954: "06a_msq_16_returneldergatejewel", // 3071412564
+    0xb7270068: "99g_msq_sm_bidfarewell_swordsman", // 3072786536
     0xb72a39d9: "1030_0204_tamingthelionhearted", // 3072997849
     0xb7372082: "fm_02_pvp_spy_covenant_objective", // 3073843330
     0xb74502bb: "0331_0102_wolvesofwinter", // 3074753211
@@ -1670,17 +1828,20 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xb7b6adff: "fm_c_0261_objective", // 3082202623
     0xb7d34c92: "fm_s_1268_objective", // 3084078226
     0xb7d943f2: "mountrace_scaletest_1", // 3084469234
+    0xb802d1b7: "c91_fq_01_unpathedwaters", // 3087192503
     0xb813ec74: "fm_s_0666_objective", // 3088313460
     0xb82d340b: "99c_msq_05_findmorgaine", // 3089970187
     0xb83852d8: "fm_1306_objective", // 3090698968
     0xb8609547: "fm_15_pvp_poacharea_covenant_objective", // 3093337415
     0xb874a511: "16_side_08_climbaqueduct", // 3094652177
     0xb8883eb0: "04a_side02_05_placesphere", // 3095936688
+    0xb8a4c4ac: "06_survivors_occultist", // 3097805996
     0xb8b2e55e: "1310_1314_hawkfeathers_quest", // 3098731870
     0xb8b9b0f0: "fm_1068_objective", // 3099177200
     0xb8c41cba: "1420_0508_cvseven", // 3099860154
     0xb8d6f461: "13_summer_07_baker", // 3101095009
     0xb8e3e268: "99g_msq_sm_activatecrystals", // 3101942376
+    0xb8e807b3: "0699_0102_barkimedes2_v2", // 3102214067
     0xb8f7ef31: "fm_c_1501_objective", // 3103256369
     0xb90c08aa: "1625_0100_brimstoneundersiege", // 3104573610
     0xb91a9062: "fm_0370_objective", // 3105525858
@@ -1702,6 +1863,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xba6a0f5a: "fm_0762_objective", // 3127512922
     0xba7c1c9a: "06a_t_01_defeatpumas", // 3128695962
     0xbac7c696: "fm_04_exp_02a_objective", // 3133654678
+    0xbad1bddf: "objective_artifact_set2_lighthead", // 3134307807
     0xbb17d190: "9404_races", // 3138900368
     0xbb5dba0c: "fm_0363_objective", // 3143481868
     0xbb611116: "1679_0101_striderofthesands_gc", // 3143700758
@@ -1714,6 +1876,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xbc363ee2: "02a_side07_01_memories", // 3157671650
     0xbc4333cc: "0503_0201_excisingtheblightedroot", // 3158520780
     0xbc5f52d6: "0623_0102_fq02", // 3160363734
+    0xbc5ff6e8: "99d_msq_09_outpost_swordsman", // 3160405736
     0xbc91f9ad: "1303_1311_02_shirt", // 3163683245
     0xbc9c0588: "9907_0053_blessingofearth", // 3164341640
     0xbcd5d5af: "fm_0305_objective", // 3168130479
@@ -1722,6 +1885,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xbd18c34a: "1505_1510_slaying", // 3172516682
     0xbd3f1250: "ac_test_29_d_s", // 3175027280
     0xbd576581: "02a_side08_02_lostreturned", // 3176621441
+    0xbd75a4d7: "12_survivors_occultist", // 3178603735
     0xbdab8de1: "1420_0507_cvsix", // 3182136801
     0xbdc09458: "12a_msq_03_vaulttutorial", // 3183514712
     0xbdc9de55: "fm_s_1264_objective", // 3184123477
@@ -1730,6 +1894,8 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xbde842fa: "1418_0101_rd_00", // 3186115322
     0xbdfbb53a: "1613_0501_legendrestored", // 3187389754
     0xbdfbc08e: "12a_msq_23_totower", // 3187392654
+    0xbe0582a0: "99b_msq_09_killumberto_soldier", // 3188032160
+    0xbe1df090: "c10a_q6r_citadel", // 3189633168
     0xbe1f7ef2: "fm_04_h_02_objective", // 3189735154
     0xbe37c8d9: "95_s01_10_temp_tobecontinued", // 3191326937
     0xbe3b5d2b: "fm_0869_objective", // 3191561515
@@ -1746,6 +1912,8 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xbfb4417c: "factionintro_marauders_03", // 3216261500
     0xbfbda4d2: "99d_msq_08_thorpefight", // 3216876754
     0xc001a757: "99e_msq_04_motherwellclues", // 3221333847
+    0xc0161465: "99d_msq_09_outpost_musketeer", // 3222672485
+    0xc030bd77: "c91_fq_08_fisherking", // 3224419703
     0xc05edb48: "fm_c_0603_objective", // 3227441992
     0xc08647bb: "fm_16_pvp_controlspot_covenant_objective", // 3230025659
     0xc087ef23: "fm_s_0902_objective", // 3230134051
@@ -1757,10 +1925,12 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xc18d6d5b: "fm_s_1165_objective", // 3247271259
     0xc1a6d3f7: "fm_0405_objective", // 3248935927
     0xc1baebb0: "factionintro_syndicate_02", // 3250252720
+    0xc1beefd2: "fm_10_exp2_04_objective", // 3250515922
     0xc1ddfd82: "objective_artifact_set1_heavychest", // 3252551042
     0xc1e05c16: "0325_0102_rl_01", // 3252706326
     0xc20c86ca: "fm_c_1267_objective", // 3255600842
     0xc219f126: "fm_c_0610_objective", // 3256480038
+    0xc21c1d9b: "99g_msq_sm_bidfarewell_soldier", // 3256622491
     0xc22a10eb: "99d_msq_02_climbruins", // 3257536747
     0xc28d64e2: "fm_c_1109_objective", // 3264046306
     0xc2bdaf55: "12a_msq_12_camptutorial", // 3267211093
@@ -1796,6 +1966,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xc4eeff4e: "1102_0301_musslebeard", // 3303997262
     0xc4f18e3f: "98_s_02_necromanticchemistry", // 3304164927
     0xc4fd03fe: "fm_1369_objective", // 3304915966
+    0xc53df883: "12_demonstorm2_destroyer", // 3309172867
     0xc54b5480: "fm_1406_objective", // 3310048384
     0xc551ee8e: "cm_explorer_acquire_x_items_territory", // 3310481038
     0xc578ad8e: "06a_b_01_returnbrushes", // 3313020302
@@ -1817,6 +1988,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xc83cbdc1: "0503_0203_wardensofthegreen", // 3359423937
     0xc84004af: "99g_msq_sm_excavateartifacts", // 3359638703
     0xc873f560: "fm_s_0262_objective", // 3363042656
+    0xc885f507: "12_recoveritems_occultist", // 3364222215
     0xc8951dbc: "0721_0106_tf_05", // 3365215676
     0xc897f625: "fm_c_1105_objective", // 3365402149
     0xc8aae9ab: "objective_artifact_set1_2hmusket", // 3366644139
@@ -1826,6 +1998,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xc90f3392: "1434_0101_destroyblooms", // 3373216658
     0xc9444036: "fm_s_0663_objective", // 3376693302
     0xc96ffe9a: "fm_1303_objective", // 3379560090
+    0xc977c115: "c10a_s13_trackingbyteeth", // 3380068629
     0xc995a1ea: "1033_0201_treasureisland", // 3382026730
     0xc99d745d: "fm_c_0962_objective", // 3382539357
     0xc9a04373: "fm_c_1504_objective", // 3382723443
@@ -1839,6 +2012,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xca8fedda: "1602_0501_gloriamundi", // 3398430170
     0xca96ebca: "0722_0106_fl_05", // 3398888394
     0xcaa04aca: "fm_s_1568_objective", // 3399502538
+    0xcac01490: "c10a_s3_aeternumtriangle", // 3401585808
     0xcac5aba7: "fm_c_0561_objective", // 3401952167
     0xcb036a58: "fm_s_0670_objective", // 3405998680
     0xcb161db4: "fm_s_1207_objective", // 3407224244
@@ -1847,7 +2021,9 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xcb55aeaf: "12_demonstorm2", // 3411390127
     0xcb69c1eb: "1432_0101_medicine", // 3412705771
     0xcb6c2a74: "fm_07_pvp_control_marauder_objective", // 3412863604
+    0xcb6ee2e5: "99g_msq_sm_bidfarewell_musketeer", // 3413041893
     0xcb97ff9c: "fm_s_1169_objective", // 3415736220
+    0xcbb8ab52: "12_recoveritems_soldier", // 3417877330
     0xcc9e7217: "fm_s_1261_objective", // 3432935959
     0xccb5ccbb: "fm_0701_objective", // 3434466491
     0xccc8d3a5: "1030_0201_animalinstincts_alt", // 3435713445
@@ -1858,6 +2034,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xcd4dc404: "fm_c_0507_objective", // 3444425732
     0xcd58b3e8: "fm_c_1170_objective", // 3445142504
     0xcd591466: "fm_04_exp_01a_objective", // 3445167206
+    0xcdb4b4ba: "12_boarfeast_soldier", // 3451172026
     0xcdcc262c: "fm_c_0669_objective", // 3452708396
     0xcdd985db: "objective_artifact_set2_amulet1", // 3453584859
     0xcde0e126: "1602_0401_headofsnake", // 3454066982
@@ -1893,6 +2070,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xd16c7275: "ac_test_4", // 3513545333
     0xd18cf7e8: "fm_14_pvp_spy_covenant_objective", // 3515676648
     0xd19a7fa8: "fm_0201_objective", // 3516563368
+    0xd1d739b6: "06_pillageship_soldier", // 3520543158
     0xd1f930a3: "fm_05_h_03_objective", // 3522769059
     0xd20d1dbb: "fm_c_0805_objective", // 3524074939
     0xd22c4c15: "fm_04_pvp_spyspot_covenant_objective", // 3526118421
@@ -1902,6 +2080,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xd2f07eb9: "1416_0202_foreman", // 3538976441
     0xd2ff977c: "fm_1264_objective", // 3539965820
     0xd3079fc3: "fm_c_1062_objective", // 3540492227
+    0xd32a871a: "12_boarfeast_occultist", // 3542779674
     0xd3315f9b: "fm_98_03_gt_exp_02_objective", // 3543228315
     0xd34485db: "1010_0101_seadog_brew", // 3544483291
     0xd364eb5d: "9401_rally", // 3546606429
@@ -1909,12 +2088,14 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xd376a8c0: "02a_side06_02_papabear", // 3547769024
     0xd3c7f079: "factionintro_covenant_03", // 3553095801
     0xd3e39c86: "fm_s_0305_objective", // 3554909318
+    0xd40659cd: "12_pillageship_soldier", // 3557185997
     0xd43eb1f5: "1104_0201_waterfalls", // 3560878581
     0xd4404d89: "fm_1603_objective", // 3560983945
     0xd4506394: "12a_msq_10_confrontlochnir", // 3562038164
     0xd4564f2c: "ac_test_47_d_s", // 3562426156
     0xd46bf325: "fm_s_0363_objective", // 3563844389
     0xd4740878: "fm_s_16_exp_04_objective", // 3564374136
+    0xd48b8e57: "c91_fq_07_depthsclose", // 3565915735
     0xd48f76b3: "fm_16_exp_02_objective", // 3566171827
     0xd48ff060: "fm_c_1004_objective", // 3566202976
     0xd4bfc0ba: "12a_side_06_gatherjewels", // 3569336506
@@ -1944,16 +2125,19 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xd6c85cdd: "fm_16_exp_11_objective", // 3603455197
     0xd6da8139: "fm_14_pvp_spy_syndicate_objective", // 3604644153
     0xd6e8024c: "1420_0502_cvone", // 3605529164
+    0xd6fbe761: "06_boarfeast_occultist", // 3606832993
     0xd708a6f6: "0720_0105_hs_04", // 3607668470
     0xd70e1bf1: "fm_s_1306_objective", // 3608026097
     0xd725a55d: "fm_0666_objective", // 3609568605
     0xd7298e65: "9806_m_0001_rankup", // 3609824869
+    0xd7474f10: "06_pillageship_musketeer", // 3611774736
     0xd75b039c: "fm_10_pvp_spy_covenant_objective", // 3613066140
     0xd7733f66: "9904_0047_greatminds", // 3614654310
     0xd78ff9d9: "fm_s_1068_objective", // 3616537049
     0xd7c25876: "fm_c_0870_objective", // 3619838070
     0xd8178f7c: "fm_c_0809_objective", // 3625422716
     0xd82f74fa: "fm_0932_objective", // 3626988794
+    0xd832aac0: "1599_1513_nekumanesh_v2", // 3627199168
     0xd85f0590: "12a_side_12_knightscrest", // 3630106000
     0xd864e793: "fm_1106_objective", // 3630491539
     0xd88267c6: "pvp_explorer_aquire_x_items_kill_x_enemies_poitag", // 3632424902
@@ -1980,6 +2164,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xda1438b9: "fm_timetrial_saircor_objective", // 3658758329
     0xda1d04bd: "fm_s_1002_objective", // 3659334845
     0xda36ba11: "fm_0562_objective", // 3661019665
+    0xda4835cf: "c10a_q4r_spectralartifacts", // 3662165455
     0xda72ce4d: "74_basic_mission_1", // 3664957005
     0xda7ad498: "0203_0103_hopecatalyst_quest", // 3665482904
     0xda9e72c8: "1418_0202_azuretears", // 3667817160
@@ -1987,6 +2172,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xdae77e14: "98_c_01_theapostate", // 3672604180
     0xdaf3ca36: "fm_10_exp_02_objective", // 3673410102
     0xdaf907f8: "fm_c_0365_objective", // 3673753592
+    0xdb08ec28: "12_demonstorm2_swordsman", // 3674795048
     0xdb0aa5e1: "1419_0209_reformation_gripsecured", // 3674908129
     0xdb1786c5: "fm_s_0865_objective", // 3675752133
     0xdb2ab1eb: "fm_s_1403_objective", // 3677008363
@@ -2016,6 +2202,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xddbed5b2: "fm_0504_objective", // 3720271282
     0xde14808f: "fm_c_1366_objective", // 3725885583
     0xde15f233: "ac_test_11", // 3725980211
+    0xde1f7803: "12_crewmates_soldier", // 3726604291
     0xde6e9abf: "fm_s_16_exp_08_objective", // 3731790527
     0xde9562a7: "fm_c_1008_objective", // 3734332071
     0xded8c308: "fm_s_0810_objective", // 3738747656
@@ -2034,11 +2221,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xe0a661de: "fm_c_0965_objective", // 3769000414
     0xe0ca619a: "1419_0208_reformation_hafthewn", // 3771359642
     0xe0fa2cd0: "fm_02_pvp_control_covenant_objective", // 3774491856
+    0xe1095672: "06_survivors_destroyer", // 3775485554
     0xe1252bd8: "7505_0101_devworldbluegetcavelootquest", // 3777309656
     0xe148e0e3: "fm_s_0265_objective", // 3779649763
     0xe166266f: "04a_side07_02_getwine", // 3781568111
     0xe1ace3a6: "fm_c_1102_objective", // 3786204070
     0xe1c8dbfb: "m_killtoken_location", // 3788037115
+    0xe23060b3: "0699_0103_barkimedespup_v2", // 3794821299
     0xe243b83f: "04a_side10_01_copperseam", // 3796088895
     0xe248e95a: "fm_c_0209_objective", // 3796429146
     0xe24b0a49: "fm_r0908_killandloot_objective", // 3796568649
@@ -2061,12 +2250,15 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xe41330ea: "fm_s_1509_objective", // 3826462954
     0xe4160407: "9907_0053_blessingofearth_ixia", // 3826648071
     0xe432d84a: "99c_msq_11_lepus", // 3828537418
+    0xe455f732: "c10a_s6r_lightningbottletest", // 3830839090
     0xe45cd500: "1225_0101_downpayment_ef", // 3831289088
     0xe487a52e: "fm_s_0210_objective", // 3834094894
+    0xe493104a: "c10a_s7_animalinstincts", // 3834843210
     0xe4affbaf: "03_sq_03_battlewounds", // 3836738479
     0xe4b96c6e: "fm_0307_objective", // 3837357166
     0xe4c4ce7a: "0330_0101_asgoodasmyword", // 3838103162
     0xe4d66020: "06_getoffbeach", // 3839254560
+    0xe4d83609: "12_survivors_destroyer", // 3839374857
     0xe4f43181: "1002_0101_ancient_wonders", // 3841208705
     0xe50f3b10: "fm_0468_objective", // 3842980624
     0xe52485bc: "fm_s_1108_objective", // 3844375996
@@ -2085,6 +2277,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xe70870a8: "fm_09_pvp_area1_marauder_objective", // 3876090024
     0xe7133953: "fm_c_1565_objective", // 3876796755
     0xe72e0e7d: "fm_c_0903_objective", // 3878555261
+    0xe74e7998: "c10a_s11r_perfectcompanion", // 3880679832
     0xe76d6dc7: "04a_side06_01_defeatbear", // 3882708423
     0xe770bcb8: "1605_0601_hieratictruth", // 3882925240
     0xe786e405: "fm_09_pvp_area2_syndicate_objective", // 3884377093
@@ -2093,12 +2286,15 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xe80224cd: "1420_0501_clamorousvox", // 3892454605
     0xe8157450: "16_side_29_bathsalts", // 3893720144
     0xe834bad9: "12_crewmates", // 3895769817
+    0xe83b4393: "99f_msq_er_fightliang_mystic", // 3896198035
     0xe8527b9d: "fm_c_0205_objective", // 3897719709
+    0xe885fa51: "fm_10_exp2_03_objective", // 3901094481
     0xe888dc50: "ac_test_68", // 3901283408
     0xe89dc674: "fm_0402_objective", // 3902654068
     0xe8b678d8: "fm_s_1162_objective", // 3904272600
     0xe8bc5428: "0803_0805_ebonscalealligators", // 3904656424
     0xe8bce2ae: "mountrace_scaletest_2_short", // 3904692910
+    0xe8fbe3e2: "12_boarfeast_musketeer", // 3908821986
     0xe915ef3e: "06a_ts_01_gatherandrefine", // 3910528830
     0xe91dc3e3: "04a_side02_01_obelisknotes", // 3911042019
     0xe92ffe37: "9401_races", // 3912236599
@@ -2108,6 +2304,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xe9dcd093: "0319_0507_prsix", // 3923562643
     0xe9e14a1d: "ac_test_20_4", // 3923855901
     0xe9eb2b89: "fm_05_exp_02_objective", // 3924503433
+    0xea27ac9d: "c10a_s5r_lightningbottle", // 3928468637
     0xea33c401: "1625_0101_thegreatarchitect", // 3929261057
     0xea4e79de: "fm_1308_objective", // 3931011550
     0xea6588b9: "1034_0203_hightide", // 3932522681
@@ -2120,6 +2317,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xeae94100: "fm_06_pvp_spyspot_covenant_objective", // 3941155072
     0xeaea27a3: "1305_1315_wyrdwoodashes_quest", // 3941214115
     0xeb221d2a: "0726_0102_isabelladeleon", // 3944881450
+    0xeb251d9c: "99b_msq_09_killumberto_swordsman", // 3945078172
     0xeb527224: "fm_s_0269_objective", // 3948048932
     0xebb04980: "fm_06_pvp_controlspot_marauder_objective", // 3954198912
     0xebc5198e: "fm_0801_objective", // 3955562894
@@ -2133,10 +2331,13 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xec4d762d: "fm_0867_objective", // 3964499501
     0xec704103: "fm_1401_objective", // 3966779651
     0xec809cb8: "fm_c_16_exp_12_objective", // 3967851704
+    0xec962be8: "06_pillageship_occultist", // 3969264616
     0xecbffcea: "fm_c_1206_objective", // 3972005098
     0xecd0c2b5: "objective_artifact_set1_2hstafflife", // 3973104309
     0xece1d826: "04a_side01_01_recoversupplies", // 3974223910
     0xed09ab94: "fm_c_1569_objective", // 3976833940
+    0xed21ce7b: "c10a_s2_ancientwonders", // 3978415739
+    0xed2a8399: "06_boarfeast_musketeer", // 3978986393
     0xed3709dd: "fm_14_pvp_poach_marauder_objective", // 3979807197
     0xed37a628: "04a_side04_01_scoutcorrupted", // 3979847208
     0xed3ef0fc: "09a_s19_destroybadplants", // 3980325116
@@ -2168,6 +2369,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xef404734: "0804_0812_captainsorders", // 4013967156
     0xef921313: "99e_msq_01_enteredengrove", // 4019327763
     0xefa2e5a6: "1624_1101_tremorsinthesand", // 4020430246
+    0xefcb0cad: "99g_msq_sm_bidfarewell_mystic", // 4023061677
     0xefcb46fb: "1602_0701_mightymustfall", // 4023076603
     0xefda143e: "fm_c_0263_objective", // 4024046654
     0xeff961e2: "09a_s9_hackdefenses", // 4026098146
@@ -2176,15 +2378,20 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xf0557068: "fm_0966_objective", // 4032131176
     0xf060fc3a: "1625_0902_queenrevealed", // 4032887866
     0xf068621c: "09a_m8_meettaurus", // 4033372700
+    0xf099aaf2: "s04_gt_expd_rpt_b", // 4036602610
     0xf0a7faaf: "fm_c_1307_objective", // 4037540527
+    0xf0bf861d: "99g_msq_sm_bidfarewell_occultist", // 4039083549
     0xf111add1: "fm_c_1468_objective", // 4044467665
     0xf1146179: "fm_0935_objective", // 4044644729
+    0xf13aec65: "99d_msq_09_outpost_mystic", // 4047170661
     0xf15ff210: "fm_1101_objective", // 4049596944
     0xf1744cbc: "fm_s_0461_objective", // 4050930876
     0xf178beb2: "1613_0101_assaultlegion", // 4051222194
+    0xf187c875: "c10a_m2_curseddoubloons", // 4052207733
     0xf188ab6f: "1125_0101_songofthesea", // 4052265839
     0xf1d51e9b: "0713_0101_explorerift", // 4057276059
     0xf1e8183d: "12a_msq_25_crownregent", // 4058519613
+    0xf1fae2b6: "objective_artifact_set2_2hwarhammer", // 4059751094
     0xf20baa60: "fm_98_03_exp_05_objective", // 4060850784
     0xf211a468: "fm_s_1404_objective", // 4061242472
     0xf22c9346: "fm_s_0862_objective", // 4063007558
@@ -2192,11 +2399,14 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xf247146f: "09a_m1_enterzone_eg", // 4064744559
     0xf25565e9: "ac_test_25", // 4065682921
     0xf27be671: "09a_s3_hunthercyne", // 4068206193
+    0xf2bd11fb: "99b_msq_09_killumberto_ranger", // 4072477179
+    0xf2e6bb32: "c10a_s15_treasureisland", // 4075207474
     0xf2f5a72d: "fm_c_0763_objective", // 4076185389
     0xf30daf92: "fm_0565_objective", // 4077760402
     0xf326113e: "fm_s_1005_objective", // 4079358270
     0xf33d7a97: "9812_m_0001_rankup", // 4080892567
     0xf3404945: "fm_05_pvp_controlspot_syndicate_objective", // 4081076549
+    0xf35491ff: "12_recoveritems_musketeer", // 4082405887
     0xf38f3095: "9401_tour", // 4086247573
     0xf3c2127b: "fm_c_0362_objective", // 4089582203
     0xf3caba54: "fm_12_h_01_objective", // 4090149460
@@ -2212,6 +2422,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xf485de7c: "ac_test_19_4", // 4102413948
     0xf4ae7e9d: "fm_s_1063_objective", // 4105076381
     0xf4d85078: "0923_0101_fq04", // 4107817080
+    0xf5100937: "99b_msq_09_killumberto_destroyer", // 4111468855
     0xf5164d36: "1005_0102_lightning_test", // 4111879478
     0xf52332f7: "12_skinningknife", // 4112724727
     0xf57dc88e: "fm_c_0705_objective", // 4118661262
@@ -2240,6 +2451,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xf7ace784: "06_boarfeast", // 4155303812
     0xf7aef1f7: "fm_16_exp_09_objective", // 4155437559
     0xf7d04b82: "99a_msq_10_getcrosspiece", // 4157623170
+    0xf7df3952: "c10a_m7_cleansingtreasure", // 4158601554
     0xf7e028e5: "fm_1566_objective", // 4158662885
     0xf7eb47b2: "0721_0107_tf_06", // 4159391666
     0xf7facf5d: "0424_0106_yetisabound", // 4160409437
@@ -2250,6 +2462,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xf8a16a2b: "fm_0206_objective", // 4171328043
     0xf8a4c69c: "fm_r0911_killandloot_objective", // 4171548316
     0xf8d9e89e: "04a_side02_02_obeliskdefenders", // 4175030430
+    0xf8e08eda: "06_recoveritems_mystic", // 4175466202
     0xf9193e3b: "1223_0101_fq05", // 4179181115
     0xf9369e4d: "99a_msq_14_heartgemgroup", // 4181106253
     0xf93c83f9: "fm_s_1009_objective", // 4181492729
@@ -2261,6 +2474,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xfa0a4a18: "fm_98_03_gt_exp_05_objective", // 4194978328
     0xfa3c8a40: "fm_c_1065_objective", // 4198271552
     0xfad88905: "fm_s_0302_objective", // 4208494853
+    0xfaed22a2: "12_survivors_swordsman", // 4209844898
     0xfaf87075: "1126_0101_stonecoldsecrets", // 4210585717
     0xfb0768f1: "1418_0102_rd_01", // 4211566833
     0xfb0b3f16: "fm_c_1464_objective", // 4211818262
@@ -2271,6 +2485,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xfbbb7fe8: "1503_1505_hoppy", // 4223369192
     0xfbc482ff: "fm_1263_objective", // 4223959807
     0xfbc500e0: "98_s_0405_rankup", // 4223992032
+    0xfbc7709d: "99d_msq_09_outpost_occultist", // 4224151709
     0xfbcc7014: "12a_side_11_clericamulets", // 4224479252
     0xfbef3c53: "fm_s_0703_objective", // 4226759763
     0xfc22c1a4: "09a_m12_fightmedusa", // 4230136228
@@ -2279,8 +2494,10 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xfc4ced5c: "fm_1205_objective", // 4232899932
     0xfc6753f0: "fm_s_0765_objective", // 4234630128
     0xfc8350b5: "fm_c_1402_objective", // 4236464309
+    0xfcbaf088: "c91_fq_06_vector", // 4240109704
     0xfcbe679b: "fm_c_0864_objective", // 4240336795
     0xfd1e1d53: "99f_msq_er_stealboat", // 4246609235
+    0xfd31eea1: "12_recoveritems_mystic", // 4247908001
     0xfd4f1dfb: "fm_s_16_exp_03_objective", // 4249820667
     0xfd50e6a6: "fm_s_0364_objective", // 4249937574
     0xfd616fc1: "1624_0401_thedemonscauldron", // 4251021249
@@ -2302,6 +2519,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xff0745fc: "02a_side02_01_secrets", // 4278666748
     0xff083795: "fm_s_16_exp_10_objective", // 4278728597
     0xff358576: "cm_explorer_acquire_x_items_poitag", // 4281697654
+    0xff3c42d9: "06_survivors_swordsman", // 4282139353
     0xff3c7264: "fm_1617_objective", // 4282151524
     0xff486523: "ac_test_70", // 4282934563
     0xff877411: "fm_15_exp_03_objective", // 4287067153

@@ -79,6 +79,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x3bd18a41: "masonryt3", // 1003588161
     0x3bf91588: "platformbase", // 1006179720
     0x3db7da63: "seedhempt1", // 1035459171
+    0x3e89166b: "campskin_season6_a", // 1049171563
     0x3faf0cb1: "turkeycoopt2", // 1068436657
     0x3fb7da1b: "tanningt2", // 1069013531
     0x3fc0c4b0: "rampartcornerint2", // 1069597872
@@ -212,6 +213,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xa3aed4f0: "seedcarrott1", // 2746143984
     0xa58fd8ae: "campskin_thetower_a", // 2777667758
     0xa5b51fe2: "masonryt4", // 2780110818
+    0xa6c924f8: "puzzle_powderkeg", // 2798200056
     0xa80f1ce9: "claimt1_30m_t5", // 2819562729
     0xa83b654b: "fenceloggate", // 2822464843
     0xa87237b7: "siege_claim", // 2826057655

@@ -1,6 +1,7 @@
 package asset
 
 import (
+	"bufio"
 	"bytes"
 	"encoding/binary"
 	"errors"
@@ -207,6 +208,9 @@ type LegacyAssetIdToRealAssetId struct {
 var signature = []byte("RASC")
 
 func ParseAssetCatalog(r io.Reader) (*AssetCatalog, error) {
+	buf := bufio.NewReaderSize(r, 1024*1024)
+	r = buf
+
 	cat := &AssetCatalog{}
 
 	var data []byte

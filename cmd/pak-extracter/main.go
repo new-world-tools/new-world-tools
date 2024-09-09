@@ -179,7 +179,6 @@ func main() {
 	}
 
 	pool.Close()
-
 	pool.Wait()
 
 	if hashSumFile != "" {
@@ -256,7 +255,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 		var r io.Reader
 
-		bufReader := bufio.NewReaderSize(decompressReader, 4096)
+		bufReader := bufio.NewReaderSize(decompressReader, 1024*1024)
 
 		sigData, err := bufReader.Peek(8)
 		if err != nil && err != io.EOF {
@@ -315,9 +314,15 @@ func match(fileName string) bool {
 	if excludeRe == nil && includeRe != nil {
 		return includeRe.MatchString(fileName)
 	}
+
 	if excludeRe != nil && includeRe == nil {
 		return !excludeRe.MatchString(fileName)
 	}
+
+	if excludeRe == nil || includeRe == nil {
+		return true
+	}
+
 	if excludeRe != nil && includeRe != nil {
 		if includePriority {
 			if includeRe.MatchString(fileName) {
@@ -334,5 +339,9 @@ func match(fileName string) bool {
 		}
 	}
 
-	return true
+	if includePriority {
+		return includeRe.MatchString(fileName) || !excludeRe.MatchString(fileName)
+	} else {
+		return !excludeRe.MatchString(fileName) && includeRe.MatchString(fileName)
+	}
 }

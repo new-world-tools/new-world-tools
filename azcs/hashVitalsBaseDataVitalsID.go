@@ -1,804 +1,672 @@
 package azcs
 
-var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
-    0x000f89d8: "ancientguardian_spearman_11md00g", // 1018328
+var hashVitalsBaseDataVitalsID = map[uint32]string{
+    0x0002afb0: "skeleton_spear_33", // 176048
     0x001f5122: "ck_spectral_lost_2haxe_10ws06", // 2052386
-    0x002e0b9c: "risen_l-r_arm_12mb03a", // 3017628
+    0x0024916d: "withered_grunt_58", // 2396525
     0x002e483f: "fl_spriggan_adolescent_named_09fl10", // 3033151
-    0x00380eb0: "jackrabbit_16bs06", // 3673776
     0x0038c145: "undead_grenadier_54", // 3719493
+    0x004ce26e: "ghost_shipwrecked_34", // 5038702
     0x004ddd6c: "fl_chameleon_elite_named_09fl12", // 5102956
-    0x004e62c5: "undead", // 5137093
-    0x005553a3: "lambent", // 5591971
     0x0055ad78: "drowned_sailor_1h_sword_47", // 5614968
     0x0055ad7c: "dynasty_warrior_08qp08", // 5614972
     0x00560b37: "damned_villager_shovel_44", // 5638967
     0x0061de83: "wolf_alpha_60", // 6413955
     0x006466dd: "drowned_sailor_1h_club_57", // 6579933
-    0x0064c5be: "gold_sabre", // 6604222
     0x006d56c7: "damned_priest_named_dg_shattermtn_00_01", // 7165639
     0x007441a2: "fl_gorilla_lightning_09fl05", // 7618978
-    0x007645f3: "risen_regurgitator_09fl05a", // 7751155
     0x00786d1d: "risen_regurgitator_30", // 7892253
     0x0082954d: "elk_corrupted", // 8557901
-    0x009036ee: "dunewalker_waterseeker_icestaff_bloodofsands_n1", // 9451246
-    0x00a23a9d: "risen_13wf06", // 10631837
-    0x00aceefe: "skeleton_archer_11md04b", // 11333374
+    0x00aac42e: "bobcat_desert", // 11191342
     0x00b1294e: "dynasty_summoner_dg_greatcleave_00", // 11610446
-    0x00b20482: "dryad_shaman_14ac11b", // 11666562
+    0x00b255a5: "primal_lion_47", // 11687333
     0x00b6f510: "drowned_sailor_1h_sword_shield_63_elite", // 11990288
     0x00bfa0ba: "undead_officer_45", // 12558522
-    0x00bfaa99: "damned_villager_lumberaxe_02bw05", // 12561049
     0x00c31d52: "alligator_black_41", // 12787026
-    0x00c56a10: "desert_medium_scorpion_16bs09a", // 12937744
-    0x00c670a9: "ancientguardian_reaver_16bs11d", // 13004969
+    0x00c35504: "season_02_event_sulfur_elemental_soldier_wave_1", // 12801284
     0x00cd8304: "ghost_shipwrecked_named_05", // 13468420
-    0x00cfa2a8: "elk_doe_34", // 13607592
-    0x00d09bf2: "evil_knight_warhammer_14ac05", // 13671410
     0x00d2182d: "ck_boar_10ws06", // 13768749
-    0x00d5ed8e: "anubianguardian_brute_12bs10b", // 14019982
+    0x00d320e5: "undead_navigator_10", // 13836517
+    0x00d69101: "fl_wolf_elemental_earth_09a_s17_waveevent", // 14061825
+    0x00e05f15: "wolf_timber_15", // 14704405
     0x00e06622: "drowned_sailor_2h_axe_40", // 14706210
+    0x00e3e5b8: "ghost_plagued_42", // 14935480
     0x00e44224: "fl_rat_hercynerat_09fl10", // 14959140
     0x00e81a6e: "risen_whole_body_10", // 15211118
+    0x00e9f4cc: "dynasty_warrior_58", // 15332556
     0x00ef596c: "undead_grenadier_molotov_50", // 15685996
-    0x00f09d23: "desert_scorpion_sulfur_16bs02", // 15768867
-    0x00f74d3f: "drowned_sailor_1h_sword_06sw02", // 16207167
     0x00ffe9d2: "ghost_starved_32", // 16771538
     0x01000ae5: "ck_undead_bloated_corpse_10ws09a_elite", // 16780005
-    0x01017312: "legion_axethrower_16bs08", // 16872210
     0x0102333a: "drowned_sailor_2h_axe_6", // 16921402
-    0x0104e447: "elk_doe_02bw08", // 17097799
     0x010585c3: "ghost_starved_named_04", // 17139139
     0x01169dab: "damned_villager_axethrower_m-f_28", // 18259371
     0x01181923: "corrupted_tiger_named_dg_ebonscale_00_01", // 18356515
-    0x0121277e: "damned_villager_hammer_11md07b", // 18950014
-    0x012613eb: "damned_villager_skinning_knife_03gc07b", // 19272683
-    0x01276597: "bear_black_12mb00", // 19359127
-    0x0128a5d1: "legion_legionnaire_16bs08", // 19441105
-    0x01340e0c: "undead_javelineer_02bw03b", // 20188684
-    0x01538ac7: "damned_villager_knife_11md07", // 22252231
+    0x013282ef: "damned_villager_pickaxe_64", // 20087535
     0x015b56d9: "damned_1h_swordsman_m-f_58", // 22763225
-    0x016f865e: "ck_skeleton_1h_sword_10ws04_steps", // 24086110
+    0x01728ac2: "dunewalker_warmonger_warhammer_eliteboss", // 24283842
+    0x017573d0: "damned_villager_hammer_49", // 24474576
     0x017bb3d0: "damned_acolyte_03gc09_elite", // 24884176
     0x0198b62e: "undead_gravedigger_23", // 26785326
+    0x019d2e9d: "evil_knight_spear_icevariant_named", // 27078301
     0x019e5403: "swamp_dryad_prowler_59", // 27153411
     0x019e9b33: "damned_villager_ladel_9", // 27171635
     0x01a49b0c: "ancientguardian_javelineer_51", // 27564812
     0x01b45e36: "turkey_11", // 28597814
     0x01c6d8c4: "undead_hunter_28", // 29808836
+    0x01dc9dfb: "damned_villager_skinning_knife_42", // 31235579
     0x01dd156d: "damned_bowman_30", // 31266157
-    0x01ded168: "skeleton_2h_sword_13wf02b", // 31379816
     0x01e56b17: "or_bear", // 31812375
     0x01e741f4: "anubianguardian_spearman_67", // 31932916
-    0x01e8ba69: "skeleton_club_13wf05", // 32029289
     0x01f4fa30: "ghost_charred_named_dg_windsward_00", // 32832048
     0x01fa8086: "undead_pistoleer_named_12mb05", // 33194118
-    0x020b786e: "ancientguardian_mage_16bs07", // 34306158
-    0x020c0702: "barbary_lion_16bs09", // 34342658
-    0x0210abd3: "black_flag", // 34646995
+    0x020deab6: "wolf_white_45", // 34466486
     0x021a317d: "ck_spectral_lost_fire_10ws07", // 35271037
     0x021b884c: "corrupted_ogre_named_dg_restless_00", // 35358796
     0x021c5295: "damned_villager_cleaver_43", // 35410581
-    0x022c59f9: "legion_villager_hammer_16bs08a", // 36461049
+    0x0221adf5: "drowned_sailor_2h_axe_60_waveevent", // 35761653
+    0x0223ba7e: "wolf_black_51", // 35895934
     0x02382fa9: "dryad_archer_32", // 37236649
-    0x023db629: "waterfowl_16bs07", // 37598761
     0x02412a07: "evil_knight_spear_named_02bw07", // 37825031
     0x02558ec7: "skeleton_club_38", // 39161543
-    0x02593dda: "drowned_sailor_2h_axe_08qp02", // 39402970
     0x025a5ac0: "undead_pistoleer_64_elite", // 39475904
-    0x0266218b: "withered_grunt_11md08", // 40247691
-    0x026efe61: "skeleton_archer_13wf02a", // 40828513
-    0x02758247: "ghost_shipwrecked_16bs04", // 41255495
-    0x028353c3: "skeleton_crawler_61", // 42161091
+    0x026c2d5f: "damned_pistoleer_m-f_47", // 40643935
+    0x02710e5e: "wolf_elemental_ice_46", // 40963678
+    0x0275cebf: "ghost_shackled_35", // 41275071
+    0x02772ff1: "undead_javelineer_55", // 41365489
+    0x0280d0d6: "spriggan_adolescent", // 41996502
+    0x028108cb: "withered_swarmancer_minion", // 42010827
     0x02899f0d: "wolf_t4", // 42573581
-    0x02916438: "sheep_eastern_16bs11", // 43082808
     0x02ca5d75: "darkness_hive_membrane_dt5", // 46816629
     0x02cf18b1: "bear_black_27", // 47126705
     0x02e7ad9a: "evil_knight_bow_30", // 48737690
-    0x02e8af4d: "boar_strange_16bs05", // 48803661
     0x02ea7b9a: "drowned_sailor_1h_sword_shield_41", // 48921498
+    0x02f40a17: "damned_villager_pickaxe_39", // 49547799
+    0x0307fddd: "dynasty_maiden_named_lunarnewyear", // 50855389
     0x030af06d: "evil_knight_warhammer_29", // 51048557
     0x03167ff0: "ck_undead_navigator_10ws03c_named", // 51806192
     0x031f7c6f: "wolf_grey_39", // 52395119
     0x0326d7ed: "wolf_timber_48", // 52877293
-    0x0332ff9a: "withered_swarmancer_06sw08", // 53673882
-    0x03359b17: "undead_brute_02bw03a", // 53844759
     0x035390a1: "ghost", // 55808161
     0x035d966c: "ancientguardian_spearman_38", // 56465004
+    0x0365e630: "corruption_entity_minion_nagacorrupted", // 57009712
     0x03826224: "skeleton_officer_2h_spear", // 58876452
-    0x03879719: "bear_black_13wf04", // 59217689
+    0x039e26fd: "damned_longswordsman_commander_named_msq_thorpe", // 60696317
     0x039e3d6c: "ghost_shipwrecked_re3_named", // 60702060
-    0x039e5bcd: "turkey_11md10", // 60709837
-    0x03a312d4: "ghost_plagued_13wf08", // 61018836
     0x03a44359: "ck_undead_officer_10ws03b", // 61096793
     0x03a85fe5: "barbary_lion_66", // 61366245
+    0x03aa708b: "target_dummy_boss35", // 61501579
     0x03bdc169: "evil_knight_mace_19", // 62767465
-    0x03c1073d: "dryad_soldier_02bw04", // 62981949
-    0x03c4feac: "damned_villager_pickaxe_11md00j", // 63241900
-    0x03ca7f51: "legion_signifer_16bs08a", // 63602513
+    0x03cbbba7: "damned_villager_rake_51", // 63683495
     0x03d34acc: "desert_coyote_named_02", // 64178892
+    0x03d441dc: "spellbot_00", // 64242140
     0x03d539d1: "dunewalker_warmonger_warhammer_trial_soloplus", // 64305617
     0x03df5fdc: "damned_villager_lumberaxe_30", // 64970716
-    0x03ee06fe: "boar_13", // 65931006
-    0x03fea06c: "bleachwood", // 67018860
     0x03ffd1eb: "skeleton_archer_39", // 67097067
-    0x04027cd8: "anubianguardian_reaver_12bs10d", // 67271896
     0x04031789: "damned_acolyte_07sm06c_elite", // 67311497
+    0x0403eaac: "bearelemental_59", // 67365548
     0x040a11e0: "corrupted_leviathan", // 67768800
-    0x040d558a: "sand_elemental_soldier_16bs04", // 67982730
-    0x040dda49: "blight_fiend_08qp03", // 68016713
-    0x043ff282: "dynasty_heavy_08qp06", // 71299714
-    0x04400365: "legion_signifer_16bs06b", // 71304037
+    0x041341b8: "legion_villager_pickaxe_elite", // 68370872
+    0x0429e2f9: "totem_scorpion_nest_elite", // 69853945
     0x0443568f: "risen_whole_body_49", // 71521935
-    0x044488de: "damned_bowman_02bw05", // 71600350
-    0x04546430: "drowned_sailor_1h_sword_shield_39_15ec00", // 72639536
+    0x0447f9a4: "fl_hercyne_reindeer_09a_s17_waveevent", // 71825828
     0x04786c04: "undead_navigator_49", // 75000836
-    0x0483c2e7: "boar_17", // 75743975
     0x048f8f46: "fl_explosive_sprout_fire_09fl04", // 76517190
-    0x0493947b: "desert_coyote_16bs08a", // 76780667
     0x04a2f8cc: "risen_corruption_entity_07sm06a", // 77789388
+    0x04a67fbe: "damned_villager_rake_55", // 78020542
     0x04b1ffb2: "undead_pirate_brute_58", // 78774194
     0x04b29bc5: "damned_villager_lumberaxe_34", // 78814149
-    0x04c4127d: "skeleton_crawler_06sw05c", // 79958653
     0x04c4253e: "ck_undead_navigator_10ws08_gold", // 79963454
     0x04c59bfc: "barbary_lion_62", // 80059388
     0x04c98740: "ck_undead_officer_10ws03f", // 80316224
-    0x04d952ec: "skeleton_mage_10ws04", // 81351404
-    0x04f01d53: "legion_signifer_16bs09", // 82845011
-    0x04fad8be: "wolf_grey_12mb08", // 83548350
-    0x050e60dd: "dynasty_warrior_08qp06_elite", // 84828381
-    0x051f12d7: "turkey_48", // 85922519
+    0x04ca9262: "wolf_alpha_39", // 80384610
+    0x0501e946: "damned_pistoleer_m-f_43", // 84011334
+    0x0507580f: "sulfur_dragon_elite", // 84367375
+    0x05164d87: "damned_villager_kitchenknife_29", // 85347719
+    0x05180aa6: "ghost_shackled_31", // 85461670
+    0x051aebe8: "undead_javelineer_51", // 85650408
+    0x051cca47: "wolf_elemental_ice_42", // 85772871
     0x05324b70: "mountain_lion", // 87182192
-    0x05368d07: "bear_grizzly_06sw06", // 87461127
-    0x0544113d: "damned_villager_shovel_11md00h", // 88346941
+    0x05443993: "risen_corruption_entity_62", // 88357267
     0x05444a69: "skeleton_crawler_dg_everfall_00", // 88361577
     0x05450a8a: "ck_goldcursed_2hblunderbuss_10ws03a", // 88410762
-    0x05507230: "waterfowl_16bs03", // 89158192
-    0x0553dcc2: "legion_villager_skinning_knife_16bs08", // 89382082
-    0x0560985a: "damned_villager_pitchfork_16bs04", // 90216538
-    0x0566bc77: "ancientguardian_mage_16bs03", // 90618999
+    0x05602eaf: "wolf_white_41", // 90189487
+    0x056569cd: "corruption_heavy_62", // 90532301
     0x0566c868: "undead_berserker_24", // 90622056
-    0x056acd37: "risen_whole_body_12mb10a", // 90885431
+    0x0571968c: "damned_villager_cleaver_47", // 91330188
     0x05753c8e: "corruptedlegion_cyclops_loc_boss_00", // 91569294
-    0x057cde85: "swamp_fiend_05wc08", // 92069509
-    0x058545d7: "corruptedlegion_cyclops_16bs08d", // 92620247
-    0x05856b54: "boar_strange_16bs01", // 92629844
+    0x057eb5b9: "damned_cultist_isabella_msq2_named_03", // 92190137
+    0x058479bb: "skeleton_club_msq_defense_encounter", // 92567995
     0x05870477: "undead_grenadier_disease_25", // 92734583
     0x0587bf83: "drowned_sailor_1h_sword_shield_45", // 92782467
-    0x059e830d: "legion_axethrower_16bs07b", // 94274317
-    0x05a625cd: "legion_villager_hammer_16bs06b", // 94774733
+    0x0597f802: "drowned_miner_29", // 93845506
+    0x05a610c8: "desert_scorpion_impaler_medium_elite", // 94769352
     0x05a7996c: "darkness_hive_membrane_dt1", // 94869868
     0x05ac442b: "dynasty_maiden_dg_ebonscale_00", // 95175723
-    0x05aea583: "brightwatch", // 95331715
     0x05b4b4f0: "evil_knight_caster_27", // 95728880
     0x05cb10aa: "skeleton_1h_sword_28", // 97194154
     0x05d4b190: "tendril_corruption_dg_shattermtn_00", // 97825168
-    0x05da24d7: "withered_swarmancer_13wf03", // 98182359
-    0x05e15e39: "elk_doe_08qp04", // 98655801
     0x05ea964c: "ck_undead_grenadier_10ws09e_elite", // 99259980
-    0x05f64641: "upper_svikin", // 100025921
+    0x05ed1c06: "loot_goblin_fotb", // 99425286
     0x06281f22: "skeleton_crawler_38", // 103292706
-    0x063733d3: "corruption_entity_08qp06", // 104281043
     0x0638bfb0: "corruption_heavy_11md12_elite", // 104382384
-    0x0644aa26: "undead_grenadier_15ec02a", // 105163302
-    0x0647dda0: "undead_shaman_09fl07", // 105373088
+    0x06525ccf: "yeti", // 106061007
+    0x0656c026: "wolf_timber_7", // 106348582
     0x065a13a4: "fl_swamp_dryad_prowler_named_09fl03a", // 106566564
     0x065ed480: "ck_mountain_lion_spectral_10ws08", // 106878080
+    0x065f46f6: "damned_villager_pickaxe_60", // 106907382
     0x0667d9b3: "evil_knight_bow_named_09fl07", // 107469235
     0x066841da: "ghost_starved_named_00", // 107495898
+    0x0674c0aa: "ancientguardian_mage_minion_dg_everfall_00", // 108314794
     0x06863b6b: "swamp_dryad_shaman_named_dg_edengrove_00", // 109460331
     0x068a85ed: "anubianguardian_spearman_63", // 109741549
-    0x0697449f: "undead_pistoleer_named_12mb01", // 110576799
     0x069a9c69: "corruption_swarmer_07sm06b", // 110795881
-    0x069f0f31: "alligator_black_16bs11", // 111087409
     0x06a1f47b: "drowned_miner_5", // 111277179
     0x06b0d174: "damned_bowman_34", // 112251252
+    0x06b159e2: "damned_villager_skinning_knife_46", // 112286178
     0x06b9d614: "anubianguardian_brute_dg_brimstonesands_named_02", // 112842260
-    0x06bbd368: "barbary_lion_16bs09a", // 112972648
     0x06c95f15: "ancientguardian_javelineer_55", // 113860373
-    0x06d811bd: "damned_hound_43", // 114823613
-    0x06d99a2f: "turkey_15", // 114924079
+    0x06ceb12d: "wolf_minion_40", // 114209069
+    0x06df82c9: "corruption_swarmer_minion_restlessshores", // 115311305
     0x06f57237: "undead_gravedigger_27", // 116748855
     0x06f8bc8b: "fl_swamp_dryad_prowler_09fl10", // 116964491
     0x06f92b88: "skeleton_officer_2h_sword", // 116992904
+    0x06fec226: "skeleton_club_61", // 117359142
     0x0709a2c4: "drowned_sailor_1h_club_53", // 118072004
-    0x070edb52: "fl_beetle_09fl08", // 118414162
-    0x07133207: "drowned_miner_40_15ec00", // 118698503
-    0x071bd17e: "sheep_churro_46", // 119263614
-    0x072039a2: "corrupted_ogre_08qp08", // 119552418
-    0x07382838: "evil_knight_bow_03gc08", // 121120824
+    0x07212677: "ghost_shipwrecked_30", // 119613047
+    0x07214149: "damned_grunt_58", // 119619913
     0x07386961: "drowned_sailor_1h_sword_43", // 121137505
-    0x073ac861: "silverclaw", // 121292897
     0x073aebcf: "dryad_shaman", // 121301967
     0x073bcf2e: "damned_villager_shovel_40", // 121360174
-    0x0748a15e: "desert_scorpion_16bs11", // 122200414
-    0x074c2551: "rabbit_spotted_07sm09", // 122430801
-    0x07529cc2: "ghost_starved_05wc02", // 122854594
+    0x0746bc35: "fl_gorilla_ranged_elite_09fl12", // 122076213
+    0x0753e62a: "invasion_priest", // 122938922
     0x0755055c: "undead_grenadier_50", // 123012444
-    0x0755caa9: "jackrabbit_16bs02", // 123062953
-    0x075c1373: "undead_navigator_44_15ec00", // 123474803
-    0x0762b97b: "withered_swarmancer_12mb03b", // 123910523
+    0x075cbaae: "corrupted_mine_65_elite", // 123517614
     0x076d9999: "risen_regurgitator_6", // 124623257
     0x076f6ba9: "skeleton_spear_37", // 124742569
+    0x07721a0f: "dryad_soldier_62", // 124918287
     0x07829d75: "undead_grenadier_molotov_54", // 126000501
-    0x07856bb3: "undead_gravedigger_05wc02", // 126184371
     0x0785de77: "risen_whole_body_14", // 126213751
     0x078da23b: "drowned_sailor_2h_axe_44", // 126722619
-    0x079d593a: "desert_scorpion_sulfur_16bs06", // 127752506
+    0x078e21a1: "ghost_plagued_46", // 126755233
+    0x07922dcb: "ghost_starved_36", // 127020491
     0x07a0471d: "ghost_shipwrecked_named_01", // 127944477
-    0x07a18e37: "pig_domestic_39", // 128028215
-    0x07a266b1: "elk_doe_30", // 128083633
-    0x07a91c4b: "damned_villager_skinning_knife_08qp01", // 128523339
     0x07aed94b: "alligator_black_45", // 128899403
-    0x07afa68b: "rabbit_spotted_28", // 128951947
-    0x07b6e526: "withered_beetle_12mb10c", // 129426726
-    0x07c4d50f: "undead_officer_12mb01", // 130340111
+    0x07b4308e: "wolf_grey_60", // 129249422
+    0x07bee4fc: "undead_navigator_14", // 129950972
     0x07c7290f: "undead_gravedigger_13wf08a", // 130492687
     0x07c8c25e: "dryad_archer_named_02", // 130597470
     0x07d264a3: "undead_officer_41", // 131228835
-    0x07dabbdf: "wolf_alpha_05wc09", // 131775455
-    0x07f339d1: "legion_legionnaire_16bs07b", // 133380561
+    0x07df91bc: "primal_lion_43", // 132092348
+    0x07e262a0: "fl_gorilla_ice", // 132276896
     0x07f4707d: "evil_knight_caster_dg_greatcleave01_00", // 133460093
     0x07f6da8d: "ancientguardian_spearman_61", // 133618317
     0x07ff8692: "skeleton_spear_dg_greatcleave_01", // 134186642
+    0x08096c97: "damned_2h_spearman_m-f_57", // 134835351
     0x0817c2e6: "fl_mammoth_nature_elite_09fl01", // 135774950
     0x08279e19: "bearelemental_named_05wc03", // 136814105
-    0x08452022: "sulfur_lizard_16bs12", // 138747938
+    0x083cdc35: "fl_ancientguardian_mage_minion_09fl06", // 138206261
     0x0848eb7a: "dryad_archer_63", // 138996602
+    0x084b513e: "desert_scorpion_impaler_sandworm_intro", // 139153726
     0x085ac03d: "ck_bobcat_10ws07", // 140165181
     0x08659388: "undead_officer_12mb01d", // 140874632
-    0x0867efb5: "arcturian", // 141029301
     0x0869b576: "dynasty_musketeer_dg_shattermtn_00", // 141145462
     0x08701b44: "boar_strange", // 141564740
     0x087094ef: "undead_hunter_24", // 141595887
     0x08728186: "anubianguardian_panther_named_04", // 141721990
-    0x08799d4d: "ancientguardian_javelineer_09fl06", // 142187853
+    0x08820b55: "swamp_dryad_beast_named_05wc06_waveevent", // 142740309
+    0x0898463d: "legion_villager_ladel_elite", // 144197181
     0x089abf49: "drowned_sailor_1h_sword_shield_10", // 144359241
-    0x089ba8b4: "evil_knight_hound_10ws04", // 144418996
-    0x089ee9fa: "legion_legionnaire_16bs04", // 144632314
-    0x08a6630a: "bison_20", // 145122058
     0x08ae9240: "undead_berserker_admiral_minion", // 145658432
     0x08af2164: "undead_pistoleer_32", // 145695076
     0x08af2b0b: "damned_greathammer_named_01", // 145697547
+    0x08b0a2f6: "season_02_sulfur_elemental_heavy_eventboss", // 145793782
     0x08b2ea8d: "lynx_57", // 145943181
     0x08b3c9e8: "ghost_starved_named_08", // 146000360
-    0x08b73f39: "legion_axethrower_16bs04", // 146227001
-    0x08bf8474: "weeper", // 146769012
     0x08c33ffb: "damned_villager_hammer_45", // 147013627
-    0x08d48af2: "damned_villager_shovel_16bs08c", // 148146930
-    0x08dd1625: "anubianguardian_reaver_12bs05a", // 148706853
     0x08e74249: "damned_rifleman_m-f_dg_ebonscale_00", // 149373513
     0x08ed1af2: "damned_1h_swordsman_m-f_54", // 149756658
-    0x08f39710: "skeleton_crawler_30", // 150181648
     0x08f8ad90: "ck_drowned_miner_10ws03", // 150515088
-    0x090133ed: "wolf_alpha_05wc01", // 151073773
     0x0909ec91: "undead_officer_49", // 151645329
     0x09188727: "destructiblesupplies_a_12mb04", // 152602407
-    0x0924aa03: "legion_villager_skinning_knife_65", // 153397763
     0x09282706: "ck_blackbone_lost_1hsword_10ws07", // 153626374
-    0x092d070a: "skeleton_spear_11md00e", // 153945866
     0x09341c96: "hercyne_corvid_raid_cutlasskeys_00", // 154410134
-    0x093a15c3: "drowned_miner_12mb01a", // 154801603
-    0x095ac35a: "damned_villager_kitchenknife_10ws07", // 156943194
-    0x0979ee83: "elk_doe_38", // 158985859
+    0x095fb8e7: "dynasty_warrior_54", // 157268199
+    0x0969243b: "wolf_alpha_named_waveeventboss", // 157885499
     0x097a0605: "pig_domestic_31", // 158991877
     0x098dbe92: "totem_pirate_cursed_59", // 160284306
+    0x098dfd4a: "drowned_sailor_1h_sword_shield_59_waveevent", // 160300362
     0x098e8d6e: "undead_grenadier_58", // 160337262
-    0x09a13fe6: "skeleton_mage_11md00a", // 161562598
+    0x0992dd46: "withered_grunt_54", // 160619846
+    0x099d2ed4: "undead_admiral_brute_siegeweaponsmall", // 161296084
+    0x09af9b0f: "damned_villager_lumberaxe_61", // 162503439
     0x09b10e8c: "damned_villager_ladel_52", // 162598540
-    0x09b2dcac: "dryad_prowler_14ac15", // 162716844
-    0x09bc2bb8: "undead_sailor_1h_sword_shield_05wc06", // 163326904
-    0x09bf0c1c: "wolf_black_13wf03", // 163515420
     0x09bfa7c8: "fl_gorilla_melee_elite_named_09fl12", // 163555272
-    0x09c87307: "bloated_corpse_27", // 164131591
-    0x09ca2d13: "skeleton_archer_12mb02", // 164244755
     0x09da271b: "fl_hercyne_corvid_09fl02", // 165291803
     0x09db2916: "damned_greataxeman_m-f_named_dg_shattermtn_00", // 165357846
-    0x09dd7519: "ancient_amalgam_16bs10", // 165508377
     0x09deb97b: "drowned_sailor_1h_club_22_elite", // 165591419
-    0x09e3e157: "dynasty_warrior_08qp04", // 165929303
+    0x09df3eee: "wolf_minion_9", // 165625582
+    0x09e0471c: "damned_villager_shovel_48", // 165693212
     0x09e5c8d3: "withered_brute_16", // 166054099
-    0x09e61ca2: "anubianguardian_brute_67_elite_named_01", // 166075554
     0x09e64518: "risen_l-r_arm_33", // 166085912
-    0x09e7ab20: "skeleton_crawler_11md06c", // 166177568
     0x09e9ab94: "dynasty_trainee_dg_ebonscale_00", // 166308756
-    0x0a02f70d: "predator", // 167966477
+    0x09faae45: "ghost_shipwrecked_38", // 167423557
     0x0a06d1b4: "sheep_churro_13", // 168219060
+    0x0a0842c2: "dynasty_spearman_53", // 168313538
     0x0a08a9ce: "risen_regurgitator_61", // 168339918
+    0x0a111a50: "wolf_alpha_31", // 168893008
+    0x0a1d73b9: "alligator_strange_41", // 169702329
     0x0a201dc9: "damned_cultist_dt4", // 169876937
-    0x0a21508c: "wolf_grey_12mb00", // 169955468
-    0x0a2b9561: "legion_signifer_16bs01", // 170628449
+    0x0a293007: "dryad_shaman_42", // 170471431
     0x0a393c4a: "undead_officer_named_06", // 171523146
-    0x0a3ab0e7: "undead_officer_06sw02", // 171618535
     0x0a3beef0: "bobcat_26", // 171699952
-    0x0a3bf555: "sulfur_dragon_16bs07", // 171701589
-    0x0a45c4ec: "skeleton_spear_11md07", // 172344556
     0x0a499dc0: "skeleton_archer_35", // 172596672
     0x0a4fc939: "fl_anubianguardian_spearman_09fl06", // 173001017
-    0x0a66f199: "goat_mountain_16bs12", // 174518681
+    0x0a53addb: "lost_merc_bow", // 173256155
+    0x0a682056: "damned_villager_pitchfork_26", // 174596182
+    0x0a7030dc: "risen_whole_body_named_12mb06_00", // 175124700
     0x0a726b63: "skeleton_spear_62", // 175270755
     0x0a81982f: "anubianguardian_horus_67", // 176265263
-    0x0a8198d5: "damned_villager_lumberaxe_08qp01", // 176265429
-    0x0a87a3a8: "withered_swarmancer_09fl05b", // 176661416
-    0x0a904878: "skeleton_club_13wf02b", // 177227896
+    0x0a8f2d01: "ghost_starved_63", // 177155329
     0x0a909bc6: "wolf_timber_44", // 177249222
     0x0a90a2f1: "drowned_sailor_2h_axe_11", // 177251057
     0x0a932f70: "ck_blackbone_lost_2haxe_10ws03b", // 177418096
     0x0a979556: "ghost_plagued_named_05", // 177706326
     0x0a98debd: "risen_whole_body_41", // 177790653
-    0x0a9a2c66: "unstable_swamp_fiend_05wc04", // 177876070
-    0x0aa0d3d6: "ghost_starved_15ec01a", // 178312150
     0x0aa3e436: "undead_navigator_41", // 178512950
+    0x0aa93044: "wolf_grey_35", // 178860100
     0x0abcbc46: "evil_knight_warhammer_25", // 180141126
     0x0ac2d0ce: "ck_undead_grenadier_molotov", // 180539598
-    0x0ac385cd: "withered_swarmancer_04nw10c", // 180585933
     0x0ac8ad5b: "dunewalker_wanderer_longsword", // 180923739
-    0x0aca1e05: "skeleton_2h_sword_13wf02", // 181018117
-    0x0ad8e7e2: "wolf_timber_0403_0201_waveeventeasy", // 181987298
-    0x0adca7de: "evil_knight_spear_10ws04", // 182233054
-    0x0ade768d: "unhallowed", // 182351501
-    0x0ae705c8: "valleyrend", // 182912456
+    0x0ad8629e: "bearelemental_51", // 181953182
+    0x0add276d: "damned_cultist_42", // 182265709
+    0x0ae1a23f: "swamp_dryad_prowler", // 182559295
     0x0aebbc24: "mountain_lion_53", // 183221284
+    0x0aebda47: "ancientguardian_spearman_34", // 183228999
     0x0af85374: "ck_skeleton_archer_10ws04_gold", // 184046452
-    0x0b0a1b19: "undead_berserker_06sw02", // 185211673
     0x0b109898: "skeleton_1h_sword_20", // 185637016
+    0x0b2567fb: "legion_legionnaire_62_spawn", // 187000827
+    0x0b33c66b: "target_dummy_onemillion", // 187942507
     0x0b3b11a7: "ck_goldcursed_2hspear_10ws10", // 188420519
-    0x0b41fbb0: "evil_knight_longsword_10ws04", // 188873648
     0x0b42463c: "damned_villager_pickaxe_35", // 188892732
-    0x0b5ee366: "boar_strange_16bs09", // 190767974
+    0x0b5fab5f: "damned_villager_sickle_27", // 190819167
     0x0b6051d7: "primal_lion_10ws01_elite", // 190861783
     0x0b642f1f: "ck_lost_2h_pickaxe_10ws02_pirates_stand", // 191115039
     0x0b66b377: "damned_axeman_m-f_03gc06", // 191279991
     0x0b6e15af: "turkey_vulture_67", // 191763887
-    0x0b6e49c5: "legion_villager_kitchenknife_16bs08c", // 191777221
     0x0b76b48e: "evil_knight_greataxe_26", // 192328846
-    0x0b7bc002: "elk_stag_corrupted_07sm05a", // 192659458
-    0x0b93714e: "mindstruck", // 194212174
+    0x0b8876ab: "dryad_prowler_42", // 193492651
     0x0b999565: "evil_knight_heavy_named_08qp02", // 194614629
-    0x0ba2f4dd: "withered_swarmancer_15ec03a", // 195228893
-    0x0ba3978b: "ancient_guardian_reaver_03gc10c", // 195270539
     0x0ba3b7a5: "fl_rat_hercynerat_named_09fl05", // 195278757
-    0x0bb40e9e: "evil_knight_hound_32", // 196349598
+    0x0badd1be: "damned_bowman_61", // 195940798
     0x0bb60076: "swamp_dryad_archer_named_dg_edengrove_01", // 196477046
-    0x0bba4b29: "barbary_lion_16bs05", // 196758313
+    0x0bbba69d: "wolf_white_49", // 196847261
     0x0bbbd6bb: "fl_anubianguardian_horus_09fl01", // 196859579
     0x0bc054cd: "ancientguardian_greatsword_icevariant_raid10_named", // 197153997
     0x0bc163da: "undead_javelineer_59", // 197223386
     0x0bc2a52d: "ck_alligator_black_named_10ws08_fort", // 197305645
-    0x0bc3ce6c: "ghost_shipwrecked_16bs08", // 197381740
-    0x0bc49ae5: "turkey_40", // 197434085
-    0x0bd0b804: "sand_elemental_soldier_16bs04c", // 198227972
-    0x0bdfb655: "soulmend", // 199210581
+    0x0bc38294: "ghost_shackled_39", // 197362324
+    0x0bd3b1e7: "wolf_minion_15", // 198423015
+    0x0bdb48b4: "bear_corrupted_dt1", // 198920372
+    0x0be3c2ec: "skeleton_club_34", // 199475948
+    0x0beca11a: "damned_greataxeman_m-f_52", // 200057114
     0x0bf9c1da: "ancient_guardian_mage_named_09a_s7", // 200917466
     0x0c00eb61: "elk_corrupted_dt4", // 201386849
-    0x0c03d1b6: "turkey_vulture_63", // 201576886
-    0x0c071b84: "skeleton_archer_13wf02", // 201792388
-    0x0c1aabe6: "evil_knight_greataxe_s4", // 203074534
+    0x0c13f53a: "undead_berserker_12mb06c_named", // 202634554
     0x0c1b7097: "evil_knight_greataxe_22", // 203124887
-    0x0c2e1ab2: "southguard", // 204348082
+    0x0c21b429: "drowned_miner_25", // 203535401
     0x0c2f8225: "damned_villager_pickaxe_31", // 204440101
     0x0c31485c: "undead_grenadier_disease_29", // 204556380
     0x0c31f3a8: "drowned_sailor_1h_sword_shield_49", // 204600232
     0x0c38865b: "or_undead_brute", // 205031003
-    0x0c3bac0a: "bloated_corpse_05wc02", // 205237258
     0x0c4abc00: "evil_knight_warhammer_elite", // 206224384
     0x0c5114ca: "ghost_frozen", // 206640330
     0x0c5b5e23: "bear_black_34_elite", // 207314467
+    0x0c6c02c4: "sulfur_elemental_entity_spawn", // 208405188
     0x0c7d5c81: "skeleton_1h_sword_24", // 209542273
-    0x0c81914e: "risen_whole_body_12mb05", // 209817934
-    0x0c84f433: "fl_ancient_amalgam_named_09fl01", // 210039859
+    0x0c816503: "damned_greataxeman_m-f_56", // 209806595
     0x0c86f67f: "fl_anubianguardian_brute_named_09a_m7_waveevent", // 210171519
     0x0c89c5c5: "ck_lost_2h_pickaxe_10ws02_sable_prison", // 210355653
     0x0c8e06f5: "skeleton_club_30", // 210634485
     0x0c966b3a: "skeleton_2h_sword_27", // 211184442
-    0x0c9c8ddd: "skeleton_1h_club_11md06a", // 211586525
-    0x0ca95efc: "turkey_44", // 212426492
+    0x0ca001ac: "damned_villager_kitchenknife_25", // 211812780
+    0x0cb68cad: "bear_corrupted_dt5", // 213290157
     0x0cbdf536: "invasion_voiddestroyer_eye", // 213775670
     0x0cbe75fe: "wolf_minion_11", // 213808638
-    0x0cd6d471: "damned_villager_pitchfork_16bs08", // 215405681
-    0x0cd78f30: "barbary_lion_16bs01", // 215453488
-    0x0cd90266: "withered_beetle_10ws03", // 215548518
     0x0ce25081: "damned_priest_dg_shattermtn_00", // 216158337
-    0x0ce590e9: "legion_villager_skinning_knife_16bs04", // 216371433
-    0x0d02ca60: "elk_stag_12mb10", // 218286688
-    0x0d05de78: "bear_grizzly_13wf05", // 218488440
-    0x0d0928d7: "drowned_sailor_1h_sword_12mb01", // 218704087
+    0x0ce5b2b2: "dryad_prowler_46", // 216380082
+    0x0cf8324c: "wolf_black_59", // 217592396
+    0x0d04d7ee: "damned_villager_lumberaxe_38", // 218421230
     0x0d0f4a8d: "corrupted_ogre_07sm04_elite", // 219105933
+    0x0d103395: "damned_villager_rake_59", // 219165589
+    0x0d12b3a7: "anubian_scarab_60", // 219329447
     0x0d2459d9: "skeleton_archer_31", // 220486105
     0x0d39c36d: "fl_explosive_sprout_fire_09fl08", // 221889389
-    0x0d465178: "legion_signifer_16bs05", // 222712184
+    0x0d44f41e: "dryad_shaman_46", // 222622750
     0x0d48adb2: "drowned_sailor_1h_sword_12", // 222866866
-    0x0d4c9495: "wolf_grey_12mb04", // 223122581
+    0x0d49ed63: "risen_whole_body_dg_windsward_00_minion", // 222948707
     0x0d51e2a4: "ghost_shipwrecked_61", // 223470244
     0x0d54f853: "undead_officer_named_02", // 223672403
-    0x0d56314c: "sulfur_dragon_16bs03", // 223752524
-    0x0d62a295: "damned_acolyte_04nw08", // 224567957
-    0x0d6e1bdd: "sand_elemental_shaman_s02", // 225319901
+    0x0d5fe84d: "damned_1h_swordsman_m-f_minion", // 224389197
+    0x0d6586db: "dynasty_spearman_57", // 224757467
+    0x0d6f6faf: "season_02_event_sulfur_elemental_heavy_wave_4", // 225406895
+    0x0d70b7a0: "alligator_strange_45", // 225490848
+    0x0d7cde49: "wolf_alpha_35", // 226287177
     0x0d86783d: "mountain_lion_57", // 226916413
-    0x0d935f20: "risen_regurgitator_12mb03a", // 227761952
-    0x0d991a6a: "undead_navigator_43_15ec00", // 228137578
     0x0d9c16c3: "bearelemental_65_elite", // 228333251
     0x0da4287b: "blight_fiend_named_13wf02a_02", // 228862075
     0x0da7ec36: "damned_grunt_dg_greatcleave_00", // 229108790
     0x0dac1e92: "legion_legionnaire_loc_boss", // 229383826
-    0x0dbb19a1: "sand_elemental_soldier_16bs08", // 230365601
-    0x0dc624b7: "swamp_dryad_soldier_named_00", // 231089335
+    0x0db0e374: "damned_cultist_46", // 229696372
+    0x0db5a687: "bearelemental_55", // 230008455
+    0x0db8085a: "legion_sagittarii_dg_brimstonesands_minion", // 230164570
+    0x0dc4f45d: "wolf_grey_31", // 231011421
     0x0dc69b4c: "ck_blackbone_lost_2haxe_10ws02_pirates_stand", // 231119692
-    0x0dc9e203: "dynasty_summoner_08qp01a", // 231334403
-    0x0dcb114f: "risen_l-r_arm_09fl05a", // 231412047
     0x0dce202f: "undead_navigator_45", // 231612463
     0x0dced05a: "fl_dg_firstlight_01_gorilla_ice", // 231657562
-    0x0dd00ae7: "damned_axeman_m-f_07sm05c", // 231738087
-    0x0dd2a262: "elk_doe_61", // 231907938
-    0x0de44357: "bobcat_11md07", // 233063255
-    0x0de460fe: "undead_hunter_13wf08", // 233070846
     0x0dec5c36: "anubianguardian_horus_63", // 233593910
     0x0df51aa4: "risen_whole_body_45", // 234166948
+    0x0df9b5f4: "dynasty_empress_solo_pedestal", // 234468852
     0x0dfa514f: "ghost_plagued_named_01", // 234508623
-    0x0dfb14a3: "haunted", // 234558627
     0x0dfd5fdf: "wolf_timber_40", // 234708959
     0x0dfd66e8: "drowned_sailor_2h_axe_15", // 234710760
     0x0e04f645: "damned_rifleman_m-f_dg_shattermtn_00", // 235206213
+    0x0e050765: "fl_ai_adiana_lotus", // 235210597
     0x0e08a8d7: "undead_navigator_18", // 235448535
     0x0e13bb23: "risen_whole_body_7", // 236174115
     0x0e189560: "alligator_black_49", // 236492128
-    0x0e1b1b29: "undead_javelineer_02bw01", // 236657449
     0x0e1bf0f7: "fl_alligator_09fl11", // 236712183
     0x0e22667e: "hercyne_wolf_alpha_raid_cutlasskeys_00", // 237135486
     0x0e26bd0e: "damned_villager_shovel_03gc07", // 237419790
-    0x0e28b3d1: "risen_regurgitator_09fl04", // 237548497
+    0x0e327cfe: "dynasty_warrior_50", // 238189822
     0x0e33925c: "risen_whole_body_18", // 238260828
     0x0e34d15e: "undead_grenadier_molotov_58", // 238342494
+    0x0e3b1fb4: "swamp_dryad_soldier_59_waveevent", // 238755764
     0x0e3bee10: "drowned_sailor_2h_axe_48", // 238808592
-    0x0e40c313: "skeleton_spear_11md00a", // 239125267
+    0x0e41598f: "corrupted_leviathan_eyeball", // 239163791
     0x0e43e116: "fl_rabbit_infested_09fl02a", // 239329558
     0x0e53e94f: "dunewalker_waterseeker_lifestaff", // 240380239
-    0x0e544aa3: "undead_berserker_41_15ec00", // 240405155
+    0x0e8b8101: "risen_l-r_arm_37", // 244023553
+    0x0ea3dfa7: "evil_knight_warhammer_icevariant_named", // 245620647
     0x0ea3e52f: "risen_regurgitator_38", // 245622063
     0x0ea5b71e: "bloated_corpse_23", // 245741342
     0x0eacfad9: "rabbit_snowshoe_3", // 246217433
-    0x0eb62d0f: "skeleton_club_06sw02", // 246820111
-    0x0eb6ae90: "bobcat_16bs11", // 246853264
     0x0eb89779: "fl_beetle_09fl04", // 246978425
+    0x0ebce45e: "wolf_elemental_earth_26", // 247260254
+    0x0ec25f16: "damned_villager_lumberaxe_65", // 247619350
     0x0ec52a52: "wolf_white_03gc06", // 247802450
-    0x0eccfbff: "skeleton_mage_11md00e", // 248314879
-    0x0eff71b0: "desert_small_scorpion_16bs12", // 251621808
-    0x0f0248e4: "undead_shaman_08qp05a", // 251807972
+    0x0edcca95: "damned_villager_ladel_56", // 249350805
+    0x0ef24180: "drowned_sailor_2h_axe_59_waveevent", // 250757504
+    0x0eff195f: "withered_grunt_50", // 251599199
+    0x0f009669: "season_02_sulfur_elemental_shaman_eventboss", // 251696745
+    0x0f01525f: "damned_villager_cleaver_16", // 251744863
     0x0f03530a: "withered_brute_named_10ws07", // 251876106
-    0x0f072892: "skeleton_2h_sword_12mb02", // 252127378
+    0x0f069d5f: "damned_bowman_38", // 252091743
+    0x0f17b850: "drowned_miner_9", // 253212752
     0x0f1f459f: "anubianguardian_panther_named_00", // 253707679
-    0x0f3a15e4: "starbound", // 255464932
     0x0f419704: "ck_spectral_lost_2haxe_q4_waveevent", // 255956740
     0x0f456bb6: "ck_undead_officer_10ws03b_named", // 256207798
-    0x0f48993e: "legion_legionnaire_ethereal_16bs08c", // 256416062
-    0x0f5fab95: "elder", // 257928085
+    0x0f64a88e: "damned_2h_spearman_m-f_53", // 258254990
     0x0f68ce75: "ghost_shackled_60", // 258526837
     0x0f7f133e: "ancientguardian_javelineer_59", // 259986238
     0x0f80deeb: "damned_1h_swordsman_m-f_50", // 260103915
+    0x0fa2c0a2: "evil_knight_warhammer", // 262324386
     0x0faefbe2: "damned_villager_hammer_41", // 263125986
-    0x0fb1ac55: "dryad_soldier_14ac12a", // 263302229
     0x0fb5d57f: "dynasty_warrior_dg_shattermtn_00", // 263574911
     0x0fb8a8d9: "ck_spectral_lost_2haxe_named_10ws10", // 263760089
-    0x0fc27cc4: "dune_phantom_tank_16bs10", // 264404164
     0x0fc2e57d: "undead_pistoleer_36", // 264430973
-    0x0fcfcf5b: "damned_villager_hammer_03gc05b", // 265277275
-    0x0fd25e06: "reinforced", // 265444870
+    0x0fca69f4: "evil_knight_mace_named_waveevent", // 264923636
     0x0fdc8b87: "drowned_sailor_1h_club_dg_cutlass_00", // 266111879
     0x0fdf2e94: "lynx_53", // 266284692
     0x0ff77b50: "drowned_sailor_1h_sword_shield_14", // 267877200
-    0x0ffb22b7: "bison_strange_59", // 268116663
     0x10043844: "ancientguardian_mage_msq_named_01", // 268712004
-    0x100b50e5: "damned_villager_knife_16", // 269177061
     0x100c3258: "fl_chameleon_09fl04b", // 269234776
     0x1010f2eb: "anubianguardian_archer_63", // 269546219
     0x1012ddd0: "undead_officer_59", // 269671888
-    0x1019edc1: "withered_beetle_11md07", // 270134721
     0x102486b3: "ck_skeleton_2h_sword_10ws04_gold", // 270829235
     0x102ba5a2: "damned_villager_sickle_03gc05", // 271295906
     0x102bc944: "fl_megaflora_razorlotus_leaves", // 271305028
     0x10373373: "ck_drowned_sailor_2h_axe_10ws06_tide", // 272053107
-    0x1038cf31: "rabbit_snowshoe", // 272158513
-    0x1051cf9b: "undead_navigator_12mb06c_named_elite", // 273797019
     0x10613744: "pig_domestic_21", // 274806596
-    0x1062dfc2: "elk_doe_28", // 274915266
-    0x106f1ff8: "rabbit_spotted_30", // 275718136
-    0x10812d50: "drowned_sailor_1h_sword_08qp02", // 276901200
-    0x1085f36c: "boar_52", // 277214060
-    0x1088182d: "desert_scorpion_16bs09", // 277354541
-    0x108984e8: "desert_small_scorpion_16bs06", // 277447912
     0x1089ec07: "withered_grunt_44", // 277474311
     0x1095bc2f: "undead_grenadier_48", // 278248495
     0x1096ecc5: "undead_navigator_64_elite", // 278326469
-    0x10b026ea: "damned_hound_13wf05", // 279979754
-    0x10b03545: "dynasty_summoner_named_08qp06", // 279983429
-    0x10c05bc8: "bobcat_16bs05", // 281041864
+    0x10aa3fcd: "damned_villager_ladel_42", // 279592909
     0x10ca1106: "wolf_elemental_earth_32", // 281678086
-    0x10ce6221: "fl_beetle_09fl10", // 281960993
     0x10d33013: "ck_peacock_10ws06", // 282275859
-    0x10d34246: "bloated_corpse_37", // 282280518
-    0x10ea52a1: "evil_knight_longsword_14ac13", // 283792033
+    0x10e19f04: "ghost_shipwrecked_28", // 283221764
     0x10f4cfb0: "fl_dh_mammoth_lightning_named", // 284479408
+    0x10fb765d: "damned_villager_shovel_58", // 284915293
     0x10fd7459: "risen_l-r_arm_23", // 285045849
     0x11095e93: "ck_blackbone_lost_2haxe_10ws03b_named", // 285826707
+    0x11125dd6: "damned_2h_spearman_m-f_47", // 286416342
     0x11159f4a: "fl_mammoth_nature_elite_named_09fl01", // 286629706
     0x11175c36: "fl_explosive_sprout_poison_09fl08", // 286743606
-    0x111fd5a5: "dune_phantom_tank_16bs04a", // 287298981
     0x1120b0d4: "ck_blackbone_lost_2hblunderbuss_10ws02_highpass_named", // 287355092
-    0x1124acf0: "bobcat_10ws03", // 287616240
     0x112af4e6: "dynasty_spearman_dg_greatcleave_00", // 288027878
     0x112c5276: "corruption_heavy_named_dg_restless_01", // 288117366
+    0x112d3e50: "skeleton_club_23_enc_04a_side02_perseus", // 288177744
     0x113805f8: "fl_swamp_dryad_prowler_09fl08", // 288884216
-    0x1144e990: "undead_hunter_02bw07", // 289728912
     0x115aa764: "skeleton_archer_dg_everfall_00", // 291153764
-    0x115e1163: "sulfur_lizard_16bs02", // 291377507
-    0x115fb642: "alligator_black_16bs09", // 291485250
-    0x116063d7: "waterlogged", // 291529687
     0x1160f9e3: "undead_berserker_61", // 291568099
     0x1162a4b8: "bear_black_08qp06b", // 291677368
     0x11691e62: "fl_barbary_lion_named_09fl09", // 292101730
-    0x116b1f1d: "elk_stag_41", // 292232989
+    0x116a5e4f: "boar_stripped_32", // 292183631
     0x116ba5ae: "undead_hunter_34", // 292267438
-    0x11770ecf: "evil_knight_spear_14ac13", // 293015247
     0x118135fc: "undead_grenadier_disease_60", // 293680636
+    0x118bb16e: "drowned_sailor_1h_sword_shield_7", // 294367598
     0x11903c5c: "ck_undead_pirate_brute_10ws03c2_named", // 294665308
     0x11a00538: "boar_stripped_10ws08", // 295699768
     0x11a4ed23: "bear_black_66", // 296021283
+    0x11a9dbcc: "lynx_47", // 296344524
     0x11b41025: "undead_pistoleer_22", // 297013285
-    0x11b4899c: "dune_phantom_tank_16bs04", // 297044380
     0x11bbe0c1: "damned_villager_axethrower_m-f_34", // 297525441
-    0x11c2d95a: "undead_pistoleer_15ec04c", // 297982298
     0x11c77511: "damned_priest_named_07sm06a_elite", // 298284305
-    0x11c7de67: "damned_bowman_m-f_07sm01", // 298311271
     0x11cca8a8: "ancientguardian_spearman_icevariant_raid10", // 298625192
     0x11d12fab: "fl_mammoth_ice_elite_named_09fl12", // 298921899
-    0x11de7602: "drowned_sailor_1h_sword_shield_37_15ec00", // 299791874
-    0x11e8a651: "skeleton_crawler_20", // 300459601
-    0x11ecab51: "dynasty_spearman_08qp02", // 300723025
-    0x11f0bd6b: "brackwater", // 300989803
+    0x11d80eba: "damned_villager_hammer_55", // 299372218
+    0x11e4a9a3: "wolf_minion", // 300198307
     0x11f0c7ce: "fl_chameleon_named_09fl09b", // 300992462
     0x11f62bb3: "damned_1h_swordsman_m-f_44", // 301345715
-    0x11f7216d: "desert_scorpion_impaler_16bs04c", // 301408621
-    0x12099109: "damned_bowman_m-f_07sm05c1", // 302616841
     0x120ba9d9: "skeleton_1h_sword_30", // 302754265
     0x1224cead: "ancientguardian_mage_42", // 304402093
-    0x122b275f: "dune_phantom_huntress_16bs07", // 304818015
     0x1236ece0: "evil_knight_mace_named_10ws04", // 305589472
-    0x123addbd: "dunewalker_warmonger_warhammer_bloodofsands_n1", // 305847741
-    0x123f322d: "damned_acolyte_07sm05c", // 306131501
     0x1242ebee: "drowned_sailor_1h_sword_shield_12mb01b", // 306375662
-    0x124bfd37: "anubianguardian_horus_67_elite", // 306969911
+    0x12449a1e: "damned_villager_sickle_37", // 306485790
+    0x124a3eb6: "ghost_charred_61", // 306855606
     0x12506def: "ghost_plagued_08qp07", // 307260911
     0x12540e51: "damned_hound_named_00", // 307498577
+    0x12574171: "drowned_miner_31", // 307708273
     0x1259777d: "damned_villager_pickaxe_25", // 307853181
-    0x12861bf5: "stonereach", // 310778869
     0x129347ea: "dryad_prowler_52", // 311642090
-    0x129365b1: "legion_villager_skinning_knife_16bs10", // 311649713
-    0x1293f819: "risen_regurgitator_11md00j", // 311687193
     0x12a02230: "fl_explosive_sprout_poison_09fl04b", // 312484400
-    0x12a16e72: "drowned_sailor_2h_axe_15ec04e", // 312569458
+    0x12a097dc: "wolf_white_59", // 312514524
     0x12af29a7: "dryad_soldier", // 313469351
     0x12b13333: "fl_swamp_dryad_archer_09fl03", // 313602867
     0x12b6e0b6: "corruption_impaler_dg_restless_00", // 313974966
-    0x12ba0491: "pig_domestic_11md07", // 314180753
     0x12c04bd0: "legion_axethrower_m-f_63", // 314592208
     0x12c128ea: "rabbit_snowshoe_20", // 314648810
-    0x12dfaba4: "turkey_50", // 316648356
+    0x12d6f4f4: "damned_villager_kitchenknife_31", // 316077300
+    0x12d8b3d5: "ghost_shackled_29", // 316191701
+    0x12da529b: "undead_javelineer_49", // 316297883
     0x12e09e62: "skeleton_2h_sword_33", // 316710498
     0x12e0d85c: "evil_knight_mace_dg_greatcleave_00_00", // 316725340
-    0x12ed7b76: "ebonsoul", // 317553526
+    0x12e9dd85: "undead_pistoleer_12mb01c_boat", // 317316485
     0x12f1210b: "corrupted_sailor_1h_sword", // 317792523
     0x12f343bc: "undead_gravedigger_62", // 317932476
-    0x12f6b34a: "dunewalker_wanderer_rapier_bloodofsands_n3", // 318157642
+    0x12f7905b: "damned_greataxeman_m-f_42", // 318214235
     0x12f8f3ad: "skeleton_club_24", // 318305197
-    0x130170d8: "swamp_tendril_dryad_named_05wc04", // 318861528
+    0x12fea57a: "legion_villager_kitchenknife_elite", // 318678394
     0x130642f8: "alligator_strange_51", // 319177464
     0x130a2b11: "wolf_alpha_21", // 319433489
     0x130d772d: "corrupted_sailor_starterbeach_named_00", // 319649581
     0x1320dfb1: "bobcat_36", // 320921521
     0x13233db9: "ck_blackbone_lost_2hspear_named_10ws09_elite", // 321076665
-    0x133001a5: "evil_knight_hound_14ac13", // 321913253
-    0x1330a420: "legion_signifer_16bs11", // 321954848
     0x13320146: "dryad_shaman_52", // 322044230
-    0x133a61cd: "wolf_grey_12mb10", // 322593229
     0x134afad6: "ancientguardian_spearman_named_dg_everfall_00", // 323680982
     0x134f64ff: "withered_grunt_19", // 323970303
     0x135dd393: "lost_knight_bow_12mb05", // 324916115
-    0x13743f38: "elk_stag_12mb04", // 326385464
-    0x137adeb2: "ghost_starved_16bs04a", // 326819506
-    0x137dc0d8: "goat_mountain_16bs02", // 327008472
+    0x13731117: "damned_villager_pitchfork_36", // 326308119
     0x13824fc2: "ck_drowned_sailor_2h_axe_10ws04_sable", // 327307202
-    0x138c430c: "damned_villager_hammer_03gc09a_elite", // 327959308
     0x13956e05: "undead_gravedigger_named_00", // 328560133
-    0x13a13b3f: "sand_elemental_heavy_16bs07", // 329333567
-    0x13af04b2: "damned_1h_swordsman_m-f_11md10a", // 330237106
+    0x13abe05a: "invasion_firecannon", // 330031194
     0x13b20105: "wolf_grey_25", // 330432773
     0x13b8d577: "undead_navigator_51", // 330880375
-    0x13c31b1f: "darknessai", // 331553567
-    0x13d7f698: "dynasty_musketeer_08qp01a", // 332920472
+    0x13c6162c: "damned_cultist_52", // 331748908
+    0x13e821f5: "bear_grizzly_36", // 333980149
     0x13e8db57: "ck_goldcursed_2hspear_10ws03b", // 334027607
     0x13f08d65: "mountain_lion_43", // 334531941
-    0x13f1fadb: "withered_swarmancer_13wf08a", // 334625499
-    0x13fa5b03: "undead_pistoleer_05wc06", // 335174403
-    0x141004c1: "goat_mountain_16bs06", // 336594113
-    0x141b95ef: "skeleton_1h_club_13wf07", // 337352175
+    0x140b02d4: "damned_villager_rake_49", // 336265940
+    0x141ed50e: "damned_villager_pitchfork_32", // 337564942
     0x141fe6af: "damned_villager_lumberaxe_28", // 337634991
     0x1420e44b: "ancientguardian_reaver_63", // 337699915
-    0x1425dbbf: "mountain_lion_10ws08", // 338025407
+    0x14363439: "damned_axeman_m-f_62", // 339096633
     0x14373181: "damned_hound_03gc06", // 339161473
+    0x144d1ba8: "bobcat_32", // 340597672
+    0x1454e799: "damned_rifleman_m-f_61", // 341108633
     0x145fc55f: "dryad_shaman_56", // 341820767
     0x14625756: "drowned_sailor_1h_club_12", // 341989206
+    0x1467ef08: "wolf_alpha_25", // 342355720
     0x146b86e1: "alligator_strange_55", // 342591201
+    0x146d196f: "mutator_icebound_glacial_object", // 342694255
     0x147930d9: "spriggan_heal_shield", // 343486681
-    0x147c1ff5: "evil_knight_caster_14ac05", // 343678965
+    0x1485e5ec: "bear_grizzly_32", // 344319468
     0x1489ee95: "fl_armored_dragon", // 344583829
     0x149d2f1f: "ancientguardian_spearman_20", // 345845535
-    0x14aadf75: "skeleton_archer_11md00g", // 346742645
+    0x149d497c: "mountain_lion_47", // 345852284
     0x14aae73a: "lynx_16_msq", // 346744634
-    0x14ae0f6a: "primal_lion_desert_16bs04a", // 346951530
-    0x14bd1628: "ridgethrash", // 347936296
-    0x14c17a44: "anubianguardian_spearman_16bs02f", // 348224068
+    0x14abd235: "damned_cultist_56", // 346804789
     0x14ca491e: "evil_knight_warhammer_31", // 348801310
-    0x14ccff26: "sand_elemental_heavy_16bs03", // 348978982
     0x14d5116e: "undead_navigator_55", // 349507950
     0x14d60240: "fl_bear_black_named_09fl11", // 349569600
     0x14e66e9e: "wolf_timber_50", // 350645918
     0x14f207a7: "damned_villager_pickaxe_dg_restless_00", // 351405991
     0x14f45141: "ck_goldcursed_2hwarhammer_10ws03b", // 351555905
     0x14f8aa1c: "undead_gravedigger_named_04", // 351840796
-    0x150255e6: "evil_knight_longsword_17", // 352474598
-    0x15127eed: "elk_elemental_62", // 353533677
+    0x150041d6: "evil_knight_greataxe_32", // 352338390
     0x152714e9: "evil_knight_bow_28", // 354882793
     0x1527faaf: "ghost_charred_65", // 354941615
+    0x15295e07: "damned_villager_sickle_33", // 355032583
     0x152a791d: "undead_grenadier_disease_39", // 355105053
     0x152ac2e9: "drowned_sailor_1h_sword_shield_59", // 355123945
-    0x1533250d: "fl_ancient_amalgam", // 355673357
-    0x153e9a58: "anointed", // 356424280
-    0x1546e346: "dune_phantom_huntress_16bs03", // 356967238
-    0x1548557f: "elk_stag_15ec01", // 357062015
+    0x153a8568: "drowned_miner_35", // 356156776
+    0x153e1627: "dynasty_musketeer_empress_solo", // 356390439
     0x15490ab4: "ancientguardian_mage_46", // 357108404
-    0x1551dd4b: "sheep_eastern_16bs09", // 357686603
-    0x15545fe9: "sheep_churro_11md03", // 357851113
     0x15666dc0: "skeleton_1h_sword_34", // 359034304
-    0x15723e05: "dunewalker_warmonger_greataxe_bloodofsands_n2", // 359808517
-    0x15728dd0: "damned_bowman_11md10a", // 359828944
+    0x15676c09: "legion_signifer_elite", // 359099401
     0x1579548f: "withered_swarmancer_named_12mb05_02", // 360273039
-    0x1579a7b1: "anubianguardian_scarab_12bs09b", // 360294321
     0x158148f0: "bear_damned_dg_restless_00", // 360794352
-    0x15895d6c: "damned_villager_shovel_08qp03", // 361323884
     0x158d5a7b: "skeleton_2h_sword_37", // 361585275
     0x159537b4: "skeleton_club_20", // 362100660
-    0x1595e7bc: "corruption_swarmer_15", // 362145724
     0x1598ffee: "undead_pirate_brute_named_05wc08", // 362348526
-    0x15a0dca0: "skeleton_crawler_03gc10b", // 362863776
+    0x159a5442: "damned_greataxeman_m-f_46", // 362435650
     0x15a27469: "legion_legionnaire_named_02", // 362968169
+    0x15a2aa87: "ancientguardian_javelineer_14", // 362982023
     0x15a48e8c: "undead_officer_named_04nw11c", // 363105932
     0x15b98b22: "undead_berserker", // 364481314
-    0x15c053fc: "elk_stag_18", // 364925948
-    0x15c2fbc6: "evil_knight_hound_26", // 365099974
+    0x15b9e55c: "armadillo", // 364504412
+    0x15bb30ed: "damned_villager_kitchenknife_35", // 364589293
+    0x15bdd1ac: "drowned_sailor_1h_club_8", // 364761516
     0x15cbb502: "undead_berserker_38", // 365671682
-    0x15ccbe71: "barbary_lion_16bs11", // 365739633
+    0x15e3030d: "wolf_black_49", // 367198989
     0x15f36f2f: "skeleton_1h_club", // 368275247
-    0x15f5777b: "risen_l-r_arm_15ec02b", // 368408443
     0x15fe83f3: "dryad_prowler_56", // 369001459
-    0x15ff9f9f: "skeleton_crawler_16bs11c", // 369074079
-    0x16036a69: "withered_swarmancer_09fl02", // 369322601
+    0x15fffc22: "hercyne_reindeer_briar_tangle_raid_cutlasskeys_00", // 369097762
     0x160661b7: "undead_hunter_30", // 369516983
-    0x1606db04: "elk_stag_45", // 369548036
     0x16079a56: "boar_stripped_36", // 369597014
-    0x1619c314: "anubianguardian_horus_12bs09c", // 370787092
+    0x16097773: "damned_villager_cleaver_dg_restless_00_spawn", // 369719155
     0x161afa47: "ghost_charred_02bw05", // 370866759
     0x161dac1e: "damned_bowman_28", // 371043358
     0x16262aba: "fl_mammoth_lava_elite_09fl01", // 371600058
-    0x16292d89: "undead_hunter_02bw03", // 371797385
     0x162a66bd: "legion_villager_hammer_64", // 371877565
-    0x1633d57a: "sulfur_lizard_16bs06", // 372495738
-    0x16352eab: "withered_grunt_12mb10c", // 372584107
     0x16449f87: "sand_elemental_soldier_named_00", // 373596039
-    0x16459fd7: "damned_hound_11md00i", // 373661655
     0x1664227f: "ancientguardian_javelineer_49", // 375661183
-    0x16816f48: "dynasty_spearman_08qp06", // 377581384
-    0x16856248: "skeleton_crawler_24", // 377840200
+    0x167f99cf: "damned_2h_spearman_m-f_43", // 377461199
     0x16877d59: "skeleton_spear_dg_everfall_00", // 377978201
-    0x168e4168: "undead_officer_40_15ec00", // 378421608
+    0x168835c5: "ancientguardian_heavy_boss", // 378025413
     0x169aab95: "fl_alligator_09fl03c", // 379235221
+    0x169befaa: "damned_1h_swordsman_m-f_40", // 379318186
     0x169fe3bd: "damned_cultist_dg_greatcleave_00", // 379577277
     0x16a2f34a: "swamp_dryad_tendril_59", // 379777866
     0x16b5caa3: "damned_villager_hammer_51", // 381012643
     0x16b7178a: "or_wolf_alpha", // 381097866
     0x16b897d1: "evil_knight_hound_named_14ac06", // 381196241
-    0x16c1ca61: "legion_axethrower_16bs10", // 381799009
-    0x16c3c613: "damned_villager_lumberaxe_16bs06c", // 381928979
     0x16c41fd5: "lynx_43", // 381951957
     0x16c9293a: "bear_black_62", // 382282042
-    0x16cba8cc: "ancientguardian_spearman_13wf02a", // 382445772
-    0x16cc68aa: "devils_quarry", // 382494890
     0x16d019ad: "corruption_entity_08qp08_elite", // 382736813
     0x16d49f4c: "ck_ancientguardian_javelineer_10ws10", // 383033164
     0x16d624d8: "damned_villager_axethrower_m-f_30", // 383132888
     0x16d9d43c: "undead_pistoleer_26", // 383374396
     0x16e16edd: "darkness_monolith_shell_07sm06c_64_elite", // 383872733
     0x16e43fd4: "fl_anubianguardian_scarab", // 384057300
-    0x16e6bf37: "warrift", // 384220983
-    0x16e81ca2: "legion_legionnaire_16bs10", // 384310434
+    0x16e67577: "drowned_sailor_1h_sword_shield_3", // 384202103
     0x16e8562d: "damned_villager_cleaver_07sm06a", // 384325165
-    0x1702dbe1: "rabbit_spotted_34", // 386063329
     0x1703a421: "alligator_black_59", // 386114593
+    0x1705dfe6: "wolf_elemental_earth_57_named_waveevent", // 386260966
     0x17143bc6: "darkness_monolith_shell_dt4", // 387201990
-    0x1717d37e: "elite_aeonmeer", // 387437438
     0x1720df51: "drowned_sailor_2h_axe_58", // 388030289
     0x172fe01f: "undead_grenadier_molotov_48", // 389013535
-    0x17373234: "swamp_dryad_prowler_05wc04", // 389493300
-    0x1772502f: "undead_pistoleer_12mb01a", // 393367599
+    0x175d3c78: "elk_motherwell_stag", // 391986296
     0x177d36f2: "anubianguardian_archer_67", // 394082034
     0x177f0332: "elk_elemental", // 394199858
+    0x17857e01: "ck_spectral_lost_2hblunderbuss_q5_waveevent", // 394624513
     0x178ef511: "damned_villager_pitchfork_7", // 395244817
     0x178fa338: "ck_undead_grenadier_10ws08_gold", // 395289400
     0x1790b040: "risen_l-r_arm_27", // 395358272
-    0x17ab8041: "ancient_amalgam_16bs04", // 397115457
-    0x17ad9fd1: "bobcat_16bs01", // 397254609
-    0x17b13b2e: "drakongard", // 397490990
+    0x179da6fc: "risen_corruption_impaler_58", // 396207868
+    0x17a7d51f: "wolf_elemental_earth_36", // 396875039
     0x17b76154: "anubianguardian_panther_dg_brimstonesands_00", // 397893972
     0x17b8d46e: "risen_regurgitator_28", // 397988974
-    0x17be865f: "bloated_corpse_33", // 398362207
+    0x17bb7a23: "anubianguardian_reaver_elite_67", // 398162467
     0x17bef40a: "ck_peacock_10ws02", // 398390282
-    0x17d95b01: "swamp_fiend_62", // 400120577
-    0x17e1cd51: "undead_grenadier_elite_05wc11", // 400674129
+    0x17c7fbd4: "damned_villager_ladel_46", // 398982100
     0x17e4281e: "withered_grunt_40", // 400828446
-    0x17e440f1: "desert_small_scorpion_16bs02", // 400834801
-    0x17e58ab2: "damned_villager_shovel_04nw10b", // 400919218
     0x17e80425: "dynasty_maiden_named_dg_ebonscale_01", // 401081381
-    0x17e83775: "boar_56", // 401094517
     0x17eef14c: "fl_spriggan_adolescent_named_09fl08", // 401535308
-    0x17f015ee: "bilemouth", // 401610222
-    0x17f63a7c: "anubianguardian_panther_16bs09d", // 402012796
-    0x17fad820: "belfrian", // 402315296
-    0x1802c5b7: "dune_phantom_tank_16bs08", // 402834871
-    0x1808daeb: "skeleton_mage_13wf02c", // 403233515
-    0x181dc7ca: "withered_beetle_04nw03", // 404604874
+    0x180dacea: "damned_villager_axethrower_m-f_38", // 403549418
+    0x1814168b: "hercyne_typhon_thornprison", // 403969675
+    0x1823bcb5: "legion_legionnaire_named_05_04nw10b", // 404995253
     0x182e7d32: "fl_hercyne_boar_09fl13", // 405699890
+    0x1831acd9: "bear_cub_elemental", // 405908697
+    0x18345ecd: "damned_villager_sickle_66", // 406085325
     0x18363235: "fl_ancient_amalgam_09fl06", // 406204981
     0x183ab61e: "legion_axethrower_m-f_named_00", // 406500894
-    0x183ccbf8: "risen_regurgitator_12mb05", // 406637560
-    0x184823c7: "risen_regurgitator_15ec02b", // 407380935
-    0x184830f9: "dune_phantom_huntress_64", // 407384313
-    0x18484972: "mountain_lion_11md10", // 407390578
+    0x18406798: "damned_1h_swordsman_m-f_48", // 406874008
     0x1865fa40: "corruption_entity_dt5", // 409336384
-    0x18695bbe: "elk_doe_12mb07", // 409557950
     0x186d2e94: "damned_villager_ladel_named_00", // 409808532
+    0x186e4291: "damned_villager_hammer_59", // 409879185
+    0x187b6d0a: "skeleton_1h_sword_61", // 410742026
     0x1883876f: "undead_gravedigger_33", // 411273071
+    0x1883cf00: "dynasty_summoner_52", // 411291392
     0x18888980: "ck_blackbone_lost_2haxe_10ws02_sable_prison", // 411601280
     0x188e49d3: "fl_swamp_dryad_prowler_09fl04", // 411978195
     0x18905ab1: "skeleton_2h_sword_62", // 412113585
     0x18a00743: "desert_coyote_64", // 413140803
     0x18a1101d: "fl_explosive_sprout_poison_09fl04", // 413208605
     0x18a26838: "damned_cultist_50_elite", // 413296696
-    0x18a52572: "rabbit_spotted_05wc03", // 413476210
+    0x18a63027: "damned_villager_kitchenknife_60", // 413544487
     0x18ae674b: "fl_gorilla_ice_named_09fl07", // 414082891
-    0x18aee4e5: "damned_hound_57", // 414115045
-    0x18bcfc44: "drowned_sailor_2h_axe_12mb05", // 415038532
     0x18bfaa4d: "ancientguardian_javelineer_41", // 415214157
+    0x18c7acba: "damned_villager_skinning_knife_52", // 415739066
     0x18c82ebc: "lost_knight_tank_named_12mb05", // 415772348
-    0x18d0fb07: "sandyshoal", // 416348935
+    0x18dde985: "undead_hunter_38", // 417196421
     0x18de7a1e: "damned_villager_cleaver_named_00", // 417233438
+    0x18e21c58: "corrupted_ogre_dt1", // 417471576
     0x18e49760: "ck_bear_black", // 417634144
-    0x18e9fa69: "alligator_black_16bs05", // 417987177
-    0x19001c80: "risen_regurgitator_13wf08b", // 419437696
+    0x1903d5c4: "damned_villager_pitchfork_67", // 419681732
     0x1923f004: "undead_grenadier_44", // 421785604
     0x193de481: "ancientguardian_reaver_36", // 423486593
-    0x193e5406: "desert_scorpion_16bs05", // 423515142
+    0x193fa02c: "withered_grunt_48", // 423600172
+    0x1941a3e5: "rabbit_corrupted_40", // 423732197
+    0x194d3a76: "damned_villager_shovel_54", // 424491638
     0x194e9c39: "drowned_sailor_1h_sword_57", // 424582201
-    0x195c7dd2: "damned_hound_11md10a", // 425491922
-    0x196274a4: "legion_legionnaire_16bs08a", // 425882788
+    0x195d0e24: "ghost_starved_named_99a_enc_torment_sw01", // 425528868
     0x19635c5c: "risen_regurgitator_20", // 425942108
-    0x196a0f74: "damned_rifleman_m-f_10ws06", // 426381172
     0x196c8f68: "ck_goldcursed_2hwarhammer_10ws03a_named", // 426545000
-    0x197617e3: "bobcat_16bs09", // 427169763
     0x197790f4: "anubianguardian_horus_named_02", // 427266292
     0x197b90b7: "evil_knight_longsword_dg_greatcleave01_00", // 427528375
     0x197f579c: "drowned_sailor_1h_club_47", // 427775900
     0x198049b6: "mountain_lion_12", // 427837878
     0x1998e526: "bear_grizzly_67", // 429450534
-    0x1999f8f2: "turkey_8", // 429521138
     0x19a491fb: "undead_officer_55", // 430215675
     0x19a964e4: "primal_lion_57", // 430531812
     0x19aeccc8: "ck_drowned_sailor_2h_axe_10ws08_black", // 430886088
@@ -806,201 +674,167 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x19b820d4: "lost_knight_tank_12mb05", // 431497428
     0x19b96e7e: "desert_scorpion_named_02", // 431582846
     0x19d3be74: "undead_pistoleer_admiral_minion", // 433307252
-    0x19d493e9: "elk_doe_24", // 433361897
-    0x19d82c13: "alligator_black_51", // 433597459
-    0x19da633b: "ck_skeleton_spear_10ws04_steps", // 433742651
     0x19e4d893: "ghost_starved_22", // 434428051
-    0x19ebac62: "desert_scorpion_sulfur_16bs12", // 434875490
     0x19f4682d: "undead_grenadier_molotov_40", // 435447853
+    0x19f8d4f9: "ghost_plagued_52", // 435737849
     0x19fb5763: "drowned_sailor_2h_axe_50", // 435902307
-    0x1a0c829b: "anubianguardian_panther_16bs02f", // 437027483
-    0x1a0d6cba: "cow_60", // 437087418
+    0x1a044d2e: "wolf_grey_29", // 436489518
     0x1a19e664: "dynasty_heavy_dg_ebonscale_00", // 437904996
     0x1a1a1c50: "withered_brute_dg_windsward_00", // 437918800
-    0x1a1fdb2b: "rabbit_spotted_61", // 438295339
     0x1a21ac58: "goat_mountain_named_00", // 438414424
-    0x1a2234a1: "risen_l-r_arm_04nw02", // 438449313
     0x1a2aa7d6: "ck_boar_strange", // 439003094
     0x1a30678b: "damned_axeman_m-f_07sm06b_elite", // 439379851
-    0x1a30fa02: "alligator_young_05wc06", // 439417346
     0x1a3110d0: "ck_ghost_shipwrecked_10ws08", // 439423184
-    0x1a3c81ce: "undead_navigator_05wc08", // 440173006
-    0x1a44911d: "goat_mountain_63", // 440701213
     0x1a46a72d: "ancientguardian_spearman_28", // 440837933
     0x1a50e3ea: "ancientguardian_reaver", // 441508842
     0x1a57e56c: "ck_spectral_lost_fire_10ws09_elite", // 441967980
-    0x1a617f13: "undead_grenadier_molotov_08qp02", // 442597139
     0x1a68ff9f: "legion_villager_pickaxe_63", // 443088799
-    0x1a6b6fd5: "damned_bowman_11md00i", // 443248597
-    0x1a7ba0d2: "sand_elemental_soldier_16bs10", // 444309714
+    0x1a69c06f: "dynasty_musketeer_53", // 443138159
     0x1a89f501: "withered_grunt_named_03gc01", // 445248769
-    0x1a9c3976: "risen_regurgitator_13wf01", // 446445942
     0x1aa38652: "ck_lost_berserker_10ws02_pirates_stand", // 446924370
     0x1aa481d4: "swamp_dryad_soldier_61", // 446988756
-    0x1ac27313: "elk_stag_12mb08", // 448951059
-    0x1ac7a914: "corruptedlegion_cyclops_16bs07", // 449292564
-    0x1ac9a930: "elk_doe_13wf03", // 449423664
-    0x1acdb932: "skeleton_crawler_12mb02", // 449689906
+    0x1ab141ca: "target_dummy_boss25", // 447824330
+    0x1ab419d6: "icemagicpylonultimate", // 448010710
+    0x1abad5d5: "wolf_elemental_earth_63", // 448452053
+    0x1ac7f166: "sand_elemental_soldier_rockpile", // 449311078
+    0x1ad08ae6: "damned_villager_rake_41", // 449874662
+    0x1adafb1e: "damned_villager_ladel_13", // 450558750
     0x1ae4e0aa: "skeleton_archer_29", // 451207338
     0x1af928d4: "withered_grunt_15", // 452536532
-    0x1affc2ac: "ancientguardian_reaver_06sw03", // 452969132
     0x1b02bed6: "fl_dg_firstlight_01_gorilla_lightning", // 453164758
-    0x1b0fce78: "legion_axethrower_16bs08a", // 454020728
-    0x1b166d02: "damned_villager_pitchfork_16bs10", // 454454530
+    0x1b0763d4: "damned_villager_cleaver_53", // 453469140
+    0x1b16dbf7: "wolf_white_55", // 454482935
     0x1b1a4fc2: "drowned_sailor_1h_sword_65_elite", // 454709186
     0x1b1bdbce: "elk_stag_10", // 454810574
     0x1b1f7676: "yeti_named_s4_2", // 455046774
     0x1b2103ae: "undead_berserker_22_elite", // 455148462
     0x1b21e3a4: "ck_mountain_lion", // 455205796
-    0x1b2e7aad: "waterfowl_05wc05", // 456030893
     0x1b329599: "or_corrupted_legionnaire", // 456299929
+    0x1b37d8ff: "corrupted_tiger_62", // 456644863
     0x1b388b3f: "wolf_black_41", // 456690495
     0x1b4ebf86: "skeleton_club_28", // 458145670
-    0x1b58ecbc: "wolf_grey_09fl05", // 458812604
-    0x1b5c929b: "undead_grenadier_05wc05c", // 459051675
-    0x1b664ec3: "ghost_shipwrecked_05wc06", // 459689667
+    0x1b54d79b: "dunewalker_warmonger_greataxe_named", // 458545051
+    0x1b6a3f1f: "wolf_elemental_ice_56", // 459947807
+    0x1b6c1eb0: "undead_javelineer_45", // 460070576
     0x1b70fd3e: "legion_legionnaire_ethereal_named_05_elite", // 460389694
+    0x1b771c1e: "damned_pistoleer_m-f_57", // 460790814
     0x1b86ef60: "damned_1h_swordsman_m-f_15", // 461827936
-    0x1b87b8fc: "skeleton_club_09fl08", // 461879548
-    0x1b8a5579: "sheep_eastern_16bs01", // 462050681
+    0x1b9f0e57: "elk_stag_corrupted_62", // 463408727
     0x1baecf7c: "ck_lost_1h_grenadier_10ws02_highpass", // 464441212
-    0x1bb7747c: "skeleton_1h_sword_13wf02", // 465007740
-    0x1bcd9698: "bison_61", // 466458264
+    0x1bcb2412: "damned_villager_axethrower_m-f_65", // 466297874
+    0x1bd429f0: "bear_black_37", // 466889200
     0x1bd91f1f: "lynx_16", // 467214111
     0x1bdf8bfe: "ck_ghost_shackled_q4_waveevent", // 467635198
     0x1be5c21f: "ck_drowned_sailor_1h_club", // 468042271
-    0x1be6c55a: "bloodcamp", // 468108634
     0x1be700c3: "brother_umberto_human", // 468123843
     0x1bec67d5: "undead_bloated_corpse_10ws09_elite", // 468477909
     0x1bef3b56: "damned_villager_pickaxe_29", // 468663126
+    0x1bf0f52d: "tendril_corruption_yonas", // 468776237
     0x1bf14adb: "drowned_sailor_1h_sword_shield_51", // 468798171
     0x1bf1f12f: "undead_grenadier_disease_31", // 468840751
     0x1bfc9cdb: "evil_knight_bow_20", // 469540059
-    0x1c03771f: "ghost_shipwrecked_16bs10", // 469989151
+    0x1c01daa9: "undead_javelineer_41", // 469883561
+    0x1c02a23f: "withered_brute_25_elite_small", // 469934655
     0x1c03b5c3: "legion_signifer", // 470005187
+    0x1c07fb06: "wolf_elemental_ice_52", // 470285062
     0x1c0b9d87: "drowned_sailor_1h_club_4", // 470523271
-    0x1c21727d: "elk_doe_06sw08", // 471954045
+    0x1c0d7cc6: "damned_villager_kitchenknife_39", // 470645958
+    0x1c14e6ac: "ancientguardian_javelineer_18", // 471131820
+    0x1c1ad807: "damned_pistoleer_m-f_53", // 471521287
     0x1c2d434f: "ghost_shackled_named_03", // 472728399
-    0x1c3528a5: "wolf_grey_09fl01", // 473245861
-    0x1c43beb4: "waterfowl_05wc01", // 474201780
+    0x1c3a0726: "target_dummy_heavy_attack", // 473564966
+    0x1c408429: "risen_scale_test", // 473990185
+    0x1c4a8035: "season_01_event_dryad_archer", // 474644533
     0x1c554f26: "wolf_black_45", // 475352870
-    0x1c5f6d18: "evil_knight_hound_04nw04", // 476015896
-    0x1c601a75: "undead_javelineer_13wf06", // 476060277
-    0x1c761fd7: "elk_stag_14", // 477503447
+    0x1c6aa7cd: "damned_villager_cleaver_57", // 476751821
     0x1c76a564: "undead_hunter_61", // 477537636
+    0x1c7b1fee: "wolf_white_51", // 477831150
     0x1c7e7458: "ancientguardian_spearman_named_00", // 478049368
-    0x1c85b24c: "legion_axethrower_16bs06b", // 478523980
     0x1c8cc943: "drowned_miner_39", // 478988611
     0x1c9158c2: "evil_knight_bow_24", // 479287490
-    0x1c970dcc: "mistywater", // 479661516
-    0x1c9a7f73: "damned_1h_swordsman_m-f_08qp08", // 479887219
     0x1c9c3536: "undead_grenadier_disease_35", // 479999286
     0x1c9c8ec2: "drowned_sailor_1h_sword_shield_55", // 480022210
-    0x1c9e5a15: "boar_strange_16bs11", // 480139797
+    0x1ca6e00b: "damned_villager_axethrower_m-f_61", // 480698379
     0x1ca81ec8: "fl_hercyne_reindeer_named_09fl02", // 480779976
     0x1cad805b: "anubianguardian_reaver", // 481132635
     0x1cae49b9: "ck_ancientguardian_javelineer_10ws04_steps", // 481184185
-    0x1cb6e6b7: "damned_1h_swordsman_m-f_11md00i", // 481748663
-    0x1cbd148c: "legion_villager_hammer_16bs07b", // 482153612
-    0x1cc05018: "richmire", // 482365464
+    0x1cb9ede9: "bear_black_33", // 481947113
     0x1cc87dd3: "ancientguardian_mage_named_01", // 482901459
-    0x1ccc24b4: "damned_villager_lumberaxe_07sm02a", // 483140788
-    0x1cce1516: "anubianguardian_spearman_12bs09c", // 483267862
     0x1cd021eb: "skeleton_1h_sword_38", // 483402219
-    0x1ce79160: "sheep_eastern_16bs05", // 484938080
-    0x1cf3ab58: "wolf_timber_11md06", // 485731160
     0x1cf94731: "ck_blackbone_lost_2haxe_10ws10", // 486098737
+    0x1d040476: "dynasty_musketeer_57", // 486802550
     0x1d05182b: "lost_knight_tank_named_13wf05", // 486873131
-    0x1d0731d0: "dune_phantom_berserker_16bs03a", // 487010768
     0x1d133383: "damned_cultist_dg_restless_00", // 487797635
-    0x1d16502f: "damned_villager_knife_43", // 488001583
     0x1d20eaff: "undead_berserker_12mb06d", // 488696575
-    0x1d295504: "goat_mountain_67", // 489248004
-    0x1d2f8012: "peacock_16bs04a", // 489652242
-    0x1d551782: "corruption_impaler_08qp07", // 492115842
-    0x1d5b3224: "legion_signifer_16bs07b", // 492515876
-    0x1d60a8a3: "cow_64", // 492873891
+    0x1d46402e: "ancientguardian_mage_named_05wc09_waveevent", // 491143214
+    0x1d5845b9: "fl_hercyne_corvid_minion", // 492324281
+    0x1d62345e: "anubianguardian_horus_elite_named_00", // 492975198
     0x1d635d45: "undead_navigator_59", // 493051205
     0x1d6fd038: "yeti_named_12mb07", // 493867064
-    0x1d78db29: "turkey_12mb03b", // 494459689
-    0x1d790489: "drowned_sailor_1h_sword_41_15ec00", // 494470281
-    0x1d7d9430: "elk_male_02bw08", // 494769200
-    0x1d82ed69: "undead_officer_12mb06c_named_elite", // 495119721
     0x1d94eccd: "withered_grunt_11", // 496299213
     0x1d95b3e9: "dune_phantom_berserker", // 496350185
-    0x1d96fcb1: "fl_mammoth_09a_s6_encounter_vitalsname", // 496434353
-    0x1daa6d0d: "corruptedlegion_cyclops_16bs03", // 497708301
-    0x1db9cc36: "ancient_guardian_reaver_13wf02", // 498715702
+    0x1dbd4eff: "damned_villager_rake_45", // 498945791
     0x1dc8162a: "dynasty_warrior_named_dg_ebonscale_01", // 499652138
-    0x1dce428c: "bloated_corpse_62", // 500056716
+    0x1dd1a323: "wolf_alpha_29", // 500278051
     0x1dddcaca: "alligator_strange_59", // 501074634
     0x1de1bf9a: "ck_goldcursed_2hspear_10ws03b1_named", // 501333914
-    0x1e029869: "evil_knight_mace_14ac06", // 503486569
+    0x1e0271c6: "legion_villager_lumberaxe", // 503476678
     0x1e0ba858: "ck_ghost_frozen", // 504080472
     0x1e0e9845: "risen_regurgitator_24", // 504272965
     0x1e129385: "drowned_sailor_1h_club_43", // 504533893
-    0x1e16ac46: "anubianguardian_horus_16bs02f", // 504802374
-    0x1e186272: "evil_knight_spear_04nw04", // 504914546
-    0x1e1dcc6a: "ancient_amalgam_16bs08", // 505269354
+    0x1e20fe6f: "damned_villager_shovel_50", // 505478767
     0x1e235820: "drowned_sailor_1h_sword_53", // 505632800
-    0x1e34da0b: "ghost_shackled_05wc07", // 506780171
+    0x1e262ea9: "tiger_60", // 505818793
     0x1e3648ab: "ck_ancientguardian_mage_10ws10", // 506874027
     0x1e4e341d: "undead_grenadier_40", // 508441629
-    0x1e4efbe8: "jackrabbit_16bs12", // 508492776
-    0x1e53901f: "desert_scorpion_16bs01", // 508792863
     0x1e5802c9: "ftue_sailor_z2", // 509084361
-    0x1e69a6f6: "dryad_archer_08qp01", // 510240502
-    0x1e7434eb: "damned_rifleman_m-f_07sm08", // 510932203
-    0x1e7a42eb: "skeleton_1h_sword_12mb02", // 511329003
+    0x1e6e11dd: "damned_villager_pitchfork_63", // 510530013
     0x1e891c8a: "ghost_starved_26", // 512302218
     0x1e92b77c: "fl_rat_hercynerat_09fl04", // 512931708
+    0x1e9510e0: "ghost_plagued_56", // 513085664
     0x1e96937a: "drowned_sailor_2h_axe_54", // 513184634
     0x1e99ac34: "undead_grenadier_molotov_44", // 513387572
     0x1ea1499f: "ck_alligator_young", // 513886623
+    0x1ea6b9ff: "ancientguardian_greatsword_icevariant", // 514243071
     0x1eaefb73: "siegeweaponsmall", // 514784115
     0x1eaff644: "corrupted_ogre_07sm06a_elite", // 514848324
-    0x1eb497ca: "rabbit_spotted_38", // 515151818
-    0x1eb5e80a: "alligator_black_55", // 515237898
     0x1eb85ca6: "damned_acolyte_07sm06", // 515398822
     0x1eb957f0: "elk_doe_20", // 515463152
     0x1ec464ff: "swamp_dryad_archer_62", // 516187391
     0x1ec4a0fd: "primal_lion_53", // 516202749
     0x1ec955e2: "undead_officer_51", // 516511202
-    0x1ecd6166: "bear_cub_grizzly_11md10", // 516776294
     0x1ed73a88: "dunewalker_waterseeker_icestaff_trial_soloplus", // 517421704
-    0x1ee80890: "legion_legionnaire_16bs06b", // 518523024
+    0x1ede0799: "wolf_alpha_3", // 517867417
     0x1ee8508f: "ck_goldcursed_1hsword_10ws03a", // 518541455
     0x1eed8daf: "mountain_lion_16", // 518884783
     0x1ef5213f: "bear_grizzly_63", // 519381311
-    0x1f008fa5: "skeleton_crawler_13wf02", // 520130469
-    0x1f009a4a: "evil_knight_greataxe_02bw07", // 520133194
-    0x1f049fa7: "elk_doe_12mb03", // 520396711
+    0x1efc492e: "lost_pikeman", // 519850286
     0x1f083e59: "corruption_entity_dt1", // 520633945
     0x1f25f4e0: "dune_phantom_huntress_60", // 522581216
-    0x1f332e63: "skeleton_crawler_28", // 523447907
     0x1f44abc6: "broken_farmhand", // 524594118
     0x1f49c557: "ancientguardian_spearman_dg_reekwater_00", // 524928343
-    0x1f4b84cb: "wolf_black_13wf08a", // 525042891
+    0x1f54d5fc: "corrupted_mine_dg_restless_priest", // 525653500
+    0x1f599ad4: "damned_villager_sickle_62", // 525966036
     0x1f5ce02b: "ancientguardian_mage_named_10ws02", // 526180395
+    0x1f69dbbf: "ancientguardian_spearman_61_elite_spawn", // 527031231
     0x1f7083f8: "damned_villager_skinning_knife_07sm06d", // 527467512
     0x1f73709b: "ghost_starved_named_10", // 527659163
-    0x1f843e70: "alligator_black_16bs01", // 528760432
-    0x1f853e1c: "evil_knight_longsword_04nw04", // 528825884
     0x1f8d85c4: "broken_laborer_knife", // 529368516
+    0x1f8fd841: "corrupted_ogre_dt5", // 529520705
     0x1fa04717: "alligator_strange_named_03gc02", // 530597655
     0x1fa418d8: "barbary_lion_named_01", // 530847960
+    0x1faa68a3: "damned_villager_skinning_knife_56", // 531261603
     0x1fac4a5c: "bobcat", // 531384924
-    0x1fb0972f: "elk_stag_49", // 531666735
     0x1fb2c280: "wolf_b", // 531808896
-    0x1fc320fc: "damned_hound_53", // 532881660
-    0x1fc8e16b: "rabbit_spotted_05wc07", // 533258603
+    0x1fcbf43e: "damned_villager_kitchenknife_64", // 533460030
     0x1fcdc35a: "desert_coyote_60", // 533578586
-    0x1fd1385d: "drowned_sailor_2h_axe_12mb01", // 533805149
+    0x1fd0f6ba: "dungeon_sun_turret", // 533788346
     0x1fd26e54: "ancientguardian_javelineer_45", // 533884500
     0x1fdd11b3: "ck_drowned_miner_10ws03e", // 534581683
-    0x1fdedc5c: "drowned_sailor_1h_sword_15ec04e", // 534699100
-    0x1fe46978: "corruption_swarmer_08qp06", // 535062904
+    0x1fee0b19: "dynasty_summoner_56", // 535694105
+    0x1fee4376: "undead_gravedigger_37", // 535708534
     0x1ffad120: "ck_alligator_black_named_10ws10", // 536531232
+    0x2006c1c9: "damned_1h_swordsman_m-f_39", // 537313737
     0x200fe0c3: "ck_blackbone_lost_2haxe_named_10ws04_sable", // 537911491
     0x2012ac2f: "ancientguardian_mage_62", // 538094639
     0x2017f48d: "damned_acolyte_dt2", // 538440845
@@ -1008,258 +842,219 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x2022d4f4: "ck_spectral_lost_1hsword_10ws07", // 539153652
     0x2028e4c0: "damned_villager_hammer_28", // 539550912
     0x202f6f8c: "damned_priest_named_07sm06b_elite", // 539979660
-    0x2033cdd5: "elk_stag_11md01", // 540265941
     0x204b0abb: "damned_villager_axethrower_m-f_49", // 541788859
-    0x204e4766: "undead_shaman_05wc07", // 542000998
-    0x205b84ad: "dryad_soldier_14ac15", // 542868653
     0x205be74d: "evil_knight_greataxe_16", // 542893901
     0x2060ddee: "fl_dh_mammoth_nature_named", // 543219182
+    0x206123f3: "drowned_miner_11", // 543237107
     0x20675f8e: "undead_pistoleer_25_elite", // 543645582
-    0x2074d44a: "turkey_12mb09", // 544527434
-    0x2074f92f: "undead_grenadier_15ec04d", // 544536879
     0x207826c1: "ck_undead_pirate_brute_10ws03c1_named", // 544745153
-    0x207bf2f6: "withered_beetle_06sw09", // 544994038
+    0x20792b17: "dynasty_warrior_dg_ebonscale_00_defend", // 544811799
+    0x207c5c34: "ghost_charred_41", // 545020980
+    0x2080827d: "damned_bowman_51", // 545292925
     0x2089cee0: "naga_fire", // 545902304
     0x2090820d: "or_dryad_archer", // 546341389
     0x2091956e: "ck_undead_officer_10ws06_tide", // 546411886
-    0x20962f2d: "goat_mountain_08qp06", // 546713389
+    0x209b4fd4: "undead_hunter_49", // 547049428
     0x209e9160: "anubianguardian_horus_dg_brimstonesands_named_01", // 547262816
     0x20a991d1: "fl_wolf_elemental_earth_09fl08", // 547983825
+    0x20c1f2d9: "damned_greataxeman_m-f_62", // 549581529
+    0x20c5213e: "undead_gravedigger_42", // 549790014
     0x20c5bf52: "ghost_starved_13wf08a", // 549830482
-    0x20e3aa42: "undead_officer_08qp01a", // 551791170
-    0x20e7aae7: "desert_dryad_shaman", // 552053479
+    0x20e09676: "damned_villager_kitchenknife_11", // 551589494
+    0x20e842b4: "damned_hound_26", // 552092340
     0x20f13599: "withered_swarmancer_named_12mb05", // 552678809
-    0x20f8e064: "withered_beetle_04nw10b", // 553181284
+    0x20f90c1c: "ancientguardian_javelineer_30", // 553192476
     0x20feef62: "ck_undead_pirate_brute_10ws10", // 553578338
-    0x211879c7: "undead_navigator_36_15ec00", // 555252167
+    0x21083a68: "drowned_sailor_1h_sword_26", // 554187368
+    0x210b9c27: "damned_villager_shovel_25", // 554408999
+    0x210f4102: "damned_rifleman_m-f_45", // 554647810
+    0x2111757e: "ghost_shipwrecked_55", // 554792318
     0x21230155: "damned_villager_hammer_dg_shattermtn_00", // 555942229
     0x2125fa0d: "risen_regurgitator_51", // 556136973
     0x2126de81: "evil_knight_mace_25", // 556195457
-    0x212f51f4: "dune_phantom_berserker_16bs04", // 556749300
+    0x212b8277: "sheep_churro_23", // 556499575
     0x2139f1cd: "drowned_sailor_1h_club_36", // 557445581
     0x213ccd97: "anubianguardian_brute_61", // 557632919
     0x213d87db: "invasion_voiddestroyer", // 557680603
-    0x2141f53d: "armadillo_16bs11", // 557970749
     0x21472443: "undead_pirate_brute_60", // 558310467
     0x214c0547: "corruption_impaler_dt4", // 558630215
-    0x2152c5ee: "trailstall", // 559072750
-    0x2157405b: "damned_axeman_m-f_03gc08b", // 559366235
     0x215f38a0: "skeleton_spear_52", // 559888544
     0x21655655: "undead_grenadier_35", // 560289365
-    0x217905f1: "shipyard", // 561579505
+    0x216d92a2: "damned_axeman_m-f_46", // 560829090
     0x2179067d: "withered_grunt_39", // 561579645
     0x217b42d0: "ancientguardian_reaver_47", // 561726160
-    0x217e691d: "sheep_churro_12mb02", // 561932573
     0x217ef42f: "damned_axeman", // 561968175
-    0x217fcf8b: "damned_spearman_m-f_03gc05c", // 562024331
-    0x218e6790: "barbary_lion", // 562980752
-    0x21907acb: "ghost_shackled_13wf06a", // 563116747
-    0x2191e0ff: "corrupted_ogre_03gc30_elite", // 563208447
     0x2193f926: "evil_knight_greataxe_dg_greatcleave_00_00", // 563345702
-    0x2196f7f4: "ancientguardian_mage_06sw03", // 563542004
-    0x21a3e693: "legion_sagittarii_62", // 564389523
+    0x21a27ec2: "ghost_starved_53", // 564297410
     0x21a88aea: "sand_elemental_questboss", // 564693738
     0x21abf218: "corruptedlegion_cyclops", // 564916760
     0x21b2ce7c: "undead_grenadier_molotov_31", // 565366396
-    0x21b74811: "damned_villager_pitchfork_16bs08c", // 565659665
-    0x21b9bea8: "desert_bison_strange_16bs02", // 565821096
-    0x21cdee57: "skeleton_mage_06sw02", // 567144023
     0x21d44bda: "damned_villager_cleaver_dg_restless_00", // 567561178
     0x21dc2188: "damned_rifleman_female_named_03gc06", // 568074632
     0x21de4377: "bear_grizzly_16", // 568214391
     0x21e237aa: "undead_officer_24", // 568473514
     0x21f42aa9: "starved_mercenary_2h_axe_62", // 569649833
-    0x21fdf67c: "pig_domestic_12mb02", // 570291836
-    0x21feeda2: "withered_beetle_13wf06", // 570355106
+    0x21f5315d: "bearelemental_61", // 569717085
     0x2200017c: "ancientguardian_spearman_59", // 570425724
+    0x22036da2: "legion_sagittarii_elite", // 570650018
     0x220526e2: "darkness_hive_membrane_03gc03_60_elite", // 570762978
-    0x22143ed0: "withered_beetle_03gc01", // 571752144
     0x221566a4: "fl_gorilla_melee_09fl09", // 571827876
-    0x2218ac4c: "risen_corruption_impaler_07sm05b", // 572042316
     0x22301925: "ck_ghost_plagued", // 573577509
-    0x223d3267: "damned_villager_knife_36", // 574435943
     0x22426062: "ck_undead_pistoleer_10ws08_gold", // 574775394
-    0x2244019d: "risen_l-r_arm_06sw08", // 574882205
-    0x22545e14: "skeleton_1h_sword_04nw07", // 575954452
-    0x2260ee10: "risen_whole_body_09fl05a", // 576777744
+    0x2242eb7f: "wolf_grey_58", // 574811007
+    0x224d5135: "withered_grunt_9", // 575492405
     0x2262281c: "ancient_amalgam_elite", // 576858140
-    0x2276b726: "evil_knight_warhammer_03gc08", // 578205478
-    0x2277a5c0: "sulfur_elemental_entity_16bs02", // 578266560
-    0x227f347d: "primal_lion_desert_cub_16bs05", // 578761853
-    0x22942b43: "bear_grizzly_11md10", // 580135747
+    0x227b40fd: "wolf_timber_29", // 578502909
+    0x227f4a8d: "fl_gorilla_lightning", // 578767501
+    0x2282c8cc: "damned_villager_lumberaxe_51", // 578996428
+    0x22962cb7: "damned_villager_rake_30", // 580267191
+    0x229c5d4f: "damned_villager_ladel_62", // 580672847
     0x22a246fb: "skeleton_archer_58", // 581060347
     0x22a53d4a: "anubianguardian_horus_named_16bs09b", // 581254474
-    0x22c0a544: "anubianguardian_spearman_12bs10a", // 583050564
-    0x22c2fc13: "legion_villager_pickaxe_16bs08b", // 583203859
+    0x22bf8e85: "withered_grunt_64", // 582979205
     0x22c89b10: "withered_brute_26", // 583572240
-    0x22dbc69c: "legion_villager_cleaver_16bs04", // 584828572
-    0x22f6c6e1: "keelsnap", // 586598113
-    0x230ed00e: "damned_villager_cleaver_02bw05", // 588173326
-    0x231ad868: "legion_villager_cleaver_16bs06a", // 588961896
+    0x22cbc419: "tiger_48", // 583779353
+    0x22d79ab8: "damned_grunt_60", // 584555192
+    0x230819d7: "skeleton_club_59", // 587733463
+    0x23214395: "corruptedlegion_cyclops_elite", // 589382549
+    0x232859af: "ghost_shackled_54", // 589846959
     0x232ab8e1: "undead_javelineer_34", // 590002401
+    0x2331ba4f: "damned_pistoleer_m-f_26", // 590461519
+    0x233cf82c: "corrupted_tiger", // 591198252
     0x2354d6e9: "legion_villager_ladel_66", // 592762601
     0x23569b61: "undead_berserker_41", // 592878433
-    0x235d04f2: "pig_domestic_13wf06", // 593298674
+    0x235bdab0: "dynasty_summoner_named_16bs02", // 593222320
     0x2365b8b9: "dryad_archer_53", // 593868985
-    0x236c93b1: "undead_navigator_12mb06a", // 594318257
+    0x23785875: "undead_pistoleer_1", // 595089525
     0x237e2d6e: "wolf_black_30", // 595471726
-    0x23922759: "bloated_corpse_named_00", // 596780889
+    0x23928fa1: "bear_black_46", // 596807585
     0x23958f6c: "sand_elemental_shaman_named_00", // 597004140
-    0x23972f0a: "undead_navigator_12mb05", // 597110538
     0x239fb94e: "lynx_67", // 597670222
-    0x23ab22e3: "evil_knight_longsword_12mb01", // 598418147
+    0x23a99d07: "damned_villager_pickaxe_58", // 598318343
     0x23af3dca: "damned_villager_hammer_07sm06d", // 598687178
-    0x23b01b04: "anubianguardian_reaver_16bs10", // 598743812
     0x23b7577e: "undead_grenadier_disease_40", // 599218046
     0x23c6ea6d: "dynasty_spearman_named_08qp08", // 600238701
-    0x23de9b93: "sheep_churro_13wf06", // 601791379
     0x23f5b705: "pig_domestic_9", // 603305733
     0x23f87c4d: "alligator_young", // 603487309
     0x23fb3b93: "bear_grizzly_named_08qp08", // 603667347
     0x24087ca0: "dryad_archer_57", // 604535968
-    0x24118df6: "sand_elemental_soldier_s02", // 605130230
     0x2413e977: "wolf_black_34", // 605284727
-    0x2436648a: "anubianguardian_archer_16bs08", // 607544458
+    0x24159c6c: "undead_pistoleer_5", // 605396076
+    0x242c019c: "damned_villager_cleaver_26", // 606863772
     0x243912f0: "legion_villager_ladel_62", // 607720176
     0x243b5f78: "undead_berserker_45", // 607870840
     0x243c7811: "damned_villager_pickaxe_dg_shattermtn_00", // 607942673
-    0x243e5df6: "minnow", // 608067062
-    0x244285c7: "turkey_29", // 608339399
+    0x24459db6: "ghost_shackled_50", // 608542134
     0x24477cf8: "undead_javelineer_30", // 608664824
+    0x244bda97: "damned_villager_kitchenknife_48", // 608950935
+    0x244d7ea5: "trap_bear", // 609058469
     0x24688ff2: "swamp_dryad_prowler_61", // 610832370
     0x247674ac: "drowned_sailor_1h_sword_9", // 611742892
-    0x24832ab8: "evil_knight_mace_02bw07", // 612575928
     0x2485cc30: "fl_rabbit_09fl09b", // 612748336
-    0x2490a45c: "legion_villager_cleaver_16bs08b", // 613459036
-    0x24966c29: "undead_officer_named_12mb01", // 613837865
     0x249687ba: "skeleton_1h_sword_49", // 613844922
-    0x249cff96: "dryad_soldier_14ac11a", // 614268822
+    0x24ad8d28: "damned_1h_swordsman_m-f_60", // 615353640
     0x24ad9aa2: "unstable_swamp_fiend_63", // 615357090
     0x24bcf702: "alligator_black_named_00", // 616363778
-    0x24beff6b: "fenwallow", // 616497003
     0x24cced92: "corrupted_ogre_named_07sm06_darkness", // 617409938
     0x24d0b4f8: "isabella_dg_shattermtn_phase0_00", // 617657592
     0x24d7e087: "fl_beetle", // 618127495
+    0x24da2893: "drowned_sailor_1h_sword_shield_24", // 618277011
     0x24da9367: "undead_grenadier_disease_44", // 618304359
     0x24dc0084: "fl_beetle_09fl11b", // 618397828
     0x24f27d57: "lynx_63", // 619871575
-    0x24faeb13: "undead_navigator_12mb01", // 620423955
+    0x24fde1ad: "desert_scorpion_impaler_medium_sandworm", // 620618157
     0x24ff4bb8: "bear_black_42", // 620710840
-    0x25048ad7: "legion_sagittarii_16bs10", // 621054679
     0x250e5aba: "hercyne_elephant_named_raid_cutlasskeys_00", // 621697722
     0x250fcb9b: "ck_goldcursed_2hwarhammer_named_10ws07", // 621792155
-    0x2512f064: "primal_lion_desert_cub_16bs01", // 621998180
-    0x25199b29: "drowned_sailor_1h_club_12mb06a", // 622435113
-    0x251a61d9: "sulfur_elemental_entity_16bs06", // 622485977
     0x251de7b3: "risen_whole_body_33_elite", // 622716851
     0x251ec19f: "risen_whole_body_28", // 622772639
+    0x251f2f3d: "dynasty_warrior_60", // 622800701
     0x2525fb14: "undead_navigator_28", // 623246100
     0x253635d4: "ck_drowned_sailor_1h_club_10ws06_tide", // 624309716
-    0x25488027: "legion_villager_pickaxe_16bs06a", // 625508391
     0x2550e0a0: "evil_knight_heavy_named_14ac13", // 626057376
-    0x2550f67e: "damned_villager_knife_32", // 626062974
     0x2552d1da: "sulfur_dragon", // 626184666
-    0x255916cc: "legion_villager_ladel_16bs09", // 626595532
-    0x25664cae: "undead_berserker_12mb01e", // 627461294
     0x256d6f9a: "ck_goldcursed_2hblunderbuss_namedb_10ws04_gold", // 627928986
-    0x2581289b: "evil_knight_greataxe_14ac06", // 629221531
+    0x2579da9b: "hercyne_broodmother_fountainblocker", // 628742811
+    0x25814707: "damned_acolyte_named_01_03gc09_elite", // 629229319
+    0x25896223: "spriggan_corrupted", // 629760547
     0x25970572: "wolf_alpha_58", // 630654322
-    0x259c3ca8: "undead_officer_04nw10", // 630996136
-    0x259e04ec: "evil_knight_bow_14ac05", // 631112940
-    0x259e190d: "damned_rifleman_m-f_07sm02a", // 631118093
-    0x25a0b127: "risen_regurgitator_11md08", // 631288103
-    0x25a24fe1: "damned_villager_knife_02bw05", // 631394273
+    0x259b6c9b: "alligator_strange_28", // 630942875
     0x25a55f09: "withered_brute_22", // 631594761
-    0x25ad615d: "anubianguardian_spearman_12bs10e", // 632119645
-    0x25b36607: "turkey_vulture_16bs09", // 632514055
-    0x25b8ea39: "boar_12mb09", // 632875577
+    0x25ba5ea1: "damned_grunt_64", // 632970913
+    0x25d24a9c: "withered_grunt_60", // 634538652
+    0x25ef0cd5: "damned_villager_lumberaxe_55", // 636423381
+    0x25f19956: "damned_villager_ladel_66", // 636590422
+    0x25fbe8ae: "damned_villager_rake_34", // 637266094
+    0x260056bb: "damned_axeman_m-f_42", // 637556411
     0x2608924c: "undead_grenadier_31", // 638095948
     0x2608c5bb: "damned_rifleman_male_named_02", // 638109115
-    0x260b9276: "verdant_crown", // 638292598
-    0x2613ad04: "sheep_churro_12mb06", // 638823684
     0x261686c9: "ancientguardian_reaver_43", // 639010505
-    0x262fde69: "anubianguardian_spearman_16bs04", // 640671337
+    0x2628b78c: "damned_villager_pitchfork_12", // 640202636
     0x2632fcb9: "skeleton_spear_56", // 640875705
-    0x2642db7c: "fl_beetle_baby_09fl11", // 641915772
-    0x26453761: "drowned_sailor_1h_sword_12mb06b", // 642070369
     0x26483e14: "risen_regurgitator_55", // 642268692
     0x264b1a98: "evil_knight_mace_21", // 642456216
     0x2651098e: "anubianguardian_brute_65", // 642845070
-    0x2663dbe2: "anubianguardian_scarab", // 644078562
+    0x265435d4: "drowned_sailor_1h_club_32", // 643053012
+    0x2662851b: "damned_rifleman_m-f_41", // 643990811
     0x2665fe71: "drowned_sailor_1h_sword_22", // 644218481
     0x26769703: "evil_knight_spear_27", // 645306115
-    0x26796bd5: "ghost_charred_16bs09", // 645491669
-    0x26903265: "pig_domestic_12mb06", // 646984293
+    0x267cb167: "ghost_shipwrecked_51", // 645706087
+    0x2692543a: "hercyne_boar_broodmother", // 647124026
     0x26a0f0db: "undead_pirate_brute_named_06sw02", // 648081627
     0x26a410cd: "ck_blackbone_lost_2haxe_10ws09b_elite", // 648286413
     0x26b6be8f: "fl_poison_polyp_00", // 649510543
-    0x26ce228a: "legion_sagittarii_66", // 651043466
+    0x26cfbadb: "ghost_starved_57", // 651147995
+    0x26d0352b: "drowned_sailor_2h_axe_25", // 651179307
     0x26d3b6b1: "ghost_plagued_27", // 651409073
-    0x26d47ab1: "desert_bison_strange_16bs06", // 651459249
     0x26d5a11c: "rabbit_spotted_named_01", // 651534620
     0x26dd02a5: "ck_undead_grenadier_named_10ws09_elite", // 652018341
     0x26df0a65: "undead_grenadier_molotov_35", // 652151397
     0x26f298d6: "dunewalker_warmonger_greataxe_trial_soloplus", // 653433046
-    0x271e0294: "damned_villager_axethrower_m-f_53_16bs08d", // 656278164
-    0x271f9724: "desert_coyote_16bs11", // 656381732
-    0x27232b95: "damned_1h_swordsman_m-f_10ws06", // 656616341
+    0x2711982d: "ghost_charred_45", // 655464493
     0x272c2d46: "ancientguardian_mage_named_dg_everfall_00", // 657206598
-    0x272dd57d: "lynx_11md08", // 657315197
-    0x273d5c1c: "desert_dryad_soldier", // 658332700
-    0x274d5847: "damned_pistoleer_m-f_03gc07b", // 659380295
+    0x27500f42: "skeleton_1h_sword_14", // 659558210
     0x27543034: "evil_knight_mace_named_08qp02", // 659828788
-    0x27594141: "corruption_swarmer_04nw10", // 660160833
     0x275c4752: "wolf_alpha_named_01", // 660358994
+    0x275f8dc2: "undead_officer_61_waveevent", // 660573634
     0x27676917: "dryad_soldier_45_elite_15ec05", // 661088535
+    0x2771cb2b: "legion_axethrower_m-f_elite", // 661769003
     0x27758832: "skeleton_crawler_59", // 662014002
     0x277a3094: "damned_acolyte_dt6", // 662319252
-    0x277c66d4: "risen_regurgitator_12mb10a", // 662464212
-    0x2783496b: "deadeye", // 662915435
-    0x278884b0: "damned_hound_04nw08", // 663258288
     0x278e1af7: "damned_rifleman_50_elite", // 663624439
-    0x279e03db: "wolf_grey_12mb03a", // 664667099
-    0x27a299ed: "dynasty_maiden_08qp08", // 664967661
+    0x2793263d: "wolf_minion_21", // 663955005
+    0x2794c805: "ancientguardian_javelineer_34", // 664061957
+    0x27a8e527: "undead_gravedigger_46", // 665380135
     0x27aa37a6: "undead_javelineer_named_02", // 665466790
     0x27adc233: "ck_ancientguardian_javelineer", // 665698867
-    0x27af50f4: "legion_sagittarii_16bs07b", // 665800948
     0x27b977d2: "fl_dryad_shaman_09fl02", // 666466258
     0x27ba20d0: "sand_elemental_heavy_named_00", // 666509520
+    0x27bb38f9: "skeleton_2h_sword_17", // 666581241
     0x27c1dac5: "ck_goldcursed_2hwarhammer_10ws04_gold", // 667015877
     0x27c22ccb: "dynasty_summoner_named_dg_ebonscale_01", // 667036875
     0x27c494c3: "dryad_archer_31_elite", // 667194563
-    0x27cc29e7: "sand_elemental_shaman_16bs12", // 667691495
-    0x27d15264: "anubianguardian_scarab_16bs04", // 668029540
     0x27e47618: "boar_4", // 669283864
-    0x27f6317e: "elk_stag_38", // 670445950
-    0x27f7cc58: "skeleton_1h_sword_06sw07a", // 670551128
+    0x27eccef2: "damned_villager_skinning_knife_27", // 669830898
+    0x27ed4664: "damned_bowman_55", // 669861476
+    0x27ee6060: "dunewalker_waterseeker_icestaff_easy", // 669933664
     0x27fa3c3a: "damned_longswordsman_minion_bear", // 670710842
-    0x27fbeb34: "goat_mountain_08qp02", // 670821172
     0x27fdd780: "undead_berserker_18", // 670947200
     0x280763c1: "fl_barbary_lion_elite_named_09fl01", // 671572929
-    0x280f2588: "evil_knight_bow_named_s4_1", // 672081288
     0x28134059: "fl_rat_hercynerat_09fl04b", // 672350297
-    0x2816659a: "skeleton_1h_sword_13wf02b", // 672556442
-    0x28177346: "anubianguardian_horus_12bs10a", // 672625478
     0x2821a4f5: "fl_armored_dragon_named_09fl11", // 673293557
-    0x28247993: "elk_doe_59", // 673479059
     0x2835387f: "ck_goldcursed_2hspear_10ws03a_named", // 674576511
-    0x2838f7f5: "legion_villager_pickaxe_16bs06", // 674822133
     0x284a9409: "fl_chameleon_09fl03c", // 675976201
     0x2853f597: "ck_undead_navigator_10ws03a", // 676590999
+    0x2859c8ea: "icemagicbeast", // 676972778
     0x28612e1c: "undead_berserker_named_00", // 677457436
-    0x2874b951: "elk_doe_05wc06", // 678738257
-    0x2879b92b: "wolf_grey_04nw11", // 679065899
     0x288495f5: "ck_goldcursed_2hwarhammer_10ws03b_named", // 679777781
-    0x288a8157: "pig_domestic_04nw10_named", // 680165719
+    0x288cb757: "wolf_elemental_earth_43", // 680310615
     0x289092aa: "evil_knight_mace_29", // 680563370
-    0x2895e417: "bloated_corpse_46", // 680911895
-    0x28991ddf: "dune_phantom_berserker_16bs08", // 681123295
-    0x28a2e3e7: "ghost_charred_16bs01", // 681763815
     0x28a4ab68: "undead_berserker_10ws09_elite", // 681880424
     0x28a73955: "ghost_shipwrecked_59", // 682047829
     0x28aa71a1: "damned_acolyte_named_00", // 682258849
-    0x28b8c79d: "rabbit_spotted_12mb02", // 683198365
-    0x28ba3c30: "skeleton_crawler_11md00b", // 683293744
+    0x28b90d29: "damned_rifleman_m-f_49", // 683216169
+    0x28bbd208: "risen_l-r_arm_52", // 683397640
+    0x28bdd00c: "damned_villager_shovel_29", // 683528204
     0x28c3553d: "boar_23", // 683889981
     0x28cc7e09: "damned_1h_swordsman_m-f_11md12_elite", // 684490249
     0x28cf4a56: "withered_grunt_35", // 684673622
@@ -1267,404 +1062,325 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x28d2aa1d: "fl_dh_primal_lion_named", // 684894749
     0x28d31a7e: "undead_grenadier_39", // 684923518
     0x28d45922: "damned_hound_named_dg_ebonscale_00", // 685005090
-    0x28d9a1e0: "ancientguardian_javelineer_nwsw", // 685351392
-    0x28e549f4: "undead_officer_15ec02c", // 686115316
+    0x28e6e864: "damned_villager_rake_61", // 686221412
     0x28e830da: "risen_whole_body_12mb03e", // 686305498
     0x28ec999c: "damned_villager_ladel_33", // 686594460
-    0x28f97ab1: "fellweave", // 687438513
-    0x29048efb: "undead_navigator_06sw02", // 688164603
-    0x290dbb61: "corruption_entity_msq_yonas", // 688765793
-    0x29153e57: "ancientguardian_javelineer_16bs10", // 689258071
+    0x2901ba7d: "corrupted_tiger_42", // 687979133
+    0x290ee9bd: "wolf_black_61", // 688843197
     0x2919eb1c: "darkness_monolith_shell_04nw06_20", // 689564444
-    0x291dc392: "ancientguardian_javelineer_05wc02", // 689816466
     0x291fddfa: "fl_wolf_elemental_earth_09fl04", // 689954298
     0x29285f54: "fl_dryad_beast_named_09fl02", // 690511700
-    0x292db94c: "elk_stag_30", // 690862412
-    0x292eb56d: "undead_berserker_named_elite_05wc11", // 690926957
-    0x2930e242: "damned_villager_cleaver_08qp01", // 691069506
+    0x292cf81e: "boar_stripped_43", // 690812958
+    0x292d03ff: "undead_hunter_45", // 690815999
     0x29337062: "fl_anubianguardian_reaver_09fl01", // 691236962
-    0x29398d3e: "damned_villager_cleaver_04nw09b", // 691637566
     0x2945529d: "damnedhound_dt6", // 692408989
-    0x2945e637: "bearelemental_14ac11b", // 692446775
     0x294614df: "ghost_charred_10ws07", // 692458719
-    0x29462310: "undead_officer_named_elite_05wc11", // 692462352
+    0x2951dc9f: "swamp_dryad_archer", // 693230751
     0x2960a294: "ck_mountain_lion_10ws08", // 694198932
-    0x298438e4: "undead_officer_04nw11a", // 696531172
-    0x29ab1d80: "sheep_eastern_33", // 699080064
-    0x29ad8ee4: "ck_ancientguardian_mage_minion_10ws04_gold", // 699240164
     0x29b08de2: "damned_1h_swordsman_m-f_35", // 699436514
     0x29b78bf8: "ck_skeleton_spear", // 699894776
-    0x29c29861: "turkey_12mb05", // 700618849
-    0x29c7cd99: "ancientguardian_reaver_05wc09", // 700960153
-    0x29cdbedd: "withered_beetle_06sw05", // 701349597
     0x29d081f2: "damned_rifleman_m-f_dg_greatcleave_00", // 701530610
     0x29d87da7: "undead_gravedigger_35_elite", // 702053799
     0x29eeae72: "withered_brute_named_07", // 703508082
     0x29ef7d9d: "lynx_36", // 703561117
     0x29f2b674: "undead_pistoleer_53", // 703772276
     0x29fd4690: "damned_villager_axethrower_m-f_45", // 704464528
-    0x2a0010ec: "skeleton_2h_sword_03gc10d", // 704647404
+    0x2a023c4f: "damned_villager_sickle_46", // 704789583
     0x2a044dbf: "drowned_sailor_1h_sword_shield_12mb06c", // 704925119
     0x2a0a3596: "dune_phantom_tank_60", // 705312150
-    0x2a0cafff: "anubianguardian_panther_67_elite_named_03", // 705474559
-    0x2a0df946: "bison_strange_61", // 705558854
     0x2a11e720: "drowned_miner_40", // 705816352
-    0x2a183513: "rabbit_spotted_13wf06", // 706229523
     0x2a1ddac8: "dryad_shaman_named_02", // 706599624
-    0x2a23a1da: "desert_scorpion_small_16bs04b", // 706978266
-    0x2a43891b: "legion_villager_kitchenknife_16bs07", // 709069083
+    0x2a1fd12c: "damned_villager_pickaxe_54", // 706728236
     0x2a4d0f88: "skeleton_1h_sword_41", // 709693320
-    0x2a602bfc: "dynasty_musketeer_08qp06", // 710945788
     0x2a64f5ee: "ck_blackbone_lost_2hspear_10ws09c_elite", // 711259630
     0x2a67f639: "anubianguardian_reaver_62", // 711456313
-    0x2a694dfe: "bison_strange_05wc04", // 711544318
     0x2a69f89c: "ck_alligator_young_10ws03", // 711587996
     0x2a7c5a34: "ck_boar_named_10ws08_isle", // 712792628
     0x2a89c8cf: "ancientguardian_javelineer_61", // 713672911
     0x2a8bcabe: "damned_1h_swordsman_m_named_06", // 713804478
+    0x2a9052a5: "damned_villager_kitchenknife_40", // 714101413
+    0x2a9cf4ca: "undead_javelineer_38", // 714929354
     0x2a9e1584: "ghost_shackled_58", // 715003268
     0x2aa63833: "skeleton_2h_sword_42", // 715536435
-    0x2ac13268: "risen_l-r_arm_12mb10a", // 717304424
-    0x2ad47505: "skeleton_1h_sword_11md04a", // 718566661
-    0x2ad58959: "desert_medium_scorpion_16bs03", // 718637401
-    0x2ad8a618: "skeleton_crawler_16bs11", // 718841368
-    0x2aff3998: "corsairs_rise", // 721369496
+    0x2aadfc9e: "drowned_sailor_1h_sword_1", // 716045470
+    0x2ab08c28: "hercyne_boar_alpha", // 716213288
+    0x2abe55fc: "skeleton_club_55", // 717116924
+    0x2b048545: "ftue_corrupted_sailor_z1", // 721716549
     0x2b0f63e1: "ck_blackbone_lost_1hsword_10ws09c_elite", // 722428897
     0x2b140ad0: "skeleton_archer_54", // 722733776
     0x2b328dd5: "dryad_soldier_56", // 724733397
-    0x2b3a854f: "drowned_sailor_2h_axe_12mb06b", // 725255503
+    0x2b35b746: "damned_villager_pitchfork_47", // 724940614
     0x2b3bebcb: "undead_pirate_brute_64_elite", // 725347275
-    0x2b609982: "anubianguardian_panther_12bs10e", // 727751042
-    0x2b63620b: "boar_12mb01", // 727933451
-    0x2b68ee35: "turkey_vulture_16bs01", // 728297013
-    0x2b6d8ab7: "legion_villager_cleaver_16bs08", // 728599223
+    0x2b4c8d40: "wolf_alpha_50", // 726437184
+    0x2b6679e0: "bobcat_47", // 728136160
     0x2b704d67: "legion_villager_cleaver_64", // 728780135
-    0x2b829efe: "legion_villager_ladel_16bs01", // 729980670
-    0x2b856507: "highpass", // 730162439
-    0x2b9f5741: "dryad_shaman_14ac12b", // 731862849
+    0x2b7d8832: "tiger_44", // 729647154
+    0x2b9818de: "desert_scorpion_baby_elite", // 731388126
     0x2ba1091b: "starved_bandit_1h_club_64", // 731973915
     0x2ba291b4: "skeleton_club_10ws04", // 732074420
+    0x2ba2d909: "dryad_soldier_63_waveevent", // 732092681
     0x2ba32a8f: "fl_gorilla_melee_09fl05", // 732113551
     0x2bad7bca: "ancientguardian_warhammer_icevariant_raid10_named", // 732789706
+    0x2bae87a4: "bear_grizzly_47", // 732858276
     0x2bb62b34: "mountain_lion_32", // 733358900
     0x2bb64d57: "ancientguardian_spearman_55", // 733367639
+    0x2bbab692: "ghost_frozen_53", // 733656722
     0x2bc20aaf: "undead_grenadier_molotov_60", // 734137007
     0x2bc549ad: "risen_whole_body_20", // 734349741
-    0x2bc97856: "primal_lion_desert_cub_16bs09", // 734623830
     0x2bca36f8: "fl_swamp_dryad_soldier_named_09fl08", // 734672632
     0x2bd87d16: "damned_axeman_m-f_07sm06a_elite", // 735608086
     0x2be0b567: "fl_megaflora_razorlotus_09fl10", // 736146791
     0x2be3bc35: "drowned_sailor_1h_club_63_elite", // 736345141
     0x2bf2586e: "undead_pistoleer_08qp05a", // 737302638
+    0x2bf4a754: "wolf_grey_54", // 737453908
     0x2bfe7326: "undead_navigator_20", // 738095910
-    0x2c052a2c: "turkey_vulture_16bs05", // 738535980
+    0x2c027cc2: "siegeweaponlargeresistsrangeddmg", // 738360514
     0x2c0576c4: "corruption_swarmer_dt3", // 738555588
     0x2c08cb9a: "ck_blackbone_lost_2haxe_named_10ws10", // 738773914
     0x2c09a507: "ck_goldcursed_2hspear_10ws03b2_named", // 738829575
     0x2c0b7637: "ck_ghost_charred_10ws04_named", // 738948663
     0x2c0bbdf9: "bobcat_43", // 738967033
-    0x2c0bc109: "skeleton_archer_11md09a", // 738967817
-    0x2c0d5d9b: "anubianguardian_panther_12bs10a", // 739073435
-    0x2c0ea612: "boar_12mb05", // 739157522
-    0x2c0faef6: "turkey_13wf05", // 739225334
-    0x2c1541bd: "dryad_archer_07sm09", // 739590589
-    0x2c18fd81: "anubianguardian_scarab_64", // 739835265
+    0x2c104c2b: "tiger_40", // 739265579
+    0x2c214959: "wolf_alpha_54", // 740378969
     0x2c2a646d: "fl_anubianguardian_reaver", // 740975725
     0x2c2f52ed: "ck_boar_spectral_10ws08", // 741298925
-    0x2c3d507a: "damned_rifleman_m-f_11md00g", // 742215802
-    0x2c436d4a: "elk_doe_11md06", // 742616394
+    0x2c2ff33e: "corruption_swarmer_dg_restless_00_spawn", // 741339966
     0x2c463e02: "corruption_heavy_07sm02_elite", // 742800898
+    0x2c4da485: "damned_villager_rake_38", // 743285893
     0x2c55bdaf: "drowned_sailor_1h_sword_10ws08", // 743816623
-    0x2c5d95c4: "prey", // 744330692
+    0x2c58735f: "damned_villager_pitchfork_43", // 743994207
+    0x2c5940fe: "damned_villager_lumberaxe_59", // 744046846
     0x2c5f49cc: "dryad_soldier_52", // 744442316
     0x2c647d6b: "lynx_msq_11", // 744783211
     0x2c78569f: "undead_grenadier_60", // 746083999
     0x2c79cec9: "skeleton_archer_50", // 746180297
     0x2c7a19fe: "wolf_elemental_ice_named_002_03gc11", // 746199550
     0x2c7b6563: "totem_pirate_cursed_61", // 746284387
-    0x2c82f548: "rabbit_spotted_18", // 746779976
     0x2c9042d9: "cow_19", // 747651801
     0x2c93b73f: "undead_navigator_24", // 747878207
+    0x2c99634d: "wolf_grey_50", // 748249933
     0x2ca40815: "damned_pistoleer_10ws02", // 748947477
     0x2ca88db4: "risen_whole_body_24", // 749243828
     0x2cb326e7: "dynasty_spearman_dg_shattermtn_00", // 749938407
-    0x2cbb230a: "cavern", // 750461706
     0x2cc343bd: "bear_grizzly_43", // 750994365
     0x2cc60c6d: "damned_acolyte_named_03gc07", // 751176813
     0x2ccccd02: "starved_bandit_1h_club_60", // 751619330
     0x2ccd89ae: "ck_ghost_starved_10ws09_elite", // 751667630
+    0x2cd7728b: "ghost_frozen_57", // 752317067
     0x2cd78fba: "alligator_young_dg_cutlass_00", // 752324538
+    0x2cd7a039: "hercyne_reindeer", // 752328761
     0x2cdb894e: "ancientguardian_spearman_51", // 752585038
     0x2cdbef2d: "mountain_lion_36", // 752611117
-    0x2ce7a110: "dunewalker_assassin_s02", // 753377552
     0x2cecb196: "naga_ancientguardian_iceguardian_solo", // 753709462
-    0x2cececad: "undead_grenadier_05wc08", // 753724589
-    0x2cef5ae7: "legion_villager_ladel_16bs05", // 753883879
+    0x2ced7464: "damned_cultist_27", // 753759332
+    0x2cfdee1c: "wolf_grey_waveeventeasy", // 754839068
     0x2cffeb26: "fl_wolf_elemental_earth_09fl04b", // 754969382
-    0x2d057033: "bear_cub_black_02bw08", // 755331123
     0x2d0702b2: "evil_knight_bow_elite", // 755434162
     0x2d0a3220: "anubianguardian_reaver_66", // 755642912
-    0x2d0defe5: "dynasty_musketeer_08qp02", // 755888101
     0x2d0face5: "ancientguardian_mage_37", // 756002021
     0x2d16427d: "ck_blackbone_lost_2hblunderbuss_10ws02_pirates_stand", // 756433533
-    0x2d1c0ae0: "alligator_strange_05wc08", // 756812512
     0x2d20cb91: "skeleton_1h_sword_45", // 757123985
-    0x2d2e4d02: "legion_villager_kitchenknife_16bs03", // 758009090
     0x2d3d91d3: "season_04_mordred_ai", // 759009747
-    0x2d50b8fb: "bison_18", // 760264955
-    0x2d51f961: "ghost_shipwrecked_12mb06c", // 760346977
     0x2d55019b: "swamp_dryad_soldier_elite_05wc10", // 760545691
-    0x2d59dcd2: "withered_beetle_12mb03c", // 760863954
-    0x2d5f084c: "boar_15ec04", // 761202764
     0x2d67f18f: "dune_phantom_tank_64", // 761786767
+    0x2d6c64b8: "drowned_sailor_1h_sword_shield_28", // 762078392
     0x2d6cdf4c: "undead_grenadier_disease_48", // 762109772
+    0x2d6ff856: "damned_villager_sickle_42", // 762312790
     0x2d721535: "damned_villager_pickaxe_50", // 762451253
     0x2d7c2339: "drowned_miner_44", // 763110201
-    0x2d8028a1: "anubianguardian_archer_16bs04", // 763373729
     0x2d8d1353: "undead_berserker_49", // 764220243
-    0x2d8d808f: "withered_swarmancer_12mb10b", // 764248207
+    0x2da3d047: "undead_pistoleer_9", // 765710407
     0x2da5a55c: "wolf_black_38", // 765830492
-    0x2db3931f: "frostknight", // 766743327
-    0x2db84d40: "desert_medium_scorpion_16bs07", // 767053120
     0x2dc03887: "drowned_sailor_1h_sword_5", // 767572103
     0x2dc085e9: "ck_waterfowl", // 767591913
     0x2dc719ec: "ck_lost_berserker_named_10ws06", // 768023020
     0x2dcbfc2a: "skeleton_2h_sword_46", // 768343082
-    0x2ddc5ad8: "marooned", // 769415896
-    0x2dde74f7: "evil_knight_mace_named_s4_1", // 769553655
+    0x2dd391e5: "skeleton_club_51", // 768840165
     0x2de41248: "ck_spectral_lost_ice_10ws07", // 769921608
     0x2de60ea7: "damned_1h_swordsman_m_named_02", // 770051751
-    0x2df4c9ec: "turkey_25", // 771017196
+    0x2df7aa3b: "anubian_scarab_dg_brimstonesands_00", // 771205691
+    0x2dfd96bc: "damned_villager_kitchenknife_44", // 771593916
     0x2e22842e: "ancientguardian_javelineer_38", // 774013998
     0x2e289684: "damnedhound_dt2", // 774411908
-    0x2e2c6636: "anubianguardian_scarab_66_named_01", // 774661686
     0x2e37b82b: "undead_javelineer_61", // 775403563
-    0x2e407d55: "elk_stag_34", // 775978325
+    0x2e40c7e6: "undead_hunter_41", // 775997414
     0x2e413c07: "boar_stripped_47", // 776027143
     0x2e4b9bab: "undead_berserker_14", // 776706987
     0x2e4d8df0: "ck_undead_navigator_10ws06", // 776834544
-    0x2e523a33: "boar_8", // 777140787
     0x2e5b0a4f: "damned_bowman_59", // 777718351
     0x2e5b3afc: "ck_spectral_lost_1hsword_q4_waveevent", // 777730812
-    0x2e670a61: "legion_villager_hammer_16bs11", // 778504801
-    0x2e671e4f: "anubianguardian_scarab_16bs08", // 778509903
-    0x2e7d118a: "anubianguardian_archer_12bs10b", // 779948426
+    0x2e6c7e64: "corrupted_tiger_46", // 778862180
     0x2e836a6b: "withered_brute_named_03", // 780364395
-    0x2e88801f: "damned_1h_swordsman_m-f_04nw06b", // 780697631
     0x2e8f7722: "dynasty_warrior_named_08qp02", // 781154082
     0x2e908289: "damned_villager_axethrower_m-f_41", // 781222537
-    0x2e937931: "skeleton_mage_13wf05", // 781416753
+    0x2e9c8eea: "sulfur_elemental_heavy", // 782012138
     0x2e9f726d: "undead_pistoleer_57", // 782201453
-    0x2eae549c: "boar_13wf01", // 783176860
-    0x2eaf5c78: "turkey_12mb01", // 783244408
-    0x2ec425fc: "ghost_frozen_07sm08", // 784606716
+    0x2ea7d406: "ghost_charred_49", // 782750726
     0x2edd49fb: "damned_1h_swordsman_m-f_31", // 786254331
-    0x2eddfbfc: "skeleton_archer_03gc10c", // 786299900
     0x2ee64369: "skeleton_1h_sword_18", // 786842473
-    0x2efff6a9: "greymane", // 788526761
-    0x2f075884: "anubianguardian_brute_16bs10", // 789010564
     0x2f083a08: "damned_cultist_07sm06_darkness", // 789068296
     0x2f09b796: "risen_l-r_arm_6", // 789165974
     0x2f0cea05: "undead_berserker_named_04", // 789375493
     0x2f11e48a: "fl_swamp_dryad_soldier_09fl10", // 789701770
-    0x2f2032ad: "damned_villager_knife_63", // 790639277
-    0x2f2c0c07: "lushhills", // 791415815
-    0x2f3d3cdf: "alligator_young_12mb06a", // 792542431
     0x2f450270: "alligator_black_28", // 793051760
     0x2f47ecd9: "corrupted_ogre_07sm06b_elite", // 793242841
-    0x2f51c170: "drowned_sailor_1h_sword_04nw10", // 793887088
-    0x2f5533ec: "legion_villager_pickaxe_16bs02", // 794113004
     0x2f562ca7: "legion_legionnaire_ethereal_loc_boss", // 794176679
+    0x2f667900: "drowned_sailor_2h_axe_29", // 795244800
     0x2f69464e: "undead_grenadier_molotov_39", // 795428430
-    0x2f6bd571: "damned_villager_pickaxe_04nw09b", // 795596145
-    0x2f76bced: "damned_bowman_m-f_07sm05d", // 796310765
-    0x2f7ab75f: "anubianguardian_horus_12bs10e", // 796571487
-    0x2f7cbc20: "evil_knight_heavy_14ac13", // 796703776
-    0x2f85f4c3: "risen_whole_body_12mb03a", // 797308099
-    0x2f999242: "anubianguardian_spearman_16bs08", // 798593602
+    0x2f6ec716: "desert_scorpion_slinger_medium_elite", // 795789078
+    0x2f815d85: "damned_villager_ladel_37", // 797007237
+    0x2f8b2c7d: "damned_villager_rake_65", // 797650045
     0x2fa28e4f: "withered_grunt_31", // 799182415
-    0x2fae9124: "boar_27", // 799969572
     0x2fb10c00: "damned_cultist_named_03", // 800132096
     0x2fb771e2: "or_ghost", // 800551394
-    0x2fc99654: "mosswater", // 801740372
-    0x2fcf27fe: "ghost_charred_16bs05", // 802105342
-    0x2fd7f829: "skeleton_crawler_11md00f", // 802682921
-    0x2fe279e8: "ghost_shipwrecked_05wc05c", // 803371496
-    0x2ff8200e: "bloated_corpse_42", // 804790286
+    0x2fd61611: "risen_l-r_arm_56", // 802559505
+    0x2fe1734e: "wolf_elemental_earth_47", // 803304270
     0x2ff93b09: "undead_pirate_brute_named_elite_10ws09_00", // 804862729
     0x2ffe723f: "risen_regurgitator_59", // 805204543
     0x30004e32: "ancientguardian_javelineer_named_01", // 805326386
     0x30042816: "damned_acolyte_named_08qp07", // 805578774
-    0x3011ff39: "legion_villager_hammer_16bs05", // 806485817
-    0x3019cd6a: "damned_1h_swordsman_m-f_04nw09a", // 806997354
+    0x301a8b3c: "corrupted_tiger_52", // 807045948
+    0x301cd9f3: "dunewalker_wanderer_rapier_easy", // 807197171
     0x30285ce6: "broken_laborer_prong", // 807951590
+    0x30292dbe: "corruption_impaler_minion_restlessshores", // 808005054
+    0x302a3017: "damned_villager_cleaver_63", // 808071191
+    0x30336039: "hercyne_reindeer_broodmother", // 808673337
     0x30360900: "ck_blackbone_lost_1hsword_10ws04_sable", // 808847616
-    0x3036880d: "elk_stag_20", // 808880141
+    0x303632be: "undead_hunter_55", // 808858302
     0x3037c95f: "boar_stripped_53", // 808962399
+    0x303ab713: "dryad_shaman_58_08qp01", // 809154323
     0x30585522: "yeti_named_14ac01", // 811095330
     0x3063ec45: "skeleton_club_18", // 811854917
-    0x306eec44: "scorpius", // 812575812
-    0x308553fa: "risen_whole_body_11md00j", // 814044154
     0x308599aa: "damned_villager_hammer_34", // 814061994
-    0x308bd8e5: "swamp_dryad_shaman_05wc08", // 814471397
-    0x309684eb: "alligator_young_15ec02c", // 815170795
     0x30abbca3: "damned_1h_swordsman_m-f_25", // 816561315
     0x30ac1cd1: "damned_villager_skinning_knife_07sm04_elite", // 816585937
-    0x30b32175: "fl_spriggan_adolescent_09fl07", // 817045877
-    0x30b53141: "skeleton_crawler_41", // 817180993
-    0x30b74d10: "desolate", // 817319184
     0x30bea162: "corruption_swarmer_08qp08_elite", // 817799522
-    0x30d0ee4a: "wolf_grey_11md09", // 818998858
     0x30d401e8: "dune_phantom_berserker_62", // 819200488
     0x30dc1918: "drowned_sailor_1h_sword_shield_61", // 819730712
-    0x30df2e57: "desert_coyote_16bs09", // 819932759
-    0x30e19409: "damned_cultist_08qp07", // 820089865
+    0x30e677d1: "damned_villager_axethrower_m-f_55", // 820410321
     0x30e81078: "ck_undead_bloated_corpse_10ws09b_elite", // 820514936
     0x30e98735: "undead_pistoleer_43", // 820610869
     0x30eed458: "fl_megaflora_razorlotus_09fla", // 820958296
     0x310d267f: "boar", // 822945407
-    0x311deb91: "risen_whole_body_11md08", // 824044433
-    0x312605ae: "pig_domestic_02bw01", // 824575406
+    0x3119970a: "risen_brute_minion", // 823760650
     0x3126ca15: "wolf_grey_8", // 824625685
-    0x312aa375: "skeleton_2h_sword_11md06a", // 824877941
-    0x31371e59: "pig_domestic_12mb03b", // 825695833
-    0x313ca054: "pig_domestic_40", // 826056788
+    0x31291eed: "wolf_grey_19", // 824778477
     0x3146ab8f: "ck_spectral_lost_1hsword_10ws03e", // 826715023
-    0x314eb1ac: "legion_villager_pickaxe_16bs02d", // 827240876
     0x314f4ac0: "undead_officer_38", // 827280064
     0x315186b8: "ck_spectral_lost_2hblunderbuss_10ws06", // 827426488
     0x315a8f6c: "hercyne_echidna", // 828018540
-    0x315f6e84: "corruption_entity_04nw10b", // 828337796
-    0x315ff5e0: "damned_rifleman_m-f_03gc08a", // 828372448
+    0x315fcb26: "undead_grenadier_molotov_60_waveevent", // 828361510
     0x3165000d: "fl_dg_firstlight_01_megaflora_razorlotus_named", // 828702733
     0x316711d2: "fl_swamp_dryad_soldier_09fl04", // 828838354
-    0x3171addc: "anubianguardian_brute_16bs04", // 829533660
-    0x31740033: "undead_pirate_brute_05wc08", // 829685811
+    0x3173b32d: "corruption_heavy_dt6", // 829666093
     0x317d6464: "legion_legionnaire_67", // 830301284
-    0x3182620f: "fl_beetle_baby_09fl09", // 830628367
-    0x318ed556: "bloated_corpse_56", // 831444310
+    0x31978616: "wolf_elemental_earth_53", // 832013846
     0x31982886: "damned_rifleman_m-f_07sm06d", // 832055430
     0x319eadc5: "fl_anubianguardian_horus_named_09fl01", // 832482757
-    0x31a10d71: "skeleton_crawler_11md01b", // 832638321
-    0x31b9d2a6: "ghost_charred_16bs11", // 834261670
+    0x31a0e349: "risen_l-r_arm_42", // 832627529
+    0x31a23c68: "damned_rifleman_m-f_59", // 832715880
+    0x31a6e14d: "damned_villager_shovel_39", // 833020237
+    0x31bc0814: "ghost_shipwrecked_49", // 834406420
     0x31c82b3f: "undead_grenadier_29", // 835201855
-    0x31c8a110: "cow_12mb01", // 835232016
-    0x31d8647c: "boar_33", // 836265084
-    0x31f7f5fb: "alligator_young_04nw11a", // 838333947
-    0x31fa9804: "damned_villager_pickaxe_04nw06a", // 838506500
+    0x31d47b17: "withered_grunt_25", // 836008727
     0x320f3b91: "skeleton_archer_44", // 839859089
     0x3229bc94: "dryad_soldier_46", // 841596052
     0x322b75b1: "evil_knight_greataxe_elite", // 841708977
+    0x322e8607: "damned_villager_pitchfork_57", // 841909767
     0x3236b593: "fl_explosive_sprout_physical_09fl08", // 842446227
+    0x3244f43a: "undead_navigator_3", // 843379770
     0x324e0f9f: "risen_regurgitator_10", // 843976607
-    0x3255bfcb: "undead_gravedigger_13wf03", // 844480459
     0x3257bc01: "wolf_alpha_40", // 844610561
     0x325ba1ee: "ck_undead_bloated_corpse_10ws03c", // 844866030
+    0x325bd5e8: "alligator_strange_30", // 844879336
     0x325c271b: "firemine", // 844900123
-    0x326d602a: "ghostcharred", // 846028842
-    0x3273df74: "turkey_vulture_16bs11", // 846454644
+    0x326069b5: "damned_villager_shovel_64", // 845179317
+    0x3266b973: "tiger_54", // 845592947
+    0x326b7d0d: "risen_corruption_impaler_60", // 845905165
+    0x327d48a1: "bobcat_57", // 847071393
     0x328038de: "siegeweaponlarge", // 847263966
-    0x328248ba: "ghost_starved_13wf03", // 847399098
-    0x3286f545: "alligator_strange_10ws08", // 847705413
+    0x3281beff: "corrupted_mine_63", // 847363839
     0x3294e21c: "undead_hunter_named_03", // 848618012
     0x32987e15: "anubian_scarab_named_02", // 848854549
-    0x3299afbf: "legion_villager_ladel_16bs11", // 848932799
-    0x329a8c7c: "skeleton_archer_11md06b", // 848989308
-    0x32a55798: "rabbit_snowshoe_11md09", // 849696664
+    0x329b813c: "damned_cultist_33", // 849051964
+    0x32a187d3: "ghost_frozen_43", // 849446867
     0x32a654d4: "risen_regurgitator_named_01", // 849761492
     0x32ad1a75: "mountain_lion_22", // 850205301
     0x32ad7c16: "ancientguardian_spearman_45", // 850230294
+    0x32b5b6e5: "bear_grizzly_57", // 850769637
     0x32b5ee7f: "corruptedlegion_cyclops_65", // 850783871
-    0x32ba734d: "grubby_rebels", // 851080013
-    0x32c433a4: "legion_sagittarii_16bs08", // 851719076
-    0x32cbc09f: "damned_villager_skinning_knife_10ws07", // 852213919
     0x32cc4d7f: "evil_knight_longsword_dg_greatcleave_00_01", // 852249983
     0x32d5873a: "ghost_plagued_62", // 852854586
     0x32d604a0: "drowned_sailor_2h_axe_60", // 852886688
+    0x32d63d97: "wolf_timber_35", // 852901271
     0x32de78ec: "risen_whole_body_30", // 853440748
     0x32e54267: "undead_navigator_30", // 853885543
-    0x32eb1c77: "dynasty_summoner_08qp02", // 854269047
     0x32ef0fa5: "bloated_corpse_63_elite", // 854527909
     0x32ef378e: "skeleton_archer_61_elite", // 854538126
     0x32ef9615: "wolf_grey_44", // 854562325
     0x32f57fd0: "alligator_black_61", // 854949840
     0x32f9c02a: "elk_doe_14", // 855228458
     0x3304e06d: "damned_villager_pickaxe_44", // 855957613
-    0x3307cdde: "barbary_lion_16bs05b", // 856149470
-    0x3311d27a: "drowned_sailor_2h_axe_41_15ec00", // 856806010
-    0x331610dd: "furious", // 857084125
+    0x33190d0e: "damned_villager_sickle_56", // 857279758
     0x3324cc5a: "fl_anubianguardian_scarab_09fl01", // 858049626
-    0x3336887e: "undead_berserker_12mb06c_named_elite", // 859211902
-    0x333bba82: "dryad_archer_14ac14a", // 859552386
-    0x3347ea06: "beast", // 860350982
-    0x3350e0ad: "withered_swarmancer_11md06", // 860938413
+    0x3343eeca: "broken_farmhand_heavy", // 860090058
     0x335428bb: "swamp_dryad_tendril_61", // 861153467
     0x33563ec9: "skeleton_1h_sword_51", // 861290185
     0x335a166f: "hercyne_wolf_named_raid_cutlasskeys_00", // 861541999
-    0x335a2383: "skeleton_spear_03gc10a", // 861545347
-    0x335d6d4e: "legion_villager_kitchenknife_67", // 861760846
     0x3370cff2: "corruption_heavy_named_msq_ballards", // 863031282
-    0x33823cb4: "turkey_31", // 864173236
-    0x338240a5: "undead_shaman_12mb01a", // 864174245
+    0x338524c5: "ghost_shackled_48", // 864363717
     0x3387c58b: "undead_javelineer_28", // 864535947
     0x33888a9e: "fl_ancientguardian_mage_named_elite_09fl06", // 864586398
-    0x3392e8f9: "damned_acolyte_named_s4_1", // 865265913
+    0x338b63e4: "damned_villager_kitchenknife_50", // 864773092
     0x33a564bd: "skeleton_club_45", // 866477245
     0x33ae207d: "anubianguardian_spearman_dg_brimstonesands_named_00", // 867049597
+    0x33ae9cc3: "dynasty_summoner_62", // 867081411
     0x33bd0972: "skeleton_2h_sword_52", // 868026738
+    0x33bf91e7: "dynasty_musketeer", // 868192743
     0x33bfc8ba: "tendril_corruption_08qp02", // 868206778
-    0x33c39759: "skeleton_crawler_16bs01", // 868456281
-    0x33d93f5e: "damned_villager_shovel_11md07a", // 869875550
-    0x33ea5910: "evil_knight_bow_04nw02", // 870996240
+    0x33db4f44: "ancientguardian_spearman_icevariant", // 870010692
+    0x33eaff79: "damned_villager_skinning_knife_62", // 871038841
     0x33ebdb19: "ck_ghost_shipwrecked_q4_waveevent", // 871095065
-    0x33efdb01: "bear_damned_dt5", // 871357185
-    0x33f6ddf9: "anubianguardian_archer_16bs10", // 871816697
+    0x33eef76a: "megaturkey", // 871298922
     0x33f8762a: "gorilla_boss_dg_firstlight_01", // 871921194
-    0x33fb4007: "evil_knight_spear_named_dg_greatcleave_00", // 872103943
-    0x341e7da0: "skeleton_crawler_18", // 874413472
     0x3428f4dc: "damned_longswordsman_minion_ogre", // 875099356
-    0x3430a957: "legion_villager_kitchenknife_63", // 875604311
-    0x34335c83: "corruption_impaler_04nw10b", // 875781251
     0x343bfad0: "skeleton_1h_sword_55", // 876346064
     0x3444c9b7: "withered_grunt_named_10ws03", // 876923319
+    0x344fbfca: "ancient_ice_dragon_solo_s4", // 877641674
     0x34527a83: "damned_hound_07sm06", // 877820547
-    0x345593dc: "drowned_sailor_1h_club_40_15ec00", // 878023644
     0x34692474: "damned_villager_pickaxe_40", // 879305844
-    0x3470a277: "anubianguardian_reaver_16bs08", // 879796855
-    0x34772267: "undead_sailor_2h_axe_05wc08", // 880222823
+    0x3474c917: "damned_villager_sickle_52", // 880068887
     0x347755f9: "drowned_sailor_1h_sword_shield_38", // 880236025
     0x3477ee0d: "undead_grenadier_disease_58", // 880274957
     0x34817572: "fl_chameleon_elite_09fl01", // 880899442
-    0x34821f18: "bear_damned_dt1", // 880942872
     0x34829586: "corruption_swarmer_07sm02b_elite", // 880973190
+    0x34873b60: "damned_villager_skinning_knife_66", // 881277792
     0x34962212: "undead_berserker_59", // 882254354
     0x34a97382: "ghost_frozen_named_dg_windsward_00", // 883520386
-    0x34ae5340: "skeleton_crawler_16bs05", // 883839808
-    0x34b9ccd0: "blight_fiend_07sm09a", // 884591824
-    0x34bbdf76: "skeleton_mage_03gc10a", // 884727670
     0x34be941d: "wolf_black_28", // 884904989
     0x34bf15e3: "boar_stripped_named_08qp03", // 884938211
-    0x34c1c833: "undead_navigator_08qp01a", // 885114931
     0x34c8a0a4: "skeleton_club_41", // 885563556
-    0x34c8c87d: "winterknight", // 885573757
-    0x34ce849b: "drowned_sailor_1h_sword_shield_04nw11c", // 885949595
+    0x34cfc980: "tendril_corruption_62", // 886032768
     0x34d0cd6b: "skeleton_2h_sword_56", // 886099307
-    0x34d20ca3: "tendril_corruption_08qp06", // 886181027
-    0x34eff8ad: "turkey_35", // 888141997
+    0x34e6a7fd: "damned_villager_kitchenknife_54", // 887531517
     0x34f17be3: "rabbit_snowshoe_45", // 888241123
-    0x34fc7ba4: "skeleton_mage_09fl08", // 888961956
+    0x350b7d6a: "tiger_50", // 889945450
+    0x350dadac: "damned_villager_shovel_60", // 890088876
+    0x35108cb8: "bobcat_53", // 890277048
     0x3523cb86: "risen_regurgitator_14", // 891538310
-    0x352e8c74: "hostile", // 892243060
+    0x35286c68: "ghost_starved_22_elite", // 891841640
+    0x35293023: "undead_navigator_7", // 891891747
     0x3531dda1: "fl_gorilla_ice_elite_09fl01", // 892460449
-    0x3532c9d0: "undead_shaman_15ec04c", // 892520912
-    0x354a6705: "withered_beetle_09fl03", // 894068485
-    0x3554d955: "ck_undead_pirate_brute_63_elite", // 894753109
-    0x3556c1b7: "damned_villager_pitchfork_16bs02a", // 894878135
-    0x3556f5d4: "ridgewatch", // 894891476
+    0x353611f1: "alligator_strange_34", // 892735985
+    0x353a7818: "wolf_alpha_44", // 893024280
+    0x354271bf: "damned_villager_lumberaxe_49", // 893546943
+    0x3543421e: "damned_villager_pitchfork_53", // 893600286
+    0x3544788d: "dryad_soldier_42", // 893679757
+    0x355695c4: "damned_villager_rake_28", // 894866884
     0x3562ff88: "skeleton_archer_40", // 895680392
     0x3582520c: "wolf_grey_40", // 897733132
     0x3585d94d: "icedryad_melee_frostfang_61", // 897964365
-    0x3586d86e: "dynasty_summoner_08qp06", // 898029678
+    0x3587607b: "legion_legionnaire_dg_brimstonesands_minion", // 898064507
     0x3588867e: "undead_navigator_34", // 898139774
     0x35933ecf: "legion_legionnaire_dg_brimstonesands_named_00", // 898842319
     0x35940433: "elk_doe_10", // 898892851
@@ -1673,802 +1389,673 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x3597ecb5: "pig_domestic_19", // 899148981
     0x3598bbc9: "alligator_black_65", // 899201993
     0x35acbb54: "fl_dg_firstlight_01_chameleon_named", // 900512596
-    0x35aff58b: "drowned_sailor_1h_sword_shield_15ec02a", // 900724107
     0x35b3bcf5: "risen_whole_body_34", // 900971765
-    0x35bdd4bb: "drowned_miner_10ws03", // 901633211
+    0x35bbf98e: "wolf_timber_31", // 901511566
+    0x35c093ff: "hercyne_broodmother_hercyneegg", // 901813247
     0x35c0b80f: "ancientguardian_spearman_41", // 901822479
+    0x35c72bd5: "fl_bobcat", // 902245333
     0x35c87300: "ck_undead_berserker_10ws09_elite", // 902329088
+    0x35cc43ca: "ghost_frozen_47", // 902579146
     0x35d2b858: "season_04_daichi", // 903002200
     0x35d5dfd7: "fl_gorilla_melee_09fl11", // 903208919
     0x35d82a66: "corruptedlegion_cyclops_61", // 903359078
+    0x35d872fc: "bear_grizzly_53", // 903377660
     0x35da312e: "ck_spectral_lost_2hblunderbuss_10ws09_elite", // 903491886
-    0x35e3d3ce: "wolf_elemental_earth_14ac07a", // 904123342
     0x35e40621: "undead_officer_61", // 904136225
-    0x35f04c6b: "drowned_sailor_2h_axe_04nw11b", // 904940651
+    0x35f64525: "damned_cultist_37", // 905332005
     0x35f6f6ed: "yeti_named_07sm08", // 905377517
     0x35f92605: "undead_hunter_named_07", // 905520645
-    0x35fe8051: "frontwatch", // 905871441
     0x3610a07d: "legion_legionnaire_63", // 907059325
+    0x361e7734: "corruption_heavy_dt2", // 907966260
     0x362b6f96: "ck_spectral_lost_1hsword_10ws03a", // 908816278
     0x36303043: "ck_undead_pistoleer_10ws08_black", // 909127747
-    0x363628ae: "miststride", // 909519022
-    0x364e02ad: "legion_villager_pickaxe_16bs12", // 911082157
-    0x3651644d: "pig_domestic_44", // 911303757
+    0x363ce2b4: "withered_feculent", // 909959860
+    0x365e3331: "alligator_black_38", // 912143153
     0x3661bbdd: "legion_signifer_named_00", // 912374749
-    0x36696c3b: "ancientguardian_spearman_13wf05", // 912878651
     0x3672770f: "undead_grenadier_molotov_29", // 913471247
     0x367d4841: "drowned_sailor_2h_axe_39", // 914180161
-    0x36814c4e: "armadillo_16bs09", // 914443342
+    0x368cafda: "wolf_timber_waveeventeasy", // 915189722
     0x369a6cc4: "damned_villager_ladel_27", // 916090052
     0x369f21d9: "damned_greataxeman_m-f_dg_greatcleave_00", // 916398553
-    0x36a56509: "cow_12mb05", // 916808969
     0x36aab748: "ck_goldcursed_2hblunderbuss_10ws04_gold", // 917157704
     0x36b1adb7: "fl_dg_firstlight_01_gorilla_lava", // 917614007
     0x36b9bf0e: "withered_grunt_21", // 918142734
+    0x36bdd1a5: "dryad_soldier_58_08qp01", // 918409637
     0x36be10ee: "decayed_withered", // 918425838
-    0x36be929d: "legion", // 918459037
+    0x36bf37f2: "fl_mammoth_boss_earth_root_void_plus", // 918501362
+    0x36cd2750: "risen_l-r_arm_46", // 919414608
     0x36cef06a: "ck_alligator_black_10ws06", // 919531626
-    0x36da3321: "evil_knight_caster_03gc08", // 920269601
-    0x36e3114f: "bloated_corpse_52", // 920850767
     0x36e5437e: "risen_regurgitator_49", // 920994686
-    0x36eb678c: "boar_08qp02", // 921397132
-    0x36f03736: "tendril_corruption_04nw06b", // 921712438
-    0x36f35bb0: "season_02_eggguardiandefeated", // 921918384
+    0x36fa420f: "wolf_elemental_earth_57", // 922370575
     0x36fbf7a3: "lost_fencer_12mb05", // 922482595
-    0x3711478c: "damned_grunt_07sm05b", // 923879308
-    0x3711d193: "rustheart", // 923914643
+    0x372aa8c5: "wolf_elemental_ice_62", // 925542597
     0x3739b56f: "ancientguardian_javelineer_28", // 926528879
     0x373b2818: "evil_knight_commander", // 926623768
-    0x37494d85: "sheep_eastern_13wf02", // 927550853
-    0x374ef1c0: "undead_officer_12mb06a", // 927920576
+    0x37403b0e: "damned_bowman_49", // 926956302
+    0x3747f40e: "damned_villager_cleaver_67", // 927462414
+    0x37564c2d: "wolf_white_61", // 928402477
     0x3758cf2a: "wolf_black_08qp07b", // 928567082
     0x375a0d46: "boar_stripped_57", // 928648518
-    0x375b4c14: "elk_stag_24", // 928730132
-    0x3763cb0f: "ancientguardian_javelineer_16bs04", // 929286927
+    0x375bf6a7: "undead_hunter_51", // 928773799
     0x37666147: "ck_damned_cultist_10ws06", // 929456455
-    0x37737e2e: "fl_mim_rat_hercynerat", // 930315822
-    0x3775946e: "risen_l-r_arm_09fl02", // 930452590
-    0x377c3b20: "legion_villager_hammer_16bs01", // 930888480
+    0x37774f25: "corrupted_tiger_56", // 930565925
+    0x3778899b: "evil_knight_fire_champion_eruption", // 930646427
     0x37808f0d: "undead_officer_64_elite", // 931172109
     0x3784432c: "undead_pistoleer_47", // 931414828
-    0x3784490f: "totem_pirate_cursed_05wc06", // 931416335
     0x378bb3c8: "damned_villager_axethrower_m-f_51", // 931902408
-    0x378c5010: "damned_cultist_08qp03", // 931942416
-    0x37984e23: "illurmin", // 932728355
-    0x379a1cb6: "drowned_sailor_1h_sword_shield_45_15ec00", // 932846774
-    0x379bd562: "dryad_soldier_07sm09a", // 932959586
-    0x379e186a: "drowned_sailor_1h_sword_11md05a", // 933107818
+    0x378c8e2b: "damned_hound_dg_ebonscale_00_defend", // 931958315
     0x37a7abb0: "undead_hunter_34_elite", // 933735344
-    0x37a8c04b: "damned_villager_cleaver_04nw06a", // 933806155
     0x37b3aa9c: "fl_rabbit_09fl05", // 934521500
     0x37b4cb9e: "corruption_entity", // 934595486
     0x37b9c5f1: "dune_phantom_berserker_66", // 934921713
-    0x37c75930: "wolf_alpha_12mb08", // 935811376
-    0x37d8f558: "skeleton_crawler_45", // 936965464
-    0x37dee56c: "fl_spriggan_adolescent_09fl03", // 937354604
-    0x37e77c5b: "deeppit", // 937917531
+    0x37bce547: "ghost_charred_59", // 935126343
+    0x37dde8d8: "sheep_eastern_27", // 937289944
     0x37e85db3: "damned_villager_hammer_30", // 937975219
-    0x37ee5db4: "ghost_shipwrecked_dg_windsward_00", // 938368436
-    0x37fcaa8e: "drowned_sailor_2h_axe_11md00d", // 939305614
-    0x38043f41: "tendril_dryad_05wc01a", // 939802433
+    0x37efb8ce: "legion_legionnaire_physical_elite", // 938457294
     0x38046450: "fl_swamp_dryad_soldier", // 939811920
-    0x3805a6d0: "drowned_miner_10ws09_elite", // 939894480
+    0x380a443f: "ghost_shipwrecked_45", // 940196927
+    0x3810ad66: "damned_villager_shovel_35", // 940617062
     0x38127653: "desert_scorpion_61", // 940734035
     0x38130b29: "drowned_sailor_1h_sword_36", // 940772137
+    0x38144489: "hercyne_reindeer_briar_turret_alpha", // 940852361
+    0x38147043: "damned_rifleman_m-f_55", // 940863555
     0x381955c5: "ancientguardian_reaver_named_01", // 941184453
     0x381f5285: "dryad_shaman_62", // 941576837
+    0x3822c08c: "drowned_sailor_1h_club_26", // 941801612
     0x38277331: "lost_knight_tank_12mb03e", // 942109489
     0x382778d2: "wolf_alpha_11", // 942110930
     0x382b113b: "alligator_strange_61", // 942346555
-    0x3830b336: "sheep_churro_33", // 942715702
-    0x3832142c: "undead_berserker_05wc08", // 942806060
-    0x38342e24: "fl_beetle_baby_09fl05", // 942943780
     0x383a6221: "dryad_beast_named_01", // 943350305
     0x383ecb4c: "risen_regurgitator_41", // 943639372
     0x384409e1: "skeleton_spear_42", // 943983073
-    0x38453635: "damned_acolyte_03gc09_named_elite", // 944059957
-    0x3850ff9d: "damned_villager_pitchfork_08qp08", // 944832413
-    0x38524dfc: "moonshade", // 944918012
-    0x38592b31: "anubianguardian_spearman_16bs10", // 945367857
     0x38597847: "dryad_soldier_17", // 945387591
-    0x385ac47c: "armadillo_16bs01", // 945472636
-    0x385c8ac2: "dune_phantom_huntress_16bs04a", // 945588930
     0x38607391: "ancientguardian_reaver_57", // 945845137
     0x3862373c: "withered_grunt_29", // 945960764
-    0x3863344f: "rabbit_spotted_02bw01", // 946025551
     0x38635030: "risen_regurgitator", // 946032688
-    0x38698d42: "damned_villager_axethrower_02bw02", // 946441538
+    0x3876a3e3: "damned_axeman_m-f_56", // 947299299
     0x387c3349: "damned_villager_pickaxe_03gc07", // 947663689
     0x387e6714: "undead_grenadier_25", // 947808020
+    0x387fff42: "skeleton_archer_15", // 947912514
     0x3885bb03: "alligator_black_30", // 948288259
-    0x388904f9: "elk_doe_45", // 948503801
     0x388e2d9e: "undead_pistoleer_named_02", // 948841886
-    0x388ffe45: "drowned_sailor_1h_sword_04nw11b", // 948960837
-    0x3890675d: "alligator_young_08qp01a", // 948987741
     0x389586b4: "undead_navigator_61", // 949323444
     0x38960572: "corruption_impaler_dg_greatcleave_00", // 949355890
     0x389f52c6: "wolf_grey_15", // 949965510
     0x38a19ac8: "fl_hercyne_boar_09fl02a", // 950115016
-    0x38a28fe9: "desert_bison_strange_16bs12", // 950177769
     0x38a543e9: "ghost_plagued_33", // 950354921
+    0x38a6c073: "drowned_sailor_2h_axe_31", // 950452339
     0x38a71091: "damned_pistoleer_m-f_named_dg_shattermtn_00", // 950472849
     0x38b94f83: "ghost_starved_43", // 951668611
-    0x38b97cda: "undead_shaman_10ws03", // 951680218
     0x38c213fb: "ck_lost_2h_pickaxe_10ws06", // 952243195
-    0x38c7e1f7: "anubianguardian_brute_16bs08", // 952623607
     0x38cc1621: "corruptedlegion_cyclops_named_01", // 952899105
     0x38d15df9: "fl_swamp_dryad_soldier_09fl08", // 953245177
-    0x38e8e77e: "skeleton_1h_sword_nwsw", // 954787710
+    0x38e51a7f: "anubianguardian_panther_elite_named_01", // 954538623
+    0x38eb45ef: "damned_cultist_62", // 954942959
     0x38fcf8f9: "fl_dg_firstlight_01_barbary_lion", // 956102905
-    0x38fdaa87: "alligator_black_40_15ec00", // 956148359
-    0x3902bfd2: "undead_officer_05wc08", // 956481490
     0x3907e2a3: "ck_goldcursed_2hspear_10ws10b", // 956818083
     0x39140d57: "ghost_frozen_65_elite", // 957615447
-    0x39196bb3: "turkey_02bw06", // 957967283
     0x391c06e0: "undead_berserker_63_elite", // 958138080
-    0x391cd102: "wolf_alpha_12mb00", // 958189826
     0x391df088: "damned_1h_swordsman_m-f_29", // 958263432
     0x391e69ae: "undead_officer_named_08qp02", // 958294446
     0x3920e3e9: "skeleton_archer_named_dg_reekwater_00", // 958456809
-    0x392de84b: "polder", // 959309899
     0x392f24a0: "tendril_corruption_dt6", // 959390880
-    0x393004e1: "primal_lion_desert_16bs07", // 959448289
-    0x393d94ce: "swamp_dryad_shaman_05wc04", // 960337102
-    0x393e1d81: "legion_sagittarii_16bs08a", // 960372097
+    0x3933d581: "damned_villager_hammer_38", // 959698305
     0x39420dcf: "ck_blackbone_lost_2hblunderbuss_10ws03f", // 960630223
-    0x3942c23c: "evil_knight_longsword_23", // 960676412
+    0x39503bfa: "damned_villager_axethrower_m-f_59", // 961559546
     0x395081a5: "ancientguardian_javelineer_named_dg_reekwater_00", // 961577381
-    0x3969627c: "desert_coyote_16bs05", // 963207804
-    0x3972ee94: "undead_navigator_08qp02", // 963833492
+    0x39620db8: "blight_fiend_52", // 962727352
+    0x39676d75: "ghost_charred_51", // 963079541
     0x397424be: "damned_villager_pickaxe_15", // 963912894
     0x3975b69f: "fl_anubianguardian_archer_09fl01", // 964015775
     0x39807e95: "undead_hunter_59", // 964722325
     0x39877674: "anubianguardian_archer_named_01", // 965178996
-    0x399f0f2f: "ghost_shackled_02bw01", // 966725423
-    0x39a0219c: "wolf_timber_09fl02", // 966795676
-    0x39a7a73c: "anubianguardian_scarab_16bs10", // 967288636
-    0x39a7b312: "legion_villager_hammer_16bs09", // 967291666
-    0x39badcbf: "sand_elemental_shaman_16bs06", // 968547519
-    0x39cf3630: "ice_varangian_knight_greataxe", // 969881136
+    0x399a3baa: "damned_villager_skinning_knife_33", // 966409130
+    0x399bb33c: "damned_bowman_41", // 966505276
+    0x39b92e7b: "hercyne_corvid_alpha", // 968437371
+    0x39be1429: "dryad_prowler_62", // 968758313
     0x39d5a06e: "skeleton_club_14", // 970301550
+    0x39de107f: "undead_gravedigger_52", // 970854527
     0x39e23d5d: "ancientguardian_javelineer_20", // 971128157
-    0x3a01e929: "legion_villager_cleaver_16bs07a", // 973203753
-    0x3a272aa9: "malocchio", // 975645353
+    0x3a107232: "ancientguardian_reaver_61_waveevent", // 974156338
+    0x3a132896: "skeleton_club_49", // 974334102
+    0x3a2a8b0e: "damned_pistoleer_m-f_36", // 975866638
     0x3a3189a0: "undead_javelineer_24", // 976325024
+    0x3a3368ee: "ghost_shackled_44", // 976447726
     0x3a37f9d5: "anubianguardian_panther_63", // 976746965
     0x3a4daa20: "undead_berserker_51", // 978168352
     0x3a52a7a7: "legion_signifer_67", // 978495399
+    0x3a576cf5: "dynasty_spearman", // 978808053
     0x3a5af4c4: "damned_villager_cleaver_32", // 979039428
-    0x3a5e8824: "risen_whole_body_15ec02b", // 979273764
+    0x3a6d3c3d: "undead_navigator_named_05wc11", // 980237373
     0x3a7128ac: "evil_knight_longsword_elite_08qp02", // 980494508
-    0x3a757c01: "peacock_08qp07", // 980777985
     0x3a7ae853: "swamp_dryad_tendril_named_05wc04", // 981133395
     0x3a7dd6d3: "corrupted_sailor_2h_axe", // 981325523
-    0x3a8318a0: "drowned_sailor_1h_sword_11md00d", // 981670048
+    0x3a7e89f8: "dryad_archer_43", // 981371384
+    0x3a89bee0: "bear_black_56", // 982105824
     0x3a9943e6: "undead_pistoleer_12", // 983122918
     0x3aac663f: "undead_grenadier_disease_50", // 984376895
-    0x3ab2231d: "drowned_sailor_1h_club_15ec02c", // 984752925
+    0x3aacddcb: "drowned_sailor_1h_sword_shield_30", // 984407499
+    0x3ab2ac46: "damned_villager_pickaxe_48", // 984788038
     0x3ab36c2f: "ck_blackbone_lost_2hblunderbuss_10ws09b_elite", // 984837167
     0x3ab4f8f2: "damned_rifleman", // 984938738
     0x3ac402eb: "ck_spectral_lost_2hspear_10ws06", // 985924331
     0x3ac5f592: "skeleton_crawler_10", // 986051986
     0x3ac93659: "corruption_swarmer_dg_shattermtn_00", // 986265177
+    0x3ae181a9: "anubian_lotus_scarab_boss_sun", // 987857321
     0x3ae6b43b: "withered_brute_named_09_08qp07", // 988197947
-    0x3aeab40a: "damned_hound_04nw09a", // 988460042
-    0x3aee171f: "ancientguardian_reaver_11md00a", // 988682015
-    0x3b16b763: "risen_whole_body_13wf08b", // 991344483
+    0x3af55d79: "damned_villager_hammer_65", // 989158777
+    0x3b10d61b: "sulfur_elemental_shaman", // 990959131
     0x3b1837e2: "pig_domestic_08qp05", // 991442914
     0x3b1b303d: "ancientguardian_spearman_49", // 991637565
-    0x3b1fd31b: "peacock_16bs02d", // 991941403
-    0x3b260326: "damned_villager_knife_26", // 992346918
-    0x3b2f73e4: "jackrabbit_65", // 992965604
-    0x3b30b96e: "alligator_strange_10ws04", // 993048942
+    0x3b461785: "dunewalker_wanderer_rapier_named", // 994449285
     0x3b4c6487: "pig_domestic_11", // 994862215
-    0x3b510d1c: "wolf_timber_06sw10", // 995167516
-    0x3b54caa6: "withered_swarmancer_04nw02", // 995412646
+    0x3b59da3e: "wolf_grey_48", // 995744318
     0x3b6071bc: "wolf_timber_39", // 996176316
-    0x3b6c9481: "sulfur_elemental_entity_16bs12", // 996971649
-    0x3b727f8f: "legion_sagittarii_16bs04", // 997359503
+    0x3b6e325e: "damned_acolyte_57", // 997077598
+    0x3b7bd35b: "icemagicpylon", // 997970779
     0x3b80f9b8: "fl_explosive_sprout_physical_09fl04", // 998308280
-    0x3b94154e: "wolf_grey_0603_0201_waveeventeasy", // 999560526
+    0x3b99f98d: "damned_villager_lumberaxe_41", // 999946637
     0x3ba2c858: "ck_drowned_sailor_1h_club_10ws02", // 1000523864
-    0x3ba8a0af: "boar_62", // 1000906927
     0x3bb977ba: "skeleton_archer_48", // 1002010554
     0x3bc22510: "dryad_soldier_31_elite", // 1002579216
     0x3bd0279a: "risen_l-r_arm_13", // 1003497370
-    0x3bd0b03b: "damned_acolyte_08qp08_elite", // 1003532347
-    0x3be4200f: "drenchsky", // 1004806159
-    0x3be850dc: "withered_grunt_dg_windsward_00", // 1005080796
+    0x3bd0f558: "tiger_58", // 1003550040
+    0x3bd3aa51: "withered_brute_36", // 1003727441
     0x3bf996c8: "dryad_shaman_32_elite", // 1006212808
+    0x3c0347f0: "fl_mammoth_boss_earth_root_fire", // 1006847984
+    0x3c03f647: "damned_acolyte_53", // 1006892615
+    0x3c051a0f: "icedryad_fiend_shivers", // 1006967311
     0x3c05f0de: "risen_whole_body_38", // 1007022302
     0x3c08a019: "lost_knight_warhammer_named_06sw09", // 1007198233
-    0x3c09c125: "primal_lion_desert_cub_16bs11", // 1007272229
     0x3c0b3ca2: "swamp_dryad_beast_named_dg_edengrove_02", // 1007369378
-    0x3c12d112: "makogai", // 1007866130
     0x3c1cb349: "ck_undead_pistoleer_10ws04_sable", // 1008513865
     0x3c200c14: "fl_megaflora_razorlotus_09fl08", // 1008733204
     0x3c23b1f1: "ghost_plagued", // 1008972273
-    0x3c3d37df: "boar_named_02", // 1010644959
     0x3c3eca55: "undead_navigator_38", // 1010747989
-    0x3c40aa7c: "undead_shaman_10ws09_elite", // 1010870908
-    0x3c42b7fd: "jackrabbit_61", // 1011005437
-    0x3c53b166: "legion_villager_pickaxe_16bs07a", // 1012117862
-    0x3c5ce6a3: "dynasty_summoner_08qp06_elite", // 1012721315
-    0x3c7cc29a: "withered_grunt_15_12mb03c", // 1014809242
+    0x3c805dda: "alligator_strange_38", // 1015045594
+    0x3c8c3433: "wolf_alpha_48", // 1015821363
     0x3c9587ad: "risen_regurgitator_18", // 1016432557
     0x3c9aa3a9: "bear", // 1016767401
-    0x3c9df293: "tendril_corruption_07sm05b", // 1016984211
-    0x3cad33c4: "legion_villager_cleaver_16bs10", // 1017983940
     0x3cbde383: "risen_l-r_arm_17", // 1019077507
     0x3cbe6e48: "withered_brute_32", // 1019113032
-    0x3cc564b6: "boar_66", // 1019569334
-    0x3cc72b85: "undead_navigator_15ec02c", // 1019685765
-    0x3ccf0096: "skeleton_spear_13wf02", // 1020199062
-    0x3cda175f: "withered_grunt_12mb03c", // 1020925791
+    0x3cd40ac7: "motherwell_staff_barrier", // 1020529351
+    0x3cd7f395: "season_01_event_dryad_prowler", // 1020785557
     0x3ce54475: "ck_drowned_miner_10ws03b_named", // 1021658229
+    0x3cf43d94: "damned_villager_lumberaxe_45", // 1022639508
     0x3d08d836: "wolf_black_24", // 1023989814
     0x3d095a10: "yeti_03gc00_elite", // 1024023056
-    0x3d181f6b: "skeleton_crawler_16bs09", // 1024991083
-    0x3d18b818: "peacock_08qp03", // 1025030168
+    0x3d134de1: "dryad_archer_47", // 1024675297
     0x3d206e39: "undead_berserker_55", // 1025535545
+    0x3d3730dd: "damned_villager_cleaver_36", // 1027027165
     0x3d3e40a8: "ancientguardian_javelineer_named_dg_everfall_01", // 1027489960
     0x3d3f63be: "legion_signifer_63", // 1027564478
+    0x3d474f17: "damned_pistoleer_m-f_32", // 1028083479
+    0x3d50ebd6: "damned_villager_kitchenknife_58", // 1028713430
     0x3d55308b: "evil_knight_flamekeeper_boss", // 1028993163
     0x3d55ddb5: "evil_knight_caster_elite_08qp02", // 1029037493
+    0x3d59b486: "turkey_39", // 1029289094
     0x3d5a3dcc: "anubianguardian_panther_67", // 1029324236
-    0x3d5aa9da: "withered_grunt_13wf01", // 1029351898
-    0x3d5f15af: "drowned_sailor_1h_sword_shield_42_15ec00", // 1029641647
-    0x3d610893: "anubianguardian_reaver_12bs09b", // 1029769363
+    0x3d5eacf7: "ghost_shackled_40", // 1029614839
+    0x3d6a23ac: "fl_mammoth_lightning_elite_09fl12", // 1030366124
     0x3d6ca47e: "bobcat_named_08qp05", // 1030530174
     0x3d70b551: "fl_alligator_09flb", // 1030796625
     0x3d73c82f: "ck_blackbone_lost_2haxe_10ws04_sable", // 1030998063
-    0x3d83d306: "ancientguardian_reaver_11md00e", // 1032049414
-    0x3d87ced7: "dryad_soldier_14ac10a", // 1032310487
-    0x3d89d1fa: "drowned_sailor_2h_axe_04nw10", // 1032442362
-    0x3da65a95: "undead_navigator_04nw11a", // 1034312341
+    0x3d8db6fb: "skeleton_1h_sword_59", // 1032697595
+    0x3d989960: "damned_villager_hammer_61", // 1033410912
+    0x3da8318b: "skeleton_crawler_14", // 1034432907
+    0x3dc119d2: "drowned_sailor_1h_sword_shield_34", // 1036065234
     0x3dc1a226: "undead_grenadier_disease_54", // 1036100134
-    0x3dc6ee5c: "anubianguardian_reaver_16bs04", // 1036447324
-    0x3dcc7161: "canary", // 1036808545
+    0x3de47af9: "bear_black_52", // 1038383865
     0x3de5107d: "corruption_swarmer_dg_greatcleave_00", // 1038422141
-    0x3de79b3e: "wolf_elemental_earth_05wc09", // 1038588734
-    0x3dea9aeb: "anubianguardian_horus_67_elite_named_01", // 1038785259
+    0x3deb5796: "ancientguardian_javelineer_62_waveevent", // 1038833558
+    0x3def246d: "fl_hercyne_boar", // 1039082605
     0x3df487ff: "undead_pistoleer_16", // 1039435775
-    0x3dfe994c: "damned_villager_skinning_knife_11md07b", // 1040095564
-    0x3e04a665: "desert_coyote_16bs01", // 1040492133
-    0x3e0a4536: "damned_villager_hammer_11md00g", // 1040860470
     0x3e0a472a: "evil_knight_bow_18", // 1040860970
+    0x3e0aa96c: "ghost_charred_55", // 1040886124
     0x3e117fe9: "damned_rifleman_m-f_03gc08", // 1041334249
     0x3e19e0a7: "damned_villager_pickaxe_11", // 1041883303
     0x3e1b68b5: "ck_goldcursed_2hwarhammer_10ws10b", // 1041983669
-    0x3e2f0625: "evil_knight_longsword_27", // 1043269157
-    0x3e2f34b5: "damned_swordsman_t2", // 1043281077
-    0x3e3141d3: "gristlerot", // 1043415507
-    0x3e3b4d69: "bison_59", // 1044073833
-    0x3e3c3325: "tutelary", // 1044132645
     0x3e42e0b9: "tendril_corruption_dt2", // 1044570297
-    0x3e5dc0f8: "primal_lion_desert_16bs03", // 1046331640
+    0x3e5ccf82: "anubianguardian_horus_09a_s9", // 1046269826
     0x3e61f087: "dryad_prowler_62_elite", // 1046605959
     0x3e64d9a7: "evil_knight_caster_dg_greatcleave_00_00", // 1046796711
-    0x3e71360e: "damned_villager_sickle_03gc05c", // 1047606798
-    0x3e74afaa: "turkey_02bw02", // 1047834538
-    0x3e7973f4: "ghost_plagued_02bw03b", // 1048146932
-    0x3e7b5b01: "dryad_archer_14ac18", // 1048271617
-    0x3e864851: "damned_villager_pitchfork_04nw10b", // 1048987729
-    0x3e8a1bea: "corruption_entity_04nw10", // 1049238506
+    0x3e7073bc: "ghost_shipwrecked_12mb06c_named", // 1047557052
     0x3e8dad25: "drowned_sailor_2h_axe_10ws08", // 1049472293
     0x3e8ff944: "ancientguardian_javelineer_24", // 1049622852
     0x3e9eb7ec: "damned_hound_32", // 1050589164
     0x3ea01be7: "ck_mountain_lion_10ws10", // 1050680295
     0x3ea16eb2: "dynasty_spearman_empress", // 1050767026
-    0x3eaaef5f: "skeleton_1h_club_11md04a", // 1051389791
-    0x3eb461b5: "legion_sagittarii_16bs06b", // 1052008885
+    0x3eb3d466: "undead_gravedigger_56", // 1051972710
     0x3eb86477: "skeleton_club_10", // 1052271735
     0x3ec41a91: "anubianguardian_brute_named_01", // 1053039249
-    0x3ed283da: "swamp_dryad_archer_05wc01a", // 1053983706
-    0x3ed58724: "ancientguardian_javelineer_16bs08", // 1054181156
-    0x3ed718a6: "sand_elemental_shaman_16bs02", // 1054283942
-    0x3ede6a35: "swamp_dryad_soldier_05wc04", // 1054763573
-    0x3eed003f: "elk_stag_28", // 1055719487
     0x3eed3fa2: "ck_pig_10ws08", // 1055735714
     0x3ef03785: "fl_gorilla_melee_elite_09fl12", // 1055930245
     0x3ef67725: "damned_bowman_45", // 1056339749
-    0x3f06f000: "damned_cultist_03gc08c", // 1057419264
+    0x3ef7ffb3: "damned_villager_skinning_knife_37", // 1056440243
     0x3f0db788: "ancientguardian_reaver_53", // 1057863560
     0x3f0f4350: "ck_ancientguardian_mage_named_10ws10", // 1057964880
-    0x3f132922: "cow_12mb09", // 1058220322
-    0x3f13cb6e: "chameleon", // 1058261870
+    0x3f0f95d9: "fl_lynx", // 1057986009
+    0x3f161f8e: "rat_hercynerat", // 1058414478
     0x3f16843a: "damned_villager_axethrower_f_named_00", // 1058440250
+    0x3f1b67fa: "damned_axeman_m-f_52", // 1058760698
     0x3f29cdf8: "skeleton_spear_46", // 1059704312
-    0x3f35c866: "wolf_black_11md06", // 1060489318
-    0x3f370065: "armadillo_16bs05", // 1060569189
     0x3f4f0495: "drowned_sailor_1h_club_22", // 1062143125
     0x3f502bd9: "evil_knight_mace_31", // 1062218713
     0x3f525a25: "swamp_dryad_soldier_59", // 1062361637
     0x3f530f55: "risen_regurgitator_45", // 1062408021
-    0x3f59a4ac: "dune_phantom_berserker_16bs10", // 1062839468
-    0x3f59ea3d: "fl_beetle_baby_09fl01", // 1062857277
+    0x3f57167a: "undead_berserker_60_waveevent", // 1062671994
+    0x3f678026: "ghost_shipwrecked_41", // 1063747622
     0x3f7491dc: "ancientguardian_reaver_named_05", // 1064604124
+    0x3f79b45a: "damned_rifleman_m-f_51", // 1064940634
+    0x3f7d697f: "damned_villager_shovel_31", // 1065183615
+    0x3f7ecf30: "drowned_sailor_1h_sword_32", // 1065275184
     0x3f7ed145: "damned_longswordsman_commander_named_03gc09_elite", // 1065275717
     0x3f7fb24a: "desert_scorpion_65", // 1065333322
     0x3f935a7a: "anubianguardian_horus_named_16bs02", // 1066621562
     0x3fa78a43: "anubianguardian_archer_dg_brimstonesands_named_00", // 1067944515
-    0x3fc4252e: "undead_pistoleer_41_15ec00", // 1069819182
     0x3fc43b24: "undead_grenadier_molotov_25", // 1069824804
-    0x3fccf88a: "lazarus_well", // 1070397578
-    0x3fe4c0e0: "elk_doe_41", // 1071956192
-    0x3fe62681: "damned_villager_pitchfork_06sw10", // 1072047745
+    0x3fc887f0: "ghost_plagued_37", // 1070106608
+    0x3fcb046a: "drowned_sailor_2h_axe_35", // 1070269546
+    0x3fd48b9a: "ghost_starved_47", // 1070893978
     0x3fe87f1a: "alligator_black_34", // 1072201498
-    0x3fe900da: "rabbit_spotted_59", // 1072234714
-    0x3feaef36: "mountain_lion_06sw06", // 1072361270
     0x3ff296df: "wolf_grey_11", // 1072862943
-    0x3ffbb74b: "cow_58", // 1073461067
-    0x402073a8: "ancientguardian_warhammer_s4", // 1075868584
-    0x402c8e32: "blighted", // 1076661810
+    0x4001efd5: "legion_sagittarii_62_spawn", // 1073868757
+    0x4027452c: "or_siegeweaponsmall", // 1076315436
+    0x4030bb52: "damned_pistoleer_m-f_62", // 1076935506
     0x403a7710: "fl_rabbit", // 1077573392
-    0x404584aa: "lost", // 1078297770
+    0x403afda7: "structure_laserbeam", // 1077607847
+    0x403e85f9: "ancientguardian_javelineer_29", // 1077839353
+    0x4040c498: "damned_villager_cleaver_66", // 1077986456
+    0x40470b98: "damned_bowman_48", // 1078397848
     0x404a4762: "lost_pikeman_06sw09", // 1078609762
-    0x405c7c82: "elk_stag_25", // 1079803010
+    0x40517cbb: "wolf_white_60", // 1079082171
+    0x405cc631: "undead_hunter_50", // 1079821873
     0x405d3dd0: "boar_stripped_56", // 1079852496
-    0x4064fb99: "ancientguardian_javelineer_16bs05", // 1080359833
+    0x4069d75b: "damned_villager_pickaxe_54_minion", // 1080678235
     0x406cd575: "damned_villager_hammer_dg_ebonscale_00", // 1080874357
-    0x406f1688: "swamp_dryad_soldier_05wc09", // 1081022088
-    0x4072a4f8: "risen_l-r_arm_09fl03", // 1081255160
+    0x40707fb3: "corrupted_tiger_57", // 1081114547
     0x40739d35: "damned_pistoleer_m-f_03gc07", // 1081318709
-    0x4073edb0: "damned_axeman_m-f_03gc09_named_elite", // 1081339312
-    0x4079538c: "wolf_alpha_named_1203_0201_waveeventboss", // 1081693068
     0x408373ba: "undead_pistoleer_46", // 1082356666
+    0x408c835e: "damned_villager_axethrower_m-f_50", // 1082950494
+    0x409eb853: "lynx_23", // 1084143699
     0x40a014b3: "ck_spectral_lost_2haxe_10ws03a", // 1084232883
     0x40b0727b: "ghost_plagued_35_elite", // 1085305467
-    0x40b35daf: "turkey_12mb10", // 1085496751
     0x40b3ffd7: "ck_undead_pirate_brute", // 1085538263
+    0x40bbd5d1: "ghost_charred_58", // 1086051793
     0x40bef567: "dune_phantom_berserker_67", // 1086256487
-    0x40c076ba: "evil_knight_hound_02bw07", // 1086355130
-    0x40ca27bc: "dryad_archer_14ac15", // 1086990268
-    0x40d9d5fa: "fl_spriggan_adolescent_09fl02", // 1088017914
     0x40dad84e: "sheep_eastern_26", // 1088084046
-    0x40dc8ed3: "alligator_black_15ec02", // 1088196307
     0x40de6037: "ck_blackbone_lost_2haxe_10ws02_highpass_named", // 1088315447
-    0x40dfc5ce: "skeleton_crawler_44", // 1088406990
-    0x40e1e3ee: "undead_hunter_05wc05a", // 1088545774
     0x40ee60c3: "fl_beetle_named_09fl04b", // 1089364163
     0x40ef6d25: "damned_villager_hammer_31", // 1089432869
     0x411790eb: "legion_legionnaire_62", // 1092063467
-    0x4118a7d1: "legion_desert_coyote_elite_16bs08c", // 1092134865
-    0x411b5953: "anubianguardian_brute_16bs01", // 1092311379
+    0x411947a2: "corruption_heavy_dt3", // 1092175778
     0x411b9cfc: "or_withered_regurgitator", // 1092328700
-    0x41244523: "legion_villager_pickaxe_16bs02a", // 1092896035
-    0x415654db: "pig_domestic_45", // 1096176859
+    0x4157343b: "ancientguardian_javelineer_61_elite_spawn", // 1096234043
     0x4158c04b: "ck_goldcursed_2hwarhammer_10ws09_elite", // 1096335435
     0x415903a7: "alligator_black_39", // 1096352679
     0x41668b4b: "legion_signifer_named_01", // 1097239371
     0x4167e7c5: "ck_ancientguardian_mage_elite", // 1097328581
-    0x416e5cad: "ancientguardian_spearman_13wf04", // 1097751725
     0x41727eb5: "fl_dg_firstlight_01_gorilla_ice_named", // 1098022581
     0x41754799: "undead_grenadier_molotov_28", // 1098205081
     0x417a78d7: "drowned_sailor_2h_axe_38", // 1098545367
-    0x41867cd8: "armadillo_16bs08", // 1099332824
     0x419d5c52: "damned_villager_ladel_26", // 1100831826
-    0x41a2559f: "cow_12mb04", // 1101157791
     0x41bde4ec: "fl_gorilla_lightning_elite_named_09fl12", // 1102963948
-    0x41bf8ceb: "rabbit_spotted_02bw08", // 1103072491
-    0x41c552e8: "drowned_sailor_1h_sword_shield_11md00d", // 1103450856
+    0x41be8f98: "withered_grunt_20", // 1103007640
     0x41c9c0fc: "ck_alligator_black_10ws07", // 1103741180
+    0x41ca17c6: "risen_l-r_arm_47", // 1103763398
     0x41d59836: "undead_gravedigger_03gc01", // 1104517174
+    0x41db2dba: "skeleton_archer_agheavy_minion", // 1104883130
     0x41e273e8: "risen_regurgitator_48", // 1105359848
-    0x41e421d9: "bloated_corpse_53", // 1105469913
     0x41e76abc: "ancientguardian_heavy_boss_named_dg_greatcleave_01", // 1105685180
     0x41f2dc09: "damned_rifleman_m-f_07sm06a", // 1106435081
-    0x41f54069: "skeleton_crawler_06sw07b", // 1106591849
+    0x41f6e686: "target_dummy_boss10", // 1106699910
     0x41fb3019: "withered_grunt_25_elite", // 1106980889
     0x41fcc735: "lost_fencer_12mb04", // 1107085109
+    0x41fd7299: "wolf_elemental_earth_56", // 1107128985
     0x42093b75: "drowned_sailor_1h_sword_62", // 1107901301
+    0x420a9d3a: "damned_villager_shovel_61", // 1107991866
+    0x420c4dfc: "tiger_51", // 1108102652
     0x420dd0d0: "ck_spectral_lost_1hsword_boss_10ws03", // 1108201680
+    0x4217bc2e: "bobcat_52", // 1108851758
+    0x421ddc0a: "sulfur_lizard", // 1109253130
     0x4224fb10: "risen_regurgitator_15", // 1109719824
     0x422d75c3: "corruption_heavy_dg_restless_00", // 1110275523
-    0x423f4b44: "undead_gravedigger_13wf06", // 1111444292
-    0x424d5793: "withered_beetle_09fl02", // 1112364947
+    0x422e00b5: "undead_navigator_6", // 1110311093
+    0x42312167: "alligator_strange_35", // 1110516071
+    0x423d488e: "wolf_alpha_45", // 1111312526
+    0x4243481b: "dryad_soldier_43", // 1111705627
+    0x42447288: "damned_villager_pitchfork_52", // 1111782024
+    0x42454129: "damned_villager_lumberaxe_48", // 1111834921
     0x424d94ee: "skeleton_crawler_10ws02", // 1112380654
+    0x4251a552: "damned_villager_rake_29", // 1112646994
     0x4265cf1e: "skeleton_archer_41", // 1113968414
-    0x42695757: "anubianguardian_reaver_16bs02f", // 1114199895
     0x426aed1e: "ck_blackbone_lost_2haxe_10ws04_ad", // 1114303774
-    0x4281e8f8: "dynasty_summoner_08qp07", // 1115810040
     0x4285629a: "wolf_grey_41", // 1116037786
     0x4286ebea: "fl_anubianguardian_panther_small_minion", // 1116138474
-    0x428779d0: "evil_knight_spear_02bw07", // 1116174800
+    0x428efed1: "ancient_ice_dragon_fragment", // 1116667601
     0x428fb6e8: "undead_navigator_35", // 1116714728
-    0x429334a5: "elk_doe_11", // 1116943525
     0x429f8b5f: "alligator_black_64", // 1117752159
     0x42b48c63: "risen_whole_body_35", // 1119128675
     0x42b4e091: "corruption_heavy_08qp08_elite", // 1119150225
+    0x42bcc918: "wolf_timber_30", // 1119668504
     0x42c78899: "ancientguardian_spearman_40", // 1120372889
     0x42ca31e9: "dryad_soldier_62_elite", // 1120547305
+    0x42cb735c: "ghost_frozen_46", // 1120629596
     0x42df1af0: "corruptedlegion_cyclops_60", // 1121917680
+    0x42df426a: "bear_grizzly_52", // 1121927786
     0x42e336b7: "undead_officer_60", // 1122186935
-    0x42e8bc35: "ghost_starved_13wf06", // 1122548789
     0x42eec3a8: "primal_lion_62", // 1122943912
-    0x42f4f153: "undead_pistoleer_09fl07", // 1123348819
-    0x42f77cfd: "drowned_sailor_2h_axe_04nw11c", // 1123515645
-    0x42faaed5: "damned_villager_hammer_08qp02", // 1123725013
+    0x42f175b3: "damned_cultist_36", // 1123120563
     0x42fe1693: "undead_hunter_named_06", // 1123948179
-    0x43019930: "skerryshiv", // 1124178224
     0x43071d9f: "bloated_corpse_dg_cutlass_00", // 1124539807
-    0x431587f1: "islebound", // 1125484529
-    0x43194d36: "skeleton_crawler_19", // 1125731638
-    0x431997c8: "alligator_young_10ws09_elite", // 1125750728
-    0x431a25be: "evil_knight_longsword_02bw07", // 1125787070
-    0x43324cd5: "legion_villager_kitchenknife_16bs12", // 1127369941
     0x433799c1: "legion_villager_kitchenknife_62", // 1127717313
     0x433cca46: "skeleton_1h_sword_54", // 1128057414
+    0x436e14e2: "damned_villager_pickaxe_41", // 1131287778
     0x4370656f: "drowned_sailor_1h_sword_shield_39", // 1131439471
     0x4370de9b: "undead_grenadier_disease_59", // 1131470491
-    0x437792e1: "anubianguardian_reaver_16bs09", // 1131909857
-    0x437d910a: "rockruins", // 1132302602
+    0x4373f981: "damned_villager_sickle_53", // 1131673985
+    0x43800bf6: "damned_villager_skinning_knife_67", // 1132465142
     0x43911284: "undead_berserker_58", // 1133580932
-    0x43960ded: "drowned_sailor_2h_axe_15ec02a", // 1133907437
-    0x439be743: "withered_swarmancer_06sw09_named_00", // 1134290755
-    0x439f81e8: "evil_knight_greataxe_04nw04", // 1134526952
-    0x43a963d6: "skeleton_crawler_16bs04", // 1135174614
     0x43b9a48b: "wolf_black_29", // 1136239755
-    0x43c9b40d: "drowned_sailor_1h_sword_shield_04nw11b", // 1137292301
     0x43cf9032: "skeleton_club_40", // 1137676338
-    0x43d53c35: "tendril_corruption_08qp07", // 1138048053
     0x43d7fdfd: "skeleton_2h_sword_57", // 1138228733
     0x43e1976b: "damned_villager_kitchenknife_55", // 1138857835
-    0x43e8c83b: "turkey_34", // 1139329083
     0x4403d0fb: "damned_villager_pickaxe_45", // 1141100795
-    0x440cb816: "damned_villager_cleaver_11md07b", // 1141684246
-    0x442afce2: "shoreside", // 1143667938
-    0x44322de5: "evil_knight_mace_12mb01", // 1144139237
+    0x44175fc6: "ghost_plagued_dg_everfall_00", // 1142382534
+    0x441e3d98: "damned_villager_sickle_57", // 1142832536
     0x444321a6: "corrupted_ogre_named_04nw10", // 1145250214
+    0x444be47d: "fl_mammoth_boss_earth_root_lightning_plus", // 1145824381
     0x444ccbab: "drowned_sailor_1h_club", // 1145883563
     0x44510e5f: "skeleton_1h_sword_50", // 1146162783
     0x4453182d: "swamp_dryad_tendril_60", // 1146296365
-    0x4457d03b: "withered_swarmancer_11md07", // 1146605627
-    0x445a5dd8: "legion_villager_kitchenknife_66", // 1146772952
-    0x445ce64f: "timeless", // 1146938959
-    0x446566a1: "ghost_starved_13wf", // 1147496097
     0x447379d9: "fl_alligator_elite_09fl01", // 1148418521
     0x4480f51d: "undead_javelineer_29", // 1149302045
-    0x44850c22: "turkey_30", // 1149570082
-    0x4486117e: "withered_grunt_13wf08", // 1149636990
-    0x44980df9: "plainsblot", // 1150815737
+    0x44821453: "ghost_shackled_49", // 1149375571
+    0x448c5372: "damned_villager_kitchenknife_51", // 1150047090
     0x44a2542b: "skeleton_club_44", // 1151489067
     0x44ba39e4: "skeleton_2h_sword_53", // 1153055204
     0x44bddd82: "avalancher_shivers_25", // 1153293698
-    0x44c9888e: "desert_medium_scorpion_16bs12", // 1154058382
-    0x44d12bf9: "skeleton_mage_03gc10d", // 1154558969
-    0x44d82461: "spriggan", // 1155015777
-    0x44e8eb97: "bear_damned_dt4", // 1156115351
-    0x44f1ed6f: "anubianguardian_archer_16bs11", // 1156705647
+    0x44edcfef: "damned_villager_skinning_knife_63", // 1156435951
     0x45016ce0: "lost_monarch", // 1157721312
-    0x4502ad42: "risen_regurgitator_sulfur_16bs06", // 1157803330
-    0x45030e2a: "withered_grunt_06sw07", // 1157828138
     0x45080b07: "skeleton_archer_45", // 1158155015
+    0x4509a758: "ancientguardian_mage_minion_67_elite", // 1158260568
     0x45168b38: "ck_spectral_lost_2hspear", // 1159105336
+    0x4529b691: "damned_villager_pitchfork_56", // 1160361617
     0x452c8572: "totem_pirate_cursed_elite_05wc11", // 1160545650
     0x452e8c02: "dryad_soldier_47", // 1160678402
-    0x4536357a: "drowned_miner_42_15ec00", // 1161180538
     0x4539ca97: "fl_gorilla_fire_09fl05", // 1161415319
     0x453cfca7: "swamp_dryad_beast_dg_edengrove_00", // 1161624743
     0x454294e4: "undead_pirate_brute_named_12mb10", // 1161991396
+    0x4543c4ac: "undead_navigator_2", // 1162069164
     0x45493f09: "risen_regurgitator_11", // 1162428169
+    0x45508c97: "wolf_alpha_41", // 1162906775
     0x455c9178: "ck_undead_bloated_corpse_10ws03b", // 1163694456
+    0x455ce57e: "alligator_strange_31", // 1163715966
     0x455f679e: "undead_grenadier_disease", // 1163880350
+    0x456189e5: "tiger_55", // 1164020197
+    0x45675923: "damned_villager_shovel_65", // 1164400931
     0x4568a6c0: "dryad_shaman_32", // 1164486336
+    0x456c4d9b: "risen_corruption_impaler_61", // 1164725659
     0x457425f7: "ck_blackbone_lost_2haxe_10ws09d_elite", // 1165239799
-    0x4574efe2: "turkey_vulture_16bs10", // 1165291490
+    0x457a7837: "bobcat_56", // 1165654071
+    0x457e12d4: "explosive_sprout_fire_pulse", // 1165890260
     0x457edb4d: "ghost_starved_dg_windsward_00", // 1165941581
-    0x457f63dc: "boar_12mb10", // 1165976540
-    0x4588fe12: "ghost_charred_16bs04c", // 1166605842
     0x4593d28a: "undead_hunter_named_02", // 1167315594
-    0x45976acc: "damned_villager_hammer_08qp06", // 1167551180
-    0x459dbcea: "skeleton_archer_11md06c", // 1167965418
-    0x459e9f29: "legion_villager_ladel_16bs10", // 1168023337
+    0x459cb1aa: "damned_cultist_32", // 1167897002
     0x45a16442: "risen_regurgitator_named_00", // 1168204866
     0x45a6233a: "undead_shaman", // 1168515898
+    0x45a6b745: "ghost_frozen_42", // 1168553797
     0x45aa4c80: "ancientguardian_spearman_44", // 1168788608
-    0x45aa9a39: "damned_villager_pickaxe_03gc", // 1168808505
+    0x45b28673: "bear_grizzly_56", // 1169327731
     0x45b2dee9: "corruptedlegion_cyclops_64", // 1169350377
     0x45bcd7c2: "dryad_soldier_42_15ec05", // 1170003906
-    0x45c30332: "legion_sagittarii_16bs09", // 1170408242
     0x45c46ae7: "ck_undead_grenadier_10ws09_elite", // 1170500327
     0x45cb7de9: "evil_knight_longsword_dg_greatcleave_00_00", // 1170963945
     0x45ccf009: "damned_villager_skinning_knife_10ws06", // 1171058697
+    0x45d10d01: "wolf_timber_34", // 1171328257
     0x45d13436: "drowned_sailor_2h_axe_61", // 1171338294
+    0x45d2b7ac: "ghost_plagued_63", // 1171437484
     0x45d9487a: "risen_whole_body_31", // 1171867770
     0x45e272f1: "undead_navigator_31", // 1172468465
     0x45e8a683: "wolf_grey_45", // 1172874883
-    0x45edbe93: "infernal", // 1173208723
-    0x45f23a55: "alligator_strange_07sm03", // 1173502549
     0x45f24f46: "alligator_black_60", // 1173507910
     0x45f9ea5e: "ck_ancientguardian_reaver", // 1174006366
-    0x460d79ee: "evil_knight_heavy_14ac06", // 1175288302
     0x460e769e: "ghost_starved_10ws07a", // 1175352990
-    0x4616f6bd: "elk_stag_corrupted_07sm03", // 1175910077
     0x4618d081: "corruption_heavy_named_07sm04_elite", // 1176031361
     0x4621fa83: "wolf_grey_9", // 1176631939
-    0x462d2675: "sulfur_elemental_heavy_named_s02", // 1177364085
-    0x463b90c2: "pig_domestic_41", // 1178308802
+    0x4643a33a: "dynasty_musketeer_62", // 1178837818
     0x46487a56: "undead_officer_39", // 1179155030
     0x4656b62e: "ck_spectral_lost_2hblunderbuss_10ws07", // 1180087854
     0x466e487e: "ck_blackbone_lost_2hblunderbuss_10ws04_sable", // 1181632638
-    0x46769d4a: "anubianguardian_brute_16bs05", // 1182178634
     0x467a54f2: "legion_legionnaire_66", // 1182422258
-    0x467b8304: "drowned_miner_12mb06a", // 1182499588
-    0x467b85b6: "undead_berserker_named_fr_mar_01", // 1182500278
     0x46819303: "boar_08qp07", // 1182896899
-    0x46855299: "fl_beetle_baby_09fl08", // 1183142553
     0x468896bc: "legion_sagittarii_loc_boss", // 1183356604
-    0x4689e5c0: "bloated_corpse_57", // 1183442368
-    0x4690e636: "ghost_shipwrecked_11md00d", // 1183901238
-    0x4691453e: "earthward", // 1183925566
-    0x46a63de7: "skeleton_crawler_11md01c", // 1185299943
-    0x46b444c7: "undead_berserker_44_15ec00", // 1186219207
-    0x46bee230: "ghost_charred_16bs10", // 1186914864
+    0x4690b680: "wolf_elemental_earth_52", // 1183889024
+    0x46a1d1db: "damned_villager_shovel_38", // 1185010139
+    0x46a50cfe: "damned_rifleman_m-f_58", // 1185221886
+    0x46a7d3df: "risen_l-r_arm_43", // 1185403871
+    0x46bb3882: "ghost_shipwrecked_48", // 1186674818
     0x46c543f4: "anubianguardian_spearman_named_16bs09a", // 1187333108
-    0x46c5e3f0: "king_idris", // 1187374064
+    0x46ce83ff: "skeleton_archer_18", // 1187939327
     0x46cf1ba9: "undead_grenadier_28", // 1187978153
     0x46cfd62b: "anubianguardian_horus_boss", // 1188025899
+    0x46d34b81: "withered_grunt_24", // 1188252545
     0x46d5d443: "spriggan_corrupted_dg_shattermtn_00", // 1188418627
-    0x46df54ea: "boar_32", // 1189041386
-    0x46ee31f3: "dynasty_spearman_08qp01b", // 1190015475
-    0x46f90fcc: "undead_pistoleer_04nw11a", // 1190727628
-    0x4706c5f5: "myrkgard", // 1191626229
     0x47077ea4: "ancientguardian_javelineer_named_00", // 1191673508
-    0x47093f80: "ancientguardian_javelineer_16bs01", // 1191788416
     0x470e3e34: "fl_hercyne_corvid_alpha_named_09fl02", // 1192115764
-    0x4716cfaf: "legion_villager_hammer_16bs04", // 1192677295
+    0x471dbbaa: "corrupted_tiger_53", // 1193130922
     0x4724054f: "undead_officer_12mb06d", // 1193542991
+    0x472d0081: "damned_villager_cleaver_62", // 1194131585
     0x4730f9c9: "boar_stripped_52", // 1194392009
-    0x47316ef0: "risen_regurgitator_06sw05b", // 1194422000
-    0x474a354f: "legion_legionnaire_namedsacrifice_16bs08c", // 1196045647
-    0x4755ee88: "spryscarp", // 1196813960
+    0x47310228: "undead_hunter_54", // 1194394152
+    0x4754afd8: "wolf_minion_38", // 1196732376
     0x4764dcd3: "skeleton_club_19", // 1197792467
-    0x4767b137: "wolf_elemental_earth_14ac13", // 1197977911
-    0x47761d6c: "legion_villager_cleaver_16bs02a", // 1198923116
     0x47810f9d: "ck_withered_grunt_named_10ws03", // 1199640477
     0x4782a93c: "damned_villager_hammer_35", // 1199745340
     0x4798426c: "ck_undead_pirate_brute_10ws04_sable", // 1201160812
-    0x47987edc: "undead_pistoleer_15ec02c", // 1201176284
-    0x47b02c2c: "skeleton_club_nwsw", // 1202727980
     0x47b201d7: "skeleton_crawler_40", // 1202848215
-    0x47b411e3: "fl_spriggan_adolescent_09fl06", // 1202983395
     0x47cd4157: "corruption_swarmer_5", // 1204633943
     0x47cdd0aa: "ck_spectral_lost_2haxe_10ws03e", // 1204670634
     0x47d3317e: "dune_phantom_berserker_63", // 1205023102
-    0x47d81ec1: "desert_coyote_16bs08", // 1205345985
     0x47db298e: "drowned_sailor_1h_sword_shield_60", // 1205545358
+    0x47e14747: "damned_villager_axethrower_m-f_54", // 1205946183
+    0x47e58975: "dynasty_heavy_named_08qp08a", // 1206225269
     0x47e8540d: "unstable_swamp_fiend_elite_05wc10", // 1206408205
     0x47eeb199: "fl_boar_09fl11", // 1206825369
     0x47eeb7a3: "undead_pistoleer_42", // 1206826915
-    0x4801c096: "damned_cultist_03gc08b", // 1208074390
     0x480a871e: "ancientguardian_reaver_52", // 1208649502
     0x481223ec: "fl_gorilla_ice_elite_named_09fl01", // 1209148396
-    0x481419b4: "cow_12mb08", // 1209276852
-    0x481dfaeb: "skeleton_2h_sword_05wc02", // 1209924331
+    0x481c576c: "damned_axeman_m-f_53", // 1209816940
+    0x482702a8: "evil_knight_longsword_icevariant_named", // 1210516136
     0x482efd6e: "skeleton_spear_47", // 1211039086
-    0x483030f3: "armadillo_16bs04", // 1211117811
     0x4833890f: "drowned_sailor_1h_club_65_elite", // 1211336975
-    0x4838fca3: "wolf_black_02bw03b", // 1211694243
-    0x483957a5: "ghost_plagued_msq22", // 1211717541
-    0x483fa498: "drowned_sailor_2h_axe_38_15ec00", // 1212130456
     0x48483403: "drowned_sailor_1h_club_23", // 1212691459
     0x484aeb12: "undead_officer_24_elite_09fl09_named", // 1212869394
     0x484fecf9: "fl_mim_hercyne_boar", // 1213197561
     0x48543fc3: "risen_regurgitator_44", // 1213480899
     0x48556ab3: "swamp_dryad_soldier_58", // 1213557427
     0x48571b4f: "evil_knight_mace_30", // 1213668175
-    0x485a47b9: "sheep_churro_36", // 1213876153
-    0x485e943a: "dune_phantom_berserker_16bs11", // 1214157882
     0x4860b0b0: "ghost_shipwrecked_40", // 1214296240
-    0x4862f7c0: "sheep_churro_02bw03b", // 1214445504
     0x4873a14a: "ancientguardian_reaver_named_04", // 1215537482
     0x487882dc: "desert_scorpion_64", // 1215857372
+    0x4879ffa6: "drowned_sailor_1h_sword_33", // 1215954854
+    0x487a59e9: "damned_villager_shovel_30", // 1215977961
+    0x487e84cc: "damned_rifleman_m-f_50", // 1216251084
     0x489a827e: "ck_ghost_starved_named_10ws07", // 1218085502
+    0x48a4bcd4: "damned_villager_sickle_63_elite", // 1218755796
+    0x48cc34fc: "drowned_sailor_2h_axe_34", // 1221342460
+    0x48cfb766: "ghost_plagued_36", // 1221572454
+    0x48d3bb0c: "ghost_starved_46", // 1221835532
     0x48d4105f: "corruptedlegion_cyclops_dg_brimstonesands_00", // 1221857375
     0x48d67e21: "ck_goldcursed_1hsword", // 1222016545
-    0x48ddf79a: "anubianguardian_scarab_named_00", // 1222506394
-    0x48e3f076: "elk_doe_40", // 1222897782
     0x48ec4e81: "ancientguardian_reaver_10ws04", // 1223446145
-    0x48ee304c: "rabbit_spotted_58", // 1223569484
     0x48ef4f8c: "alligator_black_35", // 1223643020
     0x48f1b840: "fl_dg_firstlight_01_armored_dragon", // 1223800896
-    0x48f52f72: "bobcat_15ec02", // 1224028018
     0x48f548ff: "wolf_black_9", // 1224034559
     0x48f5a649: "wolf_grey_10", // 1224058441
-    0x48fc87dd: "cow_59", // 1224509405
-    0x490aaa0f: "risen_regurgitator_10ws09", // 1225435663
     0x490d77bc: "evil_knight_bow_19", // 1225619388
+    0x490d99fa: "ghost_charred_54", // 1225628154
     0x49126637: "skeleton_crawler_61_elite", // 1225942583
-    0x491c7000: "anubianidol", // 1226600448
     0x491ed031: "damned_villager_pickaxe_10", // 1226756145
     0x49236332: "corrupted_ogre_named_03gc03_elite", // 1227055922
-    0x492836b3: "evil_knight_longsword_26", // 1227372211
     0x4928f940: "ck_blackbone_lost_2hblunderbuss_10ws03c", // 1227422016
     0x49369501: "fl_gorilla_lightning_named_09fl07", // 1228313857
     0x493c7dff: "bison_58", // 1228701183
     0x4945d02f: "tendril_corruption_dt3", // 1229312047
     0x494dcc7e: "ghost_charred_named_dg_cutlass_00", // 1229835390
-    0x4954e90e: "legion_sagittarii_16bs08d", // 1230301454
-    0x4959eb5e: "risen_whole_body_11md00c", // 1230629726
-    0x495af06e: "primal_lion_desert_16bs02", // 1230696558
-    0x495ca889: "damned_acolyte_03gc09a_elite", // 1230809225
     0x4963e931: "evil_knight_caster_dg_greatcleave_00_01", // 1231284529
     0x496b2e4c: "anubianguardian_spearman", // 1231760972
-    0x49739f3c: "turkey_02bw03", // 1232314172
-    0x4976258d: "wolf_alpha_12mb05", // 1232479629
     0x4980f057: "withered_swarmancer_named_12mb10", // 1233186903
-    0x49818cfd: "bloated_corpse_13wf06", // 1233227005
     0x4988c9d2: "ancientguardian_javelineer_25", // 1233701330
-    0x49a5094b: "ancientguardian_javelineer_11md00e", // 1235552587
-    0x49b35123: "legion_sagittarii_16bs06c", // 1236488483
+    0x49967d09: "ancientguardian_spearman_icevariant_solo", // 1234599177
+    0x4999877a: "damned_hound_33", // 1234798458
+    0x49b4e4f0: "undead_gravedigger_57", // 1236591856
     0x49bf54e1: "skeleton_club_11", // 1237275873
     0x49c32a07: "anubianguardian_brute_named_00", // 1237527047
     0x49c53057: "fl_dh_gorilla_fire_named", // 1237659735
     0x49c79199: "elk_corrupted_elite_03gc03", // 1237815705
-    0x49c7ce2e: "corrupted_totem_07sm05", // 1237831214
-    0x49d02830: "sand_elemental_shaman_16bs03", // 1238378544
-    0x49d25076: "southstar", // 1238519926
-    0x49d2b7b2: "ancientguardian_javelineer_16bs09", // 1238546354
-    0x49d57418: "skeleton_1h_sword_11md00e", // 1238725656
     0x49e6a985: "swamp_fiend_dg_edengrove_00_minion", // 1239853445
-    0x49ea30a9: "elk_stag_29", // 1240084649
+    0x49f0cf25: "damned_villager_skinning_knife_36", // 1240518437
     0x49f147b3: "damned_bowman_44", // 1240549299
-    0x49f5c830: "werna_isle", // 1240844336
     0x49f93421: "ancient_amalgam_named_16bs11a", // 1241068577
-    0x49fde85a: "angryearth", // 1241376858
     0x4a03b04f: "totem_dryad_nest_dg_edengrove_00", // 1241755727
     0x4a08489d: "undead_gravedigger_33_elite", // 1242056861
     0x4a0fe8a0: "wolf_black_25", // 1242556576
+    0x4a147d77: "dryad_archer_46", // 1242856823
     0x4a1a6766: "primal_lion", // 1243244390
-    0x4a1f2ffd: "skeleton_crawler_16bs08", // 1243557885
-    0x4a1f888e: "peacock_08qp02", // 1243580558
     0x4a275eaf: "undead_berserker_54", // 1244094127
+    0x4a30004b: "damned_villager_cleaver_37", // 1244659787
     0x4a385328: "legion_signifer_62", // 1245205288
-    0x4a389ed1: "embraced", // 1245224657
     0x4a39703e: "ancientguardian_javelineer_named_dg_everfall_00", // 1245278270
+    0x4a407f81: "damned_pistoleer_m-f_33", // 1245740929
     0x4a41f487: "ancient_amalgam_named_dg_greatcleave_00", // 1245836423
+    0x4a57db40: "damned_villager_kitchenknife_59", // 1247271744
+    0x4a599c61: "ghost_shackled_41", // 1247386721
     0x4a5d0d5a: "anubianguardian_panther_66", // 1247612250
-    0x4a6a6bda: "alcazarian", // 1248488410
     0x4a6bd2f9: "ghost_starved_s4q2", // 1248580345
     0x4a7785c7: "fl_alligator_09flc", // 1249347015
     0x4a7a0b74: "damned_2h_spearman_m-f_07sm06c_elite", // 1249512308
-    0x4a8718d0: "risen_onearm_13wf06a", // 1250367696
-    0x4a8c3a4c: "risen_l-r_arm_06sw05b", // 1250703948
+    0x4a8a866d: "skeleton_1h_sword_58", // 1250592365
     0x4a92801f: "drowned_sailor_1h_sword_waveeventeasy", // 1251115039
-    0x4aa91719: "dryad_prowler_14ac10a", // 1252595481
+    0x4a9a59d1: "dryad_tendril", // 1251629521
+    0x4a9fa9f6: "damned_villager_hammer_60", // 1251977718
     0x4abcd88f: "anubianguardian_brute", // 1253890191
-    0x4ac1deca: "anubianguardian_reaver_16bs05", // 1254219466
+    0x4ac62944: "drowned_sailor_1h_sword_shield_35", // 1254500676
     0x4ac692b0: "undead_grenadier_disease_55", // 1254527664
-    0x4aedaa7d: "anubianguardian_horus_67_elite_named_00", // 1257089661
+    0x4ac80a96: "priest_lesser_damnedhound", // 1254623894
+    0x4acf3972: "naga_ancientguardian_iceguardian_rturret", // 1255094642
+    0x4ae34a6f: "bear_black_53", // 1256409711
     0x4af3b769: "undead_pistoleer_17", // 1257486185
     0x4affddf9: "anubianguardian_horus", // 1258282489
-    0x4b01f868: "dankfur", // 1258420328
     0x4b02c048: "risen_whole_body_39", // 1258471496
-    0x4b0473a2: "bobcat_13wf07", // 1258582946
-    0x4b0ef1b3: "primal_lion_desert_cub_16bs10", // 1259270579
-    0x4b188b00: "legion_sagittarii_16bs01", // 1259899648
+    0x4b04c6d1: "damned_acolyte_52", // 1258604241
+    0x4b17f2a2: "fl_mammoth_boss_dg_firstlight_01_void_ball_empowered", // 1259860642
     0x4b228d47: "fl_anubianguardian_reaver_09fl01a", // 1260555591
     0x4b2a3e2d: "dunewalker_warmonger_warhammer_trial_quest", // 1261059629
     0x4b3573a2: "ghost_plagued_dg_windsward_00", // 1261794210
     0x4b39fac3: "undead_navigator_39", // 1262090947
-    0x4b3a0749: "boar_named_03", // 1262094153
-    0x4b3e5052: "alligator_young_09fl07", // 1262374994
+    0x4b3c0c74: "swamp_dryad_shaman_60_waveevent", // 1262226548
     0x4b45876b: "jackrabbit_60", // 1262847851
-    0x4b5cc2f5: "withered_beetle_06sw08c", // 1264370421
     0x4b65a216: "damned_priest_named_07sm06", // 1264951830
-    0x4b6a3591: "corvid", // 1265251729
-    0x4b784c25: "evil_knight_warhammer_named_s4_1", // 1266175013
-    0x4b8930bd: "damned_1h_swordsman_m-f_11md07", // 1267282109
+    0x4b876d4c: "alligator_strange_39", // 1267166540
+    0x4b8b04a5: "wolf_alpha_49", // 1267401893
     0x4b92b73b: "risen_regurgitator_19", // 1267906363
-    0x4b95ba58: "lower_svikin", // 1268103768
-    0x4ba7f79c: "undead_grenadier_disease_05wc05b", // 1269299100
-    0x4baa0352: "legion_villager_cleaver_16bs11", // 1269433170
+    0x4ba65e2e: "sand_elemental_heavy", // 1269194286
     0x4bb91091: "ghost_frozen_named_00", // 1270419601
     0x4bb95ede: "withered_brute_33", // 1270439646
     0x4bbad315: "risen_l-r_arm_16", // 1270534933
-    0x4bc25420: "boar_67", // 1271026720
     0x4bc95494: "dynasty_heavy_dg_shattermtn_00", // 1271485588
-    0x4bdd27c9: "withered_grunt_12mb03b", // 1272784841
     0x4be1d011: "ck_spectral_lost_2hblunderbuss_named_10ws08_isle", // 1273090065
+    0x4be446c8: "sand_elemental_soldier_rockpile_spawn", // 1273251528
+    0x4be7e979: "damned_villager_rake_25", // 1273489785
+    0x4bef5332: "sulfur_elemental_entity_elite", // 1273975602
+    0x4bf30d02: "damned_villager_lumberaxe_44", // 1274219778
     0x4bf663b1: "ck_ancientguardian_reaver_10ws10", // 1274438577
     0x4c1c00ab: "ancientguardian_spearman_48", // 1276903595
     0x4c1f56d0: "damned_bowman_10ws06", // 1277122256
-    0x4c2133b0: "damned_villager_knife_27", // 1277244336
-    0x4c284372: "jackrabbit_64", // 1277707122
-    0x4c3789f8: "alligator_strange_10ws05", // 1278708216
-    0x4c48bc97: "elk_doe_19", // 1279835287
     0x4c496f25: "ancientguardian_spearman_named_10ws04", // 1279880997
-    0x4c53fa30: "withered_swarmancer_04nw03", // 1280571952
+    0x4c5eeaa8: "wolf_grey_49", // 1281288872
     0x4c67412a: "wolf_timber_38", // 1281835306
-    0x4c6980b3: "wilting", // 1281982643
+    0x4c6902c8: "damned_acolyte_56", // 1281950408
     0x4c701a4f: "megaflora_razorlotus", // 1282415183
-    0x4c714dde: "undead_berserker_43_15ec00", // 1282493918
-    0x4c754f19: "legion_sagittarii_16bs05", // 1282756377
-    0x4c84e2ac: "dryad_soldier_07sm09", // 1283777196
-    0x4c910133: "trestle", // 1284571443
-    0x4c94f620: "undead_javelineer_02bw", // 1284830752
+    0x4c9ec91b: "damned_villager_lumberaxe_40", // 1285474587
     0x4ca3c9c9: "undead_gravedigger", // 1285802441
-    0x4caf9039: "boar_63", // 1286574137
-    0x4cbb131a: "wolf_alpha_13wf05", // 1287328538
     0x4cbe472c: "skeleton_archer_49", // 1287538476
+    0x4cce470b: "ancientguardian_warhammer_icevariant", // 1288587019
+    0x4cd49ac7: "withered_brute_37", // 1289001671
     0x4cd6711a: "fl_mammoth_09fl09b", // 1289122074
-    0x4cd6f934: "skeleton_crawler_11md04b", // 1289156916
     0x4cd7170c: "risen_l-r_arm_12", // 1289164556
-    0x4cd85222: "drowned_sailor_1h_sword_shield_11md05a", // 1289245218
-    0x4ce682ed: "drowned_sailor_1h_sword_shield_10ws03", // 1290175213
-    0x4cf0ed55: "evil_knight_greataxe_14ac13", // 1290857813
-    0x4d152611: "ancientguardian_spearman_12mb08", // 1293231633
+    0x4cd7c5ce: "tiger_59", // 1289209294
+    0x4cebe64c: "target_dummy_boss45", // 1290528332
+    0x4d0384b3: "corrupted_ogre_62", // 1292076211
+    0x4d141800: "skeleton_club_48", // 1293162496
     0x4d1e6432: "ancientguardian_greatsword_icevariant_raid10-", // 1293837362
-    0x4d1eb8da: "siltboot", // 1293859034
-    0x4d20def8: "ancientguardian_spearman_16bs11c", // 1293999864
-    0x4d29cdd8: "harvestbane", // 1294585304
+    0x4d2dbb98: "damned_pistoleer_m-f_37", // 1294842776
     0x4d30c943: "anubianguardian_panther_62", // 1295042883
+    0x4d345878: "ghost_shackled_45", // 1295276152
     0x4d36b936: "undead_javelineer_25", // 1295431990
-    0x4d3e49be: "neptunite", // 1295927742
     0x4d45c517: "corrupted_ogre_named_07sm06_elite", // 1296418071
     0x4d4a9ab6: "undead_berserker_50", // 1296734902
     0x4d4eab6c: "medea_caster", // 1297001324
     0x4d559731: "legion_signifer_66", // 1297454897
+    0x4d5dc452: "damned_villager_cleaver_33", // 1297990738
     0x4d614fb4: "spriggan_forest", // 1298223028
-    0x4d724c97: "peacock_08qp06", // 1299336343
-    0x4d8aef68: "skeleton_archer_11md06", // 1300950888
+    0x4d67689c: "gorilla_boss_elemental_dg_firstlight_01", // 1298622620
+    0x4d79b96e: "dryad_archer_42", // 1299822958
     0x4d8cabab: "damned_villager_ladle_11_09fl04_named", // 1301064619
+    0x4d8e8e76: "bear_black_57", // 1301188214
+    0x4d978865: "naga_corrupted_corruptioncore", // 1301776485
     0x4d9e7370: "undead_pistoleer_13", // 1302229872
     0x4dab56a9: "undead_grenadier_disease_51", // 1303074473
-    0x4dac1ad3: "anubianguardian_reaver_16bs01", // 1303124691
+    0x4dabed5d: "drowned_sailor_1h_sword_shield_31", // 1303113053
     0x4db4c166: "ck_undead_pirate_brute_10ws08_black", // 1303691622
+    0x4db59cd0: "damned_villager_pickaxe_49", // 1303747792
     0x4dc3327d: "ck_spectral_lost_2hspear_10ws07", // 1304638077
     0x4dc9279f: "anubianguardian_horus_dg_brimstonesands_00", // 1305028511
-    0x4e128441: "risen_regurgitator_15ec04b", // 1309836353
-    0x4e14e9ab: "skeleton_crawler_13wf02a", // 1309993387
+    0x4df26def: "damned_villager_hammer_64", // 1307733487
+    0x4e08101d: "lost_knight_tank", // 1309151261
     0x4e1ac01e: "damned_1h_swordsman_m-f_28", // 1310375966
-    0x4e1e5b25: "turkey_02bw07", // 1310612261
+    0x4e1c0a40: "skeleton_1h_sword_msq_defense_encounter", // 1310460480
     0x4e202f7b: "ancientguardian_mage_named_dg_reekwater_00_01", // 1310732155
-    0x4e30cbcb: "ancientguardian_spearman_06sw03", // 1311820747
+    0x4e27c670: "anubianguardian_archer_elite_minion_67", // 1311229552
     0x4e331b97: "dryad_beast", // 1311972247
-    0x4e342f47: "risen_whole_body_11md00g", // 1312042823
-    0x4e373477: "primal_lion_desert_16bs06", // 1312240759
+    0x4e34e517: "damned_villager_hammer_39", // 1312089367
     0x4e3928af: "wolf_alpha_named_03gc04_01", // 1312368815
     0x4e42c79b: "damned_villager_skinning_knife_dg_restless_00", // 1312999323
-    0x4e4429db: "evil_knight_longsword_s4", // 1313090011
     0x4e453d59: "ck_blackbone_lost_2hblunderbuss_10ws03g", // 1313160537
-    0x4e45f2aa: "evil_knight_longsword_22", // 1313206954
-    0x4e4a6154: "anubianguardian_scarab_dg_brimstonesands_00", // 1313497428
-    0x4e4acd89: "alligator_09fl03", // 1313525129
-    0x4e4c4ec7: "dryad_archer_14ac11a", // 1313623751
+    0x4e570b6c: "damned_villager_axethrower_m-f_58", // 1314327404
     0x4e57b133: "ancientguardian_javelineer_named_dg_reekwater_01", // 1314369843
+    0x4e605de3: "ghost_charred_50", // 1314938339
     0x4e60dc22: "bear_damned_named_07sm07_elite", // 1314970658
-    0x4e6e52ea: "desert_coyote_16bs04", // 1315853034
     0x4e731428: "damned_villager_pickaxe_14", // 1316164648
     0x4e8046e2: "anubianguardian_archer_named_00", // 1317029602
     0x4e874e03: "undead_hunter_58", // 1317490179
     0x4e9b4be8: "dune_phantom_berserker_named_02", // 1318800360
-    0x4ea08384: "legion_villager_hammer_16bs08", // 1319142276
-    0x4ea097aa: "anubianguardian_scarab_16bs11", // 1319147434
-    0x4eb8b001: "skeleton_1h_sword_11md00a", // 1320726529
+    0x4e9c83aa: "damned_bowman_40", // 1318880170
+    0x4e9d0b3c: "damned_villager_skinning_knife_32", // 1318914876
     0x4eb924bf: "dryad_prowler_63", // 1320756415
-    0x4ebdec29: "sand_elemental_shaman_16bs07", // 1321069609
-    0x4ec8cd52: "ancientguardian_javelineer_11md00a", // 1321782610
     0x4ecab783: "dynasty_musketeer_58_08qp01", // 1321908099
-    0x4ecdafe4: "withered_beetle_13wf08a", // 1322102756
-    0x4ed0ff6a: "skeleton_archer_05wc02", // 1322319722
     0x4ed290f8: "skeleton_club_15", // 1322422520
+    0x4ed920e9: "undead_gravedigger_53", // 1322852585
+    0x4ee2e3f3: "wolf_minion_34", // 1323492339
     0x4ee50dcb: "ancientguardian_javelineer_21", // 1323634123
     0x4ee5d565: "bog_monster", // 1323685221
-    0x4ee9bfc3: "drowned_sailor_1h_sword_15ec02a", // 1323941827
     0x4eea07c7: "fl_alligator_elite_named_09fl01", // 1323960263
-    0x4ef8e509: "damned_villager_rake_11md07b", // 1324934409
     0x4efb256e: "fl_primal_lion_09fl09", // 1325081966
     0x4efc9094: "ancientguardian_spearman_elite", // 1325174932
-    0x4eff921d: "damned_villager_sickle_07sm08", // 1325371933
     0x4f0752cd: "evil_knight_spear_32", // 1325880013
     0x4f0baad2: "ck_ancientguardian_spearman_10ws04_steps", // 1326164690
+    0x4f0d61c8: "legion_villager_sickle", // 1326277064
+    0x4f0d74a9: "ghost_shipwrecked_44", // 1326281897
+    0x4f1340d5: "damned_rifleman_m-f_54", // 1326661845
     0x4f143bbf: "drowned_sailor_1h_sword_37", // 1326726079
     0x4f1546c5: "desert_scorpion_60", // 1326794437
     0x4f15c139: "fl_rainbowtiger_named_elite_09fl12", // 1326825785
+    0x4f179df0: "damned_villager_shovel_34", // 1326947824
+    0x4f186213: "dryad_shaman_63", // 1326998035
     0x4f1e6553: "ancientguardian_reaver_named_00", // 1327392083
     0x4f204844: "wolf_alpha_10", // 1327515716
+    0x4f25f01a: "drowned_sailor_1h_club_27", // 1327886362
     0x4f2c21ad: "alligator_strange_60", // 1328292269
     0x4f331eb2: "fl_beetle_baby_09fl04", // 1328750258
     0x4f39fbda: "risen_regurgitator_40", // 1329200090
@@ -2476,1154 +2063,968 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x4f433977: "skeleton_spear_43", // 1329805687
     0x4f5596ac: "ck_goldcursed_2hspear_named_10ws04_gold", // 1331009196
     0x4f57889a: "damned_2h_spearman_m-f_dg_greatcleave_00", // 1331136666
-    0x4f5e1ba7: "anubianguardian_spearman_16bs11", // 1331567527
     0x4f6507aa: "withered_grunt_28", // 1332021162
     0x4f674307: "ancientguardian_reaver_56", // 1332167431
     0x4f68bd6d: "ghost_frozen_named_s4_2", // 1332264301
-    0x4f7be53e: "drowned_sailor_1h_club_39_15ec00", // 1333519678
+    0x4f719375: "damned_axeman_m-f_57", // 1332843381
+    0x4f78cfd4: "skeleton_archer_14", // 1333317588
     0x4f828b95: "alligator_black_31", // 1333955477
-    0x4f88ced3: "drowned_sailor_1h_sword_04nw11c", // 1334365907
-    0x4f8e346f: "elk_doe_44", // 1334719599
     0x4f92b622: "undead_navigator_60", // 1335014946
     0x4f97b6a8: "wolf_grey_5", // 1335342760
     0x4f986250: "wolf_grey_14", // 1335386704
-    0x4f9e9d6a: "undead_pistoleer_08qp01a", // 1335795050
+    0x4fa1f0e5: "drowned_sailor_2h_axe_30", // 1336013029
     0x4fa2737f: "ghost_plagued_32", // 1336046463
-    0x4fa95880: "damned_villager_hammer_02bw02", // 1336498304
     0x4fb79f37: "anubianguardian_spearman_67_named_00", // 1337433911
     0x4fbbf1d9: "alligator_strange_dg_restless_00", // 1337717209
-    0x4fbc1d17: "undead_navigator_41_15ec00", // 1337728279
     0x4fbe7f15: "ghost_starved_42", // 1337884437
-    0x4fc0d161: "anubianguardian_brute_16bs09", // 1338036577
     0x4fc1548a: "ancientguardian_spearman_icevariant_raid10-", // 1338070154
     0x4fcb26b7: "corruptedlegion_cyclops_named_00", // 1338713783
-    0x4ff33c63: "drowned_miner_45_15ec00", // 1341340771
-    0x4ffa4f08: "damned_villager_lumberaxe_07sm08", // 1341804296
+    0x4fe22ae9: "anubianguardian_panther_elite_named_00", // 1340222185
     0x500bd77c: "drowned_miner_14", // 1342953340
-    0x501767af: "wolf_grey_11md10", // 1343711151
-    0x5018a7b2: "desert_coyote_16bs10", // 1343793074
-    0x501e0da0: "undead_grenadier_15ec04a", // 1344146848
-    0x502ae5eb: "lynx_11md09", // 1344988651
+    0x5016a8bb: "ghost_charred_44", // 1343662267
     0x502b1dd0: "ancientguardian_mage_named_dg_everfall_01", // 1345002960
     0x502e08ea: "fl_boar_09fl09", // 1345194218
-    0x5041c12f: "primal_lion_desert_16bs12", // 1346486575
-    0x50444a18: "undead_gravedigger_02bw01", // 1346652696
     0x5048207b: "ck_spectral_lost_1hsword_10ws02", // 1346904187
     0x504d1572: "fl_hercyne_corvid_alpha_named_09fl02b", // 1347229042
+    0x50573fd4: "skeleton_1h_sword_15", // 1347895252
     0x505b77c4: "wolf_alpha_named_00", // 1348171716
     0x505c4a6d: "damned_rifleman_11md12_elite", // 1348225645
+    0x5071a2cb: "ck_corruption_heavy_msq_68", // 1349624523
     0x5072b8a4: "skeleton_crawler_58", // 1349695652
-    0x5076d2f7: "enthralled", // 1349964535
-    0x5077e036: "jawbone_cove", // 1350033462
+    0x5074a2cf: "season_02_event_sulfur_elemental_heavy_siegebreaker", // 1349821135
     0x508624ef: "bear_damned_07sm06b_elite", // 1350968559
-    0x5093bd69: "ghost_starved_02bw01", // 1351859561
-    0x509bdba5: "risen_whole_body_06sw09a", // 1352391589
+    0x5093f893: "ancientguardian_javelineer_35", // 1351874707
     0x509fdcc7: "yeti_named_14ac18", // 1352654023
-    0x50a0b507: "dryad_shaman_14ac09a", // 1352709383
     0x50ad0d37: "undead_navigator_08qp05a", // 1353518391
+    0x50afd5b1: "undead_gravedigger_47", // 1353700785
     0x50afdb1f: "undead_berserker_10ws09", // 1353702175
-    0x50b45167: "undead_gravedigger_02bw03b", // 1353994599
-    0x50b8c3e9: "anubianguardian_panther_12bs05a", // 1354286057
     0x50bbec09: "avalancher_shivers_60", // 1354492937
+    0x50bc086f: "skeleton_2h_sword_16", // 1354500207
     0x50c51c5d: "dynasty_summoner_named_dg_ebonscale_00", // 1355095133
-    0x50d662f2: "anubianguardian_scarab_16bs05", // 1356227314
+    0x50c6f823: "corrupted_ogre", // 1355216931
     0x50e295c7: "fl_bearelemental", // 1357026759
-    0x50e3468e: "boar_5", // 1357072014
-    0x50ec5ae6: "damned_villager_cleaver_08qp08", // 1357667046
-    0x50f101e8: "elk_stag_39", // 1357971944
+    0x50ea76f2: "damned_bowman_54", // 1357543154
+    0x50ebfe64: "damned_villager_skinning_knife_26", // 1357643364
     0x50fa8768: "tiger_named_01_08qp07", // 1358595944
     0x51076167: "undead_shaman_admiral_minion", // 1359438183
+    0x5107662d: "damned_axeman_m-f_43", // 1359439405
+    0x5109a80d: "sandworm_acidball", // 1359587341
     0x510a211d: "legion_sagittarii_dg_brimstonesands_00", // 1359618333
     0x510fa2da: "undead_grenadier_30", // 1359979226
     0x5111b65f: "ancientguardian_reaver_42", // 1360115295
-    0x51149d92: "sheep_churro_12mb07", // 1360305554
-    0x511af709: "withered_grunt_13wf", // 1360721673
-    0x51232cc2: "blight_fiend_13wf02b", // 1361259714
     0x5126f1c8: "corruption_impaler_dt1", // 1361506760
-    0x5128eeff: "anubianguardian_spearman_16bs05", // 1361637119
     0x5129fb85: "ck_drowned_sailor_1h_club_10ws08_black", // 1361705861
+    0x512f871a: "damned_villager_pitchfork_13", // 1362069274
     0x5135cc2f: "skeleton_spear_57", // 1362480175
-    0x5138ea47: "ancientguardian_spearman_11md06c", // 1362684487
-    0x513a04b3: "damned_villager_pitchfork_16bs06a", // 1362756787
     0x514207f7: "drowned_sailor_1h_sword_12mb06c", // 1363281911
-    0x5145a57b: "dune_phantom_berserker_16bs01", // 1363518843
-    0x5145ebea: "fl_beetle_baby_09fl10", // 1363536874
     0x514a00cf: "skeleton_archer_10ws02", // 1363804367
     0x514c2a0e: "evil_knight_mace_20", // 1363945998
     0x514f0e82: "risen_regurgitator_54", // 1364135554
     0x514f7562: "corrupted_tiger_08qp08_elite", // 1364161890
+    0x51530542: "drowned_sailor_1h_club_33", // 1364395330
     0x51563918: "anubianguardian_brute_64", // 1364605208
     0x5162cee7: "drowned_sailor_1h_sword_23", // 1365429991
+    0x5165b58d: "damned_rifleman_m-f_40", // 1365620109
     0x51694d51: "fl_anubianguardian_panther_small_09fl06", // 1365855569
     0x5171a795: "evil_knight_spear_26", // 1366402965
-    0x5179a64d: "cow_02bw07", // 1366926925
+    0x517b81f1: "ghost_shipwrecked_50", // 1367048689
     0x517bdcb1: "undead_navigator_23_elite", // 1367071921
-    0x517e5b43: "ghost_charred_16bs08", // 1367235395
     0x5181a50a: "ghost_shackled_named_02bw03b_02", // 1367450890
     0x5188c325: "undead_officer_21", // 1367917349
     0x518d3afe: "ck_spectral_lost_2hblunderbuss_named_10ws07", // 1368210174
-    0x5194192d: "withered_beetle_13wf03", // 1368660269
-    0x519702f3: "pig_domestic_12mb07", // 1368851187
     0x519a3682: "dynasty_heavy_named_08qp04", // 1369060994
     0x519f70e1: "undead_officer_10ws09", // 1369403617
     0x51b34327: "ck_undead_pirate_brute_named_10ws08_fortout", // 1370702631
     0x51b7e58a: "ck_ancient_amalgam_named_10ws04_steps", // 1371006346
-    0x51b8bc4c: "undead_grenadier_named_elite_05wc11", // 1371061324
+    0x51b8be91: "siegeweaponlarge_ally", // 1371061905
     0x51c4bfed: "bloated_corpse_08qp05", // 1371848685
-    0x51c9121c: "legion_sagittarii_67", // 1372131868
-    0x51c920a6: "drowned_sailor_1h_club_10ws03", // 1372135590
+    0x51c88a4d: "ghost_starved_56", // 1372097101
     0x51d16550: "bearelemental_named_dg_restless_00", // 1372677456
-    0x51d34a27: "desert_bison_strange_16bs07", // 1372801575
+    0x51d48627: "ghost_plagued_26", // 1372882471
+    0x51d705bd: "drowned_sailor_2h_axe_24", // 1373046205
     0x51d83af3: "undead_grenadier_molotov_34", // 1373125363
+    0x51dc76ce: "hercyne_boar_waveevent", // 1373402830
     0x51e58828: "damned_longswordsman_commander_55_elite", // 1373997096
-    0x5203ba41: "legion_sagittarii_16bs11", // 1375976001
-    0x520dd696: "skeleton_club_07sm07", // 1376638614
+    0x52148a70: "undead_officer_12mb06c_named", // 1377077872
+    0x52181fab: "dynasty_warrior_61", // 1377312683
     0x5219f109: "risen_whole_body_29", // 1377431817
-    0x521d514f: "sulfur_elemental_entity_16bs07", // 1377653071
-    0x5220c8d2: "wolf_timber_06sw05", // 1377880274
-    0x52213e64: "cow_14", // 1377910372
     0x5222cb82: "undead_navigator_29", // 1378012034
-    0x52290d14: "ancientguardian_javelineer_04nw07", // 1378422036
-    0x523389f5: "rabbit_spotted_15", // 1379109365
-    0x5246a717: "dune_phantom_berserker_16bs04a", // 1380362007
     0x524a7e10: "darkness_monolith_shell_07sm06d_65_elite", // 1380613648
-    0x5257c6e8: "damned_villager_knife_33", // 1381484264
-    0x525e265a: "legion_villager_ladel_16bs08", // 1381901914
+    0x525727c2: "dunewalker_waterseeker_icestaff_named", // 1381443522
     0x52617c38: "undead_berserker_12mb01d", // 1382120504
     0x528ec0cc: "undead_bloated_corpse_re1", // 1385087180
     0x529035e4: "wolf_alpha_59", // 1385182692
-    0x52aa51cb: "anubianguardian_spearman_12bs10d", // 1386893771
-    0x52b13213: "legion_villager_cleaver_16bs01", // 1387344403
-    0x52b45691: "turkey_vulture_16bs08", // 1387550353
-    0x52bed24b: "turkey_13wf08", // 1388237387
-    0x52bf0fe2: "moonshadow", // 1388253154
-    0x52bfdaaf: "boar_12mb08", // 1388305071
-    0x52e3bfba: "wolfbough", // 1390657466
-    0x52ef0f2d: "corruption_impaler_04nw10", // 1391398701
+    0x529c5c0d: "alligator_strange_29", // 1385978893
+    0x52d57a0a: "withered_grunt_61", // 1389722122
+    0x52d98c63: "torso_boss_ice", // 1389988963
+    0x52daf1a9: "elk_motherwell_doe", // 1390080425
+    0x52e83c43: "damned_villager_lumberaxe_54", // 1390951491
+    0x52f6a9c0: "damned_villager_ladel_67", // 1391897024
+    0x52fcd838: "damned_villager_rake_35", // 1392302136
     0x5304e531: "dynasty_maiden_named_dg_shattermtn_00", // 1392829745
     0x5306673e: "undead_navigator_12mb06d", // 1392928574
     0x530ca0ce: "ck_undead_pistoleer_10ws03a", // 1393336526
     0x530f4c36: "dryad_archer_56", // 1393511478
+    0x5312acfa: "undead_pistoleer_4", // 1393732858
     0x5314d9e1: "wolf_black_35", // 1393875425
-    0x5321712a: "season_02_eggguardian_huntress", // 1394700586
-    0x5331541c: "anubianguardian_archer_16bs09", // 1395741724
+    0x532b310a: "damned_villager_cleaver_27", // 1395339530
+    0x532ec824: "anubianguardian_brute_elite_named_02", // 1395574820
     0x53382542: "ck_undead_bloated_corpse_10ws09d_elite", // 1396188482
     0x533c6fee: "undead_berserker_44", // 1396469742
     0x533e2266: "legion_villager_ladel_63", // 1396580966
     0x53404c6e: "undead_javelineer_31", // 1396722798
-    0x5345b551: "turkey_28", // 1397077329
-    0x5347b6b0: "wolf_elemental_ice_s4", // 1397208752
-    0x53609368: "dryad_shaman_14ac13", // 1398838120
+    0x5342ad20: "ghost_shackled_51", // 1396878624
+    0x534cea01: "damned_villager_kitchenknife_49", // 1397549569
+    0x534ecbdb: "damned_2h_spearman_m-f_62", // 1397672923
     0x536c77b9: "rabbit_spotted_5", // 1399617465
     0x536fbf64: "swamp_dryad_prowler_60", // 1399832420
+    0x5371443a: "drowned_sailor_1h_sword_8", // 1399931962
     0x5374ea85: "fl_dryad_beast_09fl03", // 1400171141
     0x5391b72c: "skeleton_1h_sword_48", // 1402058540
     0x53957ad3: "swamp_dryad_prowler_dg_edengrove_00", // 1402305235
-    0x539794ca: "legion_villager_cleaver_16bs08c", // 1402442954
-    0x539fa29a: "dynasty_summoner_named_16bs02d", // 1402970778
     0x53aaaa34: "unstable_swamp_fiend_62", // 1403693620
-    0x53ad765d: "alligator_strange_05wc05", // 1403876957
+    0x53aabdbe: "damned_1h_swordsman_m-f_61", // 1403698622
     0x53b023e8: "ck_ghost_plagued_10ws09_elite", // 1404052456
-    0x53b22658: "dryad_prowler_14ac11a", // 1404184152
     0x53bbc794: "alligator_black_named_01", // 1404815252
     0x53c03e49: "ck_lost_corpse_10ws02_sable_prison", // 1405107785
     0x53c5c945: "damned_villager_hammer_07sm06a", // 1405471045
     0x53d56d21: "ck_ghost_shipwrecked_named_10ws09", // 1406496033
     0x53d757e7: "ck_drowned_sailor_1h_sword_shield_10ws06_tide", // 1406621671
+    0x53dd1805: "drowned_sailor_1h_sword_shield_25", // 1406998533
     0x53dda3f1: "undead_grenadier_disease_45", // 1407034353
     0x53e1c446: "bison_15", // 1407304774
     0x53f54dc1: "lynx_62", // 1408585153
+    0x53f87b2e: "bear_black_43", // 1408793390
     0x54027b7d: "swamp_dryad_prowler_64", // 1409448829
+    0x540f2941: "skeleton_club_58", // 1410279745
     0x541303e8: "fl_swamp_dryad_shaman_whisper", // 1410532328
     0x542cdb1a: "fl_hercyne_reindeer_waveevent", // 1412225818
     0x542d8877: "undead_javelineer_35", // 1412270199
+    0x542f6939: "ghost_shackled_55", // 1412393273
+    0x54368ad9: "damned_pistoleer_m-f_27", // 1412860633
     0x5451abf7: "undead_berserker_40", // 1414638583
     0x5453e67f: "legion_villager_ladel_67", // 1414784639
+    0x5454d2d0: "bison_40_named_elite_06sw09", // 1414845136
     0x545e247c: "damned_great_axeman_m-f_wwgreataxe", // 1415455868
     0x5462882f: "dryad_archer_52", // 1415743535
+    0x54690c61: "dynasty_maiden", // 1416170593
+    0x54789551: "hercyne_spider_broodmother", // 1417188689
     0x54791df8: "wolf_black_31", // 1417223672
+    0x5481683d: "anubian_scarab_09a_s9", // 1417766973
     0x549517cf: "bloated_corpse_named_01", // 1419057103
+    0x5495bf37: "bear_black_47", // 1419099959
     0x549889d8: "lynx_66", // 1419282904
     0x549e0e47: "fl_beetle_baby_09fl04b", // 1419644487
-    0x54a2ed34: "anubianguardian_horus_12bs05a", // 1419963700
-    0x54ab4615: "undead_officer_42_15ec00", // 1420510741
+    0x54aead91: "damned_villager_pickaxe_59", // 1420733841
     0x54b067e8: "undead_grenadier_disease_41", // 1420847080
-    0x54b72b92: "anubianguardian_reaver_16bs11", // 1421290386
     0x54c10190: "ck_blackbone_lost_1hsword_named_10ws09_elite", // 1421934992
     0x54cb6b0e: "isabella_msq2", // 1422617358
     0x54cbabd9: "ck_undead_navigator_10ws08_black", // 1422633945
+    0x54d812fd: "desert_scorpion_medium_elite_minion", // 1423446781
     0x54d8de26: "swamp_dryad_prowler_named_dg_edengrove_00", // 1423498790
-    0x55042173: "starvault", // 1426334067
+    0x54e2765c: "dynasty_spearman_60_elite", // 1424127580
     0x550731ea: "ancientguardian_spearman_58", // 1426534890
-    0x55180349: "damned_acolyte_08qp07", // 1427637065
-    0x5523f8e3: "risen_whole_body_04nw10a", // 1428420835
     0x55311b80: "dynasty_warrior_08qp08_elite", // 1429281664
-    0x553a02f1: "damned_villager_knife_37", // 1429865201
-    0x5543310b: "risen_l-r_arm_06sw09", // 1430466827
-    0x55709556: "sulfur_elemental_entity_16bs03", // 1433441622
-    0x557804eb: "primal_lion_desert_cub_16bs04", // 1433928939
-    0x55990aed: "drowned_sailor_1h_sword_44_15ec00", // 1436093165
+    0x5545dbe9: "wolf_grey_59", // 1430641641
+    0x554a61a3: "withered_grunt_8", // 1430938019
+    0x555454c0: "evil_knight_greataxe_firevariant", // 1431590080
+    0x5566aabd: "structure_piston", // 1432791741
+    0x55673910: "hercyne_corvid", // 1432828176
+    0x557c706b: "wolf_timber_28", // 1434218603
+    0x5585f85a: "damned_villager_lumberaxe_50", // 1434843226
+    0x55911c21: "damned_villager_rake_31", // 1435573281
+    0x559b6dd9: "damned_villager_ladel_63", // 1436249561
     0x559e3305: "ck_lost_1h_sword_10ws06", // 1436431109
     0x559e4e9c: "undead_javelineer_34_elite", // 1436438172
+    0x55c5c0b7: "skeleton_crawler_agheavy_minion", // 1439023287
+    0x55ccf48f: "tiger_49", // 1439495311
     0x55cfab86: "withered_brute_27", // 1439673222
-    0x55dcf60a: "legion_villager_cleaver_16bs05", // 1440544266
+    0x55d0aa2e: "damned_grunt_61", // 1439738414
     0x55e5c4ad: "swamp_dryad_soldier_named_dg_edengrove_00", // 1441121453
     0x55e5de54: "totem_loc_boss", // 1441128020
-    0x55e72776: "ghost_starved_11md00d", // 1441212278
     0x55e7eec3: "ck_ghost_starved_10ws07", // 1441263299
-    0x55ef331b: "skeleton_mage_12mb08", // 1441739547
+    0x55f0d70d: "target_dummy_boss55", // 1441847053
     0x55f91523: "fl_anubianguardian_brute_09fl06", // 1442387235
     0x55fd841c: "ghost_shackled_named_06_eggreataxe", // 1442677788
-    0x56146254: "cow_02bw03", // 1444176468
-    0x561db8fd: "evil_knight_spear_s4", // 1444788477
+    0x56087194: "damned_rifleman_m-f_44", // 1443393940
+    0x560f0afe: "drowned_sailor_1h_sword_27", // 1443826430
+    0x5611eac4: "alligator_black_65_elite", // 1444014788
+    0x561645e8: "ghost_shipwrecked_54", // 1444300264
     0x5621ee17: "evil_knight_mace_24", // 1445064215
+    0x56222197: "dynasty_spearman_62", // 1445077399
     0x5622ca9b: "risen_regurgitator_50", // 1445120667
-    0x56286162: "dune_phantom_berserker_16bs05", // 1445486946
     0x56392474: "ck_ancientguardian_reaver_10ws04_steps", // 1446585460
     0x563ec15b: "drowned_sailor_1h_club_37", // 1446953307
     0x564014d5: "undead_pirate_brute_61", // 1447040213
-    0x56452ae6: "anubianguardian_spearman_16bs01", // 1447373542
+    0x5643198a: "season_02_sulfur_elemental_soldier_eventboss", // 1447238026
     0x564616b2: "dune_phantom_huntress_named_00", // 1447433906
-    0x5646c5ab: "armadillo_16bs10", // 1447478699
     0x56477664: "undead_javelineer_13wf08a", // 1447523940
     0x564b35d1: "corruption_impaler_dt5", // 1447769553
-    0x565070cd: "damned_axeman_m-f_03gc08c", // 1448112333
     0x5654162a: "skeleton_spear_03gc10", // 1448351274
     0x56580836: "skeleton_spear_53", // 1448609846
-    0x56583eb2: "braidthrall", // 1448623794
     0x566266c3: "undead_grenadier_34", // 1449289411
-    0x5678ff1d: "damned_spearman_m-f_03gc05b", // 1450770205
-    0x5679598b: "sheep_churro_12mb03", // 1450793355
+    0x566aa234: "damned_axeman_m-f_47", // 1449828916
     0x567c7246: "ancientguardian_reaver_46", // 1450996294
     0x567e36eb: "withered_grunt_38", // 1451112171
     0x5684d850: "icedryad_melee_frostfang_25", // 1451546704
     0x5694c9b0: "evil_knight_greataxe_dg_greatcleave_00_01", // 1452591536
-    0x569a850a: "rusted_fork", // 1452967178
-    0x569ea1e2: "withered_beetle_15ec03a", // 1453236706
-    0x56a0d936: "season_02_eggguardian", // 1453381942
-    0x56a4d605: "legion_sagittarii_63", // 1453643269
-    0x56b07887: "damned_villager_pitchfork_16bs08b", // 1454405767
+    0x56a54e54: "ghost_starved_52", // 1453674068
     0x56b5feea: "undead_grenadier_molotov_30", // 1454767850
     0x56b6fdc9: "dune_phantom_tank", // 1454833097
-    0x56be8e3e: "desert_bison_strange_16bs03", // 1455328830
+    0x56b8cbcb: "anubian_scarab_elite_67", // 1454951371
     0x56c1df71: "mountain_lion_62", // 1455546225
-    0x56cadec1: "skeleton_mage_06sw03", // 1456135873
     0x56cf3531: "withered_beetle_minion", // 1456420145
+    0x56d9935f: "corruption_swarmer_chaplain_minion", // 1457099615
+    0x56dc1763: "desert_scorpion_impaler_medium", // 1457264483
     0x56e345f7: "bear_damned_03gc05_elite", // 1457735159
+    0x56e5073c: "undead_officer_25", // 1457850172
     0x56eb22c3: "damned_1h_swordsman_m-f_03gc09_elite", // 1458250435
     0x56ede202: "anubianguardian_brute_dg_brimstonesands_00", // 1458430466
+    0x56f201cb: "bearelemental_60", // 1458700747
     0x56f31a3f: "starved_mercenary_2h_axe_63", // 1458772543
-    0x56fac6ea: "pig_domestic_12mb03", // 1459275498
+    0x5701f15f: "damned_1h_swordsman_m-f_38", // 1459745119
     0x570fdfb1: "swamp_dryad_archer_elite_05wc10", // 1460658097
     0x5710c41b: "damned_acolyte_dt3", // 1460716571
-    0x57115de6: "dryad_prowler_08qp01", // 1460755942
     0x571d2be1: "swamp_fiend_named_dg_edengrove_00", // 1461529569
     0x5725e462: "ck_spectral_lost_1hsword_10ws06", // 1462101090
     0x5726e427: "ck_spectral_lost_2hblunderbuss_10ws03e", // 1462166567
-    0x5728fdff: "aligator_black_13wf07", // 1462304255
     0x572cfd2d: "risen_l-r_arm_03gc01", // 1462566189
     0x572fd456: "damned_villager_hammer_29", // 1462752342
     0x573afbcd: "skeleton_1h_sword_11", // 1463483341
-    0x574977f0: "undead_shaman_05wc06", // 1464432624
-    0x57577f86: "dryad_archer_14ac10a", // 1465352070
-    0x575b4444: "evil_knight_greataxe_10ws04", // 1465599044
+    0x574c3a2d: "damned_villager_axethrower_m-f_48", // 1464613421
     0x575cd7db: "evil_knight_greataxe_17", // 1465702363
-    0x575ec3eb: "evil_knight_longsword_32", // 1465828331
     0x575fea06: "corrupted_sailor_1h_sword_named_00", // 1465903622
     0x57632e61: "evil_knight_bow_elite_08qp02", // 1466117729
     0x57661365: "drowned_miner_10", // 1466307429
-    0x5773c9b9: "undead_grenadier_15ec04e", // 1467206073
-    0x5773e4dc: "turkey_12mb08", // 1467213020
     0x57756e66: "fl_swamp_dryad_archer_09fl03a", // 1467313766
-    0x577cc260: "withered_beetle_06sw08", // 1467794016
+    0x577b6ca2: "ghost_charred_40", // 1467706530
     0x5787054e: "skeleton_2h_sword_10ws02", // 1468466510
+    0x5787b2eb: "damned_bowman_50", // 1468510955
     0x5796c51d: "explosive_sprout_poison", // 1469498653
     0x5799a1f6: "anubianguardian_horus_dg_brimstonesands_named_00", // 1469686262
+    0x579c7f42: "undead_hunter_48", // 1469873986
     0x57aea147: "fl_wolf_elemental_earth_09fl09", // 1471062343
-    0x57bba6eb: "anubianguardian_scarab_16bs01", // 1471915755
-    0x57bbf697: "withered_beetle_09fl05b", // 1471936151
-    0x57bda306: "anubianguardian_brute_named_season_2_16bs10", // 1472045830
+    0x57c211a8: "undead_gravedigger_43", // 1472336296
     0x57c96e61: "fl_dg_firstlight_01_barbary_lion_named", // 1472818785
     0x57d086f2: "ck_blackbone_lost_1hsword_10ws04_ad", // 1473283826
-    0x57d7e123: "risen_onearm_13wf06", // 1473765667
-    0x57df8122: "damned_hound_11md07a", // 1474265378
-    0x57ffd0f2: "withered_beetle_04nw10c", // 1476382962
-    0x58006812: "anubianguardian_brute_16bs11", // 1476421650
-    0x580863f5: "ancientguardian_mage_11md00e", // 1476944885
+    0x57d31b48: "fl_mammoth_boss_earth_root_arcane_plus", // 1473452872
+    0x57fe3c8a: "ancientguardian_javelineer_31", // 1476279434
     0x580bda93: "undead_berserker_named_05", // 1477171859
     0x580e8700: "risen_l-r_arm_7", // 1477347072
-    0x581fd244: "las_torres", // 1478480452
-    0x58255a0a: "damned_villager_pickaxe_09fl04", // 1478842890
+    0x581fc66d: "fl_hercyne_reindeer_briar_turret", // 1478477421
     0x582c7aa9: "dynasty_heavy_named_08qp08", // 1479309993
-    0x5833c6e8: "undead_pistoleer_12mb06a", // 1479788264
     0x584232e6: "alligator_black_29", // 1480733414
-    0x5852037a: "legion_villager_pickaxe_16bs03", // 1481769850
+    0x584a24ee: "brother_umberto_ranged", // 1481254126
+    0x58614996: "drowned_sailor_2h_axe_28", // 1482770838
     0x58699ef6: "fl_beetle_09fl04b", // 1483316982
+    0x586d052c: "corruption_entity_crawler_ftue", // 1483539756
     0x586e76d8: "undead_grenadier_molotov_38", // 1483634392
-    0x5873fb72: "undead_hunter_02bw", // 1483996018
-    0x587d87c9: "anubianguardian_horus_12bs10d", // 1484621769
-    0x58833f82: "dunewalker_wanderer_longsword_bloodofsands", // 1484996482
-    0x588c883b: "named_expedition_ai", // 1485604923
+    0x58866d13: "damned_villager_ladel_36", // 1485204755
+    0x588c1ceb: "damned_villager_rake_64", // 1485577451
     0x588d12bb: "hercyne_spider_raid_cutlasskeys_00", // 1485640379
-    0x58973f9c: "withered_swarmancer_10ws03", // 1486307228
-    0x589ea2d4: "anubianguardian_spearman_16bs09", // 1486791380
+    0x5896a7a7: "undead_pistoleer_named_05wc11", // 1486268327
     0x58a5bed9: "withered_grunt_30", // 1487257305
-    0x58a9a1b2: "boar_26", // 1487511986
     0x58b49bdb: "fl_mim_statue_damned_acolyte", // 1488231387
     0x58b63c96: "damned_cultist_named_02", // 1488338070
     0x58b6c81d: "evil_knight_lifestaff_named_dg_greatcleave_01", // 1488373789
     0x58b74e42: "ancientguardian_mage_elite", // 1488408130
+    0x58c4cb69: "withered_swarmancer_named", // 1489292137
     0x58c564ad: "skeleton_1h_sword_msq_13", // 1489331373
-    0x58c81768: "ghost_charred_16bs04", // 1489508200
-    0x58d0c8bf: "skeleton_crawler_11md00g", // 1490077887
     0x58d12687: "risen_l-r_arm_57", // 1490101895
+    0x58e643d8: "wolf_elemental_earth_46", // 1491485656
     0x58f942a9: "risen_regurgitator_58", // 1492730537
-    0x58f9c2b0: "turkey_15ec01", // 1492763312
-    0x58fb1bc9: "drowned_sailor_2h_axe_08qp05b", // 1492851657
     0x58fe0b9f: "undead_pirate_brute_named_elite_10ws09_01", // 1493044127
-    0x58ff1098: "bloated_corpse_43", // 1493110936
     0x5900dfa7: "undead_pirate_brute_dg_cutlass_00", // 1493229479
-    0x591bbc88: "goat_mountain_16bs07_pillars", // 1494989960
     0x5925b4b8: "ancientguardian_javelineer_39", // 1495643320
     0x592fa612: "damnedhound_dt3", // 1496294930
     0x593088bd: "undead_javelineer_60", // 1496352957
     0x59460c91: "boar_stripped_46", // 1497762961
-    0x59474dc3: "elk_stag_35", // 1497845187
-    0x59550aa5: "boar_9", // 1498745509
-    0x59602ed9: "anubianguardian_scarab_16bs09", // 1499475673
-    0x59603af7: "legion_villager_hammer_16bs10", // 1499478775
+    0x5947f770: "undead_hunter_40", // 1497888624
+    0x595c3ad9: "damned_bowman_58", // 1499216601
     0x59635915: "ck_blackbone_lost_2hblunderbuss_10ws09d_elite", // 1499683093
-    0x596e7a74: "undead_navigator_06sw07", // 1500412532
-    0x597a211c: "anubianguardian_archer_12bs10c", // 1501176092
+    0x596b4ef2: "corrupted_tiger_47", // 1500204786
     0x59845afd: "withered_brute_named_02", // 1501846269
-    0x59858855: "skeleton_archer_16bs11c", // 1501923413
     0x598b45de: "corruption_heavy_07sm06_darkness", // 1502299614
     0x5992e0f0: "ck_lost_2h_pickaxe_10ws02_highpass", // 1502798064
-    0x599449a7: "skeleton_mage_13wf04", // 1502890407
     0x5994ed96: "swamp_dryad_shaman_62", // 1502932374
+    0x5997b21f: "damned_villager_axethrower_m-f_40", // 1503113759
     0x599842fb: "undead_pistoleer_56", // 1503150843
-    0x59add28d: "karburg", // 1504563853
-    0x59b78f9f: "damned_greataxeman_m-f_08qp07", // 1505202079
-    0x59c2e4bb: "fl_spriggan_adolescent_09fl12", // 1505944763
+    0x59a0e490: "ghost_charred_48", // 1503716496
     0x59d0b85b: "tiger_08qp02b", // 1506850907
-    0x59da3a82: "undead_javelineer_05wc02", // 1507474050
     0x59da796d: "damned_1h_swordsman_m-f_30", // 1507490157
-    0x59db9f7c: "sulfur_elemental_heavy_16bs10", // 1507565436
+    0x59e062dc: "damned_acolyte_named_02_03gc09_elite", // 1507877596
     0x59e173ff: "skeleton_1h_sword_19", // 1507947519
-    0x59e9bf72: "drowned", // 1508491122
-    0x59eb0bd3: "dryad_soldier_14ac14a", // 1508576211
     0x59ee3937: "corruptedlegion_cyclops_named_02_elite", // 1508784439
-    0x5a03b971: "bison_strange_05wc01", // 1510193521
     0x5a089c73: "ancientguardian_mage_36", // 1510513779
-    0x5a0adf73: "dynasty_musketeer_08qp03", // 1510662003
     0x5a0d02b6: "anubianguardian_reaver_67", // 1510802102
     0x5a27fb07: "skeleton_1h_sword_44", // 1512569607
-    0x5a297d94: "legion_villager_kitchenknife_16bs02", // 1512668564
-    0x5a56c9f7: "ghost_shipwrecked_12mb06b", // 1515637239
-    0x5a57886d: "bison_19", // 1515685997
-    0x5a5eec44: "withered_beetle_12mb03b", // 1516170308
     0x5a60c119: "dune_phantom_tank_65", // 1516290329
-    0x5a6ae463: "skeleton_2h_sword_03gc10a", // 1516954723
+    0x5a68c8c0: "damned_villager_sickle_43", // 1516816576
     0x5a6b00c3: "evil_knight_mace_dg_greatcleave01_00", // 1516961987
+    0x5a6b542e: "drowned_sailor_1h_sword_shield_29", // 1516983342
     0x5a6befda: "undead_grenadier_disease_49", // 1517023194
-    0x5a72c19c: "rabbit_spotted_13wf03", // 1517470108
-    0x5a73a551: "boar_stripped_08qp03", // 1517528401
     0x5a7525a3: "damned_villager_pickaxe_51", // 1517626787
     0x5a795c66: "undead_gravedigger_re2", // 1517902950
     0x5a7a521d: "dryad_archer_42_15ec05", // 1517965853
     0x5a7b13af: "drowned_miner_45", // 1518015407
-    0x5a871837: "anubianguardian_archer_16bs05", // 1518802999
     0x5a8a23c5: "undead_berserker_48", // 1519002565
-    0x5a8ab019: "withered_swarmancer_12mb10c", // 1519038489
     0x5a908f80: "undead_pistoleer_named_dg_cutlass_00", // 1519423360
     0x5a951b8e: "ck_goldcursed_undead_pirate_brute_named_10ws04_gold", // 1519721358
     0x5aa295ca: "wolf_black_39", // 1520604618
-    0x5ab56a7c: "ghost_plagued_16bs04a", // 1521838716
+    0x5aa4e0d1: "undead_pistoleer_8", // 1520754897
+    0x5aad94a3: "swamp_dryad_shaman_minion_61", // 1521325219
+    0x5ab6b1fb: "fl_dryad_beast", // 1521922555
     0x5abdd317: "bison_10ws01", // 1522389783
-    0x5abf7dd6: "desert_medium_scorpion_16bs06", // 1522499030
-    0x5ac62a5b: "skeleton_1h_club_11md00a", // 1522936411
     0x5ac70811: "drowned_sailor_1h_sword_4", // 1522993169
     0x5ac81c0a: "ck_undead_grenadier_molotov_10ws09_elite", // 1523063818
-    0x5ac91261: "blight_fiend_14ac14a", // 1523126881
     0x5acc33da: "undead_berserker_65_elite", // 1523332058
     0x5accccbc: "skeleton_2h_sword_47", // 1523371196
+    0x5ad4a173: "skeleton_club_50", // 1523884403
     0x5adde960: "damned_axeman_female", // 1524492640
-    0x5adf0978: "withered_grunt_06sw08c", // 1524566392
     0x5ae13e31: "damned_1h_swordsman_m_named_03", // 1524710961
     0x5ae33c40: "ancientguardian_javelineer_64", // 1524841536
-    0x5ae9f79e: "wolf_grey_12mb06a", // 1525282718
-    0x5af1f70c: "drowned_sailor_1h_club_37_15ec00", // 1525806860
-    0x5af3f97a: "turkey_24", // 1525938554
     0x5af77fb6: "drowned_sailor_1h_sword_22_elite", // 1526169526
-    0x5b021aba: "turkey_vulture_16bs04", // 1526864570
+    0x5afaa62a: "damned_villager_kitchenknife_45", // 1526375978
+    0x5afe1d04: "damned_villager_shovel_63_elite", // 1526603012
     0x5b024652: "corruption_swarmer_dt2", // 1526875730
-    0x5b089e60: "turkey_13wf04", // 1527291488
-    0x5b099684: "boar_12mb04", // 1527355012
     0x5b0c8d6f: "bobcat_42", // 1527549295
-    0x5b1de36c: "anubianguardian_scarab_12bs10e", // 1528685420
-    0x5b1fcd17: "anubianguardian_scarab_65", // 1528810775
+    0x5b177cbd: "tiger_41", // 1528265917
     0x5b23c191: "drowned_sailor_1h_club_62", // 1529069969
-    0x5b313218: "wolf_alpha_named_0903_0201_waveeventboss", // 1529950744
+    0x5b2679cf: "wolf_alpha_55", // 1529248207
+    0x5b26e80b: "dynasty_trainee_dg_ebonscale_00_defend", // 1529276427
     0x5b3853c6: "skeleton_2h_sword_msq_11_elite", // 1530418118
-    0x5b39090f: "solitude", // 1530464527
-    0x5b445ddc: "elk_doe_11md07", // 1531207132
+    0x5b4a9413: "damned_villager_rake_39", // 1531614227
     0x5b4bf8b0: "damned_longswordsman_commander_named_07sm06a", // 1531705520
     0x5b58795a: "dryad_soldier_53", // 1532524890
-    0x5b59fcc3: "ancient_guardian_reaver_11md02", // 1532624067
+    0x5b5ce974: "fl_barbary_lion_elite_09fl12", // 1532815732
     0x5b5cecad: "fl_mim_statue_bearelemental", // 1532816557
-    0x5b615a64: "porta_maris", // 1533106788
+    0x5b5e7068: "damned_villager_lumberaxe_58", // 1532915816
+    0x5b5f43c9: "damned_villager_pitchfork_42", // 1532969929
     0x5b63ac15: "bearelemental_named_14ac11b_elite", // 1533258773
     0x5b7c55f5: "totem_pirate_cursed_60", // 1534875125
     0x5b7efe5f: "skeleton_archer_51", // 1535049311
     0x5b7f6609: "undead_grenadier_61", // 1535075849
     0x5b9487a9: "undead_navigator_25", // 1536460713
-    0x5b9e534d: "damned_villager_axethrower_m-f_11md07b", // 1537102669
+    0x5b9e53db: "wolf_grey_51", // 1537102811
+    0x5ba55ea8: "legion_legionnaire_noshield_elite", // 1537564328
     0x5bafbd22: "risen_whole_body_25", // 1538243874
+    0x5bbf3c9a: "dynasty_heavy_57", // 1539259546
     0x5bc4732b: "bear_grizzly_42", // 1539601195
     0x5bcbfd94: "starved_bandit_1h_club_61", // 1540095380
+    0x5bcca7ef: "naga_ancientguardian_iceguardian_cturret_solo", // 1540138991
     0x5bcea9fd: "elk_strange_31", // 1540270589
+    0x5bd0421d: "ghost_frozen_56", // 1540375069
     0x5bdcb9d8: "ancientguardian_spearman_50", // 1541192152
     0x5bdcdfbb: "mountain_lion_37", // 1541201851
-    0x5be86a71: "legion_villager_ladel_16bs04", // 1541958257
-    0x5bf17120: "damned_bowman_11md07a", // 1542549792
+    0x5bea44f2: "damned_cultist_26", // 1542079730
     0x5bf2beeb: "damned_villager_hammer_named_00", // 1542635243
-    0x5bfa8da1: "bloated_corpse_02bw01", // 1543146913
     0x5c0e89e4: "lynx_msq_14", // 1544456676
     0x5c133a46: "skeleton_archer_55", // 1544763974
+    0x5c3287d0: "damned_villager_pitchfork_46", // 1546815440
     0x5c35bd43: "dryad_soldier_57", // 1547025731
-    0x5c3b4875: "ghost_starved_16bs03a", // 1547389045
     0x5c3db5d9: "drowned_sailor_2h_axe_12mb06c", // 1547548121
-    0x5c6aba21: "legion_villager_cleaver_16bs09", // 1550498337
-    0x5c6b69fb: "megaflora_razorlotus_leaves", // 1550543355
+    0x5c4bbdd6: "wolf_alpha_51", // 1548467670
+    0x5c614976: "bobcat_46", // 1549879670
     0x5c6f824b: "corruption_swarmer_dt6", // 1550811723
-    0x5c702775: "anubianguardian_scarab_12bs10a", // 1550854005
-    0x5c72090e: "anubianguardian_scarab_61", // 1550977294
+    0x5c775c73: "bog_monster_season_02", // 1551326323
     0x5c777df1: "legion_villager_cleaver_65", // 1551334897
+    0x5c7ab8a4: "tiger_45", // 1551546532
+    0x5ca9b732: "bear_grizzly_46", // 1554626354
+    0x5cb11ba2: "mountain_lion_33", // 1555110818
     0x5cb17dc1: "ancientguardian_spearman_54", // 1555135937
+    0x5cbd8604: "ghost_frozen_52", // 1555924484
     0x5cc2793b: "risen_whole_body_21", // 1556248891
-    0x5cce48c0: "primal_lion_desert_cub_16bs08", // 1557022912
+    0x5cc53a39: "undead_grenadier_molotov_61", // 1556429369
+    0x5cc92363: "ck_undead_pistoleer_q1_waveevent", // 1556685667
     0x5ce5d568: "ck_lost_2h_pistols_10ws06", // 1558566248
-    0x5cf57d20: "risen_l-r_arm_06sw05", // 1559592224
+    0x5cf397c2: "wolf_grey_55", // 1559467970
     0x5cf943b0: "undead_navigator_21", // 1559839664
-    0x5cfaf982: "ghost_shipwrecked_named_fr_syn_01", // 1559951746
-    0x5cfca259: "alligator_young_08qp05a", // 1560060505
+    0x5cfa3870: "dungeon_ice_blocker_large", // 1559902320
     0x5d0258b0: "fl_mim_hercyne_corvid", // 1560434864
-    0x5d037d29: "drowned_sailor_1h_sword_shield_12mb06b", // 1560509737
     0x5d0475e0: "ck_drowned_sailor_2h_axe", // 1560573408
-    0x5d0ac9d0: "bison_strange_60", // 1560988112
-    0x5d0b9f69: "anubianguardian_panther_67_elite_named_02", // 1561042793
+    0x5d050cd9: "damned_villager_sickle_47", // 1560612057
     0x5d0d0500: "dune_phantom_tank_61", // 1561134336
     0x5d16d7b6: "drowned_miner_41", // 1561778102
+    0x5d18e1ba: "damned_villager_pickaxe_55", // 1561911738
     0x5d1aea5e: "dryad_shaman_named_03", // 1562045022
-    0x5d1bcc09: "barbary_lion_16bs04c", // 1562102793
-    0x5d24914c: "desert_scorpion_small_16bs04c", // 1562677580
-    0x5d260f60: "swamp_dryad_tendril_16bs05", // 1562775392
-    0x5d44b98d: "legion_villager_kitchenknife_16bs06", // 1564785037
-    0x5d4807ce: "damned_bowman_m-f_07sm05d1", // 1565001678
+    0x5d33ae09: "fl_mammoth_boss_earth_root_lightning", // 1563667977
     0x5d4a3f1e: "skeleton_1h_sword_40", // 1565146910
-    0x5d4b6433: "dryad_archer_07sm09a", // 1565221939
     0x5d4f1072: "fl_dg_firstlight_01_bear_black", // 1565462642
-    0x5d586345: "skeleton_2h_sword_16bs11d", // 1566073669
-    0x5d5e81da: "damned_villager_shovel_04nw10", // 1566474714
     0x5d60c6af: "anubianguardian_reaver_63", // 1566623407
     0x5d671b6a: "dynasty_musketeer_08qp07", // 1567038314
     0x5d706bf6: "churro", // 1567648758
     0x5d8cfa28: "damned_1h_swordsman_m_named_07", // 1569520168
     0x5d8ef859: "ancientguardian_javelineer_60", // 1569650777
-    0x5d938337: "alligator_13wf02", // 1569948471
+    0x5d976233: "damned_villager_kitchenknife_41", // 1570202163
     0x5d992512: "ghost_shackled_59", // 1570317586
+    0x5d9bc45c: "undead_javelineer_39", // 1570489436
     0x5d9e3d63: "turkey_20", // 1570651491
     0x5da108a5: "skeleton_2h_sword_43", // 1570834597
-    0x5dabee42: "skeleton_1h_club_11md00e", // 1571548738
-    0x5db5b6aa: "drowned_sailor_2h_axe_36_15ec00", // 1572189866
-    0x5dd2b9cf: "desert_medium_scorpion_16bs02", // 1574091215
-    0x5dd76b4b: "skeleton_crawler_05wc02", // 1574398795
-    0x5ddf968e: "skeleton_crawler_16bs10", // 1574934158
-    0x5deadc2e: "anubianguardian_archer_16bs01", // 1575672878
-    0x5e04a560: "icefields", // 1577362784
-    0x5e0e55be: "cow_12mb03b", // 1577997758
-    0x5e120ec1: "ancientguardian_javelineer_16bs11", // 1578241729
-    0x5e2a89da: "elk_stag_31", // 1579846106
+    0x5db9656a: "skeleton_club_54", // 1572431210
+    0x5e068aeb: "corrupted_tiger_43", // 1577487083
+    0x5e09d92b: "wolf_black_60", // 1577703723
+    0x5e1e3206: "legion_legionnaire_ethereal", // 1579037190
+    0x5e2062fa: "corruptedlegion_cyclops_dg_brimstonesands_crassus_minion", // 1579180794
+    0x5e2a3369: "undead_hunter_44", // 1579823977
+    0x5e2bc888: "boar_stripped_42", // 1579927688
     0x5e2f6fc2: "fl_dryad_beast_named_09fl03", // 1580167106
-    0x5e346d6a: "bison_strange_11md01", // 1580494186
-    0x5e4321b0: "novaguard", // 1581457840
     0x5e4b0b84: "ck_undead_berserker_named_10ws09_elite", // 1581976452
     0x5e5dd63c: "fl_chameleon_09fl13", // 1583207996
-    0x5e5e4362: "dune_phantom_tank_16bs03a", // 1583235938
     0x5e5f19c1: "ck_ancientguardian_mage_10ws04_steps", // 1583290817
-    0x5e6e4f0c: "undead_officer_45_15ec00", // 1584287500
-    0x5e73d400: "skysworn", // 1584649216
-    0x5e753b36: "anubianguardian_spearman_12bs05a", // 1584741174
     0x5e99987d: "damned_villager_hammer_25", // 1587124349
     0x5e9fcd0a: "fl_primal_lion", // 1587531018
-    0x5eaafe77: "scion", // 1588264567
     0x5eac2d16: "sheep_eastern_32", // 1588342038
     0x5eb7bd74: "damned_1h_swordsman_m-f_34", // 1589099892
     0x5eb9cbdc: "damned_axeman_named_dg_greatcleave_00", // 1589234652
-    0x5ec5a8f7: "turkey_12mb04", // 1590012151
-    0x5eca71c5: "risen_regurgitator_06sw10_named", // 1590325701
     0x5ecc803a: "dryad_archer_62_elite", // 1590460474
     0x5ee728d3: "ck_undead_navigator_10ws04_sable", // 1592207571
     0x5ee84d0b: "lynx_37", // 1592282379
     0x5ee99ee4: "withered_brute_named_06", // 1592368868
-    0x5eeaf810: "dryad_soldier_14ac18", // 1592457232
-    0x5eee5955: "rabbit_spotted_15ec02", // 1592678741
     0x5ef586e2: "undead_pistoleer_52", // 1593149154
     0x5efa7606: "damned_villager_axethrower_m-f_44", // 1593472518
     0x5efdb25a: "wolf_elemental_earth_65_elite", // 1593684570
-    0x5f11550c: "skeleton_1h_sword_13wf02c", // 1594971404
     0x5f145bf2: "damned_axeman_m-f_dg_restless_00", // 1595169778
-    0x5f1c4862: "damned_bowman_m-f_07sm05a", // 1595689058
-    0x5f234905: "elk_doe_58", // 1596147973
-    0x5f338b1a: "desert_coyote_16bs05c", // 1597213466
-    0x5f3931cb: "hatchery_trial", // 1597583819
-    0x5f3fc763: "legion_villager_pickaxe_16bs07", // 1598015331
-    0x5f4cc8ea: "periville", // 1598867690
+    0x5f32ec7d: "ck_spectral_lost_2hspear_q5_waveevent", // 1597172861
     0x5f4e6469: "withered_grunt_13wf08a", // 1598973033
-    0x5f5c03f4: "drowned_sailor_1h_sword_43_15ec00", // 1599865844
     0x5f656b14: "damned_villager_rake_03gc06", // 1600482068
-    0x5f65a7ec: "ancientguardian_mage_11md00a", // 1600497644
     0x5f661e8a: "undead_berserker_named_01", // 1600528010
     0x5f75c309: "goat_mountain_42", // 1601553161
     0x5f7a65b5: "undead_shaman_named_10ws03", // 1601856949
-    0x5f92d481: "bloated_corpse_47", // 1603458177
+    0x5f8b87c1: "wolf_elemental_earth_42", // 1602979777
     0x5f97a23c: "evil_knight_mace_28", // 1603772988
-    0x5f9e2d49: "dune_phantom_berserker_16bs09", // 1604201801
     0x5f9f442f: "legion_desert_coyote_named_00", // 1604273199
     0x5fa009c3: "ghost_shipwrecked_58", // 1604323779
     0x5fa2de62: "ancientguardian_reaver_elite", // 1604509282
-    0x5fb234a1: "icevariant", // 1605514401
-    0x5fc0a153: "anchorshot", // 1606459731
-    0x5fc465ab: "boar_22", // 1606706603
+    0x5fbae09a: "damned_villager_shovel_28", // 1606082714
+    0x5fbce29e: "risen_l-r_arm_53", // 1606214302
+    0x5fbe3dbf: "damned_rifleman_m-f_48", // 1606303167
     0x5fc87ac0: "withered_grunt_34", // 1606974144
     0x5fd42ae8: "undead_grenadier_38", // 1607740136
-    0x5fd4a0c7: "cow_12mb10", // 1607770311
     0x5fdbccf3: "explosive_barrel_10_12mb06", // 1608240371
+    0x5fe1d8f2: "damned_villager_rake_60", // 1608636658
     0x5feba90a: "damned_villager_ladel_32", // 1609279754
     0x5fef004c: "risen_whole_body_12mb03d", // 1609498700
     0x5ff56742: "ghost_starved_33_elite", // 1609918274
-    0x5ffb9860: "skeleton_mage_11md06a", // 1610324064
-    0x600494b7: "alligator_black_58", // 1610912951
-    0x6005eb77: "rabbit_spotted_35", // 1611000695
     0x600e87aa: "ancientguardian_spearman", // 1611564970
     0x60130b50: "darkness_monolith_shell_dt5", // 1611860816
-    0x60175ce6: "cow_34", // 1612143846
     0x601d6cc6: "skeleton_2h_sword_61_elite", // 1612541126
-    0x601dc0ea: "skeleton_2h_sword_11md00e", // 1612562666
-    0x602697f6: "mountain_lion_04nw11", // 1613142006
     0x6027efc7: "drowned_sailor_2h_axe_59", // 1613230023
     0x6028d089: "undead_grenadier_molotov_49", // 1613287561
+    0x60299512: "damned_acolyte_62", // 1613337874
     0x602f38a7: "fl_beetle_09fl03c", // 1613707431
-    0x60430473: "ironbend", // 1615004787
     0x605108b9: "skeleton_2h_sword_03gc10", // 1615923385
     0x605b811f: "undead_hunter_re1", // 1616609567
+    0x60640a60: "undead_shaman_elite", // 1617168992
     0x607a0664: "anubianguardian_archer_66", // 1618609764
-    0x60921cd3: "evil_knight_bow_s4_b", // 1620188371
+    0x608c1c20: "undead_navigator_12mb06c_named", // 1619794976
     0x609780d6: "risen_l-r_arm_26", // 1620541654
-    0x60acb0d7: "ancient_amalgam_16bs05", // 1621930199
-    0x60b9b6c9: "bloated_corpse_32", // 1622783689
+    0x609a966a: "risen_corruption_impaler_59", // 1620743786
+    0x60a0e589: "wolf_elemental_earth_37", // 1621157257
     0x60bfe4f8: "risen_regurgitator_29", // 1623188728
-    0x60c66db0: "dynasty_warrior_08qp01a", // 1623616944
+    0x60c0cb42: "damned_villager_ladel_47", // 1623247682
     0x60e31888: "withered_grunt_41", // 1625495688
-    0x60e37067: "desert_small_scorpion_16bs03", // 1625518183
-    0x60ee43bf: "skeleton_mage_06sw07a", // 1626227647
-    0x60ef07e3: "boar_57", // 1626277859
     0x60ef34b3: "dynasty_maiden_named_dg_ebonscale_00", // 1626289331
-    0x60f02e73: "undead_berserker_36_15ec00", // 1626353267
+    0x60fb4302: "legion_legionnaire_noshield_dg_brimstonesands_crassus_minion", // 1627079426
+    0x6100aac0: "boar_stripped_37", // 1627433664
     0x61015121: "undead_hunter_31", // 1627476257
-    0x6101eb92: "elk_stag_44", // 1627515794
-    0x61045aff: "withered_swarmancer_09fl03", // 1627675391
     0x610d33e8: "ck_spectral_lost_2haxe_named_10ws08_fort", // 1628255208
     0x611a9c88: "damned_bowman_29", // 1629133960
-    0x611ef382: "anubianguardian_horus_12bs09b", // 1629418370
+    0x61230c53: "medusa_maze_02", // 1629686867
     0x612d562b: "legion_villager_hammer_65", // 1630361131
-    0x61321e3d: "withered_grunt_12mb10b", // 1630674493
-    0x6134e5ec: "sulfur_lizard_16bs07", // 1630856684
     0x613dd165: "damned_villager_shovel_07sm06b", // 1631441253
-    0x6142af41: "damned_hound_11md00h", // 1631760193
     0x614efc5b: "ck_alligator_young_10ws03d", // 1632566363
-    0x615b92f8: "fl_hercyne_boar_waveevent", // 1633391352
     0x616312e9: "ancientguardian_javelineer_48", // 1633882857
     0x61634f99: "ancientguardian_warhammer_icevariant_dg_named_greatcleave_00", // 1633898393
     0x616e3e72: "bear_damned_07sm06a_elite", // 1634614898
     0x6176320d: "damned_greataxeman", // 1635136013
-    0x618252de: "skeleton_crawler_25", // 1635930846
-    0x61865fde: "dynasty_spearman_08qp07", // 1636196318
+    0x6178a959: "damned_2h_spearman_m-f_42", // 1635297625
+    0x619cdf3c: "damned_1h_swordsman_m-f_41", // 1637670716
     0x619ebaef: "lost_totem_60", // 1637792495
     0x61a5c3dc: "swamp_dryad_tendril_58", // 1638253532
+    0x61b2fa35: "damned_villager_hammer_50", // 1639119413
     0x61b6360b: "drowned_sailor_2h_axe_64_elite", // 1639331339
-    0x61be3939: "elk_stag_13wf05", // 1639856441
     0x61c32f43: "lynx_42", // 1640181571
-    0x61c505ef: "skeleton_mage_11md09", // 1640302063
-    0x61c6faf7: "legion_axethrower_16bs11", // 1640430327
     0x61cc4db4: "corrupted_sailor_miner_named_00", // 1640779188
     0x61ce19ac: "bear_black_63", // 1640896940
     0x61d1144e: "damned_villager_axethrower_m-f_31", // 1641092174
     0x61dbd7dc: "risen_corruption_entity_50_elite", // 1641797596
-    0x61de7d13: "dune_phantom_tank_16bs01", // 1641970963
     0x61dee4aa: "undead_pistoleer_27", // 1641997482
-    0x61ef2c34: "legion_legionnaire_16bs11", // 1643064372
-    0x61fe2463: "ancientguardian_javelin_13wf05", // 1644045411
+    0x61e145e1: "drowned_sailor_1h_sword_shield_2", // 1642153441
     0x62056570: "evil_knight_longsword_16", // 1644520816
-    0x62091f46: "undead_shaman_04nw11a", // 1644764998
-    0x62116155: "jackrabbit", // 1645306197
+    0x621735a8: "evil_knight_flamekeeper_boss_living_bomb", // 1645688232
     0x62175a19: "damned_priest", // 1645697561
     0x6220247f: "evil_knight_bow_29", // 1646273663
+    0x6220ca39: "ghost_charred_64", // 1646316089
     0x62273552: "ghost_shipwrecked_re2", // 1646736722
     0x622a0f30: "alligator_strange", // 1646923568
     0x622d498b: "undead_grenadier_disease_38", // 1647135115
-    0x622d63c3: "undead_hunter_named_fr_syn_01", // 1647141827
     0x622df27f: "drowned_sailor_1h_sword_shield_58", // 1647178367
-    0x6241d3d0: "dune_phantom_huntress_16bs02", // 1648481232
-    0x6245a93a: "drowned_sailor_2h_axe_06sw07", // 1648732474
+    0x622e6e91: "damned_villager_sickle_32", // 1647210129
+    0x6232c8f7: "legion_villager_rake", // 1647495415
+    0x623db5fe: "drowned_miner_34", // 1648211454
+    0x623e1592: "isabella_dg_shattermtn_phase2_pylon", // 1648235922
     0x624e3a22: "ancientguardian_mage_47", // 1649293858
-    0x6256eddd: "sheep_eastern_16bs08", // 1649864157
     0x62615d56: "skeleton_1h_sword_35", // 1650548054
     0x6262dff3: "fl_peacock_09fl09b", // 1650647027
-    0x627e9727: "anubianguardian_scarab_12bs09c", // 1652463399
     0x628a6aed: "skeleton_2h_sword_36", // 1653238509
     0x6290e314: "broken_cook_knife", // 1653662484
     0x62920722: "skeleton_club_21", // 1653737250
     0x629a2f18: "horse", // 1654271768
+    0x629d64d4: "damned_greataxeman_m-f_47", // 1654482132
     0x62a544ff: "legion_legionnaire_named_03", // 1654998271
-    0x62a7ec36: "skeleton_crawler_03gc10c", // 1655172150
+    0x62a59a11: "ancientguardian_javelineer_15", // 1655020049
     0x62aabf5f: "legion_axethrower_m-f_66", // 1655357279
-    0x62b55f2b: "turkey_55", // 1656053547
+    0x62b01e47: "fl_hercyne_boar_minion", // 1655709255
     0x62b57e08: "dynasty_warrior_dg_ebonscale_00", // 1656061448
     0x62bae13a: "drowned_sailor_1h_club_9", // 1656414522
-    0x62c59e86: "risen_regurgitator_06sw07", // 1657118342
-    0x62c5cb50: "evil_knight_hound_27", // 1657129808
-    0x62c7636a: "elk_stag_19", // 1657234282
-    0x62cb8ee7: "barbary_lion_16bs10", // 1657507559
+    0x62bc007b: "damned_villager_kitchenknife_34", // 1656488059
+    0x62c7c899: "hercyne_typhon_thorndoor", // 1657260185
+    0x62cac2a8: "ancientguardian_spearman_icevariant_named", // 1657455272
     0x62cc8594: "undead_berserker_39", // 1657570708
     0x62cd2654: "fl_dg_firstlight_01_mammoth_base", // 1657611860
     0x62dbad88: "fl_hercyne_corvid_09fl02a", // 1658563976
     0x62e293c1: "fl_anubianguardian_brute_named_09fl06", // 1659016129
+    0x62e4339b: "wolf_black_48", // 1659122587
+    0x62e8caab: "target_dummy_armored", // 1659423403
     0x62f9b365: "dryad_prowler_57", // 1660531557
     0x63045d62: "ck_ghost_charred_10ws06", // 1661230434
-    0x63173457: "goat_mountain_16bs07", // 1662465111
+    0x630c3242: "damned_villager_rake_48", // 1661743682
     0x6318d639: "damned_villager_lumberaxe_29", // 1662572089
-    0x631ecbb7: "elk_stag_12mb01", // 1662962615
+    0x6319e598: "damned_villager_pitchfork_33", // 1662641560
     0x6327d4dd: "ancientguardian_reaver_62", // 1663554781
-    0x63363569: "forgeraider", // 1664497001
-    0x634081d2: "risen_regurgitator_13wf08", // 1665171922
-    0x634a309b: "sulfur_dragon_16bs12", // 1665806491
-    0x6350a42c: "dryad_archer_02bw04", // 1666229292
+    0x6337834c: "abominable_liang_msq_minion", // 1664582476
+    0x634a2b3e: "bobcat_33", // 1665805118
+    0x6353d70f: "damned_rifleman_m-f_60", // 1666438927
     0x6358f5c9: "dryad_shaman_57", // 1666774473
     0x636567c0: "drowned_sailor_1h_club_13", // 1667590080
     0x6366c02a: "drowned_sailor_1h_sword_shield_65_elite", // 1667678250
-    0x63686e56: "undead_shaman_15ec02c", // 1667788374
     0x636cb677: "alligator_strange_54", // 1668068983
-    0x63ad1216: "season_02_event_sulfur_elemental_heavy", // 1672286742
-    0x63adefe3: "skeleton_archer_11md00f", // 1672343523
-    0x63cbcfb0: "sand_elemental_heavy_16bs02", // 1674301360
-    0x63cce88d: "elk_male_02bw05", // 1674373261
+    0x6382d57a: "bear_grizzly_33", // 1669518714
+    0x63880fac: "elk_strange_40", // 1669861292
+    0x639a79ea: "mountain_lion_46", // 1671068138
+    0x63ace2a3: "damned_cultist_57", // 1672274595
     0x63cd7988: "evil_knight_warhammer_30", // 1674410376
     0x63d221f8: "undead_navigator_54", // 1674715640
     0x63d8f58a: "wolf_grey_20", // 1675163018
     0x63f361d7: "ck_goldcursed_2hwarhammer_10ws03c", // 1676894679
-    0x63f5520d: "drowned_sailor_1h_sword_shield_15ec04a", // 1677021709
     0x63ffdf18: "evil_knight_warhammer_dg_greatcleave_00", // 1677713176
-    0x6400d31f: "lynx_12mb08", // 1677775647
+    0x6401726e: "alligator_strange_50", // 1677816430
     0x6402f1e0: "corrupted_sailor_miner", // 1677914592
     0x640b2014: "fl_wingtiger_named_elite_09fl12", // 1678450708
     0x6427ef27: "bobcat_37", // 1680338727
     0x643531d0: "dryad_shaman_53", // 1681207760
-    0x643794b6: "legion_signifer_16bs10", // 1681364150
+    0x643e1316: "damned_rifleman_m-f_64", // 1681789718
     0x645ae305: "lost_knight_bow_12mb04", // 1683677957
     0x646cc0ec: "ghost_plagued_dg_cutlass_00", // 1684848876
-    0x646cdf05: "undead_navigator_named_12mb01", // 1684856581
-    0x64730fae: "elk_stag_12mb05", // 1685262254
+    0x64742181: "damned_villager_pitchfork_37", // 1685332353
     0x647a7b01: "fl_gorilla_ranged_09fl11", // 1685748481
-    0x647af04e: "goat_mountain_16bs03", // 1685778510
     0x647b1388: "drowned_sailor_2h_axe_12mb01b", // 1685787528
     0x6481fe2e: "swamp_dryad_shaman_elite_05wc10", // 1686240814
     0x6484df6a: "risen_whole_body_50", // 1686429546
+    0x64864a22: "unstable_swamp_fiend_59_waveevent", // 1686522402
     0x64925e93: "undead_gravedigger_named_01", // 1687314067
-    0x64989614: "drowned_sailor_1h_sword_shield_15ec04e", // 1687721492
-    0x649d75dc: "wolf_timber_04nw07", // 1688040924
-    0x64a12c94: "elk_male_02bw01", // 1688284308
-    0x64a60ba9: "sand_elemental_heavy_16bs06", // 1688603561
     0x64a92feb: "fl_gorilla_lightning_elite_09fl01", // 1688809451
-    0x64b327a9: "bloated_corpse_13wf01a", // 1689462697
-    0x64b53105: "damned_villager_axethrower_m-f_11md00g", // 1689596165
     0x64b53193: "wolf_grey_24", // 1689596307
     0x64bfe5e1: "undead_navigator_50", // 1690297825
-    0x64c02bfa: "skeleton_archer_11md00b", // 1690315770
-    0x64c3c460: "rimebone", // 1690551392
+    0x64c126ba: "damned_cultist_53", // 1690379962
     0x64c9c18f: "ck_blackbone_lost_2hspear_10ws07", // 1690943887
-    0x64de2725: "frozen", // 1692280613
     0x64e897e9: "hercyne_reindeer_raid_cutlasskeys_00", // 1692964841
+    0x64ef1163: "bear_grizzly_37", // 1693389155
     0x64efebc1: "ck_goldcursed_2hspear_10ws03c", // 1693445057
     0x64f7bdf3: "mountain_lion_42", // 1693957619
-    0x64fd6b95: "undead_pistoleer_05wc07", // 1694329749
+    0x64f7db90: "ancientguardian_spearman_25", // 1693965200
+    0x6506c919: "undead_berserker_12mb01e_named", // 1694943513
     0x650c994f: "skeleton_1h_sword_31", // 1695324495
     0x65160f8c: "drowned_sailor_1h_sword", // 1695944588
-    0x6522a1f0: "elk_stag_15ec04", // 1696768496
     0x6523fe3b: "ancientguardian_mage_43", // 1696857659
-    0x6527c513: "risen_whole_body_06sw05b", // 1697105171
-    0x652c17c9: "dune_phantom_huntress_16bs06", // 1697388489
     0x653793dd: "damned_1h_swordsman_m-f_18", // 1698141149
-    0x654a7667: "evil_knight_greataxe_named_s4_1", // 1699378791
-    0x654dc05a: "ancientguardian_mage_16bs11d", // 1699594330
+    0x6543aa88: "damned_villager_sickle_36", // 1698933384
+    0x654d0e20: "ghost_charred_60", // 1699548704
+    0x655071e7: "drowned_miner_30", // 1699770855
     0x65533ec7: "damned_hound_named_01", // 1699954375
     0x65606bbd: "ancientguardian_mage_msq_named", // 1700817853
-    0x65611d04: "dryad_archer_14ac12a", // 1700863236
     0x65798069: "damned_commander_ftue", // 1702461545
-    0x65945527: "legion_villager_skinning_knife_16bs11", // 1704219943
     0x6594777c: "dryad_prowler_53", // 1704228732
     0x659ecf49: "fl_barbary_lion", // 1704906569
-    0x659f0610: "waterfowl_05wc08", // 1704920592
-    0x65a65ee4: "drowned_sailor_2h_axe_15ec04d", // 1705402084
-    0x65aaad02: "damned_villager_ladel_06sw10", // 1705684226
+    0x65a7a74a: "wolf_white_58", // 1705486154
+    0x65acee7a: "evil_knight_bow_firevariant", // 1705832058
     0x65ad76f0: "damned_villager_axethrower_m-f_dg_shattermtn_00", // 1705866992
     0x65b1f655: "ck_blackbone_lost_1hsword_10ws03a", // 1706161749
     0x65b603a5: "fl_swamp_dryad_archer_09fl02", // 1706427301
     0x65c16d6d: "ck_peacock", // 1707175277
-    0x65c3ba2b: "ancientguardian_spearman_solo_s4", // 1707325995
     0x65c77b46: "legion_axethrower_m-f_62", // 1707572038
     0x65ce90e9: "dynasty_heavy_named_dg_shattermtn_00", // 1708036329
-    0x65d69026: "dunewalker_wanderer_longsword_bloodofsands_n2", // 1708560422
+    0x65d1c462: "damned_villager_kitchenknife_30", // 1708246114
+    0x65dd620d: "undead_javelineer_48", // 1709007373
     0x65df8343: "ghost_shackled_28", // 1709146947
     0x65e26622: "fl_hercyne_reindeer_09fl10", // 1709336098
     0x65e7aef4: "skeleton_2h_sword_32", // 1709682420
     0x65e7e8ca: "evil_knight_mace_dg_greatcleave_00_01", // 1709697226
-    0x65f183dc: "dunewalker_wanderer_rapier_bloodofsands_n2", // 1710326748
-    0x65f2d1f4: "skeleton_mage_05wc09", // 1710412276
-    0x65f50726: "damned_great_axeman_m-f_07sm04_elite", // 1710556966
-    0x65fbda6d: "evil_knight_icestaff_s4", // 1711004269
+    0x65f0a0cd: "damned_greataxeman_m-f_43", // 1710268621
+    0x65f4732a: "undead_gravedigger_63", // 1710519082
     0x65fd82ff: "dunewalker_warmonger_warhammer_trial_group", // 1711112959
     0x65ffc33b: "skeleton_club_25", // 1711260475
-    0x6609f380: "risen_13wf06a", // 1711928192
+    0x66156d40: "damned_2h_spearman_m-f_46", // 1712680256
     0x6616e76a: "tendril_corruption_03gc03_elite", // 1712777066
     0x661d2014: "ck_blackbone_lost_2hspear_10ws04_ad", // 1713184788
-    0x66239c66: "bobcat_10ws02", // 1713609830
     0x662b62e0: "corruption_heavy_named_dg_restless_00", // 1714119392
-    0x6639eece: "corruption_heavy_named_s4_1", // 1715072718
-    0x664e8ab1: "damned_villager_lumberaxe_16bs08a", // 1716423345
-    0x665886d4: "alligator_black_16bs08", // 1717077716
-    0x665921f5: "sulfur_lizard_16bs03", // 1717117429
     0x665aa87d: "corruption_heavy_08qp08", // 1717217405
     0x6667c975: "undead_berserker_60", // 1718077813
     0x666bab7b: "ck_spectral_1hsword_named_10ws06", // 1718332283
-    0x666c2f8b: "elk_stag_40", // 1718366091
     0x666c9538: "undead_hunter_35", // 1718392120
+    0x666d6ed9: "boar_stripped_33", // 1718447833
+    0x668096e2: "season_01_aidyn", // 1719703266
+    0x6686056a: "undead_grenadier_disease_61", // 1720059242
+    0x668c81f8: "drowned_sailor_1h_sword_shield_6", // 1720484344
     0x669c0d38: "skeleton_archer_03gc10", // 1721503032
     0x66a3ddb5: "bear_black_67", // 1722015157
+    0x66aeeb5a: "lynx_46", // 1722739546
     0x66b320b3: "undead_pistoleer_23", // 1723015347
-    0x66b3b90a: "dune_phantom_tank_16bs05", // 1723054346
     0x66b6dd7b: "fl_gorilla_fire_elite_named_09fl12", // 1723260283
     0x66bcd057: "damned_villager_axethrower_m-f_35", // 1723650135
-    0x66cc236d: "alligator_young_15ec04c", // 1724654445
+    0x66d074c8: "evil_knight_commander_firevariant", // 1724937416
     0x66daf72e: "ck_goldcursed_1hsword_10ws10", // 1725626158
-    0x66ef96c7: "skeleton_crawler_21", // 1726977735
+    0x66df3e2c: "damned_villager_hammer_54", // 1725906476
     0x66f11b25: "damned_1h_swordsman_m-f_45", // 1727077157
-    0x66f636a8: "stoneseep", // 1727411880
     0x66fe3376: "icedryad_melee_frostfang_65_elite", // 1727935350
     0x670e1fc7: "corrupted_ogre_07sm06a", // 1728978887
     0x6710a9df: "fl_anubianguardian_spearman", // 1729145311
     0x6715ed46: "undead_officer_58", // 1729490246
     0x6717c27d: "anubianguardian_archer_62", // 1729610365
-    0x671edd57: "withered_beetle_11md06", // 1730075991
-    0x6737a689: "legion_villager_skinning_knife_16bs02a", // 1731700361
-    0x6765ef54: "elk_doe_29", // 1734733652
+    0x672e8a80: "evil_knight_heavy_dg_greatcleave_02", // 1731103360
+    0x673403ef: "damned_priest_hound_65", // 1731462127
+    0x67475bcc: "tiger", // 1732729804
     0x676822a4: "fl_hercyne_boar_alpha_named_09fl02b", // 1734877860
-    0x67682f6e: "rabbit_spotted_31", // 1734881134
-    0x677004f3: "skeleton_2h_sword_11md00a", // 1735394547
-    0x6774914e: "anubianguardian_archer_12bs09a", // 1735692622
     0x677ecf49: "darkness_monolith_shell_dt1", // 1736363849
-    0x6782c3fa: "boar_53", // 1736623098
-    0x678eb47e: "desert_small_scorpion_16bs07", // 1737405566
     0x678edc91: "withered_grunt_45", // 1737415825
-    0x678f28bb: "desert_scorpion_16bs08", // 1737435323
     0x678f4554: "fl_megaflora_razorlotus_named_09fl02b", // 1737442644
     0x67928cb9: "undead_grenadier_49", // 1737657529
     0x67a6c150: "blight_fiend_62_elite", // 1738981712
+    0x67ad0f5b: "damned_villager_ladel_43", // 1739394907
     0x67b705d3: "dynasty_summoner_named_08qp07", // 1740047827
-    0x67c174ce: "ancient_amalgam_16bs01", // 1740731598
     0x67c626cc: "fl_hercyne_corvid_09fl13", // 1741039308
-    0x67c76b5e: "bobcat_16bs04", // 1741122398
-    0x67c952b7: "fl_beetle_09fl11", // 1741247159
     0x67cd2190: "wolf_elemental_earth_33", // 1741496720
+    0x67cd7dbf: "anubianguardian_horus_sun", // 1741520319
     0x67d472d0: "bloated_corpse_36", // 1741976272
-    0x67edd4b6: "undead_berserker_elite_05wc11", // 1743639734
+    0x67e6af92: "ghost_shipwrecked_29", // 1743171474
     0x67fa44cf: "risen_l-r_arm_22", // 1744454863
-    0x6803af31: "elk_doe_12mb02", // 1745071921
-    0x680bf4c3: "damned_villager_sickle_07sm03a", // 1745614019
+    0x67fc46cb: "damned_villager_shovel_59", // 1744586443
+    0x67fdba28: "hercyne_elephant_broodmother", // 1744681512
     0x68119985: "skeleton_1h_sword_64", // 1745983877
-    0x68153182: "damned_1h_swordsman_m-f_02bw01", // 1746219394
     0x681dfc97: "ck_lost_1h_grenadier_10ws02_pirates_stand", // 1746795671
-    0x6822c476: "dune_phantom_huntress_61", // 1747108982
-    0x68341ef5: "skeleton_crawler_29", // 1748246261
-    0x683ee96f: "evil_knight_icestaff_named_s4_1", // 1748953455
+    0x682dee83: "destructible_door_03_elite_05wc10", // 1747840643
     0x68470e3a: "damned_2h_spearman_m-f_07sm02b_elite", // 1749487162
-    0x68594b21: "sirenlieutenant", // 1750682401
+    0x6855a657: "unstable_swamp_fiend_60_waveevent", // 1750443607
+    0x685eaa42: "damned_villager_sickle_63", // 1751034434
     0x6867e388: "undead_pirate_brute_named_12mb06d", // 1751638920
     0x686a4229: "fl_swamp_dryad_shaman_09fl10", // 1751794217
     0x68753519: "icedryad_fiend_shivers_frostgrip_25", // 1752511769
-    0x687c40ac: "undead_javelineer_named_fr_cov_01", // 1752973484
-    0x6892d236: "elk_stag_strange_07sm07", // 1754452534
-    0x689b35d5: "damned_cultist_04nw08", // 1755002325
+    0x687e89ca: "damned_acolyte_named_04nw08", // 1753123274
+    0x687f03c1: "dunewalker_warmonger_warhammer_named", // 1753154497
+    0x6885c564: "fl_wolf", // 1753597284
+    0x6888e8d7: "corrupted_ogre_dt4", // 1753802967
     0x68a297e8: "ghost_starved_10ws07", // 1755486184
     0x68a3284e: "barbary_lion_named_00", // 1755523150
     0x68acd0a3: "damned_bowman_25", // 1756156067
-    0x68b7a7b9: "elk_stag_48", // 1756866489
-    0x68c4106a: "damned_hound_52", // 1757679722
+    0x68ad5835: "damned_villager_skinning_knife_57", // 1756190773
+    0x68b17d8d: "ck_blackbone_lost_2hspear_10ws03b", // 1756462477
+    0x68b9729b: "desert_scorpion_impaler_sandworm_s", // 1756983963
     0x68caf3cc: "desert_coyote_61", // 1758131148
+    0x68ccc4a8: "damned_villager_kitchenknife_65", // 1758250152
     0x68d44af6: "fl_mammoth_elite_09fl01", // 1758743286
     0x68d55ec2: "ancientguardian_javelineer_44", // 1758813890
-    0x68d9ecca: "drowned_sailor_1h_sword_15ec04d", // 1759112394
     0x68da2125: "ck_drowned_miner_10ws03d", // 1759125797
-    0x68dedeb5: "sulfur_elemental_shaman_16bs10", // 1759436469
-    0x68e359ee: "corruption_swarmer_08qp07", // 1759730158
     0x68e87f26: "undead_berserker_12mb10", // 1760067366
-    0x68ee1688: "skeleton_spear_13wf02b", // 1760433800
+    0x68e93b8f: "dynasty_summoner_57", // 1760115599
+    0x68e973e0: "undead_gravedigger_36", // 1760130016
     0x6904a1a6: "drowned_sailor_1h_sword_12mb01b", // 1761911206
     0x6909a8d3: "risen_regurgitator_25", // 1762240723
     0x690a0b9c: "ghost_plagued_13wf08a", // 1762266012
-    0x691318cb: "evil_knight_icestaff_s4_b", // 1762859211
+    0x69159746: "fl_gorilla_fire_elite_09fl12", // 1763022662
     0x6915a313: "drowned_sailor_1h_club_42", // 1763025683
-    0x691afcfc: "ancient_amalgam_16bs09", // 1763376380
+    0x69211e3f: "tiger_61", // 1763778111
     0x692468b6: "drowned_sailor_1h_sword_52", // 1763993782
+    0x6927cef9: "damned_villager_shovel_51", // 1764216569
+    0x69296d19: "damned_villager_hammer_dg_restless_00_spawn", // 1764322585
+    0x693aefed: "bobcat_62", // 1765470189
     0x6949048b: "undead_grenadier_41", // 1766392971
     0x695f325f: "ftue_sailor_z3", // 1767846495
-    0x69864e89: "swamp_dryad_prowler_05wc09", // 1770409609
-    0x698d6a46: "elk_stag_06sw06", // 1770875462
+    0x6969214b: "damned_villager_pitchfork_62", // 1768497483
+    0x697c2ac6: "fl_gorilla_fire", // 1769745094
     0x698e2c1c: "ghost_starved_27", // 1770925084
     0x6991a3ec: "drowned_sailor_2h_axe_55", // 1771152364
+    0x69922076: "ghost_plagued_57", // 1771184246
     0x699587ea: "fl_rat_hercynerat_09fl05", // 1771407338
     0x699e9ca2: "undead_grenadier_molotov_45", // 1772002466
-    0x69b2d89c: "alligator_black_54", // 1773328540
-    0x69b756d7: "drowned_miner_37_15ec00", // 1773622999
-    0x69b96462: "risen_grunt_13wf08a", // 1773757538
-    0x69bd8fe0: "pig_domestic_28", // 1774030816
     0x69c3906b: "primal_lion_52", // 1774424171
     0x69ce6574: "undead_officer_50", // 1775134068
     0x69d809b5: "ck_ancientguardian_spearman_named_10ws04_steps", // 1775765941
     0x69d8d4d8: "undead_officer_12mb10", // 1775817944
+    0x69d9370f: "wolf_alpha_2", // 1775843087
+    0x69e195bc: "lost_merc_pikeman", // 1776391612
     0x69eabd39: "mountain_lion_17", // 1776991545
-    0x69ef3806: "legion_legionnaire_16bs06c", // 1777285126
     0x69f211a9: "bear_grizzly_62", // 1777471913
     0x69f5466b: "ck_spectral_lost_2haxe", // 1777682027
     0x6a020b10: "legion_villager_pickaxe_66", // 1778518800
+    0x6a0334e0: "dynasty_musketeer_56", // 1778595040
     0x6a0bbf7f: "alligator_young_named_04nw10a", // 1779154815
-    0x6a1160b9: "damned_villager_knife_42", // 1779523769
-    0x6a2c0617: "skeleton_spear_11md04a", // 1781270039
-    0x6a2e6592: "goat_mountain_66", // 1781425554
+    0x6a28c4fc: "target_dummy_patrol", // 1781056764
     0x6a2fa9f6: "ck_skeleton_1h_sword", // 1781508598
     0x6a511699: "rabbit", // 1783699097
-    0x6a522714: "corruption_impaler_08qp06", // 1783768852
-    0x6a580dee: "drowned_sailor_1h_club_12mb01a", // 1784155630
     0x6a646dd3: "undead_navigator_58", // 1784966611
     0x6a6504c8: "anubianguardian_horus_elite_named_01", // 1785005256
-    0x6a679835: "cow_65", // 1785174069
-    0x6a69c149: "potbelly", // 1785315657
-    0x6a71f875: "anubianguardian_scarab_16bs02f", // 1785854069
     0x6a723be7: "dynasty_maiden_named_08qp08", // 1785871335
-    0x6a7a7869: "runeforge", // 1786411113
-    0x6a7df793: "towerfall", // 1786640275
-    0x6a94a702: "mountain_lion_10ws05", // 1788126978
-    0x6a9d8c03: "undead_navigator_15ec04c", // 1788709891
-    0x6aad5d9b: "corruptedlegion_cyclops_16bs02", // 1789746587
+    0x6a93dc5b: "withered_grunt_10", // 1788075099
     0x6aae9a12: "damned_villager_lumberaxe_25", // 1789827602
+    0x6aba7e69: "damned_villager_rake_44", // 1790606953
     0x6abdf0b7: "evil_knight_heavy", // 1790832823
     0x6ace755b: "swamp_dryad_soldier_64", // 1791915355
     0x6acf26bc: "dynasty_warrior_named_dg_ebonscale_00", // 1791960764
+    0x6ad693b5: "wolf_alpha_28", // 1792447413
     0x6adad30a: "ck_spectral_lost_2hblunderbuss", // 1792725770
     0x6adafa5c: "alligator_strange_58", // 1792735836
     0x6ae2b17f: "wolf_elemental_ice_03gc04_elite", // 1793241471
-    0x6ae66608: "inkwell", // 1793484296
     0x6af25023: "icegolem", // 1794265123
-    0x6b044789: "ghost_shipwrecked_16bs11", // 1795442569
+    0x6b00cb90: "wolf_elemental_ice_53", // 1795214224
+    0x6b06ea3f: "undead_javelineer_40", // 1795615295
+    0x6b0a4c50: "damned_villager_kitchenknife_38", // 1795837008
+    0x6b0c7fa8: "target_dummy_cc", // 1795981224
     0x6b0cad11: "drowned_sailor_1h_club_5", // 1795992849
     0x6b13d63a: "ancientguardian_javelineer_19", // 1796462138
-    0x6b249b01: "corruption_swarmer_18", // 1797561089
+    0x6b1de891: "damned_pistoleer_m-f_52", // 1797122193
     0x6b2a73d9: "ghost_shackled_named_02", // 1797944281
+    0x6b3a5d4e: "fl_beetle_huge", // 1798987086
     0x6b413323: "fl_chameleon_minion_09fl09b", // 1799435043
     0x6b465696: "unstable_swamp_fiend", // 1799771798
-    0x6b4c73e7: "waterfowl_16bs12", // 1800172519
-    0x6b4ff5c0: "bison_strange_15ec01", // 1800402368
     0x6b527fb0: "wolf_black_44", // 1800568752
-    0x6b653af7: "legion_axethrower_16bs08d", // 1801796343
-    0x6b6e8de0: "undead_shaman_08qp01a", // 1802407392
-    0x6b712f41: "elk_stag_15", // 1802579777
+    0x6b6d975b: "damned_villager_cleaver_56", // 1802344283
     0x6b7195f2: "undead_hunter_60", // 1802606066
     0x6b7944ce: "ancientguardian_spearman_named_01", // 1803109582
-    0x6b7abda0: "ancientguardian_mage_16bs12", // 1803206048
-    0x6b7efc2d: "corruptedlegion_cyclops_16bs07b", // 1803484205
-    0x6b8282da: "legion_axethrower_16bs06c", // 1803715290
-    0x6b82f821: "tiger_08qp06", // 1803745313
-    0x6b8af573: "lynx_15ec01", // 1804268915
+    0x6b7c2f78: "wolf_white_50", // 1803300728
     0x6b8bf9d5: "drowned_miner_38", // 1804335573
-    0x6b964107: "risen_regurgitator_06sw08a", // 1805009159
     0x6b966854: "evil_knight_bow_25", // 1805019220
-    0x6b996a83: "boar_strange_16bs10", // 1805216387
     0x6b9b05a0: "undead_grenadier_disease_34", // 1805321632
     0x6b9bbe54: "drowned_sailor_1h_sword_shield_54", // 1805368916
+    0x6ba1d09d: "damned_villager_axethrower_m-f_60", // 1805766813
     0x6babaa2c: "damned_1h_swordsman_m-f_dg_greatcleave_00", // 1806412332
-    0x6baef9cf: "wolf_black_02bw01", // 1806629327
-    0x6bb1d621: "damned_1h_swordsman_m-f_11md00h", // 1806816801
     0x6bb7c03a: "dune_phantom_tank_named_02", // 1807204410
-    0x6bc92580: "anubianguardian_spearman_12bs09b", // 1808344448
+    0x6bbedd7f: "bear_black_32", // 1807670655
     0x6bcf4d45: "ancientguardian_mage_named_00", // 1808747845
     0x6bd7117d: "skeleton_1h_sword_39", // 1809256829
-    0x6bdd80f3: "skeleton_1h_sword_13wf07", // 1809678579
-    0x6be0a1f6: "sheep_eastern_16bs04", // 1809883638
-    0x6be2e89d: "wayward", // 1810032797
-    0x6c042fa2: "risen_whole_body_15ec04b", // 1812213666
-    0x6c0aeefa: "undead_javelineer_13wf03", // 1812655866
-    0x6c115d94: "damned_villager_pitchfork_16bs11", // 1813077396
+    0x6be100fc: "skeleton_2h_sword_61_elite_spawn", // 1809907964
+    0x6c005342: "damned_villager_cleaver_52", // 1811960642
+    0x6c098681: "or_siegeweaponlarge", // 1812563585
+    0x6c11eb61: "wolf_white_54", // 1813113697
     0x6c1c51eb: "undead_hunter_64", // 1813795307
-    0x6c1ceb58: "elk_stag_11", // 1813834584
     0x6c1daa0a: "boar_stripped_62", // 1813883402
-    0x6c2284a4: "risen_regurgitator_11md00g", // 1814201508
-    0x6c2d0576: "undead_navigator_12mb01a", // 1814889846
-    0x6c3e8582: "damnation", // 1816036738
+    0x6c3e5d15: "desert_scorpion_elite", // 1816026389
     0x6c3fbba9: "wolf_black_40", // 1816116137
     0x6c498f10: "skeleton_club_29", // 1816760080
-    0x6c617e55: "ghost_shipwrecked_05wc07", // 1818328661
+    0x6c616908: "drowned_sailor_1h_club_1", // 1818323208
     0x6c639dfe: "dynasty_summoner_08qp08_elite", // 1818467838
+    0x6c6b2e26: "undead_javelineer_44", // 1818963494
+    0x6c6d0f89: "wolf_elemental_ice_57", // 1819086729
+    0x6c702c88: "damned_pistoleer_m-f_56", // 1819290760
     0x6c729477: "ck_undead_bloated_corpse_10ws09", // 1819448439
     0x6c89b588: "ck_drowned_sailor_1h_sword_10ws08_gold", // 1820964232
     0x6c955e8c: "ck_undead_officer_10ws03d_named", // 1821728396
+    0x6c98c0da: "ancientguardian_heavy_boss_bonethrow_spawner", // 1821950170
     0x6c9abd91: "fl_barbary_lion_09fl09", // 1822080401
     0x6ca65441: "ck_undead_officer", // 1822839873
-    0x6cb52cc0: "bloated_corpse_elite_05wc11", // 1823812800
+    0x6cab8aea: "waterfowl_40", // 1823181546
     0x6cc1e00a: "damned_greataxeman_m-f_named_01", // 1824645130
     0x6cc5713e: "evil_knight_caster_32", // 1824878910
     0x6cc77ded: "fl_mammoth_lightning_elite_named_09fl12", // 1825013229
     0x6ccaa60e: "bison_60", // 1825220110
+    0x6ccc1484: "damned_villager_axethrower_m-f_64", // 1825313924
+    0x6cd31966: "bear_black_36", // 1825773926
     0x6cd8a816: "fl_beetle_baby_09fl03c", // 1826138134
-    0x6cd8f4b6: "evil_knight_mace_10ws04", // 1826157750
     0x6cde2f89: "lynx_17", // 1826500489
     0x6ce80bc0: "damned_villager_pickaxe_28", // 1827146688
-    0x6ce8849b: "drowned_sailor_1h_club_15ec04c", // 1827177627
     0x6cef3c38: "tiger_08qp02", // 1827617848
     0x6cf67a4d: "drowned_sailor_1h_sword_shield_50", // 1828092493
     0x6cf6c1b9: "undead_grenadier_disease_30", // 1828110777
-    0x6cf805e6: "rabbit_spotted_11md06", // 1828193766
+    0x6cfb5e6a: "icedryad_fiend_shivers_frostgrip", // 1828413034
     0x6cfbac4d: "evil_knight_bow_21", // 1828432973
-    0x6d0a5c2c: "cow_61", // 1829395500
-    0x6d18ebbd: "rabbit_spotted_60", // 1830349757
+    0x6d037db8: "wolf_grey_28", // 1828945336
     0x6d1c6968: "ck_lost_2h_pistols_10ws02_sable_prison", // 1830578536
-    0x6d250437: "risen_l-r_arm_04nw03", // 1831142455
-    0x6d37ca94: "alligator_young_05wc07", // 1832372884
     0x6d42d321: "ck_drowned_miner_10ws08_gold", // 1833095969
-    0x6d43a18b: "goat_mountain_62", // 1833148811
     0x6d44b296: "ancientguardian_mage_dg_everfall_00", // 1833218710
     0x6d45ff94: "undead_grenadier_64_elite", // 1833303956
-    0x6d4a1e70: "undead_berserker_12mb06a", // 1833574000
-    0x6d6c5f43: "damned_bowman_11md00h", // 1835818819
+    0x6d5f3e18: "fl_dryad_soldier_09a_s4_waveevent", // 1834958360
+    0x6d6ef0f9: "dynasty_musketeer_52", // 1835987193
     0x6d6fcf09: "legion_villager_pickaxe_62", // 1836044041
-    0x6d7a1719: "dorado", // 1836717849
-    0x6d7c9044: "sand_elemental_soldier_16bs11", // 1836879940
-    0x6d825a1a: "turkey_11md01", // 1837259290
-    0x6da0378a: "undead_officer_39_15ec00", // 1839216522
     0x6da1d149: "ck_undead_officer_10ws06", // 1839321417
     0x6da3b142: "swamp_dryad_soldier_60", // 1839444290
     0x6dbde543: "wolf_elemental_earth_62", // 1841161539
-    0x6dc09982: "corruptedlegion_cyclops_16bs06", // 1841338754
-    0x6dc54385: "elk_stag_12mb09", // 1841644421
-    0x6dcdfae2: "skeleton_mage_11md04a", // 1842215650
+    0x6dd0e7af: "fl_mammoth_boss_dg_firstlight_01_void_ball", // 1842407343
     0x6dd7ba70: "damned_villager_rake_40", // 1842854512
+    0x6dd7fb49: "legion_villager_skinning_knife_elite", // 1842871113
+    0x6dddcb88: "damned_villager_ladel_12", // 1843252104
     0x6de3d03c: "skeleton_archer_28", // 1843646524
-    0x6df5cc7e: "brokebarrel", // 1844825214
     0x6dfe1842: "withered_grunt_14", // 1845368898
-    0x6e0711eb: "ancientguardian_javelineer_12mb02", // 1845957099
+    0x6e04e552: "damned_villager_pitchfork_66", // 1845814610
+    0x6e0c0d09: "wolf_elemental_earth_58_08qp01", // 1846283529
     0x6e24c092: "undead_grenadier_45", // 1847902354
-    0x6e396490: "desert_scorpion_16bs04", // 1849255056
+    0x6e3890ba: "withered_grunt_49", // 1849200826
     0x6e3ad417: "ancientguardian_reaver_37", // 1849349143
     0x6e49acaf: "drowned_sailor_1h_sword_56", // 1850322095
-    0x6e4e25e1: "rabbit_snowshoe_12mb10_named", // 1850615265
-    0x6e5fdf9c: "upper", // 1851776924
+    0x6e4a0ae0: "damned_villager_shovel_55", // 1850346208
     0x6e646cca: "risen_regurgitator_21", // 1852075210
     0x6e70a062: "anubianguardian_horus_named_03", // 1852874850
-    0x6e712775: "bobcat_16bs08", // 1852909429
     0x6e78670a: "drowned_sailor_1h_club_46", // 1853384458
     0x6e7ca021: "evil_knight_longsword_dg_greatcleave01_01", // 1853661217
+    0x6e84e4c3: "legion_legionnaire_physical", // 1854203075
     0x6e877920: "mountain_lion_13", // 1854372128
     0x6e9c8078: "damned_acolyte_named_fr_cov_01", // 1855750264
     0x6e9fd5b0: "bear_grizzly_66", // 1855968688
     0x6ea23633: "ghost_frozen_dg_cutlass_00", // 1856124467
     0x6ea3a16d: "undead_officer_54", // 1856217453
-    0x6ea5add1: "ghost_charred_16bs07c", // 1856351697
     0x6ea8be9e: "ck_blackbone_lost_1hsword_10ws02_sable_prison_named", // 1856552606
     0x6eac9e92: "broken_laborer_pickaxe", // 1856806546
     0x6eae5472: "primal_lion_56", // 1856918642
     0x6eb3d7c7: "darkness_hive_membrane_15", // 1857279943
+    0x6eb4f316: "wolf_alpha_6", // 1857352470
     0x6ebe5ee8: "desert_scorpion_named_03", // 1857969896
     0x6ebf1042: "lost_knight_tank_12mb04", // 1858015298
-    0x6ed3a37f: "elk_doe_25", // 1859363711
-    0x6ed70d50: "evil_knight_bow_09fl07", // 1859587408
-    0x6edf1c85: "alligator_black_50", // 1860115589
+    0x6ec34a09: "withered_beetle_elite", // 1858292233
+    0x6ece52d1: "corruption_entity_minion_restlessshores", // 1859015377
     0x6ee3e805: "ghost_starved_23", // 1860429829
     0x6ee6c02c: "undead_officer_named_1524_1517_waveeventboss", // 1860616236
     0x6ef358bb: "undead_grenadier_molotov_41", // 1861441723
     0x6efc67f5: "drowned_sailor_2h_axe_51", // 1862035445
+    0x6effe46f: "ghost_plagued_53", // 1862263919
     0x6f0137ea: "structure", // 1862350826
-    0x6f05f521: "dune_phantom_tank_16bs09", // 1862661409
-    0x6f0fea7d: "skeleton_mage_13wf02b", // 1863314045
+    0x6f0a9c7c: "damned_villager_axethrower_m-f_39", // 1862966396
     0x6f117985: "boar_stripped_10ws05", // 1863416197
     0x6f1a7777: "damned_villager_skinning_knife_07sm06a", // 1864005495
-    0x6f1af75c: "withered_beetle_04nw02", // 1864038236
     0x6f225851: "doe", // 1864521809
+    0x6f336e5b: "damned_villager_sickle_67", // 1865641563
     0x6f38fe6a: "fl_dg_firstlight_01_gorilla_ranged_named", // 1866006122
-    0x6f4f006f: "dune_phantom_huntress_65", // 1867448431
+    0x6f3cab52: "bison_strange_40", // 1866246994
+    0x6f47570e: "damned_1h_swordsman_m-f_49", // 1866946318
     0x6f598b23: "hercyne_gorilla_named_raid_cutlasskeys_00", // 1868139299
     0x6f62cad6: "corruption_entity_dt4", // 1868745430
-    0x6f6a7b2a: "skeleton_crawler_13wf07", // 1869249322
-    0x6f6e6b28: "elk_doe_12mb06", // 1869507368
-    0x6f78f59b: "damned_1h_swordsman_m-f_02bw05", // 1870198171
+    0x6f697207: "damned_villager_hammer_58", // 1869181447
+    0x6f7c5d9c: "skeleton_1h_sword_60", // 1870421404
     0x6f84b7f9: "undead_gravedigger_32", // 1870968825
-    0x6f8e007a: "risen_whole_body_11md08a", // 1871577210
-    0x6f8e9df7: "corruption_swarmer_08qp03", // 1871617527
+    0x6f84ff96: "dynasty_summoner_53", // 1870987158
+    0x6fa100b1: "damned_villager_kitchenknife_61", // 1872822449
     0x6fa737d5: "desert_coyote_65", // 1873229781
-    0x6fa9d473: "damned_hound_56", // 1873400947
     0x6fb89adb: "ancientguardian_javelineer_40", // 1874369243
     0x6fbfff36: "ancientguardian_spearman_icevariant_raid10_named", // 1874853686
+    0x6fc09c2c: "damned_villager_skinning_knife_53", // 1874893868
     0x6fcf1e2a: "lost_knight_tank_named_12mb04", // 1875844650
-    0x6feecaff: "alligator_black_16bs04", // 1877920511
+    0x6fdad913: "undead_hunter_39", // 1876613395
     0x6ff04354: "evil_knight_lifestaff_dg_greatcleave01_00", // 1878016852
-    0x6fff162f: "elk_stag_strange_07sm03", // 1878988335
     0x7009ebc4: "fl_beetle_09fl09", // 1879698372
     0x700e9252: "drowned_sailor_1h_club_52", // 1880003154
+    0x7012461f: "undead_navigator_12mb01c_boat", // 1880245791
     0x70129992: "risen_regurgitator_35", // 1880267154
-    0x701ce1e8: "sheep_churro_47", // 1880941032
-    0x701e79df: "vorongard", // 1881045471
-    0x70262b95: "blight_fiend_14ac07a", // 1881549717
-    0x702cc99f: "swamp_dryad_shaman_05wc01b", // 1881983391
+    0x702616e1: "ghost_shipwrecked_31", // 1881544417
+    0x702671df: "damned_grunt_59", // 1881567711
+    0x7029136b: "avalancher_shivers", // 1881740139
+    0x703cffb8: "damned_villager_shovel_41", // 1883045816
     0x703f59f7: "drowned_sailor_1h_sword_42", // 1883199991
-    0x7042c7be: "corruption_swarmer_04nw10b", // 1883424702
-    0x704f91c8: "desert_scorpion_16bs10", // 1884262856
+    0x704c3b61: "withered_grunt_15_12mb03", // 1884044129
+    0x70518ad7: "dryad_fulgoris_active_tissue", // 1884392151
     0x705235ca: "undead_grenadier_51", // 1884435914
-    0x7052fa3f: "jackrabbit_16bs03", // 1884486207
-    0x70657d57: "ancientguardian_spearman_11md00b", // 1885699415
-    0x706589ed: "withered_swarmancer_12mb03c", // 1885702637
     0x70685b3f: "skeleton_spear_36", // 1885887295
     0x706aa90f: "risen_regurgitator_7", // 1886038287
     0x70752a99: "dryad_soldier_63", // 1886726809
     0x7082eee1: "risen_whole_body_15", // 1887629025
     0x7085ade3: "undead_grenadier_molotov_55", // 1887808995
+    0x70891137: "ghost_plagued_47", // 1888031031
     0x708a92ad: "drowned_sailor_2h_axe_45", // 1888129709
     0x708c750c: "fl_swamp_dryad_shaman_09fl02_waveevent", // 1888253196
+    0x70951d5d: "ghost_starved_37", // 1888820573
     0x709646f4: "ck_lost_berserker_10ws06", // 1888896756
-    0x709658c9: "bileblight", // 1888901321
-    0x709a69ac: "desert_scorpion_sulfur_16bs07", // 1889167788
     0x709ac7e2: "undead_officer_17_09fl07_named_a", // 1889191906
-    0x709db9b0: "drowned_sailor_1h_sword_06sw07", // 1889384880
-    0x70a55627: "elk_doe_31", // 1889883687
-    0x70a6bea1: "pig_domestic_38", // 1889975969
-    0x70a8961d: "rabbit_spotted_29", // 1890096669
+    0x70a9a18b: "season_02_event_sulfur_elemental_soldier_wave_4", // 1890165131
     0x70a9e9dd: "alligator_black_44", // 1890183645
     0x70ac656b: "ck_undead_pirate_brute_named_10ws09_elite_b", // 1890346347
-    0x70b1d5b0: "withered_beetle_12mb10b", // 1890702768
+    0x70b30018: "wolf_grey_61", // 1890779160
     0x70b9d46a: "undead_navigator_15", // 1891226730
-    0x70bca9be: "evil_knight_longsword_named_s4_1", // 1891412414
     0x70c95b3f: "sheep_churro_8", // 1892244287
+    0x70d4fbdd: "dungeon_ice_blocker_small", // 1893006301
     0x70d55435: "undead_officer_40", // 1893028917
+    0x70d8a12a: "primal_lion_42", // 1893245226
     0x70ec9594: "damned_axeman_m-f_dg_greatcleave_00", // 1894552980
     0x70f1ea1b: "ancientguardian_spearman_60", // 1894902299
     0x70f340eb: "evil_knight_caster_dg_greatcleave01_01", // 1894990059
     0x710f72e5: "tendril_corruption_named_dg_restless_00", // 1896837861
-    0x7110c582: "damned_villager_sickle_07sm02a", // 1896924546
     0x7115a445: "skeleton_crawler_9", // 1897243717
     0x711e35b4: "ghost_charred_named_dg_greatcleave_01", // 1897805236
-    0x712f2fb4: "skeleton_crawler_39", // 1898917812
-    0x71300345: "corruption_entity_08qp07", // 1898971973
-    0x7134d507: "drowned_sailor_2h_axe_43_15ec00", // 1899287815
     0x7136c9ba: "ck_pig", // 1899415994
     0x7151f0b0: "wolf_timber_6", // 1901195440
     0x7153cdfc: "fl_bear_black", // 1901317628
+    0x71587660: "damned_villager_pickaxe_61", // 1901622880
+    0x7162ae97: "brother_umberto_melee", // 1902292631
     0x7162cb3d: "ck_undead_berserker_10ws08_gold", // 1902299965
     0x716f714c: "ghost_starved_named_01", // 1903128908
-    0x717c348b: "wolf_elemental_earth_07sm09a", // 1903965323
     0x71810bfd: "swamp_dryad_shaman_named_dg_edengrove_01", // 1904282621
     0x7185d809: "ck_spectral_lost_1hsword", // 1904597001
     0x718db57b: "anubianguardian_spearman_62", // 1905112443
-    0x719138c3: "corruption_heavy_named_03gc09_elite", // 1905342659
-    0x7193151d: "swamp_dryad_archer_05wc06a", // 1905464605
-    0x71983fa7: "alligator_black_16bs10", // 1905803175
     0x719c358d: "risen_l-r_arm_25_elite", // 1906062733
-    0x71a21cc1: "rabbit_corrupted_07sm08", // 1906449601
+    0x71a2793b: "season_02_event_sulfur_elemental_shaman_wave_3", // 1906473275
     0x71a6c4ed: "drowned_miner_4", // 1906754797
+    0x71b66974: "damned_villager_skinning_knife_47", // 1907779956
     0x71b7e1e2: "damned_bowman_35", // 1907876322
     0x71ce6f83: "ancientguardian_javelineer_54", // 1909354371
     0x71deaab9: "turkey_14", // 1910418105
     0x71df212b: "damned_hound_42", // 1910448427
-    0x71e0cc87: "named", // 1910557831
     0x71f242a1: "undead_gravedigger_26", // 1911702177
-    0x721f76c8: "ghost_shipwrecked_16bs01", // 1914664648
+    0x71f922b8: "corruption_swarmer_55", // 1912152760
+    0x71f9f2b0: "skeleton_club_60", // 1912206000
+    0x7206d9d0: "damned_pistoleer_m-f_42", // 1913051600
+    0x720f40a4: "ghost_shipwrecked_21_elite", // 1913602212
+    0x72117d11: "damned_villager_kitchenknife_28", // 1913748753
+    0x721bfad1: "wolf_elemental_ice_43", // 1914436305
+    0x721ddb7e: "undead_javelineer_50", // 1914559358
+    0x721f3a30: "ghost_shackled_30", // 1914649136
     0x7222df51: "fl_hercyne_reindeer_09fl08", // 1914888017
-    0x722e0d45: "undead_grenadier_11md00d", // 1915620677
-    0x724321ab: "damned_villager_shovel_11md00i", // 1917002155
-    0x7246ad76: "legion_villager_hammer_16bs08d", // 1917234550
-    0x7254ec54: "legion_villager_skinning_knife_16bs09", // 1918168148
-    0x72570a44: "bison_12mb04", // 1918306884
-    0x72572bec: "risen_regurgitator_05wc05a", // 1918315500
-    0x725742a6: "waterfowl_16bs02", // 1918321318
-    0x72618ce1: "ancientguardian_mage_16bs02", // 1918995681
     0x7261f8fe: "undead_berserker_25", // 1919023358
-    0x7265cd6c: "corruptedlegion_cyclops_16bs06b", // 1919274348
-    0x7267a8cc: "damned_villager_pitchfork_16bs05", // 1919396044
+    0x72671e39: "wolf_white_40", // 1919360569
     0x72720c18: "corruptedlegion_cyclops_loc_boss_01", // 1920076824
+    0x7276a61a: "damned_villager_cleaver_46", // 1920378394
+    0x7279852f: "damned_cultist_isabella_msq2_named_02", // 1920566575
     0x72808f15: "drowned_sailor_1h_sword_shield_44", // 1921027861
     0x728125e9: "swamp_dryad_prowler_elite_05wc10", // 1921066473
     0x7282acc6: "ck_blackbone_lost_2hspear_10ws09_elite", // 1921166534
-    0x728d7046: "risen_regurgitator_06sw09a", // 1921871942
+    0x7290c894: "drowned_miner_28", // 1922091156
     0x72954981: "drowned_sailor_1h_sword_shield_named_dg_cutlass_00", // 1922386305
-    0x729b4038: "evil_knight_flamekeeper_boss_s02", // 1922777144
-    0x72a1155b: "legion_villager_hammer_16bs06c", // 1923159387
     0x72a14efd: "undead_navigator_10ws09", // 1923174141
     0x72a2382b: "evil_knight_longsword_named_dg_greatcleave_01", // 1923233835
     0x72b38466: "evil_knight_caster_26", // 1924367462
-    0x72bdfc3c: "risen_corruption_entity_named_03gc07b", // 1925053500
-    0x72bfe23c: "damned_1h_swordsman_m-f_07sm03b", // 1925177916
     0x72cc203c: "skeleton_1h_sword_29", // 1925980220
     0x72cdc9c7: "undead_officer_named_10ws09", // 1926089159
-    0x72e1a644: "undead_berserker_15ec02c", // 1927390788
-    0x72eac906: "swamp_fiend_05wc06b", // 1927989510
-    0x72f5437d: "undead_sailor_1h_sword_05wc08", // 1928676221
-    0x73043227: "dryad_soldier_14ac07a", // 1929654823
-    0x73054c4e: "anubianguardian_reaver_12bs10e", // 1929727054
-    0x730a651c: "sand_elemental_soldier_16bs05", // 1930061084
+    0x7304da3a: "bearelemental_58", // 1929697850
     0x731998ac: "dryad_shaman_62_elite", // 1931057324
     0x733694d8: "ck_lost_1h_grenadier_10ws02_sable_prison", // 1932956888
-    0x7338c214: "dynasty_heavy_08qp07", // 1933099540
     0x73446619: "risen_whole_body_48", // 1933862425
-    0x734733f3: "legion_signifer_16bs06c", // 1934046195
-    0x73495866: "leafburnt", // 1934186598
     0x73550de5: "ck_undead_pirate_brute_named_10ws06_tide", // 1934953957
+    0x7356de13: "bear_damned_03gc05", // 1935072787
     0x737f5c92: "undead_navigator_48", // 1937726610
-    0x7380d754: "undead_berserker_04nw11a", // 1937823572
     0x7384f271: "boar_16", // 1938092657
     0x738ab039: "ancientguardian_reaver_raid10", // 1938468921
     0x739bcffd: "anubianguardian_reaver_named_02", // 1939591165
-    0x73a08bde: "legion_signifer_16bs08d", // 1939901406
+    0x73a14f28: "damned_villager_rake_54", // 1939951400
     0x73b5ab53: "damned_villager_lumberaxe_35", // 1941285715
-    0x73b66cda: "corruptedlegion_cyclops_16bs12", // 1941335258
     0x73b6cf24: "undead_pirate_brute_59", // 1941360420
     0x73bac272: "fl_gorilla_ranged_09fl09", // 1941619314
     0x73c2ab6a: "barbary_lion_63", // 1942137706
-    0x73d62f2f: "legion_villager_skinning_knife_16bs08c", // 1943416623
-    0x73dd6059: "drowned_sailor_1h_sword_36_15ec00", // 1943887961
-    0x73f72dc5: "legion_signifer_16bs08", // 1945578949
+    0x73cda2f4: "wolf_alpha_38", // 1942856436
+    0x73f415f4: "damned_priest_miniboss_restlessshores", // 1945376244
     0x73fb81f0: "ghost_shipwrecked_10ws07", // 1945862640
-    0x73fde828: "wolf_grey_12mb09", // 1946019880
     0x740dc0fb: "evil_knight_warhammer_28", // 1947058427
     0x74118ba5: "fl_bear_black_named_09fl08", // 1947306917
     0x74184cf9: "wolf_grey_38", // 1947749625
     0x7421e77b: "wolf_timber_49", // 1948379003
-    0x742b50db: "unstable_swamp_fiend_05wc09", // 1948995803
     0x7432fe43: "corruption_swarmer_11md12_elite", // 1949498947
-    0x7435cf0c: "withered_swarmancer_06sw09", // 1949683468
-    0x7438d85a: "undead_hunter_13wf01", // 1949882458
     0x744a20f4: "dynasty_warrior_58_08qp01", // 1951015156
     0x744c0b22: "ftue_sailor_notaboss", // 1951140642
     0x745aa6fa: "ancientguardian_spearman_39", // 1952098042
     0x746553fa: "alligator_strange_named_08qp03", // 1952797690
-    0x7467a105: "sand_elemental_soldier_16bs01", // 1952948485
-    0x74688857: "anubianguardian_reaver_12bs10a", // 1953007703
-    0x7480a78f: "bear_black_13wf05", // 1954588559
     0x749645e9: "ghost_shipwrecked_10ws03", // 1956005353
     0x74a373cf: "ck_undead_officer_10ws03c", // 1956869071
     0x74a50b0d: "icedryad_range_frostgrip_62", // 1956973325
@@ -3631,77 +3032,72 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x74b631d9: "swamp_dryad_soldier_dg_edengrove_00", // 1958097369
     0x74ba8b43: "legion_signifer_dg_brimstonesands_named_00", // 1958382403
     0x74baf1ff: "evil_knight_mace_18", // 1958408703
+    0x74cc8b31: "damned_villager_rake_50", // 1959562033
     0x74d47a5a: "desert_coyote_named_03", // 1960082010
     0x74d86f4a: "damned_villager_lumberaxe_31", // 1960341322
-    0x74e0aae4: "ancientguardian_javelineer_16bs11d", // 1960880868
-    0x74e93668: "boar_12", // 1961440872
-    0x74f4d314: "mossbone", // 1962201876
+    0x74da6605: "hercyne_spider", // 1960470021
+    0x74da6893: "desert_scorpion_slinger_elite", // 1960470675
     0x74f8e17d: "skeleton_archer_38", // 1962467709
-    0x750a6cd5: "damned_villager_pitchfork_16bs01", // 1963617493
-    0x750b3794: "barbary_lion_16bs08", // 1963669396
-    0x750c48f8: "ancientguardian_mage_16bs06", // 1963739384
+    0x750ada20: "wolf_white_44", // 1963645472
     0x751b6203: "damned_villager_cleaver_42", // 1964728835
-    0x7526baac: "starstream", // 1965472428
-    0x753a86bf: "waterfowl_16bs06", // 1966769855
+    0x75248ae8: "wolf_black_50", // 1965329128
     0x754addd8: "fl_mim_damned_acolyte", // 1967840728
     0x7552be51: "skeleton_club_39", // 1968356945
     0x755e8dfb: "ck_goldcursed_2hspear_named_10ws09_elite", // 1969131003
     0x755f00ef: "anubianguardian_brute_boss", // 1969160431
-    0x756fc925: "bear_grizzly_named_qgrizzlemaw", // 1970260261
-    0x7572b2d1: "ghost_shipwrecked_16bs05", // 1970451153
-    0x75846355: "skeleton_crawler_60", // 1971610453
-    0x75864e33: "dynasty_heavy_08qp08a", // 1971736115
+    0x755f760b: "undead_pirate_brute_named_05wc11", // 1969190411
+    0x756132fb: "undead_javelineer", // 1969304315
+    0x756b1dc9: "damned_pistoleer_m-f_46", // 1969954249
+    0x756bb8d8: "icedryad_melee_frostfang", // 1969993944
+    0x75701f67: "undead_javelineer_54", // 1970282343
+    0x7572fe29: "ghost_shackled_34", // 1970470441
+    0x75763ec8: "wolf_elemental_ice_47", // 1970683592
+    0x75797984: "damned_grunt_dg_ebonscale_isabella_00", // 1970895236
     0x75956783: "ck_bobcat", // 1972725635
-    0x759654ae: "sheep_eastern_16bs10", // 1972786350
     0x759b9919: "skeleton_crawler_03gc10", // 1973131545
-    0x75a71679: "alligator_black_11md02", // 1973884537
-    0x75b0d058: "withered_swarmancer_13wf06", // 1974521944
-    0x75c0145c: "damned_rifleman_m-f_11md07", // 1975522396
-    0x75c0f128: "alligator_young_10ws03", // 1975578920
+    0x75a696a5: "ancientguardian_javelineer_dg_reekwater_00_spawn", // 1973851813
+    0x75c82827: "bear_black_26", // 1976051751
     0x75cd6de3: "darkness_hive_membrane_dt4", // 1976397283
     0x75d4ea90: "fl_armored_dragon_elite_09fl12", // 1976887952
+    0x75d6f4e9: "skeleton_archer_dg_reekwater_00_spawn", // 1977021673
     0x75d8d521: "undead_pistoleer_62", // 1977144609
-    0x75de91c7: "risen_corruption_impaler_03gc03_elite", // 1977520583
     0x75e09d0c: "evil_knight_bow_31", // 1977654540
     0x75ed4b0c: "drowned_sailor_1h_sword_shield_40", // 1978485516
-    0x75eefc25: "ancientguardian_heavy_named_dg_greatcleave_00", // 1978596389
-    0x75ef9fdb: "boar_strange_16bs04", // 1978638299
-    0x75efb158: "corruptedlegion_cyclops_16bs08a", // 1978642776
+    0x75f33a81: "damned_villager_pickaxe_38", // 1978874497
     0x7602b555: "ghost_starved_named_05", // 1979888981
     0x760503ac: "drowned_sailor_2h_axe_7", // 1980040108
-    0x76064384: "legion_axethrower_16bs09", // 1980121988
     0x7611ad3d: "damned_villager_axethrower_m-f_29", // 1980869949
     0x761cb771: "fl_swamp_dryad_shaman_09fl04", // 1981593457
+    0x762f6f8e: "vc_fl_mammoth_09a_s6_encounter", // 1982820238
     0x762f71a4: "turkey_10ws01", // 1982820772
-    0x762f9547: "legion_legionnaire_16bs09", // 1982829895
+    0x762fe528: "fl_hercyne_reindeer_briar_tangle", // 1982850344
     0x76327ce5: "fl_hercyne_boar_09fl02", // 1983020261
-    0x765a032a: "withered_swarmancer_03gc01", // 1985610538
+    0x7635b279: "damned_villager_pickaxe_65", // 1983230585
+    0x7637f1e8: "damned_villager_skinning_knife_9", // 1983377896
+    0x76434163: "ancient_ice_dragon_lesser_shattered_solo", // 1984119139
+    0x76522599: "archer_torso_boss_ice_minion", // 1985095065
+    0x76567c59: "ancient_amalgam_remnant", // 1985379417
+    0x765c664f: "damned_1h_swordsman_m-f_59", // 1985766991
     0x766138e5: "ck_goldcursed_2hspear_10ws09_elite", // 1986083045
-    0x767094a1: "drowned_sailor_1h_club_42_15ec00", // 1987089569
-    0x768ab115: "undead_pirate_brute_named_elite_05wc11", // 1988800789
+    0x76724346: "damned_villager_hammer_48", // 1987199814
+    0x769436a9: "skeleton_club_64", // 1989424809
     0x76996495: "swamp_dryad_prowler_58", // 1989764245
     0x7699aba5: "damned_villager_ladel_8", // 1989782437
-    0x769f4634: "withered_swarmancer_13wf", // 1990149684
     0x76a1f0f0: "ck_drowned_sailor_1h_sword_10ws08_black", // 1990324464
     0x76a3ab9a: "ancientguardian_javelineer_50", // 1990437786
-    0x76a5fe12: "legion_legionnaire_physical_16bs08d", // 1990589970
     0x76c1e852: "undead_hunter_29", // 1992419410
     0x76cff1c5: "dryad_fulgoris", // 1993339333
+    0x76da0281: "legion_villager_pitchfork", // 1993998977
     0x76da25fb: "damned_bowman_31", // 1994008059
+    0x76dbad6d: "damned_villager_skinning_knife_43", // 1994108269
+    0x76de1e8c: "fl_beetle_baby", // 1994268300
     0x76e07162: "anubianguardian_spearman_66", // 1994420578
-    0x7703a011: "dryad_prowler_14ac18", // 1996726289
     0x77059f26: "skeleton_spear_32", // 1996857126
-    0x7708b94e: "ancientguardian_spearman_11md00f", // 1997060430
     0x771861b4: "ck_spectral_lost_2haxe_10ws07", // 1998086580
-    0x771d1c05: "dune_phantom_huntress_16bs03a", // 1998396421
     0x7722da8a: "ancient_guardian_reaver_03gc10", // 1998772874
-    0x77242b4a: "undead_pistoleer_44_15ec00", // 1998859082
-    0x77355300: "risen_regurgitator_04nw10a", // 1999983360
-    0x77374848: "blight_fiend_95_s01", // 2000111688
-    0x7738684d: "ghost_starved_05wc07", // 2000185421
-    0x773f3e26: "jackrabbit_16bs07", // 2000633382
+    0x7723a1fb: "withered_grunt_59", // 1998823931
     0x773ff1d3: "undead_grenadier_55", // 2000679379
-    0x7745a986: "tendril_dryad_05wc06a", // 2001054086
+    0x774bd2f8: "ghost_shipwrecked_35", // 2001457912
     0x77513ba1: "damned_villager_shovel_45", // 2001812385
     0x77529dee: "drowned_sailor_1h_sword_46", // 2001903086
     0x7758bf29: "skeleton_2h_sword_dg_greatcleave_01", // 2002304809
@@ -3711,924 +3107,796 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x7766ee15: "wolf_alpha_61", // 2003234325
     0x7771097d: "fl_chameleon", // 2003896701
     0x7772a754: "bear_grizzly_23_elite", // 2004002644
-    0x77735da7: "evil_knight_mace_14ac13", // 2004049319
     0x777dd65a: "ghost_frozen_03gc01", // 2004735578
     0x778f641f: "ancientguardian_javelineer_45_elite", // 2005885983
+    0x7790d5c7: "ghost_frozen_62", // 2005980615
     0x779c2e02: "ancientguardian_spearman_64", // 2006724098
-    0x77b2ba03: "cragview", // 2008201731
     0x77b56533: "primal_lion_46", // 2008376627
-    0x77b6c73a: "ghost_starved_02bw03b", // 2008467258
     0x77b8902c: "undead_officer_44", // 2008584236
     0x77c2b9cb: "corruption_heavy_50_elite", // 2009250251
-    0x77c8923e: "elk_doe_35", // 2009633342
+    0x77c42dc4: "alligator_black_40", // 2009345476
     0x77c9d2dd: "ancientguardian_mage_named_16bs11", // 2009715421
     0x77cab392: "ghost_shipwrecked_named_04", // 2009772946
     0x77cbab1c: "wolf_elemental_ice_65_elite", // 2009836316
-    0x77d2dd18: "anubianguardian_brute_12bs10c", // 2010307864
+    0x77d41073: "undead_navigator_11", // 2010386547
     0x77d528bb: "ck_boar_10ws07", // 2010458299
-    0x77e3bde7: "wolf_black_02bw", // 2011413991
+    0x77e4d52e: "ghost_plagued_43", // 2011485486
     0x77e756b4: "drowned_sailor_2h_axe_41", // 2011649716
     0x77e76f83: "wolf_timber_14", // 2011656067
     0x77e869fa: "undead_grenadier_molotov_51", // 2011720186
     0x77ece978: "broken_laborer_hammer", // 2012014968
+    0x77eec45a: "dynasty_warrior_59", // 2012136538
     0x77ef2af8: "risen_whole_body_11", // 2012162808
-    0x77f7adb5: "desert_scorpion_sulfur_16bs03", // 2012720565
+    0x77ef9654: "hercyne_reindeer_briar_turret_alpha_raid_cutlasskeys_00", // 2012190292
     0x77f8d944: "ghost_starved_33", // 2012797252
-    0x7804ce4d: "skeleton_1h_sword_09fl06", // 2013580877
-    0x7806cb01: "evil_knight_spear_14ac06", // 2013711105
+    0x7801adc9: "damned_bowman_39", // 2013375945
+    0x780662c9: "damned_villager_cleaver_17", // 2013684425
+    0x7808a287: "bearelemental_14ac11b_elite", // 2013831815
+    0x781088c6: "drowned_miner_8", // 2014349510
+    0x78112aad: "defense_encounter_objective_16", // 2014390957
     0x78187509: "anubianguardian_panther_named_01", // 2014868745
-    0x781c311a: "evil_knight_mace_04nw04", // 2015113498
     0x782df738: "ck_goldcursed_2hwarhammer_named_10ws04_gold", // 2016278328
     0x783034b2: "ck_bobcat_10ws02", // 2016425138
-    0x783b9fc1: "wolf_elemental_earth_05wc01b", // 2017173441
     0x7845941f: "fl_anubianguardian_spearman_named_09fl01b", // 2017825823
-    0x7859c650: "damned_villager_shovel_16bs06a", // 2019149392
+    0x785c671b: "fl_hercyne_boar_alpha", // 2019321627
     0x785ed540: "fl_armored_dragon_elite_named_09fl12", // 2019480896
     0x7861eb31: "damned_cultist_07sm06_elite", // 2019683121
-    0x7868e692: "turkey_18", // 2020140690
+    0x78639818: "damned_2h_spearman_m-f_52", // 2019792920
     0x786ffee3: "ghost_shackled_61", // 2020605667
     0x787823a8: "ancientguardian_javelineer_58", // 2021139368
-    0x787c50a9: "lushhunt", // 2021413033
     0x7887ee7d: "damned_1h_swordsman_m-f_51", // 2022174333
     0x7892591f: "ck_drowned_miner_10ws06", // 2022856991
     0x78977d9a: "fl_rabbit_09fla", // 2023194010
-    0x789f759b: "dryad_prowler_14ac12a", // 2023716251
-    0x78a21c60: "bear_grizzly_12mb00", // 2023890016
     0x78a4564e: "evil_knight_warhammer_elite_08qp02", // 2024035918
     0x78a70760: "fl_anubianguardian_brute", // 2024212320
-    0x78a7a23e: "anubianguardian_reaver_67_elite", // 2024251966
     0x78a9cb74: "damned_villager_hammer_40", // 2024393588
-    0x78ba58ce: "risen_l-r_arm_06sw07b", // 2025478350
-    0x78c54c52: "dune_phantom_tank_16bs11", // 2026196050
     0x78c5d5eb: "undead_pistoleer_37", // 2026231275
-    0x78c8ffcd: "damned_villager_hammer_03gc05c", // 2026438605
     0x78ca7af8: "drowned_sailor_1h_sword_63_elite", // 2026535672
-    0x78d432b1: "damned_villager_cleaver_03gc07b", // 2027172529
     0x78d81e02: "lynx_52", // 2027429378
-    0x78d85ce3: "elk_doe_02bw01", // 2027445475
-    0x78ddcbb6: "legion_axethrower_16bs01", // 2027801526
     0x78e40216: "fl_anubianguardian_horus", // 2028208662
+    0x78e78b6f: "dryad_fulgoris_unstable_tissue", // 2028440431
     0x78f04bc6: "drowned_sailor_1h_sword_shield_15", // 2029013958
-    0x78f41d75: "legion_legionnaire_16bs01", // 2029264245
-    0x78fc1221: "bison_strange_58", // 2029785633
     0x790f9841: "undead_navigator_19", // 2031065153
-    0x79104dae: "damned_1h_swordsman_m-f_04nw10b", // 2031111598
     0x7910da43: "ancientguardian_bowman_icevariant_raid10-", // 2031147587
-    0x7910f28a: "pig_domestic_34", // 2031153802
     0x79148bb5: "risen_whole_body_6", // 2031389621
     0x791eda36: "rabbit_spotted_25", // 2032065078
     0x791fa5f6: "alligator_black_48", // 2032117238
-    0x7923d696: "tendril_dryad_elite_05wc10", // 2032391830
     0x7933e1c8: "undead_grenadier_molotov_59", // 2033443272
     0x7934a2ca: "risen_whole_body_19", // 2033492682
+    0x79354c68: "dynasty_warrior_51", // 2033536104
     0x793cde86: "drowned_sailor_2h_axe_49", // 2034032262
     0x794b6e87: "evil_knight_lifestaff_elite_08qp02", // 2034986631
-    0x796bc762: "wolf_alpha_05wc04", // 2037106530
     0x79743c2d: "rabbit_snowshoe_03gc06", // 2037660717
-    0x797c74ed: "wolf_timber_12mb10a", // 2038199533
     0x79845e39: "drowned_sailor_1h_sword_shield_08qp05", // 2038718009
-    0x798915d8: "dynasty_warrior_08qp01", // 2039027160
-    0x799b976f: "evil_knight_longsword_14ac06", // 2040239983
-    0x799c03dd: "wolf_timber_07sm01", // 2040267741
+    0x798cb197: "risen_l-r_arm_36", // 2039263639
     0x79a4d5b9: "risen_regurgitator_39", // 2040845753
-    0x79b11d99: "skeleton_club_06sw03", // 2041650585
-    0x79b19e06: "bobcat_16bs10", // 2041683462
+    0x79a80ba5: "hercyne_wolf_broodmother", // 2041056165
+    0x79bb59a5: "fl_mammoth_ice_elite_09fl12", // 2042321317
+    0x79bbd4c8: "wolf_elemental_earth_27", // 2042352840
     0x79be7f9c: "ck_ghost_shipwrecked", // 2042527644
-    0x79bfa7ef: "fl_beetle_09fl05", // 2042603503
+    0x79c56f80: "damned_villager_lumberaxe_64", // 2042982272
     0x79d353bf: "ancientguardian_javelineer_named_05wc02", // 2043892671
-    0x79d5f893: "wolf_black_13wf06", // 2044065939
+    0x79dbfa03: "damned_villager_ladel_57", // 2044459523
     0x79dd0abd: "dunewalker_warmonger_warhammer_trial_named", // 2044529341
     0x79e1c19b: "risen_l-r_arm_10ws03", // 2044838299
+    0x79f829c9: "withered_grunt_51", // 2046306761
+    0x79ff8cb4: "hercyne_boar", // 2046790836
+    0x7a03e778: "damned_villager_lumberaxe_39", // 2047076216
     0x7a05ee4a: "dryad_soldier_32", // 2047209034
     0x7a0c8e59: "fl_gorilla_ranged_09fl05", // 2047643225
     0x7a114777: "icedryad_range_frostgrip_65_elite", // 2047952759
+    0x7a170303: "damned_villager_rake_58", // 2048328451
     0x7a23694f: "skeleton_archer_30", // 2049141071
-    0x7a24a443: "wolf_black_15ec03", // 2049221699
     0x7a253db6: "fl_anubianguardian_spearman_09fl03", // 2049260982
-    0x7a4161ee: "legion_signifer_16bs04", // 2051105262
-    0x7a41c46b: "evil_knight_hound_14ac06", // 2051130475
+    0x7a43c488: "dryad_shaman_47", // 2051261576
     0x7a48c7f3: "legion_signifer_dg_brimstonesands_00", // 2051590131
     0x7a4ae946: "damned_cultist_dt1", // 2051729734
-    0x7a4ba403: "wolf_grey_12mb05", // 2051777539
     0x7a4f9d24: "drowned_sailor_1h_sword_13", // 2052037924
-    0x7a5101da: "sulfur_dragon_16bs02", // 2052129242
     0x7a53c8c5: "undead_officer_named_03", // 2052311237
     0x7a56d232: "ghost_shipwrecked_60", // 2052510258
-    0x7a7104bd: "ck_skeleton_2h_sword_10ws04_steps", // 2054227133
+    0x7a62b64d: "dynasty_spearman_56", // 2053289549
     0x7a751ea3: "ck_goldcursed_2hwarhammer_10ws10", // 2054495907
+    0x7a778736: "alligator_strange_44", // 2054653750
     0x7a7beedf: "wolf_alpha_34", // 2054942431
     0x7a8058c8: "fl_hercyne_reindeer_alpha_named_09fl02b", // 2055231688
     0x7a8148ab: "mountain_lion_56", // 2055293099
-    0x7a8807bc: "risen_l-r_arm_04nw10a", // 2055735228
     0x7a90da88: "ancientguardian_javelineer_dg_greatcleave_01", // 2056313480
-    0x7a94f043: "skeleton_club_12mb08", // 2056581187
+    0x7a978f11: "undead_officer_named_05wc11", // 2056752913
     0x7a99e43b: "bear_grizzly_23", // 2056905787
     0x7a9b9648: "hercyne_elephant_raid_cutlasskeys_00", // 2057016904
-    0x7aa0ea8a: "skeleton_2h_sword_13wf07", // 2057366154
+    0x7aa48364: "dynasty_spearman_empress_solo", // 2057601892
     0x7aa590e6: "undead_officer_11", // 2057670886
-    0x7abc2937: "sand_elemental_soldier_16bs09", // 2059151671
+    0x7ab29611: "bearelemental_54", // 2058524177
+    0x7ab7d3e2: "damned_cultist_47", // 2058867682
+    0x7ac3c4cb: "wolf_grey_30", // 2059650251
     0x7ac910b9: "undead_navigator_44", // 2059997369
     0x7acaab79: "damned_pistoleer_m-f_07sm06c_elite", // 2060102521
     0x7acd725b: "lynx_named_08qp04", // 2060284507
-    0x7ad0fef1: "sand_elemental_heavy_16bs12", // 2060517105
-    0x7ad592f4: "elk_doe_60", // 2060817140
     0x7aeb6ca0: "anubianguardian_horus_62", // 2062249120
     0x7af22a32: "risen_whole_body_44", // 2062690866
     0x7afa567e: "drowned_sailor_2h_axe_14", // 2063226494
     0x7afa6f49: "wolf_timber_41", // 2063232841
     0x7afd61d9: "ghost_plagued_named_00", // 2063426009
-    0x7b04e120: "turkey_vulture_62", // 2063917344
     0x7b07dbf7: "elk_corrupted_dt5", // 2064112631
-    0x7b0bb532: "bloated_corpse_02bw03a", // 2064364850
     0x7b1704a5: "ghost_shackled", // 2065106085
     0x7b1c4001: "evil_knight_greataxe_23", // 2065448961
-    0x7b27da5e: "damned_villager_cleaver_11md00g", // 2066209374
+    0x7b2684bf: "drowned_miner_24", // 2066121919
     0x7b28b2b3: "damned_villager_pickaxe_30", // 2066264755
     0x7b3678ca: "undead_grenadier_disease_28", // 2067167434
     0x7b36c33e: "drowned_sailor_1h_sword_shield_48", // 2067186494
     0x7b5a04e2: "fl_barbary_lion_09fl11", // 2069497058
-    0x7b5ae291: "dune_phantom_huntress_16bs12", // 2069553809
-    0x7b60ef96: "undead_berserker_06sw07", // 2069950358
     0x7b686bf6: "ck_mountain_lion_10ws09_elite", // 2070440950
-    0x7b86a1d8: "risen_whole_body_12mb04", // 2072420824
+    0x7b865595: "damned_greataxeman_m-f_57", // 2072401301
     0x7b893663: "skeleton_club_31", // 2072589923
-    0x7b915bac: "skeleton_2h_sword_26", // 2073123756
-    0x7b9e943d: "bear_damned_03gc05c_elite", // 2073990205
+    0x7b94937a: "fl_hercyne_reindeer_09fl04", // 2073334650
+    0x7babbefb: "swamp_dryad_mini_beast", // 2074853115
+    0x7bb1bc3b: "bear_corrupted_dt4", // 2075245627
     0x7bb94568: "wolf_minion_10", // 2075739496
     0x7bbd37ac: "fl_swamp_dryad_archer", // 2075998124
     0x7bc72531: "damned_bowman_64", // 2076648753
     0x7bcdf945: "lost_totem", // 2077096261
-    0x7bd1e4e7: "damned_villager_pitchfork_16bs09", // 2077353191
-    0x7be2a07f: "legion_villager_skinning_knife_16bs05", // 2078449791
-    0x7be30567: "legion_villager_kitchenknife_16bs06a", // 2078475623
-    0x7beb2f8a: "damned_1h_swordsman_m-f_06sw09", // 2079010698
-    0x7bf08549: "turkey_04nw11", // 2079360329
-    0x7bf1dc1e: "drowned_sailor_2h_axe_44_15ec00", // 2079448094
+    0x7be28224: "dryad_prowler_47", // 2078442020
     0x7bff02da: "wolf_black_58", // 2080309978
     0x7c074d14: "damned_cultist_03gc03_elite", // 2080853268
     0x7c0d7378: "ck_ghost_shipwrecked_named_10ws08_isle", // 2081256312
     0x7c17a80e: "skeleton_1h_sword_21", // 2081925134
     0x7c3687a7: "undead_grenadier_12mb10", // 2083948455
-    0x7c3d44e5: "drowned_miner_39_15ec00", // 2084390117
     0x7c452d10: "ck_goldcursed_2hspear", // 2084908304
     0x7c4576aa: "damned_villager_pickaxe_34", // 2084927146
-    0x7c59d3f0: "boar_strange_16bs08", // 2086261744
-    0x7c5a58b8: "dunewalker_waterseeker_icestaff_bloodofsands", // 2086295736
-    0x7c665244: "ghost_starved_04nw07", // 2087080516
+    0x7c589bc9: "damned_villager_sickle_26", // 2086181833
     0x7c67c4b1: "corruption_swarmer_dg_restless_00", // 2087175345
-    0x7c692539: "turkey_vulture_66", // 2087265593
-    0x7c697953: "legion_villager_kitchenknife_16bs08b", // 2087287123
     0x7c6a1fee: "elk_corrupted_dt1", // 2087329774
-    0x7c6def0b: "skeleton_archer_13wf07", // 2087579403
     0x7c718418: "evil_knight_greataxe_27", // 2087814168
     0x7c730492: "icedryad_fiend_shivers_frostgrip_60", // 2087912594
+    0x7c732911: "ancientguardian_greatsword_icevariant_named", // 2087921937
     0x7c8d73fa: "ck_drowned_sailor_1h_sword_10ws04_sable", // 2089645050
-    0x7c8f6466: "legion_villager_skinning_knife_16bs01", // 2089772134
-    0x7ca4a71d: "ancient_guardian_reaver_03gc10b", // 2091165469
+    0x7c8f463d: "dryad_prowler_43", // 2089764413
+    0x7caae128: "damned_bowman_60", // 2091573544
     0x7cb130e0: "swamp_dryad_archer_named_dg_edengrove_00", // 2091987168
-    0x7cb33594: "skeleton_crawler_09fl06", // 2092119444
-    0x7cb59db8: "drowned_sailor_1h_club_45_15ec00", // 2092277176
-    0x7cbd7bbf: "barbary_lion_16bs04", // 2092792767
+    0x7cbc960b: "wolf_white_48", // 2092733963
     0x7cbe45f8: "evil_knight_lifestaff_dg_greatcleave_00_00", // 2092844536
-    0x7cc3d662: "undead_shaman_12mb06a", // 2093209186
-    0x7cc4fefa: "ghost_shipwrecked_16bs09", // 2093285114
-    0x7cc5acea: "undead_hunter_02bw03a", // 2093329642
+    0x7cc4b202: "ghost_shackled_38", // 2093265410
     0x7cc6534c: "undead_javelineer_58", // 2093372236
     0x7cde2e20: "ftue_2haxeman", // 2094935584
+    0x7ce4f27a: "skeleton_club_35", // 2095379066
     0x7ce78c49: "evil_knight_greataxe_elite_08qp02", // 2095549513
+    0x7ceb918c: "damned_greataxeman_m-f_53", // 2095813004
     0x7ceef942: "damned_villager_hammer_07sm02b_elite", // 2096036162
     0x7cf27b54: "damned_villager_pickaxe_07sm02b_elite", // 2096266068
     0x7d006504: "damned_acolyte_07sm06_darkness", // 2097177860
-    0x7d077ed4: "dunewalker_waterseeker_lifestaff_bloodofsands_n2", // 2097643220
-    0x7d08c4fe: "ancientguardian_spearman_05wc09", // 2097726718
-    0x7d0b3a9b: "evil_knight_spear_named_s4_1", // 2097887899
+    0x7d059b20: "season_02_event_sulfur_elemental_heavy_wave_1", // 2097519392
+    0x7d0f7254: "dynasty_spearman_52", // 2098164308
     0x7d0f9958: "risen_regurgitator_60", // 2098174296
-    0x7d26601a: "wolf_grey_12mb01", // 2099666970
+    0x7d162ac6: "wolf_alpha_30", // 2098604742
+    0x7d1a432f: "alligator_strange_40", // 2098873135
     0x7d268687: "bison", // 2099676807
     0x7d272d5f: "damned_cultist_dt5", // 2099719519
+    0x7d2e0091: "dryad_shaman_43", // 2100166801
     0x7d2fbc78: "damned_acolyte", // 2100280440
     0x7d36b09d: "fl_dg_firstlight_01_gorilla_melee", // 2100736157
     0x7d3b12cb: "ck_spectral_lost_2hspear_10ws03a_named", // 2101023435
-    0x7d3cc5c3: "sulfur_dragon_16bs06", // 2101134787
+    0x7d3cde66: "bobcat_27", // 2101141094
     0x7d3e0cdc: "undead_officer_named_07", // 2101218524
     0x7d4ead56: "skeleton_archer_34", // 2102308182
+    0x7d57252a: "anubianguardian_horus_elite_67", // 2102863146
     0x7d5961ef: "ck_undead_berserker", // 2103009775
-    0x7d5ac3ae: "damned_villager_shovel_11md10a", // 2103100334
     0x7d6da352: "ck_spectral_lost_2hspear_10ws09_elite", // 2104337234
+    0x7d6f10c0: "damned_villager_pitchfork_27", // 2104430784
     0x7d738cb8: "fl_gorilla_melee_named_09fl05", // 2104724664
     0x7d755bf5: "skeleton_spear_63", // 2104843253
-    0x7d758211: "damned_villager_pickaxe_11md00g", // 2104853009
-    0x7d838327: "withered_swarmancer_06sw05", // 2105770791
     0x7d86a8b9: "anubianguardian_horus_66", // 2105977017
     0x7d881d97: "ghost_starved_62", // 2106072471
     0x7d90a5c0: "ghost_plagued_named_04", // 2106631616
     0x7d941fe6: "ck_blackbone_lost_2haxe_10ws03c", // 2106859494
     0x7d97ab50: "wolf_timber_45", // 2107091792
     0x7d9fee2b: "risen_whole_body_40", // 2107633195
-    0x7da38f0b: "damned_greataxeman_m-f_03gc05a", // 2107870987
     0x7da4d4a0: "undead_navigator_40", // 2107954336
+    0x7da97b17: "fl_mammoth_boss_earth_root_ice", // 2108259095
+    0x7dae00d2: "wolf_grey_34", // 2108555474
     0x7dae0930: "damned_acolyte_dg_restless_00", // 2108557616
-    0x7dc4b55b: "withered_swarmancer_04nw10b", // 2110043483
-    0x7dc5f0c7: "dryad_shaman_14ac14b", // 2110124231
-    0x7dca15fa: "legion_villager_ladel_16bs07b", // 2110395898
-    0x7dce5843: "ghost_charred_16bs03b", // 2110675011
-    0x7ddb1abb: "skeleton_archer_11md01b", // 2111511227
-    0x7de12253: "undead_pistoleer_43_15ec00", // 2111906387
-    0x7de7dc0a: "lesser_dryad", // 2112347146
+    0x7dbbc14c: "damned_villager_skinning_knife_dg_restless_00_spawn", // 2109456716
+    0x7dda17fb: "damned_cultist_43", // 2111444987
+    0x7ddf5208: "bearelemental_50", // 2111787528
     0x7dec8cb2: "mountain_lion_52", // 2112654514
-    0x7dee2947: "windblast", // 2112760135
+    0x7decead1: "ancientguardian_spearman_35", // 2112678609
+    0x7df2f2a4: "ancientguardian_reaver_61_elite_spawn", // 2113073828
     0x7e00eebc: "ck_spectral_lost_fire_named_10ws07", // 2113990332
     0x7e0edc07: "undead_officer_48", // 2114903047
     0x7e101fb9: "pig_domestic_10ws06", // 2114985913
     0x7e1a7aff: "ck_blackbone_lost_2hspear_10ws02_pirates_stand_named", // 2115664639
-    0x7e239a95: "legion_villager_skinning_knife_64", // 2116262549
     0x7e274223: "fl_chameleon_09flb", // 2116502051
-    0x7e3980a2: "dunewalker_warmonger_greataxe_bloodofsands", // 2117697698
+    0x7e28f604: "risen_whole_body_21_elite", // 2116613636
+    0x7e4435eb: "undead_siren_ball_lightning", // 2118399467
     0x7e49e7df: "fl_rat_hercynerat_09fl02b", // 2118772703
-    0x7e5a8280: "unstable_swamp_fiend_05wc06a", // 2119860864
+    0x7e588871: "dynasty_warrior_55", // 2119731313
     0x7e5df3cc: "damned_villager_kitchenknife_10ws06", // 2120086476
-    0x7e61a9be: "cow_20", // 2120329662
-    0x7e7ede15: "elk_doe_39", // 2122243605
-    0x7e866afe: "damned_villager_pickaxe_03gc07b", // 2122738430
     0x7e89bdf8: "undead_grenadier_59", // 2122956280
     0x7e8a8e04: "totem_pirate_cursed_58", // 2123009540
-    0x7ebb1b2e: "undead_sailor_1h_sword_shield_05wc07", // 2126191406
-    0x7ecf4391: "bloated_corpse_26", // 2127512465
-    0x7ed263f6: "fl_beetle_09fl01", // 2127717366
+    0x7e95edd0: "withered_grunt_55", // 2123754960
+    0x7ea8ab99: "damned_villager_lumberaxe_60", // 2124983193
+    0x7eb63e1a: "damned_villager_ladel_53", // 2125872666
     0x7ed3b71c: "ck_undead_officer_10ws06b", // 2127804188
-    0x7eda458f: "ancient_amalgam_16bs11", // 2128233871
     0x7edc1980: "damned_greataxeman_m-f_named_dg_shattermtn_01", // 2128353664
     0x7edc7573: "wolf_black_32_bw", // 2128377203
     0x7edd178d: "fl_hercyne_corvid_09fl03", // 2128418701
-    0x7ee09bb6: "skeleton_crawler_11md06b", // 2128649142
-    0x7ee12c34: "anubianguardian_brute_67_elite_named_00", // 2128686132
     0x7ee1758e: "risen_l-r_arm_32", // 2128704910
-    0x7ee4909c: "evil_knight_bow_03gc01", // 2128908444
     0x7ee534c4: "dynasty_maiden_named_dg_greatcleave_00", // 2128950468
-    0x7ef805e7: "dryad_soldier_08qp01", // 2130183655
+    0x7ee7778a: "damned_villager_shovel_49", // 2129098634
     0x7ef8d600: "ck_spectral_lost_ice_q4_waveevent", // 2130236928
+    0x7efd9ed3: "ghost_shipwrecked_39", // 2130550483
+    0x7f0e5c01: "damned_2h_spearman_m-f_56", // 2131647489
     0x7f1c3a5f: "ck_goldcursed_undead_pirate_brute_10ws04_gold", // 2132556383
     0x7f287077: "damned_rifleman_male_named_03gc06_msq", // 2133356663
-    0x7f3024fa: "risen_l-r_arm_06sw09a", // 2133861626
     0x7f310b05: "bearelemental_named_00", // 2133920517
-    0x7f330d8f: "undead_grenadier_11md05a", // 2134052239
+    0x7f41ebe0: "damned_grunt", // 2135026656
     0x7f4fdbec: "dryad_archer_62", // 2135940076
-    0x7f6b8f7b: "ck_skeleton_archer_10ws04_steps", // 2137755515
+    0x7f5b4f52: "swamp_dryad_shaman_minion_59", // 2136690514
     0x7f6e6b58: "or_withered", // 2137942872
     0x7f75b110: "anubianguardian_panther_named_05", // 2138419472
-    0x7f771eca: "elk_stag_50", // 2138513098
     0x7f77a479: "undead_hunter_25", // 2138547321
-    0x7f7a12d2: "drowned_sailor_1h_sword_shield_40_15ec00", // 2138706642
     0x7f967fe8: "ancientguardian_reaver_45_elite", // 2140569576
-    0x7f99d96c: "legion_legionnaire_16bs05", // 2140789100
     0x7fa35043: "evil_knight_fire_champion_dg_greatcleave_01", // 2141409347
     0x7fa7e116: "damned_villager_axethrower_m-f_25", // 2141708566
     0x7fa811f2: "undead_pistoleer_33", // 2141721074
     0x7faafb5a: "fl_swamp_dryad_shaman_09fl08", // 2141911898
-    0x7fb00faf: "legion_axethrower_16bs05", // 2142244783
-    0x7fb19d17: "evil_knight_greataxe_12mb01", // 2142346519
+    0x7fac5ad7: "corruption_entity_55", // 2142001879
     0x7fb4f97e: "ghost_starved_named_09", // 2142566782
-    0x7fb598fa: "elk_doe_02bw05", // 2142607610
     0x7fb5da1b: "lynx_56", // 2142624283
     0x7fba6a40: "dryad_archer_named_01_elite", // 2142923328
     0x7fbe30b9: "damned_acolyte_named_04nw10", // 2143170745
     0x7fc40f6d: "damned_villager_hammer_44", // 2143555437
-    0x7fd3ba64: "damned_villager_shovel_16bs08b", // 2144582244
     0x7fea2a64: "damned_1h_swordsman_m-f_55", // 2146052708
-    0x7ff2256c: "damned_hound_08qp07", // 2146575724
-    0x7ff4a786: "skeleton_crawler_31", // 2146740102
-    0x800020a5: "damned_villager_axethrower_04nw09a", // 2147492005
-    0x80084c68: "dune_phantom_huntress_16bs02c", // 2148027496
     0x80094d3a: "risen_regurgitator_13wf08a", // 2148093242
+    0x800a847e: "damned_villager_pitchfork_64", // 2148172926
     0x802aa1be: "undead_grenadier_47", // 2150277566
     0x80316304: "avalancher_frostgrip_25", // 2150720260
-    0x80344d48: "barrenrock", // 2150911304
-    0x80369979: "desert_small_scorpion_16bs09", // 2151061881
-    0x803705bc: "desert_scorpion_16bs06", // 2151089596
     0x803c28c4: "fl_spriggan_adolescent_named_09fl03", // 2151426244
+    0x80446bcc: "damned_villager_shovel_57", // 2151967692
     0x8047cd83: "drowned_sailor_1h_sword_54", // 2152189315
     0x805155fb: "sheep", // 2152814075
+    0x80545f9e: "ghost_starved_named_99a_enc_torment_sw02", // 2153013150
+    0x805e8295: "ghost_shipwrecked_27", // 2153677461
     0x805fbd97: "fl_chameleon_elite_named_09fl01", // 2153758103
     0x806a0de6: "risen_regurgitator_23", // 2154434022
-    0x806b251e: "legion_legionnaire_16bs08b", // 2154505502
-    0x806c5fd7: "bloated_corpse_38", // 2154586071
     0x80760626: "drowned_sailor_1h_club_44", // 2155218470
     0x807ec14e: "anubianguardian_horus_named_01", // 2155790670
     0x80827599: "fl_swamp_dryad_shaman_09fl03a", // 2156033433
     0x8082c641: "fl_megaflora_razorlotus_elite_09fl12", // 2156054081
     0x8089180c: "mountain_lion_11", // 2156468236
     0x8091b49c: "bear_grizzly_64", // 2157032604
-    0x80989307: "dynasty_maiden_wwgreataxe", // 2157482759
     0x80a0355e: "primal_lion_54", // 2157983070
-    0x80a6f050: "withered_beetle_11md08", // 2158424144
+    0x80a5bc86: "corrupted_mine_50", // 2158345350
     0x80adc041: "undead_officer_56", // 2158870593
     0x80b03fc4: "desert_scorpion_named_01", // 2159034308
+    0x80ba923a: "wolf_alpha_4", // 2159710778
     0x80c170fe: "legion_legionnaire_noshield_loc_boss", // 2160161022
-    0x80cb7d1a: "damned_villager_skinning_knife_04nw10b", // 2160819482
     0x80d10041: "ck_blackbone_lost_2hspear_10ws04_sable", // 2161180737
-    0x80d17da9: "alligator_black_52", // 2161212841
     0x80d31b79: "ck_blackbone_lost_2haxe_10ws09c_elite", // 2161318777
-    0x80d6669f: "withered_beetle_15ec04b", // 2161534623
-    0x80db4d40: "undead_berserker_42_15ec00", // 2161855808
-    0x80ddc253: "elk_doe_27", // 2162016851
-    0x80e2fdd8: "desert_scorpion_sulfur_16bs11", // 2162359768
     0x80ebc384: "damned_pistoleer_female_named_03gc06_msq", // 2162934660
+    0x80f18543: "ghost_plagued_51", // 2163311939
     0x80f206d9: "drowned_sailor_2h_axe_53", // 2163345113
     0x80f5b44e: "bear_grizzly_40_elite", // 2163586126
     0x80f622df: "fl_rat_hercynerat_09fl03", // 2163614431
     0x80f66691: "ghost_frozen_09fl09", // 2163631761
     0x80fd3997: "undead_grenadier_molotov_43", // 2164078999
     0x8114165b: "damned_villager_skinning_knife_07sm06c", // 2165577307
-    0x8118ab33: "war-torn", // 2165877555
-    0x811f18a9: "boar_stripped_10ws07", // 2166298793
+    0x8116c65d: "lynx_48", // 2165753437
     0x81272c88: "fl_hercyne_boar_09fl10", // 2166828168
+    0x812aed0f: "legion_legionnaire_named_05_04nw10a", // 2167074063
     0x812d8739: "damned_axeman_m-f_dg_shattermtn_00", // 2167244601
     0x812e079b: "invasion_spearman", // 2167277467
     0x812e131f: "damned_pistoleer_female_named_07sm04_elite", // 2167280415
-    0x81416143: "dune_phantom_huntress_67", // 2168545603
+    0x8134acff: "drowned_sailor_1h_sword_shield_8", // 2167713023
+    0x813d0f77: "damned_villager_sickle_65", // 2168262519
     0x81454b1c: "fl_mammoth_boss_dg_firstlight_01", // 2168802076
-    0x81600a04: "elk_doe_12mb04", // 2170554884
-    0x81641a06: "skeleton_crawler_13wf05", // 2170821126
-    0x816b4ff8: "withered_swarmancer_11md00j", // 2171293688
     0x816cabfa: "corruption_entity_dt6", // 2171382778
-    0x81759f30: "anubianguardian_archer_16bs02f", // 2171969328
+    0x81723cb0: "skeleton_1h_sword_62", // 2171747504
     0x817c4f9b: "undead_siren_dg_cutlass_00", // 2172407707
+    0x817f15b6: "evil_knight_lifestaff_icevariant_named", // 2172589494
     0x8180634b: "dynasty_warrior_empress", // 2172674891
-    0x8180fcdb: "corruption_swarmer_08qp01", // 2172714203
+    0x818a9eba: "dynasty_summoner_51", // 2173345466
     0x818ad6d5: "undead_gravedigger_30", // 2173359829
     0x81990b0b: "skeleton_2h_sword_61", // 2174290699
     0x819ac40d: "ck_ancientguardian_reaver_10ws04_gold", // 2174403597
     0x81a48f0f: "darkness_hive_membrane", // 2175045391
-    0x81a7b55f: "damned_hound_54", // 2175251807
     0x81a956f9: "desert_coyote_67", // 2175358713
+    0x81ad4047: "damned_2h_spearman_m-f_48", // 2175615047
+    0x81af619d: "damned_villager_kitchenknife_63", // 2175754653
     0x81b6fbf7: "ancientguardian_javelineer_42", // 2176252919
     0x81c6027c: "corruption_swarmer", // 2177237628
+    0x81cefd00: "damned_villager_skinning_knife_51", // 2177826048
     0x81d16eef: "bison_08qp05", // 2177986287
-    0x81df45d9: "desert_scorpion_16bs04b", // 2178893273
-    0x81e0abd3: "alligator_black_16bs06", // 2178984915
-    0x81f7ffd5: "undead_berserker_05wc05c", // 2180513749
-    0x82069fc2: "legion_axethrower_16bs08b", // 2181472194
+    0x81d4ecd5: "invasion_bear", // 2178215125
+    0x81d6fafc: "dunewalker_wanderer_longsword_easy", // 2178349820
+    0x81eb4de2: "corrupted_ogre_dt2", // 2179681762
     0x820ba2c7: "ck_goldcursed_2hwarhammer_named_10ws09_elite", // 2181800647
+    0x820e326e: "damned_villager_cleaver_50", // 2181968494
     0x82128a74: "elk_stag_13", // 2182253172
     0x8213cb26: "boar_stripped_60", // 2182335270
     0x821627cc: "yeti_named_s4_1", // 2182490060
+    0x821f8a4d: "wolf_white_56", // 2183105101
     0x8223645a: "undead_navigator_12mb01c", // 2183357530
     0x822497e5: "dynasty_trainee_08qp08", // 2183436261
-    0x82272b17: "waterfowl_05wc06", // 2183605015
     0x822ce879: "dynasty_empress", // 2183981177
     0x8231da85: "wolf_black_42", // 2184305285
-    0x8235b24c: "eastshore", // 2184557132
     0x823c9a84: "fl_hercyne_corvid_named_09fl10", // 2185009796
+    0x823e8945: "corrupted_tiger_61", // 2185136453
     0x8249d6ec: "ghost_shackled_named_04", // 2185877228
     0x825a0ee9: "ck_waterfowl_10ws07", // 2186940137
-    0x825b84e4: "damned_villager_shovel_08qp08", // 2187035876
+    0x82636ea5: "wolf_elemental_ice_55", // 2187554469
+    0x82654f0a: "undead_javelineer_46", // 2187677450
+    0x8267ae44: "ghost_shackled_26", // 2187832900
     0x826f0824: "drowned_sailor_1h_club_3", // 2188314660
-    0x828304c3: "sheep_eastern_16bs02", // 2189624515
+    0x827e4da4: "damned_pistoleer_m-f_54", // 2189315492
     0x828fbeda: "damned_1h_swordsman_m-f_16", // 2190458586
-    0x82943ace: "dune_phantom_huntress_16bs08", // 2190752462
-    0x82a1db6f: "brightbeacon", // 2191645551
-    0x82c4c722: "bison_62", // 2193934114
+    0x82965fed: "elk_stag_corrupted_61", // 2190893037
+    0x82bb6467: "anubian_scarab_66_named_01", // 2193319015
+    0x82c275a8: "damned_villager_axethrower_m-f_66", // 2193782184
     0x82c72237: "dryad_soldier_named_01", // 2194088503
     0x82cb1012: "evil_knight_caster_30", // 2194346002
-    0x82cd5cfa: "wolf_black_02bw07", // 2194496762
     0x82ce8356: "fl_swamp_dryad_shaman_named_09fl08", // 2194572118
     0x82dc5714: "ghost_frozen_08qp07", // 2195478292
     0x82dd784a: "bear_black_34", // 2195552330
-    0x82e6e5b7: "drowned_sailor_1h_club_15ec04a", // 2196170167
     0x82f5cd61: "evil_knight_bow_23", // 2197146977
     0x82f81b61: "drowned_sailor_1h_sword_shield_52", // 2197298017
     0x82f8a095: "undead_grenadier_disease_32", // 2197332117
-    0x83042e87: "damned_bowman_m-f_03gc07a", // 2198089351
-    0x83043d00: "cow_63", // 2198093056
-    0x830bcaaa: "corruption_swarmer_sulfur_16bs06", // 2198588074
-    0x830d1c02: "damned_villager_axethrower_m-f_11md00i", // 2198674434
-    0x83161d89: "undead_navigator_40_15ec00", // 2199264649
-    0x83168a91: "rabbit_spotted_62", // 2199292561
-    0x831e26ae: "sand_elemental_heavy_16bs08", // 2199791278
-    0x8333984b: "drowned_miner_12mb01", // 2201196619
+    0x82fb878f: "damned_villager_sickle_38", // 2197522319
+    0x833e7bf0: "ghost_charred_elite_09a_s18", // 2201910256
     0x83447f5c: "undead_berserker_12mb06c", // 2202304348
     0x834733cc: "risen_grunt", // 2202481612
-    0x834dc0a7: "goat_mountain_60", // 2202910887
-    0x8350898a: "anubianguardian_archer_67_elite_minion", // 2203093386
-    0x83581b96: "forsaken", // 2203589526
-    0x83593cfd: "drowned_miner_44_15ec00", // 2203663613
+    0x83573c64: "bear_grizzly_39", // 2203532388
+    0x835e22a1: "hercyne_reindeer_alpha", // 2203984545
+    0x836091d5: "dynasty_musketeer_50", // 2204144085
     0x836b7ae6: "ancientguardian_bowman_icevariant_raid10_named", // 2204859110
-    0x8372c58c: "damned_villager_knife_44", // 2205336972
+    0x837a25f7: "evil_knight_bow_icevariant_named", // 2205820407
     0x837b1025: "damned_acolyte_named_03gc06_msq", // 2205880357
     0x839fc220: "bobcat_39", // 2208285216
-    0x839fccc5: "fl_mim_swamp_dryad_shaman", // 2208287941
     0x83a75d66: "lost_pikeman_named_12mb05", // 2208783718
     0x83add06e: "swamp_dryad_soldier_62", // 2209206382
     0x83b3846f: "wolf_elemental_earth_60", // 2209580143
-    0x83c955c2: "undead_shaman_06sw02", // 2211009986
     0x83cb3615: "dryad_soldier_28", // 2211132949
-    0x83cef8ae: "corruptedlegion_cyclops_16bs04", // 2211379374
-    0x83d042ee: "corrupted_tiger_08qp04", // 2211463918
-    0x83fb8264: "withered_swarmancer_08qp07", // 2214298212
-    0x83fe2936: "undead_navigator_15ec04e", // 2214471990
+    0x83cc0c86: "damned_villager_pitchfork_39", // 2211187846
+    0x83d9db5c: "damned_villager_rake_42", // 2212092764
     0x8405eab0: "undead_grenadier_molotov_08qp05", // 2214980272
-    0x840aa77f: "icewolf", // 2215290751
     0x840c6a3c: "legion_villager_pickaxe_64", // 2215406140
-    0x840e606a: "dune_phantom_berserker_16bs03b", // 2215534698
-    0x84146772: "undead_pistoleer_09fl09a", // 2215929714
-    0x841f0195: "damned_villager_knife_40", // 2216624533
-    0x841f1a85: "corruption_entity_named_00", // 2216630917
-    0x842004be: "goat_mountain_64", // 2216690878
+    0x840d55cc: "dynasty_musketeer_54", // 2215466444
+    0x8414cfa4: "damned_cultist_59", // 2215956388
+    0x842254ed: "mountain_lion_48", // 2216842477
     0x8428452b: "undead_officer_08qp05", // 2217231659
     0x842b9b02: "ancientguardian_spearman_dg_greatcleave_01", // 2217450242
-    0x8452639e: "legion_signifer_16bs07a", // 2219991966
-    0x845c4638: "corruption_impaler_08qp04", // 2220639800
-    0x845e5c52: "drowned_miner_12mb05", // 2220776530
-    0x8469f919: "cow_67", // 2221537561
-    0x84718a93: "turkey_12mb03a", // 2222033555
-    0x847ebc24: "evil_knight_heavy_03gc01", // 2222898212
-    0x8493ed2f: "undead_navigator_15ec04a", // 2224287023
-    0x8493f4fa: "damned_axeman_m-f_02bw01", // 2224289018
-    0x8495a406: "drowned_sailor_2h_axe_39_15ec00", // 2224399366
-    0x8497607a: "skeleton_archer_nwsw", // 2224513146
+    0x844c7718: "skeleton_minion", // 2219603736
+    0x845bc40e: "legion_villager_shovel", // 2220606478
+    0x847e52d5: "skeleton_archer_61_elite_spawn", // 2222871253
     0x849dbd77: "withered_grunt_12", // 2224930167
     0x84a0fb3e: "damned_villager_lumberaxe_27", // 2225142590
     0x84a45f0e: "evil_knight_caster_named_dg_greatcleave_01", // 2225364750
-    0x84af1950: "goat_mountain_16bs09", // 2226067792
-    0x84b767ac: "anguished", // 2226612140
+    0x84b41f45: "damned_villager_rake_46", // 2226396997
     0x84be6ebd: "damned_villager_ladel_14", // 2227072701
-    0x84c71336: "bloated_corpse_61", // 2227639094
-    0x84d53a01: "lynx_12mb02", // 2228566529
-    0x84e1ff2f: "turkey_11md07", // 2229403439
+    0x84de4076: "wolf_elemental_earth_64", // 2229158006
+    0x84e0d8ce: "dryad_shaman_59", // 2229328078
     0x84e54efc: "evil_knight_mace", // 2229620476
-    0x84f8acd5: "risen_regurgitator_13wf06", // 2230889685
     0x84f958ad: "lost_knight_tank_06sw09", // 2230933677
     0x84fcfbea: "drowned_sailor_1h_sword_shield_23_elite", // 2231172074
+    0x8502cc3d: "drowned_sailor_1h_club_7", // 2231553085
     0x85061b4b: "wolf_alpha_named_08qp05", // 2231769931
+    0x85088b13: "undead_javelineer_42", // 2231929619
+    0x850eaabc: "wolf_elemental_ice_51", // 2232330940
     0x850f52d1: "skeleton_1h_sword_dg_greatcleave_01", // 2232373969
-    0x851054b0: "drowned_sailor_1h_sword_12mb005", // 2232439984
+    0x851389bd: "damned_pistoleer_m-f_50", // 2232650173
     0x8518eed5: "undead_berserker_08qp05", // 2233003733
-    0x85228bb0: "skeleton_2h_sword_nwsw", // 2233633712
     0x852412f5: "ghost_shackled_named_00", // 2233733877
+    0x852549d3: "damned_greataxeman_m-f_49", // 2233813459
     0x8527e27f: "undead_pirate_brute_named_05wc07", // 2233983615
+    0x8531916d: "anubianguardian_panther_elite_67", // 2234618221
     0x853247ea: "skeleton_2h_sword_38", // 2234664938
-    0x853fcdc8: "elk_female_13wf07", // 2235551176
     0x85419e62: "dryad_prowler_59", // 2235670114
-    0x854212cb: "waterfowl_16bs10", // 2235699915
     0x8554b8f3: "dryad_shaman_44_15ec05", // 2236922099
+    0x855c1e9c: "wolf_black_46", // 2237406876
     0x8563eabb: "fl_swamp_dryad_archer_09fl08", // 2237917883
+    0x8563f677: "damned_villager_cleaver_54", // 2237920887
     0x8565959f: "ck_spectral_lost_fire_10ws10", // 2238027167
     0x856d472e: "naga_ancientguardian_iceguardian", // 2238531374
+    0x85724e54: "wolf_white_52", // 2238860884
     0x8574a893: "undead_berserker_37", // 2239015059
-    0x8574dc8c: "ancientguardian_mage_16bs10", // 2239028364
-    0x857c2149: "ancientguardian_mage_05wc02", // 2239504713
-    0x857db381: "risen_regurgitator_06sw09", // 2239607681
-    0x857de657: "evil_knight_hound_29", // 2239620695
     0x857f4e6d: "elk_stag_17", // 2239712877
     0x857ff4de: "undead_hunter_62", // 2239755486
-    0x858b21ae: "drowned_sailor_1h_club_15ec04e", // 2240487854
-    0x858c990d: "tiger_08qp04", // 2240583949
-    0x858ce3f6: "legion_axethrower_16bs06a", // 2240603126
     0x8595648c: "undead_grenadier_disease_36", // 2241160332
     0x8595df78: "drowned_sailor_1h_sword_shield_56", // 2241191800
-    0x85970baf: "boar_strange_16bs12", // 2241268655
     0x85980978: "evil_knight_bow_27", // 2241333624
-    0x8598202b: "risen_regurgitator_06sw08c", // 2241339435
-    0x85a098e3: "wolf_black_02bw03", // 2241894627
-    0x85a5abb8: "carrionstar", // 2242227128
+    0x85a7e69d: "spriggan_season_1_event", // 2242373277
     0x85acd569: "ancientguardian_javelineer_elite", // 2242696553
-    0x85b44536: "legion_villager_hammer_16bs07a", // 2243183926
+    0x85afb1b1: "damned_villager_axethrower_m-f_62", // 2242884017
+    0x85b0bc53: "bear_black_30", // 2242952275
+    0x85b20cbb: "fl_dryad_prowler_09a_s17_waveevent", // 2243038395
     0x85b9a116: "dune_phantom_tank_named_00", // 2243535126
     0x85badcd3: "ck_undead_pirate_brute_10ws06b", // 2243615955
-    0x85bd4877: "evil_knight_longsword_18", // 2243774583
     0x85bfc021: "legion_villager_pickaxe_named_00", // 2243936289
     0x85d1d057: "elk_strange_named_08qp04", // 2245120087
+    0x85d3119e: "risen_l-r_arm_21_elite", // 2245202334
     0x85e1321e: "risen_whole_body_dg_windsward_00", // 2246128158
-    0x85eec0da: "sheep_eastern_16bs06", // 2247016666
     0x85f61725: "ancientguardian_mage_49", // 2247497509
     0x85f9eaa1: "sheep_eastern_14", // 2247748257
     0x86016fe3: "corruption_entity_dt2", // 2248241123
-    0x8616e787: "evil_knight_bow_02bw07", // 2249648007
-    0x862ca55a: "dune_phantom_huntress_63", // 2251072858
-    0x862e4fcd: "bear_black_02bw08", // 2251182029
+    0x860fe6f3: "hercyne_rat_broodmother", // 2249189107
+    0x86177a2d: "fl_hercyne_boar_09fl02_waveevent", // 2249685549
     0x8631b8e5: "fl_wolf_09fl09", // 2251405541
+    0x8632c27e: "fl_anubianguardian_panther_small_09a_m7_waveevent", // 2251473534
     0x864064b7: "ghost_shipwrecked_25_elite", // 2252367031
     0x864df9b5: "undead_pistoleer_dg_cutlass_00", // 2253257141
-    0x8652a796: "fl_ancient_amalgam_09fl01", // 2253563798
+    0x8650cb6e: "damned_villager_sickle_61", // 2253441902
     0x8666c9ad: "undead_pistoleer_29", // 2254883245
-    0x8677fedd: "damned_msq_supporter", // 2256010973
-    0x86867256: "ancientguardian_spearman_named_s4_1", // 2256958038
-    0x868cc8eb: "sulfur_lizard_16bs09", // 2257373419
-    0x868d6fca: "alligator_black_16bs02", // 2257416138
+    0x867554ed: "fl_hercyne_reindeer_minion", // 2255836397
+    0x868689fb: "corrupted_ogre_dt6", // 2256964091
+    0x8689a82d: "drowned_sailor_1h_club_60_waveevent", // 2257168429
     0x869b9845: "explosive_sprout_physical", // 2258344005
     0x86a2b18f: "damned_bowman_27", // 2258809231
+    0x86a33919: "damned_villager_skinning_knife_55", // 2258843929
     0x86ad4962: "barbary_lion_named_02", // 2259503458
-    0x86c1b0d1: "rabbit_spotted_05wc04", // 2260840657
+    0x86b887c7: "boar_stripped_39", // 2260240327
+    0x86c2a584: "damned_villager_kitchenknife_67", // 2260903300
     0x86c492e0: "desert_coyote_63", // 2261029600
     0x86d44009: "ck_drowned_miner_10ws03f", // 2262056969
     0x86d514c5: "hercyne_boar_alpha_raid_cutlasskeys_00", // 2262111429
     0x86db3fee: "ancientguardian_javelineer_46", // 2262515694
     0x86e712cc: "undead_gravedigger_34", // 2263290572
+    0x86e75aa3: "dynasty_summoner_55", // 2263308963
+    0x86e95960: "legion_legionnaire_ethereal_elite", // 2263439712
     0x86eadc70: "fl_swamp_dryad_prowler_09fl03", // 2263538800
     0x86fb3e6e: "corrupted_ogre_58", // 2264612462
     0x8707c9ff: "risen_regurgitator_27", // 2265434623
-    0x870881cf: "dynasty_musketeer_08qp06_elite", // 2265481679
-    0x870bc9d3: "evil_knight_mace_14ac05", // 2265696723
+    0x8718c88e: "wolf_elemental_earth_39", // 2266548366
     0x871bc23f: "drowned_sailor_1h_club_40", // 2266743359
+    0x871e0b39: "risen_l-r_arm_15_12mb03", // 2266893113
+    0x8729afd5: "damned_villager_shovel_53", // 2267656149
     0x872a099a: "drowned_sailor_1h_sword_50", // 2267679130
     0x872fadd1: "risen_l-r_arm_28", // 2268048849
     0x8731e880: "damned_villager_pitchfork_8", // 2268194944
     0x8733468c: "ghost_shipwrecked_23", // 2268284556
+    0x87348ec1: "bobcat_60", // 2268368577
     0x874765a7: "undead_grenadier_43", // 2269603239
-    0x8747aa52: "jackrabbit_16bs11", // 2269620818
     0x87507964: "drowned_sailor_2h_axe_dg_cutlass_00", // 2270198116
     0x87515373: "ftue_sailor_z1", // 2270253939
     0x8754dcce: "fl_gorilla_ranged_elite_09fl01", // 2270485710
     0x87572ae4: "boar_59", // 2270636772
-    0x8757aef8: "dryad_archer_14ac09a", // 2270670584
-    0x875ac1a5: "desert_scorpion_16bs02", // 2270871973
-    0x875c6043: "elk_doe_15ec01", // 2270978115
+    0x87674067: "damned_villager_pitchfork_60", // 2271690855
     0x876d0f67: "dryad_soldier_65_elite", // 2272071527
     0x87721640: "dunewalker_waterseeker_icestaff_trial_named", // 2272400960
+    0x8773f5ac: "damned_villager_lumberaxe_63_elite", // 2272523692
+    0x8776790a: "lost_merc_fencer", // 2272688394
+    0x8778e645: "damned_villager_ladel_49", // 2272847429
     0x87804d30: "ghost_starved_25", // 2273332528
+    0x8786e9ad: "swamp_dryad_soldier", // 2273765805
     0x878ddc05: "dunewalker_wanderer_rapier_trial_group", // 2274221061
     0x8790fd8e: "undead_grenadier_molotov_47", // 2274426254
+    0x879423fa: "sulfur_elemental_heavy_named", // 2274632698
     0x879751d7: "ck_alligator_strange", // 2274841047
+    0x879c415a: "ghost_plagued_55", // 2275164506
     0x879fc2c0: "drowned_sailor_2h_axe_57", // 2275394240
-    0x87a218db: "malevolent", // 2275547355
     0x87a4bc48: "mountain_lion_named_00", // 2275720264
-    0x87ab2a58: "wolf_alpha_named_0603_0201_waveeventboss", // 2276141656
-    0x87b0064a: "elk_doe_23", // 2276460106
-    0x87b7e3a7: "wolf_elemental_ice_03gc10", // 2276975527
-    0x87bcb9b0: "alligator_black_56", // 2277292464
     0x87c00458: "undead_officer_52", // 2277508184
     0x87c71f31: "dune_phantom_tank_named_s02_q4", // 2277973809
+    0x87c8789f: "corrupted_mine_54", // 2278062239
     0x87cd3545: "swamp_dryad_archer_61", // 2278372677
     0x87cdf147: "primal_lion_50", // 2278420807
+    0x87d09c8c: "swamp_dryad_prowler_bog_minion", // 2278595724
     0x87ddfbdd: "desert_scorpion_named_05", // 2279472093
     0x87e10135: "ck_goldcursed_1hsword_10ws03b", // 2279670069
-    0x87e1592a: "legion_legionnaire_16bs06a", // 2279692586
     0x87e4dc15: "mountain_lion_15", // 2279922709
-    0x87e9d73c: "evil_knight_lifestaff_03gc08", // 2280249148
     0x87f942e6: "blight_fiend_named_05wc06b", // 2281259750
     0x87fc7085: "bear_grizzly_60", // 2281468037
+    0x8805a21d: "fl_mammoth_nature_elite_09fl12", // 2282070557
+    0x8806889f: "ghost_affix", // 2282129567
     0x880b4508: "corruption_entity_03gc03_elite", // 2282439944
     0x8811f974: "damned_hound_58", // 2282879348
+    0x881b0c6c: "damned_2h_spearman_m-f_44", // 2283474028
     0x8820cc70: "skeleton_1h_sword_dg_everfall_00", // 2283850864
-    0x88257497: "risen_l-r_arm_06sw08c", // 2284156055
     0x8827290d: "damned_villager_lumberaxe_03gc06", // 2284267789
+    0x883043cb: "tendril_corruption_59", // 2284864459
     0x883e4520: "fl_anubianguardian_archer_09fl01a", // 2285782304
-    0x88405352: "undead_pistoleer_39_15ec00", // 2285917010
     0x884ef31e: "legion_villager_hammer_63", // 2286875422
+    0x884f2e68: "mammoth_boss_msq_firstlight", // 2286890600
     0x885098e0: "undead_gravedigger_named_03_08qp07", // 2286983392
-    0x885740d9: "sulfur_lizard_16bs01", // 2287419609
-    0x885b1c21: "damned_bowman_13wf05", // 2287672353
-    0x88624ea7: "elk_stag_42", // 2288144039
+    0x8862f414: "undead_hunter_37", // 2288186388
+    0x88630ff5: "boar_stripped_31", // 2288193525
+    0x886982c9: "corrupted_sailor_1h_club_ftue", // 2288616137
     0x8869a859: "undead_berserker_62", // 2288625753
     0x886bf502: "bear_black_08qp06a", // 2288776450
+    0x886e9f23: "ghost_shipwrecked_59_waveevent", // 2288951075
     0x887729bc: "hercyne_rat_raid_cutlasskeys_00", // 2289510844
     0x8882e0d4: "drowned_sailor_1h_sword_shield_4", // 2290278612
     0x88a08a76: "lynx_44", // 2292222582
     0x88ab209d: "hercyne_corvid_alpha_raid_cutlasskeys_00", // 2292916381
     0x88adbc99: "bear_black_65", // 2293087385
     0x88afd2b0: "undead_siren", // 2293224112
+    0x88b2b17b: "damned_villager_axethrower_m-f_37", // 2293412219
+    0x88b5c6e7: "evil_knight_flame_grunt_reforged", // 2293614311
     0x88bd419f: "undead_pistoleer_21", // 2294104479
-    0x88bdd826: "dune_phantom_tank_16bs07", // 2294143014
-    0x88be3c25: "moonwake", // 2294168613
-    0x88c24241: "alligator_young_15ec04a", // 2294432321
+    0x88c37ba2: "unstable_swamp_fiend_bog_minion", // 2294512546
     0x88c70c3b: "ck_spectral_lost_2haxe_named_10ws07", // 2294746171
+    0x88cdd1a3: "tendril_leviathan", // 2295189923
+    0x88d15f00: "damned_villager_hammer_56", // 2295422720
     0x88d59a5c: "damned_villager_pickaxe_10ws02", // 2295700060
-    0x88d6462f: "elk_doe_12mb08", // 2295744047
-    0x88dd9c0c: "elk_stag_13wf03", // 2296224780
     0x88e1bee8: "skeleton_spear_10ws04", // 2296495848
     0x88e1f7eb: "skeleton_crawler_23", // 2296510443
-    0x88f67b33: "corruption_entity_sulfur_16bs06", // 2297854771
+    0x88ff7a09: "damned_1h_swordsman_m-f_47", // 2298444297
     0x890512b1: "damned_commander", // 2298811057
+    0x890cde11: "wolf_alpha_8", // 2299321873
     0x890d69fe: "ancientguardian_mage_msq_named_02", // 2299357694
-    0x8914c6fa: "skeleton_mage_04nw07", // 2299840250
     0x89167975: "primal_lion_58", // 2299951477
     0x8920ebac: "evil_knight_heavy_dg_greatcleave_00", // 2300636076
     0x8926e563: "turkey_7", // 2301027683
     0x8930e76d: "corrupted_ogre_07sm06c_elite", // 2301683565
     0x89390683: "dunewalker_warmonger_greataxe_trial_named", // 2302215811
     0x893a9545: "evil_knight_warhammer_named_10ws04", // 2302317893
-    0x89501a37: "damned_acolyte_07sm05d1", // 2303728183
-    0x895af433: "undead_shaman_12mb05", // 2304439347
-    0x89664e42: "rabbit_spotted_33", // 2305183298
+    0x89432a2e: "destructible_door_01_elite_05wc10", // 2302880302
     0x8970ae65: "darkness_monolith_shell_dt3", // 2305863269
-    0x8974f9d3: "cow_32", // 2306144723
-    0x897af062: "anubianguardian_archer_12bs09c", // 2306535522
-    0x8980d552: "desert_small_scorpion_16bs05", // 2306921810
+    0x8980bdbd: "withered_grunt_47", // 2306915773
     0x8982f910: "ancientguardian_reaver_39", // 2307062032
     0x8985e9a2: "dryad_shaman_45_elite_15ec05", // 2307254690
-    0x898ca2d6: "boar_51", // 2307695318
-    0x899c35e4: "drowned_miner_43_15ec00", // 2308716004
-    0x89b35f1d: "skeleton_mage_11md01b", // 2310233885
+    0x899ccc56: "bog_monster_power_shroom", // 2308754518
+    0x89a36e77: "damned_villager_ladel_41", // 2309189239
     0x89c04a0d: "drowned_sailor_1h_club_48", // 2311080461
-    0x89c33254: "undead_sailor_2h_axe_elite_05wc11", // 2311270996
     0x89c340bc: "wolf_elemental_earth_31", // 2311274684
     0x89c63993: "alligator_young_admiral_minion", // 2311469459
-    0x89c90a72: "bobcat_16bs06", // 2311654002
-    0x89cf15e2: "ancient_amalgam_16bs03", // 2312050146
     0x89da13fc: "bloated_corpse_34", // 2312770556
     0x89f181a8: "drowned_sailor_1h_sword_58", // 2314305960
     0x89f425e3: "risen_l-r_arm_20", // 2314479075
-    0x89f58c2e: "withered_beetle_06sw05b", // 2314570798
     0x8a06c2f5: "drowned_sailor_1h_club_15", // 2315698933
     0x8a0f1342: "alligator_strange_52", // 2316243778
-    0x8a1e4459: "undead_berserker_45_15ec00", // 2317239385
     0x8a21294c: "fl_bear_black_09fl11", // 2317429068
     0x8a26ef31: "skeleton_1h_sword_msq_39", // 2317807409
-    0x8a39f59a: "legion_signifer_16bs12", // 2319054234
-    0x8a3adb80: "genesis", // 2319113088
+    0x8a298e0b: "bobcat_35", // 2317979147
     0x8a3b50fc: "dryad_shaman_51", // 2319143164
     0x8a4471e8: "ancientguardian_reaver_64", // 2319741416
     0x8a4d2e0e: "ancientguardian_spearman_dg_everfall_00", // 2320313870
     0x8a56aa99: "ck_blackbone_lost_2hspear_10ws03a_named", // 2320935577
-    0x8a5bfd3b: "skeleton_archer_26", // 2321284411
-    0x8a660ec5: "corrupted_tiger_08qp08", // 2321944261
     0x8a67d217: "risen_whole_body_25_elite", // 2322059799
     0x8a6907df: "ck_undead_officer_10ws03bd", // 2322139103
-    0x8a6d24db: "dreadscythe", // 2322408667
-    0x8a749162: "goat_mountain_16bs01", // 2322895202
-    0x8a78b485: "corruptedlegion_cyclops_16bs08", // 2323166341
-    0x8a7d6e82: "elk_stag_12mb07", // 2323476098
+    0x8a7a40ad: "damned_villager_pitchfork_35", // 2323267757
     0x8a816557: "ancientguardian_spearman_44_elite", // 2323735895
-    0x8a839c5f: "undead_navigator_05wc07", // 2323881055
-    0x8a8d76b9: "skeleton_1h_sword_06sw02", // 2324526777
-    0x8a9a5c40: "ck_ancientguardian_mage_10ws04_gold", // 2325371968
-    0x8aa86a85: "sand_elemental_heavy_16bs04", // 2326293125
+    0x8aa787a4: "withered_swarmancer_staff_named", // 2326235044
     0x8aa8a0fb: "ghost_shipwrecked_named_dg_windsward_00", // 2326307067
-    0x8aaf4db8: "elk_male_02bw03", // 2326744504
     0x8ab184cd: "undead_navigator_52", // 2326889677
+    0x8abb50bf: "wolf_grey_26", // 2327531711
     0x8abe06f1: "dryad_prowler_named_01_elite_15ec05", // 2327709425
-    0x8adea722: "dynasty_musketeer_08qp01b", // 2329847586
+    0x8acf4796: "damned_cultist_51", // 2328840086
+    0x8ae1704f: "bear_grizzly_35", // 2330030159
     0x8ae18aed: "ck_goldcursed_2hspear_10ws03a", // 2330036973
     0x8ae480bb: "swamp_dryad_beast_named_elite_05wc10", // 2330230971
-    0x8af8ab61: "withered_swarmancer_13wf08b", // 2331552609
     0x8af9babc: "ancientguardian_spearman_27", // 2331622076
     0x8af9dcdf: "mountain_lion_40", // 2331630815
     0x8b02f863: "skeleton_1h_sword_33", // 2332227683
-    0x8b049112: "skeleton_1h_club_11md09a", // 2332332306
-    0x8b2276e5: "dune_phantom_huntress_16bs04", // 2334291685
     0x8b241eb8: "invasion_grunt", // 2334400184
     0x8b2d9f17: "ancientguardian_mage_41", // 2335022871
-    0x8b30ca4a: "sheep_churro_11md04", // 2335230538
-    0x8b338c07: "dunewalker_warmonger_warhammer_bloodofsands_n2", // 2335411207
-    0x8b36e90d: "swampstep", // 2335631629
-    0x8b460fc1: "blight_fiend_61", // 2336624577
-    0x8b4bba54: "drowned_sailor_1h_sword_shield_12mb01a", // 2336995924
+    0x8b436f0c: "ghost_charred_62", // 2336452364
+    0x8b4dcba4: "damned_villager_sickle_34", // 2337131428
     0x8b5026c7: "damned_villager_pickaxe_26", // 2337285831
+    0x8b5e10cb: "drowned_miner_32", // 2338197707
     0x8b66028e: "lynx_19", // 2338718350
+    0x8b66ae08: "naga_ancientguardian_iceguardian_cturret", // 2338762248
     0x8b6b3461: "bear_black_38", // 2339058785
+    0x8b7050e0: "elk_stag_6", // 2339393760
     0x8b981630: "damned_hound_07sm06_darkness", // 2342000176
     0x8b9a1650: "dryad_prowler_51", // 2342131280
-    0x8b9b0a3c: "skeleton_crawler_16bs11d", // 2342193724
     0x8babb122: "hercyne_boar_raid_cutlasskeys_00", // 2343285026
     0x8bad7276: "dynasty_summoner_named_dg_greatcleave_00", // 2343400054
-    0x8bb09426: "withered_swarmancer_15ec02b", // 2343605286
     0x8bbada91: "undead_pistoleer", // 2344278673
     0x8bbf9779: "ck_blackbone_lost_1hsword_10ws03c", // 2344589177
+    0x8bc8018f: "damned_pistoleer_m-f_58", // 2345140623
     0x8bd23c73: "fl_dg_firstlight_01_gorilla_lightning_named_miniboss", // 2345811059
+    0x8bd5228e: "wolf_elemental_ice_59", // 2346001038
+    0x8bdfa54e: "damned_villager_kitchenknife_32", // 2346689870
     0x8be9cfd8: "skeleton_2h_sword_30", // 2347356120
     0x8bf1a217: "skeleton_club_27", // 2347868695
     0x8bfa1206: "undead_gravedigger_61", // 2348421638
-    0x8c034722: "alchemical", // 2349025058
-    0x8c077e6a: "undead_shaman_04nw11c", // 2349301354
+    0x8bfec1e1: "damned_greataxeman_m-f_41", // 2348728801
+    0x8c0229c0: "ancientguardian_mage_msq_defense_encounter_boss", // 2348952000
+    0x8c05ffe3: "ancient_ice_dragon_shattered_solo", // 2349203427
     0x8c09106c: "evil_knight_greataxe_31", // 2349404268
-    0x8c0cc688: "swamp_dryad_soldier_05wc06a", // 2349647496
-    0x8c136bc5: "undead_brute_02bw03", // 2350083013
     0x8c13fe5a: "ck_blackbone_lost_2hspear_10ws09b_elite", // 2350120538
-    0x8c14fe07: "damned_villager_axethrower_m-f_11md10a", // 2350185991
     0x8c1a72e5: "ghost_plagued_25_elite", // 2350543589
     0x8c1b2f57: "elk_elemental_61", // 2350591831
+    0x8c200fbd: "damned_villager_sickle_30", // 2350911421
     0x8c2eab15: "ghost_charred_66", // 2351868693
+    0x8c30c451: "corrupted_ogre_03gc03", // 2352006225
     0x8c33d4d2: "drowned_miner_36", // 2352207058
     0x8c404034: "ck_goldcursed_2hblunderbuss", // 2353020980
     0x8c405b0e: "ancientguardian_mage_45", // 2353027854
     0x8c44b545: "ck_goldcursed_2hspear_10ws07", // 2353313093
-    0x8c5ba78e: "damned_acolyte_07sm05d", // 2354816910
     0x8c5efaca: "undead_pirate_brute_08qp05", // 2355034826
     0x8c6f3c7a: "skeleton_1h_sword_37", // 2356100218
-    0x8c70f60b: "anubianguardian_scarab_12bs09a", // 2356213259
-    0x8c7b6fbf: "dunewalker_warmonger_greataxe_bloodofsands_n1", // 2356899775
     0x8c840bc1: "skeleton_2h_sword_34", // 2357464001
-    0x8c8f27d7: "anubianguardian_archer_16bs09d", // 2358192087
+    0x8c9305f8: "damned_greataxeman_m-f_45", // 2358445560
     0x8c9aca79: "priest_lesser_damnedhound_restlessshores", // 2358954617
     0x8c9c660e: "skeleton_club_23", // 2359059982
     0x8ca4de73: "legion_axethrower_m-f_64", // 2359615091
     0x8ca77d69: "ck_undead_bloated_corpse_10ws03", // 2359786857
-    0x8ca98d1a: "skeleton_crawler_03gc10a", // 2359921946
     0x8cab25d3: "legion_legionnaire_named_01", // 2360026579
-    0x8cbb3e07: "turkey_57", // 2361081351
+    0x8cabfb3d: "ancientguardian_javelineer_17", // 2360081213
+    0x8cb26157: "damned_villager_kitchenknife_36", // 2360500567
     0x8cc39022: "ck_lost_1h_grenadier_10ws06", // 2361626658
-    0x8cc5efcb: "barbary_lion_16bs12", // 2361782219
     0x8ccbaa7c: "evil_knight_hound_25", // 2362157692
-    0x8ccbffaa: "risen_regurgitator_06sw05", // 2362179498
     0x8cd25360: "ck_blackbone_lost_1hsword_10ws03g", // 2362594144
     0x8cd5a690: "fl_swamp_dryad_archer_09fl04", // 2362812048
+    0x8cd5ba5c: "damned_villager_cleaver_58", // 2362817116
     0x8cd9d448: "risen_corruption_impaler_07sm06", // 2363085896
     0x8cdddc90: "fl_dg_firstlight_01_mammoth_lava_named_miniboss", // 2363350160
     0x8cf1c760: "dryad_archer_29", // 2364655456
     0x8cf7d249: "dryad_prowler_55", // 2365051465
-    0x8cfdad01: "ghost_plagued_16bs03b", // 2365435137
-    0x8d10aa9b: "elk_stag_12mb03", // 2366679707
-    0x8d12c455: "skeleton_1h_club_13wf04", // 2366817365
-    0x8d19557b: "goat_mountain_16bs05", // 2367247739
+    0x8d1784b4: "damned_villager_pitchfork_31", // 2367128756
     0x8d1f6c48: "ck_ghost_charred", // 2367646792
     0x8d29b5f1: "ancientguardian_reaver_60", // 2368321009
-    0x8d4451b7: "sulfur_dragon_16bs10", // 2370064823
+    0x8d39db46: "damned_acolyte_isabella_basilica_summon", // 2369379142
+    0x8d3f6583: "damned_axeman_m-f_61", // 2369742211
+    0x8d444a12: "bobcat_31", // 2370062866
     0x8d5694e5: "dryad_shaman_55", // 2371261669
+    0x8d5db623: "damned_rifleman_m-f_62", // 2371728931
     0x8d5f1166: "fl_elk_elemental_09fl04", // 2371817830
     0x8d62d75b: "alligator_strange_56", // 2372065115
-    0x8d660f7a: "undead_shaman_15ec02a", // 2372276090
     0x8d687fb4: "ghost_plagued_named_dg_windsward_00", // 2372435892
+    0x8d6b06ec: "drowned_sailor_1h_club_11", // 2372601580
     0x8d6ebeb2: "wolf_alpha_26", // 2372845234
-    0x8d72d755: "withered_swarmancer_13wf06a", // 2373113685
-    0x8d754e4f: "evil_knight_caster_14ac06", // 2373275215
     0x8d786855: "ck_blackbone_lost_1hsword_10ws09b_elite", // 2373478485
+    0x8d8cb456: "bear_grizzly_31", // 2374808662
     0x8d9418c6: "mountain_lion_44", // 2375293126
-    0x8d9e9792: "wolf_elemental_earth_02bw04", // 2375980946
+    0x8da2838f: "damned_cultist_55", // 2376237967
     0x8db41986: "risen_l-r_arm_13wf08a", // 2377390470
-    0x8dc289a1: "elk_male_02bw07", // 2378336673
+    0x8dbb19e7: "dynasty_musketeer_58", // 2377849319
     0x8dc318a4: "evil_knight_warhammer_32", // 2378373284
     0x8dca16e0: "dynasty_maiden_named_08qp06", // 2378831584
+    0x8dceda2e: "dynasty_empress_solo", // 2379143726
+    0x8dd60f65: "risen_corruption_impaler_61_elite", // 2379616101
+    0x8dd694a6: "wolf_grey_22", // 2379650214
     0x8ddc40d4: "undead_navigator_56", // 2380021972
-    0x8de04f00: "damned_villager_hammer_03gc09_named_elite", // 2380287744
-    0x8de7cc32: "tiger_corrupted_named_08qp02", // 2380778546
     0x8dea0a13: "corruption_impaler_08qp08", // 2380925459
     0x8dfd00fb: "ck_goldcursed_2hwarhammer_10ws03a", // 2382168315
     0x8e01b104: "dunewalker_waterseeker_lifestaff_trial_soloplus", // 2382475524
-    0x8e13a1c6: "skeleton_2h_sword_11md00g", // 2383651270
-    0x8e19d3bd: "withered_grunt_10ws03", // 2384057277
+    0x8e05a2e7: "pig_domestic_26", // 2382734055
     0x8e1cabea: "lost_knight_bow_06sw09", // 2384243690
     0x8e27f43e: "damned_acolyte_60", // 2384983102
+    0x8e28f32d: "naga_fire_clone", // 2385048365
     0x8e2a0d71: "ghost_plagued_59", // 2385120625
     0x8e36011b: "ghost_starved_29", // 2385903899
-    0x8e37302a: "undead_shaman_12mb01", // 2385981482
-    0x8e3824b7: "damned_villager_ladel_09fl04", // 2386044087
     0x8e52903e: "mountain_lion_19", // 2387775550
-    0x8e52a3e8: "skeleton_spear_11md01b", // 2387780584
     0x8e5783e4: "ck_blackbone_lost_1hsword_10ws10", // 2388100068
-    0x8e6fc546: "damned_villager_knife_11", // 2389689670
     0x8e746748: "anubianguardian_archer_64", // 2389993288
+    0x8e752ba4: "sand_elemental_shaman_soloplus", // 2390043556
     0x8e7b0195: "undead_pistoleer_12mb01b", // 2390426005
-    0x8e84937b: "undead_berserker_09fl07", // 2391053179
-    0x8e8dc6cb: "swivleshot", // 2391656139
+    0x8e80d000: "torso_boss_ice_weakpoint", // 2390806528
     0x8e8eda88: "fl_armored_dragon_09fla", // 2391726728
+    0x8e96b59a: "ghost_starved_40_elite_minion", // 2392241562
     0x8e99e1fa: "risen_l-r_arm_24", // 2392449530
-    0x8ea2d1fb: "ancient_amalgam_16bs07", // 2393035259
-    0x8ea4ce6b: "bobcat_16bs02", // 2393165419
+    0x8ea23d50: "damned_villager_kitchenknife_9", // 2392997200
     0x8ead5baa: "icedryad_range_frostgrip_25", // 2393725866
-    0x8ec80c9c: "dynasty_warrior_08qp01c", // 2395475100
+    0x8eae84a5: "wolf_elemental_earth_35", // 2393801893
     0x8ecb4779: "skeleton_spear_28", // 2395686777
-    0x8ed00abb: "swamp_fiend_61", // 2395998907
-    0x8ed2f8f5: "ancientguardian_javelineer_12mb08", // 2396190965
+    0x8eceaa6e: "damned_villager_ladel_45", // 2395908718
     0x8ed97c73: "isabella_dg_shattermtn_phase2_00", // 2396617843
     0x8ee1559f: "dynasty_maiden_named_dg_ebonscale_02", // 2397132191
-    0x8ee166cf: "boar_55", // 2397136591
     0x8eea8538: "legion_legionnaire_named_04_16bs06c", // 2397734200
-    0x8eed114b: "desert_small_scorpion_16bs01", // 2397901131
     0x8eed79a4: "withered_grunt_43", // 2397927844
     0x8efd41aa: "ancientguardian_mage_67_elite", // 2398962090
+    0x8f0ecbec: "boar_stripped_35", // 2400111596
     0x8f0f300d: "undead_hunter_33", // 2400137229
-    0x8f0f8abe: "elk_stag_46", // 2400160446
+    0x8f12044b: "evil_knight_spear", // 2400322635
+    0x8f157532: "damned_villager_skinning_knife_59", // 2400548146
     0x8f233707: "legion_villager_hammer_67", // 2401449735
     0x8f36549f: "damned_2h_spearman_m-f_dg_shattermtn_00", // 2402702495
     0x8f3a5207: "damned_bowman", // 2402963975
-    0x8f3a84c0: "sulfur_lizard_16bs05", // 2402976960
     0x8f3c9ae5: "ck_lost_2h_pistols_10ws02_highpass", // 2403113701
     0x8f3e93b3: "undead_hunter", // 2403242931
     0x8f4749e2: "ck_ancientguardian_mage_minion_10ws04_steps", // 2403813858
     0x8f4a05ba: "withered_swarmancer_named_12mb05c", // 2403993018
-    0x8f4cce6d: "damned_hound_11md00j", // 2404175469
-    0x8f4ea757: "dynasty_archer_empress", // 2404296535
-    0x8f5659b0: "season_02_event_sulfur_elemental_shaman", // 2404800944
-    0x8f79dcfb: "alligator_black_38_15ec00", // 2407128315
-    0x8f8c33f2: "skeleton_crawler_27", // 2408330226
+    0x8f511688: "dynasty_summoner_59", // 2404456072
+    0x8f515ee7: "undead_gravedigger_38", // 2404474599
+    0x8f76c875: "damned_2h_spearman_m-f_40", // 2406926453
+    0x8f844e86: "dynasty_trainee", // 2407812742
     0x8f92be10: "damned_1h_swordsman_m-f_43", // 2408758800
     0x8f92f711: "skeleton_1h_sword", // 2408773393
-    0x8f9a6b55: "damned_villager_ladel_02bw02", // 2409261909
     0x8fa34bc4: "damned_bowman_m-f_07sm06", // 2409843652
-    0x8fa3ccae: "dryad_soldier_14ac13b", // 2409876654
-    0x8fa64cf9: "undead_pistoleer_15ec04d", // 2410040569
-    0x8faf8658: "alligator_young_15ec04e", // 2410645080
-    0x8fb05815: "elk_stag_13wf07", // 2410698773
     0x8fb49a7c: "desert_scorpion_sulfur_named_01", // 2410977916
+    0x8fbc9b19: "damned_villager_hammer_52", // 2411502361
     0x8fbcff2c: "lynx_42_15ec05", // 2411527980
     0x8fc07880: "bear_black_61", // 2411755648
-    0x8fc2f976: "ancientguardian_spearman_13wf02b", // 2411919734
     0x8fc31663: "fl_megaflora_razorlotus", // 2411927139
     0x8fca1800: "ck_undead_pirate_brute_10ws03c", // 2412386304
     0x8fcd4e6f: "lynx_40", // 2412596847
-    0x8fd01c3f: "dune_phantom_tank_16bs03", // 2412780607
     0x8fd08586: "undead_pistoleer_25", // 2412807558
     0x8fdd35fa: "damned_2h_spearman_m-f_07sm06d_elite", // 2413639162
     0x8fdf7562: "damned_villager_axethrower_m-f_33", // 2413786466
     0x8fe10797: "damned_villager_cleaver_07sm06b", // 2413889431
-    0x8fe95fd8: "damned_villager_cleaver_04nw10", // 2414436312
-    0x900decec: "wolf_grey_06sw08", // 2416831724
-    0x901e7e95: "pig_domestic_10ws04", // 2417917589
+    0x900d4834: "primal_lion_48", // 2416789556
     0x902208ca: "ck_drowned_sailor_1h_sword_shield_10ws08_gold", // 2418149578
-    0x902456b0: "skeleton_spear_11md00f", // 2418300592
-    0x902dfbb9: "legion_villager_skinning_knife_66", // 2418932665
     0x9036f019: "alligator_strange_08qp05", // 2419519513
-    0x904c2672: "risen_regurgitator_09fl03", // 2420909682
+    0x903c1de9: "dynasty_warrior_60_elite", // 2419858921
     0x904c3c76: "fl_bearelemental_named_09fl08", // 2420915318
+    0x9056e95d: "dynasty_warrior_57", // 2421614941
+    0x9060bfd8: "skeleton_crawler_61_elite_spawn", // 2422259672
     0x90614635: "bear_black_named_00", // 2422294069
     0x906d05bc: "ck_boar_10ws09", // 2423063996
-    0x907e37c7: "undead_shaman_05wc05c", // 2424190919
-    0x907f8e8a: "undead_javelineer_02bw06", // 2424278666
-    0x90871321: "jackrabbit_16bs09", // 2424771361
-    0x90a86e5c: "skeleton_mage_11md00b", // 2426957404
-    0x90c122bd: "bloated_corpse_24", // 2428576445
+    0x909b8cfc: "withered_grunt_57", // 2426113276
+    0x909e0c42: "hercyne_echidna_missile", // 2426276930
+    0x90a6cab5: "damned_villager_lumberaxe_62", // 2426849973
+    0x90b85f36: "damned_villager_ladel_51", // 2428002102
     0x90c5dd49: "ancientguardian_reaver_named_16bs11", // 2428886345
-    0x90cb2333: "damned_msq_loyalist", // 2429231923
+    0x90cd5428: "swamp_dryad_soldier_bog_minion", // 2429375528
     0x90db7b4c: "drowned_sailor_1h_club_58", // 2430303052
-    0x90dc02da: "fl_beetle_09fl03", // 2430337754
     0x90dc6c1c: "ck_undead_javelineer", // 2430364700
     0x90eab0e9: "drowned_sailor_1h_sword_48", // 2431299817
     0x90eab0ed: "dynasty_warrior_08qp07", // 2431299821
+    0x90eb8c5c: "ghost_shackled_59_waveevent", // 2431355996
     0x90ef14a2: "risen_l-r_arm_30", // 2431587490
-    0x90ef4d18: "anubianguardian_brute_67_elite_named_02", // 2431601944
-    0x90f664cb: "dryad_soldier_08qp03", // 2432066763
+    0x91003d2d: "damned_2h_spearman_m-f_54", // 2432711981
     0x9107ffb1: "fl_mammoth_nature_elite_named_09fl12", // 2433220529
+    0x910ac835: "damned_hound_48", // 2433402933
     0x9111383f: "ghost_shackled_10ws08", // 2433824831
-    0x911fb634: "drowned_sailor_2h_axe_37_15ec00", // 2434774580
-    0x913399e6: "desert_dryad_beast", // 2436078054
     0x91341580: "legion_generalcrassus", // 2436109696
     0x913a6695: "risen_brute", // 2436523669
     0x9141bac0: "dryad_archer_60", // 2437003968
-    0x914c7198: "sulfur_lizard_16bs11", // 2437706136
     0x9179c555: "undead_hunter_27", // 2440676693
-    0x917f942f: "evil_knight_mace_04nw02", // 2441057327
     0x9193eef3: "drowned_sailor_1h_sword_shield_13", // 2442391283
-    0x9197b840: "legion_legionnaire_16bs07", // 2442639424
+    0x9194846e: "dynasty_summoner", // 2442429550
     0x91a515ed: "drowned_sailor_2h_axe_named_dg_cutlass_00", // 2443515373
     0x91a670de: "undead_pistoleer_31", // 2443604190
-    0x91a74a3f: "unholy", // 2443659839
     0x91a9803a: "damned_villager_axethrower_m-f_27", // 2443804730
+    0x91b06307: "swamp_dryad_shaman", // 2444256007
     0x91b7127c: "ck_undead_officer_named_10ws06", // 2444694140
-    0x91b99a18: "outpostrush", // 2444859928
     0x91bbbb37: "lynx_54", // 2444999479
-    0x91bbf9d6: "elk_doe_02bw07", // 2445015510
-    0x91be6e83: "legion_axethrower_16bs07", // 2445176451
-    0x91c0e937: "risen_whole_body_06sw09", // 2445338935
+    0x91ca6e41: "damned_villager_hammer_46", // 2445962817
     0x91d0a004: "undead_hunter_35_elite", // 2446368772
     0x91e44b48: "damned_1h_swordsman_m-f_57", // 2447657800
     0x91f784b9: "undead_officer_65_elite", // 2448917689
-    0x9208fd5f: "withered_swarmancer_13wf08", // 2450062687
-    0x9209e284: "dynasty_warrior_16bs02d", // 2450121348
     0x920d4892: "boar_stripped_named_00", // 2450344082
     0x9219c922: "skeleton_1h_sword_23", // 2451163426
-    0x92383570: "tiger_corrupted_08qp03", // 2453157232
+    0x923d52d2: "hercyne_reindeer_briar_turret_raid_cutlasskeys_00", // 2453492434
     0x923e8360: "undead_pistoleer_named_02_old", // 2453570400
     0x9245218a: "drowned_miner_22", // 2454004106
-    0x92638e27: "skeleton_archer_13wf05", // 2455997991
+    0x924b1786: "damned_villager_pickaxe_36", // 2454394758
     0x92647ec2: "elk_corrupted_dt3", // 2456059586
-    0x92674415: "turkey_vulture_64", // 2456241173
-    0x926ae695: "damned_villager_skinning_knife_11md00h", // 2456479381
     0x926c574b: "swamp_dryad_shaman_58", // 2456573771
+    0x92700520: "bear_black_28", // 2456814880
+    0x927df156: "evil_knight_flame_grunt", // 2457727318
     0x927fe534: "evil_knight_greataxe_25", // 2457855284
-    0x9281054a: "legion_villager_skinning_knife_16bs03", // 2457929034
-    0x9282abb8: "waterfowl_16bs08", // 2458037176
+    0x92812711: "dryad_prowler_41", // 2457937681
     0x92a353c8: "fl_swamp_dryad_archer_09fl10", // 2460177352
+    0x92a48004: "damned_bowman_62", // 2460254212
     0x92a50892: "damned_villager_skinning_knife_10", // 2460289170
-    0x92b31a93: "barbary_lion_16bs06", // 2461211283
-    0x92b465ff: "ancientguardian_mage_16bs08", // 2461296127
-    0x92bd5f24: "evil_knight_hound_31", // 2461884196
-    0x92c44f92: "undead_officer_44_15ec00", // 2462338962
     0x92c4e86e: "ck_spectral_lost_2hspear_named_10ws09_elite", // 2462378094
     0x92cdb74e: "undead_shaman_12mb06c", // 2462955342
-    0x92d93c1a: "withered_grunt_11md07", // 2463710234
+    0x92ce13cf: "wolf_elemental_ice_49", // 2462979023
+    0x92d2190e: "bear_corrupted_dt2", // 2463242510
+    0x92d330ce: "damned_pistoleer_m-f_48", // 2463314126
     0x92dae05d: "wolf_minion_16", // 2463817821
     0x92e06190: "fl_ancient_amalgam_named_09fl06", // 2464178576
+    0x92e5f0a0: "damned_greataxeman_m-f_51", // 2464542880
     0x92ea9356: "skeleton_club_37", // 2464846678
     0x92f7364f: "fl_hercyne_reindeer_09fl02", // 2465674831
+    0x93011378: "dynasty_spearman_50", // 2466321272
     0x9301f874: "risen_regurgitator_62", // 2466379892
     0x9302dcf8: "evil_knight_mace_16", // 2466438392
     0x93089f48: "ancientguardian_spearman_dg_greatcleave_00_01", // 2466815816
+    0x930a0ae9: "naga_angryearth_minion", // 2466908905
+    0x930bfa0c: "season_02_event_sulfur_elemental_heavy_wave_3", // 2467035660
     0x930c2986: "undead_berserker_named_12mb10", // 2467047814
     0x930cc49c: "ghost_charred", // 2467087516
-    0x9322c4db: "legion_signifer_16bs02", // 2468529371
-    0x93280136: "wolf_grey_12mb03", // 2468872502
+    0x93142203: "alligator_strange_42", // 2467570179
+    0x93184bea: "wolf_alpha_32", // 2467843050
+    0x932061bd: "dryad_shaman_41", // 2468372925
     0x932c3811: "drowned_sailor_1h_sword_15", // 2469148689
+    0x932d1557: "sulfur_elemental_soldier", // 2469205335
     0x93306df0: "undead_officer_named_05", // 2469424624
-    0x9332a4ef: "sulfur_dragon_16bs04", // 2469569775
     0x93343bfc: "brother_umberto", // 2469673980
     0x933951ae: "drowned_miner", // 2470007214
     0x933d8768: "bison_strange", // 2470283112
     0x9340cc7a: "skeleton_archer_36", // 2470497402
-    0x934c9556: "skeleton_spear_11md04", // 2471269718
-    0x93527255: "wolf_alpha_11md06", // 2471653973
-    0x935597f7: "serumseed", // 2471860215
-    0x93675de6: "goat_mountain_05wc03", // 2473024998
-    0x936fa023: "goat_mountain_16bs11", // 2473566243
+    0x935393d0: "anubianguardian_spearman_elite_67", // 2471728080
+    0x936171ec: "damned_villager_pitchfork_25", // 2472636908
     0x9372369e: "ck_undead_officer_10ws03cd", // 2473735838
+    0x93735001: "undead_brute", // 2473807873
     0x937b3ad9: "skeleton_spear_61", // 2474326745
-    0x9386155c: "damned_villager_cleaver_11md10a", // 2475038044
     0x93867cbb: "ghost_starved_60", // 2475064507
     0x9388c995: "anubianguardian_horus_64", // 2475215253
-    0x938de20b: "withered_swarmancer_06sw07", // 2475549195
-    0x938ef212: "withered_swarmancer_09fl05a", // 2475618834
     0x93918f07: "risen_whole_body_42", // 2475790087
-    0x93987653: "wolf_black_13wf", // 2476242515
-    0x939919c2: "skeleton_club_13wf02a", // 2476284354
     0x9399ca7c: "wolf_timber_47", // 2476329596
     0x9399f34b: "drowned_sailor_2h_axe_12", // 2476340043
     0x939a7eca: "ck_blackbone_lost_2haxe_10ws03a", // 2476375754
@@ -4636,438 +3904,370 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x939ec4ec: "ghost_plagued_named_06", // 2476655852
     0x93a061fe: "wolf_grey_36", // 2476761598
     0x93aab58c: "undead_navigator_42", // 2477438348
-    0x93adee27: "damned_greataxeman_m-f_03gc05c", // 2477649447
     0x93b04f21: "skeleton_club_dg_everfall_00", // 2477805345
-    0x93b49f44: "damned_axeman_m-f_07sm05d", // 2478088004
     0x93b5edfc: "evil_knight_warhammer_26", // 2478173692
     0x93b8d45d: "risen_grunt_15_12mb03", // 2478363741
-    0x93bf35ad: "undead_shaman_08qp02", // 2478781869
+    0x93bc6307: "ancient_ice_dragon_solo", // 2478596871
     0x93c635d3: "undead_officer_17", // 2479240659
+    0x93cdb395: "damned_cultist_gc_1132_named_coy", // 2479731605
     0x93d0e855: "bearelemental_t4", // 2479941717
+    0x93d13324: "bearelemental_52", // 2479960868
+    0x93d476d7: "damned_cultist_41", // 2480174807
     0x93db7862: "alligator_black_60_08qp01", // 2480633954
+    0x93df704c: "naga_boulder", // 2480894028
     0x93dfb718: "or_corrupted_acolyte", // 2480912152
-    0x93dfb8e6: "damned_villager_knife_58", // 2480912614
     0x93e28bfd: "ancientguardian_spearman_37", // 2481097725
-    0x93f6036a: "drowned_sailor_1h_sword_42_15ec00", // 2482373482
+    0x93e2ed9e: "mountain_lion_50", // 2481122718
+    0x93fa410e: "bear_grizzly_25", // 2482651406
     0x94012c45: "ghost_shipwrecked_re1_named", // 2483104837
     0x9402ef75: "fl_gorilla_ranged_09fl07", // 2483220341
-    0x940a99ff: "goat_mountain_05wc07", // 2483722751
+    0x940b72d5: "damned_bowman_dg_restless_00_spawn", // 2483778261
     0x940b8f66: "dryad_soldier_30", // 2483785574
     0x942b5c9a: "fl_anubianguardian_spearman_09fl01", // 2485869722
+    0x942cb59e: "peacock_40", // 2485958046
     0x942d0863: "skeleton_archer_32", // 2485979235
     0x9437528f: "avalancher_frostgrip_60", // 2486653583
-    0x943cdf76: "boar_18", // 2487017334
+    0x9441fc08: "drowned_sailor_1h_sword_11", // 2487352328
     0x9444886a: "damned_cultist_dt3", // 2487519338
-    0x9445c52f: "wolf_grey_12mb07", // 2487600431
-    0x944f00c2: "legion_signifer_16bs06", // 2488205506
-    0x94505f0c: "mireblaze", // 2488295180
+    0x944da5a4: "dryad_shaman_45", // 2488116644
     0x9456db19: "damned_longswordsman_commander_named_cq3", // 2488720153
     0x9458b31e: "ghost_shipwrecked_62", // 2488840990
-    0x945ab787: "ck_alligator_strange_a", // 2488973191
     0x945da9e9: "undead_officer_named_01", // 2489166313
     0x9464c418: "fl_dg_firstlight_01_armored_dragon_named", // 2489631768
+    0x946cd761: "dynasty_spearman_54", // 2490160993
+    0x94758ff3: "wolf_alpha_36", // 2490732531
     0x94839f9b: "damned_hound_03gc09_elite", // 2491654043
-    0x94866690: "risen_l-r_arm_04nw10c", // 2491836048
     0x94896ed9: "ck_undead_navigator_10ws03a_named", // 2492034777
     0x948f2987: "mountain_lion_54", // 2492410247
+    0x948f4fe4: "ancientguardian_spearman_33", // 2492420068
     0x94940513: "darkness_hive_membrane_11md12_50_elite", // 2492728595
-    0x949a0e9a: "risen_regurgitator_12mb03b", // 2493124250
     0x94abf1ca: "undead_officer_13", // 2494296522
     0x94ad79c1: "blight_fiend_named_13wf02a_01", // 2494396865
-    0x94ae8ba6: "skeleton_2h_sword_13wf05", // 2494466982
-    0x94c240f5: "risen_l-r_arm_09fl05b", // 2495758581
+    0x94b9b2ce: "damned_cultist_45", // 2495197902
+    0x94bcf73d: "bearelemental_56", // 2495412029
     0x94c77195: "undead_navigator_46", // 2496098709
-    0x94d19f95: "shattered", // 2496765845
-    0x94d9f294: "evil_knight_warhammer_s4", // 2497311380
-    0x94dbf3d8: "elk_doe_62", // 2497442776
-    0x94de9fdd: "sand_elemental_heavy_16bs10", // 2497617885
+    0x94cda5e7: "wolf_grey_32", // 2496505319
+    0x94deb910: "ancientguardian_warhammer_icevariant_named", // 2497624336
     0x94e079e1: "evil_knight_hound_dg_greatcleave01_00", // 2497739233
-    0x94ed12ed: "bobcat_11md04", // 2498564845
-    0x94eddc9b: "alligator_black_16bs02e", // 2498616475
+    0x94e83eb0: "evil_knight_voidgauntlet", // 2498248368
+    0x94ebb8a2: "ghost_starved_64", // 2498476194
     0x94f300f5: "ghost_plagued_named_02", // 2498953461
     0x94f40e65: "wolf_timber_43", // 2499022437
     0x94f43752: "drowned_sailor_2h_axe_16", // 2499032914
     0x94fc4b1e: "risen_whole_body_46", // 2499562270
     0x94ff34ba: "skeleton_1h_sword_raid10", // 2499753146
     0x950a800c: "turkey_vulture_60", // 2500493324
-    0x950adc66: "legion_villager_kitchenknife_16bs08d", // 2500516966
     0x950ba961: "evil_knight_caster_28", // 2500569441
     0x9512212d: "evil_knight_greataxe_21", // 2500993325
-    0x95151836: "alligator_young_10ws09", // 2501187638
     0x95198ec1: "dunewalker_warmonger_greataxe_trial_group", // 2501480129
     0x9526d39f: "damned_villager_pickaxe_32", // 2502349727
+    0x9528e593: "drowned_miner_26", // 2502485395
     0x9542b1c4: "bear_grizzly_named_01", // 2504176068
     0x954e9792: "ancientguardian_reaver_dg_reekwater_00", // 2504955794
-    0x955483bd: "dune_phantom_huntress_16bs10", // 2505343933
+    0x9563f98c: "season_02_event_sulfur_elemental_soldier_siegebreaker", // 2506357132
     0x95740d3b: "skeleton_1h_sword_27", // 2507410747
-    0x95777bfb: "glimmerfen", // 2507635707
-    0x9595dc67: "skeleton_1h_club_11md06b", // 2509626471
+    0x9587574f: "skeleton_club_33", // 2508674895
+    0x958834b9: "damned_greataxeman_m-f_55", // 2508731577
     0x9599f0fc: "alligator_young_12mb06b_12a", // 2509893884
-    0x959ae45d: "blight_fiend_14ac12b", // 2509956189
+    0x959f3a80: "skeleton_2h_sword_24", // 2510240384
+    0x95a22ea3: "damned_cultist_isabella_basilica_summon", // 2510433955
+    0x95a95016: "damned_villager_kitchenknife_26", // 2510901270
+    0x95bfdd17: "bear_corrupted_dt6", // 2512379159
     0x95c72206: "fl_rat_hercynerat_named_09fl02", // 2512855558
-    0x95d44d13: "damned_villager_pickaxe_11md10a", // 2513718547
+    0x95c7aed8: "swamp_dryad_shaman_bog_minion", // 2512891608
+    0x95ce8b1d: "damned_villager_cleaver_48", // 2513341213
     0x95d94206: "ghost_charred_named_01", // 2514043398
     0x95dae1f2: "skeleton_archer_elite", // 2514149874
-    0x95dede8a: "barbary_lion_16bs02", // 2514411146
     0x95df4318: "fl_anubianguardian_horus_09fl06", // 2514436888
-    0x95e0d063: "damned_villager_sickle_08qp06", // 2514538595
-    0x95e69c40: "ghost_plagued_16bs02b", // 2514918464
+    0x95ea96c1: "dunewalker_waterseeker_lifestaff_easy", // 2515179201
     0x95eb7256: "skeleton_crawler", // 2515235414
-    0x95ecc153: "legion_villager_skinning_knife_16bs07", // 2515321171
-    0x95ed644b: "legion_villager_kitchenknife_16bs06c", // 2515362891
-    0x95fb0cac: "damned_villager_shovel_11md00g", // 2516257964
+    0x95ece308: "dryad_prowler_45", // 2515329800
+    0x95f1580b: "ftue_corrupted_2haxeman", // 2515621899
     0x95fc3805: "evil_knight_hound_elite_08qp02", // 2516334597
     0x9601062b: "undead_officer_12mb01c", // 2516649515
     0x96068da7: "dynasty_musketeer_dg_greatcleave_00", // 2517011879
     0x960803e5: "damned_villager_cleaver_15", // 2517107685
-    0x9608e443: "damned_villager_shovel_03gc07b", // 2517165123
+    0x960e4473: "damned_villager_skinning_knife_49", // 2517517427
     0x960edd50: "damned_villager_lumberaxe_named_00", // 2517556560
     0x9614014c: "undead_hunter_23", // 2517893452
     0x96161425: "anubianguardian_panther_named_03", // 2518029349
+    0x962c7ed9: "dryad_archer_64", // 2519498457
     0x964a6fa6: "undead_gravedigger_28", // 2521460646
-    0x9657a77c: "damned_villager_shovel_16bs06c", // 2522326908
-    0x965bf792: "drowned_sailor_1h_club_36_15ec00", // 2522609554
-    0x96667100: "evil_knight_greataxe_s4_b", // 2523296000
-    0x966baa46: "damned_villager_rake_11md00i", // 2523638342
+    0x966c1864: "target_dummy_grit", // 2523666532
+    0x966df934: "damned_2h_spearman_m-f_50", // 2523789620
     0x96898f51: "damned_1h_swordsman_m-f_53", // 2525597521
+    0x9693cab7: "damned_villager_axethrower_m-f_dg_restless_00_spawn", // 2526268087
     0x969702b3: "skeleton_crawler_37", // 2526479027
     0x96a7aa58: "damned_villager_hammer_42", // 2527570520
-    0x96b01f51: "damned_villager_shovel_16bs08d", // 2528124753
-    0x96b8fdef: "dryad_soldier_14ac12b", // 2528706031
-    0x96c69ee1: "damned_villager_hammer_03gc05a", // 2529599201
     0x96cbb4c7: "undead_pistoleer_35", // 2529932487
-    0x96d3aa9a: "legion_axethrower_16bs03", // 2530454170
-    0x96d63dcf: "elk_doe_02bw03", // 2530622927
     0x96d67f2e: "lynx_50", // 2530639662
     0x96db56c0: "undead_grenadier_msq_26", // 2530956992
     0x96e795fb: "fl_hercyne_boar_09fl08", // 2531759611
+    0x96e92d20: "invasion_commander", // 2531863840
     0x96e9ddb7: "wolf_timber_8", // 2531909047
     0x96f57874: "undead_navigator_dg_cutlass_00", // 2532669556
-    0x96fa7c59: "legion_legionnaire_16bs03", // 2532998233
-    0x97020c8b: "cow_26", // 2533493899
-    0x970ba88c: "corruptedboss", // 2534123660
-    0x970eef9a: "undead_navigator_named_elite_05wc11", // 2534338458
-    0x9710bb1a: "rabbit_spotted_27", // 2534456090
-    0x97114256: "undead_pistoleer_named_elite_05wc11", // 2534490710
-    0x9714c606: "ancientguardian_mage_named_05wc09", // 2534721030
     0x971e93a6: "pig_domestic_36", // 2535363494
-    0x972244ab: "desert_scorpion_sulfur_16bs09", // 2535605419
     0x972d305a: "ghost_starved_39", // 2536321114
+    0x97313c30: "ghost_plagued_49", // 2536586288
+    0x9738f735: "dynasty_warrior_empress_solo", // 2537092917
     0x973a68ca: "fl_beetle_09fl02a", // 2537187530
+    0x973b2d44: "dynasty_warrior_53", // 2537237828
     0x97403fa0: "legion_villager_skinning_knife_62", // 2537570208
-    0x974992a9: "skeleton_spear_11md00b", // 2538181289
-    0x976595f8: "dune_phantom_berserker_16bs07c", // 2540017144
-    0x9771ebdd: "damned_villager_lumberaxe_04nw10b", // 2540825565
     0x977215c1: "wolf_timber_12mb10c", // 2540836289
     0x977820a9: "dynasty_maiden_dg_greatcleave_00", // 2541232297
     0x977f3a36: "damned_cultist_18", // 2541697590
     0x9782d0bb: "risen_l-r_arm_34", // 2541932731
-    0x978774f4: "dynasty_warrior_08qp03", // 2542236916
     0x97983c10: "ancientguardian_reaver_named_dg_everfall_00", // 2543336464
-    0x97a4ccef: "sheep_churro_49", // 2544159983
-    0x97ad4782: "ancientguardian_mage_12bs10a", // 2544715650
-    0x97b1c6c3: "fl_beetle_09fl07", // 2545010371
-    0x97bfff2a: "bobcat_16bs12", // 2545942314
-    0x97c5aa45: "skeleton_mage_11md00f", // 2546313797
+    0x97cb0eac: "damned_villager_lumberaxe_66", // 2546667180
     0x97d07638: "skeleton_spear_38", // 2547021368
     0x97d229ca: "fl_spriggan_adolescent_elite", // 2547132874
     0x97d28408: "risen_regurgitator_9", // 2547155976
+    0x97d59b2f: "damned_villager_ladel_55", // 2547358511
     0x97d89865: "ancientguardian_spearman_named_dg_reekwater_00", // 2547554405
-    0x97db99bf: "wolf_black_13wf04", // 2547751359
-    0x97f0ecf0: "boar_15ec04a", // 2549148912
-    0x97f6200a: "desert_small_scorpion_16bs11", // 2549489674
-    0x9801468b: "undead_officer_43_15ec00", // 2550220427
-    0x9806157f: "desert_dryad_archer", // 2550535551
+    0x97f648e5: "withered_grunt_53", // 2549500133
     0x980b6280: "drowned_sailor_2h_axe_5", // 2550882944
     0x980df71c: "lynx_58", // 2551052060
     0x98114899: "corrupted_tiger_named_dg_ebonscale_00_02", // 2551269529
     0x98197a65: "player", // 2551806565
     0x981afdac: "fl_dh_gorilla_ice_named", // 2551905708
     0x981cd760: "fl_explosive_sprout_poison", // 2552026976
-    0x98211088: "turkey_10ws03", // 2552303752
-    0x982f4251: "damned_villager_skinning_knife_03gc07a", // 2553234001
+    0x983bd355: "damned_villager_pickaxe_67", // 2554057557
     0x983bd968: "ck_spectral_lost_2hspear_named_10ws08_isle", // 2554059112
-    0x983d5fb6: "undead_javelineer_02bw03a", // 2554159030
     0x9840c4c4: "ck_mountain_lion_named_10ws10", // 2554381508
     0x98488dee: "fl_rat_hercynerat_named_09fl02b", // 2554891758
-    0x9849e29d: "brigands_pass", // 2554978973
     0x985210e9: "unstable_swamp_fiend_58", // 2555515113
-    0x985a433c: "risen_regurgitator_15ec03a", // 2556052284
     0x98644058: "hercyne_reindeer_alpha_raid_cutlasskeys_00", // 2556706904
-    0x9876a51c: "risen_whole_body_06sw05", // 2557912348
+    0x988349e5: "evil_knight_mace_icevariant", // 2558740965
     0x98a70354: "ck_goldcursed_2hblunderbuss_nameda_10ws04_gold", // 2561082196
     0x98adcab6: "ancientguardian_javelineer_52", // 2561526454
-    0x98b5b961: "damned_villager_prong_37", // 2562046305
-    0x98b82566: "verdant", // 2562205030
-    0x98bc841e: "damned_hound_44", // 2562491422
-    0x98bd0f8c: "turkey_12", // 2562527116
+    0x98b67106: "damned_2h_spearman_m-f_58", // 2562093318
+    0x98c561d8: "drowned_miner_2", // 2563072472
     0x98d444d7: "damned_bowman_33", // 2564048087
-    0x98d780d2: "skeleton_2h_sword_13wf02a", // 2564260050
+    0x98d5cc41: "damned_villager_skinning_knife_41", // 2564148289
     0x98ee104e: "anubianguardian_spearman_64", // 2565738574
     0x98f3d13c: "undead_pistoleer_named_12mb06", // 2566115644
     0x990bfe0a: "skeleton_spear_30", // 2567699978
-    0x990cc443: "gillgut", // 2567750723
     0x991a65fb: "elk_corrupted_named_00_elite_03gc03", // 2568644091
     0x99271985: "fl_spriggan_adolescent_named_09fl13", // 2569476485
-    0x99275a26: "risen_l-r_arm_12mb03b", // 2569493030
     0x992ba4ad: "fl_armored_dragon_09fl03c", // 2569774253
     0x992e1627: "dryad_prowler_named_07sm09", // 2569934375
-    0x99315f0a: "jackrabbit_16bs05", // 2570149642
     0x993190ff: "undead_grenadier_57", // 2570162431
-    0x99330a73: "drowned_sailor_1h_sword_45_15ec00", // 2570259059
-    0x99342885: "risen_l-r_arm_10ws09", // 2570332293
-    0x993b322c: "risen_regurgitator_04nw10c", // 2570793516
+    0x9945b3d4: "ghost_shipwrecked_37", // 2571482068
     0x99594be1: "invasion_brute", // 2572766177
     0x995bca56: "corruption_heavy_msq", // 2572929622
     0x995cfcc2: "drowned_sailor_1h_sword_44", // 2573008066
+    0x995f5a8d: "damned_villager_shovel_47", // 2573163149
     0x9964077d: "damned_priest_named_dg_shattermtn_00_02", // 2573469565
     0x996d3767: "drowned_sailor_1h_club_54", // 2574071655
-    0x99776e96: "bloated_corpse_28", // 2574741142
     0x997b0b1b: "ck_ancientguardian_spearman", // 2574977819
     0x997e2351: "rabbit_snowshoe_8", // 2575180625
     0x998eda9b: "or_dryad_soldier", // 2576276123
-    0x99996754: "dunewalker_waterseeker_icestaff_bloodofsands_n2", // 2576967508
-    0x9999b5cd: "dryad_shaman_02bw04", // 2576987597
-    0x99a5bf44: "skeleton_archer_11md04a", // 2577776452
-    0x99a64273: "ironslag", // 2577810035
+    0x999eb4eb: "ghost_frozen_60", // 2577315051
     0x99b00200: "ck_blackbone_lost_1hsword_10ws02_sable_prison", // 2578448896
-    0x99b4b005: "legion_villager_ladel_16bs02a", // 2578755589
     0x99b6f100: "undead_officer_46", // 2578903296
-    0x99c6f312: "elk_doe_37", // 2579952402
+    0x99bb041f: "primal_lion_44", // 2579170335
     0x99ca4ce8: "alligator_black_42", // 2580172008
     0x99d43f9c: "cow", // 2580823964
-    0x99d81be7: "evil_knight_warhammer_s4_b", // 2581076967
-    0x99d9ca48: "evil_knight_warhammer_14ac06", // 2581187144
     0x99da715f: "undead_navigator_13", // 2581229919
     0x99dc9aba: "ck_ghost_starved", // 2581371578
-    0x99dcbc34: "anubianguardian_brute_12bs10a", // 2581380148
     0x99e14bd4: "risen_whole_body_13", // 2581679060
     0x99e608d6: "undead_grenadier_molotov_53", // 2581989590
     0x99e93798: "drowned_sailor_2h_axe_43", // 2582198168
+    0x99eab402: "ghost_plagued_41", // 2582295554
     0x99f6b868: "ghost_starved_31", // 2583083112
-    0x99f9cc99: "desert_scorpion_sulfur_16bs01", // 2583284889
-    0x9a201d7d: "damned_bowman_02bw02", // 2585795965
+    0x9a042989: "icedryad_range_frostgrip", // 2583964041
     0x9a343f84: "ancientguardian_bowman_icevariant_greatcleave_00", // 2587115396
-    0x9a36b976: "undead_hunter_13wf03", // 2587277686
-    0x9a41195d: "skeleton_club_12mb02", // 2587957597
-    0x9a66e97b: "anubianguardian_reaver_12bs10c", // 2590435707
-    0x9a69c029: "sand_elemental_soldier_16bs03", // 2590621737
+    0x9a5cfa6c: "legion_villager_hammer_elite", // 2589784684
     0x9a6b32d6: "alligator_strange_named_08qp01", // 2590716630
-    0x9a84e8c4: "sulfur_dragon_16bs08", // 2592401604
-    0x9a85b244: "skipstitch", // 2592453188
-    0x9a87b3fa: "frosttorrent", // 2592584698
+    0x9a84f361: "bobcat_29", // 2592404321
+    0x9a910904: "damned_greataxeman_m-f_07sm04_elite", // 2593196292
     0x9a9c4d8d: "ancientguardian_spearman_61_elite", // 2593934733
     0x9a9c5dba: "withered_brute_44", // 2593938874
     0x9aa10e5f: "barbary_lion_65", // 2594246239
     0x9aa53a66: "rabbit_spotted_58_08qp01", // 2594519654
     0x9aac371c: "tendril_corruption_dg_restless_00", // 2594977564
     0x9aad12e3: "ck_undead_officer_10ws03a", // 2595033827
-    0x9ac32eeb: "legion_signifer_16bs08b", // 2596482795
-    0x9acdaf16: "damned_villager_pickaxe_11md00i", // 2597170966
+    0x9ac2ea1d: "damned_villager_rake_52", // 2596465181
     0x9acdea06: "dunewalker_wanderer_rapier", // 2597186054
     0x9ad60e66: "damned_villager_lumberaxe_33", // 2597719654
+    0x9ad73dc7: "damned_villager_pitchfork_29", // 2597797319
     0x9ada1b76: "desert_coyote_named_01", // 2597985142
-    0x9add1611: "withered_grunt_04nw03", // 2598180369
-    0x9ae75744: "boar_10", // 2598852420
-    0x9b00398b: "mountain_lion_05wc07", // 2600483211
-    0x9b0229d4: "ancientguardian_mage_16bs04", // 2600610260
-    0x9b040df9: "damned_villager_pitchfork_16bs03", // 2600734201
-    0x9b250843: "legion_villager_hammer_16bs08b", // 2602895427
+    0x9b04bb0c: "wolf_white_46", // 2600778508
+    0x9b05b70d: "target_dummy_boss", // 2600843021
+    0x9b15032f: "damned_villager_cleaver_40", // 2601845551
+    0x9b1a201a: "damned_cultist_isabella_msq2_named_04", // 2602180634
     0x9b27b396: "damned_greataxeman_m-f_dg_shattermtn_00", // 2603070358
     0x9b317e13: "dryad_archer_31", // 2603712019
-    0x9b34e793: "waterfowl_16bs04", // 2603935635
     0x9b49bce0: "damned_1h_swordsman_m-f_dg_restless_00", // 2605300960
+    0x9b4f0bbd: "damned_villager_pickaxe_dg_restless_00_spawn", // 2605648829
     0x9b529e02: "dunewalker_waterseeker_icestaff_trial_group", // 2605882882
-    0x9b546d4a: "ghost_plagued_05wc05a", // 2606001482
     0x9b5a8cd4: "wolf_elemental_earth_62_elite", // 2606402772
     0x9b5b8548: "skeleton_2h_sword_msq_39", // 2606466376
-    0x9b67afdb: "skeleton_archer_13wf02b", // 2607263707
+    0x9b657ce5: "damned_pistoleer_m-f_44", // 2607119589
     0x9b6bbeb4: "dryad_archer_65_elite", // 2607529652
     0x9b6cfef8: "totem_withered_nest_25_elite", // 2607611640
-    0x9b7cd3fd: "ghost_shipwrecked_16bs07", // 2608649213
+    0x9b785fe4: "wolf_elemental_ice_45", // 2608357348
+    0x9b7a8e7e: "swamp_dryad_prowler_dg_edengrove_00_defend", // 2608500350
+    0x9b7c9f05: "ghost_shackled_36", // 2608635653
+    0x9b7e7e4b: "undead_javelineer_56", // 2608758347
     0x9b86e3d3: "ck_blackbone_lost_2haxe_10ws07", // 2609308627
-    0x9b882f1f: "dynasty_heavy_08qp08c", // 2609393439
-    0x9b8a0279: "skeleton_crawler_62", // 2609513081
-    0x9b983582: "sheep_eastern_16bs12", // 2610443650
+    0x9b93cd2a: "fl_hercyne_reindeer", // 2610154794
     0x9ba6907d: "corruption_heavy_dg_shattermtn_00", // 2611384445
     0x9bad5447: "dunewalker_wanderer_rapier_trial_named", // 2611827783
     0x9bc30ccf: "darkness_hive_membrane_dt6", // 2613251279
     0x9bc9a91f: "evil_knight_greataxe_29", // 2613684511
     0x9bcdf87b: "fl_beetle_baby_09fl02a", // 2613966971
-    0x9bd144b5: "greyvale", // 2614183093
     0x9bd6b40d: "undead_pistoleer_60", // 2614539277
+    0x9be0b6ce: "damned_villager_sickle_28", // 2615195342
     0x9be1b88e: "fl_dg_firstlight_01_mammoth_nature", // 2615261326
-    0x9be1d074: "corruptedlegion_cyclops_16bs08c", // 2615267444
-    0x9be1fef7: "boar_strange_16bs06", // 2615279351
     0x9be32a20: "drowned_sailor_1h_sword_shield_42", // 2615355936
-    0x9be7dd7e: "damned_cultist_10ws06", // 2615663998
     0x9bfe850a: "evil_knight_longsword_elite", // 2617148682
     0x9c03217b: "ghost_shipwrecked", // 2617450875
-    0x9c1117e4: "ghost_shipwrecked_16bs03", // 2618365924
+    0x9c08b8fc: "damned_pistoleer_m-f_40", // 2617817340
+    0x9c115b1c: "ghost_shackled_32", // 2618383132
+    0x9c13ba52: "undead_javelineer_52", // 2618538578
     0x9c155b9a: "dryad_archer_44_15ec05", // 2618645402
+    0x9c159bfd: "wolf_elemental_ice_41", // 2618661885
     0x9c181fd2: "fl_chameleon_named_09fl03c", // 2618826706
     0x9c2976ab: "skeleton_2h_sword_28", // 2619963051
     0x9c3c848b: "alligator_strange_named_dg_cutlass_00", // 2621211787
     0x9c3d754c: "ancientguardian_mage_named_dg_greatcleave_00", // 2621273420
     0x9c3da879: "drowned_sailor_2h_axe_08qp05", // 2621286521
+    0x9c3e7892: "damned_greataxeman_m-f_59", // 2621339794
     0x9c4c5b30: "ck_goldcursed_2hblunderbuss_10ws03b", // 2622249776
-    0x9c5845db: "damned_villager_shovel_07sm02a", // 2623030747
+    0x9c4d6829: "risen_corruption_entity_61", // 2622318633
     0x9c5910c1: "ck_ghost_shackled_named_10ws07", // 2623082689
-    0x9c639c8d: "risen_whole_body_12mb10b", // 2623773837
-    0x9c69c9e0: "damned_villager_pitchfork_16bs07", // 2624178656
-    0x9c6ab878: "undead_pistoleer_elite_05wc11", // 2624239736
+    0x9c5aaf23: "dryad_prowler_49", // 2623188771
+    0x9c697f15: "wolf_white_42", // 2624159509
+    0x9c6c3877: "corruption_heavy_61", // 2624338039
     0x9c6cd39d: "isabella_dg_shattermtn_phase1_00", // 2624377757
-    0x9c6dfd92: "mountain_lion_05wc03", // 2624454034
-    0x9c78b000: "skeleton_club_06sw07b", // 2625155072
+    0x9c77e403: "damned_cultist_isabella_msq2_named_00", // 2625102851
     0x9c78c736: "damned_villager_cleaver_44", // 2625161014
-    0x9c79b5f7: "damned_bowman_m-f_04nw08", // 2625222135
     0x9c7d161b: "or_corrupted_priest", // 2625443355
-    0x9c7eff09: "armored_dragon", // 2625568521
-    0x9c8c3aee: "boar_strange_16bs02", // 2626435822
+    0x9c88df48: "ancient_ice_dragon_lesser_shattered", // 2626215752
     0x9c8e55cd: "undead_grenadier_disease_26", // 2626573773
     0x9c8eee39: "drowned_sailor_1h_sword_shield_46", // 2626612793
-    0x9c97d2b7: "legion_axethrower_16bs07a", // 2627195575
-    0x9c9ff759: "damned_villager_cleaver_11md00i", // 2627729241
     0x9caec8d6: "darkness_hive_membrane_dt2", // 2628700374
-    0x9caf7477: "legion_villager_hammer_16bs06a", // 2628744311
+    0x9cb20873: "swamp_dryad_prowler_61_waveevent", // 2628913267
     0x9cc4679b: "ck_blackbone_lost_2hblunderbuss_10ws09c_elite", // 2630117275
     0x9ccc23f1: "legion_legionnaire", // 2630624241
+    0x9cd31913: "evil_knight_icestaff_icevariant_named", // 2631080211
     0x9cdc3e39: "ck_undead_navigator", // 2631679545
     0x9cdfb937: "undead_pistoleer_10ws09", // 2631907639
     0x9ced0aae: "wolf_t3", // 2632780462
     0x9ced2664: "ancientguardian_mage_59", // 2632787556
-    0x9cefc768: "undead_berserker_15ec02a", // 2632959848
     0x9cf67712: "broken_cook", // 2633398034
-    0x9d040430: "sand_elemental_soldier_16bs07", // 2634286128
-    0x9d15512b: "dune_phantom_berserker_16bs02b", // 2635419947
+    0x9d0ffee5: "damned_cultist_49", // 2635071205
     0x9d21a49a: "legion_axethrower_m-f_dg_brimstonesands_00", // 2636227738
     0x9d3965ac: "mountain_lion_58", // 2637784492
-    0x9d4952df: "legion_signifer_16bs06a", // 2638828255
-    0x9d51798e: "sorrow", // 2639362446
-    0x9d8a935d: "boar_14", // 2643104605
-    0x9d8eb678: "undead_berserker_04nw11c", // 2643375736
+    0x9d52189a: "evil_knight_bow_icevariant", // 2639403162
+    0x9d555dbd: "dynasty_heavy", // 2639617469
     0x9d8f186f: "ck_undead_navigator_10ws03a2_named", // 2643400815
     0x9d95aed1: "anubianguardian_reaver_named_00", // 2643832529
+    0x9d9a7d0b: "lost_fencer", // 2644147467
     0x9daba976: "risen_corruption_entity_07sm06b", // 2645272950
-    0x9db80df6: "corruptedlegion_cyclops_16bs10", // 2646085110
-    0x9dca4160: "undead_pistoleer_37_15ec00", // 2647277920
+    0x9daf2e04: "damned_villager_rake_56", // 2645503492
+    0x9dbbca7f: "damned_villager_lumberaxe_37", // 2646329983
     0x9dccca46: "barbary_lion_61", // 2647444038
     0x9dd4083c: "sheep_churro_18", // 2647918652
-    0x9dd84e03: "legion_villager_skinning_knife_16bs08a", // 2648198659
     0x9dd9453d: "ck_undead_officer_10ws10", // 2648261949
-    0x9ddff70e: "boar_stripped_11md03", // 2648700686
+    0x9dda9b4a: "dynasty_spearman_58", // 2648349514
+    0x9de3da2e: "damned_rifleman_m-f_dg_ebonscale_isabella_00", // 2648955438
     0x9df199a3: "withered_brute_40", // 2649856419
+    0x9dfbe98f: "dryad_shaman_49", // 2650532239
     0x9e00f37e: "drowned_sailor_1h_club_50", // 2650862462
-    0x9e02ba23: "bear_black_named_s4_1", // 2650978851
     0x9e03f9cf: "wolf_elemental_earth_29", // 2651060687
     0x9e052feb: "fl_dg_firstlight_01_gorilla_nature", // 2651140075
     0x9e1cf8be: "risen_regurgitator_37", // 2652698814
-    0x9e2e55f5: "evil_knight_greataxe_03gc08", // 2653836789
+    0x9e2877cd: "ghost_shipwrecked_33", // 2653452237
     0x9e303aaf: "lost_knight_bow_named_12mb04", // 2653960879
     0x9e3138db: "drowned_sailor_1h_sword_40", // 2654025947
     0x9e329e94: "damned_villager_shovel_43", // 2654117524
+    0x9e349c90: "risen_l-r_arm_38", // 2654248080
     0x9e3e5aef: "wolf_black_22_09fl10", // 2654886639
-    0x9e41f0e4: "desert_scorpion_16bs12", // 2655121636
+    0x9e535b0a: "fl_dryad_soldier_09a_s17_waveevent", // 2656262922
     0x9e5c54e6: "undead_grenadier_53", // 2656851174
-    0x9e5c9b13: "jackrabbit_16bs01", // 2656869139
-    0x9e6be8c1: "withered_swarmancer_12mb03a", // 2657872065
-    0x9e6d9ea7: "alligator_black_05wc11_elite", // 2657984167
-    0x9e6dd594: "wolf_black_13wf08", // 2657998228
+    0x9e63d704: "damned_villager_ladel_59", // 2657343236
+    0x9e663a13: "skeleton_spear_34", // 2657499667
     0x9e734104: "wolf_white_named_03gc04", // 2658353412
     0x9e7b4bb5: "dryad_soldier_61", // 2658880437
     0x9e84f381: "drowned_sailor_2h_axe_47", // 2659513217
+    0x9e87701b: "ghost_plagued_45", // 2659676187
     0x9e8bcccf: "undead_grenadier_molotov_57", // 2659962063
     0x9e8c8fcd: "risen_whole_body_17", // 2660011981
-    0x9e940880: "desert_scorpion_sulfur_16bs05", // 2660501632
     0x9e99f48b: "ck_blackbone_lost_2hspear", // 2660889739
     0x9e9b7c71: "ghost_starved_35", // 2660990065
-    0x9ea2e50a: "ancientguardian_reaver_16bs11c", // 2661475594
     0x9ea788f1: "alligator_black_46", // 2661779697
     0x9ea916a7: "ghost_shipwrecked_named_02", // 2661881511
-    0x9eab370b: "elk_doe_33", // 2662020875
     0x9eaca6b2: "risen_whole_body_8", // 2662114994
-    0x9eb1782d: "anubianguardian_brute_12bs10e", // 2662430765
     0x9eb7b546: "undead_navigator_17", // 2662839622
     0x9ebc33bd: "ck_spectral_lost_2hspear_q4_waveevent", // 2663134141
-    0x9ec6af3e: "risen_13wf01", // 2663821118
     0x9ecc112a: "rabbit_snowshoe_03gc08", // 2664173866
+    0x9ed6c006: "primal_lion_40", // 2664873990
     0x9edb3519: "undead_officer_42", // 2665166105
-    0x9edb3f3a: "damned_villager_lumberaxe_02bw02", // 2665168698
     0x9ee06970: "ancientguardian_mage_42_elite", // 2665507184
+    0x9ee2c681: "fl_mammoth_boss_earth_root_arcane", // 2665662081
     0x9ef93db1: "undead_officer_admiral_minion", // 2667134385
-    0x9efa686b: "legion_legionnaire_16bs07a", // 2667210859
     0x9efbe554: "damned_villager_kitchenknife_07sm06", // 2667308372
     0x9eff8b37: "ancientguardian_spearman_62", // 2667547447
-    0x9f00e4d2: "eridanus", // 2667635922
     0x9f033acf: "evil_knight_bow_dg_greatcleave_00_01", // 2667789007
+    0x9f05dd42: "hercyne_broodmother_ooze", // 2667961666
     0x9f122046: "totem_withered_nest_dg_windsward_00", // 2668765254
-    0x9f16ff5c: "elk_doe_12mb10", // 2669084508
-    0x9f245318: "sheep_eastern_59", // 2669957912
-    0x9f2d1486: "corruption_swarmer_06sw09", // 2670531718
-    0x9f4dfb9c: "undead_grenadier_15ec02b", // 2672688028
+    0x9f4fe57e: "desert_scorpion_impaler_sandworm_xs", // 2672813438
+    0x9f56174c: "damned_villager_pickaxe_63", // 2673219404
     0x9f611060: "ghost_starved_named_03", // 2673938528
     0x9f7df8ec: "undead_pistoleer_39", // 2675833068
     0x9f7f1244: "fl_swamp_dryad_shaman_09fl02", // 2675905092
-    0x9f87cba3: "redeye", // 2676476835
-    0x9f8c2fca: "skeleton_club_13wf02", // 2676764618
     0x9f93cdd3: "corruption_swarmer_07sm06a", // 2677263827
-    0x9f965893: "ghost_plagued_16bs07c", // 2677430419
-    0x9f965e8b: "alligator_black_16bs12", // 2677431947
+    0x9fa8a5c1: "drowned_miner_6", // 2678629825
+    0x9fac1817: "season_02_event_sulfur_elemental_shaman_wave_1", // 2678855703
     0x9fb087ae: "anubianguardian_brute_dg_brimstonesands_named_01", // 2679146414
-    0x9fb3603f: "fineseer", // 2679332927
-    0x9fbce34a: "skeleton_1h_sword_09fl08", // 2679956298
+    0x9fb80858: "damned_villager_skinning_knife_45", // 2679638104
+    0x9fb980ce: "damned_bowman_37", // 2679734478
     0x9fc00eaf: "ancientguardian_javelineer_56", // 2680164015
     0x9fc86235: "dryad_prowler", // 2680709685
     0x9fd14007: "damned_hound_40", // 2681290759
+    0x9ff7939c: "skeleton_club_62", // 2683802524
     0x9ffc238d: "undead_gravedigger_24", // 2684101517
     0xa00c3ce4: "fl_spriggan_adolescent_09fl08", // 2685156580
-    0xa0103a09: "turkey_02bw05", // 2685417993
-    0xa01a8887: "skeleton_crawler_13wf02c", // 2686093447
-    0xa01ead15: "ghost_starved_02bw", // 2686364949
     0xa026751a: "tendril_corruption_dt5", // 2686874906
     0xa02e7852: "training_dummy", // 2687400018
+    0xa034d0df: "explosive_sprout_physical_pulse", // 2687815903
     0xa036c8f9: "fl_boar", // 2687944953
-    0xa0374c3b: "legion_sagittarii_16bs08b", // 2687978555
-    0xa039555b: "primal_lion_desert_16bs04", // 2688111963
-    0xa04b9386: "evil_knight_longsword_20", // 2689307526
     0xa05aaa44: "fl_mammoth_named_elite_09fl12", // 2690296388
-    0xa06033c6: "desert_coyote_16bs06", // 2690659270
-    0xa06b5c02: "blight_fiend_51", // 2691390466
+    0xa06e3ccf: "ghost_charred_52", // 2691579087
+    0xa07d7504: "damned_villager_pickaxe_16", // 2692576516
     0xa092e286: "damned_bowman_42", // 2693980806
+    0xa0936a10: "damned_villager_skinning_knife_30", // 2694015504
     0xa0952ac4: "dune_phantom_berserker_named_00", // 2694130372
-    0xa0b1eecc: "quarry", // 2696015564
-    0xa0b38d05: "sand_elemental_shaman_16bs05", // 2696121605
-    0xa0b6d12d: "skeleton_1h_sword_11md00c", // 2696335661
     0xa0b74593: "dryad_prowler_61", // 2696365459
     0xa0c1dd83: "anubian_scarab_67_named_elite_00", // 2697059715
-    0xa0d6e552: "drowned_sailor_1h_club_11md00d", // 2698437970
+    0xa0d741c5: "undead_gravedigger_51", // 2698461637
     0xa0dcf1d4: "skeleton_club_17", // 2698834388
-    0xa0e477f8: "undead_shaman_09fl09a", // 2699327480
-    0xa0e7deef: "drowned_sailor_1h_sword_15ec02c", // 2699550447
     0xa0eb6ce7: "ancientguardian_javelineer_23", // 2699783399
     0xa0ec8f99: "ck_undead_pirate_brute_10ws03", // 2699857817
-    0xa0fba9dd: "turkey_63", // 2700847581
+    0xa0fa224f: "damned_hound_35", // 2700747343
+    0xa1031585: "ghost_shipwrecked_46", // 2701333893
     0xa10933e1: "evil_knight_spear_30", // 2701734881
-    0xa10bcf29: "riverworn", // 2701905705
     0xa116033f: "dryad_shaman_61", // 2702574399
+    0xa119fcdc: "damned_villager_shovel_36", // 2702834908
+    0xa11a5a93: "drowned_sailor_1h_sword_35", // 2702858899
     0xa11b27e9: "desert_scorpion_62", // 2702911465
+    0xa11d21f9: "damned_rifleman_m-f_56", // 2703041017
     0xa1224081: "alligator_strange_62", // 2703376513
     0xa12b9136: "drowned_sailor_1h_club_25", // 2703986998
-    0xa131c8c7: "bloated_corpse_59", // 2704394439
     0xa133339b: "dryad_beast_named_02", // 2704487323
     0xa1379af6: "risen_regurgitator_42", // 2704775926
-    0xa13d7f9e: "fl_beetle_baby_09fl06", // 2705162142
     0xa144541c: "ck_undead_officer_10ws03ad", // 2705609756
     0xa14b6f58: "bear_cub_grizzly_50", // 2706075480
     0xa14d585b: "skeleton_spear_41", // 2706200667
-    0xa1515dc5: "wolf_black_11md01", // 2706464197
-    0xa15395c6: "armadillo_16bs02", // 2706609606
     0xa158c8b6: "fl_wolf_09fl09b", // 2706950326
     0xa169222b: "ancientguardian_reaver_54", // 2708021803
-    0xa16a65f5: "rabbit_spotted_02bw02", // 2708104693
-    0xa170a1d1: "damned_villager_skinning_knife_04nw10", // 2708513233
+    0xa176aef8: "skeleton_archer_16", // 2708909816
     0xa17736ae: "undead_grenadier_26", // 2708944558
     0xa17b6a79: "skeleton_archer_msq_11", // 2709219961
+    0xa17ff259: "damned_axeman_m-f_55", // 2709516889
+    0xa1853e83: "evil_knight_gruntmaster", // 2709864067
     0xa1877c24: "undead_pistoleer_named_01", // 2710010916
     0xa189dd8e: "fl_rabbit_infested", // 2710166926
     0xa18ceab9: "alligator_black_33", // 2710366905
@@ -5075,501 +4275,444 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xa18febb4: "ancientguardian_reaver_10ws02", // 2710563764
     0xa192f41c: "evil_knight_caster_elite", // 2710762524
     0xa196037c: "wolf_grey_16", // 2710963068
-    0xa1968a47: "bobcat_15ec04", // 2710997575
     0xa199d784: "wolf_grey_7", // 2711213956
     0xa19cd70e: "undead_navigator_62", // 2711410446
-    0xa1a2f600: "risen_whole_body_11md07", // 2711811584
     0xa1a8cb72: "fl_hercyne_boar_09fl02b", // 2712193906
-    0xa1abde53: "desert_bison_strange_16bs11", // 2712395347
     0xa1ac1253: "ghost_plagued_30", // 2712408659
-    0xa1ac9882: "ancientguardian_mage_16bs02f", // 2712443010
+    0xa1af91c9: "drowned_sailor_2h_axe_32", // 2712637897
     0xa1b01e39: "ghost_starved_40", // 2712673849
+    0xa1b036c7: "swamp_dryad_archer_bog_minion", // 2712680135
     0xa1bd8345: "swamp_dryad_prowler_named_05wc08", // 2713551685
-    0xa1e69a51: "cutmines", // 2716244561
+    0xa1e21455: "damned_cultist_61", // 2715948117
+    0xa1ec4bc5: "anubianguardian_panther_elite_named_02", // 2716617669
     0xa1f05751: "undead_officer_37", // 2716882769
-    0xa1fb84a5: "legion_damned_hound_elite_16bs08c", // 2717615269
     0xa201ffde: "blight_fiend_65_elite", // 2718040030
     0xa20aab74: "bear_grizzly_58", // 2718608244
     0xa220e605: "damned_villager_axethrower_f_named_06sw08", // 2720065029
-    0xa226225e: "jackrabbit_66", // 2720408158
-    0xa22f47cb: "damned_villager_hammer_08qp08", // 2721007563
-    0xa22f529c: "damned_villager_knife_25", // 2721010332
-    0xa239e8d4: "alligator_strange_10ws07", // 2721704148
     0xa23beeb4: "swamp_dryad_archer_59", // 2721836724
     0xa2426fd5: "dryad_tendril_dg_cutlass_00", // 2722262997
     0xa24375f8: "evil_knight_spear_dg_greatcleave_00_00", // 2722330104
     0xa244fa0b: "destructible_wall_01_fl", // 2722429451
-    0xa245353d: "pig_domestic_12", // 2722444605
-    0xa265c53b: "sulfur_elemental_entity_16bs11", // 2724578619
+    0xa26763e4: "damned_acolyte_54", // 2724684772
     0xa26f0d33: "drowned_miner_10ws08", // 2725186867
     0xa2706f79: "ck_goldcursed_2hwarhammer_named_10ws10", // 2725277561
     0xa2741c3d: "damned_acolyte_07sm06b_elite", // 2725518397
     0xa2754ca2: "elk", // 2725596322
-    0xa27b2e35: "legion_sagittarii_16bs07", // 2725981749
     0xa27b8f38: "ck_spectral_lost_2haxe_named_10ws09_elite", // 2726006584
     0xa27d8b3d: "ck_lost_1h_sword_10ws02_sable_prison", // 2726136637
     0xa28d7c63: "risen_l-r_arm_08qp07", // 2727181411
-    0xa2a1f115: "boar_61", // 2728522005
-    0xa2bb232d: "withered_grunt_06sw09", // 2730173229
+    0xa290a837: "damned_villager_lumberaxe_42", // 2727389239
+    0xa2919b96: "damned_villager_pitchfork_58", // 2727451542
+    0xa296a105: "dryad_soldier_49", // 2727780613
+    0xa2c25530: "bobcat_58", // 2730644784
     0xa2d97620: "risen_l-r_arm_10", // 2732160544
-    0xa2da03b7: "drowned_sailor_1h_club_04nw11b", // 2732196791
     0xa2dafbeb: "withered_brute_35", // 2732260331
-    0xa2e6667a: "withered_beetle_11md00g", // 2733008506
     0xa2f51e1d: "wolf_elemental_ice_named_001_03gc11", // 2733973021
-    0xa308b893: "legion_villager_cleaver_16bs07b", // 2735257747
-    0xa3353fcc: "ghost_starved_13wf08a_002", // 2738175948
+    0xa30de59f: "corrupted_ogre_60", // 2735596959
+    0xa311cb69: "undead_berserker_named_05wc11", // 2735852393
+    0xa323dab4: "damned_pistoleer_m-f_35", // 2737035956
     0xa338d81a: "undead_javelineer_27", // 2738411546
-    0xa33e3c79: "withered_grunt_13wf06", // 2738764921
+    0xa33a3954: "ghost_shackled_47", // 2738501972
     0xa344fb9a: "undead_berserker_52", // 2739207066
-    0xa351213b: "withered_beetle_13wf", // 2740003131
     0xa3517ef7: "wolf_minion_50_03gc04", // 2740027127
-    0xa3587899: "evil_knight_warhammer_02bw07", // 2740484249
+    0xa353a57e: "damned_villager_cleaver_31", // 2740168062
     0xa35bf61d: "legion_signifer_64", // 2740712989
     0xa36265e6: "ck_lost_2h_pistols_10ws02_pirates_stand", // 2741134822
     0xa36c4d95: "wolf_black_23", // 2741783957
     0xa36f1a6b: "ancientguardian_greatsword_icevariant_raid10", // 2741967467
+    0xa377d842: "dryad_archer_40", // 2742540354
     0xa37c2dbb: "peacock_08qp04", // 2742824379
+    0xa380ef5a: "bear_black_55", // 2743136090
     0xa390125c: "undead_pistoleer_11", // 2744128092
     0xa39c0aea: "risen_regurgitator_dg_windsward_00", // 2744912618
     0xa39c5f79: "darkness_maw", // 2744934265
     0xa39d9df8: "ck_undead_grenadier_10ws09d_elite", // 2745015800
-    0xa3a27bff: "anubianguardian_reaver_16bs03", // 2745334783
+    0xa3a15295: "naga", // 2745258645
     0xa3a53785: "undead_grenadier_disease_53", // 2745513861
-    0xa3a93c11: "tendril_dryad_named_05wc04", // 2745777169
-    0xa3d90cf2: "gravespoil", // 2748910834
-    0xa3e746a5: "ancientguardian_reaver_11md00b", // 2749843109
+    0xa3a58c71: "drowned_sailor_1h_sword_shield_33", // 2745535601
+    0xa3a6109f: "damned_villager_sickle_59", // 2745569439
+    0xa3fc0cc3: "damned_villager_hammer_66", // 2751204547
     0xa401898c: "wolf_black_27", // 2751564172
+    0xa4093197: "ancientguardian_javelineer_61_waveevent", // 2752065943
     0xa40a2e9a: "ancientguardian_warhammer_icevariant_raid10-", // 2752130714
     0xa4110885: "drowned_sailor_2h_axe_63_elite", // 2752579717
-    0xa4160c79: "damned_rifleman_44", // 2752908409
-    0xa41910b2: "undead_javelineer_05wc05a", // 2753106098
+    0xa41a1c5b: "dryad_archer_44", // 2753174619
     0xa4293f83: "undead_berserker_56", // 2754166659
+    0xa42c5867: "fl_armored_dragon_09a_m13_waveevent", // 2754369639
     0xa42cc933: "ancientguardian_mage_named_06sw03", // 2754398515
     0xa42d5174: "undead_pistoleer_65_elite", // 2754433396
     0xa4324c1f: "ck_spectral_lost_2hblunderbuss_named_10ws08_village", // 2754759711
     0xa4363204: "legion_signifer_60", // 2755015172
+    0xa43e6167: "damned_villager_cleaver_35", // 2755551591
+    0xa44e1ead: "damned_pistoleer_m-f_31", // 2756583085
     0xa452daaa: "corrupted_sailor_1h_club", // 2756893354
     0xa4536c76: "anubianguardian_panther_64", // 2756930678
     0xa4551c03: "undead_javelineer_23", // 2757041155
-    0xa4685929: "anubianguardian_reaver_12bs09a", // 2758301993
+    0xa457fd4d: "ghost_shackled_43", // 2757229901
     0xa46dee24: "undead_officer_dg_cutlass_00", // 2758667812
     0xa46fd0fa: "skeleton_2h_sword_59", // 2758791418
+    0xa471477f: "angryearth_overgrownbeetle", // 2758887295
+    0xa4788e9e: "damned_rifleman_m-f_53_minion", // 2759364254
     0xa479e4eb: "fl_alligator_09fla", // 2759451883
-    0xa47ed657: "ancientguardian_mage_s4_named_jehan", // 2759775831
-    0xa48a82bc: "ancientguardian_reaver_11md00f", // 2760540860
+    0xa491c8da: "damned_villager_hammer_62", // 2761017562
     0xa4981d0e: "undead_pistoleer_12mb10", // 2761432334
-    0xa4a16031: "skeleton_crawler_17", // 2762039345
-    0xa4a20e7b: "swamp_fiend_05wc01a", // 2762083963
     0xa4a49b67: "turkey", // 2762251111
-    0xa4a6d897: "fallswatch", // 2762397847
+    0xa4ab3fad: "season_01_event_dryad_shaman", // 2762686381
     0xa4ab8035: "ancientguardian_mage_28", // 2762702901
-    0xa4af0b2f: "undead_navigator_04nw11b", // 2762935087
-    0xa4c83ff6: "undead_sailor_2h_axe_05wc07", // 2764586998
     0xa4c84868: "drowned_sailor_1h_sword_shield_37", // 2764589160
     0xa4c8f39c: "undead_grenadier_disease_57", // 2764632988
-    0xa4cfbfe6: "anubianguardian_reaver_16bs07", // 2765078502
-    0xa4f7c8f6: "damned_villager_skinning_knife_11md07a", // 2767702262
+    0xa4e0cd4a: "avalancher_frostgrip", // 2766196042
+    0xa4ed2b43: "bear_black_51", // 2767006531
     0xa4fdd645: "undead_pistoleer_15", // 2768098885
-    0xa500909f: "primal_lion_desert_cub_16bs12", // 2768277663
+    0xa50127ed: "ck_bear_black_10ws10", // 2768316397
     0xa5026d18: "swamp_dryad_beast_named_dg_edengrove_01", // 2768399640
     0xa5095d2d: "evil_knight_greataxe_named_dg_greatcleave_00", // 2768854317
+    0xa50aa7fd: "damned_acolyte_50", // 2768939005
     0xa50bec9e: "damned_acolyte_03gc03_elite", // 2769022110
-    0xa516ea2c: "legion_sagittarii_16bs03", // 2769742380
+    0xa5135386: "evil_knight_mace_firevariant", // 2769507206
     0xa51c3049: "hercyne_reindeer_named_raid_cutlasskeys_00", // 2770088009
-    0xa51d5649: "drowned_miner_36_15ec00", // 2770163273
     0xa52e0332: "risen_corruption_impaler_50_elite", // 2771256114
-    0xa5346665: "boar_named_01", // 2771674725
-    0xa53f504c: "bison_strange_07sm01", // 2772389964
     0xa5463b94: "undead_hunter_named_08", // 2772843412
-    0xa54be647: "jackrabbit_62", // 2773214791
+    0xa54958b4: "damned_cultist_38", // 2773047476
     0xa54ef8f7: "dynasty_spearman_named_dg_ebonscale_00", // 2773416183
-    0xa54ffbe8: "evil_knight_lifestaff_14ac05", // 2773482472
-    0xa5509132: "ghost_starved_13wf08", // 2773520690
-    0xa552a3d9: "withered_beetle_06sw08a", // 2773656537
     0xa5542ccd: "alligator_strange_10ws03", // 2773757133
-    0xa55ae0dc: "legion_villager_pickaxe_16bs07b", // 2774196444
     0xa5617444: "ck_undead_navigator_10ws03b_named", // 2774627396
-    0xa562d5f5: "human", // 2774717941
-    0xa56689de: "wolf_black_05wc01", // 2774960606
-    0xa5876643: "undead_gravedigger_13wf08", // 2777114179
-    0xa58ba263: "withered_beetle_11md00c", // 2777391715
+    0xa56a568b: "fl_mammoth_lava", // 2775209611
+    0xa5735e5b: "ghost_frozen_48", // 2775801435
     0xa5939611: "evil_knight_greataxe_named_12mb01", // 2777912849
+    0xa5962db2: "undead_navigator_8", // 2778082738
     0xa5a24c15: "fl_chameleon_09fl09b", // 2778876949
-    0xa5ade507: "evil_knight_mace_03gc08", // 2779636999
     0xa5b4b239: "risen_l-r_arm_14", // 2780082745
     0xa5b73ff2: "withered_brute_31", // 2780250098
     0xa5b9e6d4: "swamp_dryad_shaman_dg_edengrove_00", // 2780423892
-    0xa5cc350c: "boar_65", // 2781623564
     0xa5e290dc: "sulfur_elemental_entity_named_00", // 2783088860
     0xa5e936d8: "ghost_shipwrecked_re2_named", // 2783524568
-    0xa5eb8fa1: "bear_grizzly_11md07", // 2783678369
+    0xa5e98855: "damned_villager_rake_27", // 2783545429
+    0xa5faa488: "dynasty_musketeer_60_elite", // 2784666760
+    0xa5fd6c2e: "damned_villager_lumberaxe_46", // 2784848942
     0xa604e632: "ancientguardian_reaver_50", // 2785338930
-    0xa607a1ec: "rabbit_spotted_02bw06", // 2785518060
-    0xa60d18e1: "damned_villager_axethrower_02bw05", // 2785876193
+    0xa6123640: "damned_axeman_m-f_51", // 2786211392
     0xa61351fb: "corrupted_sailor_1h_sword_shield", // 2786284027
     0xa6209c42: "skeleton_spear_45", // 2787155010
     0xa6257155: "damned_villager_ladel_28", // 2787471701
-    0xa63e51df: "armadillo_16bs06", // 2789102047
+    0xa62be12e: "undead_navigator_60_waveevent", // 2787893550
     0xa643ed71: "wolf_alpha_16", // 2789469553
     0xa6455f9e: "wolf_elemental_earth_58", // 2789564318
     0xa646552f: "drowned_sailor_1h_club_21", // 2789627183
     0xa6504e90: "damned_cultist_11md12_elite", // 2790280848
-    0xa650bb87: "fl_beetle_baby_09fl02", // 2790308743
     0xa6597a63: "evil_knight_mace_32", // 2790881891
     0xa6599333: "damned_pistoleer_m-f_dg_greatcleave_00", // 2790888243
     0xa65a5eef: "risen_regurgitator_46", // 2790940399
-    0xa6640ee2: "swamp_dryad_shaman_05wc06a", // 2791575266
-    0xa66f05a2: "skeleton_club_04nw07", // 2792293794
+    0xa66ed19c: "ghost_shipwrecked_42", // 2792280476
+    0xa670e5e0: "damned_rifleman_m-f_52", // 2792416736
+    0xa6723ac1: "risen_l-r_arm_49", // 2792504001
+    0xa67438c5: "damned_villager_shovel_32", // 2792634565
     0xa67581bc: "swamp_fiend", // 2792718780
     0xa676e3f0: "desert_scorpion_66", // 2792809456
+    0xa6779e8a: "drowned_sailor_1h_sword_31", // 2792857226
+    0xa686b0c6: "torso_boss_ice_bridge", // 2793844934
     0xa692ad17: "ck_blackbone_lost_1hsword_named_10ws04_sable", // 2794630423
-    0xa6a3edca: "undead_navigator_11md00d", // 2795761098
-    0xa6bb1b56: "goat_mountain_58", // 2797280086
+    0xa695ef8f: "corrupted_mine_35", // 2794844047
     0xa6c1d64a: "ghost_plagued_34", // 2797721162
     0xa6c255d0: "drowned_sailor_2h_axe_36", // 2797753808
     0xa6c41262: "fl_alligator", // 2797867618
+    0xa6c89587: "fl_medusa", // 2798163335
     0xa6cd6a9e: "undead_grenadier_molotov_26", // 2798480030
     0xa6dc46dd: "corruption_heavy_named_dg_shattermtn_00", // 2799453917
     0xa6ddda20: "ghost_starved_44", // 2799557152
     0xa6e12ea0: "alligator_black_37", // 2799775392
-    0xa6ed915a: "elk_doe_42", // 2800587098
+    0xa6e4885d: "ancientguardian_spearman_60_waveevent", // 2799994973
     0xa6fbc765: "wolf_grey_12", // 2801518437
     0xa6ff4b99: "dryad_siren", // 2801748889
-    0xa706981b: "blight_fiend_55", // 2802227227
-    0xa70df7df: "desert_coyote_16bs02", // 2802710495
+    0xa703f8d6: "ghost_charred_56", // 2802055382
     0xa710b11d: "damned_villager_pickaxe_12", // 2802888989
     0xa711233c: "fl_anubianguardian_archer_09fl06", // 2802918204
-    0xa726579f: "evil_knight_longsword_24", // 2804307871
+    0xa7229630: "swamp_fiend_bog_minion", // 2804061744
     0xa73b5ebd: "undead_pistoleer_48", // 2805685949
     0xa74bb103: "tendril_corruption_dt1", // 2806755587
+    0xa74e4fad: "ck_undead_berserker_q1_waveevent", // 2806927277
+    0xa7546616: "evil_knight_warhammer_named_dg_greatcleave_00", // 2807326230
     0xa75d7016: "ck_spectral_lost_1hsword_10ws10", // 2807918614
+    0xa760841c: "elk_stag_corrupted_59", // 2808120348
     0xa76e48d8: "ancientguardian_mage_dg_greatcleave_00_01", // 2809022680
     0xa77b7dc0: "damned_rifleman_male_named_03gc06", // 2809888192
-    0xa77dfe10: "turkey_02bw01", // 2810052112
+    0xa77cea62: "sand_elemental_shaman", // 2809981538
     0xa786a8fe: "ancientguardian_javelineer_27", // 2810620158
     0xa78e2df0: "ghost_plagued_named_wwgreataxe", // 2811112944
-    0xa78e8bc8: "risen_whole_body_06sw08c", // 2811136968
     0xa7930e63: "fl_chameleon_09fl09", // 2811432547
-    0xa7a3bee5: "skeleton_1h_club_11md04b", // 2812526309
     0xa7aa2bd1: "ancientguardian_heavy_boss_named_dg_everfall_00", // 2812947409
-    0xa7ab6867: "ancientguardian_javelineer_11md00g", // 2813028455
-    0xa7ade15a: "fl_gorilla_melee_09fl07a", // 2813190490
     0xa7b135cd: "skeleton_club_13", // 2813408717
-    0xa7bd300f: "legion_sagittarii_16bs06a", // 2814193679
+    0xa7b7b238: "corbenic_altar", // 2813833784
+    0xa7ba85dc: "undead_gravedigger_55", // 2814019036
+    0xa7c852b4: "corrupted_tiger_59", // 2814923444
     0xa7cd4b2b: "anubianguardian_brute_named_02", // 2815249195
     0xa7d40bf5: "ck_blackbone_lost_2hblunderbuss_10ws02_sable_prison", // 2815691765
-    0xa7db1534: "skeleton_1h_sword_11md00g", // 2816152884
-    0xa7de491c: "sand_elemental_shaman_16bs01", // 2816362780
     0xa7e510d7: "boar_stripped_58", // 2816807127
-    0xa7ef426e: "alligator_young_11md05a", // 2817475182
     0xa7f4a242: "fl_primal_lion_pounce_elite_09fl01", // 2817827394
     0xa7f56252: "fl_mim_bearelemental", // 2817876562
-    0xa80df998: "ancientguardian_spearman_13wf02", // 2819488152
-    0xa823f2cf: "skeleton_2h_sword_11md06b", // 2820928207
-    0xa826db77: "desert_coyote_16bs04a", // 2821118839
-    0xa835f1ee: "pig_domestic_43", // 2822107630
-    0xa83e4fe3: "pig_domestic_12mb03a", // 2822655971
-    0xa856a45a: "damned_rifleman_m-f_03gc08b", // 2824250458
-    0xa86bd9d0: "wolf_grey_04nw02", // 2825640400
+    0xa7feae09: "damned_villager_skinning_knife_34", // 2818485769
+    0xa7ff269f: "damned_bowman_46", // 2818516639
+    0xa84dc216: "dynasty_musketeer_60", // 2823668246
     0xa87435de: "legion_legionnaire_64", // 2826188254
     0xa875e228: "drowned_miner_12mb06c", // 2826297896
-    0xa878fc66: "anubianguardian_brute_16bs07", // 2826501222
-    0xa88784ec: "bloated_corpse_55", // 2827453676
+    0xa87ae297: "corruption_heavy_dt5", // 2826625687
+    0xa89ddd1d: "drowned_sailor_1h_club_29", // 2828918045
+    0xa89ed7ac: "wolf_elemental_earth_50", // 2828982188
+    0xa8a9b2f3: "risen_l-r_arm_41", // 2829693683
     0xa8ac16b8: "drowned_sailor_1h_sword_39", // 2829850296
-    0xa8b0831c: "ghost_charred_16bs12", // 2830140188
-    0xa8c1f0aa: "cow_12mb02", // 2831282346
-    0xa8c7c8bd: "damned_hound_03gc09a_elite", // 2831665341
-    0xa8d135c6: "boar_30", // 2832283078
+    0xa8b04829: "undead_navigator_12mb06d_boat", // 2830125097
+    0xa8c9be72: "damned_axeman_m-f_59", // 2831793778
     0xa8dd2aad: "withered_grunt_26", // 2833066669
     0xa8df6e00: "ancientguardian_reaver_58", // 2833214976
     0xa8e2c11a: "undead_grenadier_63_elite", // 2833432858
     0xa8ecd58a: "evil_knight_heavy_named_dg_greatcleave_00", // 2834093450
-    0xa8ef3d94: "undead_javelineer_13wf", // 2834251156
     0xa8f37c53: "corruption_heavy_named_07sm05b", // 2834529363
-    0xa8f3c9be: "damned_villager_pickaxe_04nw06b", // 2834549182
-    0xa8f76ee0: "undead_pistoleer_04nw11c", // 2834788064
     0xa8f973aa: "skeleton_archer_dg_greatcleave_01", // 2834920362
-    0xa8fea441: "alligator_young_04nw11b", // 2835260481
-    0xa905c12e: "sand_elemental_shaman_16bs09", // 2835726638
-    0xa9075eac: "ancientguardian_javelineer_16bs03", // 2835832492
-    0xa9109cd0: "damned_1h_swordsman_m-f_04nw09b", // 2836438224
-    0xa918ae83: "legion_villager_hammer_16bs06", // 2836967043
-    0xa92dd826: "sheep_eastern_13wf05", // 2838353958
+    0xa90a156f: "fl_dryad_prowler_09a_m5_waveevent", // 2836010351
+    0xa913da86: "corrupted_tiger_51", // 2836650630
+    0xa92361ad: "damned_villager_cleaver_60", // 2837668269
     0xa9326002: "ck_undead_officer_10ws03c_named", // 2838650882
+    0xa93e98e5: "boar_stripped_50", // 2839451877
+    0xa93f6304: "undead_hunter_56", // 2839503620
     0xa93fd9b7: "elk_stag_23", // 2839534007
     0xa945d110: "ck_drowned_sailor_1h_sword", // 2839925008
-    0xa94b130f: "dune_phantom_tank_16bs02c", // 2840269583
     0xa95a60d7: "dunewalker_wanderer_rapier_trial_quest", // 2841272535
-    0xa95f74ad: "drowned_sailor_2h_axe_10ws03", // 2841605293
     0xa96e1eca: "drowned_sailor_1h_sword_admiral_minion", // 2842566346
-    0xa98f1970: "primal_lion_desert_16bs08", // 2844727664
-    0xa9900dd8: "undead_grenadier_molotov_05wc07", // 2844790232
-    0xa9961ff0: "undead_pistoleer_15ec02a", // 2845188080
+    0xa98cc810: "damned_villager_hammer_37", // 2844575760
     0xa9a2ed19: "damned_1h_swordsman_m-f_26", // 2846027033
-    0xa9a6dc0b: "risen_whole_body_04nw03", // 2846284811
-    0xa9a98289: "dryad_archer_14ac13", // 2846458505
+    0xa9ad3a26: "ancientguardian_reaver_dg_reekwater_00_spawn", // 2846702118
     0xa9b97d7b: "sheep_eastern_20", // 2847505787
-    0xa9ba70cf: "fl_spriggan_adolescent_09fl04", // 2847568079
-    0xa9bc60fb: "skeleton_crawler_42", // 2847695099
-    0xa9bda243: "undead_officer_05wc07", // 2847777347
-    0xa9bddb1e: "damned_villager_knife_13wf05", // 2847791902
-    0xa9bf2be6: "alligator_black_15ec04", // 2847878118
     0xa9d01a19: "dynasty_heavy_named_dg_ebonscale_00", // 2848987673
     0xa9d548a2: "drowned_sailor_1h_sword_shield_62", // 2849327266
     0xa9dd5052: "dune_phantom_berserker_61", // 2849853522
     0xa9e0d68f: "undead_pistoleer_40", // 2850084495
-    0xa9edf4a6: "elk_elemental_59", // 2850944166
-    0xa9fbe3d8: "wolf_alpha_named_0403_0201_waveeventboss", // 2851857368
+    0xa9ed587a: "ancient_ice_dragon_fragment_solo", // 2850904186
+    0xa9ef266b: "damned_villager_axethrower_m-f_56", // 2851022443
     0xaa0aa7ba: "ck_blackbone_lost_1hsword", // 2852825018
     0xaa0c0f8d: "lost_pikeman_12mb04", // 2852917133
-    0xaa259bf7: "swampwater", // 2854591479
-    0xaa32eb38: "dryad_archer_14ac14b", // 2855463736
+    0xaa0db1d7: "damned_villager_pickaxe_47", // 2853024215
+    0xaa105cb4: "damned_villager_sickle_55", // 2853199028
     0xaa36a371: "bear_black_59", // 2855707505
-    0xaa457d8f: "anubianguardian_horus_dg_brimstonesands_shai_minion", // 2856680847
-    0xaa4b4d41: "tendril_dryad_05wc08", // 2857061697
-    0xaa537239: "skeleton_spear_03gc10b", // 2857595449
-    0xaa543cf4: "legion_villager_kitchenknife_64", // 2857647348
+    0xaa4ec86f: "evil_knight_longsword_firevariant", // 2857289839
     0xaa57fa98: "mountain_lion_03gc05", // 2857892504
-    0xaa5a178e: "desert_dryad_prowler", // 2858030990
     0xaa5d7901: "swamp_dryad_tendril_62", // 2858252545
     0xaa5f6f73: "skeleton_1h_sword_52", // 2858381171
     0xaa700807: "ancientguardian_mage_20", // 2859468807
     0xaa7b9867: "ck_alligator_young_10ws10", // 2860226663
-    0xaa8b6d0e: "turkey_32", // 2861264142
+    0xaa82325e: "damned_villager_kitchenknife_53", // 2860659294
+    0xaa95969f: "damned_pistoleer_m-f_39", // 2861930143
     0xaa9bb6aa: "ck_spectral_lost_ice_10ws10", // 2862331562
-    0xaaa1490a: "primal_lion_05wc06", // 2862696714
+    0xaaa7cd79: "dynasty_summoner_61", // 2863123833
+    0xaaaaaac7: "lost_monarch_s4", // 2863311559
+    0xaaac3507: "skeleton_club_46", // 2863412487
     0xaab458c8: "skeleton_2h_sword_51", // 2863945928
     0xaac70b54: "sheep_eastern_03gc02", // 2865171284
-    0xaac7e9a2: "desert_medium_scorpion_16bs10", // 2865228194
-    0xaaca6190: "peacock_08qp08", // 2865389968
-    0xaacac6e3: "skeleton_crawler_16bs02", // 2865415907
     0xaaccc1fe: "evil_knight_commander_named_dg_greatcleave_01", // 2865545726
-    0xaad06ee4: "damned_villager_shovel_11md07b", // 2865786596
-    0xaae68abb: "bear_damned_dt6", // 2867235515
+    0xaae3aec3: "damned_villager_skinning_knife_61", // 2867048131
     0xaaf1b16c: "avalancher_yeti_60", // 2867966316
-    0xaaf242a4: "alligator_young_11md00d", // 2868003492
-    0xaaf62269: "forged", // 2868257385
-    0xaafc24dd: "evil_knight_greataxe_04nw02", // 2868651229
-    0xaafd72f5: "drowned_sailor_1h_sword_39_15ec00", // 2868736757
     0xab066a2b: "skeleton_archer_47", // 2869324331
     0xab0de223: "corrupted_ogre_07sm02b_elite", // 2869813795
-    0xab26d14a: "swamp_fiend_59", // 2871447882
-    0xab2e1818: "ghost_starved_16bs02c", // 2871924760
+    0xab20ed2e: "dryad_soldier_45", // 2871061806
+    0xab27d7bd: "damned_villager_pitchfork_54", // 2871515069
     0xab2e31db: "skeleton_crawler_10ws04", // 2871931355
-    0xab2ef2a6: "withered_beetle_09fl04", // 2871980710
     0xab475e25: "risen_regurgitator_13", // 2873581093
-    0xab565c73: "undead_shaman_15ec04d", // 2874563699
+    0xab48c037: "dunewalker_wanderer_longsword_named", // 2873671735
+    0xab528452: "alligator_strange_33", // 2874311762
+    0xab5eedbb: "wolf_alpha_43", // 2875125179
     0xab66c7ec: "dryad_shaman_30", // 2875639788
-    0xab69c6c0: "bear_black_11md06", // 2875836096
-    0xab7a8ece: "turkey_vulture_16bs12", // 2876935886
+    0xab69380f: "damned_villager_shovel_67", // 2875799567
+    0xab6cb7c0: "withered_brute_39", // 2876028864
+    0xab6fe8c9: "tiger_57", // 2876238025
+    0xab74191b: "bobcat_54", // 2876512539
     0xab7bcac8: "damned_greataxeman_m-f_03gc05", // 2877016776
-    0xab869f3e: "ghost_charred_16bs04a", // 2877726526
-    0xab90fe05: "legion_villager_ladel_16bs12", // 2878406149
+    0xab88ef45: "corrupted_mine_60", // 2877878085
     0xab912faf: "anubian_scarab_named_01", // 2878418863
-    0xab93ddc6: "skeleton_archer_11md06a", // 2878594502
-    0xab991eb7: "damned_villager_knife_29", // 2878938807
+    0xab92d086: "damned_cultist_30", // 2878525574
     0xab9bc0bc: "risen_l-r_arm_dg_windsward_00", // 2879111356
     0xab9db3a6: "undead_hunter_named_00", // 2879239078
     0xaba42dac: "ancientguardian_spearman_46", // 2879663532
     0xaba44bcf: "mountain_lion_21", // 2879671247
-    0xabb24a0d: "anubianguardian_archer_67_elite", // 2880588301
+    0xaba8d669: "ghost_frozen_40", // 2879968873
+    0xabb847ad: "lifemagicshield", // 2880980909
     0xabba8fda: "lost_fencer_06sw09", // 2881130458
     0xabbcbfc5: "corruptedlegion_cyclops_66", // 2881273797
-    0xabbd01ec: "wolf_black_05wc09", // 2881290732
-    0xabbeed00: "undead_navigator_11md05a", // 2881416448
+    0xabbce75f: "bear_grizzly_54", // 2881283935
+    0xabc48f3e: "damned_villager_hammer_named_03gc09_elite", // 2881785662
     0xabc58f10: "bear_grizzly_16_elite", // 2881851152
+    0xabd12fcf: "damned_acolyte_58", // 2882613199
     0xabd72956: "risen_whole_body_33", // 2883004758
-    0xabdbcf69: "evil_knight_longsword_09fl07", // 2883309417
     0xabdcd680: "ghost_plagued_61", // 2883376768
     0xabdf6c2d: "wolf_timber_36", // 2883546157
+    0xabe6c7af: "wolf_grey_47", // 2884028335
     0xabec13dd: "undead_navigator_33", // 2884375517
     0xabf2d59c: "fl_megaflora_razorlotus_09fl03", // 2884818332
     0xabf9b94a: "ghost_charred_07sm05b", // 2885269834
-    0xabfb84ed: "ancientguardian_greatsword_named_s4_1", // 2885387501
     0xabfc2e6a: "alligator_black_62", // 2885430890
     0xabfea220: "corruption_swarmer_dg_ebonscale_00", // 2885591584
+    0xac022cd0: "tiger_53", // 2885823696
     0xac02fe12: "risen_l-r_arm_18", // 2885877266
+    0xac04fc16: "damned_villager_shovel_63", // 2886007830
     0xac075a59: "drowned_sailor_1h_sword_60", // 2886163033
+    0xac19dd02: "bobcat_50", // 2887376130
+    0xac206199: "undead_navigator_4", // 2887803289
     0xac2a9a3c: "risen_regurgitator_17", // 2888473148
+    0xac2c2056: "hercyne_gorilla_broodmother", // 2888573014
+    0xac3329a2: "wolf_alpha_47", // 2889034146
     0xac3f344d: "ck_undead_bloated_corpse_10ws03d", // 2889823309
-    0xac58254f: "damned_villager_lumberaxe_04nw10", // 2891457871
-    0xac5a2eed: "undead_berserker_37_15ec00", // 2891591405
+    0xac3f404b: "alligator_strange_37", // 2889826379
+    0xac4a13a4: "damned_villager_pitchfork_50", // 2890535844
+    0xac4d2937: "dryad_soldier_41", // 2890737975
     0xac6702f2: "ck_undead_navigator_10ws03a1_named", // 2892432114
     0xac6bae32: "skeleton_archer_43", // 2892738098
-    0xac6fd98d: "undead_shaman_04nw10", // 2893011341
     0xac81d7c4: "undead_navigator_37", // 2894190532
     0xac844dd5: "fl_spriggan_adolescent_09fl03a", // 2894351829
     0xac899630: "dynasty_musketeer_named_08qp02", // 2894698032
-    0xac8a0699: "undead_navigator_09fl07", // 2894726809
     0xac8b03b6: "wolf_grey_43", // 2894791606
     0xac8c88f7: "icedryad_melee_frostfang_62", // 2894891255
     0xac91ea73: "alligator_black_66", // 2895243891
-    0xac9d5589: "elk_doe_13", // 2895992201
+    0xacb2a834: "wolf_timber_32", // 2897389620
     0xacb48454: "ck_undead_navigator_10ws09_elite", // 2897511508
     0xacbaed4f: "risen_whole_body_37", // 2897931599
+    0xacc51270: "ghost_frozen_44", // 2898596464
     0xacc9e9b5: "ancientguardian_spearman_42", // 2898913717
+    0xacce9081: "elephant_h", // 2899218561
+    0xacd12346: "bear_grizzly_50", // 2899387206
     0xacd17bdc: "corruptedlegion_cyclops_62", // 2899409884
     0xace0a284: "primal_lion_60", // 2900402820
     0xacec83f0: "ck_blackbone_lost_2hblunderbuss_named_10ws04_sable", // 2901181424
     0xaced579b: "undead_officer_62", // 2901235611
-    0xacf126e8: "anubianguardian_brute_67_elite", // 2901485288
-    0xacf420f3: "undead_officer_05wc05b", // 2901680371
-    0xacffc7ee: "skeleton_2h_sword_11md08", // 2902444014
+    0xacff149f: "damned_cultist_34", // 2902398111
     0xad0e38c1: "ck_goldcursed_1hsword_10ws10b", // 2903390401
     0xad2f9997: "ck_ghost_shackled_10ws07", // 2905577879
     0xad32ab6a: "skeleton_1h_sword_56", // 2905779050
-    0xad3c2df9: "legion_villager_kitchenknife_16bs10", // 2906402297
     0xad4059f9: "fl_anubianguardian_scarab_09fl06", // 2906675705
     0xad4b9a6e: "undead_pistoleer_19", // 2907413102
-    0xad5886af: "wolf_elemental_earth_05wc06", // 2908260015
     0xad6075ce: "damned_villager_pickaxe_43", // 2908779982
-    0xad670fd6: "winterwalk", // 2909212630
-    0xad67e07f: "sulfur_elemental_soldier_16bs10", // 2909266047
-    0xad8b4ea2: "bear_damned_dt2", // 2911588002
-    0xad986cc1: "drowned_sailor_2h_axe_15ec02c", // 2912447681
-    0xada702fa: "skeleton_crawler_16bs06", // 2913403642
-    0xadb09d6a: "blight_fiend_07sm09b", // 2914033002
-    0xadb28ecc: "skeleton_mage_03gc10b", // 2914160332
+    0xad7d98ad: "damned_villager_sickle_51", // 2910689453
+    0xad882d4c: "damned_villager_cleaver_39", // 2911382860
+    0xad8e6ada: "damned_villager_skinning_knife_65", // 2911791834
+    0xadac5070: "dryad_archer_48", // 2913751152
     0xadb5bd37: "dynasty_maiden_dg_shattermtn_00", // 2914368823
-    0xadc0cf0f: "ancientguardian_spearman_12mb02", // 2915094287
     0xadc1f11e: "skeleton_club_42", // 2915168542
     0xadc57e15: "ancientguardian_heavy_dg_greatcleave_00_00", // 2915401237
-    0xadcbe598: "drowned_sailor_1h_club_11md05a", // 2915820952
-    0xadcc8d13: "primal_lion_05wc02", // 2915863827
-    0xadd37a36: "skeleton_1h_club_11md01c", // 2916317750
+    0xadc6983a: "tendril_corruption_61", // 2915473466
     0xadd99cd1: "skeleton_2h_sword_55", // 2916719825
-    0xade6a917: "turkey_36", // 2917574935
+    0xadeff647: "damned_villager_kitchenknife_57", // 2918184519
+    0xae094c61: "corruption_heavy_minion_restlessshores", // 2919844961
     0xae0cc9f7: "undead_gravedigger_59", // 2920073719
+    0xae23f97f: "wolf_elemental_ice_61", // 2921593215
     0xae2a6178: "hercyne_typhon", // 2922013048
-    0xae2ee461: "seasong", // 2922308705
     0xae347b5f: "lynx", // 2922675039
-    0xae39a1fa: "bloated_corpse_13wf08", // 2923012602
-    0xae47a07a: "undead_officer_12mb06b", // 2923929722
+    0xae3eda7e: "damned_pistoleer_m-f_60", // 2923354750
+    0xae48e222: "damned_villager_skinning_knife_38", // 2924012066
+    0xae4ea5b4: "damned_villager_cleaver_64", // 2924389812
     0xae519e90: "wolf_black_08qp07a", // 2924584592
-    0xae521dae: "elk_stag_27", // 2924617134
+    0xae52a71d: "undead_hunter_52", // 2924652317
     0xae535cfc: "boar_stripped_54", // 2924698876
+    0xae5f1d97: "wolf_white_62", // 2925469079
     0xae65fdc7: "corruption_swarmer_03gc03_elite", // 2925919687
-    0xae6a9ab5: "ancientguardian_javelineer_16bs07", // 2926222005
+    0xae6a714b: "dynasty_summoner_empress_solo", // 2926211403
     0xae6ad888: "dryad_archer_15", // 2926237832
-    0xae756a9a: "legion_villager_hammer_16bs02", // 2926930586
+    0xae7e1e9f: "corrupted_tiger_55", // 2927500959
+    0xae82e272: "damned_villager_axethrower_m-f_52", // 2927813234
     0xae8d1296: "undead_pistoleer_44", // 2928480918
-    0xae901bb4: "evil_knight_longsword_28", // 2928679860
     0xae90d97f: "lynx_21", // 2928728447
     0xae910a90: "withered_brute_named_10", // 2928741008
-    0xae9284d8: "dryad_soldier_07sm09b", // 2928837848
-    0xaea191f1: "damned_villager_cleaver_04nw06b", // 2929824241
     0xaeb0944b: "dune_phantom_berserker_65", // 2930807883
-    0xaeb0d430: "blight_fiend_59", // 2930824240
-    0xaeb558a7: "damned_villager_hammer_11md00h", // 2931120295
     0xaeb55abb: "evil_knight_bow_17", // 2931120827
     0xaeb78c0c: "ck_drowned_miner_10ws06_tide", // 2931264524
-    0xaeb9e074: "impermeable", // 2931417204
     0xaecf05e9: "ck_lost_1h_sword_10ws02_highpass", // 2932803049
     0xaee10c09: "damned_villager_hammer_33", // 2933984265
+    0xaee23c7b: "torso_boss_ice_bomb", // 2934062203
     0xaeeb87b9: "invasion_bomber", // 2934671289
     0xaefc3783: "wolf_minion_08qp05", // 2935764867
     0xaf038471: "fl_swamp_dryad_soldier_09fl03", // 2936243313
-    0xaf1144f1: "damned_villager_cleaver_13wf05", // 2937144561
-    0xaf15387f: "anubianguardian_brute_16bs03", // 2937403519
+    0xaf17268e: "corruption_heavy_dt1", // 2937529998
     0xaf19a345: "sandworm", // 2937692997
     0xaf19f1c7: "legion_legionnaire_60", // 2937713095
     0xaf3087ca: "yeti_named_07sm08b", // 2939193290
-    0xaf42900d: "pig_domestic_02bw06", // 2940375053
-    0xaf475317: "legion_villager_pickaxe_16bs11", // 2940687127
     0xaf526f29: "anubianguardian_spearman_dg_brimstonesands_00", // 2941415209
-    0xaf5b09ce: "evil_knight_lifestaff_s4", // 2941979086
     0xaf68ea67: "legion_signifer_named_03", // 2942888551
+    0xaf6b960b: "ghost_starved_48", // 2943063563
+    0xaf779a61: "ghost_plagued_38", // 2943851105
     0xaf7c9726: "ck_lost_berserker_10ws02_highpass", // 2944177958
     0xaf7ceaa5: "ck_drowned_sailor_1h_sword_10ws06_tide", // 2944199333
     0xaf899243: "risen_corruption_impaler_11md12_elite", // 2945028675
     0xaf96d069: "skeleton_spear_49", // 2945896553
     0xaf9cb81c: "fl_explosive_sprout_poison_elite_09fl12", // 2946283548
     0xafa9ef1f: "bearelemental", // 2947149599
-    0xafac34b3: "cow_12mb06", // 2947298483
+    0xaface4f2: "sand_elemental_soldier_spawn", // 2947343602
     0xafb0eeb4: "withered_grunt_22", // 2947608244
     0xafbcecac: "loot_goblin", // 2948394156
-    0xafbcf1df: "boar_34", // 2948395487
-    0xafdd6334: "anubianguardian_brute_16bs02f", // 2950521652
-    0xafe26abe: "sheep_churro_38", // 2950851262
-    0xafe66d0e: "undead_hunter_05wc02", // 2951113998
-    0xafea40f5: "bloated_corpse_51", // 2951364853
-    0xaff9a666: "risen_02bw03b", // 2952373862
+    0xafc476ea: "risen_l-r_arm_45", // 2948888298
+    0xaff313b5: "wolf_elemental_earth_54", // 2951943093
     0xaffa3866: "fl_anubianguardian_horus_named_09fl06", // 2952411238
     0xaffbf741: "ancient_javelineer", // 2952525633
     0xaffcbd25: "damned_rifleman_m-f_07sm06c", // 2952576293
-    0xb0198429: "anubianguardian_archer_12bs10e", // 2954462249
-    0xb01f9d26: "drowned_sailor_1h_club_44_15ec00", // 2954861862
-    0xb024e8f6: "elk_stag_33", // 2955208950
-    0xb030dc84: "damned_villager_cleaver_04nw09a", // 2955992196
+    0xb007b807: "wolf_black_62", // 2953295879
+    0xb008ebc7: "corrupted_tiger_41", // 2953374663
+    0xb0245245: "undead_hunter_46", // 2955170373
+    0xb025a9a4: "boar_stripped_40", // 2955258276
+    0xb02f0e08: "undead_berserker_13", // 2955873800
     0xb04c0327: "damnedhound_dt5", // 2957771559
     0xb053b710: "fl_chameleon_09fl11", // 2958276368
     0xb061b307: "ck_ghost_plagued_q4_waveevent", // 2959192839
-    0xb06fcc24: "risen_onearm_13wf08", // 2960116772
     0xb0889d6b: "legion_sagittarii_named_00", // 2961743211
-    0xb08d695e: "undead_officer_04nw11b", // 2962057566
     0xb097f951: "damned_villager_hammer_27", // 2962749777
     0xb09dc965: "ck_spectral_lost_1hsword_10ws08", // 2963130725
-    0xb0b96e5f: "skeleton_archer_03gc10d", // 2964942431
-    0xb0cbc9db: "turkey_12mb06", // 2966145499
+    0xb0a028b2: "evil_knight_fire_champion_magmaball", // 2963286194
+    0xb0a22c9d: "elk_doe_6", // 2963418269
+    0xb0a2443d: "wolf_minion_s4_1", // 2963424317
+    0xb0a67420: "tendril_corruption_zanefight", // 2963698720
+    0xb0b9dc58: "damned_1h_swordsman_m-f_36", // 2964970584
     0xb0d59ff3: "undead_officer_shield", // 2966790131
     0xb0e4fadc: "evil_knight_greataxe_19", // 2967796444
     0xb0e7ffc8: "withered_brute_named_04", // 2967994312
-    0xb0f15af7: "undead_shaman_05wc08", // 2968607479
-    0xb0f7ec92: "skeleton_mage_13wf02", // 2969037970
+    0xb0f4172a: "damned_villager_axethrower_m-f_46", // 2968786730
     0xb0fbe7ce: "undead_pistoleer_50", // 2969298894
-    0xb0ff0cf5: "lynx_11md03", // 2969505013
-    0xb112294e: "damned_bowman_m-f_07sm05c", // 2970757454
-    0xb11e22fc: "anubianguardian_horus_12bs10b", // 2971542268
-    0xb11f3420: "skeleton_1h_sword_13wf02a", // 2971612192
-    0xb131a64f: "legion_villager_pickaxe_16bs05", // 2972821071
+    0xb1288938: "evil_knight_heavy_firevariant", // 2972223800
     0xb1499002: "ck_blackbone_lost_2haxe", // 2974388226
-    0xb14b22cd: "undead_pistoleer_42_15ec00", // 2974491341
+    0xb14c8129: "hercyne_wolf", // 2974581033
     0xb14efe33: "fl_dg_firstlight_01_megaflora_razorlotus", // 2974744115
     0xb1687fa6: "undead_berserker_named_03", // 2976415654
-    0xb16bc6c0: "ancientguardian_mage_11md00c", // 2976630464
-    0xb16dbfea: "undead_berserker_09fl09a", // 2976759786
+    0xb17ba225: "goat_mountain_40", // 2977669669
     0xb181e827: "turkey_03gc05", // 2978080807
     0xb18466dd: "evil_knight_bow_dg_greatcleave01_00", // 2978244317
+    0xb185e6ed: "wolf_elemental_earth_40", // 2978342637
     0xb186ec5c: "drowned_sailor_1h_club_39", // 2978409564
-    0xb19cb5ad: "bloated_corpse_45", // 2979837357
-    0xb1abb25d: "ghost_charred_16bs02", // 2980819549
-    0xb1b36d8a: "skeleton_crawler_11md00a", // 2981326218
+    0xb19b1ea6: "damned_cultist_minion", // 2979733158
+    0xb1b0b807: "season_01_event_dryad_soldier", // 2981148679
+    0xb1b283b2: "risen_l-r_arm_51", // 2981266354
+    0xb1b727f9: "drowned_sailor_1h_sword_29", // 2981570553
     0xb1c45f41: "ancientguardian_reaver_48", // 2982436673
     0xb1c61bec: "withered_grunt_36", // 2982550508
     0xb1ca0487: "boar_20", // 2982806663
+    0xb1d28f33: "damned_axeman_m-f_49", // 2983366451
     0xb1d599a3: "damned_cultist_named_04", // 2983565731
+    0xb1d6773a: "hercyne_broodmother_flower_ceiling", // 2983622458
     0xb1d85c3c: "undead_navigator_10ws09_elite", // 2983746620
     0xb1e5c826: "damned_villager_ladel_30", // 2984626214
-    0xb1f5f94c: "skeleton_mage_11md06c", // 2985687372
+    0xb1efb9de: "damned_villager_rake_62", // 2985277918
     0xb1fe502f: "skeleton_crawler_dg_greatcleave_01", // 2986233903
-    0xb20b4426: "alligator_black_08qp02", // 2987082790
-    0xb20fb6ed: "sokolgard", // 2987374317
+    0xb20dd4ff: "ftue_corrupted_sailor_z2", // 2987250943
+    0xb215b930: "legion_desert_coyote_elite", // 2987768112
     0xb21d5b6a: "skeleton_archer_57", // 2988268394
-    0xb227f8e9: "elk_doe_11md01", // 2988964073
-    0xb22d0780: "lakeshore", // 2989295488
-    0xb22d9e1a: "anubianguardian_archer_16bs07_serpentspass", // 2989334042
     0xb2320cc3: "fl_dg_firstlight_01_chameleon", // 2989624515
-    0xb233d4f5: "drowned_sailor_2h_axe_12mb06a", // 2989741301
     0xb23bdc6f: "dryad_soldier_55", // 2990267503
-    0xb261bf8f: "turkey_vulture_16bs02", // 2992750479
+    0xb23ce6fc: "damned_villager_pitchfork_44", // 2990335740
+    0xb245dcfa: "wolf_alpha_53", // 2990923002
     0xb261e367: "corruption_swarmer_dt4", // 2992759655
     0xb262cd97: "ancient_guardian_mage_named_07sm07", // 2992819607
-    0xb26a33b1: "boar_12mb02", // 2993304497
-    0xb26b3b55: "turkey_13wf02", // 2993371989
+    0xb267e85f: "icemagicentomb", // 2993154143
     0xb26f285a: "bobcat_44", // 2993629274
+    0xb274d988: "tiger_47", // 2994002312
     0xb2778681: "withered_brute_29", // 2994177665
     0xb2791cdd: "legion_villager_cleaver_67", // 2994281693
     0xb2795836: "fl_wolf_elemental_earth", // 2994296886
-    0xb27c6822: "anubianguardian_scarab_63", // 2994497570
-    0xb27e4659: "anubianguardian_scarab_12bs10c", // 2994619993
-    0xb2818fbb: "undead_officer_11md00d", // 2994835387
-    0xb2822ff6: "damned_villager_knife_39", // 2994876406
-    0xb28bcf44: "legion_villager_ladel_16bs02", // 2995507012
     0xb293174c: "ck_undead_pirate_brute_named_10ws08_village", // 2995984204
-    0xb29606fb: "dryad_shaman_14ac12a", // 2996176635
     0xb2979410: "ck_undead_berserker_10ws06_tide", // 2996278288
-    0xb2992894: "bloated_corpse_02bw07", // 2996381844
     0xb2a7d61e: "bear_grizzly_44", // 2997343774
+    0xb2b3e728: "ghost_frozen_50", // 2998134568
     0xb2b55a98: "skeleton_archer_dg_reekwater_00", // 2998229656
     0xb2b81fbc: "bloated_corpse", // 2998411196
     0xb2bf1ced: "ancientguardian_spearman_56", // 2998869229
@@ -5577,836 +4720,702 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xb2bf8538: "undead_hunter_13wf08a", // 2998895928
     0xb2c07a4f: "undead_hunter_named_04_08qp07", // 2998958671
     0xb2c2dce3: "evil_knight_longsword", // 2999114979
+    0xb2c45d6c: "wolf_timber_26", // 2999213420
     0xb2cc1817: "risen_whole_body_23", // 2999719959
-    0xb2defea4: "rothoard", // 3000958628
+    0xb2f24ca4: "withered_grunt_6", // 3002223780
     0xb2f7229c: "undead_navigator_23", // 3002540700
     0xb2fb09d4: "undead_pistoleer_08qp05b", // 3002796500
+    0xb2fdf6ee: "wolf_grey_57", // 3002988270
     0xb303642c: "dune_phantom_tank_63", // 3003343916
-    0xb304a8fc: "bison_strange_62", // 3003427068
-    0xb305fe45: "anubianguardian_panther_67_elite_named_00", // 3003514437
-    0xb3146d78: "starstone", // 3004460408
+    0xb30b6df5: "damned_villager_sickle_45", // 3003870709
     0xb3148b72: "dryad_shaman_named_01", // 3004468082
     0xb31545eb: "ck_bear_grizzly_10ws08", // 3004515819
+    0xb3168096: "damned_villager_pickaxe_57", // 3004596374
     0xb318b69a: "drowned_miner_43", // 3004741274
+    0xb32d9230: "bear_black_49", // 3006108208
     0xb3445e32: "skeleton_1h_sword_42", // 3007602226
     0xb346777e: "risen_regurgitator_25_elite", // 3007739774
-    0xb34ad8a1: "legion_villager_kitchenknife_16bs04", // 3008026785
     0xb35c4929: "tendril_corruption_50_elite", // 3009169705
-    0xb365adf7: "withered_grunt_11md00g", // 3009785335
     0xb36bc5d2: "withered_swarmancer_named_06sw01", // 3010184658
     0xb36ea783: "anubianguardian_reaver_61", // 3010373507
     0xb3736546: "sulfur_dragon_named_01", // 3010684230
     0xb379f7fc: "dynasty_spearman_named_08qp07", // 3011115004
     0xb3809975: "ancientguardian_javelineer_62", // 3011549557
-    0xb3905c4f: "turkey_22", // 3012582479
-    0xb3a28561: "bitterblade", // 3013772641
-    0xb3a58f6e: "skeleton_1h_club_11md00g", // 3013971822
+    0xb38ea7de: "damned_pistoleer_m-f_29", // 3012470750
+    0xb399031f: "damned_villager_kitchenknife_43", // 3013149471
+    0xb3a4ad24: "drowned_sailor_1h_sword_2", // 3013913892
     0xb3af6989: "skeleton_2h_sword_41", // 3014617481
-    0xb3c863d2: "risen_l-r_arm_12mb10b", // 3016254418
+    0xb3b70446: "skeleton_club_56", // 3015115846
     0xb3ca81f7: "undead_officer_24_elite", // 3016393207
-    0xb3d0124c: "drowned_sailor_1h_sword_shield_41_15ec00", // 3016757836
-    0xb3d1f7a2: "skeleton_crawler_16bs12", // 3016882082
-    0xb3dd24bf: "skeleton_1h_sword_11md04b", // 3017614527
-    0xb3e260c6: "festerspike", // 3017957574
-    0xb3e4bd02: "anubianguardian_archer_16bs03", // 3018112258
     0xb3ff1239: "boar_58_08qp01", // 3019838009
+    0xb3ffc0f5: "skeleton_2h_sword_dg_reekwater_00_spawn", // 3019882741
     0xb403639a: "anubianguardian_reaver_65", // 3020120986
-    0xb404be5f: "dynasty_musketeer_08qp01", // 3020209759
     0xb40601cb: "withered_swarmancer_named_06sw05", // 3020292555
     0xb4064dea: "fl_megaflora_razorlotus_named_09fl04", // 3020312042
-    0xb40869ee: "withered_grunt_11md00c", // 3020450286
     0xb40d6d3f: "ck_alligator_young_10ws04", // 3020778815
     0xb40f6f91: "fl_anubianguardian_horus_09fl01a", // 3020910481
     0xb41433e5: "dynasty_spearman_named_08qp03", // 3021222885
-    0xb4262cb5: "desert_coyote", // 3022400693
     0xb4299a2b: "skeleton_1h_sword_46", // 3022625323
     0xb436e206: "ck_ghost_frozen_10ws06", // 3023495686
     0xb43de4f9: "ck_blackbone_lost_2hblunderbuss_10ws09_elite", // 3023955193
-    0xb464854f: "skeleton_2h_sword_03gc10c", // 3026486607
+    0xb466a9ec: "damned_villager_sickle_41", // 3026627052
     0xb46ea035: "dune_phantom_tank_67", // 3027148853
     0xb47b448f: "damned_villager_pickaxe_53", // 3027977359
-    0xb4802526: "undead_officer_36_15ec00", // 3028296998
-    0xb484d135: "withered_swarmancer_12mb10a", // 3028603189
-    0xb487edec: "alligator_young_05wc05b", // 3028807148
-    0xb489791b: "anubianguardian_archer_16bs07", // 3028908315
-    0xb48e274d: "undead_pistoleer_05wc05c", // 3029215053
-    0xb4a03a2f: "blight_fiend_14ac15", // 3030399535
+    0xb4931589: "fl_chameleon_elite_09fl12", // 3029538185
+    0xb4931c0d: "damned_villager_cleaver_29", // 3029539853
     0xb4a3ee09: "ghost_starved_08qp07", // 3030642185
-    0xb4b11cfa: "desert_medium_scorpion_16bs04", // 3031506170
     0xb4b76131: "dryad_archer_58", // 3031916849
-    0xb4be9e10: "corruption_swarmer_07sm05a", // 3032391184
     0xb4c2ad90: "skeleton_2h_sword_45", // 3032657296
-    0xb4d16854: "withered_grunt_06sw08a", // 3033622612
+    0xb4c9693d: "drowned_sailor_1h_sword_6", // 3033098557
+    0xb4dac05f: "skeleton_club_52", // 3034234975
     0xb4ef5f1d: "damned_1h_swordsman_m_named_01", // 3035586333
     0xb4f3fd4f: "explosive_barrel_6_12mb01", // 3035888975
-    0xb4fd9856: "turkey_26", // 3036518486
-    0xb5040c21: "anubianguardian_panther_12bs10b", // 3036941345
-    0xb506ff4c: "turkey_13wf06", // 3037134668
-    0xb507f7a8: "boar_12mb06", // 3037198248
-    0xb50c7b96: "turkey_vulture_16bs06", // 3037494166
-    0xb511ac3b: "anubianguardian_scarab_67", // 3037834299
+    0xb4f4c706: "damned_villager_kitchenknife_47", // 3035940614
+    0xb502ec43: "bobcat_40", // 3036867651
     0xb514d8c4: "legion_villager_cleaver_63", // 3038042308
+    0xb5191d91: "tiger_43", // 3038322065
     0xb5195f8c: "alligator_black_59_08qp01", // 3038338956
-    0xb51f4e63: "tundra_garrison", // 3038727779
-    0xb51facb6: "risen_regurgitator_11md07", // 3038751926
     0xb5219e13: "alligator_strange_named_00", // 3038879251
+    0xb523bd5a: "fl_gorilla_ice_elite_09fl12", // 3039018330
+    0xb524710a: "alligator_strange_27", // 3039064330
+    0xb52818e3: "wolf_alpha_57", // 3039303907
     0xb52da0bd: "drowned_sailor_1h_club_60", // 3039666365
-    0xb53ada05: "skeleton_mage_12mb02", // 3040532997
+    0xb534ccf6: "damned_axeman_m-f_dg_restless_00_spawn", // 3040136438
+    0xb55122e5: "damned_villager_pitchfork_40", // 3041993445
     0xb5561876: "dryad_soldier_51", // 3042318454
-    0xb557a0d2: "cronefinger", // 3042418898
     0xb5632fc2: "fl_swamp_dryad_prowler", // 3043176386
-    0xb5676dd6: "damned_axeman_m-f_07sm01", // 3043454422
     0xb5709f73: "skeleton_archer_53", // 3044056947
     0xb5719ce0: "bloated_corpse_13wf08a", // 3044121824
     0xb57234d9: "totem_pirate_cursed_62", // 3044160729
     0xb575fea0: "ck_skeleton_1h_sword_10ws02_sable_prison", // 3044408992
     0xb577ae9f: "sulfur_elemental_entity", // 3044519583
-    0xb577d7f3: "edgeflow", // 3044530163
+    0xb57897f7: "withered_brute_dg_everfall_00", // 3044579319
     0xb58522d0: "dunewalker_waterseeker_icestaff_trial_quest", // 3045401296
+    0xb59032f7: "wolf_grey_53", // 3046126327
     0xb59ae685: "undead_navigator_27", // 3046827653
     0xb5a1dc0e: "risen_whole_body_27", // 3047283726
-    0xb5a57c48: "sulfur_elemental_entity_16bs09", // 3047521352
-    0xb5a68ab0: "ironrose", // 3047590576
     0xb5bbb155: "primal_lion_named_10ws01", // 3048976725
-    0xb5c197ac: "damned_msq_invader", // 3049363372
+    0xb5c01b18: "totem_scorpion_nest_lg_elite", // 3049265944
     0xb5c59cb8: "starved_bandit_1h_club_63", // 3049626808
     0xb5ca1207: "bear_grizzly_40", // 3049918983
     0xb5cbeeeb: "ck_undead_pirate_brute_10ws09_elite", // 3050041067
+    0xb5d2be97: "mountain_lion_35", // 3050487447
     0xb5d2d8f4: "ancientguardian_spearman_52", // 3050494196
     0xb5d3508c: "hercyne_corvid_named_raid_cutlasskeys_00", // 3050524812
     0xb5db61fd: "damned_priest_dg_greatcleave_00", // 3051053565
-    0xb5e60b5d: "legion_villager_ladel_16bs06", // 3051752285
+    0xb5de2331: "ghost_frozen_54", // 3051234097
     0xb5f1c982: "risen_corruption_entity_named_03gc07", // 3052521858
-    0xb5f4ec8d: "bloated_corpse_02bw03", // 3052727437
-    0xb5fab35a: "cannonstorm", // 3053106010
+    0xb5f7bceb: "legion_damned_hound_elite", // 3052911851
     0xb605bbbf: "undead_berserker_named_07", // 3053829055
-    0xb60602d9: "ancientguardian_mage_11md00g", // 3053847257
     0xb60a6126: "fl_gorilla_melee", // 3054133542
-    0xb61405b9: "skeleton_spear_11md06c", // 3054765497
     0xb6175f6b: "ck_goldcursed_2hblunderbuss_named_10ws07", // 3054985067
-    0xb62f2ff4: "pig_domestic_12mb09", // 3056545780
-    0xb6346d65: "alligator_young_12mb06b", // 3056889189
     0xb6376034: "ck_undead_navigator_10ws03f", // 3057082420
     0xb63da7c4: "undead_pistoleer_12mb06c", // 3057493956
     0xb658b05b: "ck_mountain_lion_spectral_10ws09_elite", // 3059265627
-    0xb65c6256: "legion_villager_pickaxe_16bs01", // 3059507798
-    0xb66284cb: "damned_villager_pickaxe_04nw09a", // 3059909835
     0xb665d23c: "dynasty_summoner_dg_shattermtn_00", // 3060126268
-    0xb66b6720: "desert_bison_strange_16bs09", // 3060492064
     0xb66c7b66: "dunewalker_warmonger_greataxe", // 3060562790
     0xb66cab20: "ghost_plagued_28", // 3060575008
     0xb670a74a: "ghost_starved_58", // 3060836170
-    0xb686fab5: "risen_corruption_entity_07sm05b", // 3062299317
+    0xb678a2fb: "fl_hercyne_reindeer_09fl02_waveevent", // 3061359355
+    0xb6827dc7: "damned_villager_rake_66", // 3062005191
     0xb6880c3f: "damned_villager_ladel_34", // 3062369343
-    0xb68ca579: "risen_whole_body_12mb03b", // 3062670713
     0xb68de128: "skeleton_spear_59", // 3062751528
     0xb6a362c4: "ck_goldcursed_2hblunderbuss_10ws10b", // 3064160964
-    0xb6a7c09e: "boar_24", // 3064447134
+    0xb6a697d1: "fl_mammoth_boss_earth_root_void", // 3064371153
     0xb6abdff5: "withered_grunt_32", // 3064717301
-    0xb6acb095: "sheep_churro_12mb09", // 3064770709
-    0xb6b2bfba: "skeleton_2h_sword_11md09a", // 3065167802
+    0xb6b0164f: "invasion_hound", // 3064993359
     0xb6b85dba: "damned_cultist_named_00", // 3065535930
     0xb6bea622: "dryad_shaman_65_elite", // 3065947682
-    0xb6c67644: "ghost_charred_16bs06", // 3066459716
     0xb6c98a92: "evil_knight_spear_28", // 3066661522
-    0xb6dea993: "skeleton_crawler_11md00e", // 3068045715
+    0xb6df47ab: "risen_l-r_arm_55", // 3068086187
     0xb6e1e771: "undead_navigator_65_elite", // 3068258161
+    0xb6e822f4: "wolf_elemental_earth_44", // 3068666612
     0xb6f07cfa: "fl_swamp_dryad_archer_09fl02_waveevent", // 3069213946
-    0xb6f171b4: "bloated_corpse_41", // 3069276596
     0xb6f39f84: "evil_knight_commander_named_08qp02", // 3069419396
-    0xb6f7a39c: "turkey_15ec03", // 3069682588
-    0xb7108dbe: "undead_pistoleer_06sw07", // 3071315390
+    0xb7042568: "skeleton_2h_sword_18", // 3070502248
     0xb7173fb7: "undead_grenadier", // 3071754167
+    0xb717f8b6: "undead_gravedigger_49", // 3071801526
     0xb71b1b94: "corruption_entity_dg_ebonscale_00", // 3072007060
     0xb721c73e: "damnedhound_dt1", // 3072444222
     0xb72a61ac: "ancientguardian_warhammer_icevariant_dg_greatcleave_00", // 3073008044
     0xb734f2f0: "hercyne_wolf_raid_cutlasskeys_00", // 3073700592
     0xb73ee991: "undead_javelineer_62", // 3074353553
-    0xb745d095: "bloated_corpse_dg_windsward_00", // 3074805909
-    0xb7492cef: "elk_stag_37", // 3075026159
-    0xb75477e1: "damned_villager_cleaver_08qp06", // 3075766241
+    0xb7486dbd: "boar_stripped_44", // 3074977213
+    0xb749965c: "undead_hunter_42", // 3075053148
+    0xb753d363: "damned_villager_skinning_knife_28", // 3075724131
     0xb757e5c1: "fl_anubianguardian_reaver_09fl06", // 3075990977
-    0xb75bdc80: "drowned_sailor_2h_axe_45_15ec00", // 3076250752
-    0xb76e5bdb: "legion_villager_hammer_16bs12", // 3077463003
-    0xb7744030: "anubianguardian_archer_12bs10a", // 3077849136
+    0xb7652fde: "corrupted_tiger_45", // 3076861918
     0xb77b4859: "fl_wolf_elemental_earth_09fl03", // 3078309977
     0xb7862698: "dynasty_warrior_named_08qp01", // 3079022232
+    0xb786ded1: "bear_black_10", // 3079069393
     0xb78a3bd1: "withered_brute_named_00", // 3079289809
     0xb792f848: "damned_spearman", // 3079862344
     0xb79623d7: "undead_pistoleer_54", // 3080070103
     0xb797c660: "ck_undead_grenadier_10ws04_sable", // 3080177248
     0xb799d333: "damned_villager_axethrower_m-f_42", // 3080311603
     0xb79a8cba: "swamp_dryad_shaman_60", // 3080359098
-    0xb7a60dc2: "turkey_12mb02", // 3081113026
-    0xb7a70526: "boar_13wf02", // 3081176358
-    0xb7abe571: "blight_fiend_49", // 3081495921
     0xb7ba9867: "undead_bloated_corpse_10ws09", // 3082459239
     0xb7c302d6: "ancientguardian_reaver_dg_greatcleave_01", // 3083010774
-    0xb7cc83a7: "dryad_prowler_14ac14b", // 3083633575
-    0xb7cc8597: "fl_spriggan_adolescent_09fl10", // 3083634071
     0xb7d41841: "damned_1h_swordsman_m-f_32", // 3084130369
     0xb7d6e333: "ck_undead_pirate_brute_10ws03_named", // 3084313395
     0xb7e10e12: "fl_rat_hercynerat", // 3084979730
-    0xb7e56aff: "dryad_soldier_14ac14c", // 3085265663
     0xb7e737e8: "ck_undead_pirate_brute_10ws03c3_named", // 3085383656
-    0xb7eca651: "wolf_timber_15ec01", // 3085739601
-    0xb7efc982: "damned_1h_swordsman_m-f_07sm03", // 3085945218
     0xb7f448c7: "risen_whole_body_named_dg_windsward_00", // 3086239943
-    0xb7f4fc9e: "evil_knight_caster_02bw07", // 3086285982
+    0xb7f6959a: "ancientguardian_mage_named_s4", // 3086390682
     0xb8016bd2: "drowned_sailor_1h_sword_25", // 3087100882
+    0xb802cd9d: "damned_villager_shovel_26", // 3087191453
+    0xb80610b8: "damned_rifleman_m-f_46", // 3087405240
     0xb816d9ac: "evil_knight_heavy_elite", // 3088505260
-    0xb81a0378: "cow_02bw01", // 3088712568
-    0xb81a815a: "ancientguardian_bowman_s4", // 3088744794
-    0xb826004e: "dune_phantom_berserker_16bs07", // 3089498190
+    0xb81824c4: "ghost_shipwrecked_56", // 3088590020
     0xb828accb: "bear_damned_named_07sm08_elite", // 3089673419
-    0xb829a5fa: "skeleton_archer_10ws04", // 3089737210
-    0xb82af986: "bloated_corpse_49", // 3089824134
+    0xb82c40bb: "dynasty_spearman_60", // 3089907899
     0xb82cabb7: "risen_regurgitator_52", // 3089935287
     0xb82f8f3b: "evil_knight_mace_26", // 3090124603
-    0xb83201a1: "evil_knight_hound_03gc01", // 3090284961
+    0xb830a077: "drowned_sailor_1h_club_35", // 3090194551
     0xb83425a3: "fl_swamp_dryad_prowler_09fl03a", // 3090425251
     0xb8359c2d: "anubianguardian_brute_62", // 3090521133
-    0xb848a487: "armadillo_16bs12", // 3091768455
-    0xb84b4bca: "anubianguardian_spearman_16bs03", // 3091942346
+    0xb84c222f: "damned_villager_pitchfork_15", // 3091997231
     0xb84f857e: "ck_spectral_lost_2hblunderbuss_named_10ws08_fort", // 3092219262
     0xb856691a: "skeleton_spear_51", // 3092670746
-    0xb85e11e1: "damned_axeman_m-f_03gc08a", // 3093172705
+    0xb864c318: "damned_axeman_m-f_45", // 3093611288
     0xb86c07ef: "undead_grenadier_36", // 3094087663
     0xb872136a: "ancientguardian_reaver_44", // 3094483818
-    0xb87738a7: "sheep_churro_12mb01", // 3094821031
-    0xb887ea64: "legion_villager_pickaxe_16bs09", // 3095915108
     0xb890be2f: "bear_grizzly_08qp08_elite", // 3096493615
     0xb89399ee: "fl_dg_firstlight_01_gorilla_ranged", // 3096680942
-    0xb897ef8c: "legion_legionnaire_named_05_04nw10_01", // 3096965004
-    0xb8aab729: "legion_sagittarii_61", // 3098195753
+    0xb8ab2f78: "ghost_starved_50", // 3098226552
     0xb8aca17f: "ck_lost_1h_sword_10ws02_pirates_stand", // 3098321279
     0xb8ad6fd1: "dynasty_spearman_08qp08_elite", // 3098374097
-    0xb8b0ef12: "desert_bison_strange_16bs01", // 3098603282
     0xb8b4a088: "drowned_sailor_2h_axe_22", // 3098845320
     0xb8bb9fc6: "undead_grenadier_molotov_32", // 3099303878
     0xb8cddd59: "ghost_starved_named_07_04nw07", // 3100499289
     0xb8cfbe5d: "mountain_lion_60", // 3100622429
-    0xb8d64282: "undead_navigator_05wc05b", // 3101049474
-    0xb8f4a7c6: "pig_domestic_12mb01", // 3103041478
+    0xb8fc60e7: "bearelemental_62", // 3103547623
     0xb8fd7b13: "starved_mercenary_2h_axe_61", // 3103619859
     0xb9033660: "damned_villager_ladel_07sm06", // 3103995488
     0xb91bfd95: "ancientguardian_mage_61", // 3105619349
     0xb91ea537: "damned_acolyte_dt1", // 3105793335
-    0xb92700cf: "eldritch", // 3106341071
-    0xb927ef2d: "undead_gravedigger_02bw07", // 3106402093
-    0xb935564e: "skeleton_crawler_11md08", // 3107280462
     0xb942e0ec: "undead_pirate_brute_named_12mb01c", // 3108167916
     0xb94bc8a0: "dynasty_empress_pedestal", // 3108751520
     0xb950600c: "lynx_39", // 3109052428
-    0xb950a2c7: "evil_knight_longsword_30", // 3109069511
     0xb951b3e3: "withered_brute_named_08", // 3109139427
-    0xb97a9737: "damned_villager_axethrower_m-f_53_16bs08c", // 3111819063
+    0xb9687249: "drowned_miner_12", // 3110629961
+    0xb9750d8e: "ghost_charred_42", // 3111456142
     0xb980e3bb: "boar_3", // 3112231867
+    0xb989d3c7: "damned_bowman_52", // 3112817607
     0xb992d603: "blight_fiend", // 3113408003
+    0xb99ae386: "corruption_heavy_59", // 3113935750
     0xb9a0c1c1: "anubianguardian_panther", // 3114320321
-    0xb9ade06c: "skeleton_1h_sword_11md01c", // 3115180140
+    0xb9ad3ca1: "swamp_dryad_beast_arena_boss", // 3115138209
     0xb9b1a85d: "bear_black_named_08qp06", // 3115427933
-    0xb9b5c7c7: "anubianguardian_scarab_16bs03", // 3115698119
-    0xb9d03cdf: "undead_berserker_39_15ec00", // 3117432031
-    0xb9dd9d3f: "ancientguardian_javelineer_11md01c", // 3118308671
+    0xb9bbb3d8: "risen_corruption_entity_59", // 3116086232
+    0xb9c22466: "evil_knight_caster", // 3116508262
+    0xb9c8a363: "damned_greataxeman_m-f_61", // 3116933987
+    0xb9cc7084: "undead_gravedigger_41", // 3117183108
     0xb9e0b973: "ck_blackbone_lost_2hblunderbuss", // 3118512499
-    0xb9f0185c: "ghost_starved_02bw07", // 3119519836
-    0xb9f1b1de: "withered_beetle_04nw10a", // 3119624670
+    0xb9f05da6: "ancientguardian_javelineer_33", // 3119537574
+    0xb9f7b39e: "wolf_minion_26", // 3120018334
     0xb9fc85fd: "evil_knight_mace_named_dg_greatcleave_00", // 3120334333
     0xba0128bb: "ck_ancient_amalgam_10ws04_steps", // 3120638139
     0xba0218df: "fl_hercyne_boar_alpha_named_09fl02", // 3120699615
     0xba18622b: "drowned_sailor_1h_sword_shield", // 3122160171
+    0xba210815: "ghost_shackled_57", // 3122726933
+    0xba23e95b: "undead_javelineer_37", // 3122915675
     0xba2ff831: "bear_damned_named_07sm03_elite", // 3123705905
     0xba3cad40: "bloated_corpse_34_bw", // 3124538688
-    0xba4ce8df: "risen_whole_body_15ec03a", // 3125602527
     0xba5d8753: "legion_villager_ladel_65", // 3126691667
     0xba5fcadb: "undead_berserker_42", // 3126840027
-    0xba6495a0: "damned_villager_knife_09fl04", // 3127154080
-    0xba65c20b: "undead_navigator_12mb06b", // 3127230987
-    0xba750ecb: "evil_knight_spear_03gc01", // 3128233675
+    0xba68b0f3: "sand_elemental_soldier", // 3127423219
+    0xba6ce903: "dryad_archer_50", // 3127699715
+    0xba7109cf: "undead_pistoleer_2", // 3127970255
     0xba777cd4: "wolf_black_33", // 3128392916
-    0xba7b9a46: "undead_sailor_1h_sword_shield_elite_05wc11", // 3128662598
     0xba96e8f4: "lynx_64", // 3130452212
+    0xba9bde1b: "bear_black_45", // 3130777115
+    0xbabd21de: "damned_villager_sickle_49", // 3132957150
     0xbabe06c4: "undead_grenadier_disease_43", // 3133015748
     0xbabebd30: "drowned_sailor_1h_sword_shield_23", // 3133062448
     0xbac63849: "ck_lost_berserker_10ws02_highpass_named", // 3133552713
     0xbac90f01: "unstable_swamp_fiend_64", // 3133738753
     0xbad288e9: "sheep_eastern_61", // 3134359785
-    0xbad8d91e: "undead_gravedigger_05wc02a", // 3134773534
-    0xbada943f: "drowned_sailor_1h_club_43_15ec00", // 3134886975
-    0xbadf9461: "undead_berserker_15ec04d", // 3135214689
     0xbaea0772: "ancientguardian_javelineer_39_elite", // 3135899506
     0xbaee4fc5: "withered_grunt_named_dg_windsward_00", // 3136180165
-    0xbafc77e4: "ancientguardian_reaver_11md01b", // 3137107940
-    0xbafc948a: "legion_villager_kitchenknife_16bs08", // 3137115274
-    0xbb2d99cf: "risen_whole_body_04nw10c", // 3140327887
+    0xbb119a35: "bear_grizzly_48", // 3138492981
     0xbb2ded74: "withered_brute_named_13wf01", // 3140349300
-    0xbb3463dd: "damned_villager_knife_35", // 3140772829
     0xbb429b51: "cow_12", // 3141704529
-    0xbb54fb11: "anubianguardian_scarab_16bs05a", // 3142908689
-    0xbb604c31: "nightmare", // 3143650353
-    0xbb69bfaa: "risen_whole_body_09fl05b", // 3144269738
-    0xbb7665c7: "primal_lion_desert_cub_16bs06", // 3145098695
     0xbb77d2b5: "ck_bear_black_10ws04", // 3145192117
-    0xbb7ef47a: "sulfur_elemental_entity_16bs01", // 3145659514
     0xbb843702: "evil_knight_spear_elite_08qp02", // 3146004226
-    0xbb876427: "drowned_sailor_1h_sword_10ws03", // 3146212391
-    0xbb8d1cd2: "boar_11md", // 3146587346
+    0xbb8aaad7: "damned_villager_pitchfork_48", // 3146427095
+    0xbb8b9976: "damned_villager_lumberaxe_52", // 3146488182
     0xbb8d9044: "dryad_soldier_59", // 3146616900
-    0xbb8e2bd4: "undead_pistoleer_45_15ec00", // 3146656724
+    0xbb950cf5: "damned_villager_ladel_61", // 3147107573
+    0xbb9f7d0d: "damned_villager_rake_33", // 3147791629
     0xbbaa3a59: "ck_spectral_lost_fire", // 3148495449
     0xbbac6cf0: "anubianguardian_horus_named_16bs09a", // 3148639472
     0xbbad64d4: "hercyne_boar_named_raid_cutlasskeys_00", // 3148702932
     0xbbbeb004: "ck_blackbone_lost_2hspear_10ws03b_named", // 3149836292
     0xbbc1caaa: "withered_brute_25", // 3150039722
-    0xbbc3eeac: "withered_beetle_06sw07b", // 3150180012
-    0xbbc628b6: "mountain_lion_02bw05", // 3150325942
-    0xbbc6da42: "damned_villager_knife_02bw02", // 3150371394
-    0xbbc9f4fe: "anubianguardian_spearman_12bs10b", // 3150574846
-    0xbbcbada9: "legion_villager_pickaxe_16bs08a", // 3150687657
     0xbbce3213: "dunewalker_warmonger_greataxe_trial_quest", // 3150852627
     0xbbcefbff: "ck_spectral_lost_2hblunderbuss_named_10ws09_elite", // 3150904319
-    0xbbd29726: "legion_villager_cleaver_16bs07", // 3151140646
-    0xbbeea143: "evil_knight_spear_s4_b", // 3152978243
-    0xbc0830c6: "undead_hunter_13wf", // 3154653382
+    0xbbd96471: "bobcat_48", // 3151586417
+    0xbbdecb02: "damned_grunt_63", // 3151940354
+    0xbbe2021f: "fl_dryad_archer_09a_s17_waveevent", // 3152151071
     0xbc0c3f07: "undead_grenadier_disease_named_12mb06c", // 3154919175
-    0xbc10ca93: "drowned_sailor_1h_club_12mb06b", // 3155217043
-    0xbc133063: "sulfur_elemental_entity_16bs05", // 3155374179
     0xbc137928: "ck_alligator_black", // 3155392808
-    0xbc1ba1de: "primal_lion_desert_cub_16bs02", // 3155927518
-    0xbc26c852: "broken_corrupted_villager_shovel_t2", // 3156658258
-    0xbc3b1d63: "sheep_eastern_02bw06", // 3157990755
     0xbc3de8d9: "rabbit_spotted_17", // 3158173913
-    0xbc41d19d: "legion_villager_pickaxe_16bs06b", // 3158430109
     0xbc41e4ee: "tendril_corruption_11md12_elite", // 3158435054
     0xbc476c3f: "damned_axeman_m-f_07sm06c_elite", // 3158797375
-    0xbc499298: "withered_beetle_06sw09a", // 3158938264
-    0xbc59a7c4: "damned_villager_knife_31", // 3159992260
+    0xbc5269f5: "damned_cultist_28", // 3159517685
     0xbc64f2bc: "mountain_lion_39", // 3160732348
     0xbc686f1a: "ghost_frozen_58", // 3160960794
     0xbc7911fc: "damned_acolyte_named_03gc08", // 3162051068
-    0xbc824deb: "damned_rifleman_m-f_11md00h", // 3162656235
-    0xbc887921: "evil_knight_greataxe_14ac05", // 3163060513
     0xbc8d6b0d: "ancientguardian_javelineer_raid10-", // 3163384589
-    0xbc93c932: "withered_beetle_05wc05a", // 3163801906
-    0xbc975556: "evil_knight_bow_14ac06", // 3164034390
-    0xbc9bc296: "undead_sailor_1h_sword_elite_05wc11", // 3164324502
     0xbc9cade3: "damned_cultist_03gc08", // 3164384739
     0xbca2618a: "ghost_starved_named_06_08qp07", // 3164758410
     0xbca67e9f: "dryad_shaman_28", // 3165027999
-    0xbcbf533f: "legion_villager_cleaver_16bs03", // 3166655295
     0xbcc3c272: "fl_megaflora_razorlotus_solminion", // 3166945906
-    0xbcdb1b21: "dunewalker", // 3168475937
-    0xbcdc987a: "spring_stag_05wc01b", // 3168573562
-    0xbcec4a5f: "wardog", // 3169602143
+    0xbcdb1b26: "withered_grunt_63", // 3168475942
+    0xbce65d6f: "damned_villager_lumberaxe_56", // 3169213807
+    0xbcf2b914: "damned_villager_rake_37", // 3170023700
+    0xbcf8c8ec: "damned_villager_ladel_65", // 3170420972
     0xbcfd165e: "skeleton_1h_sword_raid10-", // 3170702942
     0xbd012d1a: "dryad_archer_54", // 3170970906
+    0xbd025d2b: "fl_spriggan_adolescent", // 3171048747
     0xbd02c1e2: "ck_undead_pistoleer_10ws03c", // 3171074530
-    0xbd0750d1: "desert_medium_scorpion_16bs08", // 3171373265
     0xbd1ab8cd: "wolf_black_37", // 3172645069
-    0xbd1b86bd: "risen_regurgitator_04nw03", // 3172697789
-    0xbd1c1574: "totem_pirate_cursed_05wc05c", // 3172734324
+    0xbd1ccdd6: "undead_pistoleer_6", // 3172781526
+    0xbd20a908: "anubianguardian_brute_elite_named_00", // 3173034248
     0xbd2159ff: "dynasty_spearman_dg_ebonscale_00", // 3173079551
+    0xbd255026: "damned_villager_cleaver_25", // 3173339174
+    0xbd2afc6f: "caster_torso_boss_ice_minion", // 3173710959
     0xbd2fd9ae: "ck_skeleton_spear_10ws04_gold", // 3174029742
     0xbd320ec2: "undead_berserker_46", // 3174174402
     0xbd38a96e: "boar_stripped_15", // 3174607214
-    0xbd3a8a8f: "withered_beetle_12mb05", // 3174730383
+    0xbd40aaf7: "damned_2h_spearman_m-f_60", // 3175131895
     0xbd45ea03: "corruption_heavy_07sm06", // 3175475715
+    0xbd4ccc0c: "ghost_shackled_53", // 3175926796
     0xbd4e2d42: "undead_javelineer_33", // 3176017218
     0xbd61de48: "swamp_dryad_prowler_62", // 3177307720
     0xbd6d4476: "drowned_sailor_1h_sword_64_elite", // 3178054774
     0xbd74e1bb: "skeleton_2h_sword_49", // 3178553787
     0xbd784357: "fl_mammoth_lightning_elite_09fl01", // 3178775383
-    0xbd95ae2c: "dryad_soldier_14ac11b", // 3180703276
-    0xbd99f5e6: "legion_villager_cleaver_16bs08a", // 3180983782
-    0xbd9ed599: "drowned_sailor_2h_axe_42_15ec00", // 3181303193
     0xbda4cb18: "unstable_swamp_fiend_60", // 3181693720
     0xbdb001c1: "fl_megaflora_razorlotus_named_09fl08", // 3182428609
     0xbdb04de0: "withered_swarmancer_named_06sw09", // 3182448096
     0xbdb0b174: "ancientguardian_mage_38", // 3182473588
     0xbdbb2114: "ck_alligator_young_10ws08", // 3183157524
     0xbdbb456a: "ck_undead_grenadier_10ws08_black", // 3183166826
-    0xbdbf4866: "damned_axeman_m-f_07sm05c1", // 3183429734
     0xbdcba869: "damned_villager_hammer_07sm06c", // 3184240745
+    0xbdd37929: "drowned_sailor_1h_sword_shield_27", // 3184752937
     0xbdd3c2dd: "undead_grenadier_disease_47", // 3184771805
     0xbde0ef44: "bloated_corpse_09fl09", // 3185635140
     0xbde917e0: "damned_villager_axethrower_m-f_13", // 3186169824
-    0xbdefa56a: "bison_17", // 3186599274
+    0xbdf61a02: "bear_black_41", // 3187022338
     0xbdfb2ced: "lynx_60", // 3187354861
     0xbe0a200b: "skeleton_1h_club_msq_10", // 3188334603
     0xbe117261: "evil_knight_caster_named_14ac06", // 3188814433
-    0xbe151411: "ancientguardian_reaver_05wc02", // 3189052433
     0xbe160309: "ck_undead_pirate_brute_named_10ws08_fortin", // 3189113609
-    0xbe16c69e: "desert_coyote_16bs12", // 3189163678
+    0xbe18c997: "ghost_charred_46", // 3189295511
     0xbe206ffc: "undead_pistoleer_58", // 3189796860
     0xbe2e211c: "ancientguardian_heavy_named_00", // 3190694172
-    0xbe4409fd: "damned_pistoleer_m-f_03gc07a", // 3192130045
-    0xbe4692dc: "ghost_starved_13wf06a", // 3192296156
-    0xbe4a2b34: "undead_gravedigger_02bw03", // 3192531764
-    0xbe4fa003: "primal_lion_desert_16bs10", // 3192889347
     0xbe5516e8: "wolf_alpha_named_02", // 3193247464
-    0xbe575876: "elk_stag_11md06", // 3193395318
-    0xbe6b90ce: "undead_officer_elite_05wc11", // 3194720462
+    0xbe595ef8: "skeleton_1h_sword_17", // 3193528056
+    0xbe67c4e7: "evil_knight_spear_named_dg_greatcleave_00_00", // 3194471655
+    0xbe70745e: "skeleton_crawler_dg_reekwater_00_spawn", // 3195040862
     0xbe73612e: "damned_acolyte_dt5", // 3195232558
-    0xbe75376e: "risen_regurgitator_12mb10b", // 3195352942
+    0xbe7cc97a: "damned_cultist_minion_restlessshores", // 3195849082
+    0xbe8403d5: "damned_villager_kitchenknife_16", // 3196322773
     0xbe8f141b: "damned_villager_shovel_10ws02", // 3197047835
+    0xbe8f7f33: "trap", // 3197075251
     0xbe94c634: "wolf_elemental_earth_14ac11b_elite", // 3197421108
     0xbe955366: "damnedhound", // 3197457254
     0xbe9d99bf: "ancientguardian_javelineer_37", // 3197999551
-    0xbe9ddc45: "ghost_starved_02bw03", // 3198016581
     0xbe9eae56: "damned_villager_kitchenknife_03gc06", // 3198070358
+    0xbea1b49d: "undead_gravedigger_45", // 3198268573
     0xbea3661c: "undead_javelineer_named_01", // 3198379548
-    0xbea36c1b: "undead_navigator_08qp05c", // 3198381083
-    0xbea6014e: "legion_sagittarii_16bs07a", // 3198550350
-    0xbeb7b79e: "blight_fiend_14ac11b", // 3199711134
-    0xbec5785d: "sand_elemental_shaman_16bs11", // 3200612445
-    0xbec8cd81: "pig_domestic_15ec04", // 3200830849
-    0xbecf1a1a: "ancientguardian_javelineer_05wc09", // 3201243674
+    0xbeb26943: "skeleton_2h_sword_14", // 3199363395
+    0xbecb6563: "wolf_timber_17_waveevent", // 3201000803
     0xbed0bc57: "fl_mammoth_09fl01", // 3201350743
-    0xbed803de: "anubianguardian_scarab_16bs07", // 3201827806
-    0xbeda2cbf: "alligator_young_06sw07", // 3201969343
-    0xbedf7180: "evil_knight_mace_s4_b", // 3202314624
+    0xbed363f5: "corrupted_tiger_49", // 3201524725
     0xbee2577e: "fl_gorilla_melee_elite_09fl01", // 3202504574
-    0xbee4a07b: "skeleton_2h_sword_10ws04", // 3202654331
+    0xbee417de: "damned_bowman_56", // 3202619358
     0xbeed27a2: "boar_7", // 3203213218
     0xbef780e7: "avalancher_yeti_25", // 3203891431
     0xbefe2196: "boar_stripped_48", // 3204325782
-    0xbefe9de2: "skeleton_1h_sword_06sw07b", // 3204357602
     0xbf019401: "damned_rifleman_male_named_01", // 3204551681
     0xbf01c3f6: "undead_grenadier_32", // 3204563958
-    0xbf118cb5: "boar_28", // 3205598389
-    0xbf1afcbe: "sheep_churro_12mb05", // 3206216894
+    0xbf090701: "damned_axeman_m-f_41", // 3205039873
     0xbf1fd773: "ancientguardian_reaver_40", // 3206535027
-    0xbf268fd3: "anubianguardian_spearman_16bs07", // 3206975443
+    0xbf21e636: "damned_villager_pitchfork_11", // 3206669878
     0xbf2890e4: "corruption_impaler_dt3", // 3207106788
-    0xbf34659f: "damned_villager_pitchfork_16bs06c", // 3207882143
     0xbf3bad03: "skeleton_spear_55", // 3208359171
+    0xbf3e4014: "damned_villager_ladel_38", // 3208527892
     0xbf416fae: "risen_regurgitator_56", // 3208736686
     0xbf424b22: "evil_knight_mace_22", // 3208792866
-    0xbf439053: "evil_knight_mace_s4", // 3208876115
-    0xbf4b8ac6: "fl_beetle_baby_09fl12", // 3209398982
-    0xbf4bc457: "dune_phantom_berserker_16bs03", // 3209413719
-    0xbf4c66db: "drowned_sailor_1h_sword_12mb06a", // 3209455323
-    0xbf4f17d4: "sheep_churro_24", // 3209631700
     0xbf585834: "anubianguardian_brute_66", // 3210238004
+    0xbf5d646e: "drowned_sailor_1h_club_31", // 3210568814
+    0xbf5e6edf: "wolf_elemental_earth_48", // 3210637023
+    0xbf6bd4a1: "damned_rifleman_m-f_42", // 3211515041
     0xbf6cafcb: "drowned_sailor_1h_sword_21", // 3211571147
     0xbf722890: "bobcat_11", // 3211929744
-    0xbf736540: "riverseat", // 3212010816
-    0xbf7760c7: "drowned_sailor_1h_sword_37_15ec00", // 3212271815
+    0xbf75e0dd: "ghost_shipwrecked_52", // 3212173533
     0xbf86a209: "undead_officer_23", // 3213271561
     0xbf8b9469: "dune_phantom_huntress", // 3213595753
     0xbf8dcb79: "ck_skeleton_1h_sword_10ws04_gold", // 3213740921
+    0xbf8edece: "corrupted_mine_25", // 3213811406
     0xbf9457ae: "dynasty_heavy_named_08qp06", // 3214170030
-    0xbf9963df: "pig_domestic_12mb05", // 3214500831
-    0xbf9a7801: "withered_beetle_13wf01", // 3214571521
     0xbfa83f4f: "bloated_corpse_34_elite", // 3215474511
-    0xbfa87905: "dunewalker_warmonger_warhammer_bloodofsands", // 3215489285
     0xbfaa2956: "ck_goldcursed_2hspear_10ws03c_named", // 3215599958
     0xbfb6aa07: "risen_l-r_arm_9", // 3216419335
-    0xbfc77330: "legion_sagittarii_65", // 3217519408
-    0xbfcc460b: "dirtclaw", // 3217835531
-    0xbfd3ddb2: "damned_villager_pitchfork_16bs08d", // 3218333106
+    0xbfc6eb61: "ghost_starved_54", // 3217484641
     0xbfd65bdf: "undead_grenadier_molotov_36", // 3218496479
+    0xbfd96491: "drowned_sailor_2h_axe_26", // 3218695313
     0xbfdb5457: "dryad_archer", // 3218822231
     0xbfdcf0a6: "rabbit_spotted_named_02", // 3218927782
-    0xbfdd2b0b: "desert_bison_strange_16bs05", // 3218942731
-    0xbfec35ab: "bloatfish", // 3219928491
     0xbffa1fe1: "alligator_black_27", // 3220840417
+    0xc010c820: "undead_gravedigger_48", // 3222325280
     0xc04da8c2: "ck_undead_grenadier_10ws09b_elite", // 3226314946
-    0xc04e1c79: "elk_stag_36", // 3226344569
-    0xc0534777: "damned_villager_cleaver_08qp07", // 3226683255
+    0xc04ea6ca: "undead_hunter_43", // 3226379978
+    0xc04f5d2b: "boar_stripped_45", // 3226426667
+    0xc054e3f5: "damned_villager_skinning_knife_29", // 3226788853
     0xc05c1f0d: "damned_villager_hammer_03gc05", // 3227262733
     0xc061b00a: "legion_signifer_loc_boss", // 3227627530
+    0xc0621f48: "corrupted_tiger_44", // 3227656008
     0xc08d0b47: "withered_brute_named_01", // 3230468935
     0xc0911341: "undead_pistoleer_55", // 3230733121
-    0xc09d181d: "skeleton_mage_13wf07", // 3231520797
     0xc09dbc2c: "swamp_dryad_shaman_61", // 3231562796
     0xc09ee3a5: "damned_villager_axethrower_m-f_43", // 3231638437
-    0xc0a13d54: "turkey_12mb03", // 3231792468
-    0xc0a67a4e: "dynasty_heavy_08qp08_msq", // 3232135758
-    0xc0acd5e7: "blight_fiend_48", // 3232552423
+    0xc0b00695: "sand_elemental_shaman_spawn", // 3232761493
     0xc0ba6814: "swamp_dryad_shaman_named_05wc09", // 3233441812
     0xc0c43240: "ancientguardian_reaver_dg_greatcleave_00", // 3234083392
-    0xc0cbb501: "fl_spriggan_adolescent_09fl11", // 3234575617
     0xc0d328d7: "damned_1h_swordsman_m-f_33", // 3235064023
-    0xc0e25a69: "dryad_soldier_14ac14b", // 3236059753
-    0xc0e9eeea: "skeleton_crawler_11md01", // 3236556522
     0xc0f9e528: "alligator_strange_named_05wc02", // 3237602600
-    0xc101324f: "ancientguardian_mage_11md00f", // 3238081103
     0xc1028b29: "undead_berserker_named_06", // 3238169385
-    0xc10939a8: "anubianguardian_brute_16bs12", // 3238607272
-    0xc113352f: "skeleton_spear_11md06b", // 3239261487
-    0xc1281f62: "pig_domestic_12mb08", // 3240632162
     0xc12912cc: "ck_spectral_lost_2hblunderbuss_10ws10", // 3240694476
-    0xc1331af4: "undead_navigator_42_15ec00", // 3241351924
-    0xc1335df3: "alligator_young_12mb06c", // 3241369075
-    0xc13a9752: "undead_pistoleer_12mb06b", // 3241842514
     0xc14ad159: "damned_priest_named_dg_restless_00", // 3242905945
     0xc152f20c: "tiger_named_08qp02", // 3243438604
     0xc16b9bb6: "ghost_plagued_29", // 3245054902
-    0xc16c03e4: "damned_greataxeman_m-f_named_fr_mar_01", // 3245081572
-    0xc16c57b6: "desert_bison_strange_16bs08", // 3245103030
     0xc17797dc: "ghost_starved_59", // 3245840348
-    0xc17dae40: "lost_knight_bow_04nw02", // 3246239296
+    0xc1854d51: "damned_villager_rake_67", // 3246738769
     0xc18ad1be: "skeleton_spear_58", // 3247100350
-    0xc18b95ef: "risen_whole_body_12mb03c", // 3247150575
     0xc18f3ca9: "damned_villager_ladel_35", // 3247389865
     0xc19425d9: "yeti_named_04nw08", // 3247711705
-    0xc1a0f008: "boar_25", // 3248549896
-    0xc1ab8003: "sheep_churro_12mb08", // 3249242115
+    0xc1a5326d: "desert_scorpion_medium", // 3248829037
     0xc1acef63: "withered_grunt_33", // 3249336163
     0xc1b4f75f: "bloated_corpse_named_10ws09_elite", // 3249862495
+    0xc1b832d1: "dynasty_spearman_dg_ebonscale_00_defend", // 3250074321
     0xc1bf5cb7: "ck_bear_grizzly", // 3250543799
     0xc1bf6d2c: "damned_cultist_named_01", // 3250548012
-    0xc1c146d2: "ghost_charred_16bs07", // 3250669266
     0xc1c74737: "damned_villager_cleaver_dg_shattermtn_00", // 3251062583
-    0xc1cd49e7: "withered_grunt_13wf06a", // 3251456487
     0xc1ceba04: "evil_knight_spear_29", // 3251550724
     0xc1d044f3: "fl_dryad_soldier_09fl02", // 3251651827
+    0xc1d8773d: "risen_l-r_arm_54", // 3252188989
     0xc1e54771: "ancientguardian_javelineer_61_elite", // 3253028721
-    0xc1eeb905: "evil_knight_hound_03gc08", // 3253647621
-    0xc1f0930a: "turkey_15ec02", // 3253768970
-    0xc1f64122: "bloated_corpse_40", // 3254141218
-    0xc1fe6b69: "sheep_churro_29", // 3254676329
-    0xc200c73e: "boar_12mb07", // 3254830910
-    0xc201cfda: "turkey_13wf07", // 3254898650
-    0xc2033cb7: "anubianguardian_panther_12bs10c", // 3254992055
+    0xc1ef1262: "wolf_elemental_earth_45", // 3253670498
     0xc205dcd5: "bobcat_41", // 3255164117
-    0xc20846bc: "withered_brute_13wf03", // 3255322300
     0xc20b17e8: "corruption_swarmer_dt1", // 3255506920
-    0xc20b4b00: "turkey_vulture_16bs07", // 3255520000
-    0xc20e090c: "damned_axeman_m-f_08qp08_elite", // 3255699724
     0xc213e852: "legion_villager_cleaver_62", // 3256084562
-    0xc2169cad: "anubianguardian_scarab_66", // 3256261805
-    0xc2189c20: "risen_regurgitator_11md06", // 3256392736
+    0xc21e2d07: "tiger_42", // 3256757511
+    0xc223419c: "alligator_strange_26", // 3257090460
     0xc22a902b: "drowned_sailor_1h_club_61", // 3257569323
-    0xc234ea01: "evil_knight_longsword_03gc08", // 3258247681
+    0xc22f2875: "wolf_alpha_56", // 3257870453
+    0xc239f050: "dynasty_summoner_60_elite", // 3258576976
     0xc242a90a: "damned_longswordsman_commander_named_07sm06b", // 3259148554
-    0xc24cd55d: "dusty", // 3259815261
     0xc25128e0: "dryad_soldier_50", // 3260098784
+    0xc2561273: "damned_villager_pitchfork_41", // 3260420723
     0xc265a587: "ck_blackbone_lost_1hsword_10ws09_elite", // 3261441415
     0xc266f330: "ancientguardian_mage_12mb02", // 3261526832
     0xc2683396: "corruption_impaler_08qp08_elite", // 3261608854
     0xc27637b3: "undead_grenadier_62", // 3262527411
     0xc277afe5: "skeleton_archer_52", // 3262623717
     0xc27baadf: "wolf_alpha_named_s4_1", // 3262884575
+    0xc2970261: "wolf_grey_52", // 3264676449
     0xc29dd613: "undead_navigator_26", // 3265123859
-    0xc2a24cde: "sulfur_elemental_entity_16bs08", // 3265416414
     0xc2a6ec98: "risen_whole_body_26", // 3265719448
     0xc2ad3d46: "bloated_corpse_admiral_minion", // 3266133318
+    0xc2bda047: "fl_ai_adiana_bow", // 3267207239
     0xc2c2ac2e: "starved_bandit_1h_club_62", // 3267537966
     0xc2cd2291: "bear_grizzly_41", // 3268223633
+    0xc2d58e01: "mountain_lion_34", // 3268775425
     0xc2d5e862: "ancientguardian_spearman_53", // 3268798562
-    0xc2db7203: "wolf_elemental_earth_07sm09", // 3269161475
-    0xc2e13bcb: "legion_villager_ladel_16bs07", // 3269540811
-    0xc2f8209a: "damned_bowman_11md07b", // 3271041178
+    0xc2d913a7: "ghost_frozen_55", // 3269006247
     0xc304530c: "anubianguardian_reaver_64", // 3271840524
     0xc3089702: "ancientguardian_bowman_icevariant_raid10", // 3272120066
     0xc3130373: "dynasty_spearman_named_08qp02", // 3272803187
-    0xc3202c2e: "legion_villager_kitchenknife_16bs01", // 3273665582
     0xc32eaabd: "skeleton_1h_sword_47", // 3274615485
     0xc331692e: "legion_signifer_named_04_elite", // 3274795310
-    0xc33cf6e6: "skeleton_2h_sword_16bs11c", // 3275552486
+    0xc331c5ff: "skeleton_club_agheavy_minion", // 3274819071
     0xc347ff15: "dynasty_heavy_08qp08_elite", // 3276275477
     0xc3491e8f: "worldevent_door_65", // 3276349071
-    0xc34d504f: "swamp_dryad_soldier_05wc01a", // 3276623951
-    0xc34ebdd8: "alligator_young_12mb01", // 3276717528
-    0xc357bdfe: "withered_beetle_12mb03a", // 3277307390
     0xc35c8834: "fl_swamp_dryad_shaman", // 3277621300
     0xc361997a: "damned_villager_sickle_40", // 3277953402
-    0xc363b5d9: "skeleton_2h_sword_03gc10b", // 3278091737
     0xc36990a3: "dune_phantom_tank_66", // 3278475427
     0xc36a5d1f: "blight_fiend_15", // 3278527775
+    0xc36ed9be: "corruption_entity_ftue", // 3278821822
     0xc3700ddc: "undead_gravedigger_re1", // 3278900700
     0xc37c7419: "damned_villager_pickaxe_52", // 3279713305
     0xc37e7ffd: "dryad_shaman_named_04", // 3279847421
-    0xc380dd7a: "alligator_young_05wc05c", // 3280002426
-    0xc384d08e: "turkey_06sw08", // 3280261262
-    0xc38917db: "undead_pistoleer_05wc05b", // 3280541659
-    0xc38e498d: "anubianguardian_archer_16bs06", // 3280882061
-    0xc39f7a4d: "damned_1h_swordsman_m-f_04nw10", // 3282008653
+    0xc3942c9b: "damned_villager_cleaver_28", // 3281267867
+    0xc3a4b8f7: "hercyne_reindeer_briar_tangle", // 3282352375
     0xc3b051a7: "dryad_archer_59", // 3283112359
     0xc3b43be6: "fl_mammoth", // 3283368934
-    0xc3b62c6c: "desert_medium_scorpion_16bs05", // 3283496044
     0xc3c59d06: "skeleton_2h_sword_44", // 3284507910
-    0xc3cf7be1: "skeleton_1h_club_11md00b", // 3285154785
-    0xc3d1f50b: "legion_sagittarii_16bs02a", // 3285316875
+    0xc3ce59ab: "drowned_sailor_1h_sword_7", // 3285080491
     0xc3d38bb0: "fl_anubianguardian_panther_small", // 3285420976
-    0xc3e17ace: "dunewalker_bloodofsands_s02", // 3286334158
+    0xc3ddf0c9: "skeleton_club_53", // 3286102217
+    0xc3dee7c0: "corbenic_idol", // 3286165440
+    0xc3dfb2ec: "legion_legionnaire_dg_brimstonesands_crassus_minion", // 3286217452
     0xc3e86f8b: "damned_1h_swordsman_m_named_00", // 3286790027
-    0xc3faa8c0: "turkey_27", // 3287984320
-    0xc402ced3: "anubianguardian_panther_67_elite_named_01", // 3288518355
+    0xc3edfef5: "anubianguardian_brute_elite_67", // 3287154421
+    0xc3f3f790: "damned_villager_kitchenknife_46", // 3287545744
     0xc40454ba: "dune_phantom_tank_62", // 3288618170
-    0xc40969f3: "rabbit_08qp03", // 3288951283
-    0xc40a2c93: "drowned_sailor_1h_sword_shield_12mb06a", // 3289001107
+    0xc40c5d63: "damned_villager_sickle_44", // 3289144675
+    0xc411b000: "damned_villager_pickaxe_56", // 3289493504
     0xc413bbe4: "dryad_shaman_named_00", // 3289627620
     0xc41f860c: "drowned_miner_42", // 3290400268
-    0xc42379c1: "alligator_young_12mb05", // 3290659265
+    0xc42aa2a6: "bear_black_48", // 3291128486
     0xc4321f07: "ck_ancientguardian_mage_minion", // 3291619079
-    0xc4423589: "dryad_archer_07sm09b", // 3292673417
+    0xc433f409: "dynasty_heavy_lunarnewyear", // 3291739145
     0xc4436ea4: "skeleton_1h_sword_43", // 3292753572
-    0xc44de837: "legion_villager_kitchenknife_16bs05", // 3293440055
     0xc4514e71: "damned_spearman_m-f_03gc05", // 3293662833
-    0xc45e1533: "skeleton_1h_sword_11md01", // 3294500147
-    0xc466b694: "sheep_churro_13wf08", // 3295065748
-    0xc46e4ad0: "dynasty_musketeer_08qp04", // 3295562448
+    0xc4611922: "fl_alligator_elite_09fl12", // 3294697762
     0xc47455d0: "sulfur_dragon_named_00", // 3295958480
     0xc474eaac: "undead_grenadier_dg_cutlass_00", // 3295996588
+    0xc475ac21: "damned_axeman_64", // 3296046113
     0xc485ab92: "damned_1h_swordsman_m_named_04", // 3297094546
     0xc487a9e3: "ancientguardian_javelineer_63", // 3297225187
+    0xc4899748: "damned_pistoleer_m-f_28", // 3297351496
     0xc4976cd9: "turkey_23", // 3298258137
     0xc4984d57: "fl_gorilla_fire_named_09fl07", // 3298315607
-    0xc49ad28d: "alligator_13wf01", // 3298480781
-    0xc49c9f78: "damned_rifleman_m-f_11md10a", // 3298598776
+    0xc49e3389: "damned_villager_kitchenknife_42", // 3298702217
     0xc4a0fd09: "anubianguardian_reaver_dg_brimstonesands_named_00", // 3298884873
     0xc4a1220d: "ck_skeleton_archer", // 3298894349
-    0xc4a2bff8: "skeleton_1h_club_11md00f", // 3299000312
     0xc4a39db2: "drowned_sailor_1h_sword_3", // 3299057074
     0xc4a8591f: "skeleton_2h_sword_40", // 3299367199
+    0xc4ae9210: "anubianguardian_archer_elite_67", // 3299774992
     0xc4b034d0: "skeleton_club_57", // 3299882192
-    0xc4b24ae0: "dryad_shaman_14ac18", // 3300018912
     0xc4bc2b7d: "ck_goldcursed_undead_pirate_brute_boss_10ws04_gold", // 3300666237
     0xc4c1e35c: "or_wolf", // 3301040988
-    0xc4dbe875: "desert_medium_scorpion_16bs01", // 3302746229
-    0xc4e38d94: "anubianguardian_archer_16bs02", // 3303247252
+    0xc4d07ab4: "undead_pistoleer_60_waveevent", // 3301997236
     0xc4e75c7e: "elk_strange_03gc04", // 3303496830
-    0xc501e0d2: "desert_medium_scorpion_16bs04d", // 3305234642
+    0xc4ec4b97: "dungeon_trap_wall", // 3303820183
+    0xc507b036: "hercyne_corvid_broodmother", // 3305615414
+    0xc50ae469: "ftue_corrupted_sailor_z3", // 3305825385
     0xc511cb9e: "drowned_sailor_1h_sword_shield_64_elite", // 3306277790
     0xc51a6bfc: "skeleton_archer_56", // 3306843132
-    0xc51f85f1: "drowned_sailor_1h_club_04nw10", // 3307177457
-    0xc53219cf: "ghost_starved_16bs03b", // 3308394959
+    0xc53bd66a: "damned_villager_pitchfork_45", // 3309033066
     0xc53cecf9: "dryad_soldier_54", // 3309104377
-    0xc547c908: "boar_strange_05wc01b", // 3309816072
+    0xc542ec6c: "wolf_alpha_52", // 3309497452
     0xc55a71f1: "ck_ancientguardian_mage_named_10ws04_gold", // 3311038961
-    0xc5668f19: "turkey_vulture_16bs03", // 3311832857
     0xc566d3f1: "corruption_swarmer_dt5", // 3311850481
+    0xc566f04d: "desert_scorpion_slinger_medium", // 3311857741
     0xc56818cc: "bobcat_45", // 3311933644
-    0xc56c0bc3: "turkey_13wf03", // 3312192451
-    0xc56d0327: "boar_12mb03", // 3312255783
     0xc570b617: "withered_brute_28", // 3312498199
-    0xc57976cf: "anubianguardian_scarab_12bs10b", // 3313071823
-    0xc57b58b4: "anubianguardian_scarab_62", // 3313195188
+    0xc573e91e: "tiger_46", // 3312707870
     0xc57e2c4b: "legion_villager_cleaver_66", // 3313380427
-    0xc5851f60: "damned_villager_knife_38", // 3313835872
-    0xc58cffd2: "legion_villager_ladel_16bs03", // 3314352082
     0xc5913c44: "undead_officer_named_dg_cutlass_00", // 3314629700
-    0xc59e1802: "bloated_corpse_02bw06", // 3315472386
     0xc5a0e688: "bear_grizzly_45", // 3315656328
     0xc5ad4ba3: "fl_gorilla_melee_09fl07", // 3316468643
+    0xc5b4d7be: "ghost_frozen_51", // 3316963262
     0xc5b82c7b: "ancientguardian_spearman_57", // 3317181563
     0xc5b84a18: "mountain_lion_30", // 3317189144
+    0xc5bf7a4d: "hercyne_broodmother_flower", // 3317660237
+    0xc5c36dfa: "wolf_timber_27", // 3317919226
     0xc5cb2881: "risen_whole_body_22", // 3318425729
+    0xc5cc6b83: "undead_grenadier_molotov_62", // 3318508419
+    0xc5dd5c02: "invasion_spriggan", // 3319618562
+    0xc5e194ac: "evil_knight_longsword_icevariant", // 3319895212
     0xc5f0120a: "undead_navigator_22", // 3320844810
+    0xc5f57c32: "withered_grunt_7", // 3321199666
+    0xc5fac678: "wolf_grey_56", // 3321546360
     0xc602842e: "ck_goldcursed_2hspear_10ws04_gold", // 3322053678
-    0xc6118cf0: "damned_acolyte_07sm05c1", // 3323038960
-    0xc619126a: "anubianguardian_horus_12bs10c", // 3323531882
+    0xc60958f6: "undead_shaman_named", // 3322501366
     0xc61bf92e: "drowned_sailor_1h_club_10ws08", // 3323722030
-    0xc63696d9: "legion_villager_pickaxe_16bs04", // 3325466329
-    0xc646c0a5: "withered_beetle_13wf08", // 3326525605
+    0xc6330817: "swamp_fiend_arena", // 3325233175
     0xc65d94bb: "ck_undead_navigator_10ws03c", // 3328021691
-    0xc66cf656: "ancientguardian_mage_11md00b", // 3329029718
+    0xc6666e70: "bear_grizzly_18", // 3328601712
     0xc66e1dd4: "ancientguardian_mage_msq_named_02_encounter_boss", // 3329105364
     0xc66f4f30: "undead_berserker_named_02", // 3329183536
-    0xc66fdba0: "sheep_eastern_08qp07", // 3329219488
     0xc681dcca: "drowned_sailor_1h_club_38", // 3330399434
+    0xc682d67b: "wolf_elemental_earth_41", // 3330463355
     0xc683564b: "evil_knight_bow_dg_greatcleave01_01", // 3330496075
     0xc68631a4: "ck_goldcursed_1hsword_10ws09_elite", // 3330683300
-    0xc69b853b: "bloated_corpse_44", // 3332080955
     0xc6aaafde: "bear_cub_black_34", // 3333074910
-    0xc6ac82cb: "ghost_charred_16bs03", // 3333194443
+    0xc6b0176f: "drowned_sailor_1h_sword_28", // 3333429103
+    0xc6b5b324: "risen_l-r_arm_50", // 3333796644
     0xc6b6641e: "ck_alligator_black_10ws10", // 3333841950
     0xc6c12b7a: "withered_grunt_37", // 3334548346
     0xc6c36fd7: "ancientguardian_reaver_49", // 3334696919
-    0xc6cd3411: "boar_21", // 3335336977
+    0xc6d5bfa5: "damned_axeman_m-f_48", // 3335896997
     0xc6e2f8b0: "damned_villager_ladel_31", // 3336763568
-    0xc6eb28d8: "undead_officer_15ec02a", // 3337300184
-    0xc6f2c9da: "skeleton_mage_11md06b", // 3337800154
+    0xc6e88948: "damned_villager_rake_63", // 3337128264
+    0xc6e8c963: "legion_signifer_62_spawn", // 3337144675
     0xc7008891: "wolf_black_63", // 3338700945
-    0xc7084f37: "hewscar", // 3339210551
+    0xc70fdb51: "corrupted_tiger_40", // 3339705169
     0xc710c8c1: "ghost_shipwrecked_24_09fl09_named", // 3339765953
     0xc719193b: "fl_anubianguardian_archer", // 3340310843
-    0xc71b5f7b: "ancientguardian_javelineer_16bs12", // 3340459899
-    0xc71eb4bf: "anubianguardian_archer_12bs10d", // 3340678335
-    0xc723d860: "elk_stag_32", // 3341015136
-    0xc72e022a: "goat_mountain_08qp08", // 3341681194
-    0xc72fd961: "damned_cultist_06sw09", // 3341801825
+    0xc7229932: "boar_stripped_41", // 3340933426
+    0xc72362d3: "undead_hunter_47", // 3340985043
+    0xc7283e9e: "undead_berserker_12", // 3341303454
     0xc7317a13: "ck_undead_navigator_10ws06_tide", // 3341908499
     0xc73d114e: "fl_anubianguardian_reaver_09fl03", // 3342668110
-    0xc741c11f: "ancientguardian_bowman_solo_s4", // 3342975263
     0xc74b33b1: "damnedhound_dt4", // 3343594417
     0xc74e12c1: "evil_knight_hound_dg_greatcleave_00_00", // 3343782593
-    0xc75712d8: "dune_phantom_tank_16bs03b", // 3344372440
-    0xc75fdccf: "risen_l-r_arm_15_12mb03d", // 3344948431
-    0xc77a7931: "undead_pistoleer_06sw02", // 3346692401
-    0xc7816a0b: "damned_villager_axethrower_m-f_04nw10", // 3347147275
+    0xc772e227: "hercyne_gorilla", // 3346194983
     0xc7853d0d: "damned_1h_swordsman_m-f_07sm06", // 3347397901
-    0xc78a59c8: "undead_officer_04nw11c", // 3347732936
     0xc78fadfd: "legion_sagittarii_named_01", // 3348082173
     0xc790c9c7: "damned_villager_hammer_26", // 3348154823
+    0xc799ee5b: "fl_mammoth_nature", // 3348754011
     0xc79bdf87: "ck_undead_berserker_10ws04_sable", // 3348881287
+    0xc79f165a: "withered_beetle", // 3349091930
     0xc7a9304f: "ck_blackbone_lost_2haxe_10ws03c2_named", // 3349753935
-    0xc7abc5a7: "ancientguardian_mage_13wf02", // 3349923239
     0xc7b7446c: "damned_1h_swordsman_m-f_dg_shattermtn_00", // 3350676588
+    0xc7beecce: "damned_1h_swordsman_m-f_37", // 3351178446
     0xc7c13dbf: "drowned_sailor_2h_axe_65_elite", // 3351330239
-    0xc7c3dff1: "withered_beetle_06sw07", // 3351502833
-    0xc7ccf94d: "turkey_12mb07", // 3352099149
-    0xc7d53f8e: "ghost_shipwrecked_13wf01", // 3352641422
+    0xc7c2db1e: "desert_scorpion_impaler_elite", // 3351436062
+    0xc7c58af2: "damned_hound_named_03gc09_elite", // 3351612146
     0xc7d8ab6f: "damned_hound_dg_ebonscale_00", // 3352865647
     0xc7e0cf5e: "withered_brute_named_05", // 3353399134
-    0xc7e11df6: "skeleton_archer_16bs11d", // 3353419254
-    0xc7e3804b: "damned_villager_pickaxe_02bw05", // 3353575499
     0xc7e3ca4a: "evil_knight_greataxe_18", // 3353594442
     0xc7ed5484: "fl_megaflora_razorlotus_09fl04b", // 3354219652
-    0xc7f83c63: "lynx_11md02", // 3354934371
+    0xc7f327bc: "damned_villager_axethrower_m-f_47", // 3354601404
     0xc7fcd758: "undead_pistoleer_51", // 3355236184
     0xc7fd644e: "undead_pistoleer_63_elite", // 3355272270
     0xc8004317: "fl_gorilla_ice_elite_named_09fl12", // 3355460375
-    0xc8024972: "risen_l-r_arm_12mb05", // 3355593074
+    0xc80396c1: "undead_pistoleer_59_waveevent", // 3355678401
     0xc806f360: "undead_grenadier_33", // 3355898720
     0xc80917e8: "ghost_shipwrecked_dg_cutlass_00", // 3356039144
-    0xc816bc23: "boar_29", // 3356933155
+    0xc80e3797: "damned_axeman_m-f_40", // 3356374935
     0xc818e7e5: "ancientguardian_reaver_41", // 3357075429
-    0xc81dcc28: "sheep_churro_12mb04", // 3357396008
-    0xc821bf45: "anubianguardian_spearman_16bs06", // 3357654853
     0xc826d6a0: "damned_villager_pitchfork_10", // 3357988512
-    0xc82a7d78: "blight_fiend_13wf02a", // 3358227832
     0xc82fa072: "corruption_impaler_dt2", // 3358564466
-    0xc8335509: "damned_villager_pitchfork_16bs06b", // 3358807305
+    0xc8397082: "damned_villager_ladel_39", // 3359207554
     0xc83b284d: "bearelemental_62_elite", // 3359320141
     0xc83c9d95: "skeleton_spear_54", // 3359415701
     0xc8421eb6: "undead_navigator_named_dg_cutlass_00", // 3359776438
     0xc8457bb4: "evil_knight_mace_23", // 3359996852
     0xc8465f38: "risen_regurgitator_57", // 3360055096
-    0xc84cf4c1: "dune_phantom_berserker_16bs02", // 3360486593
+    0xc8560789: "evil_knight_spear_icevariant", // 3361081225
+    0xc8595e49: "wolf_elemental_earth_49", // 3361300041
+    0xc85a54f8: "drowned_sailor_1h_club_30", // 3361363192
     0xc85f68a2: "anubianguardian_brute_67", // 3361695906
-    0xc86b9f5d: "drowned_sailor_1h_sword_20", // 3362496349
-    0xc86d2e83: "rabbit_spotted_12mb08", // 3362598531
+    0xc86ce437: "damned_rifleman_m-f_43", // 3362579511
+    0xc872d04b: "ghost_shipwrecked_53", // 3362967627
     0xc878f62f: "evil_knight_spear_25", // 3363370543
     0xc888f4b0: "ghost_shackled_named_02bw03b_01", // 3364418736
     0xc8936738: "dynasty_heavy_named_08qp07", // 3365103416
     0xc8978f9c: "starved_mercenary_2h_axe_64", // 3365375900
-    0xc89e5349: "pig_domestic_12mb04", // 3365819209
-    0xc89ee61e: "stalecrop", // 3365856798
     0xc8abb140: "ancientguardian_reaver_raid10-", // 3366695232
+    0xc8ae189f: "withered_beetle_named", // 3366852767
     0xc8b19a91: "risen_l-r_arm_8", // 3367082641
-    0xc8c043a6: "legion_sagittarii_64", // 3368043430
+    0xc8c1dbf7: "ghost_starved_55", // 3368147959
     0xc8c88f86: "ck_spectral_lost_1hsword_named_10ws08_isle", // 3368587142
     0xc8d16b49: "undead_grenadier_molotov_37", // 3369167689
-    0xc8da1b9d: "desert_bison_strange_16bs04", // 3369737117
+    0xc8de5407: "drowned_sailor_2h_axe_27", // 3370013703
     0xc8fd2f77: "alligator_black_26", // 3372035959
     0xc9047798: "spriggan_corrupted_named_dg_shattermtn_00", // 3372513176
     0xc91e98a0: "bison_strange_36", // 3374225568
+    0xc91ff901: "ghost_charred_47", // 3374315777
     0xc9275f6a: "undead_pistoleer_59", // 3374800746
-    0xc9382198: "dryad_soldier_14ac13", // 3375899032
+    0xc92a7d43: "elk_elemental_40", // 3375004995
     0xc93ba8ad: "wolf_elemental_earth_named_14ac11b_elite", // 3376130221
-    0xc9489095: "primal_lion_desert_16bs11", // 3376976021
-    0xc95068e0: "elk_stag_11md07", // 3377490144
-    0xc9524869: "ck_ancientguardian_javelineer_10ws04_gold", // 3377612905
+    0xc95e6e6e: "skeleton_1h_sword_16", // 3378409070
     0xc96426e0: "fl_mim_statue_wolf_elemental_earth", // 3378783968
-    0xc97207f8: "risen_regurgitator_12mb10c", // 3379693560
     0xc97451b8: "damned_acolyte_dt4", // 3379843512
+    0xc98088c7: "bison_40_elite_06sw09", // 3380644039
+    0xc9910b72: "inert_remnant", // 3381726066
     0xc99aa929: "ancientguardian_javelineer_36", // 3382356265
-    0xc99aecd3: "ghost_starved_02bw02", // 3382373587
     0xc99b4c43: "naga_ancientguardian", // 3382398019
     0xc99d0c78: "fl_gorilla", // 3382512760
     0xc9a4568a: "undead_javelineer_named_00", // 3382990474
     0xc9a45c8d: "undead_navigator_08qp05b", // 3382992013
-    0xc9b37480: "risen_onearm_13wf01", // 3383981184
-    0xc9bd00dd: "undead_gravedigger_02bw03a", // 3384606941
-    0xc9c248cb: "sand_elemental_shaman_16bs10", // 3384953035
-    0xc9df3348: "anubianguardian_scarab_16bs06", // 3386848072
+    0xc9a6840b: "undead_gravedigger_44", // 3383133195
+    0xc9b559d5: "skeleton_2h_sword_15", // 3384105429
+    0xc9d45363: "corrupted_tiger_48", // 3386135395
+    0xc9e2afde: "damned_villager_skinning_knife_25", // 3387076574
+    0xc9e32748: "damned_bowman_57", // 3387107144
     0xc9ea1734: "boar_6", // 3387561780
     0xc9fc5c86: "ancientguardian_reaver_61_elite", // 3388759174
     0xc9fdb64a: "fl_dryad_beast_named_09fl08", // 3388847690
-    0xca006047: "desert_medium_scorpion_16bs09", // 3389022279
     0xca05f174: "ck_undead_pistoleer_10ws03b", // 3389387124
     0xca061d8c: "dryad_archer_55", // 3389398412
-    0xca1cb62b: "risen_regurgitator_04nw02", // 3390879275
+    0xca1bfd40: "undead_pistoleer_7", // 3390831936
     0xca1d885b: "wolf_black_36", // 3390933083
-    0xca239aa8: "desert_scorpion_impaler_medium_16bs04c", // 3391330984
     0xca24f0de: "corrupted_tiger_named_08qp08", // 3391418590
     0xca25897b: "ck_goldcursed_2hblunderbuss_10ws10", // 3391457659
+    0xca27999e: "anubianguardian_brute_elite_named_01", // 3391592862
     0xca2bd41e: "ck_lost_berserker_10ws02_sable_prison", // 3391869982
-    0xca3203e2: "wolf_white_s4", // 3392275426
     0xca353e54: "undead_berserker_47", // 3392486996
-    0xca42c904: "swamp_dryad_archer_05wc08", // 3393374468
     0xca458dce: "corrupted_ogre_dg_greatcleave_00", // 3393555918
+    0xca479a61: "damned_2h_spearman_m-f_61", // 3393690209
     0xca491dd4: "undead_javelineer_32", // 3393789396
+    0xca4bfc9a: "ghost_shackled_52", // 3393977498
     0xca539d56: "tendril_corruption_03gc03_named_elite", // 3394477398
     0xca662b93: "bear_damned", // 3395693459
     0xca66eede: "swamp_dryad_prowler_63", // 3395743454
     0xca739ae1: "withered_swarmancer", // 3396573921
     0xca73d12d: "skeleton_2h_sword_48", // 3396587821
-    0xca841cd9: "undead_pistoleer_12mb01", // 3397655769
-    0xca859d01: "skeleton_1h_sword_11md09", // 3397754113
+    0xca8fe6bd: "naga_corrupted", // 3398428349
+    0xcaa2421b: "sand_elemental_heavy_sandworm", // 3399631387
+    0xcaa3ec04: "damned_1h_swordsman_m-f_62", // 3399740420
     0xcaa3fb8e: "unstable_swamp_fiend_61", // 3399744398
     0xcab2962e: "alligator_black_named_02", // 3400701486
-    0xcab560ee: "undead_berserker_15ec04a", // 3400884462
     0xcab77d76: "withered_swarmancer_named_06sw08", // 3401022838
     0xcab781e2: "ancientguardian_mage_39", // 3401023970
-    0xcabb77e2: "dryad_prowler_14ac11b", // 3401283554
     0xcabc969f: "ck_spectral_lost_2hspear_10ws10", // 3401356959
     0xcacc98ff: "damned_villager_hammer_07sm06b", // 3402406143
+    0xcad449bf: "drowned_sailor_1h_sword_shield_26", // 3402910143
     0xcad4830b: "dunewalker_waterseeker_icestaff", // 3402924811
     0xcad4f24b: "undead_grenadier_disease_46", // 3402953291
     0xcadbfcbe: "swamp_fiend_dg_edengrove_00", // 3403414718
     0xcae895fc: "bison_16", // 3404240380
     0xcaf12a94: "bear_black_40", // 3404802708
     0xcafc1c7b: "lynx_61", // 3405519995
-    0xcafff8b6: "undead_officer_named_00_old", // 3405772982
     0xcb05539a: "ghost_shipwrecked_12mb06c_named_elite", // 3406123930
-    0xcb0aebfb: "legion_sagittarii_16bs12", // 3406490619
-    0xcb1400f5: "sulfur_elemental_entity_16bs04", // 3407085813
+    0xcb114e11: "dynasty_warrior_62", // 3406908945
     0xcb17fa05: "drowned_sailor_1h_club_12mb06c", // 3407346181
-    0xcb1c9148: "primal_lion_desert_cub_16bs03", // 3407647048
     0xcb32f420: "undead_grenadier_65_elite", // 3409114144
-    0xcb46e10b: "legion_villager_pickaxe_16bs06c", // 3410419979
-    0xcb54c1aa: "undead_grenadier_05wc06", // 3411329450
-    0xcb5e9752: "damned_villager_knife_30", // 3411973970
+    0xcb41f66c: "legion_legionnaire_noshield", // 3410097772
+    0xcb555963: "damned_cultist_29", // 3411368291
     0xcb63c22a: "mountain_lion_38", // 3412312618
+    0xcb6f5f8c: "ghost_frozen_59", // 3413073804
     0xcb79b94e: "elk_strange", // 3413752142
-    0xcb857d7d: "damned_rifleman_m-f_11md00i", // 3414523261
-    0xcb985d07: "lost_knight_tank_04nw02", // 3415760135
     0xcb9d8080: "fl_anubianguardian_brute_09fl01", // 3416096896
     0xcba14e09: "dryad_shaman_29", // 3416346121
     0xcbacc0e2: "undead_shaman_named_04nw10", // 3417096418
-    0xcbb863a9: "legion_villager_cleaver_16bs02", // 3417858985
-    0xcbb93299: "drowned_miner_41_15ec00", // 3417911961
     0xcbbc185d: "bearelemental_named_08qp03", // 3418101853
-    0xcbbe43a9: "ancientguardian_spearman_09fl06", // 3418244009
     0xcbc19f7e: "invasion_sniper", // 3418464126
-    0xcbc1de42: "anubianguardian_archer_12bs05a", // 3418480194
-    0xcbd59b06: "lost_siren_named_elite_05wc11", // 3419773702
-    0xcbea4725: "dynasty_warrior_03gc03_elite", // 3421128485
-    0xcbf613ed: "undead_navigator_45_15ec00", // 3421901805
+    0xcbdc2bb0: "withered_grunt_62", // 3420203952
+    0xcbe16df9: "damned_villager_lumberaxe_57", // 3420548601
+    0xcbf58982: "damned_villager_rake_36", // 3421866370
     0xcbfb3457: "bear_black_38_elite", // 3422237783
+    0xcbfff87a: "damned_villager_ladel_64", // 3422550138
     0xcc05e99b: "undead_berserker_12mb01c", // 3422939547
+    0xcc0b30d7: "damned_priest_hound_46", // 3423285463
     0xcc1038c8: "skeleton_crawler_dg_reekwater_00", // 3423615176
-    0xcc2a65e5: "totem_pirate_cursed", // 3425330661
-    0xcc2aa959: "risen_whole_body_04nw10b", // 3425347929
+    0xcc16aaa3: "bear_grizzly_49", // 3424037539
     0xcc2c9f22: "goat_mountain_03gc10", // 3425476386
     0xcc2d5068: "ck_undead_navigator_10ws06b", // 3425521768
-    0xcc33534b: "damned_villager_knife_34", // 3425915723
-    0xcc42c06f: "evil_knight_mace_09fl07", // 3426926703
-    0xcc4fbeeb: "starfallen", // 3427778283
+    0xcc2dea6e: "desert_scorpion_impaler", // 3425561198
+    0xcc30f06f: "ancient_ice_dragon_shattered", // 3425759343
     0xcc599557: "pig", // 3428422999
-    0xcc5c2374: "ghost_shackled_13wf08", // 3428590452
-    0xcc715551: "primal_lion_desert_cub_16bs07", // 3429979473
+    0xcc71067c: "naga_ancientguardian_iceguardian_rturret_solo", // 3429959292
     0xcc798da4: "fl_dg_firstlight_01_mammoth_lightning", // 3430518180
     0xcc8aa0d2: "dryad_soldier_58", // 3431637202
-    0xcc902952: "sand_elemental_heavy_s02", // 3431999826
+    0xcc8ca9e0: "damned_villager_lumberaxe_53", // 3431770592
+    0xcc8d9a41: "damned_villager_pitchfork_49", // 3431832129
+    0xcc923c63: "damned_villager_ladel_60", // 3432135779
+    0xcc984d9b: "damned_villager_rake_32", // 3432533403
     0xccab99ee: "damned_villager_skinning_knife_dg_shattermtn_00", // 3433798126
-    0xccada851: "spring_stag_05wc08", // 3433932881
     0xccc5e8f3: "wolf_grey_10ws07", // 3435522291
-    0xcccec468: "anubianguardian_spearman_12bs10c", // 3436102760
     0xccd019d9: "jackrabbit_named_00", // 3436190169
-    0xccd5a7b0: "legion_villager_cleaver_16bs06", // 3436554160
+    0xccd9fb94: "damned_grunt_62", // 3436837780
+    0xccde54e7: "bobcat_49", // 3437122791
     0xccde5b36: "damned_bowman_45_elite", // 3437124406
+    0xcce9ce8f: "corruption_impaler_56", // 3437874831
     0xccfabbf3: "ck_boar_spectral_10ws02", // 3438984179
-    0xcd14b944: "legion_villager_cleaver_16bs06c", // 3440687428
+    0xcd135ddd: "swamp_dryad_beast", // 3440598493
     0xcd22f862: "wolf_elemental_ice_25", // 3441621090
-    0xcd2f1f86: "desert_scorpion_slinger_medium_16bs04c", // 3442417542
-    0xcd513927: "bloodheart", // 3444652327
+    0xcd24d9cd: "undead_javelineer_36", // 3441744333
+    0xcd263883: "ghost_shackled_56", // 3441834115
     0xcd58fa4d: "undead_berserker_43", // 3445160525
     0xcd5ab7c5: "legion_villager_ladel_64", // 3445274565
     0xcd5e4e07: "anubian_lotus_scarab_boss", // 3445509639
@@ -6416,404 +5425,357 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xcd704c42: "wolf_black_32", // 3446688834
     0xcd740b5f: "undead_admiral_brute_dg_cutlass_00", // 3446934367
     0xcd75b9ea: "evil_knight_greataxe", // 3447044586
+    0xcd763959: "undead_pistoleer_3", // 3447077209
     0xcd8aaa13: "ck_spectral_lost_1hsword_10ws09_elite", // 3448416787
     0xcd91d862: "lynx_65", // 3448887394
-    0xcdb29645: "desert_scorpion_slinger_16bs04c", // 3451033157
-    0xcdb579c6: "damned_1h_swordsman_m-f_03gc09a_elite", // 3451222470
+    0xcd9cee8d: "bear_black_44", // 3449613965
+    0xcda84646: "evil_knight_warhammer_firevariant", // 3450357318
     0xcdb75c8d: "ck_undead_berserker_10ws08_black", // 3451346061
     0xcdb93652: "undead_grenadier_disease_42", // 3451467346
     0xcdb98da6: "drowned_sailor_1h_sword_shield_22", // 3451489702
-    0xcdbe7a28: "anubianguardian_reaver_16bs12", // 3451812392
-    0xcdc9e3fe: "alligator_strange_05wc02", // 3452560382
+    0xcdba1148: "damned_villager_sickle_48", // 3451523400
     0xcdca94b6: "damned_grunt_dg_shattermtn_00", // 3452605622
-    0xcdd4d14a: "withered_grunt_11md00j", // 3453276490
-    0xcdd5b87f: "sheep_eastern_60", // 3453335679
     0xcdd806fb: "dynasty_musketeer_08qp08", // 3453486843
-    0xcdd8a4f7: "undead_berserker_15ec04e", // 3453527287
-    0xcde9d8c0: "undead_pistoleer_12mb05", // 3454654656
-    0xcdf30169: "legion_villager_cleaver_16bs08d", // 3455254889
     0xcdf9436f: "anubianguardian_archer_dg_brimstonesands_00", // 3455665007
-    0xcdfba41c: "legion_villager_kitchenknife_16bs09", // 3455820828
     0xce1ccd03: "ancientguardian_mage_60", // 3457993987
-    0xce20dfbb: "undead_gravedigger_02bw06", // 3458260923
     0xce211a06: "legion_sagittarii", // 3458275846
-    0xce3266d8: "skeleton_crawler_11md09", // 3459409624
-    0xce375bbf: "rabbit_02bw07", // 3459734463
-    0xce4d3989: "evil_knight_bow_10ws04", // 3461167497
     0xce4f1fce: "ck_undead_pistoleer_10ws09_elite", // 3461291982
     0xce57509a: "lynx_38", // 3461828762
-    0xce579251: "evil_knight_longsword_31", // 3461845585
     0xce5a9e3c: "dynasty_warrior_named_08qp08", // 3462045244
+    0xce6f42df: "drowned_miner_13", // 3463398111
     0xce6f4d80: "fl_mim_wolf_elemental_earth", // 3463400832
+    0xce723d18: "ghost_charred_43", // 3463593240
+    0xce775dd5: "blight_fiend_40", // 3463929301
     0xce87d32d: "boar_2", // 3465007917
+    0xce8deda7: "sand_elemental_shaman_sandworm", // 3465407911
+    0xce8ee351: "damned_bowman_53", // 3465470801
     0xce9db6b8: "ck_turkey", // 3466442424
-    0xceaad0fa: "skeleton_1h_sword_11md01b", // 3467301114
-    0xceb0d830: "alligator_young_06sw02", // 3467696176
-    0xceb2491a: "skeleton_1h_sword_05wc09", // 3467790618
-    0xceb2a72d: "withered_beetle_09fl05a", // 3467814701
-    0xceb2f751: "anubianguardian_scarab_16bs02", // 3467835217
+    0xce9dd310: "corruption_heavy_58", // 3466449680
+    0xcebc834e: "risen_corruption_entity_58", // 3468460878
     0xcec61d58: "ck_blackbone_lost_2hblunderbuss_10ws10", // 3469090136
-    0xced6d098: "damned_hound_11md07b", // 3470184600
+    0xcecb4012: "undead_gravedigger_40", // 3469426706
+    0xcecf93f5: "damned_greataxeman_m-f_60", // 3469710325
     0xced88f93: "ck_mountain_lion_10ws06", // 3470299027
-    0xcef728ca: "ghost_starved_02bw06", // 3472304330
+    0xcef62917: "desert_scorpion_small", // 3472238871
+    0xcef76d30: "ancientguardian_javelineer_32", // 3472321840
+    0xcf01202e: "damned_rifleman_m-f_47", // 3472957486
+    0xcf05fd0b: "damned_villager_shovel_27", // 3473276171
     0xcf065b44: "drowned_sailor_1h_sword_24", // 3473300292
     0xcf0dd8f2: "fl_anubianguardian_panther_small_09fl01", // 3473791218
     0xcf1afc6d: "fl_swamp_dryad_soldier_09fl03a", // 3474652269
     0xcf1c1941: "ck_ghost_starved_q4_waveevent", // 3474725185
+    0xcf1f1452: "ghost_shipwrecked_57", // 3474920530
     0xcf2064a8: "ck_blackbone_lost_2haxe_10ws09_elite", // 3475006632
-    0xcf2130d8: "dune_phantom_berserker_16bs06", // 3475058904
+    0xcf22b1fb: "season_02_malek", // 3475157499
     0xcf28bfad: "evil_knight_mace_27", // 3475554221
+    0xcf2b702d: "dynasty_spearman_61", // 3475730477
     0xcf2b9b21: "risen_regurgitator_53", // 3475741473
-    0xcf2dc910: "bloated_corpse_48", // 3475884304
     0xcf32acbb: "anubianguardian_brute_63", // 3476204731
+    0xcf3790e1: "drowned_sailor_1h_club_34", // 3476525281
     0xcf42646b: "corruption_impaler_dt6", // 3477234795
     0xcf49456f: "undead_pirate_brute_62", // 3477685615
-    0xcf4c7b5c: "anubianguardian_spearman_16bs02", // 3477896028
-    0xcf4d5c12: "wolf_black_11md10", // 3477953554
+    0xcf4b12b9: "damned_villager_pitchfork_14", // 3477803705
+    0xcf4df08e: "swamp_dryad_tendril_60_waveevent", // 3477991566
     0xcf51598c: "skeleton_spear_50", // 3478215052
     0xcf5272f0: "fl_explosive_sprout_fire_elite_09fl12", // 3478287088
-    0xcf5c7fe4: "ancientguardian_spearman_11md06d", // 3478945764
+    0xcf538f27: "evil_knight_greataxe_icevariant_named", // 3478359847
+    0xcf5a2e26: "evil_knight_flamekeeper_entity_manager", // 3478793766
     0xcf5e2ad8: "hercyne_gorilla_raid_cutlasskeys_00", // 3479055064
+    0xcf63f38e: "damned_axeman_m-f_44", // 3479434126
     0xcf658aba: "evil_knight_heavy_elite_08qp02", // 3479538362
     0xcf6b3779: "undead_grenadier_37", // 3479910265
-    0xcf71aea7: "damned_spearman_m-f_03gc05a", // 3480333991
     0xcf7523fc: "ancientguardian_reaver_45", // 3480560636
     0xcf7ffa18: "ck_undead_pistoleer_10ws03bd", // 3481270808
-    0xcf80daf2: "legion_villager_pickaxe_16bs08", // 3481328370
-    0xcf90df1a: "legion_legionnaire_named_05_04nw10_00", // 3482378010
-    0xcfa02a4e: "bloated_corpse_08qp02", // 3483380302
+    0xcfac1fee: "ghost_starved_51", // 3484164078
     0xcfad87bf: "legion_sagittarii_60", // 3484256191
     0xcfb3901e: "drowned_sailor_2h_axe_23", // 3484651550
-    0xcfba4c82: "lakecast", // 3485092994
     0xcfbbced3: "dunewalker_wanderer_rapier_trial_soloplus", // 3485191891
     0xcfbcaf50: "undead_grenadier_molotov_33", // 3485249360
     0xcfc88ecb: "mountain_lion_61", // 3486027467
     0xcffa4b85: "starved_mercenary_2h_axe_60", // 3489287045
-    0xd00ac749: "desert_coyote_16bs03", // 3490367305
+    0xd004c840: "ghost_charred_57", // 3489974336
+    0xd0174b75: "evil_knight_greataxe_icevariant", // 3491187573
     0xd017818b: "damned_villager_pickaxe_13", // 3491201419
-    0xd01d2bc5: "waterfowl_16bs02e", // 3491572677
     0xd0216709: "evil_knight_longsword_25", // 3491849993
-    0xd038356a: "ancient_guardian_reaver_07sm07", // 3493344618
-    0xd03c6408: "totem_pirate_cursed_05wc08", // 3493618696
     0xd03c6e2b: "undead_pistoleer_49", // 3493621291
-    0xd04e826a: "withered_beetle_13wf06a", // 3494806122
     0xd0535680: "evil_knight_warhammer_named_dg_greatcleave_01", // 3495122560
-    0xd053a1d4: "primal_lion_desert_16bs01", // 3495141844
     0xd05640ca: "bear_damned_named_08qp02", // 3495313610
+    0xd067b48a: "elk_stag_corrupted_58", // 3496457354
     0xd069784e: "ancientguardian_mage_dg_greatcleave_00_00", // 3496573006
-    0xd06a597b: "pirate", // 3496630651
-    0xd079b3db: "scorchvein", // 3497636827
-    0xd07f7437: "wolf_alpha_12mb06", // 3498013751
     0xd0867b16: "ck_undead_pirate_brute_10ws06", // 3498474262
     0xd0943ef5: "fl_chameleon_09fl08", // 3499376373
     0xd09542f1: "lost_knight_bow_12mb03e", // 3499442929
-    0xd0ac58f1: "ancientguardian_javelineer_11md00f", // 3500955889
-    0xd0b568bf: "wolf_elemental_earth_14ac18", // 3501549759
     0xd0b6055b: "skeleton_club_12", // 3501589851
-    0xd0b7f3a9: "varangian", // 3501716393
-    0xd0bd6000: "ck_spectral_lost_fire_q3_waveevent", // 3502071808
-    0xd0d53cf0: "anubianguardian_brute_12bs09b", // 3503635696
+    0xd0bdb54a: "undead_gravedigger_54", // 3502093642
+    0xd0cf6222: "corrupted_tiger_58", // 3503252002
     0xd0d6949d: "darkness_hive_membrane_5", // 3503723677
-    0xd0dc25a2: "skeleton_1h_sword_11md00f", // 3504088482
     0xd0ddb11c: "dryad_prowler_64", // 3504189724
-    0xd0e1b859: "undead_pistoleer_11md05a", // 3504453721
     0xd0e22041: "boar_stripped_59", // 3504480321
     0xd0f0659b: "ancient_amalgam_named_16bs11b", // 3505415579
+    0xd0f81609: "damned_bowman_47", // 3505919497
+    0xd0f99e9f: "damned_villager_skinning_knife_35", // 3506019999
     0xd103d6a4: "ancientguardian_reaver_51", // 3506689700
-    0xd108912c: "damned_cultist_03gc08a", // 3506999596
+    0xd11506d6: "damned_axeman_m-f_50", // 3507816150
     0xd12241c3: "damned_villager_ladel_29", // 3508683203
     0xd127acd4: "skeleton_spear_44", // 3509038292
-    0xd1286448: "damned_villager_pitchfork_16bs07b", // 3509085256
-    0xd131ad19: "wolf_black_02bw03a", // 3509693721
-    0xd1396149: "armadillo_16bs07", // 3510198601
     0xd13d31b2: "alligator_strange_dg_cutlass_00", // 3510448562
-    0xd14165b9: "drowned_sailor_1h_club_20", // 3510724025
     0xd1426f08: "wolf_elemental_earth_59", // 3510791944
-    0xd15627e2: "tearguard", // 3512084450
-    0xd1578b11: "fl_beetle_baby_09fl03", // 3512175377
-    0xd157c580: "dune_phantom_berserker_16bs12", // 3512190336
     0xd15d6e79: "risen_regurgitator_47", // 3512561273
-    0xd168dae5: "rotten_ward", // 3513309925
+    0xd169e10a: "ghost_shipwrecked_43", // 3513377034
+    0xd170ae1c: "drowned_sailor_1h_sword_30", // 3513822748
     0xd171d366: "desert_scorpion_67", // 3513897830
+    0xd1727137: "unstable_swamp_fiend_minion", // 3513938231
+    0xd1730853: "damned_villager_shovel_33", // 3513976915
+    0xd1750a57: "risen_l-r_arm_48", // 3514108503
     0xd176dd6d: "ck_alligator_black_10ws08", // 3514228077
+    0xd177d576: "damned_rifleman_m-f_53", // 3514291574
+    0xd17cf7b0: "dryad_shaman_64", // 3514628016
     0xd18d7e86: "drowned_sailor_1h_club_admiral_minion", // 3515711110
-    0xd1bc2bc0: "goat_mountain_59", // 3518770112
-    0xd1c42f35: "elk_stag_corrupted_07sm08", // 3519295285
     0xd1c56546: "drowned_sailor_2h_axe_37", // 3519374662
     0xd1c6e6dc: "ghost_plagued_35", // 3519473372
-    0xd1c8028f: "risen_whole_body_11md02", // 3519545999
     0xd1ca5a08: "undead_grenadier_molotov_27", // 3519699464
-    0xd1cdcd23: "damned_villager_hammer_02bw05", // 3519925539
-    0xd1d30417: "drowned_sailor_1h_sword_40_15ec00", // 3520267287
     0xd1daeab6: "ghost_starved_45", // 3520785078
     0xd1e61e36: "alligator_black_36", // 3521519158
-    0xd1eaa1cc: "elk_doe_43", // 3521814988
-    0xd1facbde: "northstar", // 3522874334
-    0xd1fc7ec8: "bobcat_15ec01", // 3522985672
     0xd1fcf7f3: "wolf_grey_13", // 3523016691
     0xd1fec88e: "elk_stag_strange_03gc04", // 3523135630
+    0xd2010e95: "evil_knight_lifestaff", // 3523284629
     0xd2055d8e: "swamp_dryad_beast_named_dg_edengrove_00", // 3523566990
-    0xd211daba: "legion_sagittarii_16bs02", // 3524385466
-    0xd216e15a: "turncoat", // 3524714842
-    0xd220e3dd: "alligator_strange_07sm08", // 3525370845
+    0xd20d976b: "damned_acolyte_51", // 3524106091
     0xd224491e: "damned_longswordsman_commander_named_dg_restless_00", // 3525593374
     0xd22fc1b2: "pig_domestic_17", // 3526345138
     0xd23356f3: "boar_named_00", // 3526579955
     0xd23ef569: "dynasty_summoner_08qp08", // 3527341417
     0xd24054bb: "ck_goldcursed_2hblunderbuss_10ws09_elite", // 3527431355
     0xd2410b02: "undead_hunter_named_09", // 3527478018
-    0xd24cd6d1: "jackrabbit_63", // 3528251089
+    0xd24e6822: "damned_cultist_39", // 3528353826
     0xd25c4c44: "ck_blackbone_lost_2haxe_named_10ws09_elite", // 3529264196
+    0xd2746ecd: "ghost_frozen_49", // 3530845901
     0xd279e2e7: "or_withered_grunt", // 3531203303
-    0xd28176f9: "skeleton_crawler_07sm07", // 3531699961
-    0xd29bd984: "ghost_starved_05wc05a", // 3533429124
-    0xd29d29b8: "season_02_event_sulfur_elemental_soldier", // 3533515192
-    0xd2a352e8: "legion_villager_cleaver_16bs12", // 3533918952
+    0xd2911d24: "undead_navigator_9", // 3532725540
     0xd2b00f64: "withered_brute_30", // 3534753636
     0xd2b382af: "risen_l-r_arm_15", // 3534979759
-    0xd2c94aa9: "undead_navigator_15ec02a", // 3536407209
-    0xd2cb059a: "boar_64", // 3536520602
-    0xd2d47673: "withered_grunt_12mb03a", // 3537139315
     0xd2e5a04a: "sulfur_elemental_entity_named_01", // 3538264138
     0xd2e9e51f: "tendril_corruption", // 3538543903
-    0xd2ecbf37: "bear_grizzly_11md06", // 3538730807
+    0xd2eeb8c3: "damned_villager_rake_26", // 3538860227
+    0xd2fa5cb8: "damned_villager_lumberaxe_47", // 3539623096
     0xd3030f1f: "ancientguardian_mage_dg_greatcleave_01", // 3540193055
     0xd306b91a: "wolf_black_26", // 3540433178
-    0xd3113cef: "damned_rifleman_45", // 3541122287
     0xd3116e0c: "dynasty_musketeer_dg_ebonscale_00", // 3541134860
+    0xd31d2ccd: "dryad_archer_45", // 3541904589
+    0xd31dd28e: "undead_grenadier_named_05wc11", // 3541947022
     0xd323c7a6: "undead_pistoleer_10ws09_elite", // 3542337446
     0xd32e0f15: "undead_berserker_57", // 3543011093
     0xd3310292: "legion_signifer_61", // 3543204498
+    0xd33951f1: "damned_villager_cleaver_34", // 3543749105
     0xd33af55c: "bear_damned_named_dg_restless_00", // 3543856476
-    0xd3444b5b: "ancientguardian_spearman_16bs11d", // 3544468315
-    0xd34456a3: "skeleton_mage_09fl06", // 3544471203
+    0xd3492e3b: "damned_pistoleer_m-f_30", // 3544788539
+    0xd350cddb: "ghost_shackled_42", // 3545288155
     0xd3545ce0: "anubianguardian_panther_65", // 3545521376
     0xd368e06c: "skeleton_2h_sword_58", // 3546865772
-    0xd36a21a4: "tendril_corruption_08qp08", // 3546948004
     0xd36bca21: "or_corrupted_brute", // 3547056673
-    0xd3797b0e: "boar_09fl02", // 3547953934
-    0xd38db22a: "ancientguardian_reaver_11md00g", // 3549278762
-    0xd392cf92: "alligator_black_13wf08", // 3549613970
+    0xd396f84c: "damned_villager_hammer_63", // 3549886540
     0xd3a650a7: "skeleton_crawler_16", // 3550892199
-    0xd3a83bb9: "undead_navigator_04nw11c", // 3551017913
     0xd3c26c5e: "ck_drowned_sailor_2h_axe_10ws08_gold", // 3552734302
-    0xd3c88f70: "anubianguardian_reaver_16bs06", // 3553136496
-    0xd3cf0f60: "undead_sailor_2h_axe_05wc06", // 3553562464
     0xd3cf78fe: "drowned_sailor_1h_sword_shield_36", // 3553589502
     0xd3cfc30a: "undead_grenadier_disease_56", // 3553608458
     0xd3df5912: "darkness_monolith_shell", // 3554629906
+    0xd3e8d6b2: "damned_rifleman_md_named_coy", // 3555251890
+    0xd3ea1bd5: "bear_black_50", // 3555335125
     0xd3fae6d3: "undead_pistoleer_14", // 3556435667
-    0xd404355e: "risen_onearm_13wf08a", // 3557045598
+    0xd409324d: "naga_ancientguardian_iceguardian_entomb", // 3557372493
+    0xd40ad509: "corrupted_ogre_61", // 3557479689
     0xd4131064: "fl_alligator_09fld", // 3558019172
+    0xd424ea22: "damned_pistoleer_m-f_34", // 3559189026
     0xd43998f9: "anubianguardian_panther_61", // 3560544505
-    0xd43a2569: "waterfowl", // 3560580457
-    0xd43ce74a: "dune_phantom_tank_16bs07c", // 3560761162
+    0xd43d09c2: "ghost_shackled_46", // 3560769986
     0xd43fe88c: "undead_javelineer_26", // 3560958092
     0xd443cb0c: "undead_berserker_53", // 3561212684
-    0xd4446029: "ghost_shackled_05wc05b", // 3561250857
     0xd44f2d2e: "damned_villager_hammer_03gc09_elite", // 3561958702
     0xd451ba1c: "yonas_msq2", // 3562125852
     0xd4547edc: "fl_dh_armored_dragon_named", // 3562307292
+    0xd45495e8: "damned_villager_cleaver_30", // 3562313192
     0xd45cc68b: "legion_signifer_65", // 3562849931
     0xd466347e: "dynasty_summoner_dg_ebonscale_00", // 3563467902
-    0xd4673a45: "sierra", // 3563534917
     0xd46b7d03: "wolf_black_22", // 3563814147
     0xd46db485: "ck_undead_pirate_brute_10ws06_tide", // 3563959429
+    0xd470e8d4: "dryad_archer_41", // 3564169428
     0xd473c18a: "ancientguardian_javelineer_dg_everfall_00", // 3564355978
-    0xd474af34: "damned_villager_pitchfork_09fl04", // 3564416820
     0xd47afc15: "ck_undead_grenadier_10ws06_tide", // 3564829717
-    0xd47b1d2d: "peacock_08qp05", // 3564838189
     0xd480876d: "ancientguardian_warhammer_icevariant_raid10", // 3565193069
+    0xd487dfcc: "bear_black_54", // 3565674444
+    0xd49722ca: "undead_pistoleer_10", // 3566674634
+    0xd4a12009: "damned_villager_sickle_58", // 3567329289
     0xd4a20713: "undead_grenadier_disease_52", // 3567388435
-    0xd4a54b69: "anubianguardian_reaver_16bs02", // 3567602537
-    0xd4bc4231: "drowned_sailor_1h_club_15ec02a", // 3569107505
+    0xd4a2bce7: "drowned_sailor_1h_sword_shield_32", // 3567434983
+    0xd4b096fb: "siegeweaponsmallresistsrangeddmg", // 3568342779
+    0xd4df2afe: "primal_lion_desert", // 3571395326
     0xd4e55c32: "damned_cultist", // 3571801138
-    0xd4e8cdaa: "withered_swarmancer_11md08", // 3572026794
     0xd4f46c1b: "damned_hound_10ws06", // 3572788251
-    0xd50c7d51: "wolf_black_05wc04", // 3574365521
+    0xd4fb3c55: "damned_villager_hammer_67", // 3573234773
     0xd50d9be2: "bear_grizzly_59", // 3574438882
-    0xd50f39c2: "ancient_ice_dragon_s4", // 3574544834
-    0xd52112c8: "jackrabbit_67", // 3575714504
     0xd526d447: "ck_spectral_lost_1hsword_named_10ws09_elite", // 3576091719
     0xd531d24b: "undead_navigator_63_elite", // 3576812107
+    0xd53c28c1: "invasion_cowlauncher", // 3577489601
     0xd53cde22: "swamp_dryad_archer_58", // 3577536034
-    0xd53ed842: "alligator_strange_10ws06", // 3577665602
-    0xd544456e: "evil_knight_spear_dg_greatcleave_00_01", // 3578021230
+    0xd53ec2e8: "season_02_malek_mirage", // 3577660136
     0xd544fbbb: "ck_undead_berserker_named_10ws08_village", // 3578067899
-    0xd562f5ad: "sulfur_elemental_entity_16bs10", // 3580032429
+    0xd5605372: "damned_acolyte_55", // 3579859826
     0xd5683da5: "drowned_miner_10ws09", // 3580378533
     0xd56920df: "dunewalker_waterseeker_lifestaff_trial_quest", // 3580436703
     0xd569a2ee: "swamp_dryad_archer_dg_edengrove_00", // 3580469998
     0xd56f160b: "ck_undead_navigator_10ws03d2_named", // 3580827147
     0xd5753465: "bloated_corpse_25_elite", // 3581228133
-    0xd57c1ea3: "legion_sagittarii_16bs06", // 3581681315
     0xd5919193: "dryad_soldier_48", // 3583086995
     0xd592b401: "damned_longswordsman_commander_07sm06b_elite", // 3583161345
-    0xd5935f0b: "misty", // 3583205131
+    0xd5961afc: "withered_grunt_25_dg_windsward_00", // 3583384316
+    0xd596ab00: "damned_villager_pitchfork_59", // 3583421184
+    0xd59798a1: "damned_villager_lumberaxe_43", // 3583482017
+    0xd5a16416: "ghost_charred_66_09a_s18", // 3584123926
     0xd5a6c183: "boar_60", // 3584475523
     0xd5b20b8b: "hercyne_broodmother", // 3585215371
+    0xd5c565a6: "bobcat_59", // 3586483622
     0xd5cbf989: "fl_swamp_dryad_soldier_09fl02_waveevent", // 3586914697
-    0xd5dd3321: "drowned_sailor_1h_club_04nw11c", // 3588043553
     0xd5ddcb7d: "withered_brute_34", // 3588082557
     0xd5de46b6: "risen_l-r_arm_11", // 3588114102
-    0xd5dfa88e: "skeleton_crawler_11md04a", // 3588204686
     0xd5e27485: "fl_elk_elemental_09fl04b", // 3588387973
-    0xd5e69098: "evil_knight_bow_14ac13", // 3588657304
     0xd5e6c32d: "fl_dg_firstlight_01_mammoth_ice", // 3588670253
+    0xd6042513: "ghost_shipwrecked_47", // 3590595859
     0xd60ba1c1: "ck_spectral_lost_2hblunderbuss_q4_waveevent", // 3591086529
     0xd60e0377: "evil_knight_spear_31", // 3591242615
+    0xd61133a9: "dryad_shaman_60", // 3591451561
     0xd61734e9: "ancientguardian_reaver_named_03", // 3591845097
     0xd619c299: "wolf_black_33_elite", // 3592012441
-    0xd61b88f3: "elite_sirensong", // 3592128755
+    0xd61a116f: "damned_rifleman_m-f_57", // 3592032623
     0xd61c177f: "desert_scorpion_63", // 3592165247
+    0xd61d6a05: "drowned_sailor_1h_sword_34", // 3592251909
+    0xd61ecc4a: "damned_villager_shovel_37", // 3592342602
     0xd62ca1a0: "drowned_sailor_1h_club_24", // 3593249184
     0xd630aa60: "risen_regurgitator_43", // 3593513568
-    0xd635fa07: "bison_12mb03a", // 3593861639
-    0xd636f851: "bloated_corpse_58", // 3593926737
-    0xd63a4f08: "fl_beetle_baby_09fl07", // 3594145544
     0xd64a68cd: "skeleton_spear_40", // 3595200717
-    0xd64e5669: "ghost_starved_09fl10", // 3595458153
-    0xd654a550: "armadillo_16bs03", // 3595871568
-    0xd6574a1d: "anubianguardian_spearman_16bs12", // 3596044829
-    0xd659ec5d: "ghost_starved_16bs07c", // 3596217437
     0xd661ecd7: "ghost_frozen_named_s4_1", // 3596741847
     0xd664cb59: "ck_undead_pistoleer_10ws03cd", // 3596929881
-    0xd66b3970: "sheep_churro_12mb10", // 3597351280
-    0xd66d5563: "rabbit_spotted_02bw03", // 3597489507
     0xd66e12bd: "ancientguardian_reaver_55", // 3597537981
     0xd6700638: "undead_grenadier_27", // 3597665848
+    0xd6719e6e: "skeleton_archer_17", // 3597770350
+    0xd678c2cf: "damned_axeman_m-f_54", // 3598238415
     0xd6804cb2: "undead_pistoleer_named_00", // 3598732466
     0xd68bda2f: "alligator_black_32", // 3599489583
-    0xd68cc119: "withered_beetle_15ec02b", // 3599548697
     0xd69133ea: "wolf_grey_17", // 3599840234
     0xd69ee712: "wolf_grey_6", // 3600738066
-    0xd6a5c696: "risen_whole_body_11md06", // 3601188502
+    0xd6a8a15f: "drowned_sailor_2h_axe_33", // 3601375583
     0xd6ab22c5: "ghost_plagued_31", // 3601539781
-    0xd6ab8a34: "damned_villager_hammer_11md10a", // 3601566260
-    0xd6aceec5: "desert_bison_strange_16bs10", // 3601657541
     0xd6b72eaf: "ghost_starved_41", // 3602329263
-    0xd6e8a611: "pig_domestic_12mb10", // 3605571089
+    0xd6e524c3: "damned_cultist_60", // 3605341379
+    0xd6e83e09: "evil_knight_flamekeeper_boss_entities", // 3605544457
     0xd6e9abbf: "ck_spectral_lost_2hblunderbuss_10ws08", // 3605638079
+    0xd6eb7b53: "anubianguardian_panther_elite_named_03", // 3605756755
     0xd6f29e1c: "ck_spectral_lost_2hblunderbuss_named_10ws10", // 3606224412
     0xd6f767c7: "undead_officer_36", // 3606538183
     0xd6fdf273: "legion_villager_pickaxe_dg_brimstonesands_00", // 3606966899
     0xd6fe40c7: "damned_longswordsman_commander_07sm06_darkness", // 3606986951
-    0xd704fa11: "fallow", // 3607427601
-    0xd70b0c72: "fl_spriggan_adolescent_09fl09", // 3607825522
-    0xd70c195e: "undead_pistoleer_08qp02", // 3607894366
     0xd71af6aa: "loot_goblin_60", // 3608868522
-    0xd71db811: "skeleton_crawler_13wf02b", // 3609049105
     0xd721458c: "tendril_corruption_dt4", // 3609281932
+    0xd72512a9: "undead_javelineer_named_02a", // 3609531049
+    0xd725d5d3: "season_02_eventboss", // 3609581011
     0xd7297ec1: "ancientguardian_mage_named_dg_reekwater_00_02", // 3609820865
     0xd7307915: "wolf_alpha_named_03gc04_02", // 3610278165
-    0xd7307cad: "legion_sagittarii_16bs08c", // 3610279085
     0xd737fa92: "dynasty_musketeer_08qp08_elite", // 3610770066
-    0xd73e65cd: "primal_lion_desert_16bs05", // 3611190733
-    0xd7451f7d: "dryad_archer_14ac11b", // 3611631485
-    0xd74ca310: "evil_knight_longsword_21", // 3612123920
-    0xd74eae11: "overpass", // 3612257809
-    0xd7670350: "desert_coyote_16bs07", // 3613852496
-    0xd768c34d: "wolf_grey_11md07", // 3613967181
+    0xd742564a: "ck_undead_grenadier_q1_waveevent", // 3611448906
+    0xd7690c59: "ghost_charred_53", // 3613985881
     0xd76c6c94: "blight_fiend_50", // 3614207124
     0xd76f9877: "ck_ancientguardian_mage", // 3614414967
+    0xd77a4592: "damned_villager_pickaxe_17", // 3615114642
     0xd77bd7b3: "fl_anubianguardian_archer_09fl03", // 3615217587
-    0xd7916e03: "ghost_shackled_02bw03", // 3616632323
+    0xd7904b5d: "skeleton_1h_sword_60_waveevent", // 3616557917
     0xd7921a52: "dune_phantom_berserker_named_01", // 3616676434
+    0xd7945a86: "damned_villager_skinning_knife_31", // 3616823942
     0xd795d210: "damned_bowman_43", // 3616920080
-    0xd7a9c610: "anubianguardian_scarab_16bs12", // 3618227728
-    0xd7ad9ceb: "reedwater", // 3618479339
     0xd7b07505: "dryad_prowler_60", // 3618665733
-    0xd7b1e1bb: "skeleton_1h_sword_11md00b", // 3618759099
-    0xd7b4bd93: "sand_elemental_shaman_16bs04", // 3618946451
-    0xd7b5bf9e: "withered_beetle_08qp07", // 3619012510
-    0xd7c19ce8: "ancientguardian_javelineer_11md00b", // 3619790056
-    0xd7c4fe5e: "withered_beetle_13wf08b", // 3620011614
+    0xd7d07153: "undead_gravedigger_50", // 3620761939
     0xd7dbc142: "skeleton_club_16", // 3621503298
-    0xd7e5195e: "bloated_corpse_13wf01", // 3622115678
     0xd7ec5c71: "ancientguardian_javelineer_22", // 3622591601
-    0xd7f1b4b3: "damned_villager_rake_11md07a", // 3622941875
     0xd7fd12d9: "damned_hound_34", // 3623686873
     0xd804b4e7: "fl_swamp_dryad_soldier_09fl02", // 3624187111
+    0xd807d2ea: "brother_umberto_caster", // 3624391402
     0xd8091a11: "corruption_heavy_07sm06_elite", // 3624475153
     0xd80b3dfa: "hercyne_tendril_raid_cutlasskeys_00", // 3624615418
     0xd80fdb12: "evil_knight_caster_named_04nw04", // 3624917778
-    0xd81208e9: "anubianguardian_brute_16bs02", // 3625060585
     0xd81ec151: "legion_legionnaire_61", // 3625894225
-    0xd82aff80: "oceanview", // 3626696576
-    0xd83027ba: "drowned_sailor_1h_sword_shield_04nw10", // 3627034554
-    0xd8406381: "legion_villager_pickaxe_16bs10", // 3628098433
     0xd841ae12: "dynasty_heavy_dg_greatcleave_00", // 3628183058
     0xd841be23: "dunewalker_wanderer_longsword_trial_quest", // 3628187171
     0xd85d41cc: "evil_knight_heavy_commanderloth_boss", // 3629990348
-    0xd86384af: "skeleton_mage_11md09a", // 3630400687
-    0xd86c95c4: "undead_shaman_10ws09", // 3630994884
+    0xd86ca69d: "ghost_starved_49", // 3630999197
     0xd86fdaf1: "legion_signifer_named_02", // 3631209201
-    0xd87f5c2e: "blight_fiend_07sm09", // 3632225326
+    0xd870aaf7: "ghost_plagued_39", // 3631262455
     0xd891e0ff: "skeleton_spear_48", // 3633438975
     0xd8940de8: "damned_villager_ladel_25", // 3633581544
-    0xd894457c: "damned_2h_spearman_m-f_03gc03_elite", // 3633595772
-    0xd8ab0425: "cow_12mb07", // 3635086373
+    0xd8a146ae: "skeleton_1h_sword_agheavy_minion", // 3634448046
+    0xd8b7de22: "withered_grunt_23", // 3635928610
     0xd8b94af0: "ancientguardian_spearman_41_elite", // 3636022000
-    0xd8bbc149: "boar_35", // 3636183369
     0xd8c09146: "ck_alligator_black_10ws04", // 3636498758
     0xd8c13050: "damned_bowman_m-f_03gc07", // 3636539472
-    0xd8ed7063: "bloated_corpse_50", // 3639439459
+    0xd8c3467c: "risen_l-r_arm_44", // 3636676220
+    0xd8e690af: "desert_scorpion_medium_elite", // 3638988975
     0xd8f2c802: "dynasty_maiden_named_08qp06_01", // 3639789570
+    0xd8f42323: "wolf_elemental_earth_55", // 3639878435
     0xd8fb8db3: "damned_rifleman_m-f_07sm06b", // 3640364467
-    0xd8fc11d3: "skeleton_crawler_06sw07a", // 3640398291
     0xd90bf961: "undead_gravedigger_58", // 3641440609
-    0xd92d4b95: "damned_villager_sickle_07sm03", // 3643624341
+    0xd924c9e9: "wolf_elemental_ice_60", // 3643066857
+    0xd933cc5e: "evil_knight_lifestaff_icevariant", // 3644050526
+    0xd939eae8: "damned_pistoleer_m-f_61", // 3644451560
     0xd94090ec: "undead_officer_12mb06c", // 3644887276
-    0xd949e214: "skeleton_club_06sw05c", // 3645497876
+    0xd9499522: "damned_villager_cleaver_65", // 3645478178
+    0xd94fd2b4: "damned_villager_skinning_knife_39", // 3645887156
     0xd9546c6a: "boar_stripped_55", // 3646188650
     0xd95512a5: "ck_pig_10ws06", // 3646231205
-    0xd9552d38: "elk_stag_26", // 3646238008
-    0xd96daa23: "ancientguardian_javelineer_16bs06", // 3647842851
-    0xd9725a0c: "legion_villager_hammer_16bs03", // 3648150028
+    0xd955978b: "undead_hunter_53", // 3646265227
+    0xd9792e09: "corrupted_tiger_54", // 3648597513
     0xd97fab79: "ck_undead_pirate_brute_named_10ws06b", // 3649022841
     0xd985d2e4: "damned_villager_axethrower_m-f_53", // 3649426148
     0xd98a2200: "undead_pistoleer_45", // 3649708544
-    0xd9972b22: "evil_knight_longsword_29", // 3650562850
     0xd997e9e9: "lynx_20", // 3650611689
     0xd9aa20da: "ck_drowned_miner_10ws08_black", // 3651805402
-    0xd9b26831: "damned_villager_hammer_11md00i", // 3652347953
     0xd9b26a2d: "evil_knight_bow_16", // 3652348461
     0xd9b7a4dd: "dune_phantom_berserker_64", // 3652691165
     0xd9b7e4a6: "blight_fiend_58", // 3652707494
-    0xd9d08440: "fl_spriggan_adolescent_09fl01", // 3654321216
-    0xd9d5df69: "alligator_black_15ec01", // 3654672233
+    0xd9ca7294: "corruption_impaler_dg_restless_00_spawn", // 3653923476
     0xd9e63c9f: "damned_villager_hammer_32", // 3655744671
     0xda240db1: "swamp_fiend_elite_05wc10", // 3659795889
-    0xda2441f6: "undead_officer_41_15ec00", // 3659809270
     0xda359bfc: "skeleton_1h_sword_57", // 3660946428
-    0xda364a32: "corruption_entity_10ws06", // 3660991026
-    0xda3b1d6f: "legion_villager_kitchenknife_16bs11", // 3661307247
     0xda441ca1: "corrupted_ogre_dg_restless_00", // 3661896865
     0xda4caaf8: "undead_pistoleer_18", // 3662457592
     0xda674558: "damned_villager_pickaxe_42", // 3664201048
-    0xda6cfa2e: "skeleton_mage_03gc10", // 3664575022
+    0xda77fc13: "ancient_ice_dragon", // 3665296403
+    0xda7aa83b: "damned_villager_sickle_50", // 3665471547
+    0xda7e141c: "hercyne_corvid_typhon", // 3665695772
     0xda869173: "isabella_dg_ebonscale_00", // 3666252147
-    0xda89fc25: "evil_knight_bow_04nw04", // 3666476069
+    0xda895a4c: "damned_villager_skinning_knife_64", // 3666434636
     0xda8a372b: "fl_armored_dragon_09fl11", // 3666491179
-    0xda8c7e34: "bear_damned_dt3", // 3666640436
-    0xdaa0326c: "skeleton_crawler_16bs07", // 3667931756
+    0xda8f1dda: "damned_villager_cleaver_38", // 3666812378
     0xdaab60e6: "dryad_archer_49", // 3668664550
-    0xdab5be5a: "skeleton_mage_03gc10c", // 3669343834
     0xdac0a29b: "damned_longswordsman_commander_named_01", // 3670057627
+    0xdac1a8ac: "tendril_corruption_60", // 3670124716
     0xdac24e83: "ancientguardian_heavy_dg_greatcleave_00_01", // 3670167171
     0xdac6c188: "skeleton_club_43", // 3670458760
     0xdacded22: "ck_boar_spectral_10ws09_elite", // 3670928674
-    0xdad44aa0: "skeleton_1h_club_11md01b", // 3671345824
     0xdadeac47: "skeleton_2h_sword_54", // 3672026183
-    0xdaf232c5: "skeleton_spear_06sw03", // 3673305797
+    0xdae8c6d1: "damned_villager_kitchenknife_56", // 3672688337
     0xdb006acf: "drowned_sailor_1h_sword_61", // 3674237647
+    0xdb03cc80: "damned_villager_shovel_62", // 3674459264
+    0xdb051c46: "tiger_52", // 3674545222
     0xdb05ce84: "risen_l-r_arm_19", // 3674590852
+    0xdb1eed94: "bobcat_51", // 3676237204
+    0xdb27510f: "undead_navigator_5", // 3676786959
     0xdb2daaaa: "risen_regurgitator_16", // 3677203114
+    0xdb2e8f65: "ancientguardian_spearman_dg_reekwater_00_spawn", // 3677261669
+    0xdb341934: "wolf_alpha_46", // 3677624628
     0xdb345b65: "drowned_sailor_1h_sword_shield_10ws08", // 3677641573
-    0xdb3ca8fc: "undead_shaman_15ec04a", // 3678185724
+    0xdb3870dd: "alligator_strange_36", // 3677909213
+    0xdb3e9d5d: "ghost_starved_named_99a_enc_torment", // 3678313821
     0xdb457850: "ck_blackbone_lost_2hspear_10ws02_sable_prison", // 3678763088
+    0xdb4a19a1: "dryad_soldier_40", // 3679066529
+    0xdb4d2332: "damned_villager_pitchfork_51", // 3679265586
     0xdb4e898f: "fl_barbary_lion_elite_09fl01", // 3679357327
-    0xdb57b1e3: "damned_villager_pickaxe_11md07a", // 3679957475
     0xdb60ec9e: "evil_knight_bow", // 3680562334
     0xdb6c9ea4: "skeleton_archer_42", // 3681328804
     0xdb79a423: "desert_scorpion_sulfur", // 3682182179
@@ -6821,540 +5783,458 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xdb86e752: "undead_navigator_36", // 3683051346
     0xdb8c3320: "wolf_grey_42", // 3683398432
     0xdb96dae5: "alligator_black_67", // 3684096741
-    0xdb9a651f: "elk_doe_12", // 3684328735
-    0xdba194a7: "drowned_sailor_1h_sword_shield_15ec02c", // 3684799655
-    0xdbb4aee2: "ancientguardian_greatsword_s4", // 3686051554
     0xdbb55e63: "damned_greataxeman_m-f_named_dg_greatcleave_00", // 3686096483
+    0xdbb598a2: "wolf_timber_33", // 3686111394
+    0xdbb6220f: "ghost_plagued_64", // 3686146575
     0xdbbdddd9: "risen_whole_body_36", // 3686653401
+    0xdbc222e6: "ghost_frozen_45", // 3686933222
     0xdbced923: "ancientguardian_spearman_43", // 3687766307
+    0xdbd613d0: "bear_grizzly_51", // 3688240080
     0xdbd64b4a: "corruptedlegion_cyclops_63", // 3688254282
-    0xdbe1ed8f: "ghost_starved_13wf05", // 3689016719
+    0xdbe21bca: "corrupted_mine_65", // 3689028554
     0xdbe79212: "primal_lion_61", // 3689386514
-    0xdbf31065: "undead_officer_05wc05c", // 3690139749
     0xdbf74729: "undead_hunter_named_05", // 3690415913
-    0xdbf8f778: "skeleton_2h_sword_11md09", // 3690526584
+    0xdbf82409: "damned_cultist_35", // 3690472457
     0xdc015abd: "skeleton_archer_46", // 3691076285
+    0xdc20e72b: "damned_villager_pitchfork_55", // 3693143851
     0xdc21e1dc: "swamp_fiend_58", // 3693208028
-    0xdc29288e: "ghost_starved_16bs02b", // 3693684878
-    0xdc3cd4ea: "ancientguardian_mage_16bs09a", // 3694974186
+    0xdc27ddb8: "dryad_soldier_44", // 3693600184
     0xdc406eb3: "risen_regurgitator_12", // 3695210163
+    0xdc4a9516: "undead_navigator_1", // 3695875350
     0xdc4cbd29: "undead_berserker_named_10ws08", // 3696016681
-    0xdc516ce5: "undead_shaman_15ec04e", // 3696323813
-    0xdc571ac7: "withered_beetle_11md00j", // 3696696007
+    0xdc55b4c4: "alligator_strange_32", // 3696604356
+    0xdc59dd2d: "wolf_alpha_42", // 3696876845
     0xdc59f686: "evil_knight_bow_named_dg_greatcleave_01", // 3696883334
-    0xdc5bdee7: "undead_gravedigger_13wf01", // 3697008359
     0xdc61f77a: "dryad_shaman_31", // 3697407866
-    0xdc6ef656: "bear_black_11md07", // 3698259542
-    0xdc6fbc34: "corruption_heavy_03gc03_elite", // 3698310196
+    0xdc651c21: "risen_corruption_impaler_62", // 3697613857
+    0xdc68d85f: "tiger_56", // 3697858655
+    0xdc6b1938: "damned_axeman_m-f_55_minion", // 3698006328
+    0xdc6b8756: "withered_brute_38", // 3698034518
+    0xdc6e0899: "damned_villager_shovel_66", // 3698198681
+    0xdc73298d: "bobcat_55", // 3698534797
     0xdc74e007: "wolf_elemental_earth_elite_05wc10", // 3698647047
     0xdc770086: "ck_spectral_lost_ice", // 3698786438
-    0xdc8c2996: "ghost_starved_13wf01", // 3700173206
+    0xdc8fdfd3: "corrupted_mine_61", // 3700416467
     0xdc91630c: "damned_villager_cleaver_03gc07", // 3700515596
+    0xdc95e010: "damned_cultist_31", // 3700809744
+    0xdc961f39: "anubian_scarab_named_00", // 3700825913
     0xdc9a8330: "undead_hunter_named_01", // 3701113648
-    0xdc9e2e21: "damned_villager_knife_28", // 3701354017
     0xdca31d3a: "ancientguardian_spearman_47", // 3701677370
     0xdca37b59: "mountain_lion_20", // 3701701465
+    0xdcafe6ff: "ghost_frozen_41", // 3702515455
     0xdcbb8f53: "corruptedlegion_cyclops_67", // 3703279443
+    0xdcbbd7c9: "bear_grizzly_55", // 3703297993
     0xdcbda0cd: "damned_pistoleer_m-f_07sm06b_elite", // 3703414989
-    0xdcc5a1b3: "damned_villager_skinning_knife_10ws05", // 3703939507
     0xdcc64c51: "damned_hound_dg_shattermtn_00", // 3703983185
     0xdcd019c0: "risen_whole_body_32", // 3704625600
+    0xdcd60c3f: "legion_legionnaire_ftue", // 3705015359
+    0xdcd61f59: "damned_acolyte_59", // 3705020249
     0xdcd85cbb: "wolf_timber_37", // 3705167035
     0xdcd8658c: "drowned_sailor_2h_axe_62", // 3705169292
     0xdcdbe616: "ghost_plagued_60", // 3705398806
+    0xdce1f739: "wolf_grey_46", // 3705796409
     0xdce6d8c1: "ck_undead_pistoleer_named_10ws08_fort", // 3706116289
     0xdce71183: "broken_axethrower", // 3706130819
     0xdceb234b: "undead_navigator_32", // 3706397515
-    0xdcf7a106: "elk_doe_16", // 3707216134
     0xdcfb1efc: "alligator_black_63", // 3707444988
-    0xdd05e9ac: "damned_villager_cleaver_11md07a", // 3708152236
+    0xdd0a8141: "damned_villager_pickaxe_46", // 3708453185
     0xdd0b3f1b: "lost_pikeman_12mb05", // 3708501787
+    0xdd176c22: "damned_villager_sickle_54", // 3709299746
     0xdd3193e7: "bear_black_58", // 3711013863
-    0xdd35dbae: "dryad_archer_14ac14c", // 3711294382
-    0xdd35f2f9: "skeleton_archer_11md09", // 3711300345
-    0xdd530c62: "legion_villager_kitchenknife_65", // 3713207394
-    0xdd5442af: "skeleton_spear_03gc10c", // 3713286831
+    0xdd3255e9: "primal_lion_desert_cub", // 3711063529
     0xdd585fe5: "skeleton_1h_sword_53", // 3713556453
     0xdd5f03b2: "undead_pirate_brute", // 3713991602
+    0xdd63d47d: "evil_knight_icestaff_icevariant", // 3714307197
     0xdd6c97be: "fl_alligator_named_09fl03c", // 3714881470
     0xdd706633: "fl_dryad_archer_09fl02", // 3715130931
-    0xdd74769c: "drowned_sailor_1h_sword_shield_36_15ec00", // 3715397276
     0xdd7c2fec: "ck_spectral_lost_2hspear_10ws08", // 3715903468
-    0xdd8ba0e5: "scratchrock", // 3716915429
-    0xdd8c5d98: "turkey_33", // 3716963736
+    0xdd8502c8: "damned_villager_kitchenknife_52", // 3716481736
+    0xdd90288c: "fl_hercyne_corvid", // 3717212300
+    0xdd92a609: "damned_pistoleer_m-f_38", // 3717375497
+    0xdda0fdef: "dynasty_summoner_60", // 3718315503
+    0xddab0591: "skeleton_club_47", // 3718972817
     0xddb3685e: "skeleton_2h_sword_50", // 3719522398
-    0xddc0d934: "desert_medium_scorpion_16bs11", // 3720403252
-    0xddcdf675: "skeleton_crawler_16bs03", // 3721262709
     0xddd3ed4b: "evil_knight_spear_elite", // 3721653579
+    0xdde49e55: "damned_villager_skinning_knife_60", // 3722747477
     0xdde4cd9f: "damned_pistoleer", // 3722759583
-    0xdde50595: "eridanite", // 3722773909
     0xdde51a5d: "damned_2h_spearman_m-f_07sm06a_elite", // 3722779229
-    0xddea33a0: "withered_swarmancer_15ec04b", // 3723113376
-    0xddf8bcd5: "anubianguardian_archer_16bs12", // 3724066005
-    0xddfcb893: "undead_pistoleer_11md00d", // 3724327059
-    0xde006e3a: "ancientguardian_javelineer_16bs02", // 3724570170
-    0xde02f1b8: "sand_elemental_shaman_16bs08", // 3724734904
-    0xde16315b: "risen_l-r_arm_09fl04", // 3725996379
-    0xde1f9e15: "legion_villager_hammer_16bs07", // 3726614037
-    0xde26ab8c: "bloated_corpse_05wc05b", // 3727076236
-    0xde2ae8b0: "sheep_eastern_13wf04", // 3727354032
-    0xde336ae1: "drowned_sailor_1h_club_elite_05wc11", // 3727911649
+    0xde14ea10: "corrupted_tiger_50", // 3725912592
+    0xde24513b: "damned_villager_cleaver_61", // 3726922043
     0xde351984: "ck_undead_navigator_10ws10", // 3728021892
-    0xde38e921: "elk_stag_22", // 3728271649
+    0xde385392: "undead_hunter_57", // 3728233362
     0xde39a873: "boar_stripped_51", // 3728320627
-    0xde4c2399: "dune_phantom_tank_16bs02b", // 3729531801
-    0xde8829e6: "primal_lion_desert_16bs09", // 3733465574
-    0xde973d4e: "undead_grenadier_molotov_05wc06", // 3734453582
-    0xde98e5c7: "alligator_young_15ec02a", // 3734562247
-    0xdea1ec9d: "risen_whole_body_04nw02", // 3735153821
+    0xde8bf886: "damned_villager_hammer_36", // 3733715078
     0xdea5dd8f: "damned_1h_swordsman_m-f_27", // 3735412111
-    0xdeba92d5: "undead_officer_05wc06", // 3736769237
-    0xdebb506d: "skeleton_crawler_43", // 3736817773
-    0xdebd4059: "fl_spriggan_adolescent_09fl05", // 3736944729
     0xdebf2ddf: "season_02_babysandworm", // 3737071071
-    0xdec6b85f: "alligator_young_08qp02", // 3737565279
     0xdeda60c4: "dune_phantom_berserker_60", // 3738853572
     0xdee7e619: "undead_pistoleer_41", // 3739739673
-    0xdeeac430: "elk_elemental_58", // 3739927600
+    0xdee816fd: "damned_villager_axethrower_m-f_57", // 3739752189
+    0xdee8e668: "legion_signifer_dg_brimstonesands_crassus_minion", // 3739805288
     0xdefa2df0: "lynx_24", // 3740937712
-    0xdf072724: "ghost_starved_10ws07b", // 3741787940
-    0xdf22139b: "ck_ancientguardian_spearman_10ws04_gold", // 3743552411
-    0xdf24c259: "skeleton_2h_sword_11md06c", // 3743728217
-    0xdf286482: "pig_domestic_02bw03", // 3743966338
-    0xdf32c178: "pig_domestic_42", // 3744645496
-    0xdf34e654: "bear_black_05wc03", // 3744786004
-    0xdf383e15: "anubianguardian_scarab_16bs01a", // 3745005077
     0xdf392e6f: "damned_villager_axethrower_m-f_dg_restless_00", // 3745066607
-    0xdf5194cc: "damned_rifleman_m-f_03gc08c", // 3746665676
-    0xdf568900: "molderpick", // 3746990336
+    0xdf4af280: "dynasty_musketeer_61", // 3746230912
     0xdf6277ee: "tendril_corruption_dg_greatcleave_00", // 3747772398
-    0xdf72d2be: "drowned_miner_12mb06b", // 3748844222
     0xdf730548: "legion_legionnaire_65", // 3748857160
-    0xdf7fccf0: "anubianguardian_brute_16bs06", // 3749694704
-    0xdf80b47a: "bloated_corpse_54", // 3749753978
-    0xdf82785a: "skeleton_spear_11md09a", // 3749869658
-    0xdf8a392b: "undead_berserker_05wc06", // 3750377771
+    0xdf7dd201: "corruption_heavy_dt4", // 3749564929
     0xdf90cce9: "fl_anubianguardian_horus_named_09fl03", // 3750808809
+    0xdf99e73a: "wolf_elemental_earth_51", // 3751405370
+    0xdf9aed8b: "drowned_sailor_1h_club_28", // 3751472523
     0xdfab262e: "drowned_sailor_1h_sword_38", // 3752535598
+    0xdfae8265: "risen_l-r_arm_40", // 3752755813
     0xdfb399db: "swamp_dryad_tendril", // 3753089499
     0xdfb5d229: "anubianguardian_reaver_dg_brimstonesands_00", // 3753234985
     0xdfbb4f91: "evil_knight_mace_elite", // 3753594769
-    0xdfc6c03c: "cow_12mb03", // 3754344508
+    0xdfc4409b: "ancientguardian_bowman_icevariant", // 3754180763
     0xdfc6db4d: "fl_explosive_sprout_fire", // 3754351437
+    0xdfca71d7: "fl_mammoth_ice", // 3754586583
+    0xdfce8ee4: "damned_axeman_m-f_58", // 3754856164
     0xdfd0b817: "damned_greataxeman_m-f_dg_restless_00", // 3754997783
-    0xdfd60550: "boar_31", // 3755345232
     0xdfd85e96: "ancientguardian_reaver_59", // 3755499158
     0xdfda1a3b: "withered_grunt_27", // 3755612731
-    0xdfe76049: "dynasty_spearman_08qp01a", // 3756482633
-    0xdfe8d29a: "damned_villager_pitchfork_08qp06", // 3756577434
     0xdfebe51c: "evil_knight_heavy_named_dg_greatcleave_01", // 3756778780
-    0xdfed077b: "rotcrop", // 3756853115
-    0xdff05e76: "undead_pistoleer_04nw11b", // 3757071990
     0xdff7d57a: "ck_undead_grenadier", // 3757561210
-    0xdff994d7: "alligator_young_04nw11c", // 3757675735
     0xdffa10d8: "damned_villager_axethrower_m-f_59_elite", // 3757707480
-    0xe0157a05: "undead_javelineer_02bw03", // 3759503877
-    0xe0178b8c: "rabbit_spotted_26", // 3759639436
-    0xe019a330: "pig_domestic_37", // 3759776560
-    0xe025743d: "desert_scorpion_sulfur_16bs08", // 3760550973
     0xe026ae74: "damned_villager_hammer_dg_restless_00", // 3760631412
     0xe02a00cc: "ghost_starved_38", // 3760849100
-    0xe02aa84f: "drowned_sailor_1h_club_12mb05", // 3760891983
-    0xe0470f36: "legion_villager_skinning_knife_63", // 3762753334
+    0xe0360ca6: "ghost_plagued_48", // 3761638566
+    0xe03c1dd2: "dynasty_warrior_52", // 3762036178
+    0xe05b59d4: "ancient_ice_dragon_fragmentspawner", // 3764083156
+    0xe0623563: "corrupted_mine_49", // 3764532579
+    0xe064c191: "evil_knight_fire_champion_floorislava", // 3764699537
     0xe074fcbf: "ck_undead_pistoleer_named_10ws09_elite", // 3765763263
-    0xe0752557: "wolf_timber_12mb10b", // 3765773655
-    0xe0804462: "dynasty_warrior_08qp02", // 3766502498
     0xe085e02d: "risen_l-r_arm_35", // 3766870061
-    0xe092c6d5: "evil_knight_longsword_14ac05", // 3767715541
-    0xe09814a5: "corrupted_ogre_08qp06", // 3768063141
+    0xe08bba4f: "torso_boss_arcane_conduit", // 3767253583
     0xe0982dd6: "undead_berserker_named_08qp02", // 3768069590
     0xe09f0c86: "ancientguardian_reaver_named_dg_everfall_01", // 3768519814
-    0xe0a3fc79: "sheep_churro_48", // 3768843385
     0xe0a4a112: "undead_shaman_dg_cutlass_00", // 3768885522
-    0xe0b6f655: "fl_beetle_09fl06", // 3770086997
-    0xe0c29ad3: "skeleton_mage_11md00g", // 3770850003
+    0xe0c68cdb: "ancientguardian_mage_minion_36", // 3771108571
     0xe0cb4b7e: "wolf_white_03gc04", // 3771419518
-    0xe0d17999: "dryad_prowler_14ac13", // 3771824537
+    0xe0cc3e3a: "damned_villager_lumberaxe_67", // 3771481658
+    0xe0d2abb9: "damned_villager_ladel_54", // 3771902905
     0xe0d5b49e: "risen_regurgitator_8", // 3772101790
     0xe0d746ae: "skeleton_spear_39", // 3772204718
-    0xe0dca929: "wolf_black_13wf05", // 3772557609
     0xe0dfa8f3: "ancientguardian_spearman_named_dg_reekwater_01", // 3772754163
     0xe0f002d4: "swamp_dryad_tendril_elite_05wc10", // 3773825748
-    0xe0f1109c: "desert_small_scorpion_16bs10", // 3773894812
+    0xe0f17873: "withered_grunt_52", // 3773921395
     0xe0ff20e7: "ck_blackbone_lost_1hsword_10ws02_pirates_stand", // 3774816487
     0xe10636bd: "undead_officer_12mb01b", // 3775280829
+    0xe10974e5: "damned_villager_skinning_knife_48", // 3775493349
+    0xe10cad0d: "fl_explosive_sprout_physical_elite_09fl12", // 3775704333
     0xe11124b3: "anubianguardian_panther_named_02", // 3775997107
-    0xe11879ac: "dynasty_musketeer_16bs02d", // 3776477612
+    0xe111e9cc: "swamp_dryad_soldier_dg_edengrove_00_defend", // 3776047564
     0xe1275e6d: "damned_rifleman_65", // 3777453677
     0xe130700a: "fl_beetle_baby_09fl09b", // 3778048010
+    0xe147abbb: "evil_knight_spear_firevariant", // 3779570619
     0xe14cc5a5: "fl_anubianguardian_spearman_named_09fl01a", // 3779904933
     0xe14d5f30: "undead_gravedigger_29", // 3779944240
-    0xe164b5b5: "damned_villager_rake_07sm01", // 3781473717
     0xe166af59: "ghost_shackled_62", // 3781603161
+    0xe16ac9a2: "damned_2h_spearman_m-f_51", // 3781872034
     0xe170913e: "ck_blackbone_lost_2hspear_named_10ws04_sable", // 3782250814
-    0xe175c7a7: "withered_swarmancer_06sw09a", // 3782592423
     0xe185669c: "rabbit_spotted", // 3783616156
     0xe18ebfc7: "damned_1h_swordsman_m-f_52", // 3784228807
     0xe18f1ed4: "corruption_entity_08qp08", // 3784253140
     0xe1903225: "skeleton_crawler_36", // 3784323621
     0xe1952fa5: "sheep_eastern_54", // 3784650661
-    0xe1962421: "dryad_prowler_14ac12b", // 3784713249
     0xe1a09ace: "damned_villager_hammer_43", // 3785398990
     0xe1a553cc: "ck_goldcursed_1hsword_10ws07", // 3785708492
-    0xe1af9c0d: "withered_swarmancer_05wc05a", // 3786382349
     0xe1b73f4f: "ck_undead_pistoleer_10ws06_tide", // 3786882895
-    0xe1cc1de8: "dune_phantom_tank_16bs12", // 3788250600
+    0xe1ba6323: "lost_knight_bow", // 3787088675
     0xe1cc8451: "undead_pistoleer_34", // 3788276817
-    0xe1d10d59: "elk_doe_02bw02", // 3788574041
     0xe1d14fb8: "lynx_51", // 3788591032
-    0xe1d49a0c: "legion_axethrower_16bs02", // 3788806668
-    0xe1dd630b: "damned_villager_cleaver_03gc07a", // 3789382411
-    0xe1e026f2: "legion_axethrower_16bs02a", // 3789563634
-    0xe1e14acc: "damned_hound_03gc09_named_elite", // 3789638348
     0xe1e6f987: "ck_mountain_lion_spectral_10ws06", // 3790010759
     0xe1eeed21: "wolf_timber_9", // 3790531873
-    0xe1fd4ccf: "legion_legionnaire_16bs02", // 3791473871
-    0xe202e488: "bloated_corpse_02bw03b", // 3791840392
     0xe20c99f7: "evil_knight_caster_29", // 3792476663
-    0xe20db09a: "turkey_vulture_61", // 3792547994
     0xe20e8a4d: "elk_corrupted_dt6", // 3792603725
     0xe21511bb: "evil_knight_greataxe_20", // 3793031611
     0xe221e309: "damned_villager_pickaxe_33", // 3793871625
-    0xe2221259: "dunewalker_wanderer_rapier_bloodofsands", // 3793883737
     0xe22a836f: "damned_grunt_dg_restless_00", // 3794436975
+    0xe22fd505: "drowned_miner_27", // 3794785541
+    0xe232ecc8: "fl_hercyne_reindeer_briar_turret_alpha", // 3794988232
     0xe2458152: "bear_grizzly_named_00", // 3796205906
-    0xe252c1ff: "tiger_corrupted_08qp06", // 3797074431
-    0xe253b32b: "dune_phantom_huntress_16bs11", // 3797136171
     0xe2733dad: "skeleton_1h_sword_26", // 3799203245
     0xe2765af6: "ck_ancientguardian_mage_named_10ws04_steps", // 3799407350
+    0xe28067d9: "skeleton_club_32", // 3800066009
     0xe288c899: "damned_pistoleer_m-f_dg_shattermtn_00", // 3800615065
-    0xe292ecf1: "skeleton_1h_club_11md06c", // 3801279729
-    0xe2b3c895: "withered_grunt_11md02", // 3803433109
-    0xe2d9ee1c: "barbary_lion_16bs03", // 3805933084
+    0xe28b1cc4: "anubianguardian_archer_09a_s9", // 3800767684
+    0xe28f042f: "damned_greataxeman_m-f_54", // 3801023535
+    0xe29919a9: "hercyne_spider_typhon", // 3801684393
+    0xe2ae6080: "damned_villager_kitchenknife_27", // 3803078784
+    0xe2c1d392: "damned_acolyte_dg_restless_00_spawn", // 3804353426
+    0xe2c9bb8b: "damned_villager_cleaver_49", // 3804871563
+    0xe2d5c99f: "swamp_dryad_shaman_minion", // 3805661599
     0xe2de7290: "ghost_charred_named_00", // 3806229136
-    0xe2ebf1c5: "legion_villager_skinning_knife_16bs06", // 3807113669
+    0xe2ebd39e: "dryad_prowler_44", // 3807105950
     0xe30cbff0: "dryad_soldier_31", // 3809263600
     0xe311ce56: "skeleton_spear_64", // 3809594966
-    0xe312456d: "damned_villager_pickaxe_11md07", // 3809625453
-    0xe32661d9: "skeleton_spear_11md01", // 3810943449
     0xe32a38f5: "skeleton_archer_33", // 3811195125
     0xe3367a5b: "wolf_black_03gc02", // 3811998299
-    0xe33befe0: "boar_19", // 3812356064
-    0xe342f5b9: "wolf_grey_12mb06", // 3812816313
     0xe343b8fc: "damned_cultist_dt2", // 3812866300
-    0xe3457a46: "scorpion", // 3812981318
-    0xe3483054: "legion_signifer_16bs07", // 3813158996
-    0xe34895d1: "evil_knight_hound_14ac05", // 3813184977
-    0xe3585060: "sulfur_dragon_16bs01", // 3814215776
+    0xe346cc9e: "drowned_sailor_1h_sword_10", // 3813067934
+    0xe34a9532: "dryad_shaman_44", // 3813315890
     0xe35a305c: "ck_undead_pistoleer", // 3814338652
-    0xe35a57b6: "wolf_timber_1203_0201_waveeventeasy", // 3814348726
     0xe35a997f: "undead_officer_named_00", // 3814365567
     0xe3657481: "sheep_churro_15", // 3815076993
-    0xe3676164: "damned_1h_swordsman_m-f_13wf05", // 3815203172
-    0xe3815606: "risen_l-r_arm_04nw10b", // 3816904198
+    0xe36be7f7: "dynasty_spearman_55", // 3815499767
+    0xe372bf65: "wolf_alpha_37", // 3815948133
+    0xe37fc86b: "evil_knight_caster_firevariant", // 3816802411
     0xe387df85: "dynasty_heavy_08qp08", // 3817332613
     0xe3881911: "mountain_lion_55", // 3817347345
     0xe3887f72: "ancientguardian_spearman_32", // 3817373554
-    0xe38d9c2e: "legion_legionnaire_16bs02a", // 3817708590
-    0xe39d3e0c: "risen_regurgitator_12mb03c", // 3818733068
+    0xe3a36b88: "hercyne_wolf_alpha", // 3819137928
     0xe3a82feb: "evil_knight_mace_elite_08qp02", // 3819450347
-    0xe3a9bb30: "skeleton_2h_sword_13wf04", // 3819551536
-    0xe3b18c2a: "skeleton_crawler_nwsw", // 3820063786
     0xe3b6656d: "ck_blackbone_lost_2hspear_10ws10", // 3820381549
+    0xe3bbc7ab: "bearelemental_57", // 3820734379
+    0xe3be8258: "damned_cultist_44", // 3820913240
     0xe3c04103: "undead_navigator_47", // 3821027587
     0xe3c6c56c: "damned_villager_hammer_07sm04_elite", // 3821454700
     0xe3ca9571: "wolf_grey_33", // 3821704561
-    0xe3ccf6ca: "dryad_soldier_95_s01", // 3821860554
     0xe3d07cb4: "alligator_black_16", // 3822091444
-    0xe3d9af4b: "sand_elemental_heavy_16bs11", // 3822694219
-    0xe3de6bcb: "damned_axeman_m-f_07sm05a", // 3823004619
     0xe3e23d1a: "anubianguardian_horus_61", // 3823254810
-    0xe3e23de0: "damned_villager_lumberaxe_08qp07", // 3823255008
-    0xe3eaec0d: "alligator_black_16bs02d", // 3823823885
     0xe3f33ef3: "wolf_timber_42", // 3824369395
     0xe3f43063: "ghost_plagued_named_03", // 3824431203
     0xe3fb7b88: "risen_whole_body_47", // 3824909192
-    0xe3fe6649: "damned_villager_axethrower_m-f_03gc06", // 3825100361
-    0xe4048b81: "evil_knight_caster_14ac13", // 3825503105
     0xe405ec6e: "evil_knight_mace_17", // 3825593454
-    0xe40e2f6e: "dunewalker_waterseeker_lifestaff_bloodofsands_n1", // 3826134894
+    0xe40623ee: "dynasty_spearman_51", // 3825607662
+    0xe40a0741: "skeleton_club_20_enc_04a_side02_lupus", // 3825862465
     0xe40fafde: "ancientguardian_spearman_dg_greatcleave_00_00", // 3826233310
-    0xe41b3fd3: "ghost_plagued_13wf06", // 3826991059
-    0xe425f44d: "legion_signifer_16bs03", // 3827692621
+    0xe4131295: "alligator_strange_43", // 3826455189
+    0xe41f7b7c: "wolf_alpha_33", // 3827268476
+    0xe427512b: "dryad_shaman_40", // 3827781931
     0xe42b0887: "drowned_sailor_1h_sword_14", // 3828025479
     0xe42e7ce5: "damned_cultist_dt6", // 3828251877
-    0xe42f31a0: "wolf_grey_12mb02", // 3828298144
-    0xe4359479: "sulfur_dragon_16bs05", // 3828716665
     0xe4375d66: "undead_officer_named_04", // 3828833638
-    0xe43d8551: "undead_officer_named_10ws09_02", // 3829237073
     0xe447fcec: "skeleton_archer_37", // 3829923052
-    0xe44f2191: "longshadow", // 3830391185
     0xe452a9db: "ck_undead_pistoleer_10ws03ad", // 3830622683
-    0xe4606d70: "goat_mountain_05wc02", // 3831524720
-    0xe46890b5: "goat_mountain_16bs10", // 3832058037
+    0xe45e608f: "evil_knight_mace_icevariant_named", // 3831390351
     0xe47aae9c: "damned_longswordsman_commander_07sm06a_elite", // 3833245340
     0xe47c0a4f: "skeleton_spear_60", // 3833334351
     0xe4814c2d: "ghost_starved_61", // 3833678893
     0xe48267ba: "ancientguardian_javelineer_raid10", // 3833751482
     0xe4870c96: "ck_undead_navigator_10ws03d1_named", // 3834055830
-    0xe487e662: "bobcat_11md01", // 3834111586
     0xe48ff903: "anubianguardian_horus_65", // 3834640643
     0xe496bf91: "risen_whole_body_43", // 3835084689
     0xe49ec3dd: "drowned_sailor_2h_axe_13", // 3835610077
     0xe49efaea: "wolf_timber_46", // 3835624170
-    0xe4a0b717: "dryad_shaman_08qp01", // 3835737879
     0xe4a3f8fb: "ck_drowned_sailor_1h_sword_shield_10ws04_sable", // 3835951355
     0xe4a75168: "wolf_grey_37", // 3836170600
-    0xe4aadeb1: "damned_greataxeman_m-f_03gc05b", // 3836403377
     0xe4ad851a: "undead_navigator_43", // 3836577050
     0xe4b1da6e: "corrupted_ogre_named_dg_shattermtn_00", // 3836861038
     0xe4b2dd6a: "evil_knight_warhammer_27", // 3836927338
+    0xe4bb4f10: "fl_gorilla_lightning_elite_09fl12", // 3837480720
     0xe4bdb8ad: "alligator_black_12", // 3837638829
     0xe4c10545: "undead_officer_16", // 3837855045
-    0xe4c709f9: "ghost_charred_16bs03a", // 3838249465
-    0xe4cde4e1: "withered_swarmancer_04nw10a", // 3838698721
-    0xe4de4845: "critter", // 3839772741
+    0xe4d34641: "damned_cultist_40", // 3839051329
+    0xe4d603b2: "bearelemental_53", // 3839230898
     0xe4e5bb6b: "ancientguardian_spearman_36", // 3840260971
     0xe4e5dd08: "mountain_lion_51", // 3840269576
     0xe4ebcf3b: "fl_gorilla_ranged", // 3840659259
     0xe50d4ebc: "corruption_heavy", // 3842854588
     0xe51bf227: "damned_bowman_dg_shattermtn_00", // 3843813927
     0xe51ef9b4: "skeleton_1h_sword_22", // 3844012468
+    0xe51fc14a: "torso_boss_arcane_orb", // 3844063562
     0xe51fd9a5: "fl_mammoth_09fl09_named", // 3844069797
     0xe52423a1: "damned_1h_swordsman_m-f_msq_35", // 3844350881
-    0xe53f05e6: "tiger_corrupted_08qp02", // 3846112742
+    0xe5319ec0: "ancientguardian_mage_50", // 3845234368
     0xe5467a80: "ck_blackbone_lost_2haxe_10ws03f_named", // 3846601344
     0xe547465e: "invasion_swordsman", // 3846653534
-    0xe54da0f4: "bearelemental_05wc06b", // 3847069940
+    0xe54c2710: "damned_villager_pickaxe_37", // 3846973200
+    0xe551ca73: "damned_villager_sickle_25", // 3847342707
     0xe55b2d26: "ancientguardian_reaver_named_dg_reekwater_00", // 3847957798
-    0xe5607483: "turkey_vulture_65", // 3848303747
     0xe5634e54: "elk_corrupted_dt2", // 3848490580
-    0xe564beb1: "skeleton_archer_13wf04", // 3848584881
-    0xe56810cf: "fl_hercyne_reindeer_alpha_named_09fl02", // 3848802511
     0xe56b67dd: "swamp_dryad_shaman_59", // 3849021405
-    0xe56dd603: "damned_villager_skinning_knife_11md00i", // 3849180675
+    0xe57735b6: "bear_black_29", // 3849794998
     0xe578d5a2: "evil_knight_greataxe_24", // 3849901474
-    0xe5859b2e: "waterfowl_16bs09", // 3850738478
-    0xe58635dc: "legion_villager_skinning_knife_16bs02", // 3850778076
+    0xe5861787: "dryad_prowler_40", // 3850770311
     0xe590518d: "ghost_shipwrecked_23_elite", // 3851440525
-    0xe59860c1: "undead_berserker_11md05a", // 3851968705
-    0xe5adf6a7: "ancient_guardian_reaver_03gc10a", // 3853383335
-    0xe5b35569: "ancientguardian_mage_16bs09", // 3853735273
-    0xe5b42a05: "barbary_lion_16bs07", // 3853789701
+    0xe5999d59: "torso_boss_minion_caster", // 3852049753
+    0xe5a23804: "damned_villager_skinning_knife_11", // 3852613636
     0xe5b5b797: "fl_anubianguardian_horus_09fl03", // 3853891479
-    0xe5ba6fb2: "evil_knight_hound_30", // 3854200754
-    0xe5ca87d8: "undead_shaman_12mb06b", // 3855255512
-    0xe5cafbc9: "turkey_42", // 3855285193
-    0xe5ccfd50: "undead_hunter_02bw03b", // 3855416656
+    0xe5c92359: "wolf_elemental_ice_48", // 3855164249
+    0xe5d40058: "damned_pistoleer_m-f_49", // 3855876184
+    0xe5d52998: "bear_corrupted_dt3", // 3855952280
+    0xe5d656e5: "or_wolf_minion", // 3856029413
     0xe5e08e77: "yonas_msq", // 3856698999
+    0xe5e2c036: "damned_greataxeman_m-f_50", // 3856842806
     0xe5eacae4: "tendril_corruption_15", // 3857369828
     0xe5eda3c0: "skeleton_club_36", // 3857556416
     0xe5fc38f1: "drowned_sailor_2h_axe_24_elite", // 3858512113
+    0xe6070dbb: "damned_2h_spearman_m-f_55", // 3859221947
     0xe60c88f5: "bear_damned_07sm06_darkness", // 3859581173
-    0xe612a406: "blackpick", // 3859981318
+    0xe62422e1: "boar_starterbeach", // 3861127905
     0xe6468a56: "dryad_archer_61", // 3863382614
-    0xe64b410e: "sulfur_lizard_16bs10", // 3863691534
+    0xe6583f47: "imhotep", // 3864543047
     0xe6600ef7: "or_undead_brute2", // 3865054967
     0xe667cfb5: "ghost_charred_16bs03b_minion", // 3865563061
     0xe66b2af5: "risen_corruption_entity_11md12_elite", // 3865783029
     0xe67af9b8: "elk_elemental_named_00", // 3866819000
     0xe67ce0aa: "anubianguardian_panther_named_06", // 3866943658
     0xe67ef5c3: "undead_hunter_26", // 3867080131
-    0xe69088d6: "legion_legionnaire_16bs06", // 3868231894
     0xe694de65: "drowned_sailor_1h_sword_shield_12", // 3868515941
     0xe6a14048: "undead_pistoleer_30", // 3869327432
     0xe6a4bd80: "fl_gorilla_fire_elite_named_09fl01", // 3869556096
-    0xe6a7e0da: "evil_knight_bow_12mb01", // 3869761754
-    0xe6abb71b: "damned_villager_axethrower_m-f_04nw10b", // 3870013211
+    0xe6a80226: "bison_22", // 3869770278
     0xe6aeb0ac: "damned_villager_axethrower_m-f_26", // 3870208172
-    0xe6b95e15: "legion_axethrower_16bs06", // 3870907925
     0xe6bc8ba1: "lynx_55", // 3871116193
-    0xe6bcc940: "elk_doe_02bw06", // 3871131968
+    0xe6bd2c81: "fl_primal_lion_elite_09fl12", // 3871157377
     0xe6c22079: "undead_grenadier_molotov_admiral_minion", // 3871481977
     0xe6c36af9: "ck_drowned_sailor_1h_club_10ws08_gold", // 3871566585
-    0xe6daebde: "damned_villager_shovel_16bs08a", // 3873106910
+    0xe6cd5ed7: "damned_villager_hammer_47", // 3872218839
+    0xe6d15202: "undead_officer_60_waveevent", // 3872477698
     0xe6e37bde: "damned_1h_swordsman_m-f_56", // 3873668062
-    0xe6ffbb93: "withered_swarmancer_06sw07b", // 3875519379
-    0xe7191fa7: "damned_bowman_08qp07", // 3877183399
+    0xe705622a: "dynasty_warrior", // 3875889706
+    0xe70a78a2: "primal_lion_49", // 3876223138
     0xe7194e03: "pig_domestic_10ws05", // 3877195267
-    0xe71a179a: "risen_13wf08", // 3877246874
-    0xe7236626: "skeleton_spear_11md00g", // 3877856806
     0xe729f98f: "risen", // 3878287759
-    0xe72acb2f: "legion_villager_skinning_knife_67", // 3878341423
     0xe72e1399: "fl_chameleon_09fla", // 3878556569
+    0xe73f52eb: "target_dummy_light_attack", // 3879686891
     0xe740b665: "fl_rat_hercynerat_09fl02a", // 3879777893
-    0xe7476c56: "drowned_sailor_1h_club_12mb01", // 3880217686
-    0xe74b16e4: "risen_regurgitator_09fl02", // 3880457956
-    0xe755faa3: "damned_villager_pitchfork_04nw10", // 3881171619
+    0xe742f789: "skeleton_mage", // 3879925641
+    0xe751d9cb: "dynasty_warrior_56", // 3880901067
     0xe7608ba8: "damned_2h_spearman_m-f_named_dg_restless_00", // 3881864104
     0xe76a352a: "ck_boar_10ws08", // 3882497322
-    0xe778be1c: "undead_javelineer_02bw07", // 3883449884
-    0xe7790751: "undead_shaman_05wc05b", // 3883468625
-    0xe7797122: "damned_villager_axethrower_m-f_13wf05", // 3883495714
-    0xe78023b7: "jackrabbit_16bs08", // 3883934647
     0xe789cbe0: "fl_peacock", // 3884567520
-    0xe790a301: "boar_40", // 3885015809
+    0xe78c0f34: "legion_villager_cleaver_elite", // 3884715828
     0xe7944887: "hercyne_tendril_eyeball_raid_cutlasskeys_00", // 3885254791
+    0xe79cbc6a: "withered_grunt_56", // 3885808746
     0xe79e144f: "dunewalker_waterseeker_lifestaff_trial_named", // 3885896783
     0xe79ef8c7: "ancientguardian_reaver_28", // 3885955271
+    0xe7a1fa23: "damned_villager_lumberaxe_63", // 3886152227
     0xe7a77c25: "ck_spectral_lost_2haxe_10ws08", // 3886513189
     0xe7be1f7f: "corruption_swarmer_07sm06_darkness", // 3887996799
+    0xe7bf6fa0: "damned_villager_ladel_50", // 3888082848
     0xe7bfe2c1: "undead_officer_named_11mw06", // 3888112321
-    0xe7c6122b: "bloated_corpse_25", // 3888517675
-    0xe7d31435: "ancient_amalgam_16bs12", // 3889370165
-    0xe7db324c: "fl_beetle_09fl02", // 3889902156
     0xe7dc4bda: "drowned_sailor_1h_club_59", // 3889974234
     0xe7e0760f: "damned_1h_swordsman_m-f_03gc06", // 3890247183
-    0xe7e0cb9a: "drowned_sailor_1h_sword_shield_08qp02", // 3890269082
     0xe7e82434: "risen_l-r_arm_31", // 3890750516
-    0xe7e9ca0c: "skeleton_crawler_11md06a", // 3890858508
-    0xe7ed807b: "dynasty_warrior_08qp06", // 3891101819
     0xe7ed807f: "drowned_sailor_1h_sword_49", // 3891101823
-    0xe7f2ed51: "evil_knight_greataxe_03gc01", // 3891457361
-    0xe7fa1120: "undead_sailor_1h_club_05wc08", // 3891925280
     0xe801f3b3: "ck_undead_berserker_named_10ws08_fort", // 3892442035
     0xe8040a59: "evil_knight_bow_dg_greatcleave_00_00", // 3892578905
     0xe80a6581: "naga_angryearth", // 3892995457
     0xe817640e: "ghost_charred_named_dg_greatcleave_02", // 3893847054
     0xe83479ea: "fl_elk_elemental", // 3895753194
     0xe8391cf2: "fl_dryad_prowler_09fl02", // 3896057074
-    0xe83952ff: "corruption_entity_08qp04", // 3896070911
-    0xe84acb0a: "undead_grenadier_15ec02c", // 3897215754
-    0xe8511a24: "wraith", // 3897629220
+    0xe84afb05: "undead_officer_12mb06d_boat", // 3897228037
+    0xe850e656: "risen_whole_body_25_elite_minion", // 3897615958
+    0xe85127da: "damned_villager_pickaxe_62", // 3897632730
     0xe856e946: "fl_hercyne_boar_09fl05", // 3898009926
     0xe858a10a: "wolf_timber_5", // 3898122506
     0xe858df29: "fl_ancientguardian_mage_09fl06", // 3898138409
     0xe86620f6: "ghost_starved_named_02", // 3899007222
     0xe86da622: "season_02_ltherikai", // 3899500066
-    0xe8756531: "wolf_elemental_earth_07sm09b", // 3900007729
     0xe87822d2: "fl_swamp_dryad_shaman_09fl03", // 3900187346
     0xe8796998: "icedryad_fiend_shivers_25", // 3900271000
     0xe87ac87a: "undead_pistoleer_38", // 3900360826
     0xe87e2bb9: "damned_priest_named_dg_greatcleave_00", // 3900582841
     0xe884e4c1: "anubianguardian_spearman_61", // 3901023425
-    0xe885600b: "undead_berserker_11md00d", // 3901054987
-    0xe8879fe9: "storm_wraith_09a_s18", // 3901202409
-    0xe892148c: "dynasty_spearman_08qp06_elite", // 3901887628
     0xe894b30a: "primal_lion_03gc10_elite", // 3902059274
-    0xe89a44a7: "swamp_dryad_archer_05wc06b", // 3902424231
     0xe8a834d3: "dunewalker_wanderer_longsword_trial_soloplus", // 3903337683
+    0xe8af9557: "drowned_miner_7", // 3903821143
+    0xe8b3c4a0: "legion_axethrower_m-f_62_spawn", // 3904095392
     0xe8b7b738: "anubianguardian_brute_dg_brimstonesands_named_00", // 3904354104
-    0xe8c16bb1: "legion_legionnaire_physical_16bs08c", // 3904990129
+    0xe8beb058: "damned_bowman_36", // 3904811096
+    0xe8bf38ce: "damned_villager_skinning_knife_44", // 3904846030
+    0xe8c62a0d: "fl_mammoth_elite_09fl12", // 3905301005
     0xe8c73e39: "ancientguardian_javelineer_57", // 3905371705
     0xe8c7a74b: "ck_damned_acolyte_named_10ws06", // 3905398603
     0xe8d3d29c: "undead_navigator_named_12mb01d", // 3906196124
     0xe8d60715: "ancientguardian_reaver_dg_everfall_00", // 3906340629
     0xe8d7fb03: "turkey_17", // 3906468611
-    0xe8dcf57e: "undead_pistoleer_04nw10", // 3906794878
     0xe8ec864e: "fl_anubianguardian_reaver_named_09fl01", // 3907814990
+    0xe8f0a30a: "skeleton_club_63", // 3908084490
+    0xe8f8b23e: "season_04_frost_king", // 3908612670
     0xe8fb131b: "undead_gravedigger_25", // 3908768539
     0xe904c959: "wolf_elemental_earth_28", // 3909405017
     0xe907c3e8: "drowned_sailor_1h_club_51", // 3909600232
     0xe907f7bd: "fl_gorilla_fire_elite_09fl01", // 3909613501
     0xe90fce05: "fl_hercyne_corvid_09fl08", // 3910127109
     0xe91bc828: "risen_regurgitator_36", // 3910912040
-    0xe929deae: "feralrim", // 3911835310
+    0xe92f475b: "ghost_shipwrecked_32", // 3912189787
+    0xe933ac06: "risen_l-r_arm_39", // 3912477702
     0xe935ae02: "damned_villager_shovel_42", // 3912609282
     0xe936084d: "drowned_sailor_1h_sword_41", // 3912632397
     0xe94cc8a5: "wolf_alpha_12mb10c", // 3914123429
+    0xe9558015: "swamp_dryad_archer_dg_edengrove_00_defend", // 3914694677
     0xe95b6470: "undead_grenadier_52", // 3915080816
+    0xe9610a85: "skeleton_spear_35", // 3915451013
     0xe964e792: "damned_villager_ladel_58", // 3915704210
-    0xe96c2ced: "ancientguardian_spearman_11md00a", // 3916180717
-    0xe974b775: "withered_swarmancer_12mb05", // 3916740469
+    0xe97072be: "fl_destructible_wall_01", // 3916460734
     0xe97c7b23: "dryad_soldier_60", // 3917249315
+    0xe980408d: "ghost_plagued_44", // 3917496461
     0xe983c317: "drowned_sailor_2h_axe_46", // 3917726487
     0xe98bbf5b: "risen_whole_body_16", // 3918249819
     0xe98cfc59: "undead_grenadier_molotov_56", // 3918330969
-    0xe9933816: "desert_scorpion_sulfur_16bs04", // 3918739478
     0xe9939658: "undead_officer_17_09fl07_named_b", // 3918763608
+    0xe999d341: "corruption_swarmer_minion", // 3919172417
     0xe99c4ce7: "ghost_starved_34", // 3919334631
     0xe9a0b867: "alligator_black_47", // 3919624295
     0xe9a534d1: "ck_undead_pirate_brute_named_10ws09_elite_a", // 3919918289
     0xe9ab9624: "risen_whole_body_9", // 3920336420
-    0xe9ac079d: "elk_doe_32", // 3920365469
     0xe9ae2631: "ghost_shipwrecked_named_03", // 3920504369
     0xe9b085d0: "undead_navigator_16", // 3920659920
-    0xe9b3b230: "ghost_starved_15ec04f", // 3920867888
     0xe9b69e8b: "undead_hunter_03gc01", // 3921059467
-    0xe9b8840a: "withered_beetle_12mb10a", // 3921183754
-    0xe9ca3df0: "skeleton_spear_05wc09", // 3922345456
+    0xe9ba51a2: "wolf_grey_62", // 3921301922
+    0xe9ba9fa8: "dynasty_maiden_wwgreataxe_named", // 3921321896
     0xe9ce468b: "damned_cultist_15", // 3922609803
+    0xe9d1f090: "primal_lion_41", // 3922849936
+    0xe9d47948: "corrupted_mine_45", // 3923016008
     0xe9dc058f: "undead_officer_43", // 3923510671
     0xe9f8bba1: "ancientguardian_spearman_63", // 3925392289
-    0xea0334a6: "sand_elemental_soldier_16bs06", // 3926078630
-    0xea1261bd: "dune_phantom_berserker_16bs02c", // 3927073213
+    0xea08ce73: "damned_cultist_48", // 3926445683
     0xea158ca2: "drowned_miner_23_elite", // 3927280802
-    0xea2d4970: "anubianguardian_panther_67_elite", // 3928836464
-    0xea3193ae: "dynasty_heavy_08qp04", // 3929117614
-    0xea36830e: "alligator_black_11md01a", // 3929441038
-    0xea3a29d7: "skeleton_archer_06sw03", // 3929680343
     0xea3e553a: "mountain_lion_59", // 3929953594
-    0xea5c4df9: "undead_hunter_13wf06", // 3931917817
-    0xea743406: "damned_villager_skinning_knife_11md10a", // 3933484038
-    0xea7895d5: "corruption_mine", // 3933771221
-    0xea843f47: "ancientguardian_javelineer_16bs11c", // 3934535495
-    0xea8986ee: "undead_berserker_04nw11b", // 3934881518
-    0xea8da3cb: "boar_15", // 3935151051
     0xea929e47: "anubianguardian_reaver_named_01", // 3935477319
     0xea95d5a1: "ck_spectral_lost_2hspear_10ws03e2_named", // 3935688097
-    0xea9b5aea: "corruption_impaler_06sw09", // 3936049898
-    0xeaacf99c: "radiant", // 3937204636
+    0xeaa81e92: "damned_villager_rake_57", // 3936886418
     0xeab68ab3: "dunewalker_wanderer_longsword_trial_named", // 3937831603
-    0xeab909be: "drowned_sailor_1h_club_06sw02", // 3937995198
-    0xeabf3d60: "corruptedlegion_cyclops_16bs11", // 3938401632
+    0xeabcfae9: "damned_villager_lumberaxe_36", // 3938253545
     0xeac7e66c: "ck_undead_officer_10ws03d", // 3938969196
     0xeacbfad0: "barbary_lion_60", // 3939236560
+    0xeacdf20d: "fl_armored_dragon_09a_s13_waveevent", // 3939365389
     0xead14008: "damned_bowman_dg_restless_00", // 3939581960
-    0xead8c798: "boar_stripped_11md02", // 3940075416
-    0xeb03a697: "evil_knight_warhammer_10ws04", // 3942885015
-    0xeb162772: "ghost_shipwrecked_16bs02", // 3944097650
+    0xeaddabdc: "dynasty_spearman_59", // 3940395996
+    0xeafcd919: "dryad_shaman_48", // 3942439193
+    0xeb002a92: "abominable_liang_msq", // 3942656658
+    0xeb0f886a: "damned_pistoleer_m-f_41", // 3943663722
+    0xeb12ab6b: "wolf_elemental_ice_40", // 3943869291
+    0xeb148ac4: "undead_javelineer_53", // 3943992004
     0xeb166b8a: "ghost_shackled_33", // 3944115082
     0xeb255953: "undead_berserker_named_dg_cutlass_00", // 3945093459
     0xeb2e463d: "skeleton_2h_sword_29", // 3945678397
+    0xeb394804: "damned_greataxeman_m-f_58", // 3946399748
+    0xeb4a58bf: "risen_corruption_entity_60", // 3947518143
     0xeb4b6ba6: "ck_goldcursed_2hblunderbuss_10ws03c", // 3947588518
-    0xeb588675: "undead_javelineer_05wc02a", // 3948447349
-    0xeb5e131c: "waterfowl_16bs01", // 3948811036
-    0xeb64ac1b: "risen_whole_body_12mb10c", // 3949243419
-    0xeb68dd5b: "ancientguardian_mage_16bs01", // 3949518171
-    0xeb69505a: "undead_officer_09fl09a", // 3949547610
-    0xeb6acd04: "mountain_lion_05wc02", // 3949645060
-    0xeb6be73c: "evil_knight_caster_04nw04", // 3949717308
-    0xeb6ef976: "damned_villager_pitchfork_16bs06", // 3949918582
+    0xeb5d9fb5: "dryad_prowler_48", // 3948781493
+    0xeb6b08e1: "corruption_heavy_60", // 3949660385
+    0xeb6e4f83: "wolf_white_43", // 3949875075
+    0xeb70d495: "damned_cultist_isabella_msq2_named_01", // 3950040213
     0xeb7565cf: "drowned_sailor_1h_sword_dg_cutlass_00", // 3950339535
     0xeb7ff7a0: "damned_villager_cleaver_45", // 3951032224
     0xeb831a2a: "lynx_03gc10", // 3951237674
     0xeb89655b: "undead_grenadier_disease_27", // 3951650139
     0xeb89deaf: "drowned_sailor_1h_sword_shield_47", // 3951681199
-    0xeb8b0a78: "boar_strange_16bs03", // 3951757944
-    0xeb98c7cf: "damned_villager_cleaver_11md00h", // 3952658383
     0xeba0373e: "legion_legionnaire_noshield_dg_brimstonesands_00", // 3953145662
     0xeba9f840: "darkness_hive_membrane_dt3", // 3953784896
-    0xebb6b386: "damned_1h_swordsman_m-f_07sm03a", // 3954619270
     0xebb9540a: "corruption_impaler_named_dg_greatcleave_00", // 3954791434
     0xebbad5dc: "evil_knight_caster_25", // 3954890204
     0xebbd4ea5: "fl_hercyne_reindeer_named_09fl10", // 3955052197
-    0xebd445fb: "withered_swarmancer_13wf01", // 3956557307
     0xebd7166b: "dunewalker_warmonger_warhammer", // 3956741739
+    0xebe6ea22: "wolf_timber_17_waveevent_alpha", // 3957778978
     0xebea16f2: "ancientguardian_mage_58", // 3957987058
     0xebea3a38: "wolf_t2", // 3957996088
     0xec020d73: "ancient_amalgam", // 3959557491
-    0xec033d6f: "damned_villager_pitchfork_16bs02", // 3959635311
-    0xec051942: "ancientguardian_mage_16bs05", // 3959757122
-    0xec05d0b9: "ripsaw", // 3959804089
+    0xec038b9a: "wolf_white_47", // 3959655322
     0xec0d00c0: "damned_2h_spearman_m-f_07sm06b_elite", // 3960275136
-    0xec2238d5: "legion_villager_hammer_16bs08c", // 3961665749
-    0xec33d705: "waterfowl_16bs05", // 3962820357
+    0xec1233b9: "damned_villager_cleaver_41", // 3960615865
+    0xec1d108c: "damned_cultist_isabella_msq2_named_05", // 3961327756
     0xec364e85: "dryad_archer_30", // 3962982021
     0xec48eb1c: "corruption_swarmer_50_elite", // 3964201756
-    0xec609f4d: "skeleton_archer_13wf02c", // 3965755213
-    0xec7be36b: "ghost_shipwrecked_16bs06", // 3967542123
-    0xec85a92b: "dunewalker_waterseeker_lifestaff_bloodofsands", // 3968182571
-    0xec8f1f89: "dynasty_heavy_08qp08b", // 3968802697
+    0xec624c73: "damned_pistoleer_m-f_45", // 3965865075
+    0xec794edd: "undead_javelineer_57", // 3967373021
+    0xec7baf93: "ghost_shackled_37", // 3967528851
+    0xec7f6f72: "wolf_elemental_ice_44", // 3967774578
     0xec8fecf8: "dynasty_summoner_empress", // 3968855288
     0xec9007eb: "ck_spectral_lost_2haxe_10ws09_elite", // 3968862187
-    0xec91431c: "corrupted", // 3968942876
-    0xecae47c3: "alligator_black_11md01", // 3970844611
-    0xecb15fa7: "darkness", // 3971047335
+    0xecc1799d: "bear_black_25", // 3972102557
     0xecc38516: "yeti_named_09fl08", // 3972236566
     0xecce9989: "evil_knight_greataxe_28", // 3972962697
     0xecd1849b: "undead_pistoleer_61", // 3973153947
@@ -7362,386 +6242,319 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xecd68490: "withered_grunt_named_12mb10", // 3973481616
     0xecde9e70: "damned_axeman_m-f_03gc08", // 3974012528
     0xece41ab6: "drowned_sailor_1h_sword_shield_43", // 3974372022
-    0xece6ce61: "boar_strange_16bs07", // 3974549089
+    0xece5787b: "dryad_soldier_57_waveevent", // 3974461563
+    0xece78658: "damned_villager_sickle_29", // 3974596184
     0xece9ccb6: "evil_knight_bow_32", // 3974745270
-    0xecee4514: "bloated_corpse_05wc08", // 3975038228
     0xed065124: "undead_officer", // 3976614180
     0xed30e9e8: "legion_damned_hound_named_00", // 3979405800
     0xed4b3db3: "bear_grizzly_28", // 3981131187
     0xed55ba50: "damned_pistoleer_m-f_07sm06a_elite", // 3981818448
-    0xed61d9ed: "anubianguardian_reaver_12bs10b", // 3982612973
-    0xed6ef0bf: "sand_elemental_soldier_16bs02", // 3983470783
-    0xed83d852: "sulfur_dragon_16bs09", // 3984840786
-    0xed871fa9: "dryad_soldier_14ac09a", // 3985055657
+    0xed83c3f7: "bobcat_28", // 3984835575
+    0xed949bb2: "hercyne_reindeer_briar_turret", // 3985939378
     0xeda63ec9: "barbary_lion_64", // 3987095241
     0xedac5ab7: "icedryad_range_frostgrip_61", // 3987495607
-    0xedb0bc21: "withered", // 3987782689
-    0xedb2ba8c: "legion_villager_skinning_knife_16bs08d", // 3987913356
-    0xedc41e7d: "legion_signifer_16bs08c", // 3989053053
+    0xedc5da8b: "damned_villager_rake_53", // 3989166731
     0xedc7e0bb: "fl_beetle_09fl09b", // 3989299387
-    0xedca9f80: "damned_villager_pickaxe_11md00h", // 3989479296
+    0xedd00d51: "damned_villager_pitchfork_28", // 3989835089
     0xedd13ef0: "damned_villager_lumberaxe_32", // 3989913328
     0xeddd04a2: "explosive_sprout_fire", // 3990684834
     0xeddd2be0: "desert_coyote_named_00", // 3990694880
-    0xede067d2: "boar_11", // 3990906834
-    0xede32f59: "undead_sailor_1h_club_elite_05wc11", // 3991088985
-    0xee01e8f4: "ancientguardian_spearman_11md00e", // 3993102580
-    0xee037ede: "ghost_shipwrecked_16bs04c", // 3993206494
-    0xee0406bf: "undead_sailor_1h_sword_shield_05wc08", // 3993241279
     0xee0584d3: "fl_explosive_sprout_fire_09fl04b", // 3993339091
     0xee0cce9c: "skeleton_spear_31", // 3993816732
-    0xee144dbf: "dune_phantom_huntress_16bs03b", // 3994308031
-    0xee206ab0: "risen_l-r_arm_12mb03c", // 3995101872
-    0xee3365b0: "channelview", // 3996345776
-    0xee366f9c: "jackrabbit_16bs04", // 3996544924
+    0xee11bf3a: "dryad_soldier_64", // 3994140474
     0xee36a069: "undead_grenadier_56", // 3996557417
-    0xee3c02ba: "risen_regurgitator_04nw10b", // 3996910266
+    0xee428342: "ghost_shipwrecked_36", // 3997336386
     0xee4482bb: "drowned_sailor_1h_club_64_elite", // 3997467323
     0xee4da012: "ck_lost_corpse_10ws02_highpass", // 3998064658
+    0xee586a1b: "damned_villager_shovel_46", // 3998771739
     0xee5bcc54: "drowned_sailor_1h_sword_45", // 3998993492
+    0xee6713e9: "wolf_minion_7", // 3999732713
     0xee6a07f1: "drowned_sailor_1h_club_55", // 3999926257
     0xee6a7fb7: "skeleton_2h_sword_elite", // 3999956919
     0xee6fbfaf: "wolf_alpha_62", // 4000300975
-    0xee705e00: "bloated_corpse_29", // 4000341504
     0xee760c31: "risen_regurgitator_32", // 4000713777
-    0xee7f9295: "valley_view", // 4001338005
     0xee8f7bf1: "ck_drowned_sailor_1h_sword_shield_10ws08_black", // 4002380785
-    0xee9e57c2: "dunewalker_waterseeker_icestaff_bloodofsands_n3", // 4003354562
+    0xee99847d: "ghost_frozen_61", // 4003038333
     0xeea6d071: "alligator", // 4003909745
     0xeea85d6f: "ck_blackbone_lost_1hsword_10ws09d_elite", // 4004011375
     0xeeb1c196: "undead_officer_47", // 4004626838
-    0xeebc9051: "wolf_grey_06sw05", // 4005335121
-    0xeebf9680: "ghost_starved_02bw03a", // 4005533312
-    0xeec1c384: "elk_doe_36", // 4005675908
+    0xeebc3489: "primal_lion_45", // 4005311625
     0xeec778c5: "ancient_guardian_javelineer_named_07sm07", // 4006049989
-    0xeecca2a2: "mallory", // 4006388386
+    0xeecd3428: "season_02_event_sulfur_elemental_soldier_wave_3", // 4006425640
     0xeecd7c7e: "alligator_black_43", // 4006444158
     0xeedc7901: "ck_boar_10ws04", // 4007426305
     0xeedd41c9: "undead_navigator_12", // 4007477705
-    0xeede54ce: "storm_wraith_ghost_09a_s18", // 4007548110
     0xeee13840: "undead_grenadier_molotov_52", // 4007737408
     0xeee67b42: "risen_whole_body_12", // 4008082242
     0xeee9b493: "yeti_named_08qp06", // 4008293523
+    0xeeed8494: "ghost_plagued_40", // 4008543380
     0xeeee070e: "drowned_sailor_2h_axe_42", // 4008576782
     0xeef188fe: "ghost_starved_30", // 4008806654
     0xef0ac78a: "lynx_59", // 4010461066
     0xef0bd7e6: "ck_boar", // 4010530790
-    0xef26201e: "turkey_10ws02", // 4012253214
+    0xef119db1: "fl_mammoth_boss_earth_root_ice_plus", // 4010909105
     0xef28744f: "withered_grunt_named_08qp07", // 4012405839
     0xef35a9ef: "ck_lost_corpse_10ws02_pirates_stand", // 4013271535
+    0xef3ce3c3: "damned_villager_pickaxe_66", // 4013745091
     0xef55207f: "unstable_swamp_fiend_59", // 4015333503
-    0xef64a6c6: "ebony_hawk", // 4016350918
     0xef7ab479: "corrupted_ogre_62_elite", // 4017796217
     0xef8c6c94: "mountain_lion_named_10ws01", // 4018957460
     0xef918c79: "evil_knight_mace_named_04nw02", // 4019293305
     0xefaafa20: "ancientguardian_javelineer_53", // 4020959776
     0xefb07378: "goat", // 4021318520
+    0xefb14190: "damned_2h_spearman_m-f_59", // 4021371280
     0xefb3213c: "fl_explosive_sprout_physical", // 4021494076
-    0xefba3f1a: "turkey_13", // 4021960474
-    0xefbbb488: "damned_hound_45", // 4022056072
-    0xefc1b04a: "ancientguardian_javelineer_09fl08", // 4022448202
+    0xefc2514e: "drowned_miner_3", // 4022489422
     0xefc3cb60: "ck_blackbone_lost_2hspear_10ws09d_elite", // 4022586208
+    0xefc6ec98: "season_02_event_sulfur_elemental_shaman_wave_4", // 4022791320
+    0xefd2fcd7: "damned_villager_skinning_knife_40", // 4023581911
     0xefd37441: "damned_bowman_32", // 4023612481
-    0xefdb22d3: "cow_05wc02", // 4024115923
+    0xefd5e53c: "ck_spectral_lost_1hsword_q5_waveevent", // 4023772476
     0xefdde963: "dynasty_warrior_dg_greatcleave_00", // 4024297827
     0xefe920d8: "anubianguardian_spearman_65", // 4025032920
     0xefef9477: "ck_undead_bloated_corpse_10ws09_elite", // 4025455735
     0xeffefa18: "damned_cultist_07sm04_elite", // 4026464792
     0xf000f969: "risen_regurgitator_26", // 4026595689
-    0xf0012c24: "undead_grenadier_molotov_15ec04e", // 4026608676
-    0xf00df01c: "drowned_sailor_1h_sword_12mb01a", // 4027445276
     0xf01cf2a9: "drowned_sailor_1h_club_41", // 4028428969
+    0xf01ff818: "wolf_elemental_earth_38", // 4028626968
+    0xf0284f85: "tiger_62", // 4029173637
     0xf0289d47: "risen_l-r_arm_29", // 4029193543
     0xf02d390c: "drowned_sailor_1h_sword_51", // 4029495564
+    0xf02e9f43: "damned_villager_shovel_52", // 4029587267
+    0xf033be57: "bobcat_61", // 4029922903
     0xf036d816: "damned_villager_pitchfork_9", // 4030126102
     0xf0405531: "undead_grenadier_42", // 4030747953
-    0xf0409ac4: "jackrabbit_16bs10", // 4030765764
     0xf0501a72: "boar_58", // 4031781490
     0xf05c0309: "torso_boss", // 4032561929
-    0xf05df133: "desert_scorpion_16bs03", // 4032688435
+    0xf06070f1: "damned_villager_pitchfork_61", // 4032852209
     0xf067c556: "ck_spectral_lost_2haxe_10ws10", // 4033332566
-    0xf067c7da: "dryad_archer_08qp03", // 4033333210
     0xf07cab73: "ck_undead_officer_boss_10ws03", // 4034702195
+    0xf07fd6d3: "damned_villager_ladel_48", // 4034909907
     0xf0877da6: "ghost_starved_24", // 4035411366
     0xf08f52e6: "ghost_starved_25_elite", // 4035924710
     0xf097cd18: "undead_grenadier_molotov_46", // 4036480280
     0xf098f256: "drowned_sailor_2h_axe_56", // 4036555350
-    0xf0a79548: "wolf_elemental_earth_08qp01", // 4037514568
-    0xf0a80f86: "evil_knight_warhammer_14ac13", // 4037545862
+    0xf09b71cc: "ghost_plagued_54", // 4036719052
     0xf0aa8c59: "ck_boar_10ws10", // 4037708889
-    0xf0bb8926: "alligator_black_57", // 4038822182
     0xf0c734ce: "undead_officer_53", // 4039587022
     0xf0ca05d3: "swamp_dryad_archer_60", // 4039771603
     0xf0cac1d1: "primal_lion_51", // 4039819729
+    0xf0cf4809: "corrupted_mine_55", // 4040116233
+    0xf0d066b5: "wolf_alpha_1", // 4040189621
     0xf0dacb4b: "desert_scorpion_named_04", // 4040870731
     0xf0e3ec83: "mountain_lion_14", // 4041469059
     0xf0e631a3: "ck_goldcursed_1hsword_10ws03c", // 4041617827
     0xf0e85da6: "skeleton_2h_sword_dg_reekwater_00", // 4041760166
     0xf0fb4013: "bear_grizzly_61", // 4042997779
     0xf0fd009c: "wolf_alpha", // 4043112604
+    0xf105f35f: "season_02_malek_bloodofthesands", // 4043699039
     0xf1065f75: "corruption_entity_dt3", // 4043726709
-    0xf10afe8b: "elk_doe_12mb01", // 4044029579
-    0xf10d2df4: "risen_whole_body_11md06a", // 4044172788
     0xf10e7f97: "fl_dg_firstlight_01_explosive_sprout_poison", // 4044259223
-    0xf115ace0: "seeles", // 4044729568
-    0xf118d33f: "damned_axeman_m-f_03gc09a_elite", // 4044935999
-    0xf11c6038: "damned_1h_swordsman_m-f_02bw02", // 4045168696
+    0xf1108363: "totem_withered_nest", // 4044391267
     0xf122ef10: "undead_officer_10ws09_elite", // 4045598480
     0xf1237bd3: "ck_drowned_sailor_1h_sword_10ws03b", // 4045634515
-    0xf12b95cc: "dune_phantom_huntress_62", // 4046165452
-    0xf137b8d5: "evil_knight_icestaff_named_s4_2", // 4046960853
     0xf139424f: "dynasty_spearman_08qp08", // 4047061583
-    0xf13a7e62: "anubianguardian_brute_dg_brimstonesands_shai_minion", // 4047142498
-    0xf14ef9ca: "skeleton_spear_07sm07", // 4048484810
+    0xf157fbf8: "damned_villager_sickle_60", // 4049075192
     0xf161f93b: "undead_pistoleer_28", // 4049729851
     0xf17e44f7: "fl_dh_megaflora_razorlotus", // 4051584247
-    0xf18084e4: "cloudhulk", // 4051731684
     0xf185c9d9: "drowned_sailor_2h_axe", // 4052077017
     0xf188e82c: "fl_dg_firstlight_01_gorilla_lava_named", // 4052281388
-    0xf18a5f5c: "alligator_black_16bs03", // 4052377436
-    0xf18bf87d: "sulfur_lizard_16bs08", // 4052482173
     0xf193e754: "ck_goldcursed_1hsword_10ws04_gold", // 4053002068
     0xf19f4be9: "damned_great_axeman_m-f_mdgreataxe", // 4053748713
+    0xf1a4098f: "damned_villager_skinning_knife_54", // 4054059407
     0xf1a58119: "damned_bowman_26", // 4054155545
     0xf1a5b25f: "ck_undead_grenadier_10ws09a_elite", // 4054168159
     0xf1aa79f4: "barbary_lion_named_03", // 4054481396
+    0xf1b4c1cc: "evil_knight_faceless", // 4055155148
+    0xf1bfb751: "boar_stripped_38", // 4055873361
     0xf1c3a276: "desert_coyote_62", // 4056130166
+    0xf1c59512: "damned_villager_kitchenknife_66", // 4056257810
     0xf1c8967d: "corruptedlegion_cyclops_dg_brimstonesands_named_00", // 4056454781
-    0xf1cd41d0: "damned_hound_51", // 4056760784
-    0xf1db979f: "serpentine", // 4057700255
     0xf1dc0f78: "ancientguardian_javelineer_47", // 4057730936
     0xf1e0225a: "undead_gravedigger_35", // 4057997914
-    0xf1ea0854: "corruption_swarmer_08qp04", // 4058646612
+    0xf1e06a35: "dynasty_summoner_54", // 4058016309
     0xf1edece6: "fl_swamp_dryad_prowler_09fl02", // 4058901734
-    0xf1f51531: "drowned_sailor_1h_sword_shield_43_15ec00", // 4059370801
     0xf1f6a9f2: "damned_1h_swordsman_m-f_50_elite", // 4059474418
-    0xf1fdb2d0: "damned_hound_11md00g", // 4059935440
+    0xf1fc0ef8: "corrupted_ogre_59", // 4059827960
+    0xf205fcab: "drowned_sailor_1h_club_6", // 4060478635
     0xf2089d05: "damned_villager_skinning_knife_03gc07", // 4060650757
-    0xf20d1633: "ghost_shipwrecked_16bs12", // 4060943923
-    0xf220087c: "skeleton_mage_05wc02", // 4062185596
+    0xf2099a2a: "wolf_elemental_ice_50", // 4060715562
+    0xf20fbb85: "undead_javelineer_43", // 4061117317
+    0xf214b92b: "damned_pistoleer_m-f_51", // 4061444395
+    0xf2227945: "damned_greataxeman_m-f_48", // 4062345541
     0xf2232263: "ghost_shackled_named_01", // 4062388835
     0xf227b183: "undead_officer_63_elite", // 4062687619
     0xf235777c: "skeleton_2h_sword_39", // 4063590268
     0xf2372879: "fl_dh_bearelemental_named", // 4063701113
-    0xf245225d: "waterfowl_16bs11", // 4064617053
+    0xf246aef4: "dryad_prowler_58", // 4064718580
+    0xf25b2e0a: "wolf_black_47", // 4066061834
+    0xf264c6e1: "damned_villager_cleaver_55", // 4066690785
     0xf2739805: "undead_berserker_36", // 4067661829
-    0xf273ec1a: "ancientguardian_mage_16bs11", // 4067683354
-    0xf277ad97: "corruptedlegion_cyclops_16bs07a", // 4067929495
-    0xf2787efb: "elk_stag_16", // 4067983099
+    0xf2757ec2: "wolf_white_53", // 4067786434
     0xf278c448: "undead_hunter_63", // 4068000840
-    0xf27a8317: "risen_regurgitator_06sw08", // 4068115223
-    0xf27ad6c1: "evil_knight_hound_28", // 4068136641
-    0xf28ba99b: "tiger_08qp05", // 4069239195
-    0xf28c1138: "drowned_sailor_1h_club_15ec04d", // 4069265720
     0xf28e6653: "lost_knight_tank_named_06sw08", // 4069418579
+    0xf291f863: "dynasty_musketeer_empress", // 4069652579
     0xf292541a: "undead_grenadier_disease_37", // 4069676058
     0xf292efee: "drowned_sailor_1h_sword_shield_57", // 4069715950
-    0xf29b7d8d: "damned_1h_swordsman_m-f_03gc03_elite", // 4070276493
-    0xf29c9045: "rabbit_spotted_11md01", // 4070346821
-    0xf29f10bd: "risen_regurgitator_06sw08b", // 4070510781
+    0xf2956795: "fl_mammoth_boss_earth_root_fire_plus", // 4069877653
     0xf29f39ee: "evil_knight_bow_26", // 4070521326
-    0xf2a7a875: "wolf_black_02bw02", // 4071073909
-    0xf2b8c15b: "dynasty_summoner_03gc03_elite", // 4072194395
-    0xf2ba78e1: "evil_knight_longsword_19", // 4072306913
+    0xf2a88127: "damned_villager_axethrower_m-f_63", // 4071129383
+    0xf2b78cc5: "bear_black_31", // 4072115397
     0xf2be9180: "dune_phantom_tank_named_01", // 4072575360
-    0xf2c0743a: "anubianguardian_spearman_12bs09a", // 4072698938
-    0xf2d19701: "boar_62_08qp07", // 4073821953
-    0xf2d4d149: "skeleton_1h_sword_13wf04", // 4074033481
-    0xf2e9f04c: "sheep_eastern_16bs07", // 4075417676
-    0xf2ec4e78: "ill-fated", // 4075572856
+    0xf2cdda39: "anubianguardian_reaver_09a_s9", // 4073577017
+    0xf2da33f5: "undead_admiral_brute_blackpowderkeg", // 4074386421
     0xf2f127b3: "ancientguardian_mage_48", // 4075890611
     0xf2f34632: "dryad_beast_50", // 4076029490
-    0xf2fe659e: "fl_mim_swamp_dryad_soldier", // 4076758430
+    0xf2fa9341: "season_02_eggdefend", // 4076507969
     0xf2feda37: "sheep_eastern_15", // 4076788279
-    0xf2fedea1: "damned_axeman_m-f_07sm05d1", // 4076789409
     0xf302eec5: "alligator_young_named_04nw10b", // 4077055685
     0xf3098a5f: "ghost_frozen_12mb02_named", // 4077488735
+    0xf30a655a: "dynasty_musketeer_55", // 4077544794
     0xf30b5aaa: "legion_villager_pickaxe_65", // 4077607594
-    0xf31449ac: "bison_strange_07sm05a", // 4078193068
-    0xf3183103: "damned_villager_knife_41", // 4078448899
-    0xf31a9d45: "alligator_young_09fl09a", // 4078607685
-    0xf32557ad: "skeleton_spear_11md04b", // 4079310765
-    0xf3273428: "goat_mountain_65", // 4079432744
+    0xf313ff32: "damned_cultist_58", // 4078174002
+    0xf325647b: "mountain_lion_49", // 4079314043
+    0xf334b04a: "dunewalker_waterseeker_lifestaff_named", // 4080316490
     0xf3515c54: "drowned_sailor_1h_club_12mb01b", // 4082195540
     0xf35e8580: "ck_blackbone_lost_2hblunderbuss_10ws04_ad", // 4083058048
-    0xf36e25b0: "undead_pistoleer_40_15ec00", // 4084082096
-    0xf36ec98f: "cow_66", // 4084124047
-    0xf39d0ebd: "spring_stag_05wc06b", // 4087156413
+    0xf35f6933: "target_dummy", // 4083116339
+    0xf37382cc: "blight_fiend_51_minion", // 4084433612
     0xf39df6b8: "mountain_lion_10ws06", // 4087215800
-    0xf3a3a14d: "undead_shaman_06sw07", // 4087587149
-    0xf3a40c21: "corruptedlegion_cyclops_16bs01", // 4087614497
     0xf3a7cba8: "damned_villager_lumberaxe_26", // 4087860136
-    0xf3a829c6: "goat_mountain_16bs08", // 4087884230
-    0xf3aa0c05: "elk_doe_13wf05", // 4088007685
+    0xf3b32fd3: "damned_villager_rake_47", // 4088606675
     0xf3b75c7f: "undead_grenadier_molotov", // 4088880255
-    0xf3c023a0: "bloated_corpse_60", // 4089455520
-    0xf3d503d5: "fl_mim_megaflora_razorlotus", // 4090823637
     0xf3dec126: "evil_knight_longsword_named_02bw02", // 4091461926
-    0xf3e3be2f: "evil_knight_lifestaff_s4_b", // 4091788847
-    0xf3f913b8: "swamp_dryad_tendril_95_s01", // 4093187000
-    0xf4030d96: "cow_62", // 4093840790
-    0xf40a2c94: "damned_villager_axethrower_m-f_11md00h", // 4094307476
-    0xf411a8d3: "undead_shaman_11md05a", // 4094798035
-    0xf4191638: "sand_elemental_heavy_16bs09", // 4095284792
+    0xf3e7e858: "dryad_shaman_58", // 4092061784
     0xf4323529: "undead_officer_msq_27", // 4096931113
     0xf43cd4f4: "undead_navigator", // 4097627380
-    0xf4427604: "undead_pistoleer_05wc08", // 4097996292
-    0xf4434fca: "undead_berserker_12mb06b", // 4098052042
-    0xf44af031: "goat_mountain_61", // 4098551857
+    0xf4500cf2: "bear_grizzly_38", // 4098886898
     0xf46064e3: "damned_cultist_dg_shattermtn_00", // 4099957987
-    0xf475c1fe: "sand_elemental_soldier_16bs12", // 4101358078
-    0xf475f51a: "damned_villager_knife_45", // 4101371162
-    0xf48b0ba0: "turkey_11md02", // 4102753184
+    0xf467a143: "dynasty_musketeer_51", // 4100432195
     0xf498f2b6: "bobcat_38", // 4103664310
     0xf4aae0f8: "swamp_dryad_soldier_63", // 4104839416
     0xf4b0f6a2: "undead_pirate_brute_named_05wc05c", // 4105238178
     0xf4b4b4f9: "wolf_elemental_earth_61", // 4105483513
-    0xf4c4ab58: "skeleton_mage_11md04b", // 4106529624
-    0xf4c9c838: "corruptedlegion_cyclops_16bs05", // 4106864696
+    0xf4cb3c10: "damned_villager_pitchfork_38", // 4106959888
     0xf4cc0683: "dryad_soldier_29", // 4107011715
     0xf4d49a32: "damned_villager_ladel_11", // 4107573810
-    0xf4f919a0: "undead_navigator_15ec04d", // 4109965728
-    0xf501af54: "legion_axethrower_16bs08c", // 4110528340
+    0xf4deebca: "damned_villager_rake_43", // 4108250058
+    0xf50479ff: "fl_mammoth_lightning", // 4110711295
+    0xf50902f8: "damned_villager_cleaver_51", // 4111008504
     0xf514fbb0: "boar_stripped_61", // 4111793072
-    0xf5155e50: "swamp_dryad_beast_named_05wc06", // 4111818320
-    0xf515bae2: "elk_stag_12", // 4111842018
-    0xf5180c2e: "damned_villager_pitchfork_16bs12", // 4111993902
+    0xf518badb: "wolf_white_57", // 4112038619
+    0xf5220ff5: "destructible_door_02_elite_05wc10", // 4112650229
     0xf52454cc: "undead_navigator_12mb01b", // 4112798924
     0xf536ea13: "wolf_black_43", // 4114016787
+    0xf539b9d3: "corrupted_tiger_60", // 4114201043
     0xf5476d3e: "ghost_charred_08qp07", // 4115098942
     0xf54ee67a: "ghost_shackled_named_05", // 4115588730
     0xf54f2ef6: "ck_undead_bloated_corpse_10ws09e_elite", // 4115607286
     0xf55d3e7f: "ck_waterfowl_10ws06", // 4116528767
+    0xf5609ed2: "ghost_shackled_27", // 4116750034
+    0xf5627f9c: "undead_javelineer_47", // 4116873116
+    0xf5645e33: "wolf_elemental_ice_54", // 4116995635
     0xf56838b2: "drowned_sailor_1h_club_2", // 4117248178
+    0xf5797d32: "damned_pistoleer_m-f_55", // 4118379826
     0xf57c5d5b: "ck_goldcursed_2hwarhammer", // 4118568283
-    0xf5843455: "sheep_eastern_16bs03", // 4119082069
-    0xf5930a58: "dune_phantom_huntress_16bs09", // 4120054360
+    0xf5888e4c: "damned_1h_swordsman_m-f_17", // 4119367244
+    0xf5916f7b: "elk_stag_corrupted_60", // 4119949179
     0xf5a0f4d3: "undead_navigator_admiral_minion", // 4120966355
     0xf5a5eee0: "bear_black", // 4121292512
-    0xf5bde123: "ancientguardian_reaver_11md06b", // 4122861859
     0xf5bf12e0: "corruption_entity_dg_restless_00", // 4122940128
     0xf5c012a1: "dryad_soldier_named_00", // 4123005601
     0xf5c2bc81: "ancientguardian_javelineer_dg_reekwater_00", // 4123180161
+    0xf5c5453e: "damned_villager_axethrower_m-f_67", // 4123346238
     0xf5c8b1b0: "damned_greataxeman_m-f_named_02", // 4123570608
-    0xf5ca6c6c: "wolf_black_02bw06", // 4123683948
     0xf5cc2084: "evil_knight_caster_31", // 4123795588
+    0xf5d77e33: "lynx_14", // 4124540467
+    0xf5da48dc: "bear_black_35", // 4124723420
     0xf5f2fdf7: "evil_knight_bow_22", // 4126342647
-    0xf5f32686: "evil_knight_bow_s4", // 4126353030
-    0xf5f502e5: "boar_strange_05wc05", // 4126474981
+    0xf5fcb719: "damned_villager_sickle_39", // 4126979865
     0xf5ff2bf7: "drowned_sailor_1h_sword_shield_53", // 4127140855
     0xf5ff9003: "undead_grenadier_disease_33", // 4127166467
     0xf6069fc5: "fl_risen_regurgitator_01_waveeventeasy", // 4127629253
-    0xf606bbc7: "skeleton_mage_13wf02a", // 4127636423
     0xf611f6cb: "lynx_49", // 4128372427
     0xf61326cd: "damned_villager_skinning_knife_07sm06b", // 4128450253
     0xf618283f: "boar_stripped_10ws06", // 4128778303
+    0xf6339c69: "drowned_sailor_1h_sword_shield_9", // 4130577513
+    0xf63a3fe1: "damned_villager_sickle_64", // 4131012577
     0xf63f451e: "ancientguardian_mage_named_10ws04", // 4131341598
     0xf6412ad2: "ck_blackbone_lost_2haxe_10ws03c1_named", // 4131465938
-    0xf64651d5: "dune_phantom_huntress_66", // 4131803605
-    0xf654221a: "bronzeroot", // 4132708890
-    0xf6632a90: "skeleton_crawler_13wf04", // 4133694096
-    0xf6673a92: "elk_doe_12mb05", // 4133960338
     0xf6750c26: "skeleton_1h_sword_63", // 4134865958
     0xf68a05b6: "or_boss_tbd", // 4136240566
     0xf68c9cc8: "damned_priest_named_03gc03_elite", // 4136410312
+    0xf68dae2c: "dynasty_summoner_50", // 4136480300
     0xf68de643: "undead_gravedigger_31", // 4136494659
     0xf69602f1: "dunewalker_wanderer_longsword_trial_group", // 4137026289
+    0xf69dd32f: "target_dummy_ranged", // 4137538351
     0xf69e3b9d: "skeleton_2h_sword_60", // 4137565085
     0xf6a00667: "fl_gorilla_ice_named_09fl05", // 4137682535
-    0xf6a085c9: "damned_hound_55", // 4137715145
+    0xf6a8510b: "damned_villager_kitchenknife_62", // 4138225931
+    0xf6aa70d1: "damned_2h_spearman_m-f_49", // 4138365137
     0xf6ae666f: "desert_coyote_66", // 4138624623
     0xf6b1cb61: "ancientguardian_javelineer_43", // 4138847073
-    0xf6bd7969: "drowned_sailor_1h_sword_15ec04c", // 4139612521
-    0xf6d8754f: "desert_scorpion_16bs04c", // 4141380943
+    0xf6c9cd96: "damned_villager_skinning_knife_50", // 4140420502
     0xf6dba457: "dynasty_heavy_named_dg_greatcleave_00", // 4141589591
-    0xf6e0a484: "desert_swamp_dryad_shaman", // 4141917316
-    0xf6e69b29: "evil_knight_longsword_04nw02", // 4142308137
-    0xf6e79b45: "alligator_black_16bs07", // 4142373701
-    0xf6ec76ab: "skeleton_1h_sword_11md06c", // 4142692011
+    0xf6ec7d74: "corrupted_ogre_dt3", // 4142693748
     0xf7081842: "dynasty_summoner_named_08qp08", // 4144502850
-    0xf70f7cfe: "dune_phantom_huntress_16bs02b", // 4144987390
+    0xf70db4e8: "damned_villager_pitchfork_65", // 4144870632
     0xf72d9128: "undead_grenadier_46", // 4146958632
-    0xf730352a: "desert_scorpion_16bs07", // 4147131690
-    0xf731a9ef: "desert_small_scorpion_16bs08", // 4147227119
-    0xf73694cc: "elk_doe_15ec04", // 4147549388
-    0xf73ab32e: "rimespire", // 4147819310
     0xf740fd15: "drowned_sailor_1h_sword_55", // 4148231445
-    0xf74dc656: "damned_cultist_11md07", // 4149069398
+    0xf7435b5a: "damned_villager_shovel_56", // 4148386650
+    0xf74ef3c3: "dynasty_summoner_dg_ebonscale_00_defend", // 4149146563
     0xf74f8d88: "evil_knight_hound_elite", // 4149185928
-    0xf763450a: "sheep_churro_50", // 4150478090
+    0xf7536f08: "ghost_starved_named_99a_enc_torment_sw03", // 4149440264
+    0xf759b203: "ghost_shipwrecked_26", // 4149850627
     0xf76b1d14: "ck_peacock_10ws08", // 4150992148
-    0xf76b6f41: "bloated_corpse_39", // 4151013185
-    0xf76c1588: "legion_legionnaire_16bs08c", // 4151055752
     0xf76d3d70: "risen_regurgitator_22", // 4151131504
     0xf77136b0: "drowned_sailor_1h_club_45", // 4151391920
     0xf779f1d8: "anubianguardian_horus_named_00", // 4151964120
+    0xf7891d36: "dynasty_musketeer_dg_ebonscale_00_defend", // 4152958262
     0xf78e289a: "mountain_lion_10", // 4153288858
     0xf796840a: "bear_grizzly_65", // 4153836554
     0xf79efd0d: "anubianguardian_archer", // 4154391821
     0xf7a705c8: "primal_lion_55", // 4154918344
     0xf7aaf0d7: "undead_officer_57", // 4155175127
-    0xf7b29707: "kinjalgard", // 4155676423
     0xf7b70f52: "desert_scorpion_named_00", // 4155969362
-    0xf7c1709d: "evil_knight_greataxe_09fl07", // 4156649629
+    0xf7bda2ac: "wolf_alpha_5", // 4156400300
     0xf7c65e4d: "ck_skeleton_club", // 4156972621
-    0xf7d64d3f: "alligator_black_53", // 4158016831
-    0xf7daf2c5: "elk_doe_26", // 4158321349
-    0xf7e5cd4e: "desert_scorpion_sulfur_16bs10", // 4159032654
     0xf7f5364f: "drowned_sailor_2h_axe_52", // 4160042575
+    0xf7f6b5d5: "ghost_plagued_50", // 4160140757
     0xf7fa0901: "undead_grenadier_molotov_42", // 4160358657
     0xf803d8cd: "corrupted_ogre_dg_shattermtn_00", // 4161001677
     0xf808009b: "undead_hunter_32", // 4161274011
     0xf808613b: "fl_dg_firstlight_01_mammoth_lava", // 4161298747
-    0xf808ba28: "elk_stag_47", // 4161321512
+    0xf809fb7a: "boar_stripped_34", // 4161403770
     0xf80e1b11: "ck_ghost_shackled_10ws09_elite", // 4161674001
-    0xf8123622: "wolf_timber_0903_0201_waveeventeasy", // 4161943074
+    0xf81245a4: "damned_villager_skinning_knife_58", // 4161947044
     0xf8240791: "legion_villager_hammer_66", // 4163110801
-    0xf8264621: "spanshatter", // 4163257889
-    0xf8274ca5: "undead_hunter_02bw01", // 4163325093
-    0xf82dcfa7: "elk_stag_strange_07sm08", // 4163751847
+    0xf82a5de9: "medusa_maze_01", // 4163526121
     0xf83480df: "damned_villager_shovel_07sm06a", // 4164190431
-    0xf8386b6b: "undead_navigator_39_15ec00", // 4164447083
-    0xf83db456: "sulfur_lizard_16bs04", // 4164793430
-    0xf84ba6ab: "damned_villager_shovel_16bs07b", // 4165707435
     0xf84cb5bb: "fl_armored_dragon_elite_named_09fl01", // 4165776827
+    0xf856261e: "dynasty_summoner_58", // 4166395422
+    0xf8566e71: "undead_gravedigger_39", // 4166413937
     0xf85c447f: "corruption_swarmer_08qp08", // 4166796415
     0xf864398a: "fl_megaflora_razorlotus_elite_named_09fl12", // 4167317898
-    0xf86ef6e6: "withered_swarmancer_06sw08a", // 4168021734
-    0xf870cc6c: "rabbit_spotted_05wc09", // 4168141932
-    0xf88b0364: "skeleton_crawler_26", // 4169859940
+    0xf871f8e3: "damned_2h_spearman_m-f_41", // 4168218851
+    0xf8844684: "legion_signifer_dg_brimstonesands_minion", // 4169418372
     0xf88d7614: "lost_fencer_named_12mb04", // 4170020372
     0xf8958e86: "damned_1h_swordsman_m-f_42", // 4170550918
-    0xf8a17c6f: "undead_pistoleer_15ec04e", // 4171332719
     0xf8a50ae7: "damned_axeman_m-f_03gc09_elite", // 4171565799
-    0xf8a8b6ce: "alligator_young_15ec04d", // 4171806414
     0xf8b2f0ed: "fl_armored_dragon_named_09fl03c", // 4172476653
     0xf8b3aaea: "desert_scorpion_sulfur_named_00", // 4172524266
-    0xf8b7f75c: "withered_swarmancer_11md00c", // 4172805980
-    0xf8c3b173: "legion_villager_hammer_16bs02a", // 4173574515
+    0xf8bbab8f: "damned_villager_hammer_53", // 4173048719
     0xf8c74816: "bear_black_60", // 4173809686
     0xf8ca7ef9: "lynx_41", // 4174020345
-    0xf8cda73f: "damned_villager_lumberaxe_16bs06a", // 4174227263
-    0xf8cfab4d: "legion_axethrower_16bs12", // 4174359373
-    0xf8d72ca9: "dune_phantom_tank_16bs02", // 4174851241
     0xf8d7b510: "undead_pistoleer_24", // 4174886160
     0xf8d845f4: "damned_villager_axethrower_m-f_32", // 4174923252
-    0xf8e5b9d6: "ancient", // 4175804886
-    0xf8e67d8e: "legion_legionnaire_16bs12", // 4175854990
     0xf8f3e195: "ck_drowned_sailor_1h_sword_10ws03", // 4176732565
     0xf8f9ef45: "fl_anubianguardian_spearman_09fl01a", // 4177129285
-    0xf8ff9342: "drowned_sailor_1h_club_41_15ec00", // 4177498946
-    0xf90ca819: "undead_shaman_11md00d", // 4178356249
-    0xf90fc668: "ancientguardian_reaver_12mb02", // 4178560616
-    0xf9149150: "skeleton_2h_sword_11md00f", // 4178874704
+    0xf90cbacd: "rabbit_spotted_36", // 4178361037
     0xf91a5aea: "darkness_monolith_shell_dt6", // 4179253994
+    0xf920c4a8: "damned_acolyte_61", // 4179674280
     0xf92305e3: "darkness_monolith_shell_07sm06b_64_elite", // 4179822051
-    0xf92597db: "legion_signifer_16bs02a", // 4179990491
     0xf92d3de7: "ghost_plagued_58", // 4180491751
     0xf931318d: "ghost_starved_28", // 4180750733
-    0xf9335f30: "skeleton_mage_nwsw", // 4180893488
-    0xf9395c40: "damned_villager_cleaver_04nw10b", // 4181285952
-    0xf93dbdf6: "skeleton_crawler_06sw03", // 4181573110
-    0xf955937e: "skeleton_spear_11md01c", // 4183135102
+    0xf950964c: "damned_priest_hound_62", // 4182808140
     0xf955a0a8: "mountain_lion_18", // 4183138472
     0xf955ad98: "dryad_archer_45_elite_15ec05", // 4183141784
     0xf9625e1f: "ck_spectral_lost_1hclever_boss_10ws02", // 4183973407
@@ -7751,202 +6564,180 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xf97c3103: "undead_pistoleer_12mb01c", // 4185665795
     0xf9867583: "ck_spectral_lost_fire_q4_waveevent", // 4186338691
     0xf98b51b1: "risen_bomber", // 4186657201
-    0xf9937a19: "ancientguardian_warhammer_named_s4_1", // 4187191833
     0xf99ed16c: "risen_l-r_arm_25", // 4187935084
-    0xf9a3fefd: "bobcat_16bs03", // 4188274429
-    0xf9a5e16d: "ancient_amalgam_16bs06", // 4188397933
     0xf9a9395e: "fl_mammoth_ice_elite_09fl01", // 4188617054
-    0xf9b0e773: "bloated_corpse_31", // 4189120371
+    0xf9a9b433: "wolf_elemental_earth_34", // 4188648499
     0xf9b2d58b: "corrupted_ogre_named_07sm02b_elite", // 4189246859
     0xf9be2be2: "wolf", // 4189989858
     0xf9c99af8: "damned_villager_ladel_44", // 4190739192
     0xf9cc77ef: "skeleton_spear_29", // 4190926831
-    0xf9cf3c0a: "dynasty_warrior_08qp01b", // 4191108106
     0xf9d73a2d: "swamp_fiend_60", // 4191631917
-    0xf9e65659: "boar_54", // 4192622169
-    0xf9e71205: "skeleton_mage_06sw07b", // 4192670213
+    0xf9e18907: "evil_knight_lifestaff_firevariant", // 4192307463
     0xf9ea4932: "withered_grunt_42", // 4192880946
     0xf9f210e5: "yeti_named_06sw02", // 4193390821
     0xf9f817df: "skeleton_archer", // 4193785823
     0xf9fac5f9: "alligator_strange_60_08qp01", // 4193961465
+    0xfa0a2257: "fl_hercyne_corvid_alpha", // 4194968151
     0xfa0cf60a: "ghost_frozen_eggreataxe", // 4195153418
-    0xfa179a0d: "elk_stag_12mb02", // 4195850765
-    0xfa18502c: "skeleton_crawler_12mb08", // 4195897388
-    0xfa1e65ed: "goat_mountain_16bs04", // 4196296173
+    0xfa10b422: "damned_villager_pitchfork_30", // 4195398690
+    0xfa232858: "avalancher_yeti", // 4196608088
     0xfa2e8567: "ancientguardian_reaver_61", // 4197352807
-    0xfa31cdb7: "daybreak", // 4197567927
-    0xfa436121: "sulfur_dragon_16bs11", // 4198719777
+    0xfa385515: "damned_axeman_m-f_60", // 4197995797
+    0xfa41ee64: "desert_scorpion_slinger_sandworm", // 4198624868
+    0xfa437a84: "bobcat_30", // 4198726276
     0xfa51a473: "dryad_shaman_54", // 4199654515
+    0xfa55def1: "lost_knight_warhammer", // 4199931633
     0xfa5821f0: "fl_elk_elemental_09fl05", // 4200079856
     0xfa59321b: "wolf_elemental_ice_named_s4_1", // 4200149531
+    0xfa5a86b5: "damned_rifleman_m-f_63", // 4200236725
     0xfa65e7cd: "alligator_strange_57", // 4200982477
-    0xfa68ce1d: "drowned_sailor_1h_sword_shield_12mb01", // 4201172509
+    0xfa698e24: "wolf_alpha_27", // 4201221668
     0xfa6a916e: "undead_berserker_dg_cutlass_00", // 4201288046
+    0xfa6c367a: "drowned_sailor_1h_club_10", // 4201395834
     0xfa7f940c: "ck_mountain_lion_named_10ws09_elite", // 4202664972
-    0xfa929542: "ancientguardian_spearman_s4", // 4203910466
+    0xfa8b84c0: "bear_grizzly_30", // 4203447488
     0xfa932850: "mountain_lion_45", // 4203948112
-    0xfaa4be59: "skeleton_archer_11md00e", // 4205100633
+    0xfa9b52a4: "target_dummy_boss5", // 4204483236
+    0xfaa5b319: "damned_cultist_54", // 4205163289
     0xfaab79cf: "damned_swordsman", // 4205541839
     0xfab701c0: "ck_ghost_shackled", // 4206297536
-    0xfac29e0a: "sand_elemental_heavy_16bs01", // 4207058442
-    0xfac47370: "ghost_shipwrecked_15ec04f", // 4207178608
-    0xfac5b937: "elk_male_02bw06", // 4207262007
+    0xfabc2971: "dynasty_musketeer_59", // 4206635377
     0xfacd2676: "dynasty_maiden_named_08qp07", // 4207748726
-    0xfacf69d1: "drowned_sailor_1h_club_08qp02", // 4207897041
     0xfad1a430: "wolf_grey_23", // 4208043056
     0xfadb7042: "undead_navigator_57", // 4208685122
-    0xfadc9890: "alligator_black_04nw11", // 4208760976
-    0xfaf025b9: "ancientguardian_javelineer_06sw02", // 4210042297
-    0xfb004efc: "undead_shaman_04nw11b", // 4211101436
     0xfb0e20fa: "evil_knight_greataxe_30", // 4212007162
-    0xfb0ecbb0: "damned_1h_swordsman_m-f_11md00g", // 4212050864
-    0xfb1c1fc1: "elk_elemental_60", // 4212924353
-    0xfb221f46: "swamp_dryad_prowler_05wc06a", // 4213317446
-    0xfb2955f9: "ancientguardian_mage_16bs11c", // 4213790201
+    0xfb273f2b: "damned_villager_sickle_31", // 4213653291
     0xfb2e64e8: "ghost_shipwrecked_re1", // 4214121704
-    0xfb301c28: "drowned_sailor_1h_sword_shield_44_15ec00", // 4214234152
     0xfb34e444: "drowned_miner_37", // 4214547524
     0xfb476b98: "ancientguardian_mage_44", // 4215761816
-    0xfb48826a: "dune_phantom_huntress_16bs01", // 4215833194
+    0xfb5cfd4c: "sand_elemental_soldier_sandworm", // 4217175372
     0xfb680cec: "skeleton_1h_sword_36", // 4217900268
-    0xfb6cd563: "elemental", // 4218213731
-    0xfb7d7ec3: "blight_fiend_sulfur_16bs06", // 4219305667
     0xfb833b57: "skeleton_2h_sword_35", // 4219681623
-    0xfb873c40: "damned_villager_shovel_08qp01", // 4219944000
-    0xfb995f7a: "elk_doe_06sw06", // 4221132666
+    0xfb90e689: "undead_gravedigger_64", // 4220577417
+    0xfb94356e: "damned_greataxeman_m-f_44", // 4220794222
     0xfb9b2208: "fl_gorilla_ice_09fl05", // 4221248008
     0xfb9b5698: "skeleton_club_22", // 4221261464
     0xfba3eee5: "legion_axethrower_m-f_65", // 4221824741
     0xfbac1545: "legion_legionnaire_named_00", // 4222358853
     0xfbac59e3: "ghost_starved_dg_cutlass_00", // 4222376419
+    0xfbaccbab: "ancientguardian_javelineer_16", // 4222405547
+    0xfbb551c1: "damned_villager_kitchenknife_37", // 4222964161
     0xfbbe9c0d: "dunewalker_waterseeker_lifestaff_trial_group", // 4223573005
     0xfbc6ce09: "dryad_prowler_65_elite", // 4224110089
+    0xfbd28aca: "damned_villager_cleaver_59", // 4224879306
     0xfbd2fc32: "fl_hercyne_corvid_09fl02b", // 4224908338
     0xfbd563f6: "ck_blackbone_lost_1hsword_10ws03f", // 4225065974
-    0xfbd83772: "undead_javelineer_13wf08", // 4225251186
     0xfbef274c: "ghost_shipwrecked_23_09fl10_named", // 4226754380
     0xfbf0e2df: "dryad_prowler_54", // 4226867935
-    0xfbf1659c: "legion_villager_kitchenknife_16bs07b", // 4226901404
     0xfbf6f7f6: "dryad_archer_28", // 4227266550
     0xfc05c8f5: "skeleton_1h_sword_32", // 4228237557
-    0xfc0d8ce5: "anubianguardian_panther_12bs09a", // 4228746469
-    0xfc254673: "dune_phantom_huntress_16bs05", // 4230301299
     0xfc2aaf81: "ancientguardian_mage_40", // 4230655873
-    0xfc315301: "damned_acolyte_07sm05a", // 4231090945
-    0xfc3f95fb: "skeleton_club_09fl06", // 4232025595
     0xfc413f57: "blight_fiend_60", // 4232134487
-    0xfc434ece: "boar_strange_05wc09", // 4232269518
-    0xfc4f4bcd: "anubianguardian_spearman_67_elite", // 4233055181
+    0xfc445f9a: "ghost_charred_63", // 4232339354
+    0xfc4afb32: "damned_villager_sickle_35", // 4232772402
     0xfc571651: "damned_villager_pickaxe_27", // 4233565777
+    0xfc59205d: "drowned_miner_33", // 4233699421
     0xfc5a6f7d: "damned_hound_named_02", // 4233785213
     0xfc613218: "lynx_18", // 4234228248
-    0xfc684cbe: "dryad_archer_14ac12b", // 4234693822
+    0xfc6c04f7: "bear_black_39", // 4234937591
     0xfc7e211d: "wolf_grey_03gc11", // 4236124445
     0xfc7f5813: "icedryad_fiend_shivers_60", // 4236204051
     0xfc860662: "fl_anubianguardian_brute_named_09fl01", // 4236641890
-    0xfc9d049d: "legion_villager_skinning_knife_16bs12", // 4238148765
-    0xfcb58b0e: "damned_villager_axethrower_m-f_03gc03_elite", // 4239756046
+    0xfc9d26c6: "dryad_prowler_50", // 4238157510
     0xfcb8a7ef: "ck_blackbone_lost_1hsword_10ws03b", // 4239960047
     0xfcbb386e: "undead_berserker_64_elite", // 4240128110
     0xfcbf49ec: "rabbit_snowshoe_08qp05", // 4240394732
     0xfcc10fb2: "ancientguardian_javelineer_12", // 4240510898
-    0xfcc37995: "skeleton_crawler_03gc10d", // 4240669077
     0xfccd89e6: "ck_undead_bloated_corpse_10ws06", // 4241328614
     0xfcce7055: "ck_drowned_miner_10ws06b", // 4241387605
+    0xfccf3119: "damned_pistoleer_m-f_59", // 4241436953
     0xfccf49c6: "rabbit_snowshoe_22", // 4241443270
+    0xfcd21218: "wolf_elemental_ice_58", // 4241625624
     0xfcd27e12: "ck_alligator_black_10ws09_elite", // 4241653266
-    0xfcdfc19c: "dunewalker_wanderer_longsword_bloodofsands_n1", // 4242522524
+    0xfcd895d8: "damned_villager_kitchenknife_33", // 4242052568
     0xfce62d76: "drowned_sailor_1h_sword_shield_dg_cutlass_00", // 4242943350
     0xfceb3798: "fl_hercyne_reindeer_09fl13", // 4243273624
     0xfceeff4e: "skeleton_2h_sword_31", // 4243521358
+    0xfcf13feb: "season_02_flamekeeper_boss_q12", // 4243668971
     0xfcf69281: "skeleton_club_26", // 4244017793
-    0xfcf8d266: "dunewalker_wanderer_rapier_bloodofsands_n1", // 4244165222
+    0xfcf9f177: "damned_greataxeman_m-f_40", // 4244238711
     0xfcfd2290: "undead_gravedigger_60", // 4244447888
     0xfd01f263: "drowned_sailor_1h_club_14", // 4244763235
-    0xfd050a04: "drowned_sailor_1h_sword_shield_12mb05", // 4244965892
     0xfd0823d4: "alligator_strange_53", // 4245169108
     0xfd0b989b: "ck_skeleton_crawler", // 4245395611
+    0xfd19f00f: "desert_scorpion_slinger", // 4246335503
     0xfd28ae86: "risen_corruption_entity_dg_shattermtn_00", // 4247301766
+    0xfd2ebe9d: "bobcat_34", // 4247699101
+    0xfd3c606a: "dryad_shaman_50", // 4248592490
+    0xfd41c42b: "fl_ai_adiana_shadow", // 4248945707
     0xfd5ccdad: "skeleton_archer_27", // 4250717613
-    0xfd66a7ad: "stonetooth", // 4251363245
-    0xfd724232: "drowned_sailor_2h_axe_12mb01a", // 4252123698
-    0xfd7a5e14: "elk_stag_12mb06", // 4252655124
-    0xfd7f8413: "corruptedlegion_cyclops_16bs09", // 4252992531
-    0xfd7fb82d: "dune_phantom_huntress_16bs07c", // 4253005869
+    0xfd7d703b: "damned_villager_pitchfork_34", // 4252856379
     0xfd842097: "damned_acolyte_dg_shattermtn_00", // 4253294743
-    0xfd84acc9: "undead_navigator_05wc06", // 4253330633
-    0xfd88d705: "alligator_young_05wc08", // 4253603589
+    0xfd8583fd: "lost_merc_tank", // 4253385725
     0xfd893dd7: "ck_ghost_shipwrecked_10ws06", // 4253629911
-    0xfd8a462f: "skeleton_1h_sword_06sw03", // 4253697583
     0xfd8c2e96: "ck_ancientguardian_mage_minion_67_elite", // 4253822614
     0xfd9b0f29: "undead_gravedigger_named_02", // 4254797609
-    0xfda3d5b0: "putridspore", // 4255372720
-    0xfda87d2e: "elk_male_02bw02", // 4255677742
-    0xfda9979b: "quagmire", // 4255750043
-    0xfdaf5a13: "sand_elemental_heavy_16bs05", // 4256127507
     0xfdb6b45b: "undead_navigator_53", // 4256609371
-    0xfdc97a40: "skeleton_archer_11md00a", // 4257839680
-    0xfdd342d2: "damned_bowman_11md00g", // 4258480850
+    0xfdbc6029: "wolf_grey_27", // 4256981033
+    0xfdc87700: "damned_cultist_50", // 4257773312
     0xfdde28a0: "swamp_dryad_tendril_named_elite_05wc10", // 4259195040
+    0xfde640d9: "bear_grizzly_34", // 4259725529
+    0xfdf75dec: "fl_elk", // 4260847084
     0xfdfeec49: "mountain_lion_41", // 4261342281
     0xfe0bee87: "wolf_alpha_9", // 4262194823
+    0xfe10adff: "hercyne_wolf_typhon", // 4262505983
     0xfe1149e3: "primal_lion_59", // 4262545891
     0xfe1e93c7: "anubianguardian_archer_61", // 4263416775
+    0xfe257137: "evil_knight_warhammer_icevariant", // 4263866679
     0xfe27db3a: "evil_knight_heavy_dg_greatcleave_01", // 4264024890
-    0xfe617ed4: "rabbit_spotted_32", // 4267802324
+    0xfe4bd6e5: "explosive_sprout_poison_pulse", // 4266383077
     0xfe779ef3: "darkness_monolith_shell_dt2", // 4269252339
-    0xfe795549: "skeleton_2h_sword_11md00b", // 4269364553
-    0xfe7dc0f4: "anubianguardian_archer_12bs09b", // 4269654260
-    0xfe83eec1: "lakeside", // 4270059201
+    0xfe7a99b9: "anubianguardian_brute_09a_s9", // 4269447609
     0xfe85c986: "ancientguardian_reaver_38", // 4270180742
     0xfe8614ee: "fl_megaflora_razorlotus_named_09fl02a", // 4270200046
-    0xfe87e5c4: "desert_small_scorpion_16bs04", // 4270319044
-    0xfe9123e2: "undead_navigator_elite_05wc11", // 4270924770
+    0xfe878d2b: "withered_grunt_46", // 4270296363
+    0xfe88319c: "ancientguardian_spearman_62_waveevent", // 4270338460
+    0xfe88afc3: "damned_hound_minion", // 4270370755
     0xfe9e0e65: "boar_12mb10b", // 4271771237
     0xfea0ccca: "bearelemental_named_elite_05wc10", // 4271951050
-    0xfeafabf5: "skeleton_1h_sword_12mb08", // 4272925685
+    0xfea45ee1: "damned_villager_ladel_40", // 4272185057
+    0xfea999ff: "withered_swarmancer_elite", // 4272527871
+    0xfeb07983: "ancientguardian_mage_minion_22", // 4272978307
+    0xfeb1a2f2: "ancientguardian_mage_minion_s4", // 4273054450
     0xfebb7447: "damned_villager_pickaxe_named_00", // 4273697863
-    0xfec0030d: "fl_beetle_09fl12", // 4273996557
     0xfec4702a: "wolf_elemental_earth_30", // 4274286634
     0xfec5f54d: "skeleton_2h_sword_dg_everfall_00", // 4274386253
     0xfec77a9b: "drowned_sailor_1h_club_49", // 4274485915
-    0xfec82574: "ancient_amalgam_16bs02", // 4274529652
     0xfecbcc75: "corruption_impaler", // 4274769013
-    0xfece3ae4: "bobcat_16bs07", // 4274928356
     0xfecf7776: "fl_hercyne_corvid_09fl10", // 4275009398
-    0xfed3ce52: "fenton", // 4275293778
     0xfed696ea: "skeleton_crawler_elite", // 4275476202
-    0xfedd236a: "bloated_corpse_35", // 4275905386
     0xfedfbb6e: "ancient_mage", // 4276075374
     0xfef31575: "risen_l-r_arm_21", // 4277343605
     0xfef6b13e: "drowned_sailor_1h_sword_59", // 4277580094
-    0xff001ec3: "crawtick", // 4278197955
+    0xfefe9407: "legion_villager_prong", // 4278096903
+    0xff0f7d97: "evil_knight_flamekeeper_boss_kindling_lizard", // 4279205271
+    0xff1c3cfa: "damned_2h_spearman_m-f_45", // 4280040698
     0xff2acddc: "bobcat_10ws01", // 4280995292
     0xff30751c: "ck_lost_corpse_10ws06", // 4281365788
     0xff32efff: "evil_knight_hound", // 4281528319
-    0xff3899ec: "evil_knight_longsword_s4_b", // 4281899500
-    0xff4179f1: "damned_acolyte_03gc09_named_02_elite", // 4282481137
+    0xff37735d: "tendril_corruption_58", // 4281824093
     0xff44d36c: "damned_villager_pickaxe_07sm04_elite", // 4282700652
     0xff49c388: "legion_villager_hammer_62", // 4283024264
-    0xff4b322b: "undead_navigator_09fl09a", // 4283118123
-    0xff60cf5c: "withered_swarmancer_09fl04", // 4284534620
-    0xff657e31: "elk_stag_43", // 4284841521
+    0xff540704: "anubianguardian_panther_09a_s9", // 4283696900
+    0xff643f63: "boar_stripped_30", // 4284759907
+    0xff65c482: "undead_hunter_36", // 4284859522
     0xff85d042: "drowned_sailor_1h_sword_shield_5", // 4286959682
-    0xff994b6d: "undead_sailor_1h_club_05wc05b", // 4288236397
-    0xff9ab1c0: "ancientguardian_javelin_13wf02", // 4288328128
+    0xff8f54d0: "undead_grenadier_disease_62", // 4287583440
+    0xff94eda0: "skeleton_spear_60_waveevent", // 4287950240
     0xffa7bae0: "lynx_45", // 4289182432
     0xffaa8c0f: "bear_black_64", // 4289367055
-    0xffaf2290: "evil_knight_caster_10ws04", // 4289667728
     0xffb581ed: "damned_villager_axethrower_m-f_36", // 4290085357
     0xffba7109: "undead_pistoleer_20", // 4290408713
-    0xffbae8b0: "dune_phantom_tank_16bs06", // 4290439344
-    0xffbbd2e4: "drowned_sailor_2h_axe_40_15ec00", // 4290499300
-    0xffc7633b: "evil_knight_warhammer_04nw04", // 4291257147
-    0xffcbc73b: "deadmans_anchor", // 4291544891
-    0xffccb876: "undead_pistoleer_15ec04a", // 4291606646
-    0xffd176b9: "elk_doe_12mb09", // 4291917497
-    0xffda3345: "withered_swarmancer_11md00g", // 4292490053
-    0xffdea1ec: "risen_whole_body_04nw02b", // 4292780524
-    0xffe6c77d: "skeleton_crawler_22", // 4293314429
-    0xfff5b276: "campanilean", // 4294292086
+    0xffbd9af6: "totem_scorpion_nest_scorpio_elite", // 4290616054
+    0xffd66f96: "damned_villager_hammer_57", // 4292243350
+    0xffd7cbcd: "fl_armored_dragon_small_09a_s13_waveevent", // 4292332493
+    0xffe1dd7a: "ancientguardian_bowman_icevariant_solo", // 4292992378
+    0xffef2315: "sandworm_acidspew", // 4293862165
+    0xfff2d475: "fl_mammoth_boss_dg_firstlight_01_focus", // 4294104181
+    0xfff84a9f: "damned_1h_swordsman_m-f_46", // 4294462111
 }

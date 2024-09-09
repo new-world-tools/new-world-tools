@@ -12,6 +12,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x1e871cd9: "dungeon+_nocurrency", // 512171225
     0x1f99399e: "eliteminiboss", // 530135454
     0x26e52ecf: "war_t2", // 652553935
+    0x2a715d24: "war_t1_with_defender_bonus", // 712072484
     0x2c91dfdb: "arena", // 747757531
     0x2f2fe2aa: "invasion_t4", // 791667370
     0x2fb3d0ee: "project", // 800313582
@@ -28,6 +29,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x4f8a6557: "missionpvp+", // 1334469975
     0x514049a6: "raid20+", // 1363167654
     0x51410db8: "mission+", // 1363217848
+    0x516fdfc7: "war_t2_with_defender_bonus", // 1366286279
     0x51e21e59: "war_t3", // 1373773401
     0x51ed51bd: "arena3v3_win_3_round", // 1374507453
     0x5306f7ff: "raid10+", // 1392965631
@@ -50,6 +52,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x9bceaefa: "raid10boss", // 2614013690
     0xa0eaecfb: "dungeonminiboss", // 2699750651
     0xa6e9c062: "missionpvp-", // 2800336994
+    0xa752da01: "war_t4_with_defender_bonus", // 2807224833
     0xa90a97b6: "outpostrush_t1", // 2836043702
     0xb14b7709: "invasion_t3", // 2974512905
     0xb74c624b: "eliteboss", // 3075236427
@@ -62,6 +65,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0xc6724094: "arena3v3_win_1_round", // 3329376404
     0xcca425c5: "solo-_starterbeach", // 3433309637
     0xccf147d9: "dungeonboss", // 3438364633
+    0xceb55c59: "war_t3_with_defender_bonus", // 3467992153
     0xcf868bfa: "war_t4", // 3481701370
     0xd03fcd8d: "spell", // 3493842317
     0xd040cf57: "project-", // 3493908311

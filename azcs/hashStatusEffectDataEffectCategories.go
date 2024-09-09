@@ -1,23 +1,29 @@
 package azcs
 
 var hashStatusEffectDataEffectCategories = map[uint32]string{
+    0x007ec474: "echidnapillar", // 8307828
     0x01970eea: "frost", // 26676970
     0x059278a3: "dot", // 93485219
     0x06a98af5: "tokengatherboost", // 111774453
+    0x06ef9429: "broodmothersleepprevention", // 116364329
     0x07d5bc37: "shrivelled", // 131447863
     0x0925b47e: "mutatorcurse", // 153465982
+    0x0a407914: "broodmotherdormantmushrooms", // 171997460
     0x0bf0d05e: "unclampedexhaust", // 200331358
     0x0c29ef40: "armorfortify", // 204074816
     0x0e6c9dbe: "silence", // 241999294
     0x0e6eec05: "essencerupturet3", // 242150405
     0x0ea6e98c: "fireburn", // 245819788
+    0x0f33c2ac: "sleep", // 255050412
     0x0f3b6ac1: "disease", // 255552193
     0x11756a55: "rainofarrows", // 292907605
     0x12271997: "harvestmana", // 304552343
     0x153e9a58: "anointed", // 356424280
+    0x165e46ac: "wardboost", // 375277228
     0x16a1723b: "nondispellabledebuff", // 379679291
     0x16cbdd3f: "nondispellablecc", // 382459199
     0x16f4f95b: "root", // 385153371
+    0x19371e1e: "torsobossslicer", // 423042590
     0x1a237df1: "housingdmgbeasts", // 438533617
     0x1edb2c8a: "unclampedempower", // 517680266
     0x1fcf5da8: "rend", // 533683624
@@ -34,12 +40,14 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x3876580e: "carryorb", // 947279886
     0x3b059b76: "traproot", // 990223222
     0x3b8ccc74: "stamina", // 999083124
+    0x3c8d519c: "nagaarcanesnare", // 1015894428
     0x3dfe1fb9: "harvesthp", // 1040064441
     0x3e3f641a: "sturgeonfishingbuff", // 1044341786
     0x3ed8a605: "insmoke", // 1054385669
     0x3f83eb72: "voidgauntlet", // 1065610098
     0x412aed17: "overheatdebuff", // 1093332247
     0x41f7d51e: "gsoffenseonly", // 1106760990
+    0x4575e979: "critchance", // 1165355385
     0x45c36aca: "immortal", // 1170434762
     0x46700042: "infectedthrow", // 1181745218
     0x4691f41a: "freeze", // 1183970330
@@ -47,10 +55,12 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x4a198fba: "sprintdelaycombat", // 1243189178
     0x4df4d6a1: "resisttincture", // 1307891361
     0x4ecd8e99: "stanceoffense", // 1322094233
+    0x4f5056b9: "petrified", // 1330665145
     0x5074594e: "greatswordbuff", // 1349802318
     0x50e366cd: "uncleansabledot", // 1357080269
     0x51f9be47: "shock", // 1375321671
     0x55521d04: "burn", // 1431444740
+    0x55f3d47c: "torsobosslaserrend", // 1442043004
     0x56642768: "boost", // 1449404264
     0x56ff898d: "mutatorhearty", // 1459587469
     0x5838412a: "exhaustedstate", // 1480081706
@@ -98,17 +108,21 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x9821eb23: "ai_neutral", // 2552359715
     0x98c692d4: "bblastchance", // 2563150548
     0x9a65fe8e: "flamekeeperdebuff", // 2590375566
+    0x9c5c7336: "broodmothergunk", // 2623304502
     0x9d205605: "empower", // 2636142085
     0x9e1f0acc: "stackingtracker", // 2652834508
     0x9f9e8ea3: "spear", // 2677968547
     0xa48c6377: "deathfog", // 2760663927
     0xa5e6215b: "family", // 2783322459
+    0xa686191d: "healingbreeze", // 2793806109
     0xa6e62e58: "defboost", // 2800103000
     0xa77733c7: "unclampedslow", // 2809607111
     0xa87c621c: "tracking", // 2826723868
     0xa9287eae: "heal", // 2838003374
     0xa92e9684: "allydamagesplit", // 2838402692
+    0xab504bea: "unclampedweaken", // 2874166250
     0xac632aaf: "tracker", // 2892180143
+    0xaf09bd19: "frostburn", // 2936651033
     0xaf283bd4: "unclampedazothmod", // 2938649556
     0xafb7acf1: "laststand", // 2948050161
     0xb218f86b: "nondispellableweaken", // 2987980907
@@ -120,6 +134,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xb7c678c3: "taunt", // 3083237571
     0xbcb318ff: "siegeonly", // 3165853951
     0xbcf55e04: "crit", // 3170196996
+    0xc09ab320: "torsobossarcaneorb", // 3231363872
     0xc6d9ee81: "difficultyflag", // 3336171137
     0xc92581e4: "azothstaff", // 3374678500
     0xca5ea8cd: "stancedefense", // 3395201229
@@ -131,17 +146,21 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xd11b68a6: "essencerupture", // 3508234406
     0xd27bd9ee: "void", // 3531332078
     0xd2c95676: "blessed", // 3536410230
+    0xd2f38c50: "slowpotency", // 3539176528
     0xd43829f7: "food", // 3560450551
     0xd5d022e2: "showerroot", // 3587187426
     0xd604308a: "nondispellablebuff", // 3590598794
     0xd67a656d: "admiralbrutetransitiondispell", // 3598345581
     0xd71fe96f: "musicbuff", // 3609192815
+    0xd8d000b8: "ignorereversestab", // 3637510328
     0xdbb21a79: "cc", // 3685882489
     0xdcc98685: "bossdebuff", // 3704194693
     0xdeeface1: "critdmgreduction", // 3740249313
     0xe048bcba: "powderburn", // 3762863290
     0xe0608d29: "essencerupturet1", // 3764423977
+    0xe0d029a8: "abscapped90percent", // 3771738536
     0xe493e3cb: "uninterruptible", // 3834897355
+    0xe5c58441: "coatingboost", // 3854926913
     0xe702b4b1: "carrycannonball", // 3875714225
     0xea62f36e: "corruptednagacoreresist", // 3932353390
     0xed3eb615: "armorrend", // 3980310037
@@ -149,6 +168,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xf1cf77b4: "cleanse", // 4056905652
     0xf34393c9: "recovery", // 4081292233
     0xf374d10e: "stun", // 4084519182
+    0xf56ac43b: "torsobossrend", // 4117414971
     0xf658f7e2: "sporedefense", // 4133025762
     0xf9741949: "poison", // 4185135433
     0xfb0bf294: "mutatordisease", // 4211864212

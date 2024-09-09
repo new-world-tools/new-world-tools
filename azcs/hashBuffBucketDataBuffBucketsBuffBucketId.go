@@ -12,11 +12,13 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x02d0e99a: "mutation_hellfire_dungeonplus_tier4_promo1_probs", // 47245722
     0x02dcdc86: "anubianguardianhorusnamed16bs02buffs_probs", // 48028806
     0x02ffdc1d: "mutation_eternal_dungeonplus_tier3_promo2", // 50322461
+    0x03c7f48b: "dotresilience_25_buff_probs", // 63435915
     0x04609267: "champcombocorruptiondestructbuff", // 73437799
     0x04e53943: "elitedryadprowlernamed00buffs", // 82131267
     0x04f2769e: "mutation_overgrown_dungeonplus_tier3_probs", // 82998942
     0x057bc7d9: "champrndoffdefutilnoelembuff", // 91998169
     0x05c5b25a: "champaihealthbuff_probs", // 96842330
+    0x060c44c5: "rendresilience_25_buff", // 101467333
     0x0618b3dd: "mutation_overgrown_dungeonplus_tier4", // 102282205
     0x065a5b4f: "yetinamedbuffs", // 106584911
     0x06c0d7c3: "aidamagebuff", // 113301443
@@ -31,6 +33,8 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x0abaa64a: "aihealthbuff", // 180004426
     0x0aee8013: "alligatorstrangenamed01buffs", // 183402515
     0x0b711f9f: "aicoldaurabuff", // 191963039
+    0x0bba46d2: "weakenresilience_25_buff", // 196757202
+    0x0bbf8463: "rendresilience_25_buff_probs", // 197100643
     0x0be70e6c: "eliteundeadberserkernamed01buffs", // 199691884
     0x0be960df: "eliteelkcorruptednamed00buffs", // 199844063
     0x0c588155: "mutation_overgrown_dungeonplus_tier2_promo2_probs", // 207126869
@@ -63,6 +67,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x159996dd: "champailightningdamagebuff_probs", // 362387165
     0x15b1b051: "aiarmorbuff_probs", // 363966545
     0x15e59ef3: "randomoffnoelembuff_probs", // 367369971
+    0x16903770: "rendresilience_75_buff_probs", // 378550128
     0x16992728: "champaistaminadamagebuff", // 379135784
     0x174a5e1a: "champrndoffdefnoelembuff", // 390749722
     0x17d2c174: "testrandomability_probs", // 399688052
@@ -96,6 +101,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x1e32af90: "mutation_dungeonboss_tier2_buff_probs", // 506638224
     0x1e7fbfe1: "undead_pirate_brute_named_05wc11buffs_probs", // 511688673
     0x1ed6e9f1: "dungeonstaminadamagebuff", // 517401073
+    0x1ee84798: "dotresilience_75_buff_probs", // 518539160
     0x1eedbd35: "elitelegioncyclopsnamed02buffs_probs", // 518896949
     0x1f5a3c9f: "champaimagicdamagebuff", // 526007455
     0x1f7d1062: "champrndoffutilbuff", // 528289890
@@ -116,6 +122,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x2598af1b: "swarmerdarknesscontainer00buffs", // 630763291
     0x25ac44b3: "champcombofiredestructbuff", // 632046771
     0x25c63245: "elitedryadbeastnamed00buffs_probs", // 633745989
+    0x26aeef55: "dotresilience_10_buff_probs", // 648998741
     0x26f0d0ba: "ogredarkness00buffs", // 653316282
     0x2703bbf3: "elitealligatorblacknamed00buffs", // 654556147
     0x2734396a: "rathercynenamed00buffs_probs", // 657733994
@@ -150,6 +157,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x30d97785: "ghoststarvednamed05buffs_probs", // 819558277
     0x311c3daa: "mutation_overgrown_dungeonplus_tier2_promo", // 823934378
     0x316ab98a: "champaipoisononhitbuff_probs", // 829077898
+    0x316c88ee: "dotresilience_33_buff_probs", // 829196526
     0x31c81cef: "mutation_icebound_dungeonplus_tier3_promo_probs", // 835198191
     0x3206f2f1: "elitedamnedacolytenamed02buffs_probs", // 839316209
     0x3217898a: "eliteanubianguardianbrutenamed00buffs", // 840403338
@@ -171,6 +179,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x37833532: "legionsignifernamed03buffs", // 931345714
     0x382d228f: "aicorruptiondamagebuff_probs", // 942482063
     0x383f4ef9: "fierybufft1_probs", // 943673081
+    0x3914f806: "rendresilience_33_buff_probs", // 957675526
     0x39325bd5: "anubianguardianbrutenamed02buffs_probs", // 959601621
     0x393db269: "megaflorasproutpoisonbuffs", // 960344681
     0x399a065b: "anubianguardianreavernamed01buffs", // 966395483
@@ -205,6 +214,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x4134661a: "elitedamnedcommandernamed01buffs_probs", // 1093953050
     0x41866ddc: "eliteelkelementalnamed00buffs", // 1099328988
     0x41f9b9de: "stormcourtfamilybuffs_probs", // 1106885086
+    0x4242d426: "weakenresilience_75_buff_probs", // 1111675942
     0x42e256f7: "barbarylionnamed00buffs_probs", // 1122129655
     0x4335e723: "champrndthreebuff", // 1127606051
     0x43a79342: "ghoststarvednamed03buffs", // 1135055682
@@ -230,6 +240,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x48b7dc2c: "elitecorruptionheavynamed00buffs", // 1220009004
     0x48e62f74: "ghostshipwreckednamed03buffs_probs", // 1223044980
     0x49b8459a: "mutation_icebound_dungeon_tier1", // 1236813210
+    0x49ee5e84: "randomutilitybuffnoslime_probs", // 1240358532
     0x4a146ae3: "mutation_icebound_dungeonplus_tier3_probs", // 1242852067
     0x4b6ffb89: "mutation_hellfire_dungeonplus_tier1", // 1265630089
     0x4ba0cdb9: "anubianguardianpanthernamed02buffs_probs", // 1268829625
@@ -258,11 +269,13 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x53790f80: "randomdefensivebuffnoresist_probs", // 1400442752
     0x537ee26e: "undeadberserkernamed01buffs", // 1400824430
     0x53967112: "elitedamnedvillagerhammernamed00buffs", // 1402368274
+    0x54346b62: "rendresilience_75_buff", // 1412721506
     0x54741816: "anubianscarabnamed00buffs_probs", // 1416894486
     0x54de7049: "anubianguardianbrutenamed00buffs", // 1423863881
     0x55bcfa31: "blightednamed02buffs_probs", // 1438448177
     0x55d7b1ce: "airotatingbeambuff", // 1440199118
     0x566b9ee3: "aifireresistbuff", // 1449893603
+    0x56c22e84: "dotresilience_50_buff", // 1455566468
     0x56e4da0b: "elitecorruptedtigernamed00buffs_probs", // 1457838603
     0x56f559c7: "mutation_hellfire_dungeonplus_tier3_promo2_probs", // 1458919879
     0x57094d77: "legionsignifernamed03buffs_probs", // 1460227447
@@ -273,6 +286,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x5814e6c3: "mutation_overgrown_dungeonminus_tier2_death", // 1477764803
     0x58825959: "mutation_eternal_dungeonplus_tier4_promo", // 1484937561
     0x594f2529: "debuffresilience_66_buff", // 1498359081
+    0x59826975: "weakenresilience_75_buff", // 1501718901
     0x5a1ba1c9: "aipoisononhitbuff", // 1511760329
     0x5a43b369: "eliteundeadofficernamed00buffs", // 1514386281
     0x5bba9b3d: "debuffresilience_33_buff", // 1538956093
@@ -287,6 +301,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x5ee68268: "mutation_hellfire_dungeonminus_tier1_death_probs", // 1592164968
     0x5f39fb87: "anubianguardianarchernamed01buffs_probs", // 1597635463
     0x5f6477ae: "legionlegionnairenamed04buffs_probs", // 1600419758
+    0x5f6d6735: "weakenresilience_25_buff_probs", // 1601005365
     0x5f8c93ab: "aiicedamagebuff_probs", // 1603048363
     0x5fabc54a: "dunephantomberserkernamed00buffs_probs", // 1605092682
     0x60bf4f15: "elitecorruptedogrenamed01buffs", // 1623150357
@@ -324,6 +339,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x6bf5cba9: "elitecorruptionheavynamed00buffs_probs", // 1811270569
     0x6c3d2dd6: "cultistdarkness00buffs_probs", // 1815948758
     0x6d16afbf: "dungeoniceresistbuff", // 1830203327
+    0x6dc61b50: "weakenresilience_33_buff_probs", // 1841699664
     0x6e129365: "dungeonselfdestructbuff", // 1846711141
     0x6efa3ff6: "eliteanubianguardianpanthernamed02buffs_probs", // 1861894134
     0x6efb771b: "desertcoyotenamed01buffs_probs", // 1861973787
@@ -345,6 +361,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x74a681b8: "swarmerdarknesscontainer00buffs_probs", // 1957069240
     0x74b448b1: "sand_elemental_questbossbuffs", // 1957972145
     0x74ca0e03: "eliteelkcorruptednamed00buffs_probs", // 1959398915
+    0x74d71278: "rendresilience_66_buff", // 1960252024
     0x7571dd5c: "blightednamed01buffs", // 1970396508
     0x7576988c: "damnedgreataxemannamed01buffs_probs", // 1970706572
     0x75a85f2f: "chefnavarrobuffs_probs", // 1973968687
@@ -352,6 +369,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x75c2dc34: "aiselfdestructbuff_probs", // 1975704628
     0x75c33c96: "champaifiredamagebuff", // 1975729302
     0x75dd91d0: "champairotatingbeambuff_probs", // 1977455056
+    0x7622ac6c: "rendresilience_33_buff", // 1981983852
     0x76724752: "mutation_overgrown_dungeonplus_tier1", // 1987200850
     0x76ee0d5e: "mutation_icebound_dungeonminus_tier2_death", // 1995312478
     0x77356fdb: "legionlegionnairenamed00buffs", // 1999990747
@@ -361,6 +379,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x78e4ba3a: "aicoldaurabuff_probs", // 2028255802
     0x7944b9e2: "mutation_overgrown_dungeonplus_tier3_promo1", // 2034547170
     0x79460e78: "champcombodamagearmorbuff", // 2034634360
+    0x7961106f: "weakenresilience_66_buff", // 2036404335
     0x79686837: "acolytedarkness00buffs", // 2036885559
     0x79ac5c33: "debuffresilience_75_buff", // 2041338931
     0x79c53b41: "mutation_hellfire_dungeonminus_tier4", // 2042968897
@@ -369,6 +388,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x7a5a556d: "mutation_overgrown_dungeon_tier2_probs", // 2052740461
     0x7aa00f6c: "anubianguardianhorusnamed01buffs_probs", // 2057310060
     0x7ac639b9: "elitedamnedacolytenamed02buffs", // 2059811257
+    0x7b94ae7b: "weakenresilience_33_buff", // 2073341563
     0x7bc4a1aa: "aifiredamagebuff_probs", // 2076484010
     0x7c2316af: "elitedamnedcommandernamed01buffs", // 2082674351
     0x7c2bba74: "champaislimebuff_probs", // 2083240564
@@ -389,6 +409,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x7fd52a8a: "undeadofficernamed05_probs", // 2144676490
     0x7fdf2881: "eliteanubianguardianbrutenamed02buffs", // 2145331329
     0x7ffa21d7: "mutation_icebound_dungeonplus_tier2_promo", // 2147099095
+    0x8042269d: "raid10_trash_buff", // 2151818909
     0x808d5ce2: "legionsagittariinamed00buffs", // 2156748002
     0x8092d408: "dungeonvoidresistbuff_probs", // 2157106184
     0x80b0e32e: "elitedynastysummonernamed00buffs_probs", // 2159076142
@@ -439,6 +460,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x912b3e86: "elitedynastyspearmannamed00buffs_probs", // 2435530374
     0x913384be: "mutation_eternal_dungeonplus_tier4_promo1", // 2436072638
     0x91576023: "mutation_overgrown_dungeonplus_tier3_promo2_probs", // 2438422563
+    0x9190ae1e: "dotresilience_75_buff", // 2442178078
     0x91c4ec7d: "aiselfdestructcorruptionbuff_1in3", // 2445601917
     0x92395723: "eliteghostplaguednamed00buffs", // 2453231395
     0x92420fd9: "mutation_eternal_dungeonminus_tier4_death_probs", // 2453802969
@@ -447,6 +469,8 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x93147791: "mutation_icebound_dungeonminus_tier3", // 2467592081
     0x93169049: "boarstripednamed00buffs_probs", // 2467729481
     0x93396ee4: "undeadgravediggernamed01buffs", // 2470014692
+    0x9365100a: "dotresilience_20_buff", // 2472873994
+    0x9366ebf8: "rendresilience_50_buff", // 2472995832
     0x936d67b7: "mutation_overgrown_dungeonplus_tier1_probs", // 2473420727
     0x939b7696: "eliteundeadpistoleernamed00buffs", // 2476439190
     0x93fea4d4: "yetinamedoffensivebuffs", // 2482939092
@@ -458,6 +482,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x969b91f3: "anubianguardianhorusnamed03buffs_probs", // 2526777843
     0x96a9d807: "champaiarmorbuff_probs", // 2527713287
     0x96cd5a49: "elitedamnedpriestnamed02buffs", // 2530040393
+    0x96e362e8: "raid10_trash_buff_probs", // 2531484392
     0x97378491: "swarmerdarkness00buffs", // 2536998033
     0x9742787d: "elitelegioncyclopsnamed02buffs", // 2537715837
     0x976b361e: "mutation_overgrown_dungeonplus_tier3_promo", // 2540385822
@@ -469,6 +494,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x9944bb8c: "mutation_overgrown_dungeonminus_tier1_death_probs", // 2571418508
     0x9a959e14: "champrndoffbuff_probs", // 2593496596
     0x9b1452e1: "mutation_icebound_dungeonplus_tier2_promo1", // 2601800417
+    0x9b64839b: "dotresilience_20_buff_probs", // 2607055771
     0x9b7344bc: "anubianguardianhorusnamed00buffs", // 2608022716
     0x9bb611cc: "eliteanubianscarabnamed00buffs_probs", // 2612400588
     0x9bf68da7: "mutation_eternal_dungeonplus_tier3_promo1", // 2616626599
@@ -483,6 +509,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x9e0333d0: "champrnddefutilbuff_probs", // 2651010000
     0x9e9cbf9c: "dungeoncoldaurabuff", // 2661072796
     0x9ea67ada: "eliteundeadnavigatornamed00buffs_probs", // 2661710554
+    0x9ed0e9ef: "weakenresilience_50_buff", // 2664491503
     0x9ef1182e: "champcombolightningbeambuff", // 2666600494
     0x9f82a3ec: "anubianguardianbrutenamed01buffs", // 2676138988
     0x9f8a87ff: "acolytedarknesscontainer00buffs", // 2676656127
@@ -499,6 +526,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xa21c7fb7: "aisiegebreakerbuff_probs", // 2719776695
     0xa2853948: "ainoreactionsbuff_probs", // 2726639944
     0xa2857d2a: "mutation_overgrown_dungeonplus_tier2_probs", // 2726657322
+    0xa28d0a97: "dotresilience_10_buff", // 2727152279
     0xa296907e: "mutation_hellfire_dungeonplus_tier4_promo_probs", // 2727776382
     0xa3678966: "dungeoncorruptionpoolbuff_probs", // 2741471590
     0xa3927caa: "testrandomstatuseffect_probs", // 2744286378
@@ -550,6 +578,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xb06397cf: "mutation_hellfire_dungeonplus_tier1_probs", // 2959316943
     0xb06fb0a7: "randomresisttype_probs", // 2960109735
     0xb117479c: "legionsignifernamed00buffs", // 2971092892
+    0xb173d704: "dotresilience_66_buff", // 2977158916
     0xb1d07c7e: "champaivoidresistbuff_probs", // 2983230590
     0xb223020b: "mutation_icebound_dungeonminus_tier2_probs", // 2988638731
     0xb234bb92: "acolytedarkness01buffs", // 2989800338
@@ -557,11 +586,13 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xb2af63fd: "dungeonarcaneresistbuff_probs", // 2997838845
     0xb3381528: "cultistdarknesscontainer00buffs", // 3006797096
     0xb376b719: "goatmountiannamed00buffs", // 3010901785
+    0xb3866910: "dotresilience_33_buff", // 3011930384
     0xb3905bd5: "dunephantomberserkernamed02buffs_probs", // 3012582357
     0xb465c666: "mutation_hellfire_dungeonplus_tier3_promo", // 3026568806
     0xb47516bf: "mutation_hellfire_dungeonplus_tier4_promo2", // 3027572415
     0xb4a30e59: "mutation_icebound_dungeonplus_tier3_promo2_probs", // 3030584921
     0xb4df7426: "randomoffensivebuff_probs", // 3034543142
+    0xb4e04ced: "dotresilience_66_buff_probs", // 3034598637
     0xb4eb16b3: "desertcoyotenamed02buffs", // 3035305651
     0xb5172380: "anubianguardianpanthernamed05buffs", // 3038192512
     0xb51d33ca: "eliteundeadnavigatornamed00buffs", // 3038589898
@@ -586,6 +617,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xb998d22b: "mutation_dungeonboss_tier3_buff", // 3113800235
     0xb9fce4ac: "anubianguardianreavernamed01buffs_probs", // 3120358572
     0xbaa6d286: "mutation_eternal_dungeonminus_tier2_death", // 3131495046
+    0xbabd167d: "weakenresilience_50_buff_probs", // 3132954237
     0xbb32d3e8: "legionsignifernamed01buffs_probs", // 3140670440
     0xbbd32e52: "champrndoffdefbuff", // 3151179346
     0xbbe11986: "mutation_eternal_dungeon_tier1_probs", // 3152091526
@@ -593,9 +625,11 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xbc3db14d: "acolytedarkness00buffs_probs", // 3158159693
     0xbc69bc7e: "legionlegionnairenamed01buffs", // 3161046142
     0xbc726a20: "elitelegionlegionnairenamed05buffs", // 3161614880
+    0xbc983c05: "rendresilience_66_buff_probs", // 3164093445
     0xbcb0d5f6: "mutation_icebound_dungeonminus_tier1_death_probs", // 3165705718
     0xbd1fd3cd: "champailightningresistbuff_probs", // 3172979661
     0xbd5dee33: "elemental mutators - overgrown", // 3177049651
+    0xbe0d9845: "dotresilience_15_buff_probs", // 3188561989
     0xbe2ead81: "aifiredamagebuff", // 3190730113
     0xbe4b6c2b: "eliteghostshipwreckednamed00buffs", // 3192613931
     0xbeb01fa6: "mutation_hellfire_dungeonplus_tier3_promo2", // 3199213478
@@ -611,6 +645,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xc2241e68: "mutation_hellfire_dungeonminus_tier2_probs", // 3257146984
     0xc2434825: "anubianguardianhorusnamed16bs09abuffs", // 3259189285
     0xc27df64f: "eliteanubianscarabnamed00buffs", // 3263034959
+    0xc3a881b9: "dotresilience_25_buff", // 3282600377
     0xc3d94b01: "champcombolightningbuff_probs", // 3285797633
     0xc3ecf2c4: "undead_pirate_brute_named_05wc11buffs", // 3287085764
     0xc40e8925: "dunephantomberserkernamed01buffs_probs", // 3289286949
@@ -713,9 +748,12 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xe5484322: "fl_eliteancientguardianmagenamed00buffs_probs", // 3846718242
     0xe5dab233: "anubianguardianpanthernamed00buffs", // 3856314931
     0xe5ea5e1d: "dunephantomtanknamed01buffs", // 3857341981
+    0xe61785c3: "dotresilience_50_buff_probs", // 3860301251
     0xe7a1aee2: "mutation_hellfire_dungeonminus_tier3", // 3886132962
     0xe7d4134c: "anubianguardianspearman67named00buffs", // 3889435468
     0xe7d57a77: "champaivoidresistbuff", // 3889527415
+    0xe84adf53: "weakenresilience_66_buff_probs", // 3897220947
+    0xe8b31fed: "randomutilitybuffnoslime", // 3904053229
     0xe94f3344: "champaistaminadamagebuff_probs", // 3914281796
     0xe9682b66: "sandelementalsoldiernamed00buffs_probs", // 3915918182
     0xe9d93621: "mutation_eternal_dungeon_tier4_probs", // 3923326497
@@ -727,6 +765,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xec636157: "mutation_icebound_dungeonplus_tier2_probs", // 3965935959
     0xeca42dcd: "legionlegionnairenamed04buffs", // 3970182605
     0xee24b2c5: "mutation_eternal_dungeonplus_tier3", // 3995382469
+    0xee6ff52b: "rendresilience_50_buff_probs", // 4000314667
     0xee9a6d74: "dungeoncorruptiondamagebuff", // 4003097972
     0xef310981: "mutation_eternal_dungeonminus_tier3_death_probs", // 4012968321
     0xef409e79: "elemental mutators - hellfire", // 4013989497
@@ -739,6 +778,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xf1a3d83f: "elitedynastymaidennamed00buffs", // 4054046783
     0xf1dbdbc2: "legionsagittariinamed00buffs_probs", // 4057717698
     0xf234b5c0: "championelitebasebuffs", // 4063540672
+    0xf2409b24: "dotresilience_15_buff", // 4064320292
     0xf2427ae8: "aicorruptionpoolbuff", // 4064443112
     0xf2429ed4: "dunephantomhuntressnamed00buffs", // 4064452308
     0xf2c6d5fe: "anubianguardianreavernamed00buffs", // 4073117182
