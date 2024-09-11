@@ -20,7 +20,6 @@ func Parse(pak *Pak) ([]*File, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer zipReader.Close()
 
 	files := make([]*File, len(zipReader.File))
 	for i, archivedFile := range zipReader.File {
