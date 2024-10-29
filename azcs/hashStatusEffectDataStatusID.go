@@ -1014,6 +1014,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x4f036e13: "tse_healmod_inc_10pct", // 1325624851
     0x4f0531a6: "mammoth_boss_icestorm_slow", // 1325740454
     0x4f0c87e7: "ai_icedragon_bleed_9", // 1326221287
+    0x4f0c88fd: "halloweenboss_pumpklin_initial", // 1326221565
     0x4f0e3a97: "sword_laststand", // 1326332567
     0x4f126576: "foodintcont4", // 1326605686
     0x4f1752d8: "ai_dryadsiren_spin_phase2_b", // 1326928600
@@ -1617,6 +1618,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7db7fa6c: "status_passive_foc_300_timer", // 2109209196
     0x7dbef23f: "status_raid_perk_armor_haste", // 2109665855
     0x7dc0655b: "mut_voi_leech_1_heal", // 2109760859
+    0x7de8e299: "halloweenboss_pumpklin_stun_icon", // 2112414361
     0x7df03eb6: "musicbuff_gatheringluck_t1_bad", // 2112896694
     0x7e0a3240: "gorilla_rage_lightning_buff", // 2114597440
     0x7e28fc16: "mut_curse1_lig_major_damage_cleanse", // 2116615190
@@ -1698,6 +1700,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x839f3c0b: "icemagic_icestorm_damage", // 2208250891
     0x83c31cf6: "status_passive_lifestaff_protection_healingondodge", // 2210602230
     0x8407a2dc: "grandblightabsorb", // 2215092956
+    0x843318eb: "status_common_revive_dmgred", // 2217941227
     0x84399b1b: "ai_firedamage_buff", // 2218367771
     0x8461096b: "potionfamilywardlostt3", // 2220951915
     0x847f3c30: "ai_corruptedleviathan_corruptionpuddle_damage", // 2222930992

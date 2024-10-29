@@ -162,6 +162,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0x05ea964c: "ck_undead_grenadier_10ws09e_elite", // 99259980
     0x05ed1c06: "loot_goblin_fotb", // 99425286
     0x06281f22: "skeleton_crawler_38", // 103292706
+    0x062f54c8: "pumpklin_halloween_2022", // 103765192
     0x0638bfb0: "corruption_heavy_11md12_elite", // 104382384
     0x064d6e9c: "bison_strange_55", // 105737884
     0x06525ccf: "yeti", // 106061007
@@ -3844,6 +3845,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0x833e7bf0: "ghost_charred_elite_09a_s18", // 2201910256
     0x83447f5c: "undead_berserker_12mb06c", // 2202304348
     0x834733cc: "risen_grunt", // 2202481612
+    0x8349d452: "halloween_2022_plaguer", // 2202653778
     0x834dc0a7: "goat_mountain_60", // 2202910887
     0x83573c64: "bear_grizzly_39", // 2203532388
     0x835e22a1: "hercyne_reindeer_alpha", // 2203984545
@@ -4988,6 +4990,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xa9ed587a: "ancient_ice_dragon_fragment_solo", // 2850904186
     0xa9edf4a6: "elk_elemental_59", // 2850944166
     0xa9ef266b: "damned_villager_axethrower_m-f_56", // 2851022443
+    0xa9efeacd: "gourdspewer_vineleg_minion_halloween_2022", // 2851072717
     0xaa0aa7ba: "ck_blackbone_lost_1hsword", // 2852825018
     0xaa0c0f8d: "lost_pikeman_12mb04", // 2852917133
     0xaa0db1d7: "damned_villager_pickaxe_47", // 2853024215
@@ -5365,6 +5368,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xb6b0164f: "invasion_hound", // 3064993359
     0xb6b85dba: "damned_cultist_named_00", // 3065535930
     0xb6bea622: "dryad_shaman_65_elite", // 3065947682
+    0xb6c30769: "gourdspewer_halloween_2022", // 3066234729
     0xb6c98a92: "evil_knight_spear_28", // 3066661522
     0xb6df47ab: "risen_l-r_arm_55", // 3068086187
     0xb6e1e771: "undead_navigator_65_elite", // 3068258161
@@ -6652,6 +6656,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xe40fafde: "ancientguardian_spearman_dg_greatcleave_00_00", // 3826233310
     0xe4131295: "alligator_strange_43", // 3826455189
     0xe41f7b7c: "wolf_alpha_33", // 3827268476
+    0xe426d48a: "halloweenboss", // 3827750026
     0xe427512b: "dryad_shaman_40", // 3827781931
     0xe42b0887: "drowned_sailor_1h_sword_14", // 3828025479
     0xe42e7ce5: "damned_cultist_dt6", // 3828251877

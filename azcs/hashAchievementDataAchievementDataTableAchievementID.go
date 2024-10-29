@@ -7326,6 +7326,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x796404ae: "unlock_95a_s02_rimapreloopigc", // 2036597934
     0x796a1842: "fc_house_housingitem_settler_decor_wall_curtain03_b", // 2036996162
     0x796abe94: "99e_myrddin_voicedlorenote_01", // 2037038740
+    0x796d1d10: "apophis_puzzle_failsafe", // 2037194000
     0x796f8965: "fc_scarabs_dex_gauntleticet5", // 2037352805
     0x7977c305: "16_akhetpyramidunlock_upper", // 2037891845
     0x797bed7b: "09a_s12", // 2038164859

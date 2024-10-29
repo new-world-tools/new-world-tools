@@ -3484,6 +3484,7 @@ var hashPropertiesData = map[uint32]string{
     0xaeeb16f6: "slotid",
     0xaeec5492: "wraptextsetting",
     0xaef369e6: "m_allowpartialpaths",
+    0xaf035a65: "m_isomnipresentstartup",
     0xaf0d383d: "sleepingbodycolor",
     0xaf12110a: "isautoactivationenabled",
     0xaf1cb73c: "m_playerinteractionattachmentname",

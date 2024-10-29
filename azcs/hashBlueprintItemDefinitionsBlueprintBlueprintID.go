@@ -254,6 +254,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xc5c580a6: "ruintest", // 3318055078
     0xc648028d: "powderkegt2", // 3326608013
     0xc670b9ff: "or_commandpost_t1", // 3329276415
+    0xc7b08ff5: "firenaga_projectilespawner", // 3350237173
     0xc97c4d1a: "turretexplosivet3", // 3380366618
     0xc980ce0f: "farmt2", // 3380661775
     0xc9a388d7: "wallcornert1", // 3382937815
