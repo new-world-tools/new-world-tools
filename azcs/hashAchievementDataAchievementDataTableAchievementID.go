@@ -5680,6 +5680,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x5e6302d0: "fc_crx_sandworm_trial_weaponvoidgauntlet_t5", // 1583547088
     0x5e6780c2: "schematic_house_housingitem_legion_cabinet01_c", // 1583841474
     0x5e699699: "fc_doublooncratestatboostmeal", // 1583978137
+    0x5e6acde8: "mounttype_unlock_turkey", // 1584057832
     0x5e6c5f89: "fc_scarab_foc_2hgreataxet5", // 1584160649
     0x5e71e2fd: "dye2_unlock", // 1584521981
     0x5e72c119: "ef_push", // 1584578841
@@ -8957,6 +8958,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x9464e3fc: "schematic_house_housingitem_storage_t4_cheststeel", // 2489639932
     0x94708ea2: "shrine_60202_discovered", // 2490404514
     0x94789c2e: "fc_2hgreataxe_darknessdefinedt5", // 2490932270
+    0x947c155d: "05_quest_24r", // 2491159901
     0x947e0cb5: "99d_thorpe_voicedlorenote_05", // 2491288757
     0x947e2394: "lore_unlock_14_edengrove_title_05_01", // 2491294612
     0x947fd1ba: "azothstaff_20", // 2491404730
@@ -13163,6 +13165,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0xdb28a44f: "fc_recipe_pattern_sprigganbane_heavy_gloves", // 3676873807
     0xdb2a254c: "swapactive_99f_sun_p05", // 3676972364
     0xdb3af93c: "swapactive_99c_morgaine_c", // 3678075196
+    0xdb3d839a: "05_quest_23r", // 3678241690
     0xdb41c2fa: "camp_40040_charted", // 3678520058
     0xdb42283c: "fc_recipe_pattern_femvictorianl_feet_t5", // 3678545980
     0xdb444fd8: "fc_musket_wintert5_int", // 3678687192

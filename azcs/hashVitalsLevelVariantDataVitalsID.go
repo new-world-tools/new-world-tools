@@ -3301,6 +3301,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0x70ec9594: "damned_axeman_m-f_dg_greatcleave_00", // 1894552980
     0x70f1ea1b: "ancientguardian_spearman_60", // 1894902299
     0x70f340eb: "evil_knight_caster_dg_greatcleave01_01", // 1894990059
+    0x70f4953d: "avalancher_shivers_yetiencounter", // 1895077181
     0x710f72e5: "tendril_corruption_named_dg_restless_00", // 1896837861
     0x7115a445: "skeleton_crawler_9", // 1897243717
     0x711e35b4: "ghost_charred_named_dg_greatcleave_01", // 1897805236
@@ -3680,6 +3681,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0x7dbbc14c: "damned_villager_skinning_knife_dg_restless_00_spawn", // 2109456716
     0x7dda17fb: "damned_cultist_43", // 2111444987
     0x7ddf5208: "bearelemental_50", // 2111787528
+    0x7de24fdc: "icedryad_melee_frostfang_yetiencounter", // 2111983580
     0x7dec8cb2: "mountain_lion_52", // 2112654514
     0x7decead1: "ancientguardian_spearman_35", // 2112678609
     0x7df2f2a4: "ancientguardian_reaver_61_elite_spawn", // 2113073828
@@ -4801,6 +4803,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xa36c4d95: "wolf_black_23", // 2741783957
     0xa36f1a6b: "ancientguardian_greatsword_icevariant_raid10", // 2741967467
     0xa377d842: "dryad_archer_40", // 2742540354
+    0xa37982b6: "icedryad_fiend_shivers_yetiencounter", // 2742649526
     0xa37c2dbb: "peacock_08qp04", // 2742824379
     0xa380ef5a: "bear_black_55", // 2743136090
     0xa390125c: "undead_pistoleer_11", // 2744128092
@@ -5645,6 +5648,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xc0621f48: "corrupted_tiger_44", // 3227656008
     0xc08d0b47: "withered_brute_named_01", // 3230468935
     0xc0911341: "undead_pistoleer_55", // 3230733121
+    0xc097aa39: "avalancher_yetiencounter", // 3231164985
     0xc09dbc2c: "swamp_dryad_shaman_61", // 3231562796
     0xc09ee3a5: "damned_villager_axethrower_m-f_43", // 3231638437
     0xc0acd5e7: "blight_fiend_48", // 3232552423
@@ -6540,6 +6544,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xdff7d57a: "ck_undead_grenadier", // 3757561210
     0xdffa10d8: "damned_villager_axethrower_m-f_59_elite", // 3757707480
     0xe0053c1d: "cow_27", // 3758439453
+    0xe0169b67: "icedryad_range_frostgrip_yetiencounter", // 3759577959
     0xe0178b8c: "rabbit_spotted_26", // 3759639436
     0xe019a330: "pig_domestic_37", // 3759776560
     0xe026ae74: "damned_villager_hammer_dg_restless_00", // 3760631412
@@ -7129,6 +7134,7 @@ var hashVitalsLevelVariantDataVitalsID = map[uint32]string{
     0xf4500cf2: "bear_grizzly_38", // 4098886898
     0xf46064e3: "damned_cultist_dg_shattermtn_00", // 4099957987
     0xf467a143: "dynasty_musketeer_51", // 4100432195
+    0xf473ed04: "yeti_2022", // 4101238020
     0xf498f2b6: "bobcat_38", // 4103664310
     0xf4aae0f8: "swamp_dryad_soldier_63", // 4104839416
     0xf4b0f6a2: "undead_pirate_brute_named_05wc05c", // 4105238178
