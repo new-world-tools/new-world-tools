@@ -35,6 +35,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x167f7cca: "cauldront5", // 377453770
     0x16bff764: "wallxshapet1", // 381679460
     0x1789394e: "turretballistat2", // 394869070
+    0x1808d18a: "or_outpost_gate_lg_t1", // 403231114
     0x1a27c4cc: "bastiont4", // 438813900
     0x1a7134d9: "storaget4", // 443626713
     0x1a83b98e: "campskin_rpg01_a", // 444840334
@@ -80,6 +81,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x3bf91588: "platformbase", // 1006179720
     0x3db7da63: "seedhempt1", // 1035459171
     0x3e89166b: "campskin_season6_a", // 1049171563
+    0x3f4b7c5c: "campskin_season7_a", // 1061911644
     0x3faf0cb1: "turkeycoopt2", // 1068436657
     0x3fb7da1b: "tanningt2", // 1069013531
     0x3fc0c4b0: "rampartcornerint2", // 1069597872
@@ -159,6 +161,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x7faa7891: "or_armory_t3", // 2141878417
     0x7fd2f769: "smeltingt4", // 2144532329
     0x7ff000f8: "rampartcorneroutt2", // 2146435320
+    0x81018030: "or_outpost_gate_lg_t2", // 2164359216
     0x81252da5: "seedlotusplantt1", // 2166697381
     0x82a4ec4f: "campt6", // 2191846479
     0x83021f5e: "catwalkt2", // 2197954398
@@ -170,6 +173,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x85c92856: "campt2", // 2244552790
     0x85d32b59: "rampartstairt3", // 2245208921
     0x8626f623: "lightpostt2", // 2250700323
+    0x8681fb54: "or_bridge", // 2256665428
     0x890992b0: "siege_warcamp_gate_t3", // 2299105968
     0x891bd2b9: "combatdummy", // 2300302009
     0x8928983f: "carpentryt1", // 2301139007
@@ -213,6 +217,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xa3aed4f0: "seedcarrott1", // 2746143984
     0xa58fd8ae: "campskin_thetower_a", // 2777667758
     0xa5b51fe2: "masonryt4", // 2780110818
+    0xa6422de6: "campskin_season7_b", // 2789354982
     0xa6c924f8: "puzzle_powderkeg", // 2798200056
     0xa80f1ce9: "claimt1_30m_t5", // 2819562729
     0xa83b654b: "fenceloggate", // 2822464843
@@ -259,6 +264,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xc980ce0f: "farmt2", // 3380661775
     0xc9a388d7: "wallcornert1", // 3382937815
     0xcc3cce45: "siege_fortgate_l_t3", // 3426537029
+    0xcdd02d7f: "campskin_valkyrie_a", // 3452972415
     0xcdfe0e48: "or_azothdeposit", // 3455979080
     0xceaf0548: "campskin_reaper01_a", // 3467576648
     0xceaf1970: "supporthornofresiliencet1", // 3467581808
@@ -308,11 +314,13 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xeff690b1: "craterswitch1", // 4025913521
     0xf121c6b5: "lightpostt3", // 4045522613
     0xf29140e8: "seedsquirtberryt1", // 4069605608
+    0xf2a5fcd6: "or_bulwark", // 4070964438
     0xf2afb042: "dwellingt3", // 4071600194
     0xf2ce18c0: "campt3", // 4073593024
     0xf2d41bcf: "rampartstairt2", // 4073987023
     0xf31291ec: "storaget2", // 4078080492
     0xf3518a46: "or_weaponsmith_t1", // 4082207302
+    0xf606b0a6: "or_outpost_gate_lg_t3", // 4127633574
     0xf82585c2: "or_turretfire", // 4163208642
     0xf8b19648: "wallxshapet3", // 4172387912
     0xf8c28d5a: "claimt1_60m_t5", // 4173499738

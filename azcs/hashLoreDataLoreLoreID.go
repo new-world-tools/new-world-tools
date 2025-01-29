@@ -304,6 +304,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x34c0ecee: "12_monarchsbluffs_chapter_15", // 885058798
     0x34ec3f3b: "04_everfall_chapter_04", // 887897915
     0x34ee39dd: "mechanics_respawn", // 888027613
+    0x35208e93: "talesofexpeditions_title_11_02", // 891326099
     0x352d443a: "06_windsward_title_07_03", // 892159034
     0x35313eb2: "08_ebonscalereach_chapter_10", // 892419762
     0x3557fe6d: "09_firstlight_title_09_02", // 894959213
@@ -381,6 +382,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x41c69978: "twinfalls_title_01_02", // 1103534456
     0x41d6733e: "08_ebonscalereach_title_06_01", // 1104573246
     0x41e672fa: "03_greatcleave_title_09_02", // 1105621754
+    0x4227be05: "talesofexpeditions_title_11_03", // 1109900805
     0x422a74ac: "06_windsward_title_07_02", // 1110078636
     0x42360e24: "08_ebonscalereach_chapter_11", // 1110838820
     0x4250cefb: "09_firstlight_title_09_03", // 1112592123
@@ -1022,6 +1024,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xabdfaf41: "12_monarchsbluffs_title_22_01", // 2883563329
     0xac017105: "companies_building", // 2885775621
     0xac23ccbf: "talesofwinter_title_02_01", // 2888027327
+    0xac29df29: "talesofexpeditions_title_11_01", // 2888425257
     0xac5eafd7: "09_firstlight_title_09_01", // 2891886551
     0xac6bbf08: "08_ebonscalereach_title_01_04", // 2892742408
     0xac967bfe: "thethingintheswamp_title_01_01", // 2895543294
@@ -1105,6 +1108,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xb8c97611: "11_mourningdale_title_07_02", // 3100210705
     0xb8d3a4b2: "14_edengrove_title_07_02", // 3100878002
     0xb8d3ea28: "summermedleyfaire_chapter_01", // 3100895784
+    0xb8ea4844: "talesofexpeditions_chapter_11", // 3102361668
     0xb93273a5: "03_greatcleave_title_11_02", // 3107091365
     0xb9607b99: "gettingstarted_startinglocation", // 3110108057
     0xb963e16a: "topic_15_restlessshore", // 3110330730
@@ -1316,6 +1320,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xdbe839df: "09_firstlight_title_15_01", // 3689429471
     0xdc014b87: "08_ebonscalereach_title_01_01", // 3691072391
     0xdc3e3640: "topic_malleusmortuis", // 3695064640
+    0xdc432ba6: "talesofexpeditions_title_11_04", // 3695389606
     0xdc8e6ea8: "tales_of_brimstone_sands_title_14_01", // 3700321960
     0xdcacaa89: "threefactions_title_01_05", // 3702303369
     0xdcdcd797: "alchemist_title_01_07", // 3705460631

@@ -474,6 +474,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0x936d67b7: "mutation_overgrown_dungeonplus_tier1_probs", // 2473420727
     0x939b7696: "eliteundeadpistoleernamed00buffs", // 2476439190
     0x93fea4d4: "yetinamedoffensivebuffs", // 2482939092
+    0x942bf356: "damnedpriestminibossrestlessshoresbuffs_probs", // 2485908310
     0x948219c5: "aicorruptiondamagebuff", // 2491554245
     0x950de02a: "ainaturedamagebuff_probs", // 2500714538
     0x958307dc: "mutation_overgrown_dungeon_tier2", // 2508392412
@@ -693,6 +694,7 @@ var hashBuffBucketDataBuffBucketsBuffBucketId = map[uint32]string{
     0xd4cc1081: "damnedcultistnamed02buffs", // 3570143361
     0xd509c54a: "anubianguardianbrutenamed00buffs_probs", // 3574187338
     0xd5cf7299: "elitedamnedvillagerhammernamed00buffs_probs", // 3587142297
+    0xd62325d7: "damnedpriestminibossrestlessshoresbuffs", // 3592627671
     0xd66d43b0: "mutation_icebound_dungeonplus_tier2", // 3597484976
     0xd689e645: "ghostshipwreckednamed03buffs", // 3599361605
     0xd6bbe5b7: "anubianguardianhorusnamed02buffs", // 3602638263

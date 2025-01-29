@@ -5565,6 +5565,7 @@ var hashVitalsBaseDataVitalsID = map[uint32]string{
     0xd2e5a04a: "sulfur_elemental_entity_named_01", // 3538264138
     0xd2e9e51f: "tendril_corruption", // 3538543903
     0xd2eeb8c3: "damned_villager_rake_26", // 3538860227
+    0xd2f88b72: "holy_shield", // 3539503986
     0xd2fa5cb8: "damned_villager_lumberaxe_47", // 3539623096
     0xd3030f1f: "ancientguardian_mage_dg_greatcleave_01", // 3540193055
     0xd306b91a: "wolf_black_26", // 3540433178

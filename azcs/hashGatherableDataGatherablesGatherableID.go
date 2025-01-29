@@ -1575,6 +1575,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xddd22d5b: "cactus_bush_pricklypear_tiny", // 3721538907
     0xddd8a92a: "skeleton", // 3721963818
     0xddde9285: "silversmall", // 3722351237
+    0xdde13d33: "1333_lowerstonerubble_00", // 3722526003
     0xde44a45b: "falltreelarge", // 3729040475
     0xde479af9: "whisper_test_02", // 3729234681
     0xde57f540: "gatemaltemple2", // 3730306368
@@ -1725,6 +1726,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xf12f48e2: "99b_msq_04_azothdetectorf", // 4046407906
     0xf159e7ce: "rafflebones_portal_fotb", // 4049201102
     0xf17783a7: "explorevista_northreekwater01", // 4051141543
+    0xf18037f3: "lootlarget3elitepoi_cutlasstreasure", // 4051711987
     0xf1f05128: "silverlarge", // 4059058472
     0xf26a67f6: "falltreesmall", // 4067059702
     0xf2a5bbda: "goldpile00", // 4070947802

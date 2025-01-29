@@ -157,6 +157,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x0fb06191: "c10a_s3r_aeternumtriangle", // 263217553
     0x0fb59ad9: "95_s01_x2_expd_empyreanrepeat_v2", // 263559897
     0x0fc09758: "1033_0202_trailofthemisanthrope", // 264279896
+    0x1009994a: "objective_artifact_set2_2hstafffire", // 269064522
     0x103f5473: "fm_r09_pvp_controlspot_marauder_objective", // 272585843
     0x1060f4c9: "7504_0101_devworldbluekillwolfquest", // 274789577
     0x1077ef63: "fm_05_h_02_objective", // 276295523
@@ -201,6 +202,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x1383c27b: "fm_c_0804_objective", // 327402107
     0x13a58a7e: "1524_1517_pirateslife", // 329615998
     0x13a68c63: "fm_15_pvp_poacharea_marauder_objective", // 329682019
+    0x13a73d2b: "fm_doubloon_location_low_req", // 329727275
     0x13b23451: "pvp_killx", // 330445905
     0x13bae5f5: "99b_msq_09_killumberto", // 331015669
     0x13bef555: "fm_c_1462_objective", // 331281749
@@ -356,6 +358,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x2333dbde: "objective_artifact_set1_lighthead", // 590601182
     0x2350b2f4: "12a_msq_25_crownregent_occultist", // 592491252
     0x2388695b: "fm_0761_objective", // 596142427
+    0x239d52a8: "objective_artifact_set2_2hmusket", // 597512872
     0x23a3d7f7: "fm_s_1201_objective", // 597940215
     0x23ae0e48: "0331_0103_thebeastreturns", // 598609480
     0x23b721f5: "vector_kiln_pushquest", // 599204341
@@ -514,6 +517,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x322e8245: "1032_0201_onewhotolledthebells", // 841908805
     0x324ccdbb: "fm_c_0363_objective", // 843894203
     0x32837052: "fm_0564_objective", // 847474770
+    0x32a00af2: "objective_artifact_set2_1hrapier", // 849349362
     0x32a8cefe: "fm_s_1004_objective", // 849923838
     0x32c2bc1c: "0325_0106_rl_05", // 851622940
     0x3349d9f5: "1004_0103_grindstone_quest", // 860477941
@@ -742,6 +746,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x494facff: "fm_0603_objective", // 1229958399
     0x496127af: "fm_11_pvp_poachspot_marauder_objective", // 1231103919
     0x49641253: "fm_s_1363_objective", // 1231295059
+    0x49645ff1: "objective_artifact_set2_1hgauntletice", // 1231314929
     0x4966aa10: "06a_msq_14_solvemappuzzle", // 1231464976
     0x498a2bab: "0831_0106_lastargument_receiver", // 1233791915
     0x49beabc1: "0828_0802_trinkets", // 1237232577
@@ -820,6 +825,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x50d2658a: "06_demonstorm2_mystic", // 1355965834
     0x50efb227: "0714_0105_baetylusheadpiece", // 1357885991
     0x5106f8cb: "fm_0809_objective", // 1359411403
+    0x511aae7b: "objective_artifact_set2_2hstafflife", // 1360703099
     0x5122bd78: "06a_msq_21_defeatboss_musketeer", // 1361231224
     0x512d29fb: "99a_msq_06_corruptiontincture", // 1361914363
     0x513990d5: "0333_0102_redasblood", // 1362727125
@@ -1639,6 +1645,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xa47cb03b: "13a_sq_02_krummholmtransmutations", // 2759635003
     0xa48d2f04: "c10a_s4_explosiveprospecting", // 2760716036
     0xa4a1b6b5: "fm_1169_objective", // 2762061493
+    0xa4a92377: "objective_artifact_set2_earring1", // 2762548087
     0xa4afe17d: "0316_0101_maliceaforethought", // 2762989949
     0xa4c0c0ef: "factionintro_covenant_02", // 2764095727
     0xa4d0b8ed: "99b_msq_10_cleansefort_alt", // 2765142253
@@ -1790,6 +1797,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xb46a5fd6: "0722_0104_fl_03", // 3026870230
     0xb4a2bf05: "ac_test_59", // 3030564613
     0xb4a2e8bd: "1310_1314_wyrdwoodresin_quest", // 3030575293
+    0xb4b34644: "objective_artifact_set2_2hbow", // 3031647812
     0xb4c1feba: "99b_msq_07_cursedcemetery", // 3032612538
     0xb4d3452b: "fm_c_1204_objective", // 3033744683
     0xb4d4303c: "0511_0207_umbrasreach_powerofthevoid", // 3033804860
@@ -2530,4 +2538,5 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xffe6b861: "fm_c_0467_objective", // 4293310561
     0xffe9ef43: "fm_08_pvp_control_syndicate_objective", // 4293521219
     0xfff3cf8d: "fm_c_1010_objective", // 4294168461
+    0xfffb1db8: "objective_artifact_set2_1hgauntletvoid", // 4294647224
 }
