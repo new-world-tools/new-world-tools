@@ -539,6 +539,7 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		"4e495371-25fe-5d42-8e40-ae22c9c5de42",
 		"31d79e49-9cd5-51bf-8403-f9a16bedecf5",
 		"3b1d6fe2-1ca5-51ed-a0b2-99392b9ae7d1",
+		"6d152bfe-ec46-52d0-9f1a-24dd1151f86b",
 		"9c719dd5-f8d3-59d3-b55b-627422922a43":
 		values := make([]any, len(element.Elements))
 		for i, element := range element.Elements {

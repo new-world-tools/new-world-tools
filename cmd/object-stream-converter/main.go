@@ -376,8 +376,15 @@ func hook(data any) {
 			value, ok := node.Get("value")
 			if ok {
 				hash := value.(uint32)
-				if hash != 0x0 && azcs.DefaultHashRegistry.Has(hash) {
-					node.Add("__value", azcs.DefaultHashRegistry.Get(hash))
+				if hash != 0x0 {
+					if azcs.DefaultHashRegistry.Has(hash) {
+						node.Add("__value", azcs.DefaultHashRegistry.Get(hash))
+					} else {
+						formattedHash := fmt.Sprintf("0x%08x", hash)
+						debugData.mu.Lock()
+						debugData.NotResolvedHashes[formattedHash] = true
+						debugData.mu.Unlock()
+					}
 				}
 			}
 		} else {

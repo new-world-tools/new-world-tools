@@ -28,6 +28,9 @@ func init() {
 	for _, value := range hashBuffBucketDataBuffBucketsBuffBucketId {
 		DefaultHashRegistry.Add(value)
 	}
+	for _, value := range hashCustomData {
+		DefaultHashRegistry.Add(value)
+	}
 	for _, value := range hashGameEventDataEventID {
 		DefaultHashRegistry.Add(value)
 	}
@@ -47,9 +50,6 @@ func init() {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashPerkBucketDataPerkBucketsPerkBucketID {
-		DefaultHashRegistry.Add(value)
-	}
-	for _, value := range hashPropertiesData {
 		DefaultHashRegistry.Add(value)
 	}
 	for _, value := range hashRewardModifierDataRewardModifiersModifiers {
