@@ -7,7 +7,6 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/new-world-tools/go-oodle"
 	"github.com/new-world-tools/new-world-tools/hash"
 	"github.com/new-world-tools/new-world-tools/pak"
 	"github.com/new-world-tools/new-world-tools/profiler"
@@ -52,13 +51,6 @@ func main() {
 	pr = profiler.New()
 
 	var err error
-
-	if !oodle.IsLibExists() {
-		err = oodle.Download()
-		if err != nil {
-			log.Fatalf("no oo2core library")
-		}
-	}
 
 	inputPathPtr := flag.String("input", "", "directory or .pak path")
 	outputDirPtr := flag.String("output", "./extract", "directory path")
