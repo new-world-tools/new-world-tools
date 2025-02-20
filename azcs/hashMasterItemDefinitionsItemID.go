@@ -9593,6 +9593,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x38a3e270: "generalbackstory_descriptionitem", // 950264432
     0x38a8b463: "lighthandsbeastelitet5", // 950580323
     0x38a96c88: "2hbow_slayerscrossbowt5", // 950627464
+    0x38aa70f2: "seasonalserver_makegood_box", // 950694130
     0x38abaaeb: "firestaff_apexdoubloonshopt5", // 950774507
     0x38af51ff: "2hmusket_heatofthemomentt5_v2", // 951013887
     0x38b271e7: "runeglass_gem_onyx_fire", // 951218663
