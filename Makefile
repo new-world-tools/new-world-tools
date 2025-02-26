@@ -1,5 +1,5 @@
 PACKAGE_NAME          := github.com/new-world-tools/new-world-tools/
-GOLANG_CROSS_VERSION  ?= v1.22.3
+GOLANG_CROSS_VERSION  ?= v1.24.0
 
 SYSROOT_DIR     ?= sysroots
 SYSROOT_ARCHIVE ?= sysroots.tar.bz2
