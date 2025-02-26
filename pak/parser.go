@@ -3,7 +3,6 @@ package pak
 import (
 	"archive/zip"
 	"bufio"
-	"bytes"
 	"compress/flate"
 	"compress/zlib"
 	"encoding/binary"
@@ -81,24 +80,24 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 			return nil, err
 		}
 
-		//rc, err = oodle.NewReader(reader, int64(file.zipFile.UncompressedSize64))
+		rc, err = oodle.NewReader(reader, int64(file.zipFile.UncompressedSize64))
+		if err != nil {
+			return nil, err
+		}
+
+		return rc, nil
+
+		//data, err := io.ReadAll(reader)
 		//if err != nil {
 		//	return nil, err
 		//}
 		//
-		//return rc, nil
-
-		data, err := io.ReadAll(reader)
-		if err != nil {
-			return nil, err
-		}
-
-		data, err = oodle.Decompress(data, int(file.zipFile.UncompressedSize64))
-		if err != nil {
-			return nil, err
-		}
-
-		return io.NopCloser(bytes.NewBuffer(data)), nil
+		//data, err = oodle.Decompress(data, int(file.zipFile.UncompressedSize64))
+		//if err != nil {
+		//	return nil, err
+		//}
+		//
+		//return io.NopCloser(bytes.NewBuffer(data)), nil
 	}
 
 	return nil, ErrUnsupportedMethod

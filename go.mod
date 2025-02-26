@@ -1,13 +1,13 @@
 module github.com/new-world-tools/new-world-tools
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/expr-lang/expr v1.16.3
 	github.com/goccy/go-json v0.10.2
 	github.com/goccy/go-yaml v1.11.0
 	github.com/gofrs/uuid v4.3.0+incompatible
-	github.com/zelenin/go-oodle-lz v0.0.1
+	github.com/zelenin/go-oodle-lz v0.0.2
 	github.com/zelenin/go-worker-pool v0.0.2
 	gopkg.in/yaml.v3 v3.0.1
 )
