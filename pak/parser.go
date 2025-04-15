@@ -38,20 +38,19 @@ type File struct {
 }
 
 func (file *File) Decompress() (io.ReadCloser, error) {
+	var r io.Reader
 	var rc io.ReadCloser
 	var err error
 
-	if file.zipFile.Method == 0x00 {
+	switch file.zipFile.Method {
+	case 0x00:
 		rc, err = file.zipFile.Open()
 		if err != nil {
 			return nil, err
 		}
 
-		return rc, nil
-	}
-
-	if file.zipFile.Method == 0x08 {
-		r, err := file.zipFile.OpenRaw()
+	case 0x08:
+		r, err = file.zipFile.OpenRaw()
 		if err != nil {
 			return nil, err
 		}
@@ -72,23 +71,19 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 			rc = flate.NewReader(bufReader)
 		}
 
-		return rc, nil
-	}
-
-	if file.zipFile.Method == 0x0f {
-		reader, err := file.zipFile.OpenRaw()
+	case 0x0f:
+		r, err = file.zipFile.OpenRaw()
 		if err != nil {
 			return nil, err
 		}
 
-		//rc, err = oodle.NewReader(reader, int64(file.zipFile.UncompressedSize64))
+		// works on linux, bugged on windows
+		//rc, err = oodle.NewReader(r, int64(file.zipFile.UncompressedSize64))
 		//if err != nil {
 		//	return nil, err
 		//}
-		//
-		//return rc, nil
 
-		data, err := io.ReadAll(reader)
+		data, err := io.ReadAll(r)
 		if err != nil {
 			return nil, err
 		}
@@ -98,10 +93,13 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 			return nil, err
 		}
 
-		return io.NopCloser(bytes.NewBuffer(data)), nil
+		rc = io.NopCloser(bytes.NewBuffer(data))
+
+	default:
+		return nil, ErrUnsupportedMethod
 	}
 
-	return nil, ErrUnsupportedMethod
+	return rc, nil
 }
 
 func (file *File) GetModifiedTime() time.Time {
