@@ -8,7 +8,7 @@ require (
 	github.com/goccy/go-yaml v1.11.0
 	github.com/gofrs/uuid v4.3.0+incompatible
 	github.com/zelenin/go-oodle-lz v0.0.2
-	github.com/zelenin/go-worker-pool v0.0.2
+	github.com/zelenin/go-worker-pool v0.1.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -17,6 +17,6 @@ require (
 	github.com/fatih/color v1.10.0 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
-	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 )

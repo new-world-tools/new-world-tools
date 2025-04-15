@@ -1,9 +1,9 @@
 package main
 
 import (
+	"context"
 	"encoding/csv"
 	"encoding/json"
-	"errors"
 	"flag"
 	"fmt"
 	"github.com/expr-lang/expr"
@@ -168,9 +168,7 @@ func main() {
 				break
 			}
 
-			taskId := err.(workerpool.TaskError).Id
-			err = errors.Unwrap(err)
-			log.Printf("task #%d err: %s", taskId, err)
+			log.Printf("err: %s", err)
 		}
 	}()
 
@@ -201,14 +199,14 @@ func main() {
 		addTask(id, file)
 	}
 
-	pool.Close()
+	pool.Stop()
 	pool.Wait()
 
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 }
 
 func addTask(id int64, file *datasheet.DataSheetFile) {
-	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
+	pool.AddTask(func(ctx context.Context) error {
 		log.Printf("Working: %s", file.GetPath())
 		ds, err := datasheet.Parse(file)
 		if err != nil {
@@ -251,7 +249,7 @@ func addTask(id int64, file *datasheet.DataSheetFile) {
 		}
 
 		return nil
-	}))
+	})
 }
 
 func storeToCsv(ds *datasheet.DataSheet, path string) error {

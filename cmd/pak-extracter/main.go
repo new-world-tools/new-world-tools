@@ -3,8 +3,8 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"context"
 	"crypto/sha1"
-	"errors"
 	"flag"
 	"fmt"
 	"github.com/new-world-tools/new-world-tools/hash"
@@ -145,9 +145,7 @@ func main() {
 				break
 			}
 
-			err = errors.Unwrap(err)
-
-			log.Printf("Error: %s", err)
+			log.Printf("err: %s", err)
 		}
 	}()
 
@@ -170,7 +168,7 @@ func main() {
 		pakFile.Close()
 	}
 
-	pool.Close()
+	pool.Stop()
 	pool.Wait()
 
 	if hashSumFile != "" {
@@ -198,7 +196,6 @@ func main() {
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
 }
 
-var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
 var luacSig = []byte{0x04, 0x00, 0x1b, 0x4c, 0x75, 0x61}
 
 type TaskError struct {
@@ -220,7 +217,7 @@ func newTaskError(pak string, path string, err error) *TaskError {
 }
 
 func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
-	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
+	pool.AddTask(func(ctx context.Context) error {
 		var err error
 
 		basePath := inputPath
@@ -257,7 +254,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		r = bufReader
 
 		if decompressAzcs {
-			if bytes.Equal(azcsSig, sigData[:len(azcsSig)]) {
+			if bytes.Equal(azcs.Signature, sigData[:len(azcs.Signature)]) {
 				r, err = azcs.NewReader(r)
 				if err != nil {
 					return newTaskError(pakFile.GetPath(), file.Name, err)
@@ -299,7 +296,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		}
 
 		return nil
-	}))
+	})
 }
 
 func match(fileName string) bool {

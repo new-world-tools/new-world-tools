@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	"errors"
+	"context"
 	"flag"
 	"fmt"
 	"github.com/goccy/go-json"
@@ -159,9 +159,7 @@ func main() {
 				break
 			}
 
-			taskId := err.(workerpool.TaskError).Id
-			err = errors.Unwrap(err)
-			log.Fatalf("task #%d err: %s", taskId, err)
+			log.Printf("err: %s", err)
 		}
 	}()
 
@@ -221,7 +219,7 @@ func main() {
 		log.Fatalf("filepath.Walk: %s", err)
 	}
 
-	pool.Close()
+	pool.Stop()
 	pool.Wait()
 
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())
@@ -242,7 +240,7 @@ func main() {
 }
 
 func addTask(id int64, job Job) {
-	pool.AddTask(workerpool.NewTask(id, func(id int64) error {
+	pool.AddTask(func(ctx context.Context) error {
 		log.Printf("Working: %s", job.RelPath)
 		//defer log.Printf("Done: [#%06d] %s", id, job.Input)
 
@@ -311,7 +309,7 @@ func addTask(id int64, job Job) {
 		}
 
 		return nil
-	}))
+	})
 }
 
 type Job struct {
