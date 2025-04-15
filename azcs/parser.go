@@ -243,7 +243,6 @@ var uncompressedSignatures = [][]byte{
 	{0x00, 0x00, 0x00, 0x00, 0x02},
 	{0x00, 0x00, 0x00, 0x00, 0x01},
 }
-var azcsSig = []byte{0x41, 0x5a, 0x43, 0x53}
 
 func isUncompressed(data []byte) bool {
 	for _, uncompressedSignature := range uncompressedSignatures {
@@ -256,11 +255,11 @@ func isUncompressed(data []byte) bool {
 }
 
 func isCompressed(data []byte) bool {
-	if len(data) < len(azcsSig) {
+	if len(data) < len(azcsReader.Signature) {
 		return false
 	}
 
-	return bytes.Equal(azcsSig, data[:len(azcsSig)])
+	return bytes.Equal(azcsReader.Signature, data[:len(azcsReader.Signature)])
 }
 
 func GetReader(path string, isCompressed bool) (io.ReadCloser, error) {
