@@ -723,6 +723,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x3611dce3: "ai_lost_monarch_beseech", // 907140323
     0x361df685: "foodharvestert52", // 907933317
     0x362c1465: "status_conqueror_greatsword_crescentwavetimer", // 908858469
+    0x365318d5: "status_upgrade_sword_finalstand_fortify", // 911415509
     0x36589ab1: "status_flail_ultimate_healchain", // 911776433
     0x367fb3cb: "status_perk_artifact_set2_ring1naturetracker", // 914338763
     0x3681a6cf: "status_ability_sword_finalstand_armor", // 914466511

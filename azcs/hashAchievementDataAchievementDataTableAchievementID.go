@@ -3298,6 +3298,7 @@ var hashAchievementDataAchievementDataTableAchievementID = map[uint32]string{
     0x361b0823: "fc_mediumfeet_crafteddungeon11t5", // 907741219
     0x362dc2db: "fc_prismaticscarab_int_gauntleticet52", // 908968667
     0x362e3ea8: "swapactive_0426_maurac_onoff", // 909000360
+    0x3634f445: "entitlement_725coconutcache_final", // 909440069
     0x3645af4e: "fc_mediumlegs_winter600t5_con", // 910536526
     0x3649123f: "dryadgate_50419_charted", // 910758463
     0x364a108a: "fc_lightlegs_wintert5_dex", // 910823562
