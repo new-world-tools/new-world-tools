@@ -219,7 +219,6 @@ func main() {
 		log.Fatalf("filepath.Walk: %s", err)
 	}
 
-	pool.Stop()
 	pool.Wait()
 
 	log.Printf("PeakMemory: %0.1fMb Duration: %s", float64(pr.GetPeakMemory())/1024/1024, pr.GetDuration().String())

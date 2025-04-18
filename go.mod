@@ -8,7 +8,7 @@ require (
 	github.com/goccy/go-yaml v1.11.0
 	github.com/gofrs/uuid v4.3.0+incompatible
 	github.com/zelenin/go-oodle-lz v0.0.2
-	github.com/zelenin/go-worker-pool v0.1.0
+	github.com/zelenin/go-worker-pool v0.1.1
 	gopkg.in/yaml.v3 v3.0.1
 )
 
