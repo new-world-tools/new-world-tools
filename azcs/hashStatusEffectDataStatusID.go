@@ -1,6 +1,7 @@
 package azcs
 
 var hashStatusEffectDataStatusID = map[uint32]string{
+    0x0006cf13: "status_perk_chest_healthlowstamregen", // 446227
     0x0015596a: "mut_curse2_voi_major_buff", // 1399146
     0x00229a9d: "ai_corruptedpriest_doomimpact", // 2267805
     0x00246154: "debuffresilience_66", // 2384212
@@ -9,6 +10,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x0049fcaa: "halloweenboss_putrid_aura_boss_buff", // 4848810
     0x004d4a5a: "ai_isabella_phase2_pylon_empower", // 5065306
     0x0088670d: "housingrollbonusharvestingt3", // 8939277
+    0x008e700d: "ai_screech_check", // 9334797
     0x0099b9b3: "ai_gorrila_boss_elemexpclear", // 10074547
     0x00a144bd: "foodstrfoct5", // 10568893
     0x00a3442a: "mut_silencearea_effect", // 10699818
@@ -20,6 +22,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x00fb1fbe: "undeadgrenadier_burn", // 16457662
     0x01110c20: "ai_yonas_finalphase", // 17894432
     0x013b8806: "tse_stundur_dec_10pct", // 20678662
+    0x014311a8: "ai_empress_openworld_pedestalprotection", // 21172648
     0x014b4931: "rune_graspingvines_major", // 21711153
     0x014ce70a: "tse_armor_inc_10pct_nocategory", // 21817098
     0x014f713b: "foodhuntert52", // 21983547
@@ -36,6 +39,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x023e4154: "mammoth_ice_icetusk", // 37634388
     0x0267ecf0: "blunderbuss_lingeringflow", // 40365296
     0x029fb971: "se_artemisboonpotiond1_t1", // 44022129
+    0x02b14f04: "gm_ctf_blueflag_02", // 45174532
     0x02c308ce: "foodfocdext2", // 46336206
     0x02cebde2: "status_perk_artifact_set2_amuletdeath", // 47103458
     0x03058599: "status_perk_tool_motelife", // 50693529
@@ -125,6 +129,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x090a5a28: "status_conqueror_shield_tankaura_selfdebuff_rend", // 151673384
     0x0915d214: "mut_curse1_lig_minor_chain_damage", // 152424980
     0x092234dc: "ai_typhon_walldamage", // 153236700
+    0x0926d5e6: "wb_mammoth_fl_mahantaram_icestorm_damage", // 153540070
     0x092a7ea3: "ai_torso_boss_stun_player", // 153779875
     0x09333850: "status_perk_bags_loggingweight", // 154351696
     0x093ade87: "status_pvp_perk_weapon_blockbreak_rend", // 154852999
@@ -133,10 +138,12 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x095d5dbd: "ai_admiralbrute_cannonrain_targeted_dot", // 157113789
     0x0968b852: "fooddext5", // 157857874
     0x099965a5: "endurance2", // 161047973
+    0x09a4a55a: "status_perk_artifact_set2_lightchest_manaloss_magic", // 161785178
     0x09a6b01e: "godmodehunger", // 161919006
     0x09be1227: "tse_highprio_nosprint", // 163451431
     0x09d5d7e3: "status_lifestaff_divineembrace_cast_spell", // 165009379
     0x09e29c7a: "ai_ice_torso_boss_weakpoint_stun", // 165846138
+    0x0a02debd: "ai_isabella_worldboss_touchofcorruption", // 167960253
     0x0a05a1d3: "rune_firestorm_dot_survivor_application", // 168141267
     0x0a074bb4: "ai_yeti_2022_icedome_fortify", // 168250292
     0x0a09fb65: "housingdmgangryeartht3", // 168426341
@@ -146,6 +153,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x0a5354ec: "status_passive_lifestaff_healing_healingbuffonbasic", // 173233388
     0x0a6f859b: "ai_admiralbrute_blackpowder_cast", // 175080859
     0x0a8d8e4e: "tse_elemarmor_dec_10pct", // 177049166
+    0x0abdc40f: "wb_mammoth_fl_mahantaram_fire_empowered", // 180208655
     0x0ad3b30a: "mut_curse1_nat_major_cast_aoe", // 181646090
     0x0b00cbf8: "ai_brotherumberto_staminabuff", // 184601592
     0x0b0c81b3: "minermastery1", // 185369011
@@ -158,6 +166,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x0b7effb9: "ai_motherwellelk_se_cleanse", // 192872377
     0x0b8f8b2f: "status_rune_beastmode_survivor_buff", // 193956655
     0x0bc6f545: "tse_shockdur_inc_10pct", // 197588293
+    0x0be2eb59: "status_seasonalserver_deathfunctionality_3", // 199420761
     0x0bee01f5: "mut_curse4_minor_buff", // 200147445
     0x0bf6f262: "potionfamilywardcorruptedt4", // 200733282
     0x0c010dd6: "status_passive_bow_hunter_dmgonfirst_tracker", // 201395670
@@ -197,6 +206,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x0e560722: "status_perk_weapon_dodgesuccess_lightningdmg", // 240518946
     0x0e8a4bcd: "blunderbuss_overloadtimer", // 243944397
     0x0e8a95be: "status_perk_pvp_weapon_exhaustedtarget_exhaust", // 243963326
+    0x0e9d39d9: "wb_mammoth_fl_mahantaram_root_feedback_arcane", // 245184985
     0x0ecb4173: "ai_evil_knight_fire_champion_magmaball_destroy", // 248201587
     0x0ed9589f: "status_pvp_perk_onkill_empowertildeath", // 249125023
     0x0edacd69: "greatsword_combo_ignorestun", // 249220457
@@ -230,11 +240,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x10462c44: "quarrymanburden1", // 273034308
     0x106f289c: "lifestaff_aim_walk_speed_passive", // 275720348
     0x1072b9b5: "ai_typhon_pillarcollision", // 275954101
+    0x10971de0: "ai_isabella_worldboss_swooptargetmarker", // 278339040
     0x109fc59c: "status_perk_weapon_diseaseonheavy", // 278906268
     0x10a873e0: "maudlinbug_waltz_status", // 279475168
     0x10acb510: "ai_evil_knight_flamekeeper_combustible", // 279754000
+    0x10b6f81b: "status_perk_weapon_onexhaustdmg_haste", // 280426523
     0x10c9e588: "ai_hercynereindeer_briar_root", // 281666952
     0x10f67a66: "grandcurseabsorb", // 284588646
+    0x1128fc2f: "ctf_powerup_speed", // 287898671
     0x112a44ac: "blunderbuss_nine", // 287982764
     0x1136bfc5: "aiminhealth", // 288800709
     0x114eecf6: "foodintfoct3", // 290385142
@@ -253,6 +266,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x125b276e: "weavermastery1", // 307963758
     0x12602224: "tse_weakendur_dec_10pct", // 308290084
     0x1286f38f: "status_perk_tool_skinningyield", // 310834063
+    0x12890652: "ai_naga_angryearth_worldboss_stuckinrock", // 310969938
     0x12936a44: "plaguedghost_diseaseswarm", // 311650884
     0x12aa09e7: "status_perk_blunderbuss_clawshot_empower", // 313133543
     0x12bc3343: "ai_echidna_stagger_buff", // 314323779
@@ -265,6 +279,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x13013f67: "thorpe_pain_reaction", // 318848871
     0x13025e27: "foodrecoveryt3", // 318922279
     0x130d3fa2: "ai_fulgoris_gas", // 319635362
+    0x131189f8: "ai_sirenqueen_wakeup_se", // 319916536
     0x131ef4f9: "ai_anubianguardian_bruteboss_burningcharge", // 320795897
     0x1326d0bb: "worldboundexit", // 321310907
     0x132bef4e: "rune_detonate", // 321646414
@@ -282,13 +297,16 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x140caecb: "mut_curse1_ice_minor_damage", // 336375499
     0x1410a5f4: "ai_naga_corrupted_targetmarker_rapidshot", // 336635380
     0x1416daca: "clarity2", // 337042122
+    0x1417b874: "ai_feralghoul_stun", // 337098868
     0x1425f6db: "status_perk_weapon_attunement_voiddmg", // 338032347
     0x14401363: "foodintdext3", // 339743587
     0x14517959: "musicbuff_gatheringxp_t1_bad", // 340883801
     0x14672f60: "mut_curse1_nat_major_buff", // 342306656
     0x146d2e97: "tse_elemabs_inc_10pct", // 342699671
+    0x14a9213d: "ai_empress_openworld_pedestaldebuff", // 346628413
     0x14b496a5: "status_perk_armor_conditioning_lightningdef", // 347379365
     0x14cfce5e: "warhammer_pass_debuffshorten", // 349163102
+    0x14d45d05: "ai_naga_angryearth_worldboss_thrown_rock", // 349461765
     0x14d81b9f: "totem_ai_swamp_beast_boss_debuff", // 349707167
     0x14f8efa1: "status_perk_artifact_set2_rapier_burn", // 351858593
     0x14fb453e: "pvparena_foodcont4", // 352011582
@@ -302,6 +320,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x1582d078: "tse_silencepot_dec_10pct", // 360894584
     0x159bbf67: "ai_anubianguardian_horusboss_instrumentofjudgement_ontick", // 362528615
     0x15a28383: "wispy_wasp_swarm_tick", // 362972035
+    0x15bc550c: "gm_ctf_redflag", // 364664076
     0x15cdb03f: "ai_thorpe_force_grab_success", // 365801535
     0x16021cba: "greaterpotionfocus", // 369237178
     0x160932c8: "ai_anubian_sunspots_heal", // 369701576
@@ -311,6 +330,8 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x16704513: "harvestingmastery3", // 376456467
     0x1676d2cc: "hatchet_socialdist_slow", // 376885964
     0x168245cd: "ai_evil_knight_fire_champion_overheatspell_phase01", // 377636301
+    0x16944830: "ai_admiralbrute_worldboss_barrelnofiredamage", // 378816560
+    0x169544e8: "status_perk_armor_exhaustpotencyred", // 378881256
     0x169bba4f: "ai_evil_knight_fire_champion_transition01", // 379304527
     0x16a18d41: "voidgauntlet_drainingtether_manaregen", // 379686209
     0x16b072af: "se_demeterboonpotiond5_t5", // 380662447
@@ -324,14 +345,20 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x174e48b9: "musket_pass_hasteondodge", // 391006393
     0x17585e2d: "resetai", // 391667245
     0x1787a231: "removespores", // 394764849
+    0x178f6cb8: "status_rune_spinningswords_dodgesuppressant", // 395275448
     0x1796cb12: "halloweenboss_remove_pumklin_stun", // 395758354
     0x17d6e169: "applyacidl2", // 399958377
+    0x17d7fcdc: "ai_rw_siege_pool_invulnerability", // 400030940
     0x17f6a59a: "ai_yonas_phase1_berserk", // 402040218
     0x182d87d8: "mut_curse2_ice_vfx_3_ability", // 405637080
     0x182e85bc: "ai_season_04_iceguardian_hypothermia", // 405702076
+    0x1835f435: "ai_naga_angryearth_worldboss_spawn_poisonpool", // 406189109
     0x184502f6: "tse_exhaustdur_inc_10pct", // 407175926
     0x184cbea8: "housingmingearbonusengineeringt3", // 407682728
+    0x18686f72: "ai_sirenqueen_asleep", // 409497458
     0x187c188a: "ai_anubianguardian_horusboss_sundisk_damage", // 410785930
+    0x18800dfc: "status_perk_gem_plaguedward4", // 411045372
+    0x18824070: "status_webtrap_stun", // 411189360
     0x18857e5c: "ai_dryadsiren_spin_phase3_ability", // 411401820
     0x189260a1: "manaonhit1", // 412246177
     0x18b5be39: "status_perk_armor_woodworkingyield", // 414563897
@@ -356,9 +383,11 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x19ed85cf: "token_weapon_1", // 434996687
     0x19fe7c6a: "root_forever", // 436108394
     0x1a059cc8: "potionfamilywardlostt4", // 436575432
+    0x1a382991: "gm_ctf_redflag_01", // 439888273
     0x1ac2dd9c: "foodbeastt3", // 448978332
     0x1ad04fd4: "foodconfoct4", // 449859540
     0x1adf10e5: "mut_fir_aoe_2_effect", // 450826469
+    0x1aed5d7c: "ai_evil_knight_fire_champion_worldboss_spin", // 451763580
     0x1af4f808: "ai_corrupted_firstmate_splintereddefense_dot", // 452261896
     0x1b0b96d9: "ai_naga_corrupted_corruptioncore_resistance_dispel", // 453744345
     0x1b0db190: "dungeon_cursedtreasure", // 453882256
@@ -402,14 +431,17 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x1d8644a4: "status_perk_amulet_manaonlow_timer", // 495338660
     0x1d8bd925: "ai_anubianguardian_goliath_health_50percent", // 495704357
     0x1dc06ce7: "majorfrostbiteabsorb", // 499150055
+    0x1dc1ac2c: "ai_admiralbrute_worldboss_cannonrain_targeted_cast", // 499231788
     0x1dea7a8b: "tse_armor_dec_10pct_nocategory", // 501906059
     0x1e00b1a1: "equipload_ccdurreduction_heavy", // 503361953
+    0x1e102a45: "potionburstregen_regent5", // 504375877
     0x1e217b1a: "foodintt52", // 505510682
     0x1e3eaaac: "mut_ice_slow_1_buff", // 507423404
     0x1e456fb6: "status_perk_artifact_set2_ring1icetracker", // 507867062
     0x1e6342ea: "status_perk_tool_miningxp", // 509821674
     0x1e641518: "leatherworkermastery3", // 509875480
     0x1e72d405: "atb_int_bonus_25_2_effect", // 510841861
+    0x1e8f0918: "potionshield_hittrackingorbs_removal", // 512690456
     0x1e96d492: "ice mutations", // 513201298
     0x1ea851a5: "shackledghost_doom", // 514347429
     0x1ebaa8b6: "status_bow_poison_upgrade", // 515549366
@@ -440,6 +472,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x204b9bbb: "ai_typhon_addkiller", // 541825979
     0x205184dd: "status_passive_firestaff_firemage_dmgnodmg", // 542213341
     0x2066d584: "ai_hercynerat_disease", // 543610244
+    0x2071eade: "status_perk_artifact_set2_lighthands_cooldown", // 544336606
     0x2090e3bd: "ai_motherwellelk_se_reqempower", // 546366397
     0x20addcac: "honingstonet2", // 548265132
     0x20b72d25: "sandworm_acid_pit", // 548875557
@@ -459,6 +492,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x22470b99: "voidgauntlet_nullchamber_dot", // 575081369
     0x22604f37: "season1_trophyseasonxpbonus", // 576737079
     0x226088bd: "status_perk_armor_loggingluck", // 576751805
+    0x2261a7b4: "siegecurse0", // 576825268
     0x227329a9: "lifestaff_healfriend_super_siphon", // 577972649
     0x227f25c7: "ai_burn_9", // 578758087
     0x22a8a3cc: "foodmanat4", // 581477324
@@ -494,6 +528,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x253dfed1: "foodcont3", // 624819921
     0x2545ff86: "ai_torso_boss_arcane_slap", // 625344390
     0x257311ad: "celestial_groupbuff", // 628298157
+    0x25886b80: "status_perk_artifact_set2_blunderbuss_knockbackdamage", // 629697408
     0x258fcce8: "tse_movespeed_dec_10pct", // 630181096
     0x259fe3a7: "blunderbuss_increase_damage_taken", // 631235495
     0x25b3abc1: "animalvision", // 632531905
@@ -523,6 +558,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x27c47b87: "env_brimstonelock_dot", // 667188103
     0x27c6aad5: "status_perk_rapier_evade", // 667331285
     0x27e98915: "status_perk_artifact_set2_lightfeet_tracker", // 669616405
+    0x27f730d3: "wb_mammoth_fl_mahantaram_magmaburn", // 670511315
     0x27fae3c3: "turkeyterror_foodeffectdurationbonus", // 670753731
     0x27fcd45b: "ai_season_04_iceguardian_ancientflamecooldown_solo", // 670880859
     0x27fcda2b: "godmodeminhp", // 670882347
@@ -530,6 +566,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2826360d: "status_perk_artifact_set2_musket_bleed", // 673592845
     0x282c4eff: "foodconstrt4", // 673992447
     0x28300366: "ai_season_04_iceguardian_ancientflame_solo", // 674235238
+    0x28319322: "ai_isabella_worldboss_shoulderslash_wave_damage", // 674337570
     0x28336862: "lifestaff_highhealth_magicdmgbonus", // 674457698
     0x2838b95c: "ai_naturedamage_buff", // 674806108
     0x283ea157: "status_mount_multiplyridingxp_large", // 675193175
@@ -539,6 +576,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x28805026: "status_perk_hatchet_rendingthrow_staminaregen", // 679497766
     0x288cb10d: "raid_cutlasskeys00_mushroominfection_activetick", // 680309005
     0x289c43af: "outpostrush_fortspawn_invulnerable", // 681329583
+    0x28df721b: "potionshield_hittrackingorbs3", // 685732379
     0x28e2bb2e: "celestial_life_dmg_absorb", // 685947694
     0x28ed5875: "tse_frostbitepot_dec_10pct", // 686643317
     0x28ff289a: "status_perk_tool_motewater", // 687810714
@@ -555,6 +593,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x29dded98: "mut_curse1_voi_major_buff", // 702410136
     0x29e51706: "se_artemisboonsecondaryd2_t2", // 702879494
     0x29f6e171: "status_pvpzone_perk_ring_empowertilnexthit", // 704045425
+    0x29f9b52e: "status_weapon_melee_perk_alternateattacks_abilitybuff", // 704230702
     0x29fafdab: "foodstrcont3", // 704314795
     0x2a12aea5: "tse_highprio_silence", // 705867429
     0x2a35d5c5: "status_conqueror_shield_tankaura_allybuff", // 708171205
@@ -565,6 +604,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2a872e61: "blunderbuss_clawshot_in_air_timer", // 713502305
     0x2a8da98a: "blunderbuss_buckshot", // 713927050
     0x2abb7db0: "housingmingearbonusprovisioningt2", // 716930480
+    0x2ac972fa: "ai_anubian_lotus_scarab_worldboss_sunspots_statuseffect", // 717845242
     0x2aca9f8b: "ai_movespeed_buff", // 717922187
     0x2ad2bbd2: "se_mushroomflaskt3consumed", // 718453714
     0x2aeea9f2: "curse", // 720284146
@@ -572,10 +612,12 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2b0be0d6: "ai_evil_knight_fire_champion_magmaball_stall", // 722198742
     0x2b25c0af: "status_perk_armor_weaveryield", // 723894447
     0x2b29575c: "mut_curse2_voi_vfx_3_ability", // 724129628
+    0x2b342c71: "ai_cryptkeeper_reaperembracehit", // 724839537
     0x2b491bb2: "celestial_mana_regen_onhit", // 726211506
     0x2b511d2e: "potionhealt5", // 726736174
     0x2b524391: "ai_invulnerability", // 726811537
     0x2b565938: "blunderbuss_pullstring", // 727079224
+    0x2b66debf: "status_perk_gem_plagued2", // 728161983
     0x2b983357: "ai_ice_commander_targetmarker", // 731394903
     0x2ba6ff97: "mammoth_earth_root_feedback_lightning", // 732364695
     0x2bb230c4: "applycurseisabellal3", // 733098180
@@ -583,6 +625,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2bd2eb0d: "chefmastery3", // 735243021
     0x2bda1e44: "ai_dryadsiren_spin_phase2_d_tick", // 735714884
     0x2bdf69d6: "status_perk_armor_arcanist_faction", // 736061910
+    0x2be3a16d: "ai_mummifiedcorpse_exhumehit_rootbuffer", // 736338285
     0x2bf58382: "mut_curse1_nat_minor_buff", // 737510274
     0x2c0d7d60: "mut_curse1_voi_major_damage_cleanse", // 739081568
     0x2c2157f2: "ai_empress_dragonburn", // 740382706
@@ -600,6 +643,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2d091de5: "status_perk_weapon_oncritbleed", // 755572197
     0x2d19555f: "status_perk_artifact_set1_bow_staticcharge", // 756634975
     0x2d531276: "housingdmgcorruptedt0", // 760418934
+    0x2d82750a: "status_webtrap_init", // 763524362
     0x2d8a6c4c: "oakfleshbalmt2", // 764046412
     0x2de45372: "botanistmastery1", // 769938290
     0x2df03eac: "ai_evilknight_rally", // 770719404
@@ -620,6 +664,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x2f316f40: "mut_voi_stacks_1_buff", // 791768896
     0x2f329531: "diligentsmelter1", // 791844145
     0x2f3b11cb: "status_perk_ward_shield_defice", // 792400331
+    0x2f450d9d: "ai_admiralbrute_worldboss_blackpowder", // 793054621
     0x2f650298: "status_flail_defensivestrike_blocktracker", // 795148952
     0x2f693bb6: "ai_naga_corrupted_targetmarker_corruptionshot", // 795425718
     0x2f85711d: "status_common_empower_mount_med", // 797274397
@@ -642,6 +687,8 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x309bcef3: "status_perk_armor_weaponsmith_faction", // 815517427
     0x30c6b06a: "mut_ice_closezone_2_buff", // 818327658
     0x30e6d96a: "ai_ice_knight_whirlcombo_attacksuccess", // 820435306
+    0x30f925d8: "status_perk_artifact_set1_towershield_exhaust", // 821634520
+    0x30ffd706: "gm_jumppad_long", // 822073094
     0x31059d4c: "bow_rapidfire_spamprevention", // 822451532
     0x310666e2: "retaliation3", // 822503138
     0x310a266d: "musket_pass_damage_everyadsshot_safety", // 822748781
@@ -653,8 +700,10 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x315f1d09: "dungeon_isinbossfight", // 828316937
     0x3178bf91: "status_passive_sword_swordmaster_rendonfinal", // 829996945
     0x31867250: "mut_curse2_affliction_restore", // 830894672
+    0x318c96fd: "ai_mutatednurse_burn", // 831297277
     0x318e15fc: "status_ultimate_sword_defender_check", // 831395324
     0x31a9c380: "atb_int_bonus_350_2_effect", // 833209216
+    0x31cb4761: "ctf_powerup_health", // 835405665
     0x31ec49f6: "ai_lightningresist_buff", // 837569014
     0x31ef8747: "status_perk_ward_amulet_defarcane", // 837781319
     0x32132a87: "status_upgrade_bow_evasiveshot_haste", // 840116871
@@ -734,6 +783,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x36b9f995: "voidgauntlet_voidblade_fortify", // 918157717
     0x36bcfdb0: "pvp_arena_scalinghealingdebuff", // 918355376
     0x36d6232b: "status_conquerors_dodgecorruptionball_damage", // 920003371
+    0x36d967ac: "ai_feralghoul_disease", // 920217516
     0x36dbaf5e: "mut_curse2_ice_vfx_1_ability", // 920366942
     0x36df2efc: "ai_dryadsiren_spin_phase2_c_tick", // 920596220
     0x3724c7b5: "legion_firerainburn_crassus_debuff", // 925157301
@@ -762,6 +812,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x38dda426: "status_rune_beastmode_removeall", // 954049574
     0x38e7ae19: "mut_staminadamage_2_blockbreak", // 954707481
     0x38f3f64d: "ai_ice_torso_boss_empower_scale", // 955512397
+    0x38f5f63d: "gm_ctf_flag_03", // 955643453
     0x394613a6: "potionfamilywardaeterniant3", // 960893862
     0x39550a95: "foodconintt4", // 961874581
     0x398ef858: "ai_gravedigger_takeminstamdmg", // 965671000
@@ -771,11 +822,13 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x39aade62: "promotion mutations", // 967499362
     0x39be716b: "ai_balllightningcastchain", // 968782187
     0x39bef87a: "grandpotionstalwart", // 968816762
+    0x39c1bebc: "camppvpregen", // 968998588
     0x39d20879: "ai_dryadsiren_spin_phase3_c", // 970066041
     0x39e18a54: "status_ability_lifestaff_lightsembrace_perbuff", // 971082324
     0x39e2e25b: "tse_bleeddur_inc_10pct", // 971170395
     0x39e3c13f: "lumberjackmastery2", // 971227455
     0x3a118561: "status_conquerors_hammer_knockback_tracker", // 974226785
+    0x3a311f1f: "ai_evil_knight_fire_champion_worldboss_overheatspell_phase02", // 976297759
     0x3a3797ef: "ai_icegolem_exhaust", // 976721903
     0x3a3b4fe3: "breath", // 976965603
     0x3a3d198a: "toy_turkeycall", // 977082762
@@ -801,6 +854,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x3c0a7f7e: "ai_dptank_enrage_limited", // 1007320958
     0x3c0bb3db: "exhaustedstate_dodgedeplete", // 1007399899
     0x3c410543: "atb_dex_bonus_300_1_cooldowntimer", // 1010894147
+    0x3c4ebbb5: "difficultyscaling_maxhealthmod_debuff", // 1011792821
     0x3c52431f: "mut_curse2_voi_vfx_2_ability", // 1012024095
     0x3c552818: "ai_anubianguardian_horusboss_divineanguish_damagebuff_reapply", // 1012213784
     0x3c9e9e3a: "greatsword_passive_rendcontrol", // 1017028154
@@ -848,6 +902,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x3fa3165a: "housingrollbonus_allgatheringt3", // 1067652698
     0x3fb67185: "fooddexcont3", // 1068921221
     0x3fb876a9: "ai_mage_miniboss_orbs_statuseffect_cast", // 1069053609
+    0x3fe49a25: "ai_cryptkeeper_tombstone_root", // 1071946277
     0x3fe5dbdf: "status_perk_runeglass_attunement_naturedmg", // 1072028639
     0x3fee087c: "atb_dex_bonus_300_2_effect", // 1072564348
     0x3ffa1095: "weaponcoatingeffect_lost_t3", // 1073352853
@@ -858,7 +913,9 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x40663fc3: "diligentharvester3", // 1080442819
     0x406a583c: "status_passive_bow_skirmish_hasteonswap", // 1080711228
     0x409ac8ec: "rendresilience_33", // 1083885804
+    0x40be3d2c: "status_perk_artifact_set2_sword_dmgredtracker", // 1086209324
     0x40c33cfb: "potionmanat2", // 1086536955
+    0x40c7b1a1: "wb_mammoth_fl_mahantaram_icestorm_slow", // 1086828961
     0x40d9eb3b: "ai_medusa_poison_pool", // 1088023355
     0x40dc9628: "ai_isabella_phase2_shoulderslash_wave_damage", // 1088198184
     0x40f0c9aa: "status_perk_artifact_set1_bow_staticcharge_removal", // 1089522090
@@ -876,6 +933,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x41d20502: "status_passive_firestaff_firemage_dmgnodmg_timer", // 1104282882
     0x41eb46ad: "status_conqueror_greataxe_lostmonarch_chaintrigger", // 1105938093
     0x4216b2a8: "status_perk_tool_motefire", // 1108783784
+    0x421d8a05: "ai_mummifiedcorpse_auraburn_mediumfrequency", // 1109232133
     0x4236c6e6: "foodfocstrt3", // 1110886118
     0x4262fd7c: "raid_cutlasskeys00_mushroominfection_dormant", // 1113783676
     0x4265a883: "mut_voi_chain_1_buff", // 1113958531
@@ -902,6 +960,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x437b0f83: "granddiseaseabsorb", // 1132138371
     0x43c6e1c9: "tse_bleedpot_inc_10pct", // 1137107401
     0x43efded3: "diligentwoodworker2", // 1139793619
+    0x4401f2e5: "ai_bloodbeast_heal", // 1140978405
     0x4418c76a: "status_passive_firestaff_pyroult_explosion_timer", // 1142474602
     0x44297bf6: "ai_spidervenom", // 1143569398
     0x442d4a25: "armadillo_removestamina", // 1143818789
@@ -914,6 +973,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x44a3e6f4: "elemental_cc_silenced", // 1151592180
     0x44b5205e: "se_demeterboonsecondaryd1_t2", // 1152720990
     0x44d11b14: "hatchet_ult_gainhp", // 1154554644
+    0x44d5028e: "status_perk_weapon_onkillstamina_staminaregenrate", // 1154810510
     0x44d9ed70: "ai_hercyne_broodmother_mushroomwatcher_ability", // 1155132784
     0x44dc1de5: "se_demeterboonpotiond3_t4", // 1155276261
     0x44e9bd7f: "summermedley_caviar", // 1156169087
@@ -921,6 +981,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x44f33593: "dungeon_orbgatekey", // 1156789651
     0x452bbdcc: "se_artemisboonpotiond4_t4", // 1160494540
     0x453ad901: "rune_detonate_greater", // 1161484545
+    0x453ecb64: "ai_crytpkeeper_tombstonedamage", // 1161743204
     0x4540abd3: "alchemistburden3", // 1161866195
     0x454c56ac: "foodmagt52", // 1162630828
     0x45b3df9d: "status_conqueror_sword_shieldlessagility_dodgeafterhittracker", // 1169416093
@@ -932,6 +993,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x46ca73c9: "ai_icedragon_empoweringlink_stack_apply", // 1187673033
     0x46fb9686: "status_perk_hammer_shockwave_rend", // 1190893190
     0x46fe0ede: "ai_naga_angryearth_channel_poison", // 1191055070
+    0x47087f59: "wb_mammoth_fl_mahantaram_title", // 1191739225
     0x4708a8a1: "bog_monster_power_spore_chain", // 1191749793
     0x4724bde2: "weaponcoatingeffect_angryearth_t3", // 1193590242
     0x4729dacd: "mut_fir_resist_1_buff", // 1193925325
@@ -942,6 +1004,8 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x47a4a5f0: "ai_explosivesprout_fireexplosion", // 1201972720
     0x47a64614: "ai_elephant_h_life_seed_se", // 1202079252
     0x47ce1ba8: "voidgauntlet_essencerupture_stamina", // 1204689832
+    0x47d7db65: "wb_mammoth_fl_mahantaram_voidball_countdown_death", // 1205328741
+    0x47f1f1f8: "wb_mammoth_fl_mahantaram_icetusk", // 1207038456
     0x480dd070: "mut_disease_1", // 1208864880
     0x484ffb72: "mut_staminadamage_2_blockbreak_bleed", // 1213201266
     0x48578db5: "ai_anubianguardian_bruteboss_divineanguish_damagebuff", // 1213697461
@@ -952,11 +1016,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x48b14113: "fooddexcont2", // 1219576083
     0x48ee23b3: "ai_hercynecorvid_alphaempower", // 1223566259
     0x48f6633d: "hatchet_rendingthrow_rendbuff", // 1224106813
+    0x48f84aad: "status_perk_artifact_set2_lightchest_manaloss", // 1224231597
     0x48faff1d: "status_perk_shield_kite_onblockdmg", // 1224408861
     0x48fd2003: "weaponcoatingeffect_lost_t2", // 1224548355
     0x49029174: "dungeon_cutlasskeys00_alligatorcaged", // 1224905076
+    0x4916524e: "ai_evil_knight_fire_champion_worldboss_spin_b", // 1226199630
     0x49645b53: "mut_curse1_ice_minor_chain_damage", // 1231313747
     0x49687c3b: "tse_stack_clamp_rend", // 1231584315
+    0x4987e08b: "gm_ctf_flag", // 1233641611
     0x498b913c: "status_perk_blunderbuss_mortarcharge_addammo", // 1233883452
     0x499b8135: "ai_naga_ancientguardian_arc_statuseffect", // 1234927925
     0x499d767a: "foodstrt4", // 1235056250
@@ -1019,6 +1086,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x4d101a60: "rune_graspingvines_dominator_rend", // 1292900960
     0x4d16e0f0: "mut_voi_stacks_1_effect", // 1293345008
     0x4d2f4bb1: "undead_spew", // 1294945201
+    0x4d362f89: "ai_evil_knight_fire_champion_worldboss_overheatspell_phase03", // 1295396745
     0x4d458ccd: "blockspeedperk2", // 1296403661
     0x4d552683: "ai_yeti_2022_avalancher_explosiondamage", // 1297426051
     0x4d57565c: "ai_yeti_2022_icedome_cleanse", // 1297569372
@@ -1041,6 +1109,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x4e1e56b4: "season7_trophypvpxpbonus", // 1310611124
     0x4e42160d: "mut_curse1_voi_major_cast", // 1312953869
     0x4e523a03: "foodconintt5", // 1314011651
+    0x4e7b9657: "ai_evil_knight_fire_champion_worldboss_spin_f", // 1316722263
     0x4e917c60: "ai_empress_waveimmunity", // 1318157408
     0x4ea410a2: "ai_heal_10percent", // 1319375010
     0x4ea7409a: "ai_swamp_dryad_earthbarrier", // 1319583898
@@ -1069,6 +1138,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x4fa9332b: "pvparena_fooddext3", // 1336488747
     0x4fab2848: "status_perk_legs_dodgesuccess_stamina_timer", // 1336617032
     0x4fe9d3ef: "ai_hercynereindeer_ally", // 1340724207
+    0x4ff2c6ab: "gm_ctf_flag_02", // 1341310635
     0x5020bd9f: "ai_echidna_pillar_cancel", // 1344322975
     0x50499c13: "status_conqueror_bow_poisonaoe_dot", // 1347001363
     0x50600ed6: "weaponcoatingeffect_beaststurkey_t5", // 1348472534
@@ -1084,6 +1154,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x5131fd43: "arcanistmastery3", // 1362230595
     0x51361ddd: "applyacid", // 1362501085
     0x513cc959: "ai_undeadshamanchaindamage", // 1362938201
+    0x5179001f: "difficultyscaling_maxhealthmod_buff", // 1366884383
     0x51958b11: "foodcorruptedt5", // 1368754961
     0x51b40a90: "status_common_haste_mount_small", // 1370753680
     0x51db3b54: "status_flail_hexdot", // 1373322068
@@ -1109,6 +1180,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x53861f2f: "ai_abominableliang_33percentdamage", // 1401298735
     0x5393b508: "warhammer_pass_haste", // 1402189064
     0x53977793: "diligentminer2", // 1402435475
+    0x539cedd8: "status_perk_artifact_set2_lightchest_manaloss_managain", // 1402793432
     0x53a13ff7: "ai_joven_oro_death_buff", // 1403076599
     0x53a65fb3: "ai_voidresist_buff", // 1403412403
     0x53c60bea: "ai_corruptedleviathan_tethered_center", // 1405488106
@@ -1123,6 +1195,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x54735560: "sandworm_removestamina", // 1416844640
     0x54828d21: "retaliatebonusdamageperk4", // 1417841953
     0x54991e84: "hatchet_infected_weaken", // 1419320964
+    0x54a1422a: "ai_evil_knight_fire_champion_worldboss_spin_r", // 1419854378
     0x54b5dd4b: "foodintstrt2", // 1421204811
     0x54ba3c79: "ai_hercyne_broodmother_corrosivegunk", // 1421491321
     0x54d35b20: "mut_ice_slow_1_effect", // 1423137568
@@ -1134,6 +1207,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x5536fb06: "ai_gorilla_boss_dmgapp_ice", // 1429666566
     0x553fbfa5: "blockspeedperk2condition", // 1430241189
     0x554a46ae: "mut_curse1_fir_minor_chain_damage", // 1430931118
+    0x55669722: "siegecurse1", // 1432786722
     0x55745e21: "mut_curse1_ice_major_damage_cleanse", // 1433689633
     0x557fda95: "status_perk_weapon_dodgesuccess_arcanedmg_tracker", // 1434442389
     0x559cbe8e: "nature mutations", // 1436335758
@@ -1163,6 +1237,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x57aaec3a: "honingstonet3", // 1470819386
     0x57c604c2: "ai_typhon_buffinghowl_playerhit_2", // 1472595138
     0x57e3e08a: "ai_evil_knight_ice_mace_slow_4sec", // 1474551946
+    0x57e4673c: "ai_evil_knight_fire_champion_worldboss_overheat_l2_ability", // 1474586428
     0x57fc127b: "status_perk_musket_traps_haste", // 1476137595
     0x58005ed2: "ai_desertscorpionslinger_poison_sandworm", // 1476419282
     0x58046e29: "chameleon_sticky_slow_6sec", // 1476685353
@@ -1178,8 +1253,10 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x59288f44: "status_flail_defensivestrike_reinforced", // 1495830340
     0x5944f9db: "ai_evil_knight_flamekeeper_roving_meteor_shower_timer", // 1497692635
     0x59463faa: "voidgauntlet_siphonconversion_check", // 1497776042
+    0x596aa389: "multiusepotionhealtht5", // 1500160905
     0x597ecdd4: "season2_trophyseasonxpbonus", // 1501482452
     0x598670e9: "ai_hercyne_broodmother_mushroomspellwatcher_ability", // 1501982953
+    0x5987b866: "ai_swamp_beast_boss_poison", // 1502066790
     0x59917edb: "foodfoccont5", // 1502707419
     0x59a8fb58: "void mutations", // 1504246616
     0x59b47123: "rune_stoneform", // 1504997667
@@ -1224,6 +1301,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x5c23adc5: "status_ability_lifestaff_sacredground_upgrade", // 1545842117
     0x5c48f3bc: "ai_rotatingbeam_damage", // 1548284860
     0x5c562db8: "potionhealt4", // 1549151672
+    0x5c61ee29: "status_perk_gem_plagued3", // 1549921833
     0x5c69b551: "status_flail_burst_healchain", // 1550431569
     0x5c8f16c3: "ai_health_2_buff", // 1552881347
     0x5caa40a0: "ai_naga_ancientguardian_snare_root", // 1554661536
@@ -1239,6 +1317,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x5d9ab7d1: "status_perk_spear_perforate_fortify", // 1570420689
     0x5dba9ae6: "status_mount_grantridingxp_small", // 1572510438
     0x5dbc4d26: "housingmingearbonusprovisioningt3", // 1572621606
+    0x5dd81968: "ai_evil_knight_fire_champion_worldboss_overheat_l2_trans", // 1574443368
     0x5dd95f89: "mut_fir_burn_2_buff", // 1574526857
     0x5dda79db: "ai_anubianguardian_horusboss_instrumentofjudgement_damage", // 1574599131
     0x5e38c64f: "ai_medusa_maze_unblockable", // 1580779087
@@ -1257,10 +1336,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x5efdcd3d: "foodstrcont2", // 1593691453
     0x5f1bcedf: "spear_cyclone_bonusstaminaonmultihit", // 1595657951
     0x5f2b7e69: "foodconstrt5", // 1596685929
+    0x5f41e0af: "gm_ctf_blueflag", // 1598152879
     0x5f536348: "status_perk_tools_gatherproc_gainhealth", // 1599300424
     0x5f913d53: "icemagic_unbrokenwindsperk", // 1603353939
+    0x5f92c97d: "ai_mummifiedcorpse_exhumelinensroot", // 1603455357
     0x5f9907b8: "tse_permsilence", // 1603864504
+    0x5fa370b3: "potionlifestealt5", // 1604546739
     0x5fc246ad: "status_perk_ward_amulet_deflightning", // 1606567597
+    0x5fd8428d: "potionshield_hittrackingorbs2", // 1608008333
     0x5fe192f8: "ai_swamp_dryad_beast_arena_enrage", // 1608618744
     0x5fe8a022: "ai_season_04_iceguardian_runefiredamagebuff", // 1609080866
     0x5ffc36fe: "status_perk_greataxe_reap_slow", // 1610364670
@@ -1299,6 +1382,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6204ef23: "se_demeterboonpotiond2_t3", // 1644490531
     0x6209a654: "warhammer_shockwave_stun", // 1644799572
     0x6209b4ec: "nighttimecold", // 1644803308
+    0x6211ac1e: "ai_feralghoul_weaken", // 1645325342
     0x6228830f: "ai_firenaga_lavaspawn_targetmarker", // 1646822159
     0x624745a2: "ai_sulfurelemental_sulfurswarm", // 1648838050
     0x62610164: "tse_exhaustpot_inc_10pct", // 1650524516
@@ -1330,6 +1414,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6418d149: "atb_dex_bonus_25_2_effect", // 1679348041
     0x643bb502: "diligentleatherworker2", // 1681634562
     0x644144a8: "atb_con_bonus_200_2_effect", // 1681999016
+    0x64a6e58f: "wb_mammoth_fl_mahantaram_root_feedback_fire", // 1688659343
     0x64a720ad: "status_perk_common_rechargepotion", // 1688674477
     0x64a8927a: "mut_rotatingbeam_buff", // 1688769146
     0x64dade73: "ai_typhon_hungryhowl_stun", // 1692065395
@@ -1356,6 +1441,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x670f277f: "ai_icedryad_frostfang_buff_empower", // 1729046399
     0x670fd574: "housingdmgancientst0", // 1729090932
     0x6711875b: "tse_dotpot_inc_10pct", // 1729202011
+    0x674f735f: "ai_mummifiedcorpse_exhumewatcher", // 1733260127
     0x6752990f: "status_passive_firestaff_pyro_fortonburn", // 1733466383
     0x677154fd: "status_perk_weapon_attunement_icedmg", // 1735480573
     0x678e4ee3: "mammoth_world_boss_rend", // 1737379555
@@ -1371,6 +1457,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x681d2879: "status_flail_ultimate_allydamagesplit_nearbycheck", // 1746741369
     0x682669bf: "ai_isabella_minhealth_40", // 1747347903
     0x68353f00: "foodjewelcraftert3", // 1748320000
+    0x683a29af: "season8_trophyterritorybonus", // 1748642223
     0x684421b6: "tse_weakenpot_dec_10pct", // 1749295542
     0x684574b9: "sandworm_acid_storm_cast", // 1749382329
     0x685c9569: "ai_season_04_iceguardian_hypothermia_solo_abilitycheck", // 1750898025
@@ -1381,8 +1468,10 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x68beded9: "armorermastery1", // 1757339353
     0x68cbd1b1: "ancientmageinvulnerable", // 1758187953
     0x68d980d7: "foodcondext5", // 1759084759
+    0x68de011f: "pvparenadeathfog_02", // 1759379743
     0x68e38f0a: "ai_ice_torso_boss_phase_2_minhealth", // 1759743754
     0x68e78e2e: "foodminert3", // 1760005678
+    0x68eaf973: "status_perk_gem_plaguedward1", // 1760229747
     0x691c132c: "equipload_critdmgreduction_light", // 1763447596
     0x691c5e68: "haleandheartylsb", // 1763466856
     0x69221107: "ai_yeti_2022_remove_fortify", // 1763840263
@@ -1420,6 +1509,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6b704470: "status_perk_ward_amulet_defstrike", // 1802519664
     0x6b70efa4: "ai_snare_4sec", // 1802563492
     0x6b8220c2: "ai_ice_torso_boss_weakpointstacks", // 1803690178
+    0x6b893e8c: "ai_evil_knight_fire_champion_worldboss_overheatspell_warning", // 1804156556
     0x6b8f5ea7: "ai_hercyne_broodmother_forcescale", // 1804557991
     0x6ba2ac93: "greatsword_passive_fortifyfullhealth", // 1805823123
     0x6ba6763f: "ancientguardiantimer", // 1806071359
@@ -1428,6 +1518,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6bd1afc3: "spear_perforate_weakenstack", // 1808904131
     0x6bd8542f: "status_perk_artifact_set2_flailweaken", // 1809339439
     0x6bf32d7c: "ai_season_04_iceguardian_freezinggust_pulse", // 1811099004
+    0x6c02404e: "wb_mammoth_fl_mahantaram_root_feedback_lightning", // 1812086862
     0x6c382e6a: "status_perk_armor_jeweler", // 1815621226
     0x6c4ec6a6: "greatsword_passive_critstaminagain", // 1817101990
     0x6c70b2d1: "mut_curse2_nat_vfx_1_ability", // 1819325137
@@ -1442,6 +1533,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6cd8d2d0: "status_perk_artifact_set2_greatswordhaste", // 1826149072
     0x6cdbae19: "potionboostfireabst4", // 1826336281
     0x6d02ac5e: "potionfamilywardlostt5", // 1828891742
+    0x6d07ec3a: "status_perk_armor_hastepotencyinc", // 1829235770
     0x6d2f0117: "mut_enrage_timer", // 1831797015
     0x6d492bd7: "miningmastery1", // 1833511895
     0x6d57f05b: "ai_echidna_targetmarker", // 1834479707
@@ -1449,11 +1541,13 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6d818233: "status_flail_trip_fortify", // 1837204019
     0x6d91ae80: "ai_gorilla_boss_lightningleap_castchain", // 1838263936
     0x6d94be99: "voidgauntlet_empowerlowmana", // 1838464665
+    0x6daeb3dc: "potionshieldt5", // 1840165852
     0x6db7ac99: "token_territory_1", // 1840753817
     0x6dc11312: "ai_evil_knight_gruntmaster_lavaburn", // 1841369874
     0x6dc5ed0a: "foodbeastt2", // 1841687818
     0x6dc7a666: "ai_disease_gravedigger", // 1841800806
     0x6dcb0fc2: "ai_admiralbrute_effectsresist", // 1842024386
+    0x6dd25b94: "gm_jumppad_auto", // 1842502548
     0x6dd77f42: "foodconfoct5", // 1842839362
     0x6df09434: "dungeon_brimstonesands00_statue", // 1844483124
     0x6e196ee6: "tse_knockback_inc_10pct", // 1847160550
@@ -1468,18 +1562,22 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x6ee30047: "pvparena_honingstonet3", // 1860370503
     0x6efce001: "sprint_delay_combat_timer_light", // 1862066177
     0x6f1340ef: "ai_torso_boss_arcane_slicer_damage", // 1863532783
+    0x6f176c24: "status_rune_spinningswords_slow", // 1863805988
     0x6f21c4e1: "ai_evil_knight_fire_champion_spin_l_tick", // 1864484065
     0x6f4b7beb: "tse_debuffpot_dec_10pct", // 1867217899
     0x6f4b8e3e: "housingmingearbonusengineeringt2", // 1867222590
     0x6f5b05e0: "majorpoisonabsorb", // 1868236256
+    0x6f73348b: "status_seasonalserver_deathcount", // 1869821067
     0x6f799fc9: "status_upgrade_sword_finalstand_slowpotencyreduction", // 1870241737
     0x6fa3ffa3: "ai_typhon_scaleup_forever", // 1873018787
     0x6fa6d3ea: "tse_silencedur_dec_10pct", // 1873204202
     0x6fb943c0: "status_passive_firestaff_pyro_haste", // 1874412480
     0x6fbaf9aa: "status_conqueror_flail_diseaseconsumption", // 1874524586
     0x6fc69471: "undeadhunter_burn", // 1875285105
+    0x6fcca04e: "ai_evil_knight_fire_champion_worldboss_spin_f_tick", // 1875681358
     0x6fcfa152: "fooddott5", // 1875878226
     0x6fd12077: "rune_firestorm_empower", // 1875976311
+    0x6feb344c: "ai_isabella_worldboss_pylon_empower", // 1877685324
     0x6ffc0e79: "campregenl14", // 1878789753
     0x7011dc0a: "status_mount_grantridingxp_5levels", // 1880218634
     0x70144555: "rapier_riposte_empower", // 1880376661
@@ -1496,6 +1594,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x70d098a5: "tse_stack_unclamp_fortify", // 1892718757
     0x70d6e8b4: "applyacidfast", // 1893132468
     0x70eb4d31: "atb_str_bonus_300_2_effect", // 1894468913
+    0x70eeb18c: "wb_mammoth_fl_mahantaram_void_empowered", // 1894691212
     0x70f4d281: "resolute3", // 1895092865
     0x70fc5431: "taskmaster_attackbuff", // 1895584817
     0x70fe3d11: "status_whenfoesnearcleanup", // 1895709969
@@ -1541,6 +1640,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7349d084: "status_perk_armor_conditioning_naturedef", // 1934217348
     0x73614520: "ai_evil_knight_fire_champion_lavatide_ability", // 1935754528
     0x736b55e8: "atb_foc_bonus_350_2_effect", // 1936414184
+    0x736d9b42: "ai_evil_knight_fire_champion_worldboss_overheat", // 1936563010
     0x7377fa12: "mut_curse1_vfx_2", // 1937242642
     0x7389aa24: "status_perk_armor_engineer", // 1938401828
     0x73982144: "icemagic_heavyattackslow", // 1939349828
@@ -1548,6 +1648,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x73af00b6: "foodengineert1", // 1940848822
     0x73c1d8c6: "rune_hereticsfall_survivor", // 1942083782
     0x73c21ec6: "loggingmastery2", // 1942101702
+    0x73daf99c: "status_seasonalserver_deathtracker", // 1943730588
     0x73f8d4f5: "mut_curse1_nat_major_cast", // 1945687285
     0x73fe790d: "mut_nat_crawler_1_buff", // 1946056973
     0x74011125: "foodcont5_artisan", // 1946226981
@@ -1573,6 +1674,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7557ef95: "ai_megaflora_frostbite", // 1968697237
     0x75924d3d: "ai_oro_rend", // 1972522301
     0x75a27d57: "ai_hercyne_bleed", // 1973583191
+    0x75b67f92: "gm_ctf_blueflag_03", // 1974894482
     0x75bf9c41: "status_conquerors_dodgecorruptionball_empower", // 1975491649
     0x75c43858: "foodfocdext3", // 1975793752
     0x75f18cba: "ai_naga_corrupted_corruptioncore", // 1978764474
@@ -1597,6 +1699,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x77428d41: "voidgauntlet_siphonaura_heal", // 2000850241
     0x775b329f: "ai_torso_boss_finallaser", // 2002465439
     0x776000e1: "ai_gorilla_boss_frozenrush_damage", // 2002780385
+    0x776d3773: "ai_soulharvester_leechdamage", // 2003646323
     0x777b51f4: "ai_abominableliang_vfx_transition", // 2004570612
     0x777d2d0f: "ai_corruptedleviathan_eyeballdamage_caster", // 2004692239
     0x778e86a6: "mut_curse1_ice_major_cast_aoe", // 2005829286
@@ -1624,10 +1727,12 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x789d3f93: "hatchet_pass_dotpurge", // 2023571347
     0x78a188e4: "status_conqueror_targeteffect_falldamageincrease", // 2023852260
     0x78e1bd2b: "ai_mordred_final_ritual", // 2028059947
+    0x78f08496: "ai_evil_knight_fire_champion_worldboss_spin_ability", // 2029028502
     0x78fc76eb: "status_perk_armor_miningluck", // 2029811435
     0x79392ec2: "ai_torso_boss_laser_rend_apply", // 2033790658
     0x794d1544: "weaponcoatingeffect_corrupted_t3", // 2035094852
     0x798fe90e: "ai_sirencastchain", // 2039474446
+    0x799a218e: "ai_mummifiedcorpse_auraburn_lowfrequency", // 2040144270
     0x79b29c06: "status_passive_firestaff_incinerate_weaken", // 2041748486
     0x79df530a: "musket_pass_weaken", // 2044678922
     0x79f5f3e5: "atb_dex_bonus_critondodge_spamprevention", // 2046161893
@@ -1651,6 +1756,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7b54238c: "lifestaff_managain_siphon", // 2069111692
     0x7b617751: "foodfoct4", // 2069985105
     0x7b65ddca: "dungeon_cutlasskeys00_tornadotrapai", // 2070273482
+    0x7b881fd6: "status_seasonalserver_deathfunctionality_6", // 2072518614
     0x7b88aa5b: "tse_rootpot_inc_10pct", // 2072554075
     0x7ba1a75d: "icemagic_frostbite_deadlyfrost_dur3", // 2074191709
     0x7bb4b449: "ai_evil_knight_icenova_initialeffect", // 2075440201
@@ -1661,12 +1767,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7c4733dd: "ai_gorilla_boss_chill", // 2085041117
     0x7c5d9ee0: "icemagic_freeze_cooldown", // 2086510304
     0x7c70de59: "tse_diseasedur_dec_10pct", // 2087771737
+    0x7c7e96ea: "ai_admiralbrute_worldboss_cannonrain_targeted_dot", // 2088670954
     0x7c942410: "bandageheal", // 2090083344
     0x7c96cbff: "ai_dptank_fortify_unlimited", // 2090257407
     0x7c97f152: "ai_halloweenplaguer_healpuddle", // 2090332498
     0x7c981cd5: "chainfiretrigger", // 2090343637
     0x7cb68e63: "status_perk_artifact_set2_ring1empower", // 2092338787
     0x7cbd5d65: "serumregen", // 2092784997
+    0x7ce5dbcf: "status_seasonalserver_deathfunctionality_2", // 2095438799
     0x7ce95b73: "mut_voi_leech_2_damage", // 2095668083
     0x7cf1c2f4: "potionfamilywardcorruptedt5", // 2096218868
     0x7d0ecbf3: "housingdmgangryeartht2", // 2098121715
@@ -1705,7 +1813,9 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7eeae942: "status_perk_armor_conditioning_slashdef", // 2129324354
     0x7f0045e7: "status_perk_amulet_miningluck", // 2130724327
     0x7f0343a2: "traversal_roadsprintboost_haste_fcb_bonus", // 2130920354
+    0x7f21f951: "ai_admiralbrute_worldboss_barrelfiredamage", // 2132932945
     0x7f2ca8ee: "status_perk_tool_harvestingyield", // 2133633262
+    0x7f2d1962: "ai_swamp_beast_boss_poison_nostack", // 2133662050
     0x7f31fd6b: "ai_echidna_pillartop_buff", // 2133982571
     0x7f329d12: "dotresilience_15", // 2134023442
     0x7f460e7b: "ai_medusa_poison", // 2135297659
@@ -1716,6 +1826,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x7f8ca0ff: "mammoth_ice_empowered", // 2139922687
     0x7fcce774: "ai_gorilla_boss_burn", // 2144135028
     0x7fcf9296: "greatsword_passive_recentblock", // 2144309910
+    0x7fd4384e: "wb_mammoth_fl_mahantaram_lightning_empowered", // 2144614478
     0x7fd7c6a9: "sprint_delay_combat_timer_heavy", // 2144847529
     0x7fdbf78a: "status_perk_runeglass_attunement_lightningdmg", // 2145122186
     0x7ffd6b2e: "ai_sandelemental_questboss_removestamina", // 2147314478
@@ -1753,6 +1864,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x82fdff4a: "foodrecoveryt5b", // 2197684042
     0x830d092e: "status_perk_blunderbuss_netshot_exhaust", // 2198669614
     0x83280864: "ai_anubianguardian_bruteboss_divinerage_damagebuff", // 2200438884
+    0x8331782b: "gm_ctf_redflag_02", // 2201057323
     0x833ee5f0: "ai_voiddmg_oneshot", // 2201937392
     0x83474afb: "miningmastery3", // 2202487547
     0x834c5f80: "mut_curse2_minor_cast", // 2202820480
@@ -1774,6 +1886,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x84b4da77: "foodconfoct3", // 2226444919
     0x84b56087: "status_perk_tool_skinningluck", // 2226479239
     0x84b6d492: "mut_fir_curse4_major_cast", // 2226574482
+    0x84bbca35: "status_weapon_melee_perk_alternateattacks_basicbuff", // 2226899509
     0x84bf3bbe: "status_perk_armor_harvestingyield", // 2227125182
     0x84c8a374: "tse_frostbitepot_inc_10pct", // 2227741556
     0x84d15f98: "ai_desertscorpionimpaler_poison_sandworm", // 2228314008
@@ -1783,6 +1896,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x8521df6e: "status_perk_bags_stoneweight", // 2233589614
     0x852b1117: "wcconsumable_buttercreampudding", // 2234192151
     0x854501d9: "ai_weaken", // 2235892185
+    0x855b51c7: "ai_admiralbrute_worldboss_bomberkill", // 2237354439
     0x8562a3fd: "ai_abominableliang_angered", // 2237834237
     0x8562f91d: "ai_admiralbrute_barrelfiredamage", // 2237856029
     0x85829d9b: "ai_evil_knight_flamekeeper_roving_meteor_shower_cast", // 2239929755
@@ -1802,6 +1916,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x86ac0467: "fooddott3", // 2259420263
     0x86ad42ca: "ai_evil_knight_attacksuccess", // 2259501770
     0x86b0bff5: "armorermastery3", // 2259730421
+    0x86e4985f: "status_perk_gem_plaguedward3", // 2263128159
     0x86e9ef02: "foodminert1", // 2263478018
     0x86ebb572: "hatchet_berserk_speedup", // 2263594354
     0x87082089: "se_foodangryearthcandyfisht5_atlanticmackerel", // 2265456777
@@ -1811,6 +1926,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x8780a572: "pvparena_honingstonet5", // 2273355122
     0x8781c8d3: "musket_pass_twohitstack_trigger_cooldown", // 2273429715
     0x87a3b567: "status_perk_armor_dodgesuccess_fortify", // 2275652967
+    0x87a7dd8b: "ai_sirenqueen_sleepy", // 2275925387
     0x87cf7dca: "sandworm_arenaencounter_pressureplate_ranged_buff", // 2278522314
     0x88178fe1: "status_flail_defensivestrike_upgrade_empower", // 2283245537
     0x881bc879: "playerhealthregen_disable_ftue", // 2283522169
@@ -1819,6 +1935,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x8864362b: "status_perk_bags_harestingweight", // 2288268843
     0x8866391b: "blunderbuss_abilityramp", // 2288400667
     0x886d07f8: "pvparena_potionhealt3", // 2288846840
+    0x886d4daa: "status_perk_armor_lifestealhealing", // 2288864682
     0x88830fae: "musket_sticky_slow", // 2290290606
     0x8883cbf0: "status_flail_ultimate_allydamagesplit_tracker", // 2290338800
     0x88895d30: "fooddexfoct2", // 2290703664
@@ -1855,16 +1972,19 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x8bcf6ff4: "spinattackdamageperk2", // 2345627636
     0x8bdebdc8: "status_perk_artifact_set2_amuletinvurln", // 2346630600
     0x8bee2861: "warhammer_status_stun5s", // 2347640929
+    0x8c081a5c: "status_perk_feet_hasteonvault", // 2349341276
     0x8c73ebdc: "blunderbuss_futureendeavor_stam", // 2356407260
     0x8c8150db: "mut_curse1_lig_minor_cast", // 2357285083
     0x8c8610e4: "woodworkermastery3", // 2357596388
     0x8ca35437: "mut_nat_pools_2_buff", // 2359514167
     0x8cb3fe49: "atb_foc_bonus_300_1_effect", // 2360606281
+    0x8cdc0734: "ai_admiralbrute_worldboss_effectsresist", // 2363230004
     0x8d112046: "musket_pass_damage_everyadsshot", // 2366709830
     0x8d174367: "warhammer_pass_exhaustonhit", // 2367112039
     0x8d1864d7: "blunderbuss_overloadtimerhelper", // 2367186135
     0x8d1e77e4: "status_passive_greataxe_reaper_dmgwhenblocked", // 2367584228
     0x8d1f8b70: "clarity1", // 2367654768
+    0x8d2f9711: "ai_evil_knight_fire_champion_worldboss_magmaball_stall", // 2368706321
     0x8d3b2074: "ai_selfdestruct_buff", // 2369462388
     0x8d46ba88: "status_perk_runeglass_attunement_arcanedmg", // 2370222728
     0x8d4e4552: "voidgauntlet_nullchamber_nullify_aoe", // 2370717010
@@ -1909,6 +2029,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x902eb071: "weaponcoatingeffect_corrupted_t5", // 2418978929
     0x9031f3ca: "foodminert52", // 2419192778
     0x903a289b: "status_perk_tool_miningyield", // 2419730587
+    0x903e2cf6: "ai_mummifiedcorpse_sharedcremationself", // 2419993846
     0x904078be: "ai_ice_torso_boss_targeting", // 2420144318
     0x904ae5c7: "diligentskinner3", // 2420827591
     0x9061296b: "applyblightl3", // 2422286699
@@ -1918,6 +2039,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x9090341f: "endurance1", // 2425369631
     0x90acf5d6: "weaverburden3", // 2427254230
     0x90ad6796: "ai_damage_buff", // 2427283350
+    0x90d18edc: "status_perk_artifact_set2_towershield_spellcast", // 2429652700
     0x90d857c0: "status_passive_lifestaff_healing_aoehealwhenhit", // 2430097344
     0x90decc60: "automountdash", // 2430520416
     0x90ec87b6: "musicbuff_groupxpsharing_t4_amazing", // 2431420342
@@ -1956,6 +2078,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x92ad9b5f: "ai_poison_55", // 2460851039
     0x92b80cb1: "ai_lightningdamage_buff", // 2461535409
     0x92da5bb2: "blunderbuss_gunbuttstamcost", // 2463783858
+    0x92ebbae3: "status_seasonalserver_deathfunctionality_0", // 2464922339
     0x9334df6e: "mut_voi_curse3_minor_damage", // 2469715822
     0x933c6c61: "ai_season_04_iceguardian_ancientflamebearer", // 2470210657
     0x933cce40: "status_perk_ward_shield_deflightning", // 2470235712
@@ -1967,6 +2090,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x938d7b4c: "raid_cutlasskeys00_glyphpillar", // 2475522892
     0x93b939f4: "mut_ice_closezone_2_damage", // 2478389748
     0x93c0dda5: "status_perk_artifact_set1_lightfeetheal", // 2478890405
+    0x93c59fdc: "siren_carrybarrel", // 2479202268
     0x93cb0241: "godmodehealth", // 2479555137
     0x93d3b856: "mut_curse2_minor_slowrend", // 2480126038
     0x93d7eb65: "status_perk_runeglass_attunement_icedmg", // 2480401253
@@ -1986,6 +2110,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x9529846a: "rune_hereticsfall_greater", // 2502526058
     0x954058b1: "status_flail_passive_nearbyally_empower", // 2504022193
     0x95514423: "mut_curse1_ice_minor_cast_chain", // 2505131043
+    0x95867efa: "status_seasonalserver_deathfunctionality_4", // 2508619514
     0x9587f0f6: "status_ability_lifestaff_orbofprotection", // 2508714230
     0x959267c1: "potionfamilywardcorruptedt3", // 2509400001
     0x95a27ecc: "ai_admiralbrute_phase2_transition", // 2510454476
@@ -2013,11 +2138,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x9760b126: "mut_curse1_fir_major_damage_cleanse", // 2539696422
     0x97730fc8: "ai_evil_knight_seasonsbeatings", // 2540900296
     0x97733c24: "ai_haunted_buff", // 2540911652
+    0x979506fd: "ai_mummifiedcorpse_sharedcremationselfclear", // 2543126269
+    0x979e5ac4: "status_perk_artifact_set2_heavyfeet_haste", // 2543737540
     0x97adc675: "mut_voi_death_buff", // 2544748149
     0x97b1c688: "mut_fir_curse3_major_buff", // 2545010312
     0x9809f583: "icemagic_freeze", // 2550789507
     0x9833e59e: "voidgauntlet_essencerupture", // 2553537950
     0x9842081b: "status_perk_artifact_set1_greatsword_fort", // 2554464283
+    0x9848c5df: "season8_trophyseasonxpbonus", // 2554906079
     0x989a5ff1: "ai_firenaga_flamethrower_dot", // 2560253937
     0x98aad802: "mut_ice_slow_2_buff", // 2561333250
     0x98e94aa0: "status_perk_tool_moteearth", // 2565425824
@@ -2027,6 +2155,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x9911a09d: "battletokengen", // 2568069277
     0x99143147: "ai_mage_miniboss_heal", // 2568237383
     0x9927bba1: "ai_hercyne_broodmother_mushroominfection_activetick", // 2569517985
+    0x99301b52: "status_amulet_perk_dodgeburn_durred", // 2570066770
     0x99330902: "weaponsmithmastery2", // 2570258690
     0x994872f2: "foodlumberjackt4", // 2571662066
     0x995d1047: "foodlostt5", // 2573013063
@@ -2047,12 +2176,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x9a49ed2d: "status_ability_lifestaff_lightsembrace", // 2588536109
     0x9a5dc0b5: "ai_sandelemental_questboss_targeted_tremor_cast_phase02", // 2589835445
     0x9a68a076: "ai_hercyne_broodmother_sleepy", // 2590548086
+    0x9a749fa3: "ai_mummifiedcorpse_exhumehit", // 2591334307
     0x9ae988c5: "ai_evil_knight_fire_champion_spin_ability", // 2598996165
     0x9b0fe451: "tse_stack_nocat_rend", // 2601509969
     0x9b454eeb: "mammoth_void_empowered", // 2605010667
     0x9b627bc2: "status_perk_ward_shield_defarcane", // 2606922690
     0x9b6a4d55: "foodhuntert5", // 2607435093
     0x9b96e8cb: "se_artemisboonpotiond1_t2", // 2610358475
+    0x9bb81ebe: "gm_ctf_blueflag_01", // 2612534974
     0x9bcb2e8b: "foodstrdext2", // 2613784203
     0x9c07894c: "foodhuntert1", // 2617739596
     0x9c10366f: "lumberjackburden3", // 2618308207
@@ -2091,6 +2222,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0x9eb25caa: "ai_ice_knight_iceypull_attacksuccess", // 2662489258
     0x9ebd0612: "tse_dmg_dec_10pct", // 2663187986
     0x9ebebb21: "status_common_heal_mount_large", // 2663299873
+    0x9ebedac8: "status_artifact_set2_mediumhead_attributes", // 2663307976
     0x9ebf21e1: "se_demeterboonpotiond1_t1", // 2663326177
     0x9ec5d11e: "foodstrfoct2", // 2663764254
     0x9ec71cb4: "mut_ice_curse4_minor_buff", // 2663849140
@@ -2154,6 +2286,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xa305f3d9: "ai_evil_knight_flamekeeper_bomb_burn", // 2735076313
     0xa30f4aca: "musket_pass_headshotreloadtrigger", // 2735688394
     0xa325e494: "icemagic_pyloncooldownsafety", // 2737169556
+    0xa3384ea5: "ai_evil_knight_fire_champion_worldboss_overheatspell_phase01", // 2738376357
     0xa342a7f9: "megaturkey_aoe_jump", // 2739054585
     0xa3533990: "musket_stoppingpower_slow", // 2740140432
     0xa359af3d: "foodweaponsmitht2", // 2740563773
@@ -2228,10 +2361,12 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xa7ddb66e: "ai_abominableliang_protectivetalisman", // 2816325230
     0xa7e30e44: "tse_shockdur_dec_10pct", // 2816675396
     0xa7e9a021: "firestaff_firedmg_aura_passive", // 2817105953
+    0xa7f92bb8: "wb_mammoth_fl_mahantaram_arcane_empowered", // 2818124728
     0xa8033b7c: "mut_curse1_fir_major_cast_aoe", // 2818784124
     0xa8236a6a: "mut_fir_curse3_minor_buff", // 2820893290
     0xa82cd08b: "rapier_riposte_uninterruptible", // 2821509259
     0xa87595ec: "ai_healauraonhit_buff", // 2826278380
+    0xa890687d: "ai_anubian_lotus_scarab_worldboss_sunspots_burn", // 2828036221
     0xa8b346e5: "ai_motherwell_se_obj_barrier", // 2830321381
     0xa8ba3d59: "greatsword_counter_nointerrupt", // 2830777689
     0xa8cb546d: "icemagic_icestorm", // 2831897709
@@ -2274,6 +2409,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xaacbe97a: "ai_typhon_buffinghowl_playerhit_10", // 2865490298
     0xaae5fbe8: "ai_gravedigger_removestamina", // 2867198952
     0xaaf40ac8: "mut_base_curse4_minor_silence", // 2868120264
+    0xaafe6e56: "status_perk_artifact_set2_towershield_allybuff", // 2868801110
     0xab0a0f8e: "atb_dex_bonus_50_2_effect", // 2869563278
     0xab0c1871: "fooddexintt2", // 2869696625
     0xab438a44: "greatsword_drainattack_heal", // 2873330244
@@ -2320,6 +2456,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xae61d0e8: "status_perk_lifestaff_beacon_healmod", // 2925646056
     0xae685eef: "diligentharvester1", // 2926075631
     0xae773c32: "status_upgrade_greataxe_gravitywell_armorinwell", // 2927049778
+    0xaeae7f49: "ai_evil_knight_fire_champion_worldboss_spin_l", // 2930671433
     0xaeb3e7c6: "ai_hercyne_broodmother_forcehatched", // 2931025862
     0xaf0189e6: "status_conqueror_musket_targetdodgedmg_damage", // 2936113638
     0xaf024058: "corruptedlegion_cyclops_rollingblockade_fortify", // 2936160344
@@ -2338,6 +2475,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb0144c74: "status_perk_amulet_skinningluck", // 2954120308
     0xb01a7992: "godmodeall", // 2954525074
     0xb0378e16: "prospectorburden1", // 2956430870
+    0xb047152a: "wb_mammoth_fl_mahantaram_root_feedback_ice", // 2957448490
     0xb051c128: "gorilla_rage_ice_buff", // 2958147880
     0xb0684f77: "ai_explosivesprout_poisonexplosion", // 2959626103
     0xb0b3e0bf: "warm", // 2964578495
@@ -2345,12 +2483,15 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb0f2dbee: "foodfoccont3", // 2968706030
     0xb0fc15dc: "skinningmastery3", // 2969310684
     0xb103763c: "ai_enable_stagger", // 2969794108
+    0xb1045d18: "status_webtrap_50%", // 2969853208
     0xb1107fc8: "tse_dotdur_dec_10pct", // 2970648520
+    0xb131189e: "ai_naga_angryearth_worldboss_channel_poison", // 2972784798
     0xb14506ec: "frozen_wind_entered", // 2974090988
     0xb150bf60: "ai_anubian_burn_9", // 2974859104
     0xb1587977: "status_perk_head_oncrittaken_critchance", // 2975365495
     0xb184c8b2: "hercyne vfx", // 2978269362
     0xb1879725: "foodintt2", // 2978453285
+    0xb1886b50: "status_perk_artifact_set2_lighthands_empowerstack", // 2978507600
     0xb1977a06: "eatrawfood", // 2979494406
     0xb1b4e64c: "status_conqueror_armor_swarmdefense_healingreduction", // 2981422668
     0xb1e7ca76: "lifestaff_damageenemy_armor_siphon", // 2984757878
@@ -2360,6 +2501,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb244125f: "mut_nat_curse3_major_buff", // 2990805599
     0xb24801c3: "status_perk_weapon_dodgesuccess_icedmg", // 2991063491
     0xb2654006: "ai_isabella_solo_root", // 2992979974
+    0xb26f8f05: "status_perk_gem_plagued1", // 2993655557
     0xb290788c: "status_common_heal_mount_small", // 2995812492
     0xb2a41623: "ai_bleed_9", // 2997098019
     0xb2a4815c: "azothstaffflamecarry", // 2997125468
@@ -2381,12 +2523,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb3b22c0a: "housingmingearbonusprovisioningt1", // 3014798346
     0xb3b37c13: "ai_elephant_h_leech_seed_se", // 3014884371
     0xb3df1992: "status_flail_charge_fortify", // 3017742738
+    0xb3e3e131: "status_perk_artifact_set2_blunderbuss_knockbacktrigger", // 3018055985
     0xb3e865b4: "status_rune_firestorm_major", // 3018352052
     0xb3eef9ef: "oakfleshbalmt5", // 3018783215
     0xb3fba99f: "ai_diseaseaura_buff", // 3019614623
     0xb3ff5ba8: "curse 2 major (blood offering)", // 3019856808
     0xb414d259: "dungeon_sirenoffering", // 3021263449
     0xb424c880: "ai_hercyne_broodmother_hercyneegg_hatching", // 3022309504
+    0xb44c730e: "ai_cryptkeeper_reaperembrace", // 3024909070
     0xb457150a: "rune_bilebomb_survivor", // 3025605898
     0xb45a43cc: "housingdmgcorruptedt3", // 3025814476
     0xb45d64ae: "status_flail_slam_weakenstack", // 3026019502
@@ -2424,12 +2568,15 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb672a191: "ai_typhon_charge", // 3060965777
     0xb6963d2b: "status_perk_ward_amulet_defslash", // 3063299371
     0xb6c9949e: "status_common_fortify", // 3066664094
+    0xb6db8207: "potionburstregen_burstt5", // 3067838983
     0xb6dc782a: "chainlvoidtrigger", // 3067901994
     0xb6dd5a78: "dungeon_corruptedportalteleport", // 3067959928
     0xb713eddc: "ai_typhon_buffinghowl_playerhit_8", // 3071536604
+    0xb7209584: "status_perk_weapon_rendingstacks", // 3072365956
     0xb734e8c8: "premiumemote_firework2", // 3073697992
     0xb73fa979: "blunderbuss_hitbymortar", // 3074402681
     0xb7443dc0: "voidgauntlet_decayingorb_heal", // 3074702784
+    0xb752d9b0: "ai_mummifiedcorpse_disablestagger", // 3075660208
     0xb7582f5b: "celestial_groupbuff_upgrade", // 3076009819
     0xb7585ba0: "tauntai", // 3076021152
     0xb79dfa64: "status_conqueror_lifestaff_supportiveheal_spellcast", // 3080583780
@@ -2437,6 +2584,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xb7b5600e: "status_passive_firestaff_incinerate_empower", // 3082117134
     0xb7bd8f69: "ai_dryadsiren_spin_phase3_a_tick", // 3082653545
     0xb7be8d5c: "warhammer_gavel_haste", // 3082718556
+    0xb7c62125: "ai_admiralbrute_worldboss_blackpowder_burn", // 3083215141
     0xb7e8505d: "status_perk_greataxe_maelstrom_weaken", // 3085455453
     0xb80995d6: "status_flail_aurablast_empower", // 3087635926
     0xb82f3c5a: "ai_anubianguardian_horusboss_divinedoom_ontickcast", // 3090103386
@@ -2463,8 +2611,10 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xba082156: "status_raid_perk_amulet_slowpotencyreduction", // 3121094998
     0xba0ded28: "ai_maiden_breath", // 3121474856
     0xba0ea2ee: "musicbuff_playerencumbrance_t4_amazing", // 3121521390
+    0xba200df4: "status_perk_weapon_onkillheal_hithealing", // 3122662900
     0xba2c27b9: "foodfocintt5", // 3123455929
     0xba2d3763: "ai_echidna_pillar_cast", // 3123525475
+    0xba425d38: "status_artifact_set1_mediumlegs_attributes", // 3124911416
     0xba582d3b: "pvparena_majorpotionregen", // 3126340923
     0xba755c1b: "fooddexstrt2", // 3128253467
     0xba78fa3b: "mut_nat_curse3_minor_damage", // 3128490555
@@ -2489,6 +2639,8 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xbb596b72: "foodcont4", // 3143199602
     0xbb77f82e: "mut_fir_damage_buff", // 3145201710
     0xbb9265e1: "mut_fir_aoe_2_buff", // 3146933729
+    0xbb97072f: "ai_cryptkeeper_tombstone_fortify", // 3147237167
+    0xbb9e572f: "ai_worldboss_anubian_lotus_scarab_title", // 3147716399
     0xbba4211e: "blunderbuss_netshot", // 3148095774
     0xbba8afa9: "icemagic_windchill_shatter", // 3148394409
     0xbbb73aa5: "greatsword_passive_debuffreducecontrol", // 3149347493
@@ -2570,6 +2722,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xc1bda863: "mut_fir_resist_2_buff", // 3250432099
     0xc1e08fa4: "status_perk_weapon_blockspeed_haste", // 3252719524
     0xc1fdb8f5: "status_perk_ward_shield_defstrike", // 3254630645
+    0xc2057b8a: "status_perk_gem_plagued4", // 3255139210
     0xc2121bc8: "greaterpotionregen", // 3255966664
     0xc2159972: "status_conqueror_hatchet_combustion_damage", // 3256195442
     0xc232b81b: "potionhealt3", // 3258103835
@@ -2620,6 +2773,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xc4e76761: "ai_naga_ancientguardian_arcana", // 3303499617
     0xc4e9c979: "oakfleshbalmt4", // 3303655801
     0xc4f1da2d: "mut_voi_chain_2_buff", // 3304184365
+    0xc502806e: "ai_rw_siege_pool_thornslashing", // 3305275502
     0xc514c4f3: "icemagic_iceshower_freeze_cooldown", // 3306472691
     0xc52b5889: "fooddefenset5", // 3307952265
     0xc532b794: "musicbuff_playerencumbrance_t3_great", // 3308435348
@@ -2704,15 +2858,18 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xcb2e9bea: "ai_yonas_stun_4sec", // 3408829418
     0xcb347c5a: "tse_dotpot_dec_10pct", // 3409214554
     0xcb3c4264: "lifestaff_mana_regen", // 3409724004
+    0xcb573299: "wb_mammoth_fl_mahantaram_voidball_countdown", // 3411489433
     0xcb6bce79: "ai_season_04_iceguardian_entomb_root", // 3412840057
     0xcb83f681: "premiumemote_snowballthrow", // 3414423169
     0xcb9a6c00: "status_perk_weapon_dodgesuccess_firedmg", // 3415895040
     0xcb9d76bb: "grandpotionregen", // 3416094395
     0xcba04f44: "se_foodangryearthcandyfisht5_bluefish", // 3416280900
     0xcbcb06f9: "foodmanat2", // 3419080441
+    0xcc389eda: "ai_cryptkeeper_tombstone_dot", // 3426262746
     0xcc38df56: "ai_corruptiondamage_buff", // 3426279254
     0xcc5e5be4: "foodcont5", // 3428735972
     0xcc687e13: "se_foodlostblacklicoricet5", // 3429400083
+    0xcc6fc698: "siegecurse2", // 3429877400
     0xcca73bcd: "ai_brotherumberto_miniondeath", // 3433511885
     0xccad3a53: "chainlightningdamage", // 3433904723
     0xccb53350: "ai_naga_angryearth_poison_trail", // 3434427216
@@ -2727,6 +2884,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xcd9fd049: "minorpotionregen", // 3449802825
     0xcda283a6: "status_passive_firestaff_pyro_haste_timer", // 3449979814
     0xcdb6e62d: "musket_ultimate_headshot_bleed", // 3451315757
+    0xcdd712a6: "ai_ravage_check", // 3453424294
     0xcde1f554: "ai_sandelementalheavy_aoeslow_t3", // 3454137684
     0xcdf406ac: "ai_withered_swarmancer_swarmaura", // 3455321772
     0xce1901e3: "potionboostarcaneabst5", // 3457745379
@@ -2735,6 +2893,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xce44fa65: "tse_exhaustpot_dec_10pct", // 3460627045
     0xce46f9b0: "ai_turret_buff", // 3460757936
     0xce4b0b0e: "status_passive_lifestaff_protection_fortifyonbasic", // 3461024526
+    0xce578328: "ai_evil_knight_fire_champion_worldboss_spin_l_tick", // 3461841704
     0xce5a9679: "lny_spicy_hotpot", // 3462043257
     0xce7ce1ed: "ai_admiralbrute_phase2_queuereaction", // 3464290797
     0xceaf0ea9: "ai_isabella_phase1_health_modifier", // 3467579049
@@ -2780,6 +2939,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xd1a13c89: "meshchange_anubian_horus", // 3517004937
     0xd1c4f1eb: "status_conqueror_musket_headshotexhaust", // 3519345131
     0xd1cda688: "pvparena_fooddext4", // 3519915656
+    0xd1d2dfbf: "ai_soulharvester_leechslow", // 3520257983
     0xd1d478ce: "scalar effects", // 3520362702
     0xd1f0116b: "voidgauntlet_harvest_healthdrain", // 3522171243
     0xd2195e09: "musket_pass_walkspeedwhilenearenemy", // 3524877833
@@ -2824,6 +2984,9 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xd489faa0: "status_upgrade_lifestaff_orbofprotection_dmg", // 3565812384
     0xd48c07ac: "mut_curse1_lig_major_buff", // 3565946796
     0xd4ae029d: "diligentlogger1", // 3568173725
+    0xd4bac2c3: "ai_soulharvester_magicvolleyslow", // 3569009347
+    0xd4bbbace: "status_perk_artifact_set2_towershield_selfdebuff_rend", // 3569072846
+    0xd4bd90d4: "ai_ghastly_sniper_phantomshot_weaken", // 3569193172
     0xd4c3591d: "pvparena_foodfoct4", // 3569572125
     0xd4c8c070: "teststatusinteract", // 3569926256
     0xd4cdc645: "sandworm_subphase_1", // 3570255429
@@ -2865,6 +3028,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xd6d3d43d: "gorilla_rage_fire", // 3604206653
     0xd6d5d4b0: "fooddexcont5", // 3604337840
     0xd6e007b8: "mut_staminadamage_1_buff", // 3605006264
+    0xd6fb9711: "gm_ctf_flag_01", // 3606812433
     0xd709be54: "mut_voi_death_empower", // 3607739988
     0xd71827be: "lifestaff_damageenemy_siphon", // 3608684478
     0xd7342bcf: "firestaff_incinerate", // 3610520527
@@ -2880,11 +3044,13 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xd7dfd8c8: "potionboostlightningabst3", // 3621771464
     0xd7e86d15: "brutestun", // 3622333717
     0xd7f9e3d9: "foodstrt3", // 3623478233
+    0xd821d1ce: "ai_crytpkeeper_tombstonecast", // 3626095054
     0xd82dd3e0: "tse_medprio_bleed", // 3626882016
     0xd8343974: "mut_curse1_voi_minor_chain_damage", // 3627301236
     0xd83cdbec: "foodstrt5b", // 3627867116
     0xd848ade1: "greatsword_passive_hasteafterskill", // 3628641761
     0xd8816cd2: "status_common_fortify_mount_large", // 3632360658
+    0xd8a871f0: "ffa_pvp_curse", // 3634917872
     0xd8bf2661: "mut_curse2_affliction_tick", // 3636405857
     0xd8c3b5d6: "minorbleedabsorb", // 3636704726
     0xd8f1c730: "ai_corruptedleviathan_eyeballdamage_tentacle", // 3639723824
@@ -2905,6 +3071,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xda1ab97e: "campregenl2", // 3659184510
     0xda1b8ae2: "mammoth_icestorm_damage", // 3659238114
     0xda1f569b: "status_flail_ultimate_allydamagesplit_selfnotification", // 3659486875
+    0xda45f83a: "wb_mammoth_fl_mahantaram_ice_empowered", // 3662018618
     0xda5c5cc3: "mut_ice_slow_2_effect", // 3663486147
     0xda632108: "stonecuttermastery1", // 3663929608
     0xda6a66df: "musicbuff_gatheringxp_t4_amazing", // 3664406239
@@ -2913,6 +3080,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xda8c577b: "liferesuscitatetimer", // 3666630523
     0xdaa24825: "statuseffect_boss_teamwipe", // 3668068389
     0xdab88846: "se_demeterboonpotiond3_t3", // 3669526598
+    0xdac174d8: "ai_mummifiedcorpse_removestamina", // 3670111448
     0xdad1bf31: "status_passive_lifestaff_healing_cdronlow_timer", // 3671179057
     0xdae68f69: "diligentwoodworker1", // 3672543081
     0xdb304638: "armadillo_addresistance", // 3677374008
@@ -2937,6 +3105,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xdc361cdc: "ai_motherwellelk_se_heal", // 3694533852
     0xdc3b2600: "ai_admiralbrute_phase2_startreaction", // 3694863872
     0xdc3e28a3: "ai_gorilla_boss_dmgapp_void", // 3695061155
+    0xdc50d247: "ai_evil_knight_fire_champion_worldboss_overheatspell", // 3696284231
     0xdc525345: "foodfocstrt4", // 3696382789
     0xdc5bad37: "status_ability_sword_finalstand_heal", // 3696995639
     0xdc6075c4: "status_conqueror_icegauntlet_frostaura_allybuff_dmg", // 3697309124
@@ -2972,6 +3141,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xdea7408c: "voidgauntlet_drainingtether_slow", // 3735502988
     0xdea7a958: "potionmanat5", // 3735529816
     0xdec11324: "grandbleedabsorb", // 3737195300
+    0xdecdd93c: "wb_mammoth_fl_mahantaram_magmacharge", // 3738032444
     0xded64119: "fatigue", // 3738583321
     0xdedd0009: "rested", // 3739025417
     0xdef5d8ff: "ai_evil_knight_fire_champion_spin_f", // 3740653823
@@ -2980,6 +3150,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xdf0cc61c: "ai_season_04_iceguardian_blizzard_pulse", // 3742156316
     0xdf18394d: "status_passive_greataxe_gravity_root", // 3742906701
     0xdf233fe8: "ai_admiralbrute_phase2_hitcount", // 3743629288
+    0xdf463e4e: "potiongritt5", // 3745922638
     0xdf52d5ff: "ai_dryadsirenchainlightningdamage", // 3746747903
     0xdf70cb20: "mut_manadamage_2_buff", // 3748711200
     0xdf81447e: "rune_detonate_castaoe", // 3749790846
@@ -3017,17 +3188,20 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xe2048a37: "mut_curse2_fir_vfx_2_ability", // 3791948343
     0xe2640d44: "mammoth_lightning_empowered", // 3798207812
     0xe27280f1: "mut_nat_thorns_1_buff", // 3799154929
+    0xe2814e6c: "status_seasonalserver_deathfunctionality_5", // 3800125036
     0xe29d11e7: "ai_reaction_fortify_1", // 3801944551
     0xe2bb1703: "status_flail_defensivestrike_upgrade_absorption", // 3803911939
     0xe2edb4cb: "immobilized", // 3807229131
     0xe2f3ba21: "ai_hercyne_broodmother_mushroominfection_targeted_marker", // 3807623713
     0xe2ff99d5: "mut_curse1_fir_major_cleanse", // 3808401877
     0xe31acc21: "housingdmglostt3", // 3810184225
+    0xe31dc397: "ai_sirenqueen_sleepy_popout", // 3810378647
     0xe3269512: "tse_healmod_dec_10pct", // 3810956562
     0xe326b4f5: "tse_highprio_stun", // 3810964725
     0xe3355645: "hatchet_purge", // 3811923525
     0xe360a668: "mut_curse2_nat_major_damage", // 3814762088
     0xe382c68f: "mut_manadamage_2", // 3816998543
+    0xe38fb2d8: "status_perk_armor_consumablehealing", // 3817845464
     0xe38ff16d: "engineermastery2", // 3817861485
     0xe39550ac: "se_foodcorruptedchocolatet5", // 3818213548
     0xe395885b: "hatchet_raging_haste", // 3818227803
@@ -3051,8 +3225,10 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xe505e2f2: "foodfoct3", // 3842368242
     0xe5076d18: "status_pvp_perk_shield_fortifystack", // 3842469144
     0xe5166a70: "dungeon_medusa_statue_gaze", // 3843451504
+    0xe55a15cb: "status_perk_rapier_flourishandfinish_nexthitcrit", // 3847886283
     0xe58f0302: "rune_firestorm_dot application", // 3851354882
     0xe5c25b1b: "shrine_motherslove", // 3854719771
+    0xe5ec8a75: "status_seasonalserver_deathfunctionality_1", // 3857484405
     0xe5ededef: "se_artemisboonsecondaryd4_t4", // 3857575407
     0xe612b620: "weaponcoatingeffect_ancient_t2", // 3859985952
     0xe62554e2: "status_perk_artifact_set1_bow_staticdischarge", // 3861206242
@@ -3074,6 +3250,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xe76619fd: "applyblightl2", // 3882228221
     0xe7701eda: "ai_dryadsiren_spin_phase3_d_tick", // 3882884826
     0xe778670d: "greatsword_drainattack_staminagain", // 3883427597
+    0xe78efb41: "ai_worldboss_firenaga_title", // 3884907329
     0xe799703f: "mut_fir_burn_timer", // 3885592639
     0xe7abc540: "weaverburden2", // 3886794048
     0xe7adef86: "ai_mage_miniboss_orbs_statuseffect", // 3886935942
@@ -3084,6 +3261,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xe7f5e0c3: "status_perk_hatchet_feralrush_staminaregen", // 3891650755
     0xe81365ec: "token_gather_1", // 3893585388
     0xe834ca66: "mut_curse1_lig_minor_damage", // 3895773798
+    0xe834f284: "ai_admiralbrute_worldboss_leap_targetmarker", // 3895784068
     0xe8358c28: "potionboostnatureabst3", // 3895823400
     0xe83f5017: "ai_evil_knight_flamekeeper_burn", // 3896463383
     0xe83f9c14: "potionfamilywardancientt4", // 3896482836
@@ -3115,6 +3293,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xe9fa7d0a: "ai_anubianguardian_horusboss_divineanguish_damagebuff", // 3925507338
     0xea054b12: "status_perk_runeglass_attunement_voiddmg", // 3926215442
     0xea0cbccf: "dungeon_brimstonesands00_sun_turret_02", // 3926703311
+    0xea20e13a: "ai_naga_angryearth_worldboss_poison_trail", // 3928023354
     0xea2bbb0f: "housingrollbonusloggingt2", // 3928734479
     0xea2f1031: "ai_sandelemental_shaman_burrowresistance", // 3928952881
     0xea3ea2ce: "se_foodangryearthcandyfisht5_sockeyesalmon", // 3929973454
@@ -3140,6 +3319,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xeafdda5f: "potionfamilywardangryeartht4", // 3942505055
     0xeb0089e9: "ai_selfdestruct_corruption_25percent_buff", // 3942681065
     0xeb1706f9: "lumberjackburden2", // 3944154873
+    0xeb1d10bc: "wb_mammoth_fl_mahantaram_lightning_shock", // 3944550588
     0xeb1eab4e: "mut_curse1_lig_minor_buff", // 3944655694
     0xeb228ffc: "status_perk_ward_amulet_defice", // 3944910844
     0xeb4e015e: "atb_str_bonus_200_2_effect", // 3947757918
@@ -3157,6 +3337,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xec09a0c9: "status_perk_amulet_dodgesuccess_cleansedot_timer", // 3960053961
     0xec39f3cd: "celestial_heal_aoe", // 3963220941
     0xec6d7dc3: "foodhuntert4", // 3966598595
+    0xec7f9b50: "ai_admiralbrute_worldboss_barrelexplode", // 3967785808
     0xeca824cd: "ai_evil_knight_lifestaff_divineembrace", // 3970442445
     0xeccc1e1d: "foodstrdext3", // 3972800029
     0xecdf6442: "greatsword_passive_blockcount", // 3974063170
@@ -3164,12 +3345,15 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xecf6602d: "statustestcrafting", // 3975569453
     0xecfa791a: "potionboosticeabst3", // 3975837978
     0xed08a4a2: "mammoth_lava_magmacharge", // 3976766626
+    0xed1e73ae: "status_perk_artifact_set2_towershield_selfbuff_healmod", // 3978195886
     0xed2254a7: "se_foodancientgummybeart5", // 3978450087
+    0xed285c92: "ai_bloodbeast_ravage_nododge", // 3978845330
     0xed35b7bd: "dungeon_cutlasskeys00_alligatoryoungcaged", // 3979720637
     0xed3d51f7: "cool", // 3980218871
     0xed42856b: "terminateai", // 3980559723
     0xed470f72: "ai_sandelemental_questboss_addstamina", // 3980857202
     0xed4e9e53: "wcconsumable_convergencecake", // 3981352531
+    0xed4f22a6: "status_perk_chest_stamlowhealthregen", // 3981386406
     0xed5af023: "ai_sandelemental_questboss_targeted_tremor_cast_phase03", // 3982159907
     0xed5d24a5: "ai_season_04_iceguardian_hypothermia_solo", // 3982304421
     0xed611b21: "status_perk_tools_efficiency_mining", // 3982564129
@@ -3183,6 +3367,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xedd67d51: "ai_medusa_gaze", // 3990256977
     0xedf9640d: "musicbuff_playerencumbrance_t2_okay", // 3992544269
     0xee007d2f: "diligentweaver2", // 3993009455
+    0xee0335ae: "wb_mammoth_fl_mahantaram_root_feedback_void", // 3993187758
     0xee076735: "atb_foc_bonus_100_2_effect", // 3993462581
     0xee27093c: "lifestaff_divineembrace_heal_upgrade", // 3995535676
     0xee343994: "weaponsmithmastery3", // 3996400020
@@ -3190,6 +3375,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xee466b85: "musicbuff_gatheringyield_t4_amazing", // 3997592453
     0xee4f4264: "foodlumberjackt5", // 3998171748
     0xee5a20d1: "foodlostt4", // 3998884049
+    0xee5f8192: "ai_mummifiedcorpse_auraburn_highfrequency", // 3999236498
     0xee672eb9: "debug_dmgmod_stamina_1000", // 3999739577
     0xee860621: "housingrollbonusharvestingt1", // 4001760801
     0xee904722: "resolute4", // 4002432802
@@ -3199,12 +3385,16 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xeeb551d8: "sandworm_arenaencounter_pressureplate_ranged_debuff", // 4004860376
     0xeed03f5d: "ai_drama_playintro", // 4006625117
     0xeed88eec: "ai_dptank_fortify_limited", // 4007169772
+    0xeed9301e: "ctf_powerup_damage", // 4007211038
     0xeee766ce: "outfittersinspirationlsb", // 4008142542
     0xef2a22f8: "status_crossbow_poison", // 4012516088
     0xef2bf772: "icemagic_frostbite_dur3", // 4012636018
     0xef3da919: "ai_thorpe_burn_apply", // 4013795609
+    0xef6ba5f8: "ai_worldboss_admiralbrute_title", // 4016809464
     0xefe036e3: "ai_corruptedleviathan_phase2", // 4024448739
     0xefe31ac8: "tse_bleedpot_dec_10pct", // 4024638152
+    0xf01fb5ae: "ai_worldboss_empress_title", // 4028609966
+    0xf02c85d7: "ai_admiralbrute_worldboss_blackpowder_cast", // 4029449687
     0xf035276b: "status_perk_weapon_onkillempower", // 4030015339
     0xf037cda5: "ai_typhon_hercynebuff_timer2", // 4030188965
     0xf03d6bec: "ai_corrupted_firstmate_anchorslam_aoe_enemy", // 4030557164
@@ -3226,6 +3416,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xf1ab34f1: "fooddott2", // 4054529265
     0xf1b78f63: "armorermastery2", // 4055338851
     0xf1cf77b4: "cleanse", // 4056905652
+    0xf1e3a8c9: "status_perk_gem_plaguedward2", // 4058228937
     0xf21db3b6: "exhaustedstate_blockbreak", // 4062032822
     0xf22707a8: "ai_gravedigger_siphonspell", // 4062644136
     0xf2548dde: "dungeon_brimstonesands00_sun_turret", // 4065627614
@@ -3251,10 +3442,14 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xf3ee4206: "tse_stamregen_dec_1pct", // 4092477958
     0xf40ef537: "status_perk_runeglass_attunement_firedmg", // 4094620983
     0xf42bf5a8: "ai_echidnarend_20s", // 4096521640
+    0xf43648bd: "gm_ctf_redflag_03", // 4097198269
     0xf4407a6d: "miningmastery2", // 4097866349
+    0xf45de258: "ai_evil_knight_fire_champion_worldboss_spin_b_tick", // 4099793496
     0xf475f683: "sword_laststandplus5sec", // 4101371523
     0xf4776cb7: "firestaff_lowhealth_firedmgbonus", // 4101467319
+    0xf47ae0a3: "ai_ghastly_sniper_phantomshot_fortify", // 4101693603
     0xf47f5d9f: "ai_spider_attacksuccess", // 4101987743
+    0xf4ad1ed2: "status_rune_spinningswords_tracker", // 4104986322
     0xf4afaf7f: "status_common_fortify_mount_small", // 4105154431
     0xf4b63101: "ai_onhit_checker", // 4105580801
     0xf4bc41aa: "mut_ice_damage_buff", // 4105978282
@@ -3301,11 +3496,13 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xf7721794: "status_perk_artifact_set1_ring1", // 4151449492
     0xf77e2d34: "ai_corrupted_firstmate_blockbroken_selfdebuff_3", // 4152241460
     0xf78a3644: "greatsword_passive_stancechangeempower", // 4153030212
+    0xf78be0c3: "ai_evil_knight_fire_champion_worldboss_spin_r_tick", // 4153139395
     0xf7e1e0d6: "potionheal", // 4158775510
     0xf7ee2175: "voidgauntlet_decayingorb_slowvsdebuff", // 4159578485
     0xf7f5ee61: "ai_sirenchainlightningdamage", // 4160089697
     0xf821d03a: "tse_noknockback", // 4162965562
     0xf82d49c3: "foodintfoct5", // 4163717571
+    0xf863a897: "ai_naga_angryearth_worldboss_poison", // 4167280791
     0xf86e38e0: "status_conqueror_firestaff_burnaura_spellcast", // 4167973088
     0xf87e243f: "harvestingmastery1", // 4169016383
     0xf8853934: "trialbyfiretimer", // 4169480500
@@ -3318,6 +3515,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xf8d3bed9: "housingmingearbonusoutfittingt2", // 4174626521
     0xf8daa34d: "ai_halloweengourdspewer_healpuddle", // 4175078221
     0xf8e0a9eb: "ai_gorilla_boss_dmg_nature", // 4175473131
+    0xf8e469fa: "wb_mammoth_fl_mahantaram_voidball_countdown_display", // 4175718906
     0xf9281a3c: "mercenaryburden2", // 4180154940
     0xf94e5732: "mut_nat_curse4_minor_buff", // 4182660914
     0xf9578799: "status_conqueror_shield_tankaura_spellcast", // 4183263129
@@ -3325,6 +3523,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xf973e435: "sword_leadership", // 4185121845
     0xf9741949: "poison", // 4185135433
     0xf998038f: "ai_desertscorpionslinger_poison", // 4187489167
+    0xf9b359a2: "wb_mammoth_fl_mahantaram_lightning_empowered_debuff_cast", // 4189280674
     0xf9d8a338: "ai_dptank_worldsplitter_bleed_axe", // 4191724344
     0xf9e164d6: "ai_corruption_pool_buff", // 4192298198
     0xfa01b6d7: "raid_cutlasskeys00_mushroominfection_active", // 4194416343
@@ -3335,6 +3534,7 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xfa5dc3ac: "pushablelifetime", // 4200448940
     0xfa61fb12: "foodrecoveryt5", // 4200725266
     0xfa648cdf: "warhammer_armorbreaker_rend", // 4200893663
+    0xfa6d9a3b: "gm_jumppad_high", // 4201486907
     0xfa752e62: "ai_dryadsiren_spin_phase3_c_tick", // 4201983586
     0xfa9a3a53: "mut_curse1_lig_major_tracker", // 4204411475
     0xfaf0f309: "status_perk_hatchet_infectedthrow_heal", // 4210094857
@@ -3367,10 +3567,12 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xfd23b656: "foodintdext5", // 4246976086
     0xfd26cd23: "ai_torso_boss_arcaneorb", // 4247178531
     0xfd32e4b8: "diligentleatherworker1", // 4247971000
+    0xfd33cbf7: "ai_sirenqueen_empower", // 4248030199
     0xfd3e3293: "affixtestallstats", // 4248711827
     0xfd82a688: "spear_skewer_bleed_upgrade", // 4253197960
     0xfd83fd59: "ai_dryadsiren_spin_phase2_b_tick", // 4253285721
     0xfd8af7a3: "ai_yonas_startphase", // 4253743011
+    0xfda47898: "wb_mammoth_fl_mahantaram_lightning_empowered_debuff_tick", // 4255414424
     0xfdb75d1b: "status_flail_ultimate_healchaintrigger", // 4256652571
     0xfdf4ac42: "majorpotionstalwart", // 4260670530
     0xfdfef0b4: "dungeon_crossworldpuggroup_healmod", // 4261343412
@@ -3401,5 +3603,6 @@ var hashStatusEffectDataStatusID = map[uint32]string{
     0xff9578cd: "mammoth_lightning_empowered_debuff_cast", // 4287985869
     0xff9eb6e7: "ai_season_04_iceguardian_entomb_targetmarker", // 4288591591
     0xffbf2ae8: "lifestaff_increasedhealing_passive", // 4290718440
+    0xffde4349: "ai_ysguardian_disease", // 4292756297
     0xffe408c7: "atb_con_bonus_300_2_effect", // 4293134535
 }

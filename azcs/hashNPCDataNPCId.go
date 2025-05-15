@@ -218,6 +218,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x2be85a71: "13a_architect_03", // 736647793
     0x2bed9f74: "01_graceww_01", // 736993140
     0x2bf30ea2: "09a_oakes_for", // 737349282
+    0x2c4b7926: "npc_04633", // 743143718
     0x2c5194de: "09a_vachon_rescue", // 743544030
     0x2c591cf2: "placeholdernpc_81", // 744037618
     0x2c93e596: "0332_furrier01", // 747890070
@@ -258,6 +259,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x31d9e2fb: "1346_partyguest_02", // 836363003
     0x3202ab3f: "1645_xiaoling", // 839035711
     0x322563d1: "06_towerjournal", // 841311185
+    0x323d8c7e: "npc_04627", // 842894462
     0x329404fb: "99f_empress_01a", // 848561403
     0x32f12bc0: "03_taehwa", // 854666176
     0x32feffa5: "0804_overseer", // 855572389
@@ -481,6 +483,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x5a386e87: "05_outfitter", // 1513647751
     0x5a4f63b7: "09a_hargest_wc", // 1515152311
     0x5ad9ca6e: "9921_msq_wardenwalker", // 1524222574
+    0x5b4c49b0: "npc_04632", // 1531726256
     0x5b4fb265: "06_talesaserrano", // 1531949669
     0x5b593c45: "99g_wayne_01", // 1532574789
     0x5b6e4f94: "1124_pierreauguste2", // 1533955988
@@ -490,6 +493,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x5becadf0: "99g_morgaine_04", // 1542237680
     0x5bfb663b: "0405a_artificerpetrowski_01", // 1543202363
     0x5bff6316: "99d_yonas_i", // 1543463702
+    0x5c218da9: "npc_04636", // 1545702825
     0x5c26756c: "06_kathrijnjanssen03", // 1546024300
     0x5c4e1306: "1532_femalebeekeepercultist2", // 1548620550
     0x5c55fbe9: "99a_anthurus", // 1549138921
@@ -877,6 +881,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xa20927e7: "99e_sun_p6v3", // 2718509031
     0xa23dc7c9: "9802_lethold", // 2721957833
     0xa279d41c: "9926_vk_abigailroseep2", // 2725893148
+    0xa28291ef: "npc_04628", // 2726466031
     0xa29a76aa: "09a_trahern_end", // 2728031914
     0xa3198427: "0828_yuelai", // 2736358439
     0xa326a6a2: "9511_dicunhobday_s01_01", // 2737219234
@@ -936,6 +941,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xae4e6610: "1625_ghazi_p6", // 2924373520
     0xae50264c: "9517_otmarwinkler_s01_01", // 2924488268
     0xaeb0f87e: "1433_aedog", // 2930833534
+    0xaec63729: "npc_03976", // 2932225833
     0xaf195bdf: "0511_stranger", // 2937674719
     0xaf4f5856: "0440a_atticusdelphi_02", // 2941212758
     0xaf786aa1: "95a_rima_s02_01", // 2943904417
@@ -951,6 +957,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xb1c29754: "99e_sun_p10", // 2982319956
     0xb21c117b: "09a_rousseau", // 2988183931
     0xb2281440: "06_kathrijnjanssen01", // 2988971072
+    0xb22fec85: "npc_04634", // 2989485189
     0xb244c86f: "95a_sadiki_s02_01", // 2990852207
     0xb28da4c4: "03_outfitter", // 2995627204
     0xb28f08c5: "99g_morgaine_02", // 2995718341
@@ -972,6 +979,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xb4b984bd: "1646_froderico", // 3032057021
     0xb4e7f26c: "14_eva", // 3035099756
     0xb50ffa6a: "09a_gauss", // 3037723242
+    0xb542289c: "npc_04630", // 3041011868
     0xb5782b03: "99e_morgaine_p9", // 3044551427
     0xb59ab42c: "0332_furrier02", // 3046814764
     0xb5aef67e: "1680_buhawi", // 3048142462
@@ -1042,6 +1050,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xc2095e4b: "9205_blademaster", // 3255393867
     0xc213ab95: "1416_warden", // 3256069013
     0xc21682d7: "9510_eynonvoyle_s01_01", // 3256255191
+    0xc245180a: "npc_04631", // 3259308042
     0xc24f8ab1: "1602_crassus_settlement", // 3259992753
     0xc268150c: "0827_bardroy_01", // 3261601036
     0xc27f1b95: "99e_morgaine_p8", // 3263110037
@@ -1060,6 +1069,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xc47db634: "95a_dog_s02_02", // 3296572980
     0xc4aedf8f: "12_alchemisttuit", // 3299794831
     0xc4b37b3b: "95_s04_skye_p02i", // 3300096827
+    0xc528dc13: "npc_04635", // 3307789331
     0xc52cd681: "c10a_nekumanesh", // 3308050049
     0xc532aaa8: "03_giri", // 3308432040
     0xc56eb941: "99a_haplesshowe01", // 3312367937
@@ -1150,6 +1160,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xd52f2866: "0712_watcher_02", // 3576637542
     0xd5376a0d: "99d_jacquetdavy_b", // 3577178637
     0xd558a3cb: "03_wolf", // 3579356107
+    0xd585a179: "npc_04629", // 3582304633
     0xd58b6372: "ef_rally_1", // 3582681970
     0xd5a5cbc4: "9506_granny_s01_01", // 3584412612
     0xd5ac7c1c: "12_donquixolay", // 3584850972

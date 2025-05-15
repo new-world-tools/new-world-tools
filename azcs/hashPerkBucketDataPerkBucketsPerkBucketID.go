@@ -39,6 +39,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x03ca4145: "attributeblunderbusst4", // 63586629
     0x03eec04f: "perkbucket_eliteangryearthbucketchancet5bucket5", // 65978447
     0x03f395cb: "perkbucket_elitelostbucketchancet5bucket4", // 66295243
+    0x03fcb237: "perkbucket_armor_exhaustpotencyred", // 66892343
     0x04050cd4: "dexteritybuckett3", // 67439828
     0x044c2cbf: "perkbucket_breachfamily_t4chance_weights", // 72101055
     0x044d5107: "perkbucket_angryearthbucketchancet4bucket3_weights", // 72175879
@@ -62,6 +63,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x05df7ee0: "perkbucket_fishlinestrengthfresh3charm", // 98533088
     0x060a1605: "runeglass_gem_diamond_void", // 101324293
     0x0657bc9d: "runeglass_gem_aquamarine_ice", // 106413213
+    0x065e1892: "perkbucket_s8perks_weights", // 106829970
     0x0673cf00: "perkbucket_doubloonshop_weapon", // 108252928
     0x06823ded: "amethystcutt4_weights", // 109198829
     0x0695cdc9: "attributeshieldt2_weights", // 110480841
@@ -165,6 +167,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x1062cb03: "perkbucket_craftedmyrkgardbucketchancet5bucket4", // 274909955
     0x1071ed5e: "perkbucket_warbucket_weights", // 275901790
     0x10942f47: "perkbucket_azaleanectart1", // 278146887
+    0x10b522c8: "turquoisecutt4", // 280306376
     0x112d9146: "perkbucket_stat_roundshield_weights", // 288198982
     0x117e8d1b: "perkbucket_ancientessencet3", // 293506331
     0x1185d4ce: "perkbucket_trackbucket4_chance", // 293983438
@@ -230,6 +233,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x19576069: "perkbucket_invasionbucketchance", // 425156713
     0x19738de2: "perkbucket_dynastyshipyardbucket_weights", // 427003362
     0x197773bf: "perkbucket_craftingperkbucketchancet3", // 427258815
+    0x19df3c4d: "jadecutt4_weights", // 434060365
     0x19f4c2c9: "singlestat_attributest5_heavy_always_weights", // 435471049
     0x1a486763: "attributeblunderbusst4_weights", // 440952675
     0x1a5da565: "moonstonecutt4", // 442344805
@@ -378,6 +382,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x2812c24f: "perkbucket_consecratediront1_weights", // 672318031
     0x283207d7: "perkbucket_spearcharmt5", // 674367447
     0x286ce27e: "attributeswordt4_weights", // 678224510
+    0x2892a136: "perkbucket_armor_lifestealhealing_weights", // 680698166
     0x28a8f7aa: "singlestatpvprt_attributest5_medium", // 682162090
     0x28c2991a: "emeraldcutt2", // 683841818
     0x290be15a: "perkbucket_pvpbucket2chance_weights", // 688644442
@@ -456,6 +461,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x31a38cab: "perkbucket_sapt1_weights", // 832801963
     0x31c7a7db: "craftingattributebuckett5_weights", // 835168219
     0x31cd07b7: "perkbucket_lifestaffcharmt6", // 835520439
+    0x31cd09f5: "jadecutt3", // 835521013
     0x31d98e94: "runeglass_gem_topaz_lightning", // 836341396
     0x321eec8f: "perkbucket_voidgauntletcharmt5_weights", // 840887439
     0x323788f1: "perkbucket_globalpvpt5chance2", // 842500337
@@ -547,6 +553,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x3b3d4d76: "perkbucket_opplaytest_weaponbucket_weights", // 993873270
     0x3b4fd69d: "perkbucket_resint3_weights", // 995088029
     0x3b7d9980: "craftingattributebuckett4", // 998087040
+    0x3bb6dbf7: "perkbucket_armor_lifestealhealing", // 1001839607
     0x3bb9df02: "perkbucket_eliteancientbucketchancet5bucket5_weights", // 1002036994
     0x3bc9b13a: "perkbucket_mutatorelementalgear_bucket5", // 1003073850
     0x3bf72023: "runeglass_gem_aquamarine_melee_weights", // 1006051363
@@ -632,6 +639,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x443f15a2: "perkbucket_instrumentst5chance2", // 1144984994
     0x444b8f9f: "perkbucket_armor_defgrit_weights", // 1145802655
     0x4461ec71: "perkbucket_elitelostbucketchancet5bucket3_weights", // 1147268209
+    0x44845a94: "perkbucket_jewelry_amulet_dodgeburn_durred_weights", // 1149524628
     0x44912ae4: "perkbucket_greatswordcharmt1", // 1150364388
     0x44bf10d7: "perkbucket_summerevent_weights", // 1153372375
     0x44dd6b7e: "perkbucket_hercyneraid_bucket4", // 1155361662
@@ -652,6 +660,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x464987d8: "perkbucket_elitecorruptedbucketchancet5bucket3_weights", // 1179224024
     0x4656c4c0: "confocbonust4", // 1180091584
     0x465c0ef3: "perkbucket_crystalizedazotht3_weights", // 1180438259
+    0x46ca3963: "jadecutt2", // 1187658083
     0x46d3fb5d: "perkbucket_pvebase_amulet", // 1188297565
     0x46f15f88: "perkbucket_flamecore_armor", // 1190223752
     0x46fbbcbe: "ambercutt1_weights", // 1190902974
@@ -707,6 +716,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x4b7aa85a: "runeglass_gem_carnelian_ranged", // 1266329690
     0x4b987525: "perkbucket_skinnercharmt3_weights", // 1268282661
     0x4bac603c: "attributeflailt4_weights", // 1269588028
+    0x4bb665ca: "perkbucket_s8gem_weights", // 1270244810
     0x4bc9d935: "singlestat_attributest3_heavy_weights", // 1271519541
     0x4bd12155: "strfocbonust4_weights", // 1271996757
     0x4bf5478f: "opalcutt2_weights", // 1274365839
@@ -777,6 +787,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x52ccf11f: "strintbonust2_weights", // 1389162783
     0x52fc7051: "perkbucket_craftedlazarusbucketchancet5bucket5", // 1392275537
     0x5342214b: "perkbucket_chefcharmt3_weights", // 1396842827
+    0x53487902: "jadecutt1_weights", // 1397258498
     0x53519276: "perkbucket_etherealarmor1_weights", // 1397854838
     0x5373505c: "perkbucket_bag5thperk", // 1400066140
     0x5399ced5: "perkbucket_lazarusbucketchancet4_weights", // 1402588885
@@ -911,6 +922,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x60c97551: "singlestat_attributest5_light_always", // 1623815505
     0x60cc320c: "runeglass_gem_ruby_void", // 1623994892
     0x60d2749c: "perkbucket_craftingdiamond", // 1624405148
+    0x60dfd647: "turquoisecutt1", // 1625282119
     0x6101916b: "attributemuskett5_weights", // 1627492715
     0x61966dae: "perkbucket_adderstonet3_weights", // 1637248430
     0x61a876de: "perkbucket_travelersstonet1_weights", // 1638430430
@@ -920,6 +932,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x6230d98c: "diamondcutt1", // 1647368588
     0x623139ec: "perkbucket_warbucketchancet5", // 1647393260
     0x625a0d01: "singlestat_attributest5_guarantee_weights", // 1650068737
+    0x62790842: "perkbucket_s8attributes", // 1652099138
     0x62dd75cd: "intconbonust3_weights", // 1658680781
     0x62e32ddb: "runeglass_gem_jasper_stamina_weights", // 1659055579
     0x62e35024: "amethystcutt3_weights", // 1659064356
@@ -947,6 +960,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x65660e15: "perkbucket_globalperkbucketrollt4bucket3_weights", // 1701187093
     0x6569bf17: "perkbucket_animust2_weights", // 1701429015
     0x656e5da3: "perkbucket_skinnercharmt1_weights", // 1701731747
+    0x6586f342: "perkbucket_feet_hasteonvault_weights", // 1703342914
     0x65a65ad7: "constrbonust3_weights", // 1705401047
     0x65e734fb: "castattributebuckett5_medium_weights", // 1709651195
     0x663db5c0: "singlestat_attributest3_medium_weights", // 1715320256
@@ -987,6 +1001,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x693f97fa: "constrbonust1", // 1765775354
     0x694cc87a: "attributerapiert3", // 1766639738
     0x69521ee9: "attributeblunderbusst2_weights", // 1766989545
+    0x69947fd9: "perkbucket_chest_healthstam_synergy", // 1771339737
     0x69aeb189: "perkbucket_eliteancientbucket_weights", // 1773056393
     0x6a22a454: "perkbucket_solotrialgb_weapon", // 1780655188
     0x6a3751ea: "moonstonecutt1", // 1782010346
@@ -994,6 +1009,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x6a728745: "attributelifestafft5", // 1785890629
     0x6a9240d0: "intstrbonust3", // 1787969744
     0x6a962c23: "singlestat_attributest4", // 1788226595
+    0x6ac545c7: "jadecutt2_weights", // 1791313351
     0x6ad8f8c1: "perkbucket_sandwurmtrial_armor_weights", // 1792604353
     0x6adcaeb3: "perkbucket_etherealarmor2_weights", // 1792847539
     0x6af06561: "runeglass_gem_sapphire_lightning", // 1794139489
@@ -1090,6 +1106,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x730731c0: "perkbucket_pvpbase_earring_weights", // 1929851328
     0x731e320a: "runeglass_gem_sapphire_stamina", // 1931358730
     0x736c581b: "perkbucket_pvp_perkitem10", // 1936480283
+    0x7388357a: "perkbucket_armor_exhaustpotencyred_weights", // 1938306426
     0x739447ca: "perkbucket_hercynemutatorcombo_bucket4", // 1939097546
     0x73a571e2: "focconbonust3", // 1940222434
     0x73bac961: "globalattributebucketchancet4_weights", // 1941621089
@@ -1127,6 +1144,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x770c8131: "singlestat_attributest5_medium", // 1997308209
     0x7735a702: "dexintbonust1", // 2000004866
     0x7753f8b1: "runeglass_gem_jasper_void", // 2001991857
+    0x778d9d25: "perkbucket_weapon_melee_alternateattacks_weights", // 2005769509
     0x7790d150: "runeglass_gem_sapphire_arcane", // 2005979472
     0x77ad9773: "perkbucket_globalpvpt3chance2_weights", // 2007865203
     0x77cb135e: "perkbucket_mutatorfire_weights", // 2009797470
@@ -1139,6 +1157,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x78eb4197: "breachgemslotchancet3", // 2028683671
     0x79425439: "moonstonecutt4_weights", // 2034390073
     0x794939d1: "perkbucket_wolfessencet2_weights", // 2034842065
+    0x794b26e4: "perkbucket_weapon_rendingstacks_weights", // 2034968292
     0x7965c400: "runeglass_gem_ruby_stamina", // 2036712448
     0x7984e403: "perkbucket_greatswordcharmt1_weights", // 2038752259
     0x7990eaf3: "perkbucket_viscousazotht3_weights", // 2039540467
@@ -1179,6 +1198,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x7d59b145: "runeglass_gem_diamond_heal", // 2103030085
     0x7da7baf0: "perkbucket_etherealarmor3_weights", // 2108144368
     0x7db409cd: "perkbucket_chefcharmt1_weights", // 2108950989
+    0x7dbe5184: "jadecutt3_weights", // 2109624708
     0x7dc98828: "singlestat_attributest2_medium", // 2110359592
     0x7dddf40a: "runeglass_gem_amethyst_stamina_weights", // 2111697930
     0x7deb825b: "runeglass_gem_amethyst_nature", // 2112586331
@@ -1193,6 +1213,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x7f2668bd: "perkbucket_flailcharmt3_weights", // 2133223613
     0x7f36a833: "perkbucket_elitedrownedbucketchancet5bucket3", // 2134288435
     0x7f3a9848: "perkbucket_armorercharmt3", // 2134546504
+    0x7f3d1eb9: "perkbucket_chest_healthstam_synergy_weights", // 2134711993
     0x7f55d668: "perkbucket_arcanistcharmt3", // 2136331880
     0x7f76807b: "ambercutt2_weights", // 2138472571
     0x7f9cf855: "perkbucket_sparkmetalt1_weights", // 2140993621
@@ -1244,6 +1265,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x843930c6: "moonstonecutt3", // 2218340550
     0x8440db45: "castattributeflailt5", // 2218842949
     0x84682683: "runeglass_gem_onyx_melee_weights", // 2221418115
+    0x84888cf9: "perkbucket_weapon_melee_alternateattacks", // 2223541497
     0x849c21fc: "intstrbonust1", // 2224824828
     0x84ed9501: "perkbucket_icegauntletcharmt2", // 2230162689
     0x850a1c4f: "runeglass_gem_topaz_melee_weights", // 2232032335
@@ -1338,6 +1360,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x8e8693b6: "perkbucket_crystalizedectoplasmt2_weights", // 2391184310
     0x8e8cd650: "perkbucket_fishcastdistanceday3charm_weights", // 2391594576
     0x8ec33879: "perkbucket_flamecore_weapon_weights", // 2395158649
+    0x8ed1b76b: "turquoisecutt3", // 2396108651
     0x8ed9fc92: "perkbucket_skinningitemt1bucketchance", // 2396650642
     0x8edd976f: "castattributeswordt5_weights", // 2396886895
     0x8f2d0a6f: "perkbucket_craftedgenesisbucketchancet5bucket4_weights", // 2402093679
@@ -1509,6 +1532,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0x9f4867e6: "perkbucket_doubloonshop_ring", // 2672322534
     0x9f4d23a5: "perkbucket_breachfamily_t3chance_weights", // 2672632741
     0x9f76819f: "perkbucket_pvpbucket1chance", // 2675343775
+    0x9fad482b: "perkbucket_s8gem", // 2678933547
     0xa00d1c23: "attributebowt5_weights", // 2685213731
     0xa043a291: "fishingarmort2bucketchancenoglobal", // 2688787089
     0xa04c0e3b: "perkbucket_breachbucket_weights", // 2689338939
@@ -1647,6 +1671,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xaf962442: "perkbucket_fangt2_weights", // 2945852482
     0xafa049e4: "intstrbonust3_weights", // 2946517476
     0xafa99214: "perkbucket_lifestaffcharmt1", // 2947125780
+    0xafa99c56: "jadecutt4", // 2947128406
     0xafcaa7b5: "perkbucket_witheredessencet3", // 2949294005
     0xafd62aea: "perkbucket_pvprtperks_t5bucket4chance_weights", // 2950048490
     0xafe24b5d: "singlestatpvprt_attributest5_heavy", // 2950843229
@@ -1698,6 +1723,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xb4a789d9: "runeglass_gem_diamond_mana", // 3030878681
     0xb4f4a32d: "attributeshieldt3", // 3035931437
     0xb5111e4f: "runeglass_gem_moonstone_fire", // 3037797967
+    0xb51cf356: "turquoisecutt4_weights", // 3038573398
     0xb5274ab6: "perkbucket_tallowt3_weights", // 3039251126
     0xb541cf76: "perkbucket_jewelcraftercharmt3", // 3040989046
     0xb553e847: "strfocbonust3", // 3042175047
@@ -1752,6 +1778,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xbab25967: "perkbucket_miningitemt1bucketchance", // 3132250471
     0xbac1ad99: "perkbucket_minercharmt1", // 3133255065
     0xbac65ece: "perkbucket_nurserybucket_weights", // 3133562574
+    0xbaef40a2: "perkbucket_armor_hastepotencyinc_weights", // 3136241826
     0xbb390a18: "strintbonust4", // 3141077528
     0xbb90a0d6: "perkbucket_corruptedessencet1", // 3146817750
     0xbb92d31c: "focintbonust1_weights", // 3146961692
@@ -1824,6 +1851,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xc052bd99: "focbonust2_weights", // 3226647961
     0xc0853964: "perkbucket_reaperresint1", // 3229956452
     0xc092764a: "runeglass_gem_jasper_nature", // 3230824010
+    0xc0a93b17: "perkbucket_feet_hasteonvault", // 3232316183
     0xc0c6abb1: "perkbucket_fishcatchsizesalt3charm_weights", // 3234245553
     0xc0d49886: "perkbucket_sandwurmtrial_ring", // 3235158150
     0xc0d580ac: "strdexbonust4_weights", // 3235217580
@@ -1870,6 +1898,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xc4c1d0b9: "runeglass_gem_ruby_lightning", // 3301036217
     0xc4c3c0b8: "constitutionbuckett4", // 3301163192
     0xc4d3f1b2: "perkbucket_raidglobalpool_earring_weights", // 3302224306
+    0xc51184ac: "perkbucket_s8perks", // 3306259628
     0xc511fcde: "runeglass_gem_carnelian_mana_weights", // 3306290398
     0xc5197846: "perkbucket_elitelostbucketchance_weights", // 3306780742
     0xc53ab300: "perkbucket_swordcharmt3_weights", // 3308958464
@@ -1879,6 +1908,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xc583049f: "perkbucket_hatchetcharmt6", // 3313697951
     0xc59b6e04: "perkbucket_crafteddynastyshipyardbucketchancet4bucket4", // 3315297796
     0xc5fe676d: "runeglass_gem_jasper_mana", // 3321784173
+    0xc6068adc: "turquoisecutt2_weights", // 3322317532
     0xc6384aa2: "perkbucket_pvprtperks_t2bucket2chance", // 3325577890
     0xc645dc7d: "ambercutt4", // 3326467197
     0xc6617ae9: "flamecoreattributerapiert5", // 3328277225
@@ -1983,8 +2013,10 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xd0983eca: "attributemuskett2", // 3499638474
     0xd0c8d62f: "singlestat_attributest4_heavy_weights", // 3502822959
     0xd0d161b0: "perkbucket_swordcharmt3", // 3503382960
+    0xd0eb9fc2: "perkbucket_armor_hastepotencyinc", // 3505102786
     0xd0f48f4a: "perkbucket_globalperkbucketrollt5bucket4", // 3505688394
     0xd13d5067: "runeglass_gem_carnelian_arcane_weights", // 3510456423
+    0xd17d9e9f: "turquoisecutt3_weights", // 3514670751
     0xd1860849: "globalattributebucketchancet3", // 3515222089
     0xd1902b8a: "perkbucket_pvprt_gemsbucketprestige_t5_weights", // 3515886474
     0xd1acfdd4: "perkbucket_baetylust2", // 3517775316
@@ -2006,6 +2038,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xd3225045: "perkbucket_2hhammercharmt5", // 3542241349
     0xd339a405: "perkbucket_pvpgemsbucket_weights", // 3543770117
     0xd35c4820: "intelligencebuckett3", // 3546040352
+    0xd3729734: "perkbucket_armor_consumablehealing_weights", // 3547502388
     0xd3a80028: "perkbucket_mutatorice", // 3551002664
     0xd3b0e321: "perkbucket_pvprtprestigeperks_weights", // 3551585057
     0xd3bf0a0e: "perkbucket_injectedmutatorperkbucketrollt5bucket5", // 3552512526
@@ -2129,12 +2162,14 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xdf918740: "focbonust3", // 3750856512
     0xdfae4dcd: "focstrbonust3_weights", // 3752742349
     0xdfc3669b: "perkbucket_lifestaffcharmt4", // 3754124955
+    0xdfc368d9: "jadecutt1", // 3754125529
     0xe018b0f3: "perkbucket_skinningitemt2bucketchance_weights", // 3759714547
     0xe03cfcd1: "perkbucket_corruptedbucketchancet3_weights", // 3762093265
     0xe0632a8a: "perkbucket_ancientbucketchancet5bucket5_weights", // 3764595338
     0xe07527e7: "attributevoidgauntlett2_weights", // 3765774311
     0xe0809ce3: "runeglass_gem_topaz_stamina_weights", // 3766525155
     0xe0819632: "perkbucket_tool5thperk", // 3766588978
+    0xe0830a12: "perkbucket_jewelry_amulet_dodgeburn_durred", // 3766684178
     0xe099cc3f: "condexbonust1_weights", // 3768175679
     0xe09fa20e: "strbonust2_weights", // 3768558094
     0xe0c4f682: "runeglass_gem_jasper_nature_weights", // 3771004546
@@ -2188,6 +2223,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xe68fd434: "breachgemslotchancet4", // 3868185652
     0xe693a6c0: "singlestat_attributest5_light_always_weights", // 3868436160
     0xe698d77e: "runeglass_gem_ruby_arcane_weights", // 3868776318
+    0xe6a17174: "perkbucket_weapon_rendingstacks", // 3869340020
     0xe6bc7590: "perkbucket_writhingbriart2", // 3871110544
     0xe6bfad5a: "runeglass_gem_carnelian_ice_weights", // 3871321434
     0xe6d58b4a: "topazcutt2", // 3872754506
@@ -2342,6 +2378,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xf6b53c97: "singlestatpvprt_attributest4_heavy_weights", // 4139072663
     0xf6d177dd: "perkbucket_castperkbucketrollt5bucket2_weights", // 4140922845
     0xf6d8203e: "perkbucket_earring_onpotionfort_weights", // 4141359166
+    0xf6e64407: "perkbucket_armor_consumablehealing", // 4142285831
     0xf6e8bf0f: "perkbucket_animust1", // 4142448399
     0xf70e33a4: "attributevoidgauntlett3_weights", // 4144903076
     0xf7183ec9: "perkbucket_ancientbucketchancet5bucket4_weights", // 4145561289
@@ -2363,6 +2400,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xf8ea52f5: "perkbucket_minercharmt1_weights", // 4176106229
     0xf8eb319e: "runeglass_gem_diamond_melee", // 4176163230
     0xf8f20637: "perkbucket_tallowt2", // 4176610871
+    0xf91261f6: "perkbucket_s8attributes_weights", // 4178731510
     0xf91748f6: "pearlt3", // 4179052790
     0xf93cbc17: "perkbucket_craftedperkbucketrollt4bucket4", // 4181507095
     0xf94a22e9: "diamondcutt4_weights", // 4182385385
@@ -2374,6 +2412,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xf9a52374: "perkbucket_fishlucknight3charm_weights", // 4188349300
     0xf9c25390: "perkbucket_pvp_perkitem4_weights", // 4190262160
     0xf9d19a93: "runeglass_gem_ruby_void_weights", // 4191263379
+    0xf9d687fd: "turquoisecutt2", // 4191586301
     0xf9df815c: "focbonust1_weights", // 4192174428
     0xfa32bf23: "runeglass_gem_onyx_melee", // 4197629731
     0xfa3335ea: "runeglass_gem_ruby_stamina_weights", // 4197660138
@@ -2428,6 +2467,7 @@ var hashPerkBucketDataPerkBucketsPerkBucketID = map[uint32]string{
     0xff3743e7: "perkbucket_hollowarmorshardt5_weights", // 4281811943
     0xff556b8c: "amethystcutt2", // 4283788172
     0xff70ec37: "perkbucket_ancientessencet1", // 4285590583
+    0xff8bb619: "turquoisecutt1_weights", // 4287346201
     0xff9225aa: "perkbucket_instrumentst4chance3", // 4287767978
     0xffd26693: "runeglass_gem_amethyst_melee_weights", // 4291978899
     0xffdda498: "perkbucket_pvprtperks_t3bucket2chance_weights", // 4292715672

@@ -9,9 +9,12 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x14d9bba1: "elite+", // 349813665
     0x198fe96f: "raid10miniboss", // 428861807
     0x1d5adc54: "raid20boss", // 492493908
+    0x1dd43171: "catacombsboss", // 500445553
     0x1e871cd9: "dungeon+_nocurrency", // 512171225
     0x1f99399e: "eliteminiboss", // 530135454
     0x26e52ecf: "war_t2", // 652553935
+    0x2736ba35: "catacombs", // 657898037
+    0x282ae454: "catacombs+", // 673899604
     0x2a715d24: "war_t1_with_defender_bonus", // 712072484
     0x2c91dfdb: "arena", // 747757531
     0x2f2fe2aa: "invasion_t4", // 791667370
@@ -19,12 +22,14 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x3003c60c: "outpostrush_t2", // 805553676
     0x3225b842: "named_solo+", // 841332802
     0x34666e73: "solo+_starterbeach", // 879128179
+    0x348ae692: "capturetheflag_t2", // 881518226
     0x34b9957c: "outpostrushsolo+", // 884577660
     0x39236a62: "project+", // 958622306
     0x3efe663a: "boss", // 1056859706
     0x3ffa1f90: "dungeon", // 1073356688
     0x41ede38d: "soloboss", // 1106109325
     0x4317f817: "quest", // 1125644311
+    0x438dd604: "capturetheflag_t3", // 1133368836
     0x4704f69a: "outpostrush_t3", // 1191507610
     0x4f8a6557: "missionpvp+", // 1334469975
     0x514049a6: "raid20+", // 1363167654
@@ -38,6 +43,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x5b954ee4: "solo_starterbeach", // 1536511716
     0x5f451625: "invasion_t1", // 1598363173
     0x610c2730: "objectivepoi-", // 1628186416
+    0x616efb56: "catacombsminiboss", // 1634663254
     0x67eddaa3: "dungeon-", // 1743641251
     0x68b293d5: "objectivepoi", // 1756533717
     0x7d458c26: "outpostrushgroup+", // 2101709862
@@ -47,6 +53,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x9067f23c: "mission", // 2422731324
     0x90c6960a: "dungeon_nocurrency", // 2428933642
     0x9123ec3c: "raid20", // 2435050556
+    0x97cc7980: "capturetheflag_loss_t1", // 2546760064
     0x98197a65: "player", // 2551806565
     0x98b7098f: "darknessminor", // 2562132367
     0x9bceaefa: "raid10boss", // 2614013690
@@ -54,13 +61,16 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0xa6e9c062: "missionpvp-", // 2800336994
     0xa752da01: "war_t4_with_defender_bonus", // 2807224833
     0xa90a97b6: "outpostrush_t1", // 2836043702
+    0xad83b728: "capturetheflag_t1", // 2911090472
     0xb14b7709: "invasion_t3", // 2974512905
     0xb74c624b: "eliteboss", // 3075236427
     0xb822a88d: "mission-", // 3089279117
     0xb823ec93: "raid20-", // 3089362067
+    0xb88c3119: "boss+", // 3096195353
     0xba0ebfff: "raid10", // 3121528831
     0xba6552ca: "raid10-", // 3127202506
     0xbfec7f75: "war_t1", // 3219947381
+    0xc1494161: "catacombs-", // 3242803553
     0xc64c479f: "invasion_t2", // 3326887839
     0xc6724094: "arena3v3_win_1_round", // 3329376404
     0xcca425c5: "solo-_starterbeach", // 3433309637
@@ -74,6 +84,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0xd78d9e11: "elite", // 3616382481
     0xd826f064: "outpostrushsolo", // 3626430564
     0xd9606339: "outpostrush_t4", // 3646972729
+    0xdde943a7: "capturetheflag_t4", // 3723051943
     0xe4de4845: "critter", // 3839772741
     0xecb15fa7: "darkness", // 3971047335
     0xf1bab939: "dungeon-_nocurrency", // 4055546169

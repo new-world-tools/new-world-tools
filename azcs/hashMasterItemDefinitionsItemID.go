@@ -43,6 +43,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x003b0fba: "mutatorrewardcontainerdiff6t1", // 3870650
     0x003c1387: "lightlegs_dresspvpreplicat3", // 3937159
     0x003fc724: "playtest_rangerarchetype_lighthands_t5_700", // 4179748
+    0x00411e41: "lightchest_firstlightexp_mutt1_owb", // 4267585
     0x00420a25: "lightchest_covenantrank5_sage_v2", // 4327973
     0x004382d8: "2hstafffire_flamesworngreatstafft5", // 4424408
     0x004424a5: "undead_gravedigger_2hshovel", // 4465829
@@ -55,6 +56,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x00501f5e: "fishingtreasurepigmentt3", // 5250910
     0x005148b5: "1hrshield_naturesshieldt3_v2", // 5327029
     0x0055bda6: "skin_head_medievalhistoric_twitch02", // 5619110
+    0x0055c9c5: "skin_chest_s8_rank2_lbclear_tempestheart", // 5622213
     0x0055cc67: "fishingdragonfishlarget3", // 5622887
     0x005704df: "lighthands_dungeon10t5", // 5702879
     0x00570747: "shard_dex_ringemeraldt5", // 5703495
@@ -85,6 +87,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x008e45dc: "darkmatterlarge_basic_box_s7", // 9323996
     0x0090718b: "ring_blessingoftheeartht4", // 9466251
     0x0092d66d: "omega_gauntletvoid_600", // 9623149
+    0x0097503e: "skin_2hgreatsword_season8pass", // 9916478
     0x00977f68: "skin_feet_apr2023_highwaymancapelet", // 9928552
     0x00978f7f: "amuletdropt5_str_sandstorm_leg", // 9932671
     0x0097bd63: "2hwarhammer_forceofnaturet3", // 9944419
@@ -200,10 +203,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x012e1312: "fm_loot_item_s_1_11", // 19796754
     0x012e3972: "playtest_hatchet_dmg_t5_600", // 19806578
     0x012f31b6: "1hgauntletice_promiseofmalevolencet5_v2", // 19870134
+    0x01300c12: "skin_mtx_coquette_legs", // 19926034
     0x0133a51b: "rewardcontainersprigganarena63", // 20161819
     0x01357f5c: "2hgreatsworddropt5_guaranteerare", // 20283228
     0x0136e161: "1hgauntletvoid_wickedfuryt5_v2", // 20373857
     0x01376bd9: "1hflail_syndicaterank1_v2", // 20409305
+    0x0138f461: "flxpac_earringt5_ef_mut_owb", // 20509793
     0x013b5783: "1hflail_wintert3_shop", // 20666243
     0x013b7dfd: "2hstafflifecorsairt4", // 20676093
     0x013e972d: "skin_legs_fatefortunetellerl", // 20879149
@@ -238,7 +243,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x016afb18: "2hmusket_greenkeepersblightedhandcannont5_v2", // 23788312
     0x016b49b9: "2hspear_flxpac_crafteddungeon10t5", // 23808441
     0x016bef1f: "playtest_lighthands_soldier_t5_700", // 23850783
+    0x016c1592: "flxpac_heavyhands_barnacles_mutt5_owb", // 23860626
     0x016c867d: "1hthrowingaxe_nyhartshatchett5", // 23889533
+    0x017021a0: "skin_chest_s8_rank2_lb_eternalpools", // 24125856
     0x017120de: "playtest_earring_soldier_t5_625", // 24191198
     0x01715f29: "fishinghakelarget1", // 24207145
     0x0172c3de: "omega_heavyhead_ranger_617_3", // 24298462
@@ -264,6 +271,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x01885f75: "1hlongsword_unceremoniousendt4", // 25714549
     0x0188609a: "chitinleathert5", // 25714842
     0x0188ff11: "playtest_mediumchest_soldier_t4", // 25755409
+    0x01891f24: "mediumlegs_etherealt3_s1e", // 25763620
     0x018d107b: "alchemyfiret1", // 26022011
     0x018ed62b: "quillbarkt1", // 26138155
     0x018f8474: "earringintt4", // 26182772
@@ -299,6 +307,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x01b6772f: "2hmusketcrafteddungeon2t3", // 28735279
     0x01b6b933: "1hgauntletvoid_pvp_namedt5_v2", // 28752179
     0x01b6bbfa: "heavylegs_knightt3", // 28752890
+    0x01b8785d: "skin_chest_s8_rank1_lbscore_hercyne", // 28866653
     0x01b9aabd: "omega_ring_ranger_610_3", // 28945085
     0x01bade01: "09a_s19_rapiert5", // 29023745
     0x01bc47be: "crx_reward_mediumleathert3_chest", // 29116350
@@ -313,6 +322,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x01cf1146: "omega_box_armor_scholar_500_light", // 30347590
     0x01d36810: "2helementalstaff_fire_winter_con", // 30631952
     0x01d57311: "1hlongsword_sharpridge", // 30765841
+    0x01d5935d: "earringdropt4_s8item", // 30774109
     0x01d62687: "heavychest_lny2024t5", // 30811783
     0x01d6b2ef: "conquerorsxitem_lightfeet_soldier_pvp", // 30847727
     0x01db63d6: "1hshielddt4", // 31155158
@@ -556,6 +566,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x034a96e3: "dyea036", // 55219939
     0x034b4257: "lightlegs_fishermanvengeful_dropt5", // 55263831
     0x034de9dc: "skin_chest_s7_rank1_lb_opr", // 55437788
+    0x034eb6bb: "runespinningswordst4c", // 55490235
     0x034ec8a5: "omega_stafflife_620", // 55494821
     0x034f7f1a: "2hbow_furyscallt3_v2", // 55541530
     0x0350450a: "crx_msq2eg_guardianssatchel", // 55592202
@@ -634,6 +645,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x03bcab09: "fishingstarfishsmallt3", // 62696201
     0x03be2775: "heavylegs_covenantrank3_occultist", // 62793589
     0x03beb774: "lightchest_d_mutextra_t5", // 62830452
+    0x03bf83d8: "skinningknife_etherealt5_s1e", // 62882776
     0x03bfd034: "1hkshield_covenantrank2_v2", // 62902324
     0x03bfdbd4: "mutatorrewardcontainerdiff4t1", // 62905300
     0x03c26ff2: "lighthands_wedding_int", // 63074290
@@ -694,6 +706,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x041dc156: "lightchest_clotht5_guaranteeepic", // 69058902
     0x041dcbf2: "fm_loot_item_c_16_09", // 69061618
     0x041ebbd2: "2hspear_poseidonsinheritancet5_v2", // 69123026
+    0x041fd935: "loggingaxe_etherealt3_s1e", // 69196085
     0x0420312e: "1hthrowingaxecrafteddungeon6t5", // 69218606
     0x04254b18: "entdisplay_statuseffect_token_season_2", // 69552920
     0x04255997: "2hgreataxe_flaminggreataxet2_v2", // 69556631
@@ -735,6 +748,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x044b7192: "feathert1", // 72053138
     0x044d1666: "2hmusket_decisivevictoryt5_v2", // 72160870
     0x04509a4e: "hands_courtier1t2", // 72391246
+    0x0450a911: "conquerorsitem_amulet_onehitkill_counter_s1e", // 72395025
     0x04538a6f: "2hstafflife_riptide", // 72583791
     0x04570577: "1hgauntletvoid_ultimatesacrificet3_v2", // 72811895
     0x0457e21c: "skin_mtx_ronin_fighter_head", // 72868380
@@ -771,6 +785,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x04802595: "playtest_mediumhead_sage_t5_585", // 75507093
     0x0480534b: "mrharrison_guitar_part2_page1", // 75518795
     0x04807ea0: "1hgauntletvoid_spectralarsont5", // 75529888
+    0x04837a88: "campskin_summermedley01_a_pvp", // 75725448
     0x0483fd6b: "1hrshield_marauderrank3_v2", // 75758955
     0x048406a3: "bot_killradius_corrupted", // 75761315
     0x0484dba4: "runedetonatet4c", // 75815844
@@ -908,6 +923,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x054aa1d1: "heavyfeet_marauderrank1_brigand", // 88777169
     0x054e4d51: "2hspear_djaofbest5_600", // 89017681
     0x054f2352: "clothinghead_alchemistt4", // 89072466
+    0x054fa8dd: "conquerorsitem_lifestaff_supportiveheals_s1e", // 89106653
     0x055045a5: "skin_swordsmanarchetypelegs", // 89146789
     0x0551018c: "playtest_heavyfeet_sage_t5_675", // 89194892
     0x05529251: "mediumhead_corrupted2t4", // 89297489
@@ -931,6 +947,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x056bb37c: "influencerewardcontainerl63", // 90944380
     0x056bc37d: "multiitemchest_box_s2_sandstorm", // 90948477
     0x056c6e17: "monarchsmight", // 90992151
+    0x056c808e: "skin_mtx_coquette_chest", // 90996878
     0x056e561e: "sandworm_trial_weaponvoidgauntlet_t5", // 91117086
     0x057101d2: "omega_amulet_sentry_602", // 91292114
     0x05714089: "2hbow_marauderrank3_v2", // 91308169
@@ -945,6 +962,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x057af280: "musketcharmt3", // 91943552
     0x057bc57b: "1hgauntletvoid_pvp_prestiget5", // 91997563
     0x057bd823: "mediumlegs_covenantrank3_scholar_v2", // 92002339
+    0x057c6ddc: "flxpac_mediumchest_dynastyshipyard_mutt5_owb", // 92040668
     0x057eaac1: "dunewalker_warhammer", // 92187329
     0x057fc114: "crx_2hgreatswordangryeartharena", // 92258580
     0x0580476e: "2hmusketpvpdropt4", // 92292974
@@ -978,6 +996,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x05af5128: "12a_msq_24_gawainsword", // 95375656
     0x05afbb28: "foodstrdext5", // 95402792
     0x05afc443: "occultistarchetypechest_upgrade", // 95405123
+    0x05b3e826: "flxpac_earringt5_bs_mut_owb", // 95676454
     0x05b47f9b: "heavychest_syndicaterank6_scholar", // 95715227
     0x05b57b73: "crx_sq2sm_musket", // 95779699
     0x05b597ee: "2hgreataxe_syndicaterank5", // 95786990
@@ -991,6 +1010,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x05c4020e: "1hrapier_diplomacyt5", // 96731662
     0x05c587eb: "1hthrowingaxe_ashenvictoryt3", // 96831467
     0x05cc7706: "nov2023_container", // 97285894
+    0x05ced6b2: "skin_2hfishingpole_season8pass", // 97441458
     0x05cf66c8: "fm_hunt_item_6_15", // 97478344
     0x05d17e1a: "skin_chest_s4_rank2_lb_sandworm", // 97615386
     0x05d182b4: "heavyfeet_lost1t3", // 97616564
@@ -999,6 +1019,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x05dac2ce: "playtest_ranger_lighthands_t5_650", // 98222798
     0x05db01dc: "crx_lighthands_fishquestt2", // 98238940
     0x05db13d3: "1hlongsword_flxpac_crafteddungeon10t5", // 98243539
+    0x05e16f41: "flxpac_lighthead_dynastyshipyard_mutt5_owb", // 98660161
     0x05e25b19: "1hthrowingaxecrafteddungeon7t5", // 98720537
     0x05e402d1: "mediumhead_angryearth2t5", // 98829009
     0x05e46ae3: "2hmusket_myrkgard_mutt5", // 98855651
@@ -1040,6 +1061,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x06162417: "hands_courtier2t2", // 102114327
     0x0616a4bd: "scarab_con_medium_ele_handst5", // 102147261
     0x0618b23b: "earringt5_heavyearring", // 102281787
+    0x0618e59f: "lost_undeadnaga_staff", // 102294943
     0x06190ce3: "lazaruskeyreplacement", // 102304995
     0x061a7786: "omega_amulet_soldier_617", // 102397830
     0x061d273b: "2hstafflife_fleshbindert2_v2", // 102573883
@@ -1056,6 +1078,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x062c36ea: "rewardpostcapjewelcraftingt3_b", // 103560938
     0x062ee1b7: "lighthands_marauderrank3_v2", // 103735735
     0x063069e3: "artifact_wcarmorheavychestt5", // 103836131
+    0x0636d6a6: "skin_legs_coveff2025", // 104257190
     0x063704ea: "2hstafflife_higherpurposet5_v2", // 104269034
     0x063746ae: "artifact_set1_lightfeet", // 104285870
     0x0638aef0: "schematic_house_housingitem_bed_settler_bed02_b", // 104378096
@@ -1134,6 +1157,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x06abdf0f: "2hblunderbuss_ice_mutt5", // 111927055
     0x06ac460a: "mediumchest_covenantrank5_scholar_v2", // 111953418
     0x06b21bf2: "lightlegs_marauderrank3", // 112335858
+    0x06b58b7e: "skin_mtx_greek_gods_2hlongsword", // 112561022
     0x06b6f55d: "playtest_box_weapons_damage_t5_700", // 112653661
     0x06b770a9: "heavyhead_oakking_int", // 112685225
     0x06b7dc81: "heavyhands_syndicaterank6_2_soldier", // 112712833
@@ -1176,6 +1200,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x06f0cd51: "mutatorrewardcontainerdiff3t1", // 116444497
     0x06f0e381: "runeglass_gem_malachite_lightning", // 116450177
     0x06f1630a: "mediumchest_sorchuntert4", // 116482826
+    0x06f1e1cd: "entdisplay_emote_touchgrass", // 116515277
     0x06f35818: "scarab_int_1helementalgauntlet_icet5", // 116611096
     0x06f5c21b: "2hgreataxe_judgmentt5", // 116769307
     0x06f63688: "skin_legendarystrength_azothscepter", // 116799112
@@ -1252,6 +1277,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0766e609: "mediumlegs_apexdoubloonshopt5", // 124184073
     0x07690940: "artifact_nhnewweaponkshieldt5_gs675", // 124324160
     0x076b9f2d: "0831_0104_brutecannonschematic", // 124493613
+    0x076e064a: "lightchest_etherealt5_s1e", // 124651082
     0x076f48bc: "omega_lighthands_ranger", // 124733628
     0x076fd0eb: "lightchest_invasion1t4", // 124768491
     0x0770335e: "heavyfeet_pvp_prestige600bt5", // 124793694
@@ -1338,6 +1364,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x07e891ce: "2hwarhammer_soulforgedblightt5", // 132682190
     0x07eaca19: "omega_lighthands_scholar_607_2", // 132827673
     0x07eb359e: "2hstafffire_cindert2_v2", // 132855198
+    0x07eb9f7a: "cutgemst51_s8", // 132882298
     0x07edd97f: "holdingrunet5", // 133028223
     0x07ee5cdd: "rewardpostcapjewelcraftingt2_b", // 133061853
     0x07efcf65: "pvp_potions_large_ancientt2", // 133156709
@@ -1399,6 +1426,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x08483a4a: "1hgauntletice_syndicaterank5_v2", // 138951242
     0x08485749: "2hmusket_damascanshott5", // 138958665
     0x08489d5a: "2hmusketangryeartht5", // 138976602
+    0x084933a2: "conquerorsitem_spear_embiggen_s1e", // 139015074
     0x0849671b: "mediumchest_leatherinfluencet2", // 139028251
     0x084e5cdd: "1hthrowingaxeancientt4", // 139353309
     0x08522c5f: "2hstafflife_flowinglifestafft4_v2", // 139603039
@@ -1469,6 +1497,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x08aa294d: "omega_box_armor_soldier_602_medium", // 145369421
     0x08ab2811: "2hstafflife_shipmedicsstafft2_v2", // 145434641
     0x08ad4807: "or_armory_t2", // 145573895
+    0x08ad9861: "flxpac_earringt5_ds_mut_owb", // 145594465
     0x08aea6f4: "playtest_heavychest_soldier_t4", // 145663732
     0x08b58601: "playtest_box_armor_scholar_t5_light", // 146114049
     0x08b9353b: "chest_musketeert3", // 146355515
@@ -1483,6 +1512,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x08c5e73c: "mediumhands_m_boss600_mutt5", // 147187516
     0x08c7d8e0: "trial_sandworm_dailybox_v2", // 147314912
     0x08caccce: "blacksmitharm_guitar_part1_page1", // 147508430
+    0x08ccd37e: "skin_gloves_season8pass", // 147641214
     0x08cce874: "mediumchest_dungeon4t4", // 147646580
     0x08cdfa2d: "lightchest_covenantrank6", // 147716653
     0x08d0232d: "mediumlegs_marauderrank1_cleric", // 147858221
@@ -1568,6 +1598,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x09490a1f: "2hspear_marauderrank2", // 155781663
     0x09495c92: "heavylegs_hercyneraid_craftedschematic", // 155802770
     0x0949dadf: "lightchest_maraudert4a", // 155835103
+    0x094a2b78: "potionburstregent5", // 155855736
+    0x094b876e: "purpleguffint2_s8", // 155944814
     0x094bc341: "heavylegs_covenantrank4_sage_v2", // 155960129
     0x094cbda8: "playtest_lighthands_sage_t5_585", // 156024232
     0x0951cf62: "claimt1_50m_t4", // 156356450
@@ -1596,6 +1628,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0975eeda: "fm_loot_item_c_11_06", // 158723802
     0x09761dde: "lighthands_pvp_namedt2", // 158735838
     0x0978100f: "1hthrowingaxe_hatchetofthearcanetowert5", // 158863375
+    0x097a9020: "heavyhands_etherealt2_s1e", // 159027232
     0x097dce1a: "2hgreatsword_breathoflifet4", // 159239706
     0x098330a9: "lighthead_marauderrank4_scholar_v2", // 159592617
     0x09833b50: "itempattern_sagehusk_hat", // 159595344
@@ -1623,6 +1656,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x09aaf4de: "2hwarhammergraverobbert4", // 162198750
     0x09aba2f2: "lighthead_clothpvpdropt3", // 162243314
     0x09ac0e16: "2hgreataxe_aeternumshoffnungt5", // 162270742
+    0x09ac156a: "flxpac_lightchest_dynastyshipyard_mutt5_owb", // 162272618
     0x09ac9939: "omega_mediumhands_scholar_622", // 162306361
     0x09ae1163: "gatherable_research_strange_wood_t2", // 162402659
     0x09b07169: "marauder_1hskinningknifet3", // 162558313
@@ -1725,6 +1759,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0a52f034: "1hgauntletice_covenantrank6_2", // 173207604
     0x0a541b9c: "fm_loot_item_14_06", // 173284252
     0x0a54c9c8: "omega_heavyhands_soldier_615_2", // 173328840
+    0x0a571a57: "flxpac_mediumhands_brimstonesands_mutt5_owb", // 173480535
     0x0a5927a0: "heavyfeet_platedropt5_dex_inferno_leg", // 173615008
     0x0a5c63b5: "1hrapier_elegantstickt2_v2", // 173826997
     0x0a5c6a95: "2hbow_moonshott2", // 173828757
@@ -1779,6 +1814,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0aa72f36: "lightchest_syndicaterank5_scholar_v2", // 178728758
     0x0aaa412f: "femheavychest_legacycrassust5", // 178929967
     0x0aaacc4b: "crx_reward_mediumtemplet5_head", // 178965579
+    0x0aac0376: "soulwarden_greataxe", // 179045238
     0x0aad32b8: "mediumlegs_covenantrank3_barbarian", // 179122872
     0x0aae6267: "lightfeet_dresst4", // 179200615
     0x0aaeab78: "entdisplay_gear_set_loadout", // 179219320
@@ -1897,6 +1933,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0b602e39: "lightfeet_wedding_dex", // 190852665
     0x0b60a110: "2hgreatsword_clencht4", // 190882064
     0x0b630ee5: "1hgauntletice_marauderrank3_v2", // 191041253
+    0x0b633ab8: "campskin_sovereignsrest_a_pvp", // 191052472
     0x0b6514ae: "2hbow_covenantrank4_v2", // 191173806
     0x0b654dda: "2hbow_hercynemutatorcombo", // 191188442
     0x0b674887: "mutatorrewardcontainerdiff9t1", // 191318151
@@ -1966,6 +2003,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0bc13333: "mediumfeet_hollyking_str", // 197210931
     0x0bc28abb: "workorder_0205_0102_greaves_battlesembrace_v2", // 197298875
     0x0bc2f0b4: "omega_lightfeet_ranger_pvp_a1", // 197324980
+    0x0bc401ec: "conquerorsitem_mediumhead_costumethorpe_s1e", // 197394924
     0x0bc8d610: "1hrapier_huntersclawt5", // 197711376
     0x0bc9e9a0: "crx_lightfeet_arenaspriggan", // 197781920
     0x0bcf5825: "playtest_box_armor_ranger_t5_675_heavy", // 198137893
@@ -2151,6 +2189,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0ccc6232: "lightfeet_lazarus_mutt5", // 214721074
     0x0ccc9f6b: "99f_er_elemental_ingredient_wood", // 214736747
     0x0ccce3f6: "itempattern_femvictorianl_chest_t2", // 214754294
+    0x0cd13a6f: "dyes1_box_s8", // 215038575
     0x0cd25db2: "heavyfeet_heavydropt3", // 215113138
     0x0cd2da58: "2hwarhammer_atrickofthemindt4_v2", // 215145048
     0x0cd4d4c1: "2hwarhammer_rampantconvictiont5", // 215274689
@@ -2231,6 +2270,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0d573b0e: "feet_witchhuntert2", // 223820558
     0x0d576e7b: "2hmusket_marauderrank3", // 223833723
     0x0d58629c: "hands_demonhunter2t5", // 223896220
+    0x0d590cff: "skin_chest_s8_rank2_lbscore_starstone", // 223939839
     0x0d59d7e6: "heavyhands_crafteddungeon7t5", // 223991782
     0x0d5a031f: "heavychest_furplatet5_guaranteerare", // 224002847
     0x0d5a36fb: "lightchest_clothcastt5", // 224016123
@@ -2363,6 +2403,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0e3ab1e4: "damned_axeman_shield", // 238727652
     0x0e3b43c0: "playtest_chromaticmatter_cache", // 238764992
     0x0e3b4b3f: "fm_loot_item_c_2_05", // 238766911
+    0x0e3cfae1: "roundshield_etherealt3_s1e", // 238877409
     0x0e3d4a3f: "mediumlegs_leathert2", // 238897727
     0x0e3f3e20: "heavyfeet_li_boss600_mutt5_v2_new", // 239025696
     0x0e3f912e: "myrkgardkeyfragment4", // 239046958
@@ -2525,6 +2566,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x0f2cdac4: "omega_mediumhead_ranger_600_3", // 254597828
     0x0f2d3bed: "2hgreataxe_cobwebcleavert3", // 254622701
     0x0f2fa05a: "2hstafffire_sporelight", // 254779482
+    0x0f323eae: "mediumhands_etherealt2_s1e", // 254951086
     0x0f3311f1: "skin_mar2023_greataxe", // 255005169
     0x0f34e7d1: "fm_pvp_marauders_item_7", // 255125457
     0x0f352807: "lighthands_hercyneraid_craftedschematic", // 255141895
@@ -2674,6 +2716,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1014bc7a: "1hrapier_harbingeroftheendt5", // 269794426
     0x1016708b: "heavyhead_oakkingt5_shop", // 269906059
     0x10170d3f: "fm_hunt_item_5_11", // 269946175
+    0x1017969d: "campskin_season6_a_pvp", // 269981341
     0x101d0b2f: "fm_loot_item_s_22", // 270338863
     0x101d707e: "omega_mediumchest_sage_602", // 270364798
     0x101de3e9: "heavyhands_covenantrank2_soldier_v2", // 270394345
@@ -2682,6 +2725,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x101f7578: "2hwarhammer_portalsmashert5_v2", // 270497144
     0x101f9731: "omega_lighthead_scholar_605_2", // 270505777
     0x1021c985: "carpentryt2", // 270649733
+    0x10224abd: "skin_chest_s8_rank2_lbclear_crystalclaw", // 270682813
     0x1022c7ea: "crx_reward_mediumfemlacet4_hands", // 270714858
     0x1023ade9: "mediumhands_shadowedhandst5", // 270773737
     0x10297bb1: "enchantedeartht2", // 271154097
@@ -2697,6 +2741,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x10342279: "mediumchest_hollyking_dex", // 271852153
     0x1036cc58: "1hrapier_pvp_namedt51", // 272026712
     0x10381a5c: "omega_mediumhead_soldier_607_2", // 272112220
+    0x1038395b: "lighthead_etherealt5_s1e", // 272120155
     0x1039a4aa: "shard_foc_heavy_phy_legst5", // 272213162
     0x1039d191: "pro_sep2024_container", // 272224657
     0x103b3dc5: "mediumlegs_hercyneraid", // 272317893
@@ -2896,6 +2941,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x11645d63: "2hstafflife_arcanelightt4", // 291790179
     0x1168c9b0: "lightfeet_syndicaterank5_v2", // 292080048
     0x116a2424: "omega_shieldround_615", // 292168740
+    0x116a369c: "lightfeet_etherealt5_s1e", // 292173468
     0x116baf68: "itempattern_lightchest_sprigganbanet5", // 292269928
     0x116c06dc: "flxpac_heavychest_hellfire_mutt5", // 292292316
     0x116c6c5c: "1hgauntletice_glacialraget5", // 292318300
@@ -3013,6 +3059,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x12042083: "shard_str_medium_ele_legst5", // 302260355
     0x12057c78: "drownedsailor_weapon_1hclubt2", // 302349432
     0x120641cf: "1hrapierpvpdropt5", // 302399951
+    0x1209c726: "skin_mtx_ninja_kitsune_gloves", // 302630694
     0x120abdde: "skin_chest_s4_rank2_lb_territory", // 302693854
     0x120c25af: "heavyhands_oakking_foc", // 302785967
     0x120d136a: "skin_feet_jun2023_frontwasteshawl", // 302846826
@@ -3044,6 +3091,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x122c7653: "playtest_box_refined", // 304903763
     0x122fd727: "flxpac_amulett5_m_mut", // 305125159
     0x12318502: "heavyhands_pvp_namedt5_v2", // 305235202
+    0x12343d26: "mediumfeet_spring_gs715", // 305413414
     0x12374447: "lightlegs_syndicatet4", // 305611847
     0x12386638: "heavychest_pvp_prestige600t5", // 305686072
     0x12387839: "heavylegs_corrupted1t5", // 305690681
@@ -3131,9 +3179,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x12b161f5: "scarab_str_amulet_mythril_t52", // 313614837
     0x12b1d8ba: "lightlegs_leadlinedlinenpantst4", // 313645242
     0x12b3f8e7: "1hgauntletvoid_hungerforpowert4", // 313784551
+    0x12b42bca: "skin_chest_s8_rank1_lbscore_brimstone", // 313797578
     0x12b4af9e: "entdisplay_skin_greatsword_firstlightseason", // 313831326
     0x12b5774f: "ringsolotrialt5", // 313882447
     0x12b67592: "omega_mediumchest_soldier_622", // 313947538
+    0x12bb79e7: "conquerorsitem_greataxe_undeadlostmonarch_s1e", // 314276327
     0x12bb9ca9: "mediumfeet_syndicaterank4_scholar_v2", // 314285225
     0x12bed3a1: "omega_box_armor_soldier_612", // 314495905
     0x12bedfed: "earringt4_bloodspillstud", // 314499053
@@ -3144,6 +3194,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x12caca57: "2hmusket_spirittrapt5", // 315279959
     0x12cadf9b: "1hthrowingaxe_silentcryt5", // 315285403
     0x12caf543: "playtest_box_armor_soldier_t5_675", // 315290947
+    0x12cb08d0: "skin_feet_maraff2025_box", // 315295952
     0x12cb5302: "bot_killradius_angryearth", // 315314946
     0x12ccd3c1: "1hgauntletvoid_finalharvestt3", // 315413441
     0x12cd2fc5: "heavyfeet_platedropt5_dex_sandstorm", // 315436997
@@ -3188,6 +3239,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x130a52fe: "skin_covenantheavy_box", // 319443710
     0x130a81ed: "lightlegs_marauderrank3_v2", // 319455725
     0x130c0553: "omega_ring_ranger_620_3", // 319554899
+    0x130e5727: "yellowguffint4_s8", // 319706919
     0x130f36e0: "mediumchest_assasinsfittedbreastplatet3", // 319764192
     0x13103992: "playtest_gauntletice_tnk_t5_675", // 319830418
     0x1313402f: "1hflaillostt5", // 320028719
@@ -3218,6 +3270,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1341af6c: "skin_head_desertprowler", // 323071852
     0x1343b42e: "1hroundshielddrownedelitet5", // 323204142
     0x1343bbee: "heavyhands_marauderrank5_soldier_v2", // 323206126
+    0x13470686: "cutgemst5_s8", // 323421830
     0x134a7ecf: "skin_hands_adobe", // 323649231
     0x134bc428: "1hgauntletvoid_silentgrieft5", // 323732520
     0x134c1af4: "lightchest_gog_boss600_mutt5", // 323754740
@@ -3273,6 +3326,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x13966a3a: "schematic_house_housingitem_pirate_cabinet01_b", // 328624698
     0x139739ed: "2hstafflife_staffofthethronet5_v2", // 328677869
     0x1398159d: "woodt2", // 328734109
+    0x13990717: "skin_head_maraff2025_box", // 328795927
     0x1399635f: "1hflail_named100_t5", // 328819551
     0x1399711d: "skin_season7passapparel_gloves", // 328823069
     0x1399b317: "hercyneraidmaterial_mutatorcombo", // 328839959
@@ -3418,6 +3472,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x145d88b6: "lightlegs_leadlinedlinenpantst4_v2", // 341674166
     0x1460f00f: "2hwarhammer_corruptedcullert3", // 341897231
     0x14647b76: "warrewardcontainerl57", // 342129526
+    0x14657ce6: "lighthead_spring_gs715", // 342195430
     0x146785a1: "2hstafffire_eyeoftheinfernot3", // 342328737
     0x14693a6f: "crx_2hgreataxesirenarena", // 342440559
     0x146973eb: "1hlongsword_sarcosanctt3", // 342455275
@@ -3457,6 +3512,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x149ac8a4: "lighthands_drownedelite1t4", // 345688228
     0x149d1d48: "2hwarhammer_marauderrank5", // 345840968
     0x149e1431: "earringpearlt2", // 345904177
+    0x149ed3b0: "owbrewardcontainerbonus_scarab", // 345953200
     0x149f28fb: "1hroundshield_barnacles_mutt5", // 345975035
     0x14a05f41: "rewardcontainerlostl51", // 346054465
     0x14a0d89d: "ring_featherweightringt5_v2", // 346085533
@@ -3645,6 +3701,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x15a47513: "earringt5_genesisoflife", // 363099411
     0x15a50ab2: "schematic_house_housingitem_chair_pirate_chair02_b", // 363137714
     0x15a5bd5c: "2hblunderbuss_lastargumentt5", // 363183452
+    0x15a77d44: "skin_chest_s8_rank1_lbclear_barnacles", // 363298116
     0x15a798dd: "scarab_str_medium_phy_handst5", // 363305181
     0x15aab447: "omega_heavyfeet_soldier_605", // 363508807
     0x15ab7884: "playtest_lightlegs_sentry_t5_675", // 363559044
@@ -3778,6 +3835,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x168bc251: "lighthands_apexdoubloonshopt5", // 378258001
     0x168c9c29: "04aside05_03_workorder_repairwatch", // 378313769
     0x168e0fd1: "725coconut_2", // 378408913
+    0x168f150f: "lightlegs_firstlightexp_mutt1_owb", // 378475791
     0x168f1d3f: "1hrshield_umbrat3", // 378477887
     0x168f4363: "femscout_medfeet_dropt3", // 378487651
     0x168fb54d: "ringt3_epsilonhoop_v2", // 378516813
@@ -4015,6 +4073,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x17cab9d2: "1hshieldd_winter_foc_600", // 399161810
     0x17ce9b12: "lightchest_legacyofthemagit5_v2", // 399416082
     0x17d11af7: "lightfeet_stylef14_t3", // 399579895
+    0x17d133d9: "or_outpost_gate_sol_t1", // 399586265
     0x17d18490: "itempattern_mediumhead_or1t5", // 399606928
     0x17d2a9e9: "skin_mar2023_voidgauntlet", // 399682025
     0x17d4192c: "crx_reward_mediumleathert4_legs", // 399776044
@@ -4088,10 +4147,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x18242904: "dyes5_box_s7", // 405022980
     0x18247981: "schematichercyne_heavyfeet", // 405043585
     0x1825528e: "skin_chest_s3_rank1_lbscore_depths", // 405099150
+    0x182778f7: "skin_mtx_coquette_1hflail", // 405240055
     0x1827ebd3: "questreward_wf_side_pickaxe", // 405269459
     0x182a1840: "artisan_longswordt52", // 405411904
     0x182c50c8: "1hrapierdungeon1t3", // 405557448
     0x182ea30a: "2hmusket_covenantadjudicatorsmuskett5", // 405709578
+    0x18302e70: "heavyhead_etherealt4_s1e", // 405810800
     0x1831cda7: "1hlongsword_marauderrank4", // 405917095
     0x1833f0b6: "2hmusket_ae_mutextra_t5", // 406057142
     0x1834de6a: "09a_m12_arcaneweaponbox", // 406117994
@@ -4118,6 +4179,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x18508dd2: "fm_loot_item_c_6_06", // 407932370
     0x1850c1c8: "1hgauntletvoid_shatteredsoulst5", // 407945672
     0x18513e7e: "mediumhead_ancient2t4", // 407977598
+    0x18514b33: "greenguffint4_s8", // 407980851
     0x185155ff: "omega_lightfeet_sage", // 407983615
     0x18554d02: "head_duelistt2", // 408243458
     0x185a91e7: "heavylegs_platepvpdropt2", // 408588775
@@ -4241,6 +4303,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x18fa423f: "12a_side_02_keepsakekey", // 419054143
     0x18fd618d: "2hgreataxe_syndicaterank6_2", // 419258765
     0x18ff3619: "questrewardarmorl65", // 419378713
+    0x18ffd828: "flxpac_mediumhead_brimstonesands_mutt5_owb", // 419420200
     0x1900ea7e: "heavylegs_platedropt2", // 419490430
     0x19021686: "opalt4", // 419567238
     0x1904abd3: "lightfeet_lost1t3", // 419736531
@@ -4252,6 +4315,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x190a0b31: "2hwarhammer_enchantedcrystalwarhammert5", // 420088625
     0x190a1bb8: "mediumfeet_leathert2", // 420092856
     0x190b0c5f: "omega_lightfeet_soldier_607_2", // 420154463
+    0x190b313d: "rapier_etherealt2_s1e", // 420163901
     0x190e24d3: "1hrapier_firstmatesrapiert5", // 420357331
     0x190eea98: "factionchisel4", // 420407960
     0x190f2faa: "precisiontoolt1_12", // 420425642
@@ -4314,6 +4378,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1960b55a: "lighthead_pvp_namedt3", // 425768282
     0x1960c069: "factionintro_syndicate_03_waterskin", // 425771113
     0x196101d7: "2hspearangryeartht3", // 425787863
+    0x196221b7: "heavyfeet_etherealt4_s1e", // 425861559
     0x1963a395: "2hblunderbuss_cornerstormt5_v2", // 425960341
     0x1963ab42: "1hgauntletvoid_emptyconsciencet5", // 425962306
     0x1965eda5: "shard_int_light_phy_head_clotht5", // 426110373
@@ -4364,6 +4429,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x19b59ffc: "playtest_flail_tnk_t5_700", // 431333372
     0x19b70243: "playtest_amulet_sage_t2", // 431424067
     0x19b7555a: "femheavyhead_t5_guaranteeepic", // 431445338
+    0x19b78b6b: "skin_chest_s8_rank2_lbscore_glacialtarn", // 431459179
     0x19b81b1e: "lighthead_tempestuouscowl_foct5", // 431495966
     0x19b83cef: "fm_loot_item_s_24_02", // 431504623
     0x19bae0c0: "crx_questreward_ww_side_boots_heavy", // 431677632
@@ -4398,6 +4464,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x19e99886: "omega_lighthead_sentry_617", // 434739334
     0x19eae5e1: "shard_int_earringpearlt5", // 434824673
     0x19ec0e9b: "skin_chest_jun2023_frontwastetwitch", // 434900635
+    0x19eca5d7: "skin_chest_s8_rank1_lb_monoeciouscleft", // 434939351
     0x19ecd41b: "schematic_house_housingitem_bed_legion_bed01_a", // 434951195
     0x19ed324d: "lighthands_lostsoulsglovest5", // 434975309
     0x19ee1e40: "lightfeet_corruptprogenitor", // 435035712
@@ -4541,6 +4608,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1ab754f0: "omega_mediumfeet_ranger_pvp", // 448222448
     0x1ab7ad2f: "1hthrowingaxeharbingert5", // 448245039
     0x1ab8728d: "1hroundshield_pvp_prestiget3", // 448295565
+    0x1ab93024: "tskillleveling5_s8", // 448344100
     0x1ab93786: "ring_forgottenvowt5_v2", // 448345990
     0x1ab9793f: "mediumhandsct5", // 448362815
     0x1abc91cd: "2hbow_hailstormt5_v2", // 448565709
@@ -4590,6 +4658,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1b0c04b5: "1helementalgauntlet_ice_wintert3_shop", // 453772469
     0x1b0cd7ea: "2hblunderbuss_worldevent_s1_t5_v2", // 453826538
     0x1b112dc2: "forgerssignetring_orange_makegoodcontainer", // 454110658
+    0x1b113c47: "campskin_darkfae01_a_pvp", // 454114375
     0x1b118f14: "mediumlegs_syndicaterank1_scholar_v2", // 454135572
     0x1b173b8c: "amuletfoccont3", // 454507404
     0x1b17524b: "lightchest_covenantrank2_brigand", // 454513227
@@ -4597,6 +4666,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1b19a07b: "mediumhead_furdropt5", // 454664315
     0x1b1b2767: "2war_suppliesbrightwood", // 454764391
     0x1b1c06cb: "crx_questreward_arctyp_ww_2hgreataxe", // 454821579
+    0x1b1c8e37: "flxpac_mediumlegs_dynastyshipyard_mutt5_owb", // 454856247
     0x1b1d73eb: "heavyhead_marauderrank3_cleric", // 454915051
     0x1b1dbb67: "2hlifestaff_lazarus_mutt5", // 454933351
     0x1b1fa4b7: "2hstafffire_blazet5_v2", // 455058615
@@ -4661,12 +4731,15 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1b75cee8: "playtest_shieldkite_dmg_t3", // 460705512
     0x1b796220: "2hfirestaffwart5", // 460939808
     0x1b7a2f43: "heavychest_doubloonshopt3", // 460992323
+    0x1b7afe51: "skin_chest_s8_rank1_lb_darkness", // 461045329
     0x1b7affda: "13_summer_questguitar", // 461045722
     0x1b7b1308: "mediumhandsbt5", // 461050632
+    0x1b7b25ba: "dyea025_mounts", // 461055418
     0x1b7baf8a: "2hgreatsword_blackguardsgreatswordt5", // 461090698
     0x1b7d7eb6: "pattern_soaked_sword", // 461209270
     0x1b80b327: "scarab_dex_muskett52", // 461419303
     0x1b811d34: "0402_0401_bilesoakedmeat", // 461446452
+    0x1b8135ef: "combatconsumablest5_s8", // 461452783
     0x1b825f29: "amulett2_requiemcharm_v2", // 461528873
     0x1b832cbe: "2hbow_regentshuntingbowt2_v2", // 461581502
     0x1b840722: "lighthands_summer600t5_foc", // 461637410
@@ -4686,6 +4759,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1b9e63d8: "flxpac_1hkiteshield_gardengenesis_mutt5", // 463365080
     0x1b9f954c: "runeglass_gem_ruby_heal", // 463443276
     0x1ba0588a: "heavylegs_pvp_namedt4", // 463493258
+    0x1ba1778f: "weaponst5_s8", // 463566735
     0x1ba2b737: "2hstafflife_hopemanifestt4", // 463648567
     0x1ba2e797: "flxpac_2hlifestaff_barnacles_mutt5", // 463660951
     0x1ba56ec1: "trinket_settingt4", // 463826625
@@ -4908,6 +4982,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1cfb3530: "entdisplay_skin_skinningknife_eternalfrost", // 486225200
     0x1cfc48b5: "2hwarhammer_maraudersundererswarhammert4", // 486295733
     0x1cfe83e2: "1hthrowingaxe_portofcallt2_v2", // 486441954
+    0x1cfec034: "miningpick_etherealt3_s1e", // 486457396
     0x1cff3e52: "2hmusket_archaeologistsarmoredflintlockt5", // 486489682
     0x1d01ed4a: "invasionrewardcontainerrarity1highl19", // 486665546
     0x1d03ea82: "2hblunderbuss_slayert5", // 486795906
@@ -5057,6 +5132,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1de0c8e4: "2hwarhammer_blightbanewarhammert4", // 501270756
     0x1de17bbc: "heavyhead_mask6_t5_v2", // 501316540
     0x1de19763: "heavyhead_dungeon12t5", // 501323619
+    0x1de48c6c: "entdisplay_dye_shipgray", // 501517420
     0x1de5837f: "mediumfeet_wellworntravelersbootst5", // 501580671
     0x1de8bf95: "lightchest_carnival_var01t2", // 501792661
     0x1de9aeb3: "1hgauntletvoidpvpdropt5", // 501853875
@@ -5124,6 +5200,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1e5bb33e: "2hbow_thedemonlordsbowt5_v2", // 509326142
     0x1e5be8db: "c10a_q5_soulgem", // 509339867
     0x1e5cbcc7: "heavyhead_sqrewardshatteredt5", // 509394119
+    0x1e5d62f2: "runespinningswordst2", // 509436658
     0x1e5ea514: "omega_heavychest_ranger_617", // 509519124
     0x1e628f3b: "mediumhead_fur_crassus_s7", // 509775675
     0x1e62cae4: "mediumchest_leathert4", // 509790948
@@ -5188,9 +5265,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1ec20330: "skin_legs_winterconv2022deluxe", // 516031280
     0x1ec3eb1a: "questrewardweaponsl22", // 516156186
     0x1ec765b2: "invasionrewardcontainerrarity1highl44", // 516384178
+    0x1ec77ec6: "redguffint5_s8", // 516390598
+    0x1ec7c139: "campskin_winter01_a_pvp", // 516407609
     0x1ec82a8e: "omega_earring_sentry_600", // 516434574
     0x1ec8dbb2: "ringdext5", // 516479922
     0x1ec9d589: "musketeerarchetype_2hmusket", // 516543881
+    0x1ece1dd8: "ghastly_villager_hatchet_1h_throwingaxe", // 516824536
+    0x1ece2cde: "warhammer_etherealt4_s1e", // 516828382
     0x1ece4f74: "ring_pvpt4", // 516837236
     0x1eceeb59: "2hblunderbuss_rabbithuntersblunderbusst5_v2", // 516877145
     0x1ecf800a: "mediumhands_championsreinforcedglovest5_v2", // 516915210
@@ -5215,6 +5296,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1ee349bb: "omega_shieldkite_617", // 518212027
     0x1ee3fa07: "lightlegs_marauderrank5_occultist", // 518257159
     0x1ee459c2: "shard_foc_heavy_phy_feett5", // 518281666
+    0x1ee4f918: "skin_mask_head_season8pass", // 518322456
     0x1ee59aa5: "2hspear_worldevent_s1_t5", // 518363813
     0x1ee6ea13: "omega_mediumhead_scholar_602", // 518449683
     0x1ee73043: "mediumfeet_breach1t4", // 518467651
@@ -5264,6 +5346,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1f262a31: "shard_str_ringambert5", // 522594865
     0x1f28fe35: "playtest_ring_ranger_t5_625", // 522780213
     0x1f2951c6: "artifact_nhnewweaponswordt5", // 522801606
+    0x1f29aeda: "campt4_pvp", // 522825434
     0x1f2b59df: "2hstafffire_flamebreatht5_v2", // 522934751
     0x1f2ef94a: "legs_courtier1t2", // 523172170
     0x1f2fa799: "lightpostt1", // 523216793
@@ -5328,6 +5411,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x1f825717: "1htshield_hercynemutatorcombo", // 528635671
     0x1f86ee46: "fm_loot_item_19_08", // 528936518
     0x1f87b5f3: "omega_lightfeet_sage_605", // 528987635
+    0x1f885e45: "mediumlegs_firstlightexp_mutt1_owb", // 529030725
     0x1f889734: "2hwarhammer_demonsbanet5_v2", // 529045300
     0x1f88af48: "schematic_house_housingitem_legion_shelf01_d", // 529051464
     0x1f8afe55: "omega_heavyhands_soldier_pvp_a5", // 529202773
@@ -5506,6 +5590,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x20815254: "dyea040_mounts", // 545346132
     0x2083ce80: "flail_etherealt4", // 545508992
     0x208611e4: "1hrshield_azothcrystal", // 545657316
+    0x208666e8: "flxpac_mediumchest_empyrean_mutt5_owb", // 545679080
     0x208af958: "skin_shieldk_season6pass", // 545978712
     0x208cd64f: "artificerresourcecontainer1", // 546100815
     0x208ea12a: "amulet_triballoyaltycharmt2", // 546218282
@@ -5532,6 +5617,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x20afd391: "mutatedexpedition_box_ex1_starstone", // 548393873
     0x20affee8: "92_06_battlesembrace_boots_questitem", // 548404968
     0x20b0f085: "omega_ring_sentry_617_1", // 548466821
+    0x20b17007: "flxpac_heavychest_brimstonesands_mutt5_owb", // 548499463
     0x20b18a2a: "2hstafflife_stolensoult4", // 548506154
     0x20b29df8: "entdisplay_skin_rapier_frontierwastelander", // 548576760
     0x20b3035a: "amuletdropt5_int_inferno_leg", // 548602714
@@ -5574,6 +5660,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x20e08b11: "skin_season7passapparel_feet", // 551586577
     0x20e174b8: "ethereal_mountfood", // 551646392
     0x20e60bdc: "2hstafflife_sleekstarmetalstafft3", // 551947228
+    0x20e69a71: "skin_mtx_ninja_kitsune_legs", // 551983729
     0x20e6bc41: "grunt_weapon", // 551992385
     0x20e74d0a: "focdexbonust4", // 552029450
     0x20e9e945: "artifact_smnewarmormediumfeet", // 552200517
@@ -5677,6 +5764,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2198ecc2: "heavyhead_helmoftheforgottenlegiont5", // 563670210
     0x219937f0: "scarab_foc_light_phy_chest_clotht5", // 563689456
     0x219e3e19: "playtest_healer_amulet_t5_675", // 564018713
+    0x219ee984: "miningpick_etherealt2_s1e", // 564062596
     0x21a180be: "1hrapier_mizarusneedlet3", // 564232382
     0x21a1f03c: "playtest_heavyfeet_soldier_t3", // 564260924
     0x21a25b02: "1hrapier_contritiont4", // 564288258
@@ -5686,6 +5774,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x21aa30db: "1hgauntletvoidpvpreplicat2", // 564801755
     0x21aa9a90: "omega_ring_ranger_605_4", // 564828816
     0x21ad95d2: "2hbow_furyscallt3", // 565024210
+    0x21aecd65: "perkitem_weapon_rendingstacks", // 565103973
     0x21b333a3: "entdisplay_marksoffortune_500", // 565392291
     0x21b5560f: "workorder_faction_armorset01_t5", // 565532175
     0x21b6b841: "mediumhead_trial_s2_rimat5_constr", // 565622849
@@ -5693,6 +5782,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x21b88c7e: "faction_provisions04_t4", // 565742718
     0x21bb93a8: "2hmusket_robertsonsriflet4", // 565941160
     0x21bbe1b5: "omega_lighthead_ranger_620", // 565961141
+    0x21bc0c21: "skin_chest_s8_rank1_lbclear_hercyne", // 565972001
     0x21bd959f: "2hspear_archonsfrozenspeart5", // 566072735
     0x21bdf503: "omega_mediumhead_soldier_500", // 566097155
     0x21bed2d5: "shard_foc_earringtopazt5", // 566153941
@@ -5790,6 +5880,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x223d027c: "shard_con_2hbowt5", // 574423676
     0x223d4e68: "omega_mediumhands_sage_600", // 574443112
     0x223d7122: "rewardcontainerlostl28", // 574452002
+    0x223ee281: "perkitem_feet_hasteonvault", // 574546561
     0x2241937a: "clothinghead_engineert4", // 574722938
     0x224246b2: "conquerorsitem_stafffire_burnaura", // 574768818
     0x2243f50d: "omega_heavyfeet_sage_607", // 574878989
@@ -5800,6 +5891,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x22484681: "04aside09_01_alchemybottle", // 575161985
     0x2248afed: "itempattern_primalhusk_gloves", // 575188973
     0x2248babe: "lighthead_dress_siege2024", // 575191742
+    0x2249876a: "campt5_pvp", // 575244138
     0x224bd692: "omega_mediumhands_scholar_610_2", // 575395474
     0x224cf39f: "heavyhead_spring_con", // 575468447
     0x224df8f7: "artifact_nhweaponkshieldt5", // 575535351
@@ -5814,6 +5906,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2259e6a8: "1002_0104_soakedleather", // 576317096
     0x225b1028: "2hgreataxe_ramusbattleaxet4", // 576393256
     0x225c19b4: "may2023_container", // 576461236
+    0x225e7237: "2hgreatsword_worldevent_s1_t5_v3", // 576614967
     0x225e8ccc: "pvp_potions_large_corruptedt2", // 576621772
     0x22653dae: "bountyt4", // 577060270
     0x2269bd20: "pattern_sprigganbane_light_boots", // 577355040
@@ -5831,12 +5924,15 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2283c4e3: "entdisplay_skin_shieldk_season6pass", // 579060963
     0x2284148a: "1hthrowingaxe_axeofviolencet4_v2", // 579081354
     0x22847f2c: "mediumhead_pvpt5", // 579108652
+    0x2287fb0e: "liongrant_s8", // 579336974
     0x22893775: "heavychest_doomwalkersbreastplatet5_v2", // 579417973
+    0x22899157: "mediumhands_mushroomwanders", // 579440983
     0x228cd25b: "0318_0202_piratetokenpouch", // 579654235
     0x228d6167: "2hstafflife_covenantdefenderslifestafft2", // 579690855
     0x228e277f: "playtest_musket_dmg_t3", // 579741567
     0x228f39f2: "1hlongsword_visionsofchaost4_v2", // 579811826
     0x2290a4fc: "1427_0101_anointedseed", // 579904764
+    0x22923c10: "heavyfeet_spring_gs715", // 580008976
     0x22924207: "1hthrowingaxe_covenantrank5_v2", // 580010503
     0x2293ac87: "skin_chest_aug2023_balancemedium", // 580103303
     0x2293ddc8: "playtest_warhammer_dmg_t5", // 580115912
@@ -5896,6 +5992,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x22e4a7a2: "mordred_fists", // 585410466
     0x22e568f8: "mountbuff_staminacapacityt1", // 585459960
     0x22e5fd07: "99g_msq_07_smokebomb", // 585497863
+    0x22e61c3f: "heavylegs_firstlightexp_mutt1_owb", // 585505855
     0x22e658c8: "fm_loot_item_c_4_09", // 585521352
     0x22e8371a: "skin_hands_aug2023_balanceheavy", // 585643802
     0x22e8b9d3: "1hthrowingaxe_stinkyshatchett3_v2", // 585677267
@@ -6037,6 +6134,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x23abd691: "destroyerarchetypehead", // 598464145
     0x23acb44d: "ringpearlt5", // 598520909
     0x23adce60: "omega_heavyhead_sentry_625", // 598593120
+    0x23ae056e: "warhammer_etherealt5_s1e", // 598607214
     0x23aebf67: "musketeerarchetypefeet", // 598654823
     0x23aec6d7: "mediumhead_hollyking_con", // 598656727
     0x23af2321: "heavychest_marauderrank6_sage", // 598680353
@@ -6101,6 +6199,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x23febb61: "1hthrowingaxe_artisansaxet3", // 603896673
     0x23fef173: "heavyfeet_platepvpreplicat4", // 603910515
     0x24007322: "1hthrowingaxe_bloodshotreavert2", // 604009250
+    0x24020807: "heavyfeet_etherealt5_s1e", // 604112903
     0x240382b3: "fm_loot_item_c_13_11", // 604209843
     0x240385e2: "1hlongsworddropt5_inferno", // 604210658
     0x240c02b5: "debug_shieldtower_blank_nostability", // 604766901
@@ -6110,9 +6209,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2411c9b8: "fooddexstrt5", // 605145528
     0x2413be02: "scarab_int_1hswordt5", // 605273602
     0x24144a8b: "2helementalstaff_fire_halloweent5_gs600", // 605309579
+    0x241628f2: "flxpac_mediumchest_barnacles_mutt5_owb", // 605432050
     0x2417fcde: "fm_loot_item_c_26_14", // 605551838
     0x241815ed: "skin_chest_s5_rank1_lb_sirenqueen", // 605558253
     0x241880db: "workorder_faction_provisions05_t4", // 605585627
+    0x2418820e: "entdisplay_skin_2hblunderbuss_season8pass", // 605585934
     0x2418873f: "omega_lighthead_ranger_602_3", // 605587263
     0x241ca47d: "2hstafflifedropt5_s1", // 605856893
     0x241d9eb0: "rewardpostcapweavingt1", // 605920944
@@ -6167,6 +6268,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x24656460: "omega_heavyhands_scholar_625", // 610624608
     0x2469b3c1: "fm_loot_item_s_28_03", // 610907073
     0x246ab70a: "playtest_lighthands_sentry_t2", // 610973450
+    0x246b188d: "rapier_etherealt3_s1e", // 610998413
     0x246ba12c: "2hgreatswordpvpreplicat4", // 611033388
     0x246e6d89: "heavylegs_furplatepvpreplicat5", // 611216777
     0x246ea4ed: "ring2_sqrewardreekwatert5", // 611230957
@@ -6202,6 +6304,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2498f00d: "lighthands_crafteddungeon10t5", // 614002701
     0x24990170: "clothinghands_tannert3", // 614007152
     0x249afb33: "playtest_rapier_dmg_t5_625", // 614136627
+    0x249b474f: "undead_mummifiedcorpse_1hknife", // 614156111
     0x249f0d2f: "flxpac_1hflail_eternal_mutt5", // 614403375
     0x24a0cc98: "shard_foc_mediumhead_leathert52", // 614517912
     0x24a1ac23: "1hflailcrafteddungeon3t4", // 614575139
@@ -6280,12 +6383,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2512e229: "playtest_longsword_tnk_t3", // 621994537
     0x25141a07: "flxpac_2hwarhammer_so_mutextra_t5", // 622074375
     0x251514d8: "lightchest_drowneddrunkt3", // 622138584
+    0x25170711: "skin_chest_s8_rank2_lbscore_gardengenesis", // 622266129
     0x2519ddd0: "heavychest_spring_600_con", // 622452176
     0x251b439d: "1hgauntletvoid_spiritreapert4", // 622543773
     0x251c1a10: "0204_0101_eerilyglowingfertilizer", // 622598672
     0x251d31d7: "playtest_heavyhands_soldier_t5_625", // 622670295
     0x251dfcf7: "heavyhead_marauderrank5_v2", // 622722295
     0x251e052a: "crx_reward_mediumfemlacet5_feet", // 622724394
+    0x25220b9b: "entdisplay_emote_brushshoulder", // 622988187
     0x2523bf3f: "skinningknife_etherealt3", // 623099711
     0x2526b7fe: "earringt4_thebonedusttrinket", // 623294462
     0x25273e08: "heavyhead_dynastycorruptedelitet5", // 623328776
@@ -6323,6 +6428,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x254d0fda: "2hspear_flxpac_crafteddungeon8t5", // 625807322
     0x254d69dc: "2hspear_forestsguidet3", // 625830364
     0x254dad1f: "alligatoryoung_teeth", // 625847583
+    0x255007c0: "heavyhead_etherealt5_s1e", // 626001856
     0x2552870e: "mediumlegs_flxpac_crafteddungeon2t3", // 626165518
     0x2557eba8: "heavyhands_marauderrank4_occultist", // 626518952
     0x25582a69: "heavyhands_covenantrank5_occultist", // 626535017
@@ -6473,6 +6579,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x25ff0ee9: "mountattachmentitem_shield4", // 637472489
     0x25ffe600: "omega_ring_sentry_610_1", // 637527552
     0x260040e2: "fetch_overgrown_village_50133_mi_lostsceptor", // 637550818
+    0x2600c394: "soulwarden_sword", // 637584276
     0x26016d2c: "earringmoonstonet3", // 637627692
     0x26019a57: "omega_box_armor_sage_612_medium", // 637639255
     0x26020604: "mediumfeet_explorersshoest5_v2", // 637666820
@@ -6574,6 +6681,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x26994a39: "artifact_wcarmorlightchest600", // 647580217
     0x2699a5ac: "1hgauntletvoid_ritualblessing", // 647603628
     0x269af3b1: "heavyheadbeastelitet5", // 647689137
+    0x269be294: "toolst51_s8", // 647750292
     0x269ee3c1: "mediumchest_hellfire_mutt5", // 647947201
     0x26a1f488: "scarab_con_heavychest_platet52", // 648148104
     0x26a23fa4: "1hlongsword_justicart5_v2", // 648167332
@@ -6586,6 +6694,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x26ab4388: "crx_reward_mediummilitaryt2_chest", // 648758152
     0x26ab9f90: "femwarriorh_legs_dropt3", // 648781712
     0x26ac0aea: "heavychest_crafteddungeon13t5", // 648809194
+    0x26ac47e4: "heavychest_firstlightexp_mutt1_owb", // 648824804
     0x26ad28d2: "99a_msq_06_azothwater", // 648882386
     0x26aeba82: "2hgreatsword_resultst4_v2", // 648985218
     0x26b202a1: "mediumhead_chitint5_v2", // 649200289
@@ -6594,6 +6703,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x26b93b2d: "1hthrowingaxe_depths_mutt5", // 649673517
     0x26bb7a6b: "entdisplay_skin_silvercrowsfire_loggingaxe", // 649820779
     0x26bd8d06: "omega_bow_617", // 649956614
+    0x26be3d49: "ss8_ch3_reward_box", // 650001737
     0x26be8db5: "omega_ring_soldier_615_1", // 650022325
     0x26bec7db: "chest_courtier3t4", // 650037211
     0x26c42d19: "mediumhead_trial_s5_t5", // 650390809
@@ -6616,6 +6726,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x26e4ba43: "heavyfeet_syndicaterank5", // 652524099
     0x26e62309: "amulett5_woodgrain", // 652616457
     0x26e6842a: "skin_legs_darkfae_2", // 652641322
+    0x26eb043c: "owbrewardcontainerbonus_naga", // 652936252
     0x26f23470: "1htowershield_pvp_namedt51", // 653407344
     0x26f46ca3: "playtest_gauntletvoid_dmg_t3", // 653552803
     0x26f537a7: "entdisplay_housing_mar2023_firelight_wolf_fire", // 653604775
@@ -6655,6 +6766,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x27242bc4: "2hbow_endoftyrannyt5", // 656681924
     0x2724e590: "scarab_int_muskett52", // 656729488
     0x2727f00e: "heavylegs_syndicaterank5_brigand", // 656928782
+    0x2729d096: "skin_2hsickle_season8pass", // 657051798
     0x272a7703: "schematic_makersmarkt5", // 657094403
     0x272accbc: "lightlegs_covenantrank5_cleric", // 657116348
     0x272c1185: "playtest_bruiser_heavylegs_t5_700", // 657199493
@@ -6681,6 +6793,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x274b29d9: "lightheadbt5", // 659237337
     0x274d16f3: "alchemyairt2", // 659363571
     0x274f470b: "2hlifestaff_halloweent5_gs600", // 659506955
+    0x2751e885: "1hhatchet_worldevent_s1_t5_v3", // 659679365
     0x2754a96f: "pvp_potions_small_ancientt2_b", // 659859823
     0x2758be20: "mountattachmentitem_shield11", // 660127264
     0x27594e0e: "omega_mediumlegs_scholar_620", // 660164110
@@ -6702,6 +6815,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x276b67fa: "2hbowangryeartht4", // 661350394
     0x276bd3b8: "greatsword_etherealt5", // 661377976
     0x276e60dd: "heavychest_crafteddungeon12t5", // 661545181
+    0x276f0769: "mountst2_s8", // 661587817
     0x27722c36: "turretexplosivet1", // 661793846
     0x2776b807: "skin_head_hidehelmet", // 662091783
     0x277a40ed: "2hstafflife_blackguardslifestafft5_v2", // 662323437
@@ -6797,6 +6911,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x280c62fe: "ringt4_cartographistssignet_v2", // 671900414
     0x28141306: "2hwarhammer_eagersteelt2_v2", // 672404230
     0x2814288c: "2hbow_myrkgard_mutt5", // 672409740
+    0x2814ad81: "capturetheflagrewardl60", // 672443777
     0x281b8e40: "flxpac_2hgreatsword_shatteredobelisk_mutt5", // 672894528
     0x281c9425: "lightchest_pvp_namedt4", // 672961573
     0x281fb890: "heavyfeet_drowned1t4", // 673167504
@@ -6886,8 +7001,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x288a3b4a: "heavyhands_marauderrank2_brigand", // 680147786
     0x288a4d23: "skin_hands_darkfaedeluxe", // 680152355
     0x288b2839: "1hgauntleticeancientt4", // 680208441
+    0x288bd412: "conquerorsitem_kiteshield_holyshield_blocking_s1e", // 680252434
     0x288c706a: "mediumchest_or1t5", // 680292458
     0x288d85f2: "mediumhands_syndicaterank2_scholar_v2", // 680363506
+    0x288f77de: "heavyhands_mushroomwanders", // 680490974
     0x28926b08: "fooddext52s", // 680684296
     0x289414bc: "09a_s0_flask", // 680793276
     0x289466c9: "1hlongsworddungeon10t5", // 680814281
@@ -6956,6 +7073,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x28ee0c60: "vesselt1_4", // 686689376
     0x28ee2716: "omega_mediumhead_scholar_615_2", // 686696214
     0x28eeb1e9: "playtest_box_armor_soldier_t3_medium", // 686731753
+    0x28f11773: "skin_head_syndff2025_box", // 686888819
     0x28f22bfa: "1303_1311_wyrdwoodcharms", // 686959610
     0x28f4fc1d: "mediumchest_truthbearersleatherchestguardt4_v2", // 687143965
     0x28f577eb: "legendarycastgypsum_greatsword", // 687175659
@@ -7034,6 +7152,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2960b054: "schematic_house_housingitem_legion_cabinet01_b", // 694202452
     0x296350d6: "lacingt4", // 694374614
     0x2963fcf5: "lightlegs_clothpvpreplicat4", // 694418677
+    0x296462cb: "skin_gloves_coveff2025_box", // 694444747
     0x2965f640: "2hkiteshielddungeon2t3", // 694548032
     0x2966b307: "shard_str_medium_ele_chestt5", // 694596359
     0x2966f62e: "playtest_heavyhands_sage_t5_700", // 694613550
@@ -7084,6 +7203,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x29a0e07b: "chest_officert2", // 698409083
     0x29a1ec94: "itempattern_lightchest_lostraidert5", // 698477716
     0x29a2e40f: "playtest_amulet_soldier_t2", // 698541071
+    0x29a318b4: "skin_feet_syndff2025_box", // 698554548
     0x29a50c39: "fetch_corrupted_farm_2_40103_mi_fayscauldron", // 698682425
     0x29aa64ce: "2hbow_inherenttrutht5_v2", // 699032782
     0x29acfa7c: "2hwarhammerdungeon12t5", // 699202172
@@ -7281,6 +7401,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2af5ab8f: "2hstafflifedarknessbreacht5", // 720743311
     0x2af882be: "pattern_ta-setis_boots", // 720929470
     0x2af8a851: "1hlongsword_pvpt5", // 720939089
+    0x2af926da: "campskin_darkfae02_a_pvp", // 720971482
     0x2afa855d: "feet_fieldshadowt4", // 721061213
     0x2afadb15: "99g_msq_04_amberlichen", // 721083157
     0x2afae5c1: "lightlegs_crafteddungeon12t5", // 721085889
@@ -7300,6 +7421,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2b0d3a00: "fm_loot_item_s_19_15", // 722287104
     0x2b0df61b: "1hrapierlostt4", // 722335259
     0x2b0ee7b1: "questrewardarmort4", // 722397105
+    0x2b0fc140: "entdisplay_ss8_ch1_reward_box", // 722452800
     0x2b10b2a7: "1hlongsworddungeon12t5", // 722514599
     0x2b10c461: "schematic_house_housingitem_rug_dynasty_decor_floor_rug01", // 722519137
     0x2b12cb00: "1hrapier_cherishedmemoryt4", // 722651904
@@ -7328,6 +7450,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2b377de4: "strfocbonust4", // 725056996
     0x2b388ff6: "lightlegs_crafteddungeon13t5", // 725127158
     0x2b3b39b5: "flxpac_heavyhead_dynastyshipyard_mutt5", // 725301685
+    0x2b3d70d4: "artifact_set2_lighthands", // 725446868
     0x2b3e360d: "undeadjavelineer_spear", // 725497357
     0x2b3e5db1: "femshaman_lightfeet_t5_guaranteeepic", // 725507505
     0x2b3f4c11: "crx_reward_mediumfemlacet5_chest", // 725568529
@@ -7374,6 +7497,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2b7af735: "1hrapier_ruinationt5", // 729478965
     0x2b7e9a9c: "lighthands_chitint5_v2", // 729717404
     0x2b7ed8fd: "2hspear_pvp_namedt5_v2", // 729733373
+    0x2b7f0840: "soulwarden_lifestaff", // 729745472
     0x2b816968: "skin_medievalhistoric_blunderbuss", // 729901416
     0x2b842652: "lighthead_syndicaterank4_occultist", // 730080850
     0x2b851838: "artifact_wcweaponstafflife", // 730142776
@@ -7473,6 +7597,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2c07be36: "mediumhead_covenantt5", // 738704950
     0x2c08825d: "2hbowcorruptedelitet5", // 738755165
     0x2c096121: "heavyhead_mask5_t5_v2", // 738812193
+    0x2c0a1f2c: "lightfeet_etherealt4_s1e", // 738860844
     0x2c0acf6b: "fm_loot_item_c_22_03", // 738905963
     0x2c0cf27b: "mediumchest_marauderrank6_sage", // 739046011
     0x2c0f63a4: "crx_questreward_arctyp_sm_ran_chest", // 739206052
@@ -7487,6 +7612,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2c1eb106: "fm_loot_item_c_17_06", // 740208902
     0x2c1f00c5: "1hgauntletvoid_flxpac_crafteddungeon1t3", // 740229317
     0x2c1f9494: "heavyhands_covenantrank3_cleric", // 740267156
+    0x2c20d8b2: "purpleguffint4_s8", // 740350130
+    0x2c20e780: "flxpac_amulett5_bb_mut_owb", // 740353920
     0x2c218638: "2hmusket_thelastgaspt5_v2", // 740394552
     0x2c22199c: "2hstafffire_gravekeeperstorcht2_v2", // 740432284
     0x2c22dd27: "warrewardcontainerl26", // 740482343
@@ -7564,6 +7691,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2c912d2d: "sandworm_trial_weaponblunderbuss_t5", // 747711789
     0x2c919528: "mediumhead_leatherdropt5_dex_inferno_leg", // 747738408
     0x2c92a470: "catalystt1", // 747807856
+    0x2c92e4e6: "entdisplay_skin_legs_season8pass", // 747824358
     0x2c934a29: "flxpac_2hstafffire_depths_mutt5", // 747850281
     0x2c936f16: "sportsmanspoilslvl10", // 747859734
     0x2c9403ad: "schematic_house_housingitem_pirate_bookcase02_a", // 747897773
@@ -7698,10 +7826,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2d550105: "vesselt1_16", // 760545541
     0x2d5560f7: "2hspear_gnarledrootspeart4_v2", // 760570103
     0x2d57f42d: "mediumhands_hollyking_dex_600", // 760738861
+    0x2d5810eb: "lighthead_etherealt4_s1e", // 760746219
     0x2d59b06a: "omega_spear_612", // 760852586
     0x2d5b04e9: "rewardpostcapinstrumentst2", // 760939753
     0x2d5efbed: "amulett3_mascotofthedawn", // 761199597
     0x2d638952: "skin_medievalhistoric_greatsword", // 761497938
+    0x2d64a494: "armort51_s8", // 761570452
     0x2d658aa4: "heavyfeetdt5", // 761629348
     0x2d65e0e9: "heavychest_pvp_namedt3", // 761651433
     0x2d66e0d5: "skin_chest_s7_rank2_lbscore_crystalclaw", // 761716949
@@ -7767,6 +7897,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2db09343: "pattern_sprigganbane_medium_gloves", // 766546755
     0x2db09d86: "entdisplay_skin_desertprowler_fishingpole", // 766549382
     0x2db1d771: "omega_lightfeet_sage_625", // 766629745
+    0x2db5f95d: "flxpac_lightchest_barnacles_mutt5_owb", // 766900573
     0x2db8174e: "lightchest_nightveil2024", // 767039310
     0x2db85a74: "heavyfeet_covenantrank1_v2", // 767056500
     0x2db9ce3e: "2hmusket_deadsightt3_v2", // 767151678
@@ -7786,6 +7917,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2dcedfc8: "1hgauntletice_shatteredobelisk_mutt5", // 768532424
     0x2dd03bd2: "heavychest_crafteddungeon1t3", // 768621522
     0x2dd07eeb: "entdisplay_skin_season5passapparel_feet", // 768638699
+    0x2dd214ff: "flxpac_2hbow_dynastyshipyard_mutt5_owb", // 768742655
     0x2dd2ad2e: "entdisplay_skin_season6passapparel_chest", // 768781614
     0x2dd561c7: "fm_loot_item_s_26_05", // 768958919
     0x2dd61b6b: "scarab_int_2hblunderbusst5", // 769006443
@@ -7814,6 +7946,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2df9ab42: "1126_ancientkeyfragment3", // 771337026
     0x2dfb6214: "1hroundshieldlostt4", // 771449364
     0x2dfcd9b8: "0909_0101_taintedflesh", // 771545528
+    0x2dfd389f: "lightlegs_trailblazerslegguardst5_v3", // 771569823
     0x2dfd8c56: "lightfeet_syndicaterank6_scholar", // 771591254
     0x2dfe6d4d: "0611_0101_ancientorb", // 771648845
     0x2e01a6ee: "schematic_house_housingitem_table_pirate_table02_c", // 771860206
@@ -7968,6 +8101,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2ed70eab: "crx_reward_mediumvoidt4_legs", // 785845931
     0x2ed9dfc8: "shard_int_1helementalgauntlet_icet5", // 786030536
     0x2edb6044: "rewardcontainerangryearthl53", // 786128964
+    0x2edbd72b: "mountattachmentitem_skin_foodoghead", // 786159403
     0x2edc9807: "wccontainer_hastilywrappedpresent", // 786208775
     0x2edd6fae: "mediumhands_marauder_skin", // 786263982
     0x2ee5102a: "1hgauntletvoid_sacrificiallambt5_v2", // 786763818
@@ -8017,9 +8151,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2f2811ad: "lightfeet_nature_mutt5", // 791155117
     0x2f295d98: "ck_d13_hatchett5", // 791240088
     0x2f2b3a2d: "fm_loot_item_27_03", // 791362093
+    0x2f2b5e5a: "conquerorsitem_greatsword_crescentwave_s1e", // 791371354
     0x2f2bacd4: "artifact_set1_1hkiteshield", // 791391444
     0x2f2eddb6: "turret_t1_repeater_projectile", // 791600566
     0x2f2f4d34: "1hhatchett3", // 791629108
+    0x2f2fdba4: "campskin_winter02_a_pvp", // 791665572
     0x2f378fc8: "invasionrewardcontainerrarity1highl39", // 792170440
     0x2f39e555: "omega_lightchest_sage_500", // 792323413
     0x2f3b4f02: "2hgreataxe_corruptionsresurgancet4", // 792416002
@@ -8071,6 +8207,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x2f745177: "playtest_soldier_amulet_t5_700", // 796152183
     0x2f746142: "playtest_heavyfeet_soldier_t5_675", // 796156226
     0x2f750efb: "skin_chest_s7_rank1_lbclear_depths", // 796200699
+    0x2f796998: "capturetheflagrewardl64", // 796486040
     0x2f7bf332: "playtest_lighthands_ranger_t5_650", // 796652338
     0x2f7c4d80: "99a_msq_01_armor", // 796675456
     0x2f7ef10d: "playtest_heavyhead_scholar_t5_675", // 796848397
@@ -8190,7 +8327,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3036ae2c: "heavyfeet_crafteddungeon1t3", // 808889900
     0x30395810: "omega_box_armor_ranger_pvp_medium_ability", // 809064464
     0x3039def2: "lighthead_shroudedintenthatt4_v2", // 809098994
+    0x303a3f43: "1hroundshield_worldevent_s1_t5_v3", // 809123651
     0x303ad95d: "artifact_smarmor600mediumfeet", // 809163101
+    0x303be1dd: "skin_feet_season8seasonalserver_box", // 809230813
     0x303c2df6: "lighthead_syndicaterank5_ranger_v2", // 809250294
     0x303d0aeb: "2hgreataxedungeon13t5", // 809306859
     0x30416234: "worldevent_s6_normalbox_major", // 809591348
@@ -8352,6 +8491,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x314f24b5: "2hgreataxedrownedt4", // 827270325
     0x31533ad4: "heavyhands_syndicaterank6_2_scholar", // 827538132
     0x31586fb1: "mediumhands_summer600t5_dex", // 827879345
+    0x315b6c54: "skin_mtx_ninja_2hcelestialstaff_life", // 828075092
     0x315e31dd: "2hbow_darkheartt5_v2", // 828256733
     0x315e7eee: "mediumlegsat3", // 828276462
     0x3160c42a: "dyeb157", // 828425258
@@ -8464,6 +8604,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x31f2755b: "lightfeet_flxpac_crafteddungeon7t5", // 837973339
     0x31f78a28: "lightchest_dresspvpreplicat2", // 838306344
     0x31f888b8: "fm_loot_item_c_3_12", // 838371512
+    0x31fa06e2: "flxpac_lightlegs_empyrean_mutt5_owb", // 838469346
     0x31fc42db: "salvage_box_s5_premium", // 838615771
     0x31fec975: "omega_lightlegs_ranger_605", // 838781301
     0x31ff60dc: "2hgreataxedungeon12t5", // 838820060
@@ -8514,6 +8655,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x324de9ab: "rawhidet52", // 843966891
     0x324e4675: "lightfeet_arenaangryearth2t5", // 843990645
     0x325099ce: "heavychest_syndicaterank6_soldier", // 844143054
+    0x3252171e: "mediumhands_etherealt3_s1e", // 844240670
     0x325255de: "2hbow_firstlightrevampt5", // 844256734
     0x3254287f: "warrewardcontainerl32", // 844376191
     0x32550c91: "skin_legendarystrength_sickle", // 844434577
@@ -8698,6 +8840,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x335b4247: "schematic_house_housingitem_table_pirate_counter02", // 861618759
     0x335bfac0: "mediumhands_maraudert5", // 861665984
     0x335c3a21: "playtest_mediumfeet_sage_t5_600", // 861682209
+    0x335cd351: "roundshield_etherealt2_s1e", // 861721425
     0x335d5f98: "1hthrowingaxe_pvp_prestige600t5", // 861757336
     0x336346ed: "omega_mediumhands_sentry_620", // 862144237
     0x3365de43: "playtest_mediumhands_ranger_t5_625", // 862314051
@@ -8719,6 +8862,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x338ac940: "heavylegs_empyrean_mutt5", // 864733504
     0x338b3105: "hands_faction3officert5", // 864760069
     0x338d7ac3: "2hwarhammer_hippopotamidaeanstrength", // 864910019
+    0x338d80b5: "combatconsumablest51_s8", // 864911541
     0x338f6b90: "fm_loot_item_s_9_03", // 865037200
     0x339155d0: "skin_firstlightelven_sickle", // 865162704
     0x3392f46c: "pattern_graverobbers_musket", // 865268844
@@ -8757,6 +8901,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x33c9e03f: "2hstafflife_briarwoodstafft3_v2", // 868868159
     0x33cc0bc4: "crx_msq2sm_earringcon", // 869010372
     0x33cd0476: "1hthrowingaxe_wildambitiont5_v2", // 869074038
+    0x33cd71a2: "perkitem_armor_consumablehealing", // 869101986
     0x33cfb6ec: "1hthrowingaxe_solt5", // 869250796
     0x33d021ea: "1hgauntletice_syndicaterank1", // 869278186
     0x33d16c15: "1hthrowingaxe_flxpac_crafteddungeon4t4", // 869362709
@@ -8765,6 +8910,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x33d2d47b: "2hstafffire_spellstaffofhellfiret5", // 869454971
     0x33d3f682: "entdisplay_dye_blond", // 869529218
     0x33d4b0be: "skin_longsword_classicrpg", // 869576894
+    0x33d5edb2: "undead_cryptkeeper_2hscythe", // 869658034
     0x33d65489: "2hfirestaffoutpostrusht5", // 869684361
     0x33d6e3ad: "skin_head_waveborne", // 869721005
     0x33d979cb: "skin_lunarnewyear_sickle", // 869890507
@@ -8805,6 +8951,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3405c94c: "legs_officert3", // 872794444
     0x34060099: "mediumchest_pvpt5", // 872808601
     0x34066763: "lighthead_arenaspriggan1t5", // 872834915
+    0x3406fb0e: "2hmusket_worldevent_s1_t5_v3", // 872872718
     0x3407f50c: "mediumhead_sandworm_trial_named_t5", // 872936716
     0x3408b91f: "workorder_faction_armaments08_t3", // 872986911
     0x3409d20b: "mediumlegs_maraudert2", // 873058827
@@ -8812,9 +8959,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x340faf4d: "lighthands_marauderrank5_sage_v2", // 873443149
     0x34111fea: "scarab_con_heavy_bal_handst5", // 873537514
     0x34146332: "shard_dex_heavyhands_platet52", // 873751346
+    0x34173b61: "campskin_season8_a", // 873937761
     0x34176b8e: "heavylegs_pvp_prestiget3", // 873950094
     0x3417895b: "1hlongswordcastt5", // 873957723
     0x3417c09e: "heavyfeet_angryearth2t4", // 873971870
+    0x341ab990: "heavyhands_etherealt3_s1e", // 874166672
     0x341b8bb5: "omega_lighthands_sentry_617", // 874220469
     0x341c548e: "2hgreatsword_blacktalont5_v2", // 874271886
     0x341d4cd3: "omega_warhammer_605", // 874335443
@@ -8893,6 +9042,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x349c4074: "2hbow_enchantedlongbowt2", // 882655348
     0x349d5d07: "1hflail_pvpt4", // 882728199
     0x34a1a16b: "lightlegs_wizenedpantst5_v2", // 883007851
+    0x34a4b10f: "skin_chest_s8_rank2_lbclear_glacialtarn", // 883208463
     0x34a58a92: "heavyfeet_covenantrank1_scholar_v2", // 883264146
     0x34a7507e: "shard_str_1hgauntletvoidt5", // 883380350
     0x34aa3551: "crx_questreward_arctyp_er_2hmusket", // 883570001
@@ -8912,6 +9062,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x34c2a8da: "2hwarhammerdungeon1t3", // 885172442
     0x34c32937: "heavychest_li_boss_mutt5_v2_new", // 885205303
     0x34c4d9db: "2hgreataxe_scarredgreataxeofthe4thlegiont5", // 885316059
+    0x34c4eab2: "skin_chest_s8_rank2_lb_invasion", // 885320370
     0x34c5da7b: "lighthead_spring_int", // 885381755
     0x34c67a32: "rewardcontainerancientl37", // 885422642
     0x34c8e897: "1hlongsword_willofthehuntert5", // 885581975
@@ -8953,6 +9104,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x34fcaf6f: "2hmusket_ashenriflet4_v2", // 888975215
     0x34fde9ea: "heavyfeet_marauderrank2_scholar_v2", // 889055722
     0x34fefdf0: "omega_box_armor_scholar_500", // 889126384
+    0x35019f23: "flxpac_2hlifestaff_dynastyshipyard_mutt5_owb", // 889298723
     0x35021971: "mediumlegs_nightveil2024_gs700", // 889330033
     0x35033bda: "shard_int_amuletambert5", // 889404378
     0x3503806b: "skin_legs_fembardmt5", // 889421931
@@ -8975,6 +9127,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x35183fe9: "jan2025_container", // 890781673
     0x351a48ab: "flxpac_1hflail_nature_mutt5", // 890914987
     0x351bd65a: "omega_heavychest_sage_605", // 891016794
+    0x351be2e4: "flxpac_lightchest_empyrean_mutt5_owb", // 891020004
     0x351be4d3: "2hmusket_questl36", // 891020499
     0x351c8640: "heavyhead_oakking_700", // 891061824
     0x351d72b6: "heavyhead_marauderrank1_occultist", // 891122358
@@ -9033,6 +9186,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x35675595: "crx_2hmusketsirenarena", // 895964565
     0x356849d6: "mrharrison_guitar_part1_page1", // 896027094
     0x35688dd2: "fooddexintt5", // 896044498
+    0x3569a65a: "flxpac_heavyhands_empyrean_mutt5_owb", // 896116314
     0x356a4b98: "99f_er_zhou_death_poem", // 896158616
     0x356f3dbc: "playtest_healer_mediumchest_t5_650", // 896482748
     0x3570dcda: "nereiddoubloont1", // 896589018
@@ -9070,6 +9224,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3597d81b: "fm_loot_item_15_11", // 899143707
     0x359837c9: "2hspeardungeon1t3", // 899168201
     0x359a2816: "scarab_con_light_bal_chest_clotht5", // 899295254
+    0x359ab8a2: "conquerorsitem_gauntletice_frostaura_s1e", // 899332258
     0x359c2018: "lighthands_syndicaterank4_v2", // 899424280
     0x359ca196: "invasionrewardcontainerrarity3l19", // 899457430
     0x359d2d1f: "lighthands_bb_boss_mutt5_v2", // 899493151
@@ -9108,6 +9263,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x35d4d628: "perfectsalvage_amuletmalachitet5", // 903140904
     0x35d56555: "playtest_hatchet_tnk_t5_650", // 903177557
     0x35d7d59f: "claimt1_25m_t2", // 903337375
+    0x35daa887: "mountst1_s8", // 903522439
     0x35db57fc: "mediumlegs_sandworm_trial_t5", // 903567356
     0x35dbb994: "2hspeart2", // 903592340
     0x35dcbfc3: "combat_box_s7", // 903659459
@@ -9146,12 +9302,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x36155c6d: "glyphstone_river", // 907369581
     0x36162d0a: "lighthands_syndicaterank4_brigand", // 907422986
     0x36189ac5: "tradingpostt2", // 907582149
+    0x361b980a: "ghastly_villager_shovel", // 907778058
     0x361df685: "foodharvestert52", // 907933317
     0x362053b1: "lighthead_covenantt4", // 908088241
     0x36221b07: "coatingbeastt4", // 908204807
     0x36247f62: "faction_armaments04_t5", // 908361570
     0x36283827: "2hspear_piercingflamet4_v2", // 908605479
     0x362bed7e: "omega_box_weapons_500", // 908848510
+    0x362c595a: "cutgemst3_s8", // 908876122
     0x362cbe89: "invasionrewardcontainerrarity1highl29", // 908902025
     0x362e1e30: "lighthands_wedding_foc_t4_shop", // 908992048
     0x362eef07: "amuletcarneliant2", // 909045511
@@ -9196,6 +9354,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3661de31: "lightlegs_marauderrank5_v2", // 912383537
     0x3662d68b: "mediumchest_hollykingt3_shop", // 912447115
     0x36635a38: "heavyhands_summernew675t5", // 912480824
+    0x366508fb: "yellowguffint2_s8", // 912591099
     0x36691970: "lightfeet_worldeventpve_2024", // 912857456
     0x366b894a: "claimt1_30m_t2", // 913017162
     0x366cbdf9: "2hmusket_lacuransfinalpiecet4_v2", // 913096185
@@ -9306,6 +9465,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x370880aa: "1hflail_sporelight", // 923304106
     0x37093809: "2hgreatsword_hugo_s7_710", // 923351049
     0x370a015e: "1hgauntletvoid_marauderrank1", // 923402590
+    0x370af68c: "artifact_set2_heavyfeet", // 923465356
     0x370d0e65: "dispellingkitt2", // 923602533
     0x370dc315: "invasionrewardcontainerrarity1lowl27", // 923648789
     0x370e6f66: "schematic_house_housingitem_settler_decor_wall_curtain01_b", // 923692902
@@ -9371,6 +9531,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x37666cad: "heavyfeet_marauder_skin", // 929459373
     0x376b6778: "heavyheadat3", // 929785720
     0x376b8195: "omega_lightchest_scholar_500", // 929792405
+    0x376ec3e7: "1hrapier_beastfangt5_v3", // 930005991
     0x376ecfef: "mountattachmentitem_skin_darkacademy_beartrap", // 930009071
     0x376f8395: "playtest_mage_earring_t5_700", // 930055061
     0x376f8b80: "2hgreataxedungeon9t5", // 930057088
@@ -9386,6 +9547,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x378594b2: "fm_loot_item_18_07", // 931501234
     0x3786586d: "2hbow_willettesbowt2", // 931551341
     0x378927cd: "1hgauntletvoid_covenantrank2_v2", // 931735501
+    0x37897603: "skin_chest_maraff2025", // 931755523
     0x378c2824: "lightlegs_syndicaterank4_brigand", // 931932196
     0x378c2ec7: "lighthands_lostelite1t4", // 931933895
     0x378c55d6: "crx_heavyhead_arenaswampbeast", // 931943894
@@ -9439,6 +9601,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x37c8247b: "lighthands_covenantrank5_barbarian", // 935863419
     0x37c8f668: "playtest_soldier_longsword_t5_700", // 935917160
     0x37c99c2f: "mediumfeet_marauderrank4_barbarian", // 935959599
+    0x37cb477c: "skin_mtx_greek_gods_head", // 936068988
     0x37cde207: "omega_heavyhands_scholar_600_2", // 936239623
     0x37cf7bcb: "omega_amulet_ranger", // 936344523
     0x37d303b6: "1hflailpvpreplicat5", // 936575926
@@ -9469,6 +9632,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x37fa8190: "14_sq_04_avernalwater_ingredient", // 939164048
     0x37fb5652: "1hlongsword_frigidgalet2", // 939218514
     0x37fe091c: "1hgauntletvoid_inevitabledesolationt5_v2", // 939395356
+    0x37fe7ea5: "conquerorsitem_longsword_shieldlessagility_s1e", // 939425445
     0x38001104: "influencerewardcontainerl57_loser", // 939528452
     0x380071ac: "woodsmanlegs", // 939553196
     0x3801d879: "heavyhands_li_boss_mutt5_v2", // 939645049
@@ -9685,6 +9849,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x392ada34: "crx_reward_heavyetherealt3_chest", // 959109684
     0x392c09f5: "crx_sandworm_trial_namedweaponfirestaff", // 959187445
     0x392d516b: "fm_loot_item_3_11", // 959271275
+    0x392d6485: "skin_chest_s8_rank1_lbclear_tempestheart", // 959276165
     0x392d6743: "2hmusket_mastercannoneersmuskett3_v2", // 959276867
     0x392e985e: "1hflailoutpostrusht5", // 959354974
     0x392eee0e: "playtest_intdps_lighthead_t5_725", // 959376910
@@ -9731,6 +9896,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x397d0206: "ringmoonstonet3", // 964493830
     0x397d81be: "crx_reward_lightfemmaget3_head", // 964526526
     0x397ee90b: "1hthrowingaxe_mihospawt5", // 964618507
+    0x397ff085: "loggingaxe_etherealt2_s1e", // 964685957
     0x3980075c: "2hgreatsword_heartstaket4", // 964691804
     0x3981b559: "playtest_box_arcana_plantmat", // 964801881
     0x3983a161: "mediumfeet_ancient2t4", // 964927841
@@ -9823,6 +9989,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3a0ca54f: "fm_hunt_item_7_02", // 973907279
     0x3a0caf25: "schematic_house_housingitem_dynasty_cabinet02_c", // 973909797
     0x3a0dab40: "skin_nightveilmasksnakes", // 973974336
+    0x3a0e2ffa: "lightchest_etherealt4_s1e", // 974008314
     0x3a11387c: "heavylegs_elitepoi_harbingerrobest5", // 974207100
     0x3a118555: "omega_box_armor_soldier", // 974226773
     0x3a123295: "skin_monster_mummyfeet", // 974271125
@@ -9840,6 +10007,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3a299943: "2hbow_ferocityoftheimpalert5_v2", // 975804739
     0x3a2c24ef: "mediumhands_summer600t5_con", // 975971567
     0x3a2d284c: "omega_heavyfeet_ranger_612", // 976037964
+    0x3a2d7d1e: "heavyhands_spring_gs715", // 976059678
     0x3a2d993c: "0320_0101_perfectwyrdwood", // 976066876
     0x3a332f68: "heavylegs_angryearth2t4", // 976433000
     0x3a338be5: "skin_mtx_ronin_shinobi_chest", // 976456677
@@ -10005,6 +10173,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3b0698c2: "corruptedclotht2", // 990288066
     0x3b06fcd1: "skin_season6passmask_head", // 990313681
     0x3b07d6cf: "omega_amulet_scholar_615", // 990369487
+    0x3b0810ea: "runespinningswordst3b", // 990384362
     0x3b0b716b: "heavylegs_arenaancient1t4", // 990605675
     0x3b0c30b2: "dyea047", // 990654642
     0x3b0d4ee2: "se_medleyfairebaskets", // 990727906
@@ -10067,6 +10236,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3b6ce2c4: "1hrapier_sleightofhandt5", // 996991684
     0x3b6d4b35: "voidgauntletcharmt6", // 997018421
     0x3b6d6728: "2hspear_captainscallt2_v2", // 997025576
+    0x3b706885: "2hgreataxe_thehookt5_v3", // 997222533
     0x3b714eab: "fm_loot_item_c_30_10", // 997281451
     0x3b717e5d: "skin_hands_nightmares_3", // 997293661
     0x3b71c928: "entdisplay_skin_sickle_eternalfrost", // 997312808
@@ -10109,6 +10279,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3baad947: "fm_loot_item_s_17_03", // 1001052487
     0x3bab775c: "2hblunderbuss_covenantrank2_v2", // 1001092956
     0x3babb150: "arcanereactort3", // 1001107792
+    0x3bac211a: "redguffint3_s8", // 1001136410
     0x3bae98c5: "schematic_house_housingitem_pirate_decor_painting03", // 1001298117
     0x3bafbe87: "skin_chest_s7_rank2_lb_monoeciouscleft", // 1001373319
     0x3bb24980: "scarab_int_lighthead_clotht52", // 1001539968
@@ -10191,6 +10362,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3c2aedbd: "invasionrewardcontainerrarity3l15", // 1009446333
     0x3c2d7b47: "kt_shipwreck_50101_mi_navigationcompass", // 1009613639
     0x3c2e7974: "heavyhead_furplatelegacycrassust5", // 1009678708
+    0x3c2f25d1: "skin_chest_s8_rank1_lbscore_lazarusinstrumentality", // 1009722833
     0x3c2f5e4b: "omega_heavyhead_soldier_602_3", // 1009737291
     0x3c30bb71: "shard_con_medium_ele_handst5", // 1009826673
     0x3c313190: "2hstafffire_breachfiregreatstafft4", // 1009856912
@@ -10198,6 +10370,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3c34ac8d: "recipe_foodintt5b", // 1010085005
     0x3c35f763: "1hrapierelitebreacht3", // 1010169699
     0x3c365b5a: "shard_str_heavyhands_platet52", // 1010195290
+    0x3c3856c8: "conquerorsitem_greatsword_dodgesuppressant_s1e", // 1010325192
     0x3c392316: "1hgauntletvoid_clawoforcust5_v2", // 1010377494
     0x3c392e5d: "omega_lighthands_ranger_500", // 1010380381
     0x3c3add98: "omega_lightchest_ranger_622", // 1010490776
@@ -10309,6 +10482,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3ce382f7: "mediumchest_fur_siege_s7", // 1021543159
     0x3ce6eff4: "heavyfeet_maraudert4", // 1021767668
     0x3ce8b3a9: "heavylegs_covenantrank1_brigand", // 1021883305
+    0x3ce93694: "mediumlegs_etherealt2_s1e", // 1021916820
     0x3ce966b0: "1hrapier_hercyneraid_craftedschematic", // 1021929136
     0x3cebd4ac: "skin_chest_s7_rank2_lbclear_lazarusinstrumentality", // 1022088364
     0x3ced05d9: "lightchest_stylef06_t4", // 1022166489
@@ -10356,12 +10530,15 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3d2898ea: "playtest_lightfeet_sentry_t5", // 1026070762
     0x3d29d501: "skin_head_hallowmaskwitch", // 1026151681
     0x3d29d85a: "0910_0102_hilltophops", // 1026152538
+    0x3d3170d9: "skin_chest_s8_rank2_lbscore_crystalclaw", // 1026650329
     0x3d318e75: "flxpac_mediumlegs_dynastyshipyard_mutt5", // 1026657909
     0x3d320c4c: "1hrapier_halloweent5", // 1026690124
     0x3d323633: "1hthrowingaxe_artisansaxet3_v2", // 1026700851
     0x3d35ae31: "mediumfeet_crafteddungeon5t4", // 1026928177
     0x3d361057: "1hgreatsword_halloweent5", // 1026953303
     0x3d3664c1: "potatot1", // 1026974913
+    0x3d39e6b0: "1htowershield_worldevent_s1_t5_v3", // 1027204784
+    0x3d3a14ef: "greenguffint2_s8", // 1027216623
     0x3d3ae950: "mtx_funnyhat_elfhat", // 1027270992
     0x3d3b2561: "mediumchest_syndicaterank5_barbarian", // 1027286369
     0x3d3ca73d: "broken_weapon_2h_shovel", // 1027385149
@@ -10587,6 +10764,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3e9a46ec: "foodstrt5", // 1050298092
     0x3e9afe4b: "crx_2hgreatswordsirenarena", // 1050345035
     0x3e9b92fe: "corecrystalfiret5", // 1050383102
+    0x3e9babe0: "skin_chest_s8_rank2_lbclear_shipyard", // 1050389472
     0x3e9d5774: "2hgreataxe_d_mutextra_t5", // 1050498932
     0x3e9d65b4: "pattern_war_mediumlegs", // 1050502580
     0x3e9de1ca: "mediumhead_undeadofficert4", // 1050534346
@@ -10623,6 +10801,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3ec525a5: "lighthead_dresspvpdropt3", // 1053107621
     0x3ec863b6: "mediumlegs_undeadofficert5", // 1053320118
     0x3ec98f38: "2hgreataxe_massiverazorwoodaxet4_v2", // 1053396792
+    0x3eca2853: "weaponst3_s8", // 1053435987
     0x3ecc0295: "skin_mar2023_greatsword", // 1053557397
     0x3ecc8337: "heavyhead_lost1t2", // 1053590327
     0x3ecd3d71: "2hgreatsworddropt4", // 1053638001
@@ -10645,6 +10824,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3eda89e2: "heavyfeet_marauderrank4_occultist", // 1054509538
     0x3edb65ee: "mediumhands_marauderrank1_ranger_v2", // 1054565870
     0x3edfa4ce: "mediumlegs_marauderrank2_occultist", // 1054844110
+    0x3edfaa68: "skinningknife_etherealt4_s1e", // 1054845544
     0x3ee021cd: "heavyhands_covenantrank4_ranger_v2", // 1054876109
     0x3ee0cbc0: "ancientguardian_weapon_1h_spear", // 1054919616
     0x3ee1f64e: "1hflailangryearthelitet5", // 1054996046
@@ -10652,6 +10832,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3ee4e37b: "midnight_urbass_part1_page2", // 1055187835
     0x3ee57076: "flxpac_heavyhands_brimstonesands_mutt5", // 1055223926
     0x3ee57855: "heavyhands_oakking_dex_600", // 1055225941
+    0x3eea6a33: "combatconsumablest3_s8", // 1055550003
     0x3eead35e: "scarab_str_2hcelestialstaff_lifet52", // 1055576926
     0x3eeb51e0: "skin_feet_fanaticsainth", // 1055609312
     0x3eedfc68: "omega_box_armor_sentry_605", // 1055784040
@@ -10728,6 +10909,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3f771a6c: "crx_itempattern_heavylegs_sprigganbane", // 1064770156
     0x3f77ba23: "mediumchest_syndicaterank5_soldier_v2", // 1064811043
     0x3f79e4ac: "lightfeet_sagaciousshoest5_v2", // 1064953004
+    0x3f7a66ac: "owbrewardcontainernormal_scarab", // 1064986284
     0x3f7ba27e: "2hstafffire_purestintentionst3_v2", // 1065067134
     0x3f7c854b: "0203_0103_menderscloth", // 1065125195
     0x3f7f88cb: "omega_heavychest_soldier_625", // 1065322699
@@ -10803,6 +10985,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x3fd008c1: "0905_0301_corruptedblood", // 1070598337
     0x3fd1b9cd: "artifact_nhweapongauntleticet5_gs600", // 1070709197
     0x3fd22ff9: "castgypsum_bow", // 1070739449
+    0x3fd26ff8: "tskillleveling3_s8", // 1070755832
     0x3fd3873b: "lighthead_robedropt4", // 1070827323
     0x3fd419fd: "lightlegs_ds_boss_mutt5", // 1070864893
     0x3fd4bb6f: "2hstafffire_arcanefiret2_v2", // 1070906223
@@ -10859,6 +11042,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4020420a: "1hflailinfluencet5", // 1075855882
     0x4023c772: "omega_heavyfeet_sentry_600", // 1076086642
     0x402553e7: "mediumhands_syndicaterank4_sage_v2", // 1076188135
+    0x4028edc0: "campskin_season8_a_pvp", // 1076424128
     0x40296687: "2hbow_bowofdarkrebirtht5_v2", // 1076455047
     0x40296c7e: "2hgreataxe_deepriver", // 1076456574
     0x402b7a13: "omega_heavyhands_ranger_617_2", // 1076591123
@@ -11107,6 +11291,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x41bc158d: "clothingchest_engineert4", // 1102845325
     0x41bca3c6: "itempattern_1hgauntleticeoutpostrusht5", // 1102881734
     0x41bd4808: "mediumfeet_pvpt2", // 1102923784
+    0x41bdc073: "entdisplay_skin_mask_head_season8pass", // 1102954611
     0x41c0f606: "mediumfeet_brevist5_v2", // 1103164934
     0x41c1f9bc: "1hthrowingaxedropt5_inferno_leg", // 1103231420
     0x41c6d0c0: "omega_heavyfeet_scholar_612", // 1103548608
@@ -11115,6 +11300,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x41c9217d: "wolfpawt2", // 1103700349
     0x41d1b294: "fm_loot_item_s_25_08", // 1104261780
     0x41d1dadc: "2hmusket_wildjusticet5_v2", // 1104272092
+    0x41d7b37b: "skin_chest_s8_rank2_lbclear_forge", // 1104655227
     0x41d84d77: "1hflail_heavychain", // 1104694647
     0x41d9de71: "mediumhands_crafteddungeon2t3", // 1104797297
     0x41db1da5: "playtest_heavyfeet_ranger_t5_675", // 1104879013
@@ -11152,6 +11338,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x42092db4: "earring_concealedpurposet4", // 1107897780
     0x420c5557: "fm_hunt_item_4", // 1108104535
     0x4211b0b4: "playtest_heavylegs_sentry_t5", // 1108455604
+    0x42129028: "ghastly_villager_2h_sniper", // 1108512808
     0x421427d5: "lightfeet_welltroddenshoest5", // 1108617173
     0x42160efc: "2hfirestaff_marauderrank5", // 1108741884
     0x4216cebc: "fm_loot_item_c_22_12", // 1108790972
@@ -11280,6 +11467,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x42ae3fca: "omega_lighthead_sentry_622", // 1118715850
     0x42af0822: "lighthead_covenantrank3_ranger_v2", // 1118767138
     0x42afa5db: "1hrapier_wingslicert4", // 1118807515
+    0x42b062b5: "flail_etherealt4_s1e", // 1118855861
     0x42b08037: "heavychest_etherealt3", // 1118863415
     0x42b1b823: "flxpac_lightchest_so_mutextra_t5", // 1118943267
     0x42b49918: "skin_chest_s6_rank2_lbscore_tempestheart", // 1119131928
@@ -11546,6 +11734,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x442ebf74: "0411_0101_perseusdisk", // 1143914356
     0x442f0f0a: "heavychest_marauderrank1_ranger_v2", // 1143934730
     0x4430fa08: "mediumhands_covenantrank4_sage_v2", // 1144060424
+    0x4431340b: "dyes4_box_s8", // 1144075275
     0x44318c4e: "dailyarenacachel36", // 1144097870
     0x4432ef00: "omega_box_armor_ranger_pvp_light_ability", // 1144188672
     0x4435fd23: "2hmusket_ironbarkblastert5_v2", // 1144388899
@@ -11554,6 +11743,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x44375a20: "amuletdropt5_dex_sandstorm", // 1144478240
     0x44389665: "mediumchest_corrupted2t5", // 1144559205
     0x443a0b54: "heavyhands_dynastycorruptedelitet5", // 1144654676
+    0x443c9c3f: "entdisplay_skin_feet_season8pass", // 1144822847
     0x443ed883: "2hstafflifeharbingert5", // 1144969347
     0x443fa37d: "mediumchest_frostkingmog", // 1145021309
     0x443feb1a: "perfectsalvage_amuletpearlt5", // 1145039642
@@ -11652,6 +11842,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x44cb957e: "shard_int_ringmalachitet5", // 1154192766
     0x44cc10c9: "crx_itempattern_lightfeet_mossborne", // 1154224329
     0x44cc4851: "mediumlegs_covenantrank4_v2", // 1154238545
+    0x44cf47c6: "perkitem_weapon_melee_alternateattacks", // 1154435014
     0x44d341db: "skin_mar2023_rapier", // 1154695643
     0x44d5554c: "questrewardarmorl54", // 1154831692
     0x44d576b7: "skin_head_gothicknightdarkradiant", // 1154840247
@@ -11817,10 +12008,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x45b45269: "playtest_stafffire_dmg_t5_625_runeglass2", // 1169445481
     0x45b45fa6: "1hkshield_hercyneraid", // 1169448870
     0x45b544df: "2hbow_shatteredobelisk_mutt5", // 1169507551
+    0x45b5e8e5: "skin_mtx_coquette_gloves", // 1169549541
     0x45b5fb76: "heavychest_woodgrain", // 1169554294
     0x45b67c86: "omega_lightlegs_ranger_500_2", // 1169587334
     0x45b78afb: "damnfish_drums_part1_page1", // 1169656571
     0x45b9b0c0: "beach_chest2_hat1", // 1169797312
+    0x45ba455a: "lightlegs_etherealt5_s1e", // 1169835354
     0x45baa258: "2hmusket_hoplite", // 1169859160
     0x45bacd6d: "clothingchest_smeltert5", // 1169870189
     0x45bb3f15: "2hgreatsword_lieutenants", // 1169899285
@@ -11829,6 +12022,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x45bcddea: "lightfeet_sandworm_trial_t5", // 1170005482
     0x45bf42fb: "1hthrowingaxe_axeoftheeldergodst3_v2", // 1170162427
     0x45c1e27c: "earringt5_slakedthirst", // 1170334332
+    0x45c2684d: "musket_etherealt2_s1e", // 1170368589
     0x45c7754c: "clawt3", // 1170699596
     0x45c90250: "heavylegs_conquerorsgreavest5_v2", // 1170801232
     0x45c9cc96: "kt_undead_bastion_3_40124_mi_navigationcompass", // 1170853014
@@ -11843,6 +12037,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x45d36912: "skin_flute_winterconvergence", // 1171482898
     0x45d69071: "skin_chest_s3_rank2_lbscore_tempestheart", // 1171689585
     0x45d6ead5: "1hlongswordpvpdropt5", // 1171712725
+    0x45d75286: "entdisplay_skin_maskdeluxe_head_season8pass", // 1171739270
     0x45d7ef44: "playtest_heavylegs_scholar_t5_600", // 1171779396
     0x45dc820a: "playtest_box_rangedintdpsrole_t5_725", // 1172079114
     0x45df23ce: "1127_primeloin", // 1172251598
@@ -11871,16 +12066,20 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4616527a: "lightchest_weddingt5_shop", // 1175868026
     0x4618178c: "2hstafflife_iridescencet5", // 1175984012
     0x461903ad: "heavyhead_elitebreacht3", // 1176044461
+    0x461b7b16: "skin_legs_maraff2025_box", // 1176206102
     0x461be1fc: "legendarycastgypsum_ring", // 1176232444
     0x461f99c8: "2hstafffire_staffofgreatertribulationt5", // 1176476104
     0x462ac918: "1hgauntletice_brineofthefrostyshoret4_v2", // 1177209112
     0x462bcb54: "potionhealthbt1", // 1177275220
+    0x462ff23a: "skin_chest_s8_rank1_lbscore_crystalclaw", // 1177547322
     0x463017cd: "earringt5_theserenitystarmetaltrinket_v2", // 1177556941
     0x4630dde1: "invasionrewardcontainerrarity3l41", // 1177607649
     0x46310605: "omega_warhammer_500", // 1177617925
     0x46327538: "playtest_lightfeet_sage_t4", // 1177711928
     0x46375248: "fm_loot_item_7_07", // 1178030664
     0x46399033: "1hflail_named59_t5", // 1178177587
+    0x46399b85: "heavychest_spring_gs715", // 1178180485
+    0x463e3768: "campskin_spring01_a_pvp", // 1178482536
     0x46412f1c: "shard_int_earringopalt5", // 1178677020
     0x46415612: "feet_avengingblacksmitht4", // 1178686994
     0x46423f10: "ringstrfoct4", // 1178746640
@@ -11988,6 +12187,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x46e6af4f: "rewardpostcapfurnishingt3_b", // 1189523279
     0x46e7ae91: "2hwarhammer_volundrsiret3", // 1189588625
     0x46e7e90e: "kt_abandoned_village_40328_mi_corruptedaura", // 1189603598
+    0x46e81977: "lightlegs_spring_gs715", // 1189615991
     0x46e91a63: "2hspear_spearofthecorruptedassaultt5", // 1189681763
     0x46e9553a: "damned_cultist_weapon_1h_knife", // 1189696826
     0x46ebb5cb: "2hstafflifebeastelitet5", // 1189852619
@@ -12062,6 +12262,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x475288ed: "1hthrowingaxe_flxpac_crafteddungeon6t5", // 1196591341
     0x47529c8d: "crx_reward_heavyfemelegantt3_chest", // 1196596365
     0x4754c7b0: "fm_loot_item_c_7_08", // 1196738480
+    0x47581c14: "horsegrant_s8", // 1196956692
     0x47582355: "2hmusket_magisemissaryt5_v2", // 1196958549
     0x47597f76: "2hstafffiredungeon10t5", // 1197047670
     0x475a4fd8: "lightchest_trial_s2_sharift5_strcon", // 1197101016
@@ -12084,6 +12285,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x476fd4a0: "skin_uprightbass_metal", // 1198511264
     0x4774d5d8: "mediumhead_undeadpistoleert2", // 1198839256
     0x47751c1e: "13a_sq_03_freehazel_toy", // 1198857246
+    0x4777d0af: "flxpac_1hhatchet_dynastyshipyard_mutt5_owb", // 1199034543
     0x47788a1e: "heavychest_azothcrystal", // 1199082014
     0x4779e512: "1hlongsword_marauderrank3_v2", // 1199170834
     0x477e45d8: "amulet_acornt5_v2", // 1199457752
@@ -12227,6 +12429,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4886378c: "mediumfeet_doubloonshopt5", // 1216755596
     0x48865e07: "lightfeet_clotht5_guaranteeepic", // 1216765447
     0x48877ddb: "oldwood_guitar_part2_page1", // 1216839131
+    0x48880514: "entdisplay_skin_1hsword_season8pass", // 1216873748
     0x488a127c: "1hlongswordancientt2", // 1217008252
     0x488a3c14: "rewardcontainerlostl60", // 1217018900
     0x488a778b: "mediumfeet_beasthuntert5", // 1217034123
@@ -12404,6 +12607,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x49719bc4: "09a_m15_2hbow_t5", // 1232182212
     0x4971a55f: "2hspear_farseersspeart5_v2", // 1232184671
     0x49724272: "2hgreataxedungeon5t4", // 1232224882
+    0x497272bf: "bow_etherealt3_s1e", // 1232237247
     0x4972803c: "mediumhands_marauderrank2_barbarian", // 1232240700
     0x4973e143: "feet_plaguedoctort5", // 1232331075
     0x49755457: "2hgreataxe_stareyedreapert4", // 1232426071
@@ -12519,6 +12723,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4a190b19: "dynasty_warrior_shield", // 1243155225
     0x4a192178: "workorder_se_brightcolorbouquets", // 1243160952
     0x4a194964: "lighthands_nightveil2024", // 1243171172
+    0x4a19650b: "toolst2_s8", // 1243178251
     0x4a1c0319: "mediumfeet_flxpac_crafteddungeon1t3", // 1243349785
     0x4a1d3733: "1hrapier_crystalstickert3", // 1243428659
     0x4a2176c1: "lightfeet_marauderrank4_cleric", // 1243707073
@@ -12572,6 +12777,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4a6f6ee5: "artisan_fishingpolet52", // 1248816869
     0x4a71beaa: "questreward_mb_side13_mealbox", // 1248968362
     0x4a75b216: "fm_loot_item_s_28_12", // 1249227286
+    0x4a7b56fe: "longsword_etherealt2_s1e", // 1249597182
     0x4a7bf9c8: "mediumchest_covenantrank6_soldier", // 1249638856
     0x4a7c6817: "1hgauntletvoid_scourgeofthedepthst5", // 1249667095
     0x4a7d731a: "1hgauntletice_frostwallt4_v2", // 1249735450
@@ -12579,6 +12785,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4a7ea06e: "runeglass_gem_aquamarine_nature", // 1249812590
     0x4a7ed0fe: "heavyhead_greathornedhelmt2_v2", // 1249825022
     0x4a80e051: "mediumhead_syndicaterank3_soldier_v2", // 1249960017
+    0x4a8138af: "skin_1hsword_season8pass", // 1249982639
     0x4a8210bf: "lighthands_trial_s2_sharift5_conint", // 1250037951
     0x4a827531: "bloodsporet1", // 1250063665
     0x4a845838: "2hbow_forgottenrangersrecurvet4_v2", // 1250187320
@@ -12611,6 +12818,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4aa621ee: "chest_demonhunter1t2", // 1252401646
     0x4aa679e3: "heavyfeet_war1t5", // 1252424163
     0x4aa6dc1a: "0905_0305_pirateblood", // 1252449306
+    0x4aa77fbe: "skin_chest_s8_rank2_lbscore_tempestheart", // 1252491198
     0x4aa7ccbe: "pvparena_foodfoct3", // 1252510910
     0x4aa7d720: "corelightningt1", // 1252513568
     0x4aa93071: "catalystt1_2", // 1252601969
@@ -12635,6 +12843,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4abcde9b: "incenset4", // 1253891739
     0x4abf3b1f: "fastenerst4_2", // 1254046495
     0x4ac9da9e: "skin_blunderbuss_eternalfrost", // 1254742686
+    0x4ac9f698: "food_box_s8", // 1254749848
     0x4aca407a: "1hthrowingaxe_imbuedhatchett5", // 1254768762
     0x4acf6c30: "mediumfeet_syndicaterank4_cleric", // 1255107632
     0x4ad3f57d: "lighthead_trial_s2_sharift5_condex", // 1255404925
@@ -12652,6 +12861,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4ae81b62: "shard_int_lighthands_clotht52", // 1256725346
     0x4aea1dd2: "artifact_wcarmorheavyhead", // 1256857042
     0x4aeb89a1: "omega_mediumlegs_ranger_617", // 1256950177
+    0x4aecde6f: "flxpac_heavyfeet_dynastyshipyard_mutt5_owb", // 1257037423
     0x4af009e5: "2hspear_covenantrank1_v2", // 1257245157
     0x4af19ff7: "minormastery_loggingxp", // 1257349111
     0x4af2595a: "1hthrowingaxe_beyondreasont5_v2", // 1257396570
@@ -12808,6 +13018,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4be85664: "1hlongswordelitebreacht5", // 1273517668
     0x4beadd83: "omega_lightlegs_sage_pvp", // 1273683331
     0x4beaf8e6: "shard_str_1hhatchett5", // 1273690342
+    0x4beb1b18: "armort4_s8", // 1273699096
     0x4bed6dde: "amulett3_energybeads_v2", // 1273851358
     0x4bef53ac: "mediumchest_syndicaterank2_soldier_v2", // 1273975724
     0x4bf00f34: "omega_mediumhands_scholar_607", // 1274023732
@@ -12836,6 +13047,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4c0c41fd: "heavylegs_arenaancient1t5", // 1275871741
     0x4c0e636f: "playtest_mediumhands_sentry_t5_585", // 1276011375
     0x4c0ecfd0: "1hthrowingaxe_flxpac_crafteddungeon9t5", // 1276039120
+    0x4c0f207c: "runespinningswordst3c", // 1276059772
     0x4c0f9abb: "ringt5_woodgrain", // 1276091067
     0x4c148966: "mediumchest_elitepoi_highwaymant5", // 1276414310
     0x4c148dd8: "1hflail_named34_t4", // 1276415448
@@ -13002,6 +13214,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4cfd178c: "bucklest5_14", // 1291655052
     0x4cff9532: "flxpac_2hgreataxe_eternal_mutt5", // 1291818290
     0x4cff9efa: "playtest_stafffire_tnk_t5_585", // 1291820794
+    0x4cffee9e: "campskin_winter04_a_pvp", // 1291841182
     0x4d0016b9: "omega_box_armor_soldier_617_light", // 1291851449
     0x4d010bf4: "fm_hunt_item_9_09", // 1291914228
     0x4d03265d: "skin_darkfae_skinningknife", // 1292052061
@@ -13107,6 +13320,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4d92c3d9: "2hstafflife_vitalessencet4_v2", // 1301464025
     0x4d937391: "ring_sliverleaft5", // 1301509009
     0x4d937a75: "fungus_box_s3", // 1301510773
+    0x4d93a8ff: "stafffire_etherealt2_s1e", // 1301522687
     0x4d95a033: "omega_ring_scholar_610_3", // 1301651507
     0x4d979111: "1hgauntletice_icypreservationt3", // 1301778705
     0x4d97ed74: "omega_heavyfeet_soldier_pvp_a2", // 1301802356
@@ -13124,6 +13338,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4dabe704: "omega_heavyhands_ranger_pvp_a3", // 1303111428
     0x4daf723d: "2hstafflife_yuanqi", // 1303343677
     0x4daf764f: "2hstafffire_flamingbrancht3_v2", // 1303344719
+    0x4db25271: "heavylegs_etherealt4_s1e", // 1303532145
     0x4db2fd3f: "2hgreataxe_thehookt5_600_v2", // 1303575871
     0x4db3743c: "playtest_mediumchest_sage_t5_650", // 1303606332
     0x4db401ce: "lighthead_fishermant2", // 1303642574
@@ -13225,6 +13440,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4e3fd61c: "flxpac_1hsword_gardengenesis_mutt5", // 1312806428
     0x4e421ea4: "writhingvinest3", // 1312956068
     0x4e457119: "mediumlegs_dungeon5t4", // 1313173785
+    0x4e4630d0: "amulet_etherealt3_s1e", // 1313222864
     0x4e474490: "playtest_blunderbuss_dmg_t5_625_runeglass1", // 1313293456
     0x4e4809e1: "heavyhead_oakking_str", // 1313343969
     0x4e4ad31c: "1hlongsword_pvp_namedt4", // 1313526556
@@ -13301,6 +13517,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4ebc4a17: "2htowershielddungeon8t5", // 1320962583
     0x4ec16ffb: "playtest_ranger_ring_t5_650", // 1321299963
     0x4ec1ea67: "fm_loot_item_c_14_03", // 1321331303
+    0x4ec25cbb: "mediumchest_worldevent_s1_t5_v3", // 1321360571
     0x4ec498fb: "artifact_sbarmor600lightfeet", // 1321507067
     0x4ec78a13: "mediumlegs_leatherpvpreplicat2", // 1321699859
     0x4ec9aec9: "rewardcontainerswampbeastl13", // 1321840329
@@ -13336,6 +13553,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4ef0052e: "omega_lighthands_soldier_610_3", // 1324352814
     0x4ef1297a: "lightfeet_summer600t5_str", // 1324427642
     0x4ef1a6c9: "heavyhead_horrificskullcapt5_v2", // 1324459721
+    0x4ef43d12: "dyes3_box_s8", // 1324629266
+    0x4ef587d1: "hatchet_etherealt5_s1e", // 1324713937
     0x4ef6c5a9: "2hmusketpvpreplicat4", // 1324795305
     0x4ef985af: "omega_ring_sage_622_1", // 1324975535
     0x4ef9b4db: "heavylegs_syndicaterank4_ranger_v2", // 1324987611
@@ -13357,6 +13576,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4f13490d: "1hlongsword_themessengert5_v2", // 1326663949
     0x4f157986: "1hgauntleticeoutpostrusht5", // 1326807430
     0x4f157c44: "omega_heavychest_soldier_620", // 1326808132
+    0x4f19337e: "conquerorsitem_warhammer_knockback_s1e", // 1327051646
     0x4f1bb7d3: "dungeonshattermtn00_chest04", // 1327216595
     0x4f1c0603: "chest_plaguedoctort4", // 1327236611
     0x4f1e126c: "itemdisplay_heavychest_trial_s2_t5", // 1327370860
@@ -13375,6 +13595,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4f2c75de: "mediumfeet_syndicaterank1_soldier_v2", // 1328313822
     0x4f2d15e2: "mediumfeet_alchemistvar3t5", // 1328354786
     0x4f2dce26: "heavylegs_maraudert4", // 1328401958
+    0x4f304036: "skin_2hgreataxe_season8pass", // 1328562230
     0x4f32ae1c: "omega_heavylegs_soldier_625", // 1328721436
     0x4f33a40a: "lighthands_goldensheafst5", // 1328784394
     0x4f36487a: "fm_loot_item_r0905", // 1328957562
@@ -13412,6 +13633,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4f719a3f: "clothweavet4", // 1332845119
     0x4f72a1a7: "heavylegs_angryearth1t5", // 1332912551
     0x4f76338b: "firestaffcharmt6", // 1333146507
+    0x4f785669: "worldevent_s1_bonusbox_s8", // 1333286505
     0x4f78e69c: "cursed10ws_oreprecioust3", // 1333323420
     0x4f797491: "mediumlegs_pvpt5", // 1333359761
     0x4f7adc7e: "dungeondiamonds_flxpac_isabella", // 1333451902
@@ -13475,6 +13697,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x4fb7323b: "lightchest_firstlightt3", // 1337406011
     0x4fb78d8f: "heavyhands_covenantrank1_ranger_v2", // 1337429391
     0x4fb88fee: "playtest_box_combatcontainer_t5_625", // 1337495534
+    0x4fba33ec: "skin_chest_s8_rank1_lbclear_glacialtarn", // 1337603052
     0x4fbe7432: "lightfeet_gog_boss_mutt5", // 1337881650
     0x4fbe9d3c: "flxpac_2hspear_d_mutextra_t5", // 1337892156
     0x4fc00d76: "1hthrowingaxe_syndicatechroniclershatchett2", // 1337986422
@@ -13651,6 +13874,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x50a83429: "skin_1hpickaxe_season7pass", // 1353200681
     0x50a91c8a: "runefirestormt3b", // 1353260170
     0x50a94a97: "2hgreatsword_demonslayert4", // 1353271959
+    0x50aad902: "skin_chest_s8_rank1_lbclear_forge", // 1353373954
     0x50aad96d: "wallcornert2", // 1353374061
     0x50ac1d57: "workorder_faction_provisions02_t2", // 1353456983
     0x50ac74d1: "2hgreataxe_sobeksmightyswipet5", // 1353479377
@@ -13687,6 +13911,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x50cf1122: "shard_str_muskett52", // 1355747618
     0x50d364c7: "questrewardarmorl11", // 1356031175
     0x50d4b442: "2hstafflife_doubloonshopnamedt5", // 1356117058
+    0x50d90e5e: "amuletdropt2_s8item", // 1356402270
     0x50da45bd: "0925_0101_truffle", // 1356481981
     0x50db18db: "recipe_foodconfoct4", // 1356536027
     0x50dd81f3: "1hkshield_syndicatechroniclerskshieldt3", // 1356694003
@@ -13777,6 +14002,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5168b193: "fm_loot_item_s_10_11", // 1365815699
     0x5169682b: "clothinghead_minert5", // 1365862443
     0x5169a438: "serumregent5", // 1365877816
+    0x516a624f: "spear_etherealt4_s1e", // 1365926479
     0x516ce7ed: "lightfeet_dungeon4t4", // 1366091757
     0x516fd9a6: "beach_chest1_armor2", // 1366284710
     0x51740571: "kt_undead_bastion_1_40137_mi_corruptedmoss", // 1366558065
@@ -13897,6 +14123,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5217a16c: "flxpac_2hthrowingaxe_ds_mutextra_t5", // 1377280364
     0x52182c6f: "2hstafffire_cannonlightert4_v2", // 1377315951
     0x521acaf5: "mediumchest_so_boss_mutt5", // 1377487605
+    0x522223d9: "skin_chest_s8_rank2_lbscore_hercyne", // 1377969113
     0x52248fa9: "skinningknife_etherealt2", // 1378127785
     0x5225996f: "playtest_tank_longsword_t5_700", // 1378195823
     0x5225ba4d: "skin_head_marauderlegatust5", // 1378204237
@@ -13966,6 +14193,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5284e995: "pvp_potions_small_defencet1_b", // 1384442261
     0x52862698: "lighthands_ancient1t2", // 1384523416
     0x5288a4d3: "pvp_potions_medium_lostt2_b", // 1384686803
+    0x5289c9cf: "campskin_firstlighttwitch_a_pvp", // 1384761807
     0x528b54d2: "2hkiteshieldcrafteddungeon11t5", // 1384862930
     0x528b9a09: "omega_heavyhead_scholar_615", // 1384880649
     0x528c118e: "woodstaint3", // 1384911246
@@ -14016,6 +14244,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x52c6fd81: "1hrapier_winter_700", // 1388772737
     0x52c81f4d: "1hrapier_marauderrank5_v2", // 1388846925
     0x52cbdb8a: "mediumchest_pvp_prestige600bt5", // 1389091722
+    0x52ce6861: "conquerorsitem_musket_dodgecorruptionball_s1e", // 1389258849
     0x52ce94ce: "poultryt1", // 1389270222
     0x52cf62e4: "fm_loot_item_s_22_13", // 1389322980
     0x52cff754: "2hstafffire_awokenashstafft5", // 1389360980
@@ -14036,6 +14265,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x52e48f5b: "skin_feet_nightmares_3", // 1390710619
     0x52e59e37: "1hgauntleticedungeon9t5", // 1390779959
     0x52e5a1fe: "rewardpostcapweaponsmithingt1_b", // 1390780926
+    0x52ea7a24: "skin_chest_s8_rank1_lb_eternalpools", // 1391098404
     0x52eb170a: "omega_lightlegs_sentry_607", // 1391138570
     0x52eb3e75: "omega_mediumhands_scholar_617", // 1391148661
     0x52ebd334: "mediumfeet_m_boss_mutt5", // 1391186740
@@ -14049,6 +14279,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x52facbf2: "sandworm_trial_earringt5", // 1392167922
     0x52fb0e3f: "1hsword_hellfire_mutt5", // 1392184895
     0x52fdafd6: "2hbow_forgottenrangersrecurvet4", // 1392357334
+    0x52fed2d7: "entdisplay_skin_2hfishingpole_season8pass", // 1392431831
     0x53007a54: "2hstafffire_meteortrailt5", // 1392540244
     0x53025eac: "amulett4_talismanofmayim_v2", // 1392664236
     0x5304b225: "fm_loot_item_c_13_10", // 1392816677
@@ -14132,6 +14363,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x536e8357: "fm_loot_item_s_28_02", // 1399751511
     0x53709f62: "1hgauntletice_captainsperogativet3", // 1399889762
     0x5372f507: "1helementalgauntlet_ice_winter_con", // 1400042759
+    0x53749cd9: "soulharvester_claws", // 1400151257
     0x5379f7f4: "perkitem_armor_dmglightning", // 1400502260
     0x537c41d6: "entdisplay_skin_seasonalserverapparel_chest", // 1400652246
     0x537e8f91: "1hthrowingaxe_accursedendt5", // 1400803217
@@ -14212,7 +14444,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x53f0cc24: "flxpac_ringt5_ef_mut", // 1408289828
     0x53f10565: "1hflail_named119_t5", // 1408304485
     0x53f11535: "1hrapier_hallowedrapiert4_v2", // 1408308533
+    0x53f23e2c: "skin_chest_s8_rank1_lbscore_gardengenesis", // 1408384556
+    0x53f29b62: "lighthands_etherealt3_s1e", // 1408408418
     0x53f30462: "mediumlegs_or1t5", // 1408435298
+    0x53f35656: "gauntletvoid_etherealt3_s1e", // 1408456278
     0x53f6b2f0: "2hgreatsword_tortoisestriket5_v2", // 1408676592
     0x53f6ee86: "1hgauntletvoid_freezingvoidt5_v2", // 1408691846
     0x53f70c5b: "head_inquisitort5", // 1408699483
@@ -14230,6 +14465,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x54049a69: "playtest_box_armor_sage_t2_medium", // 1409587817
     0x54083b77: "runeglass_gem_emerald_nature", // 1409825655
     0x54092ad4: "skin_chest_s7_rank2_lbscore_lazarusinstrumentality", // 1409886932
+    0x540b6325: "mediumhead_etherealt3_s1e", // 1410032421
     0x540cc208: "invasionrewardcontainerrarity1lowl63", // 1410122248
     0x540d0895: "ringt5_legatesring_v2", // 1410140309
     0x540f31f1: "femshaman_lighthands_dropt5", // 1410281969
@@ -14248,6 +14484,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x54236534: "omega_heavyhands_sentry_607", // 1411605812
     0x542b6f54: "diamondt4", // 1412132692
     0x542f1aa1: "2hstafflife_hopet5", // 1412373153
+    0x542f686b: "skin_head_coveff2025", // 1412393067
     0x542fb841: "fm_loot_item_s_7_14", // 1412413505
     0x5434c208: "mediumhands_marauderrank5_occultist", // 1412743688
     0x5434d83c: "skin_chest_s4_rank2_lbscore_depths", // 1412749372
@@ -14367,6 +14604,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x54c94edb: "scarab_con_1hgauntletvoidt52", // 1422479067
     0x54c98d99: "doublooncrate2hmelee_690cap", // 1422495129
     0x54cb7584: "mediumlegs_crafteddungeon9t5", // 1422620036
+    0x54cddba9: "skin_chest_s8_rank1_lbclear_lazarusinstrumentality", // 1422777257
     0x54ce6d3c: "heavyhands_platet52", // 1422814524
     0x54d15622: "1hlongsword_bloodforgedlongswordt3_v2", // 1423005218
     0x54d405f9: "backstory7book", // 1423181305
@@ -14381,6 +14619,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x54dbd33f: "runeglass_gem_onyx_arcane", // 1423692607
     0x54dbd90f: "artifact_nhnewweapontshieldt5", // 1423694095
     0x54dd960e: "femstud_medlegs_dropt2", // 1423808014
+    0x54df0d39: "stafflife_etherealt2_s1e", // 1423904057
     0x54df868d: "lightlegs_wedding_dex_600", // 1423935117
     0x54e0d581: "shard_foc_amuletemeraldt5", // 1424020865
     0x54e71d0a: "lighthead_covenantt4a", // 1424432394
@@ -14390,6 +14629,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x54e95169: "clothingchest_woodworkert5", // 1424576873
     0x54eab020: "clothingchest_skinnert4", // 1424666656
     0x54eb5fc6: "amuletdropt5_con_inferno_leg", // 1424711622
+    0x54eb71b1: "earring_etherealt4_s1e", // 1424716209
     0x54ec2e33: "1htowershielddynastyt4", // 1424764467
     0x54eeacb3: "mediumlegs_dungeoneersleggingst5", // 1424927923
     0x54f0203d: "2hblunderbuss_flashpowdert5_v2", // 1425023037
@@ -14446,6 +14686,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x552aa41b: "2hstafflifedungeon11t5", // 1428857883
     0x552abee1: "lighthead_mask5_t5_v2", // 1428864737
     0x552c899d: "entdisplay_skin_greataxe_eternalfrost", // 1428982173
+    0x552d211d: "campskin_firstlightelven_02_pvp", // 1429020957
     0x552d2830: "workorder_1002_0104_hat_shroudedintent_v2", // 1429022768
     0x553143d4: "mediumhead_syndicaterank2_occultist", // 1429291988
     0x553a41b4: "rewardcontainerlostl29", // 1429881268
@@ -14471,6 +14712,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x555526fc: "2hstafffire_d_mutextra_t5", // 1431643900
     0x555942a1: "2hgreatsword_worldevent_s1_t5_v2", // 1431913121
     0x55594feb: "fm_hunt_item_12_05", // 1431916523
+    0x55596ce2: "mediumfeet_etherealt3_s1e", // 1431923938
     0x5559bc5a: "pvp_potions_large_corruptedt3", // 1431944282
     0x555a165d: "playtest_destroyer_mediumfeet_t5_700", // 1431967325
     0x555b38fd: "honey_guitar_part1_page1", // 1432041725
@@ -14557,6 +14799,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x55d5e74e: "recipe_foodcondext4", // 1440081742
     0x55d61055: "1hlongsword_finalwaltzt5_v2", // 1440092245
     0x55d7a08e: "skin_drum_season6pass", // 1440194702
+    0x55d95d2a: "skin_chest_s8_rank1_lb_opr", // 1440308522
     0x55d9fa35: "fastenerst4_14", // 1440348725
     0x55da904a: "1hrapier_clothadornedrapiert2", // 1440387146
     0x55db1e56: "skin_head_goldenwreath", // 1440423510
@@ -14577,6 +14820,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x55f5e66a: "1hroundshieldancientt2", // 1442178666
     0x55f5f637: "spearcharmt4", // 1442182711
     0x55f608aa: "skin_destroyerarchetypechest", // 1442187434
+    0x55f72c11: "blueguffint3_s8", // 1442262033
+    0x55f76cc1: "skin_chest_maraff2025_box", // 1442278593
     0x55fc33c2: "mediumhands_spring_roae", // 1442591682
     0x56007d9d: "heavyhands_arenacorrupted1t4", // 1442872733
     0x56011927: "lightfeet_summert5_dex", // 1442912551
@@ -14638,6 +14883,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x566bd1b2: "covenantseal_sage", // 1449906610
     0x566dcb3e: "flxpac_1hkiteshield_nature_mutt5", // 1450036030
     0x5671a4b8: "fm_loot_item_c_10_08", // 1450288312
+    0x5672472f: "greatsword_etherealt4_s1e", // 1450329903
     0x5672808d: "mediumhead_summernew675t5", // 1450344589
     0x5673654b: "fishingsalmonfatt1", // 1450403147
     0x56741a60: "scarab_int_heavychest_platet52", // 1450449504
@@ -14688,6 +14934,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x56c93a96: "omega_heavyhead_sage_617", // 1456028310
     0x56cc7bed: "omega_mediumhead_sage_602", // 1456241645
     0x56cdc86d: "entdisplay_skin_season5passdeluxeapparel_feet", // 1456326765
+    0x56ce1915: "skin_legs_owb_box", // 1456347413
     0x56ce6b01: "claimt1_50m", // 1456368385
     0x56ce723f: "skin_fatefortune_skinningknife", // 1456370239
     0x56d2def9: "1hrapier_covenantrank3", // 1456660217
@@ -14735,6 +14982,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5712e2a1: "lighthead_marauderrank5_soldier_v2", // 1460855457
     0x571417fb: "2hmusket_blacksulfurblastt5", // 1460934651
     0x57187991: "1hthrowingaxe_jaggedamethystcleavert2_v2", // 1461221777
+    0x57198392: "1hgauntletice_worldevent_s1_t5_v3", // 1461289874
     0x571d3a9e: "mediumhead_darknessbreacht4", // 1461533342
     0x57208f4a: "mediumfeet_summernew675t5", // 1461751626
     0x5721da44: "scarab_dex_medium_bal_legst5", // 1461836356
@@ -14769,6 +15017,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x57488d3a: "mutatorrewardcontainerdiff1t2_flxpac", // 1464372538
     0x574980cf: "lightfeet_pvp_prestige600t5_v2", // 1464434895
     0x5749a1d5: "2hbow_fatesdesignt5", // 1464443349
+    0x574c878a: "jewelryt2_s8", // 1464633226
     0x57514bc1: "shockbulbt2", // 1464945601
     0x5751b0ba: "1hthrowingaxe_pvp_namedt51", // 1464971450
     0x57533e76: "sword_doubloonshopt5", // 1465073270
@@ -14787,6 +15036,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x576a4b16: "2hblunderbuss_hoplite", // 1466583830
     0x576b4745: "mediumhands_hercynemutatorcombo", // 1466648389
     0x576c1a42: "2hstafflifedungeon12t5", // 1466702402
+    0x576d20dc: "jun2025_twitchprime_box", // 1466769628
     0x576e2182: "ringt4_scorpionkingscursering_v2", // 1466835330
     0x576f2bc1: "playtest_lighthead_ranger_t5_650", // 1466903489
     0x576f8930: "2hstafflife_immutablewisht2_v2", // 1466927408
@@ -14921,6 +15171,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x582399db: "c10a_doubloonpouch", // 1478728155
     0x5824c25b: "heavyhead_lazarus_mutt5", // 1478804059
     0x58260ee4: "darknessrewardcontainer3", // 1478889188
+    0x5826104a: "entdisplay_skin_2hgreatsword_season8pass", // 1478889546
     0x582690e2: "skin_chest_s3_rank1_lbscore_gardengenesis", // 1478922466
     0x58269496: "fm_loot_item_29_08", // 1478923414
     0x58273283: "2hstafffire_staffoftheimmolatedveilt5", // 1478963843
@@ -14975,6 +15226,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x58747308: "skin_monster_voidgauntlet", // 1484026632
     0x587bb33d: "1hgauntleticedungeon7t5", // 1484501821
     0x587c4932: "skin_chest_s5_rank2_lb_fishing", // 1484540210
+    0x587e590e: "capturetheflagrewardl65", // 1484675342
     0x58811be1: "artifact_wcweaponhatchet", // 1484856289
     0x58820efe: "platformcannont1", // 1484918526
     0x5884ede4: "1102_0401_corruptedcompass", // 1485106660
@@ -15006,6 +15258,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x58b4fe83: "perfectsalvage_earringsapphiret5", // 1488256643
     0x58b56741: "lightfeet_elitepoi_archmaget5_v2", // 1488283457
     0x58b73f58: "factiontinctureblightt4", // 1488404312
+    0x58b79178: "skin_head_season8seasonalserver", // 1488425336
     0x58b88f48: "2hstafflife_reluctantsaviort5_v2", // 1488490312
     0x58bbec26: "heavychest_heavy_siege_s7", // 1488710694
     0x58bdcd05: "crx_mediumhands_sandworm_trial", // 1488833797
@@ -15021,6 +15274,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x58c6f878: "lightfeet_bs_boss_mutt5_600_v2", // 1489434744
     0x58ca6506: "artifact_wcweaponstafflifet5", // 1489659142
     0x58cb3266: "2hspear_timberleecht5", // 1489711718
+    0x58d202b3: "skin_chest_s8_rank1_lb_sandworm", // 1490158259
     0x58d3fe2e: "fm_hunt_item_4_07", // 1490288174
     0x58d54acb: "1hthrowingaxe_greenkeepersaxet5_v2", // 1490373323
     0x58d57346: "1hgauntletice_frostlife", // 1490383686
@@ -15090,6 +15344,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x592b108a: "2hmusket_hereticsflintlockt4", // 1495994506
     0x592c0880: "saltpetert1", // 1496057984
     0x592c3e97: "1hthrowingaxe_baldwynesraget3_v2", // 1496071831
+    0x592d7c59: "ring_etherealt2_s1e", // 1496153177
     0x59301940: "seedmorninggloryt1", // 1496324416
     0x59304c46: "2hblunderbuss_thebowlert5", // 1496337478
     0x593094a0: "playtest_box_armor_sentry_t4_heavy", // 1496356000
@@ -15123,6 +15378,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x59655830: "flxpac_1hkiteshield_so_mutextra_t5", // 1499813936
     0x5965bafc: "mi_navigationcompass_11", // 1499839228
     0x5966f5b9: "ringt3_tamersring", // 1499919801
+    0x596aa389: "multiusepotionhealtht5", // 1500160905
     0x596b8402: "1hthrowingaxe_flxpac_crafteddungeon10t5", // 1500218370
     0x596c6d8c: "2hstafflifelegiont5", // 1500278156
     0x596c9d49: "playtest_gauntletice_tnk_t3", // 1500290377
@@ -15236,11 +15492,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5a17ee7b: "0204_0104_hangmansbinding", // 1511517819
     0x5a18cd18: "wc_questpresent2", // 1511574808
     0x5a197ac8: "minormastery_miningxp_display", // 1511619272
+    0x5a1c0747: "amuletdropt5_s8item", // 1511786311
     0x5a1c2909: "skin_chest_s3_rank2_lbclear_depths", // 1511794953
     0x5a1e2ffe: "majormastery_skinningxp_display", // 1511927806
     0x5a200204: "claimt1_15m_t4", // 1512047108
     0x5a2518c3: "heavyhead_marauderrank5_brigand", // 1512380611
     0x5a257072: "flxpac_2hblunderbuss_eternal_mutt5", // 1512403058
+    0x5a270351: "skin_gloves_owb", // 1512506193
     0x5a28a91c: "fetch_withered_farm_30116_mi_corruptedrelic", // 1512614172
     0x5a2a321c: "faction_armaments09_t2", // 1512714780
     0x5a2a32b9: "playtest_tank_ring_t5_625", // 1512714937
@@ -15250,6 +15508,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5a2ed5d2: "mediumchest_marauderrank6_2", // 1513018834
     0x5a2f4a65: "mountattachmentitem_shield41", // 1513048677
     0x5a3028cf: "playtest_mediumlegs_sage_t5_700", // 1513105615
+    0x5a305e4d: "skin_maskdeluxe_head_season8pass", // 1513119309
+    0x5a347966: "skin_feet_season8seasonalserver", // 1513388390
     0x5a34da1f: "skin_greatsword_wicked", // 1513413151
     0x5a35760c: "omega_mediumfeet_sentry_615", // 1513453068
     0x5a364dc9: "heavyhead_spring_foc", // 1513508297
@@ -15302,6 +15562,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5a8e682b: "omega_lighthands_soldier_625_3", // 1519282219
     0x5a8f1755: "mediumhead_reinforcedstalkersmaskt3_v2", // 1519327061
     0x5a90070e: "heavylegs_summernewt5", // 1519388430
+    0x5a90552c: "blunderbuss_etherealt5_s1e", // 1519408428
     0x5a914eab: "omega_lightchest_ranger_605_2", // 1519472299
     0x5a92ac1f: "2hspear_flxpac_crafteddungeon5t4", // 1519561759
     0x5a959ec7: "mountattachmentitem_skin_reaper_skulllantern", // 1519754951
@@ -15394,6 +15655,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5b11bdcc: "2hstafffirepvpdropt4", // 1527889356
     0x5b1362c2: "lightchest_weddingt2_shop", // 1527997122
     0x5b177784: "1hrapier_darkforgedvoidsabret5", // 1528264580
+    0x5b17b994: "campskin_nightmare03_a_pvp", // 1528281492
     0x5b198190: "fm_loot_item_c_17_07", // 1528398224
     0x5b1a78f4: "mediumchestbeastelitet5", // 1528461556
     0x5b1c6ed6: "lighthands_breach1t4", // 1528590038
@@ -15464,6 +15726,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5b735c57: "lightfeet_crafteddungeon4t4", // 1534286935
     0x5b764ad7: "2hgreataxe_depths_mutt5", // 1534479063
     0x5b7a30ee: "schematic_house_housingitem_rug_dynasty_decor_floor_rug04", // 1534734574
+    0x5b7ae624: "gauntletice_etherealt2_s1e", // 1534780964
     0x5b7c6dd2: "fetch_witheredfarm_2_30104_mi_hagstones", // 1534881234
     0x5b7d345e: "runeglass_gem_amethyst_ranged", // 1534932062
     0x5b84ca3d: "skin_legs_egyptiangods_1", // 1535429181
@@ -15483,7 +15746,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5ba47323: "schematic_house_housingitem_chair_lg_a", // 1537504035
     0x5ba49f74: "shieldcharmt3", // 1537515380
     0x5ba58da5: "omega_shieldtower_625", // 1537576357
+    0x5ba78057: "flxpac_heavyhead_brimstonesands_mutt5_owb", // 1537704023
     0x5ba907d9: "dungeondiamonds_dynasty", // 1537804249
+    0x5baea386: "mediumchest_etherealt4_s1e", // 1538171782
     0x5baf24b6: "dyea039_mounts", // 1538204854
     0x5bafea47: "1hrshield_boundlesswardt5", // 1538255431
     0x5bb1079c: "shard_foc_medium_ele_chestt5", // 1538328476
@@ -15515,9 +15780,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5bd47881: "mediumhead_hollyking_foc", // 1540651137
     0x5bd49942: "heavylegs_drowned1t4", // 1540659522
     0x5bd83034: "lightfeet_robet5_guaranteeepic", // 1540894772
+    0x5bdbb904: "skin_mtx_coquette_head", // 1541126404
     0x5bdbe59b: "2hspear_sharpenedogrefemurt3", // 1541137819
     0x5bdd1c46: "schematic_house_housingitem_legion_decor_column01_a", // 1541217350
+    0x5bde697e: "skin_mtx_greek_gods_chest", // 1541302654
     0x5be1c986: "rewardcontainerlostl21", // 1541523846
+    0x5be205a7: "sickle_etherealt4_s1e", // 1541539239
     0x5be26424: "legacynamedchest", // 1541563428
     0x5be3d50e: "1hgauntletvoid_ghostkeepert4", // 1541657870
     0x5be4600a: "omega_lightfeet_soldier_500_2", // 1541693450
@@ -15552,6 +15820,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5c2556c5: "doubloongrabbagrare", // 1545950917
     0x5c25d5fe: "0320_0101_corruptedrune", // 1545983486
     0x5c272088: "pvp_potions_small_attackt1_a", // 1546068104
+    0x5c28b3bf: "heavyhands_worldevent_s1_t5_v3", // 1546171327
     0x5c29def3: "lightlegs_clothpvpdropt3", // 1546247923
     0x5c2a0635: "jadet1", // 1546257973
     0x5c2b3011: "omega_box_armor_soldier_617_heavy", // 1546334225
@@ -15569,6 +15838,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5c41119f: "1hthrowingaxedrownedt5", // 1547768223
     0x5c411b48: "fishingbassmediumt1", // 1547770696
     0x5c443643: "fetch_undead_bastion_2_40122_mi_tuningstone", // 1547974211
+    0x5c44a4ef: "greataxe_etherealt2_s1e", // 1548002543
     0x5c458e57: "lightlegs_treetopdown", // 1548062295
     0x5c45aac0: "omega_lighthands_soldier_620_3", // 1548069568
     0x5c45bb7e: "1hlongsword_mountainthornt2_v2", // 1548073854
@@ -15586,6 +15856,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5c4e0819: "heavylegs_syndicaterank1_cleric", // 1548617753
     0x5c4e8f9d: "itempattern_heavyhead_lostraidert5", // 1548652445
     0x5c572475: "fm_loot_item_c_4_04", // 1549214837
+    0x5c582d00: "mediumhands_firstlightexp_mutt1_owb", // 1549282560
     0x5c589de9: "1209_0101_azothcrystal", // 1549311465
     0x5c5a8c40: "omega_lightchest_ranger_600_2", // 1549438016
     0x5c5ad018: "pvparena_potionfocust4", // 1549455384
@@ -15706,6 +15977,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5d1eaef9: "2hspear_azothimbuedspeart5", // 1562291961
     0x5d1f6f47: "mediumhands_covenantrank2_soldier_v2", // 1562341191
     0x5d1ff84a: "1hlongsword_thecaptainsdealt5_v2", // 1562376266
+    0x5d230934: "expedition_box2_s8", // 1562577204
     0x5d234b79: "clothinglegs_lumberjackt3", // 1562594169
     0x5d236ad1: "skin_musketeerarchetypehead", // 1562602193
     0x5d23a202: "arrowt1", // 1562616322
@@ -15836,6 +16108,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5de1578f: "1htowershield_gawainsshieldt4_v2", // 1575049103
     0x5de3deb8: "2hwarhammer_volcanosmashert5", // 1575214776
     0x5de51e5e: "lightfeet_maraudert3", // 1575296606
+    0x5de60d08: "heavychest_etherealt4_s1e", // 1575357704
     0x5de65ba1: "mediumhead_corruptionscrownt5_v2", // 1575377825
     0x5de83c2c: "lightfeet_spring_str", // 1575500844
     0x5de88f41: "2hwarhammer_halloweennewt5_gs675", // 1575522113
@@ -15930,6 +16203,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5e6fb1d9: "lighthands_cloth_siege2024", // 1584378329
     0x5e6fb639: "playtest_spear_tnk_t5_650", // 1584379449
     0x5e7333c8: "castgypsum_hands", // 1584608200
+    0x5e739e27: "heartrunest5_s8", // 1584635431
     0x5e75329f: "1hroundshield_nature_mutt5", // 1584738975
     0x5e758a06: "factiontokenlarge_box_s4", // 1584761350
     0x5e75ba79: "2hstafflife_staffofcavernoushorrorst5_v2", // 1584773753
@@ -16028,6 +16302,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5f0d86de: "2hstafflife_breachbatteredlifestafft4", // 1594722014
     0x5f135702: "mediumhands_syndicaterank1_scholar_v2", // 1595102978
     0x5f1364c2: "schematichercyne_2hgreatsword", // 1595106498
+    0x5f139d17: "capturetheflagrewardl61", // 1595120919
     0x5f13cc7f: "mediumhands_trial_s2_rimat5_dexcon", // 1595133055
     0x5f154208: "1hgauntletvoid_darkvengeancet5", // 1595228680
     0x5f15cdd0: "playtest_mediumhands_scholar_t5_700", // 1595264464
@@ -16137,6 +16412,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x5fa0391c: "lighthands_corruptedelite1t4", // 1604335900
     0x5fa27fbe: "2hblunderbuss_smitefromonhight5", // 1604485054
     0x5fa31acd: "2hwarhammerfanatict5", // 1604524749
+    0x5fa370b3: "potionlifestealt5", // 1604546739
     0x5fa3814c: "mediumchest_marauderrank4_occultist", // 1604550988
     0x5fa3f4e6: "pvp_potions_small_attackt3_a", // 1604580582
     0x5fa49bf7: "heavyhands_d_boss_mutt5_v2", // 1604623351
@@ -16284,6 +16560,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x60820d25: "fm_loot_item_26_11", // 1619135781
     0x60839493: "heavylegs_firstlightrevampt5", // 1619235987
     0x6084c25c: "shard_dex_medium_phy_handst5", // 1619313244
+    0x608624b8: "heavychest_etherealt5_s1e", // 1619403960
     0x60889115: "chest_faction3officert2", // 1619562773
     0x60896288: "skin_chest_s5_rank1_lbscore_brimstone", // 1619616392
     0x6089dbd6: "mediumhead_syndicaterank5_scholar_v2", // 1619647446
@@ -16331,6 +16608,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x60d3c803: "lighthead_trial_s2_sharift5_foc", // 1624492035
     0x60d83156: "lightfeet_dresspvpreplicat2", // 1624781142
     0x60d8b2f6: "playtest_lightchest_scholar_t5_585", // 1624814326
+    0x60da2cf2: "skin_chest_syndff2025", // 1624911090
     0x60dcbacd: "lightlegs_clothlegacycrassust5", // 1625078477
     0x60dfd647: "turquoisecutt1", // 1625282119
     0x60e1aaf0: "2hgreatsword_marauderrank2_v2", // 1625402096
@@ -16377,6 +16655,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6115f499: "artifact_nhweaponrapiert5", // 1628828825
     0x6119dae3: "artifact_smnewarmor675mediumchest", // 1629084387
     0x61239801: "arrowbt2", // 1629722625
+    0x61248d5f: "greataxe_etherealt3_s1e", // 1629785439
     0x6127162a: "kt_undead_shipwreck_30101_mi_maskofshame", // 1629951530
     0x61275332: "artifact_wcarmormediumfeet", // 1629967154
     0x61278ac1: "skin_legs_warspecial", // 1629981377
@@ -16405,6 +16684,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x614c1463: "mediumhead_syndicaterank2_barbarian", // 1632375907
     0x614cbca2: "playtest_box_mageloadout_t5_650", // 1632418978
     0x614dac93: "lightchest_bb_bossxpac_mutt5", // 1632480403
+    0x614db7b5: "2hwarhammer_worldevent_s1_t5_v3", // 1632483253
     0x614f6bf8: "windswardshack_guitar_part2_page1", // 1632594936
     0x6150fe9d: "lightchest_revelert2", // 1632698013
     0x6151d768: "1hflail_ae_mutextra_t5", // 1632753512
@@ -16414,6 +16694,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6157c967: "royalcourtlightlegs", // 1633143143
     0x6159b91f: "wolfloint1", // 1633270047
     0x615cf1c8: "2hmusket_brimstonesands_mutt5", // 1633481160
+    0x61608799: "flxpac_1hkiteshield_dynastyshipyard_mutt5_owb", // 1633716121
     0x61614cda: "faction_provisions01_t5", // 1633766618
     0x6164aa39: "2hgreatsword_gripoftrutht5_v2", // 1633987129
     0x616c96ab: "workorder_faction_armorset04_t4", // 1634506411
@@ -16473,6 +16754,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x61a8b47f: "0610_0101_briarbranches", // 1638446207
     0x61a8c929: "1hlongsword_illusoryenigmat5a", // 1638451497
     0x61a8fbcd: "crx_questreward_ww_side_icegauntlet", // 1638464461
+    0x61aa64ae: "conquerorsitem_voidgauntlet_harvestdamage_s1e", // 1638556846
     0x61aa745a: "shard_str_light_phy_legs_clotht5", // 1638560858
     0x61aa79e6: "mediumhands_marauderrank3_v2", // 1638562278
     0x61ab2538: "ringt5_theincubushoop", // 1638606136
@@ -16544,6 +16826,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6211c533: "darknessrewardcontainermajor1l42", // 1645331763
     0x6211e85b: "lightchest_dungeon4t4", // 1645340763
     0x6212bace: "1hlongsword_marauderrank5_v2", // 1645394638
+    0x62135836: "skin_chest_s8_rank2_lbscore_barnacles", // 1645434934
     0x62191839: "shard_all_shieldtowert52", // 1645811769
     0x6219afeb: "1hrshield_maryslastwarningt2_v2", // 1645850603
     0x6219b60d: "scarab_foc_light_bal_legs_clotht5", // 1645852173
@@ -16646,6 +16929,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x62a6307f: "2hbowoutpostrusht5", // 1655058559
     0x62a6f074: "ring_sundropt5_v2", // 1655107700
     0x62a823b0: "precisiontoolt1_9", // 1655186352
+    0x62a90988: "skin_chest_s8_rank1_lbscore_glacialtarn", // 1655245192
     0x62a9a529: "omega_mediumchest_noarmor", // 1655285033
     0x62aa3014: "99e_msq_09_purifiedstaff", // 1655320596
     0x62ab1d06: "2hgreatsword_d_mutextra_t5", // 1655381254
@@ -16725,6 +17009,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6325de52: "fm_loot_item_14_13", // 1663426130
     0x632684a3: "scarab_str_medium_bal_chestt5", // 1663468707
     0x6327cf81: "lighthead_marauderrank6_soldier", // 1663553409
+    0x63293ad4: "artifact_set2_2hblunderbuss", // 1663646420
     0x633500b3: "influencerewardcontainerl45_loser", // 1664417971
     0x633573bf: "2hstafffirepvpreplicat3", // 1664447423
     0x633642ca: "1hgauntletvoid_violentmiseryt5", // 1664500426
@@ -16744,6 +17029,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x634fd522: "playtest_mediumhead_ranger_t3", // 1666176290
     0x63511f7d: "pvp_timberbundle_5", // 1666260861
     0x6353cf4c: "claimt1_20m_t5", // 1666436940
+    0x6358150e: "flxpac_ringt5_ef_mut_owb", // 1666716942
     0x635b1e04: "09a_m10_shieldbox", // 1666915844
     0x635bf817: "ringemeraldt4", // 1666971671
     0x635c0d94: "fm_loot_item_1_07", // 1666977172
@@ -16768,6 +17054,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x637c38cf: "1hthrowingaxe_spriggansclawt5_v2", // 1669085391
     0x637ca0d5: "omega_lightfeet_sentry_622", // 1669112021
     0x6382d5dc: "flxpac_earringt5_ds_mut", // 1669518812
+    0x6382e18a: "flxpac_mediumhead_dynastyshipyard_mutt5_owb", // 1669521802
     0x63836c11: "mediumhead_dungeon8t5", // 1669557265
     0x63842677: "lightlegs_fishermanvengefult5", // 1669604983
     0x638451c8: "compasst2", // 1669616072
@@ -16808,6 +17095,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x63b091f7: "invasionrewardcontainerrarity1highl14", // 1672516087
     0x63b1b0a9: "schematic_hiddentruths", // 1672589481
     0x63b1c018: "0721_0101_lost_aura", // 1672593432
+    0x63b568db: "skin_mtx_greek_gods_2hspear", // 1672833243
     0x63b77354: "04aside05_01_guitar", // 1672966996
     0x63b77784: "lightchest_lost1t5", // 1672968068
     0x63b7860e: "fm_loot_item_c_16_14", // 1672971790
@@ -16868,6 +17156,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x640e8a3f: "2hbow_trial_s2_t5_v2", // 1678674495
     0x640e8ff9: "warrewardcontainerl52", // 1678675961
     0x641271c5: "skin_metal_azothscepter", // 1678930373
+    0x6413ca43: "ai_swamp_beast_throwable_boss_avarice", // 1679018563
     0x641470b9: "1hflaillostt4", // 1679061177
     0x6414d927: "2hspear_shizarussorrowt3_v2", // 1679087911
     0x641b042d: "2hblunderbuss_powderkegt4", // 1679492141
@@ -16900,6 +17189,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x643c9d75: "2hgreataxe_scarredgreataxeofthe4thlegiont5_v2", // 1681694069
     0x643cdb64: "pvp_timberbundle_1", // 1681709924
     0x64481028: "faction_armaments02_t4", // 1682444328
+    0x644d55e9: "ring_etherealt3_s1e", // 1682789865
     0x644e4159: "scarab_int_heavy_bal_chestt5", // 1682850137
     0x64504a2a: "omega_heavychest_sentry_605", // 1682983466
     0x645261f0: "heavyfeet_hellfire_mutt5", // 1683120624
@@ -17024,6 +17314,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x64fba0fd: "playtest_lightchest_sage_t5", // 1694212349
     0x64ff1664: "pvp_potions_small_beastt2_b", // 1694439012
     0x6500018e: "playtest_flail_tnk_t5_650", // 1694499214
+    0x65000eb8: "skin_chest_s8_rank2_lbclear_brimstone", // 1694502584
     0x65002294: "lighthead_dungeon13t5", // 1694507668
     0x65006e37: "heavyhead_hellfire_mutt5", // 1694527031
     0x65013691: "1hthrowingaxe_toothedbitet4", // 1694578321
@@ -17079,6 +17370,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x654ad892: "itempattern_graverobbers_roundshield", // 1699403922
     0x654cfdf5: "mediumlegs_syndicaterank3", // 1699544565
     0x654d5a19: "weapon_box_s1_inferno", // 1699568153
+    0x654e8dd1: "skin_gloves_owb_box", // 1699646929
     0x65526a8f: "omega_box_armor_sage_light", // 1699900047
     0x6555d7b9: "crx_reward_heavytemplet5_legs", // 1700124601
     0x6555e774: "chest_avengingblacksmitht5", // 1700128628
@@ -17198,6 +17490,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x66193852: "playtest_heavyhands_scholar_t5_600", // 1712928850
     0x66197cc0: "mediumhead_leatherdropt3", // 1712946368
     0x6619e355: "lightchest_pvpt2", // 1712972629
+    0x661acf94: "gauntletice_etherealt3_s1e", // 1713033108
     0x661e49f3: "heavyhands_syndicaterank3_brigand", // 1713261043
     0x66237526: "mediumfeet_syndicaterank3_scholar_v2", // 1713599782
     0x66237b04: "poundhammer_guitar_part2_page1", // 1713601284
@@ -17251,6 +17544,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x666f6d63: "2hfirestaff_hatcherywepmog", // 1718578531
     0x66719ceb: "myrkgardkey", // 1718721771
     0x667504f4: "2hgreatsworddynastyelitet5", // 1718945012
+    0x6676ba70: "flxpac_heavyfeet_empyrean_mutt5_owb", // 1719057008
     0x667a6073: "lightchest_syndicaterank1_barbarian", // 1719296115
     0x667c6192: "2hbow_longbowoftheeternaldreamt5_v2", // 1719427474
     0x667e2a12: "2hgreataxe_faemothersgreataxet5_v2", // 1719544338
@@ -17260,6 +17554,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x667fbcd5: "flxpac_2hmusket_ae_mutextra_t5", // 1719647445
     0x668007ca: "arrival_guitar_part1_page1", // 1719666634
     0x668053f0: "2hspear_covenantrank3", // 1719686128
+    0x66822c17: "sickle_etherealt5_s1e", // 1719806999
     0x6683cded: "playtest_heavyhands_soldier_t5_700", // 1719913965
     0x6684f6fa: "lighthead_dungeon11t5", // 1719990010
     0x6686103d: "invasion_firecannon_projectile", // 1720062013
@@ -17285,6 +17580,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x66a92bc3: "playtest_dexdps_lightfeet_t5_725", // 1722362819
     0x66ace63f: "arcanistcharmt3", // 1722607167
     0x66af1e33: "2hstafflife_chaineddarknesst3", // 1722752563
+    0x66b5597c: "rw_pveresource_token", // 1723160956
     0x66b641a1: "fm_loot_item_s_15_11", // 1723220385
     0x66b7d701: "2hgreatsword_flameofprogresst5_v2", // 1723324161
     0x66b7dc2f: "mediumhands_marauderrank3_ranger_v2", // 1723325487
@@ -17301,6 +17597,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x66c01484: "2hspear_firepoker", // 1723864196
     0x66c3d94f: "itempattern_2hfirestaffoutpostrusht5", // 1724111183
     0x66c66d3e: "playtest_rapier_dmg_t5_600", // 1724280126
+    0x66ce8a36: "mediumchest_etherealt5_s1e", // 1724811830
     0x66d13328: "foodharvestert4", // 1724986152
     0x66d6eefe: "fm_loot_item_c_20_09", // 1725361918
     0x66d72751: "1hlongsword_greyjacksguidet5", // 1725376337
@@ -17342,6 +17639,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x67040709: "playtest_rapier_dmg_t5_700", // 1728317193
     0x67064b23: "mediumchest_marauderrank5_sage_v2", // 1728465699
     0x6707f39c: "siege_warcamp_gate_t1", // 1728574364
+    0x67089283: "skin_chest_s8_rank2_lbscore_shipyard", // 1728615043
     0x670de443: "2hgreataxe_ancientpurifiert4", // 1728963651
     0x67103da9: "fm_hunt_item_5_10", // 1729117609
     0x671072b0: "mediumhead_syndicateplaguedoctort5_v2", // 1729131184
@@ -17425,6 +17723,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6774efd5: "omega_box_armor_ranger_pvp", // 1735716821
     0x677987b3: "heavyfeet_summert5_str", // 1736017843
     0x6779f6f6: "heavylegs_corrupted2t4", // 1736046326
+    0x677a882a: "campskin_firstlightelven_a_pvp", // 1736083498
     0x677bdc01: "1hrapier_syndicaterank2", // 1736170497
     0x677c39cb: "mediumchest_worldeventpve_s7", // 1736194507
     0x677d2282: "2hstafffire_sqrewardbrimstonet5", // 1736254082
@@ -17469,6 +17768,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x67b9063d: "flxpac_lighthands_shatteredobelisk_mutt5", // 1740179005
     0x67ba86c1: "skin_hands_twitchfisherman", // 1740277441
     0x67bb7635: "mediumchest_drowned1t2", // 1740338741
+    0x67be67e7: "flxpac_lighthands_empyrean_mutt5_owb", // 1740531687
     0x67bfd8fc: "mediumfeet_angryearth1t3", // 1740626172
     0x67c01ccd: "crx_rewardcontainert4_weapons_40", // 1740643533
     0x67c157c8: "lightlegs_drowneddrunkt3", // 1740724168
@@ -17479,9 +17779,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x67c7e536: "1hrshield_covenantrank2", // 1741153590
     0x67c940d5: "1hthrowingaxe_smolderingembert4_v2", // 1741242581
     0x67ca3a3a: "2hbow_syndicaterank6", // 1741306426
+    0x67cc2359: "flxpac_heavychest_empyrean_mutt5_owb", // 1741431641
     0x67cdb821: "shard_all_1helementalgauntlet_icet52", // 1741535265
     0x67d21c71: "heavyhead_arenaspriggan1t5", // 1741823089
     0x67d28b84: "sparklingdustt5", // 1741851524
+    0x67d30949: "flxpac_ringt5_bs_mut_owb", // 1741883721
     0x67d35003: "precisionengineeringtoolst1", // 1741901827
     0x67d780ad: "1hkiteshield_nature_mutt5", // 1742176429
     0x67d7b525: "1hhatchet_winter_700", // 1742189861
@@ -17501,6 +17803,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x67ee100b: "omega_lighthands_ranger_500_2", // 1743654923
     0x67efc93c: "fm_loot_item_26_15", // 1743767868
     0x67f022a2: "04aside07_03_port", // 1743790754
+    0x67f07c9c: "blunderbuss_etherealt4_s1e", // 1743813788
     0x67f09901: "heavyhead_syndicatet2", // 1743821057
     0x67f18fa9: "1432_0104_scoutcharm", // 1743884201
     0x67f1f088: "earringstrt5", // 1743909000
@@ -17514,6 +17817,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x68013a4f: "1hgauntletvoid_ragingspiritt4_v2", // 1744910927
     0x6801601e: "lighthands_covenantrank2", // 1744920606
     0x680267fc: "playtest_warhammer_dmg_t5_585", // 1744988156
+    0x68052437: "skin_gloves_coveff2025", // 1745167415
     0x68069df5: "syndicate_1hskinningknifet3", // 1745264117
     0x6806f0ab: "2hspearoutpostrusht5", // 1745285291
     0x680acd9e: "2hmusket_malefactiont4_v2", // 1745538462
@@ -17554,6 +17858,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x683826bd: "condexbonust3", // 1748510397
     0x68389b54: "earringt4_charmoftheconchsong _v2", // 1748540244
     0x68392b80: "playtest_lightlegs_scholar_t3", // 1748577152
+    0x68394552: "mediumfeet_etherealt2_s1e", // 1748583762
     0x683a795d: "fm_loot_item_c_6_03", // 1748662621
     0x683c128f: "playtest_box_armor_sage_t3_light", // 1748767375
     0x683c8824: "factionpotionhealtht4", // 1748797476
@@ -17705,6 +18010,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x691381d9: "mountattachmentitem_skin_rewards_astrolabe", // 1762886105
     0x6915b99c: "shard_int_medium_bal_chestt5", // 1763031452
     0x6919886e: "2hmusket_apleasantremindert5_v2", // 1763281006
+    0x691b54b9: "conquerorsitem_heavychest_swarmarmor_s1e", // 1763398841
     0x691d411b: "mediumhead_dungeon6t5", // 1763524891
     0x691e3002: "chefssecretcookbookt1", // 1763586050
     0x691edd60: "crestoftheallsight", // 1763630432
@@ -17766,6 +18072,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x69684116: "2hgreataxe_visionofviciousnesst5", // 1768440086
     0x6968e209: "opalt1", // 1768481289
     0x69692975: "lightchest_wedding_str_600", // 1768499573
+    0x696b4a95: "mediumhead_etherealt2_s1e", // 1768639125
     0x696e92c7: "lightlegs_dresst2", // 1768854215
     0x696f81ae: "flamec_mediumheadt5", // 1768915374
     0x697252e6: "mediumchest_leatherdropt5_foc_inferno", // 1769100006
@@ -17789,6 +18096,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6988a116: "mediumchest_crafteddungeon9t5", // 1770561814
     0x698a2e60: "darknessrewardcontainerminor2l4", // 1770663520
     0x698afd4b: "1hrapier_hatcherywepmog", // 1770716491
+    0x698b5801: "earring_etherealt5_s1e", // 1770739713
     0x698e48e8: "skin_warhammer_vinespun", // 1770932456
     0x698f17c6: "2hbow_woodgrain", // 1770985414
     0x699006be: "2hspear_syndicaterank3", // 1771046590
@@ -17824,6 +18132,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x69b6c2c3: "invasionrewardcontainerrarity3l28", // 1773585091
     0x69b8ef8e: "lightfeet_lostelite1t4", // 1773727630
     0x69b9bad2: "recipe_foodintstrt3", // 1773779666
+    0x69bf2489: "stafflife_etherealt3_s1e", // 1774134409
     0x69bf5b9c: "darknessrewardcontainermajor2l52", // 1774148508
     0x69c05524: "invasionrewardcontainerrarity1highl45", // 1774212388
     0x69c0933d: "flxpac_mediumfeet_shatteredobelisk_mutt5", // 1774228285
@@ -17899,6 +18208,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6a2a37d4: "1hlongsword_saplingbrandt2_v2", // 1781151700
     0x6a2ba878: "mi_hagstones", // 1781246072
     0x6a2c79f6: "s02_quest_1hsword", // 1781299702
+    0x6a2de4ed: "skin_head_season8pass", // 1781392621
     0x6a2f72f8: "perkitem_shield_kite_onblockdmg", // 1781494520
     0x6a2fd97b: "omega_musket_617", // 1781520763
     0x6a30016b: "scarab_con_light_ele_chest_clotht5", // 1781530987
@@ -18007,6 +18317,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6acbef69: "lightchest_fisherman_dropt2", // 1791749993
     0x6acc2935: "crx_reward_mediumancientt2_feet", // 1791764789
     0x6acd6b98: "53_box_s5_premium", // 1791847320
+    0x6acd790e: "flxpac_ringt5_ds_mut_owb", // 1791850766
     0x6acdc6cb: "artifact_wcarmorheavychest", // 1791870667
     0x6ad0ac40: "expedition_box_ex1_forge", // 1792060480
     0x6ad0d96f: "mediumchest_dungeon13_articvalkyrian", // 1792072047
@@ -18027,6 +18338,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6ae49acd: "skin_musket_season7pass", // 1793366733
     0x6ae8d4e1: "1hgauntletvoid_glacial_mutt5", // 1793643745
     0x6ae9ba31: "heavyfeet_spring_600_dex", // 1793702449
+    0x6aea9653: "skin_chest_season8seasonalserver", // 1793758803
     0x6aeb8303: "omega_heavyfeet_scholar_622", // 1793819395
     0x6aec665d: "schematic_house_housingitem_legion_bookcase01_c", // 1793877597
     0x6aed0974: "2hspear_foresterspiket4", // 1793919348
@@ -18036,6 +18348,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6af1ee87: "playtest_amulet_sentry_t5_585", // 1794240135
     0x6af23c35: "2hspear_barnacles_mutt5", // 1794260021
     0x6af46505: "mediumhead_so_boss_mutt5", // 1794401541
+    0x6af60b6e: "2hwarhammer_mountainshakert5_v3", // 1794509678
     0x6af73e31: "entdisplay_skin_silvercrowsfire_azothscepter", // 1794588209
     0x6af74984: "omega_warhammer_blank_675", // 1794591108
     0x6af80a14: "playtest_heavyhands_sage_t5_625", // 1794640404
@@ -18046,6 +18359,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6b043808: "2hblunderbuss_pvpt5", // 1795438600
     0x6b060048: "2hpickt2", // 1795555400
     0x6b0d7a68: "omega_lighthead_sage_615", // 1796045416
+    0x6b126e9f: "greatsword_etherealt5_s1e", // 1796370079
     0x6b1337ab: "earring_grensprizedthingt3_v2", // 1796421547
     0x6b149b87: "heavylegs_syndicatet4", // 1796512647
     0x6b15e304: "1hrapier_phisabellat5", // 1796596484
@@ -18057,6 +18371,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6b1e6f9b: "precisiontoolt1_5", // 1797156763
     0x6b27a040: "invasionrewardcontainerrarity1lowl16", // 1797759040
     0x6b283cfa: "1hgauntletvoid_ravenouscrueltyt4", // 1797799162
+    0x6b2877ba: "skin_gloves_season8seasonalserver", // 1797814202
     0x6b289b07: "1hgauntletvoid_pvp_prestige600t5_v2", // 1797823239
     0x6b28f48d: "1hflailt2", // 1797846157
     0x6b290f73: "fm_loot_item_c_12", // 1797853043
@@ -18074,6 +18389,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6b38ede7: "fm_loot_item_10_04", // 1798893031
     0x6b3a5240: "2hmusket_madmansheadhuntert4_v2", // 1798984256
     0x6b3bbc30: "1hlongsword_questl23", // 1799076912
+    0x6b3cc85e: "skin_chest_s8_rank1_lbclear_crystalclaw", // 1799145566
     0x6b3f2da1: "armamentst3", // 1799302561
     0x6b401d69: "1hgauntletvoiddungeon11t5", // 1799363945
     0x6b401df4: "flamec_1hthrowingaxet5", // 1799364084
@@ -18210,10 +18526,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6c062eae: "2hbow_secretatrocityt4_v2", // 1812344494
     0x6c06eee9: "1hlongsword_covenantrank2_v2", // 1812393705
     0x6c0a07e1: "warblingconcht1", // 1812596705
+    0x6c0a4bff: "spear_etherealt5_s1e", // 1812614143
     0x6c0bdf7b: "ringt5_hoopofthecursedson", // 1812717435
+    0x6c0be77c: "2hblunderbuss_worldevent_s1_t5_v3", // 1812719484
     0x6c0f83fa: "heavyhead_furplatedropt3", // 1812956154
     0x6c100b1a: "amuletfoccont2", // 1812990746
     0x6c11232a: "flxpac_2hgreatsword_lazarus_mutt5", // 1813062442
+    0x6c12a6ee: "skin_chest_season8seasonalserver_box", // 1813161710
     0x6c141242: "2hfirestaff_worldeventpve_s7", // 1813254722
     0x6c14873e: "1hkiteshielddropt5_guaranteeepic", // 1813284670
     0x6c154b13: "1hgauntleticelegacycrassust5", // 1813334803
@@ -18239,6 +18558,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6c2ed4ae: "1hkshield_doorofnightt5_v2", // 1815008430
     0x6c300007: "clothinglegs_horticulturistt3_makegood", // 1815085063
     0x6c32489b: "saltybarnicle_guitar_part1_page2", // 1815234715
+    0x6c34949c: "flxpac_lighthands_brimstonesands_mutt5_owb", // 1815385244
     0x6c34deb9: "2hwarhammer_hammerofthecorruptedchampiont4", // 1815404217
     0x6c373835: "2hfirestaff_trial_s2_t5_v2", // 1815558197
     0x6c3ac61b: "crx_questreward_bw_side_greataxe", // 1815791131
@@ -18261,6 +18581,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6c51c5e3: "heavylegs_platedropt5_int_sandstorm_leg", // 1817298403
     0x6c5485b9: "2hlifestaff_winter_str_600", // 1817478585
     0x6c55724c: "1hgauntletice_whisperfromthefrozenvalet3_v2", // 1817539148
+    0x6c582afe: "perkitem_amulet_dodgeburn_durred", // 1817717502
     0x6c5941d8: "2hfirestaff_covenantrank5_v2", // 1817788888
     0x6c5a3b98: "lightfeet_marauderrank6_2", // 1817852824
     0x6c5a7ac9: "crx_questreward_ef_side_greataxe", // 1817869001
@@ -18270,6 +18591,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6c5fefe1: "1hthrowingaxe_humminghatchett4_v2", // 1818226657
     0x6c60970f: "0205_0102_baneseedoil", // 1818269455
     0x6c615da9: "heavyhands_furplatedropt4", // 1818320297
+    0x6c6262bd: "entdisplay_skin_gloves_season8pass", // 1818387133
     0x6c63e1f9: "2hwarhammer_hammerofthehauntedhillt4", // 1818485241
     0x6c67eb2b: "furniture4_box_s3", // 1818749739
     0x6c6b456a: "omega_lighthands_soldier_625", // 1818969450
@@ -18320,6 +18642,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6cb26406: "mountattachmentitem_shield38", // 1823630342
     0x6cb2b6a5: "scarab_dex_light_bal_hands_clotht5", // 1823651493
     0x6cb4f39b: "1hsword_winter_700", // 1823798171
+    0x6cba5994: "perkitemst5_s8", // 1824151956
     0x6cbadb17: "mediumheadbt5", // 1824185111
     0x6cbaea14: "2hstafflife_covenanttemplarslifestafft4", // 1824188948
     0x6cc114b1: "ringfoct4", // 1824593073
@@ -18385,6 +18708,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6d1bc49d: "heavyhands_platepvpreplicat3", // 1830536349
     0x6d208d14: "warrewardcontainerl1", // 1830849812
     0x6d209f6b: "mediumchest_marauderrank2_ranger_v2", // 1830854507
+    0x6d20f26a: "skin_mtx_greek_gods_legs", // 1830875754
     0x6d21b0af: "heavylegs_etherealt5", // 1830924463
     0x6d2246da: "playtest_bag_t5", // 1830962906
     0x6d226700: "playtest_heavyhead_scholar_t5_650", // 1830971136
@@ -18480,6 +18804,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6dabf1a1: "1010_0101_swampys_stockpot", // 1839985057
     0x6dabff25: "omega_lightfeet_sage_500", // 1839988517
     0x6dad1f52: "dyeb181", // 1840062290
+    0x6daeb3dc: "potionshieldt5", // 1840165852
     0x6daf8b79: "1hflail_whiplasht5_v2", // 1840221049
     0x6db04e4f: "2hwarhammer_adianasadjudicatort5_v2", // 1840270927
     0x6db0e022: "crx_reward_lightetherealt5_legs", // 1840308258
@@ -18578,6 +18903,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6e3a93e9: "heavyhands_covenantrank1_cleric", // 1849332713
     0x6e3a9dc7: "mediumhandsat4", // 1849335239
     0x6e3cb708: "flxpac_heavyfeet_eternal_mutt5", // 1849472776
+    0x6e3dda42: "flxpac_heavyhands_dynastyshipyard_mutt5_owb", // 1849547330
     0x6e3eb691: "fm_loot_item_8_02", // 1849603729
     0x6e426c7d: "scarab_dex_heavy_ele_chestt5", // 1849846909
     0x6e430836: "2hwarhammerdrop_siege2024", // 1849886774
@@ -18616,6 +18942,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6e76b2f8: "0699_0101_succulentbone_v2", // 1853272824
     0x6e7a52db: "2hbow_crystallinecompoundbowt2_v2", // 1853510363
     0x6e7f4e40: "2hblunderbussdynastyt4", // 1853836864
+    0x6e8044c4: "armort2_s8", // 1853899972
     0x6e80bed4: "2hmusket_d_mutextra_t5", // 1853931220
     0x6e879a3c: "kt_ancient_bridge_40121_mi_sundial", // 1854380604
     0x6e886f8a: "heavychest_covenantrank2_v2", // 1854435210
@@ -18628,7 +18955,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6e902e58: "mediumhands_nightveil2024_gs700", // 1854942808
     0x6e909514: "heavychest_trial_s2_namedt5_conint", // 1854969108
     0x6e912cd5: "1hflail_named109_t5", // 1855007957
+    0x6e92b2d2: "lighthands_etherealt2_s1e", // 1855107794
     0x6e936258: "pvp_potions_medium_ancientt3_a", // 1855152728
+    0x6e937fe6: "gauntletvoid_etherealt2_s1e", // 1855160294
     0x6e945d3b: "scarab_dex_ring_mythril_t52", // 1855216955
     0x6e95339a: "lightchest_spring_str", // 1855271834
     0x6e9811e8: "lightchest_maraudert3", // 1855459816
@@ -18637,6 +18966,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6e9c41d9: "strbonust1", // 1855734233
     0x6e9c6356: "questreward_msq2gc_soulward", // 1855742806
     0x6e9ced14: "itemdisplay_1hsword_trial_s2_t5", // 1855778068
+    0x6e9f7ca5: "skin_chest_syndff2025_box", // 1855945893
     0x6ea2de01: "omega_earring_sentry_605", // 1856167425
     0x6ea3ff75: "shuttlet1_12", // 1856241525
     0x6ea4979a: "0910_0201_cannonparts", // 1856280474
@@ -18716,6 +19046,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6f20971f: "shard_dex_medium_ele_headt5", // 1864406815
     0x6f231992: "dyes5_box_s6", // 1864571282
     0x6f23cd01: "omega_lightchest_sage_625", // 1864617217
+    0x6f242ab9: "anytrophycraftingmat", // 1864641209
     0x6f250797: "heavyfeet_campfireextinguishingbootst5", // 1864697751
     0x6f2661da: "pattern_femvictorianl_legs_t3", // 1864786394
     0x6f2d0162: "fishingpearloystersmallt3", // 1865220450
@@ -18771,6 +19102,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x6f6d41fc: "ancientskullt1", // 1869431292
     0x6f6f1c3d: "2hgreataxe_marauderrank5_v2", // 1869552701
     0x6f719370: "0611_0102_antiquarians", // 1869714288
+    0x6f723ad7: "toolst4_s8", // 1869757143
     0x6f7331ae: "flxpac_lightchest_ds_mutextra_t5", // 1869820334
     0x6f74a332: "pattern_opr_heavyhead", // 1869914930
     0x6f78d245: "2hstafflife_harbingerofduskt3_v2", // 1870189125
@@ -18864,6 +19196,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x700989b7: "bellowst3", // 1879673271
     0x700b5a4f: "halloweenplaguer_armaxe", // 1879792207
     0x700c8bfc: "omega_ring_soldier_605_3", // 1879870460
+    0x70123df4: "entdisplay_housingitem_buff_special_season8_t1", // 1880243700
     0x70131c9e: "mediumhead_corrupted1t5", // 1880300702
     0x701791ab: "1hshieldat5", // 1880592811
     0x7018bac8: "ck_d5_speart5", // 1880668872
@@ -18889,6 +19222,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x703243a1: "2hgreataxe_grovetendersspadet5", // 1882342305
     0x70324669: "2hgreatsword_bloodbladet5_v2", // 1882343017
     0x7033c616: "skin_valentines_skinningknife", // 1882441238
+    0x7034ea34: "rerollingmatst5_s8", // 1882516020
     0x7035a727: "1hthrowingaxe_marauderrank6", // 1882564391
     0x70371847: "mountbuff_customa_t1", // 1882658887
     0x703b0e22: "fm_loot_item_13_08", // 1882918434
@@ -18956,6 +19290,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x70985d48: "omega_lighthead_sentry_602", // 1889033544
     0x7099153a: "1hrshield_deadsilencet3_v2", // 1889080634
     0x709a1b3a: "2hfirestaff_shatteredobelisk_mutt5", // 1889147706
+    0x709c73cd: "blueguffint5_s8", // 1889301453
     0x709fa3fe: "2hfirestaff_syndicaterank4_v2", // 1889510398
     0x70a2b024: "heavylegs_covenantrank3_soldier_v2", // 1889710116
     0x70a2fd0d: "2hbow_lonetrackersbowt5", // 1889729805
@@ -18995,6 +19330,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x70cd8e0f: "flxpac_lighthands_dynastyshipyard_mutt5", // 1892519439
     0x70cf0967: "lighthands_marauderrank2", // 1892616551
     0x70d084da: "fm_hunt_item_5_08", // 1892713690
+    0x70d27bc1: "heavylegs_etherealt5_s1e", // 1892842433
     0x70d37eb6: "hands_courtier3t3", // 1892908726
     0x70d4901b: "playtest_heavylegs_ranger_t5_600", // 1892978715
     0x70d536a7: "mutatorrewardcontainerdiff2t3_flxpac", // 1893021351
@@ -19015,6 +19351,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x70ed9fb7: "lighthands_marauderrank5_scholar_v2", // 1894621111
     0x70efe285: "omega_lighthead_scholar_620", // 1894769285
     0x70f045f0: "questreward_wf_side_lightlegs", // 1894794736
+    0x70f15f70: "lightchest_worldevent_s1_t5_v3", // 1894866800
+    0x70f3814f: "stafffire_etherealt3_s1e", // 1895006543
     0x70f7dd1c: "1hthrowingaxe_pridefulmisstept4", // 1895292188
     0x70f822e2: "omega_gauntletvoid_605", // 1895310050
     0x70f8ba11: "2hfirestaff_marauderrank1_v2", // 1895348753
@@ -19199,6 +19537,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x72163999: "1hflail_pvp_prestiget4", // 1914059161
     0x72164b29: "omega_lighthead_sage_605", // 1914063657
     0x7216b64f: "heavychest_heavylegacycrassust5", // 1914091087
+    0x721a1132: "conquerorsitem_shieldtower_tankaura_s1e", // 1914310962
     0x721a68fe: "fm_pvp_covenant_item_12", // 1914333438
     0x721b702b: "lightchest_emperorsnewshirtt5_v2", // 1914400811
     0x721cc1eb: "playtest_box_armor_scholar_t5_700_medium", // 1914487275
@@ -19211,8 +19550,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x72205fb7: "mediumhead_pvp_namedt5_v2", // 1914724279
     0x72234f80: "playtest_mediumfeet_ranger_t2", // 1914916736
     0x7223dca6: "fm_loot_item_10_14", // 1914952870
+    0x7223e3eb: "flxpac_mediumhands_empyrean_mutt5_owb", // 1914954731
     0x7224ae7c: "lighthead_clothdropt5_foc_sandstorm", // 1915006588
+    0x722657a5: "skin_chest_s8_rank2_lbclear_hercyne", // 1915115429
     0x72268b96: "2hbow_venerablerecurvet2", // 1915128726
+    0x7227d856: "jewelryt4_s8", // 1915213910
     0x72297736: "shard_str_amuletjaspert5", // 1915320118
     0x722b118b: "2hmusket_zeusslightningshott5", // 1915425163
     0x722e3b42: "mediumfeet_covenantrank6", // 1915632450
@@ -19260,6 +19602,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x726c28c3: "1hgauntletvoid_graspt5_v2", // 1919690947
     0x726c83ea: "influencerewardcontainerl62", // 1919714282
     0x726cccfd: "mediumchest_marauderrank1_scholar_v2", // 1919732989
+    0x726cdc5a: "entdisplay_dye_bluedsteel", // 1919736922
     0x726d5b2f: "omega_box_armor_ranger_607_heavy", // 1919769391
     0x7274e749: "0807_0102_turkeysamples", // 1920264009
     0x72761163: "1hrshield_dominantdiscourset3_v2", // 1920340323
@@ -19385,7 +19728,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7320626c: "dyea033", // 1931502188
     0x7323d570: "ritualpouchlvl30", // 1931728240
     0x73243c2a: "omega_stafflife_625", // 1931754538
+    0x73261960: "amulet_etherealt2_s1e", // 1931876704
     0x73282869: "influencerewardcontainerl60_loser", // 1932011625
+    0x7328866b: "skin_2hblunderbuss_season8pass", // 1932035691
     0x732b6fbd: "2hbow_enchantedlongbowt2_v2", // 1932226493
     0x7333172d: "mushroomflaskt5", // 1932728109
     0x73343e2b: "amulet_invasiont3", // 1932803627
@@ -19444,6 +19789,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x738c9f03: "mediumhead_shroudedintenthatt5", // 1938595587
     0x738f82a7: "mi_aeternumspice", // 1938784935
     0x739342d8: "2hwarhammer_glacialmovementt5", // 1939030744
+    0x7395ae61: "hatchet_etherealt4_s1e", // 1939189345
     0x73964e95: "2hbow_nameddryadsbowofthedryadanddryadt4", // 1939230357
     0x7396ee3d: "baetylust3", // 1939271229
     0x7398a7cb: "pattern_mossborne_medium_chest", // 1939384267
@@ -19483,6 +19829,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x73dc4c34: "1hroundshield_glacial_mutt5", // 1943817268
     0x73df2d77: "1hflail_covenantrank5_v2", // 1944006007
     0x73df8c18: "heavyhead_breach1t3", // 1944030232
+    0x73dfd2fe: "skin_chest_s8_rank1_lbscore_tempestheart", // 1944048382
     0x73e0628b: "mediumhead_covenantrank5_scholar_v2", // 1944085131
     0x73e2b431: "1hlongsword_briarmawt2_v2", // 1944237105
     0x73e5ddaf: "firstaidsuppliest2", // 1944444335
@@ -19517,6 +19864,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x740c4d77: "emptyheartt1", // 1946963319
     0x740c5de1: "lightlegs_marauderrank1_ranger_v2", // 1946967521
     0x740e46ee: "mediumhead_syndicatet2", // 1947092718
+    0x74125b0f: "bow_etherealt2_s1e", // 1947360015
     0x7412750a: "mediumfeet_marauderrank4_cleric", // 1947366666
     0x74134906: "2hlifestaff_syndicaterank5_v2", // 1947420934
     0x741549db: "lightfeet_bb_boss_mutt5_v2", // 1947552219
@@ -19554,6 +19902,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x744749a2: "heavyfeet_d_boss_mutt5_600", // 1950828962
     0x744768a4: "2hblunderbuss_troublemakert4", // 1950836900
     0x74480cc7: "mediumhands_marauderrank3_scholar_v2", // 1950878919
+    0x7449862d: "runespinningswordst4b", // 1950975533
     0x744b7b72: "lightfeet_syndicaterank1_ranger_v2", // 1951103858
     0x744c72c1: "lightlegs_fishermanvengeful_dropt4", // 1951167169
     0x744d007c: "embark_guitar_part1_page2", // 1951203452
@@ -19568,6 +19917,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x74597a01: "stafffire_etherealt4", // 1952020993
     0x745b947f: "2hstafffiredungeon6t5", // 1952158847
     0x745bac23: "blacksmitharm_urbass_part1_page1", // 1952164899
+    0x745d9926: "trophiest5_s8", // 1952291110
     0x745de7c4: "lightlegs_summer600t5_int", // 1952311236
     0x745ed334: "mushroomflaskt1", // 1952371508
     0x745f4561: "2hwarhammer_natureswratht4_v2", // 1952400737
@@ -19687,6 +20037,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7526edab: "artifact_nhnewweaponspeart5_gs675", // 1965485483
     0x75283be4: "2hspear_acidictipt2", // 1965571044
     0x752919ab: "2hbow_corruptioninfusedlongbowt5", // 1965627819
+    0x752b6e66: "springtidearmorpattern_gs715", // 1965780582
     0x752e1b36: "skin_1helementalgauntlet_aeternumtrials_g", // 1965955894
     0x752e3226: "1hthrowingaxedropt5", // 1965961766
     0x752f6a6a: "1hlongsword_deepriver", // 1966041706
@@ -19818,6 +20169,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x75f45f4c: "1hsword_winter_foc_600", // 1978949452
     0x75f47dcb: "practicedummyt4", // 1978957259
     0x75f4b046: "2hspear_dryadwalkingstickt2_v2", // 1978970182
+    0x75fdf774: "skin_feet_coveff2025", // 1979578228
     0x75fe8a50: "rewardcontainercorruptedl30", // 1979615824
     0x75ff211f: "fm_loot_item_c_1_10", // 1979654431
     0x76014dc3: "2hspear_olcottcuttert2_v2", // 1979796931
@@ -19860,6 +20212,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x76327814: "skin_chest_lb_openworld", // 1983019028
     0x76327ddf: "crx_1hthrowingaxe_avaricet5_v3", // 1983020511
     0x7634958d: "rewardcontainersprigganarena62", // 1983157645
+    0x763567cc: "conquerorsitem_flail_disease_s1e", // 1983211468
     0x7638fa58: "artifact_wcweaponwarhammer600", // 1983445592
     0x763a13c2: "wallgatet1", // 1983517634
     0x763c18ff: "mediumhead_covenantrank6_ranger", // 1983650047
@@ -19882,6 +20235,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x76501508: "mediumchest_navigatorstunict5", // 1984959752
     0x7651198b: "potionboostnatureabst4", // 1985026443
     0x7651e582: "heavylegs_trial_s2_namedt5_int", // 1985078658
+    0x765343bf: "flxpac_mediumlegs_empyrean_mutt5_owb", // 1985168319
     0x7653c26b: "darknessrewardcontainerminor2l23", // 1985200747
     0x76562b97: "perfectsalvageengineert3", // 1985358743
     0x76580d33: "playtest_mage_ring_t5_700", // 1985482035
@@ -20009,6 +20363,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x771654c0: "mediumhands_covenantrank4_scholar_v2", // 1997952192
     0x77190384: "2hgreataxe_syndicatechroniclersgreataxet3", // 1998128004
     0x7719e9c8: "playtest_mediumchest_ranger_t4", // 1998186952
+    0x771b7f4e: "longsword_etherealt3_s1e", // 1998290766
     0x771c0bcd: "1hshieldat2_ftue", // 1998326733
     0x771d4266: "flxpac_heavyhands_dynastyshipyard_mutt5", // 1998406246
     0x7720b254: "2hmusket_blackguardsmuskett5_v2", // 1998631508
@@ -20143,6 +20498,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x77f513c8: "1hrapier_lastblowt5", // 2012550088
     0x77f5e0d7: "amulett2_kingsvelvettalisman", // 2012602583
     0x77f89448: "1hlongsword_covenantrank5", // 2012779592
+    0x77fc3d1c: "entdisplay_skin_2hwarhammer_season8pass", // 2013019420
     0x77ff1f39: "lightchest_crafteddungeon11t5", // 2013208377
     0x78003e94: "fm_loot_item_1623_02", // 2013281940
     0x78024129: "lightfeet_clothdropt5_int_inferno_leg", // 2013413673
@@ -20253,10 +20609,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x789d1efd: "flamec_1hgauntleticet5", // 2023563005
     0x789d9a1a: "fm_loot_item_c_8_15", // 2023594522
     0x789f1fac: "scarab_dex_mediumchest_leathert52", // 2023694252
+    0x78a068bd: "kiteshield_etherealt3_s1e", // 2023778493
+    0x78a241fd: "musket_etherealt3_s1e", // 2023899645
     0x78a256d2: "recipe_foodharvestert5", // 2023904978
     0x78a6f3eb: "heavychest_covenantrank5_brigand", // 2024207339
     0x78a70ea2: "lightchest_covenantrank3", // 2024214178
     0x78a7ce62: "skin_chest_s4_rank1_lbscore_tempestheart", // 2024263266
+    0x78a9ccbe: "entdisplay_skin_2hfirestaff_season8pass", // 2024393918
     0x78aa8dea: "2hspearinfluencet3", // 2024443370
     0x78b3d338: "2hmusket_secondsont5_v2", // 2025050936
     0x78b58e27: "heavylegs_furplateinfluencet3", // 2025164327
@@ -20284,6 +20643,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x78d4fb29: "shard_con_amuletemeraldt5", // 2027223849
     0x78d95116: "crx_questreward_bw_side_longsword", // 2027507990
     0x78d9cb53: "omega_lighthands_sage_pvp_a1", // 2027539283
+    0x78da6cea: "lightlegs_etherealt4_s1e", // 2027580650
     0x78dab728: "castgypsum_legs", // 2027599656
     0x78dbf51a: "yonas_1hhatchet", // 2027681050
     0x78ddd3c2: "lighthead_covenantrank2_v2", // 2027803586
@@ -20335,6 +20695,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x79249c8e: "mediumhead_marauderrank4_occultist", // 2032442510
     0x79262245: "1hroundshieldpvpreplicat5", // 2032542277
     0x7927c8e8: "mediumchest_syndicaterank3_v2", // 2032650472
+    0x7927ecc3: "entdisplay_skin_chest_season8pass", // 2032659651
     0x792907c4: "lighthead_revelert2", // 2032732100
     0x792b5d4f: "mediumhead_covenantrank5_occultist", // 2032885071
     0x792c0912: "lightchest_wedding_foc_t2_shop", // 2032929042
@@ -20346,6 +20707,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7938a1b8: "myrkgardkeyfragment5", // 2033754552
     0x7938c8cf: "heavyhands_elitepoi_corruptedbreachspecialt5", // 2033764559
     0x79398ec6: "lighthead_covenantrank1_cleric", // 2033815238
+    0x793a24b2: "flxpac_heavyhead_empyrean_mutt5_owb", // 2033853618
     0x793a7aa9: "mediumlegs_leathert3", // 2033875625
     0x793c7ba9: "fm_loot_item_c_2_04", // 2034006953
     0x793cd7e7: "springtidecoinbaglvl1", // 2034030567
@@ -20489,6 +20851,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7a07b2bb: "pvp_potions_small_corruptedt1_b", // 2047324859
     0x7a09122a: "shard_str_warhammert52", // 2047414826
     0x7a0c5975: "playtest_box_customizedmasterchest_t5_700", // 2047629685
+    0x7a0d2f67: "skin_mtx_ninja_kitsune_head", // 2047684455
     0x7a0d6b9e: "2hgreataxe_sporelight", // 2047699870
     0x7a0e301b: "lightchest_elitebreacht3", // 2047750171
     0x7a0fa058: "combatants_box_s1_inferno", // 2047844440
@@ -20630,6 +20993,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7ae91a1b: "1hthrowingaxe_calmingraget5", // 2062096923
     0x7aea7932: "fm_loot_item_s_2_04", // 2062186802
     0x7aeac8f9: "omega_heavyfeet_soldier_612_2", // 2062207225
+    0x7aed298d: "skin_chest_s8_rank1_lbclear_starstone", // 2062363021
     0x7aee0fca: "amulet_spriggannamedt5", // 2062421962
     0x7aeeabef: "heavyfeet_covenantinquisitort5_barbarian", // 2062461935
     0x7aef8836: "playtest_ranger_lightfeet_t5_675", // 2062518326
@@ -20711,6 +21075,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7b54ddee: "heavyhead_pvpt5", // 2069159406
     0x7b5547e2: "lighthands_spriggant5", // 2069186530
     0x7b555273: "1hlongsword_thefamiliart5", // 2069189235
+    0x7b5b0ccc: "lighthands_mushroomwanders", // 2069564620
     0x7b5bcb51: "omega_mediumhands_ranger_612", // 2069613393
     0x7b5e1c46: "lightlegs_trial_s2_sharift5_intcon", // 2069765190
     0x7b60653f: "omega_box_armor_ranger_610_heavy", // 2069914943
@@ -20751,6 +21116,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7b920852: "rewardcontainerswampbeastl37", // 2073167954
     0x7b9655ca: "rewardcontainercorruptedl9", // 2073449930
     0x7b983bb5: "omega_heavyhands_soldier_610_3", // 2073574325
+    0x7b98b3af: "entdisplay_skin_2hsickle_season8pass", // 2073605039
     0x7b9c0779: "flxpac_mediumchest_so_mutextra_t5", // 2073823097
     0x7b9d2a77: "1hgauntletice_snowdriftt5_v2", // 2073897591
     0x7b9d383d: "hands_demonhunter3t4", // 2073901117
@@ -20879,6 +21245,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7c5e0ed1: "or_armorsmith_t3", // 2086538961
     0x7c605510: "heavyhead_castrumcrownofthegoatkingt5_v2", // 2086688016
     0x7c642ef5: "1hgauntletice_sirensstaccatot5", // 2086940405
+    0x7c649c27: "skin_chest_owb", // 2086968359
     0x7c67306b: "darknessrewardcontainermajor1l56", // 2087137387
     0x7c680444: "playtest_shieldround_dmg_t5_700", // 2087191620
     0x7c6ab916: "oct2022prime_container", // 2087368982
@@ -20990,6 +21357,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7d0b4bf2: "2hblunderbuss_worldevent_s1_t5", // 2097892338
     0x7d0fd78b: "mediumhands_marauderrank2_occultist", // 2098190219
     0x7d101468: "crx_reward_mediumfemscoutt3_legs", // 2098205800
+    0x7d105bd5: "skin_2hspear_season8pass", // 2098224085
     0x7d14b928: "lighthead_spring_gs700", // 2098510120
     0x7d1584b5: "anubian_horus_staff", // 2098562229
     0x7d15beb8: "warrewardcontainerl42", // 2098577080
@@ -21021,6 +21389,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7d464969: "mediumchest_bb_bossxpac_mutt5", // 2101758313
     0x7d475567: "fm_loot_item_21_02", // 2101826919
     0x7d4a97c2: "isabellasbracelett1", // 2102040514
+    0x7d4ad9f2: "flxpac_lighthead_brimstonesands_mutt5_owb", // 2102057458
     0x7d4b119d: "heavyhands_syndicaterank4_sage_v2", // 2102071709
     0x7d4b1b70: "lighthands_protectivewyrdglovest5a", // 2102074224
     0x7d4b7b6b: "omega_heavychest_sentry_615", // 2102098795
@@ -21054,12 +21423,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7d6dabbd: "workorder_faction_armaments03_t4", // 2104339389
     0x7d720a4f: "mediumfeet_furdropt5", // 2104625743
     0x7d724faa: "1hroundshield_pvpt4", // 2104643498
+    0x7d736b72: "skin_legs_syndff2025_box", // 2104716146
     0x7d765953: "heavyfeet_crafteddungeon12t5", // 2104908115
     0x7d76cb74: "2hstafffire_spellstaffoftheblueflamet5", // 2104937332
     0x7d792892: "1hgauntletvoid_ultimatewratht3", // 2105092242
     0x7d792b26: "2hgreatswordinfluencet3", // 2105092902
     0x7d7ec595: "mediumchest_so_boss600_mutt5", // 2105460117
     0x7d7ec888: "shard_int_2hcelestialstaff_lifet52", // 2105460872
+    0x7d7f00fc: "flxpac_lightlegs_dynastyshipyard_mutt5_owb", // 2105475324
     0x7d80146c: "omega_box_armor_soldier_500_light", // 2105545836
     0x7d86c26a: "1hlongsword_morningdewt3_v2", // 2105983594
     0x7d889fa5: "skin_1hkiteshield_aeternumtrials_b", // 2106105765
@@ -21173,11 +21544,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7e341031: "fm_loot_item_s_5_07", // 2117341233
     0x7e342db5: "crx_reward_mediumtemplet5_hands", // 2117348789
     0x7e365ca0: "mediumhands_marauderrank6_soldier", // 2117491872
+    0x7e3888b8: "lost_mutatednurse_bonesaw", // 2117634232
     0x7e3a4848: "1hlongswordangryeartht2", // 2117748808
     0x7e3deabc: "playtest_heavylegs_scholar_t5", // 2117987004
     0x7e3ed1f8: "skin_monster_vampirefeet", // 2118046200
     0x7e3ee736: "feet_duelistt2", // 2118051638
     0x7e3fb7e1: "flamec_lightchestt5", // 2118105057
+    0x7e3fc1af: "weaponst51_s8", // 2118107567
     0x7e3fc6b9: "lightchest_syndicaterank2_scholar_v2", // 2118108857
     0x7e41158c: "playtest_mediumlegs_ranger_t5_675", // 2118194572
     0x7e4161ce: "shard_foc_1helementalgauntlet_icet52", // 2118214094
@@ -21201,6 +21574,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7e66a021: "fm_loot_item_c_24_02", // 2120654881
     0x7e68a2d1: "entdisplay_campskin_hecate01_a", // 2120786641
     0x7e69c16f: "skin_hands_robinhood", // 2120860015
+    0x7e6b2585: "skin_head_owb", // 2120951173
     0x7e6c2166: "lightfeet_covenantrank1_v2", // 2121015654
     0x7e6c42b3: "skin_head_egyptiangods_4", // 2121024179
     0x7e6ea352: "crx_2hgreataxe_monstroussprigganslayert5_v3", // 2121179986
@@ -21208,6 +21582,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7e6f983d: "questreward_mb_gloves_medium", // 2121242685
     0x7e712d48: "lighthands_pvp_namedt3", // 2121346376
     0x7e72de4c: "fm_loot_item_c_11_07", // 2121457228
+    0x7e74bf38: "artifact_set2_1htowershield", // 2121580344
     0x7e767bb0: "invasionrewardcontainerrarity3l30", // 2121694128
     0x7e79c770: "heavyhead_excavatorssafetyhelmett5", // 2121910128
     0x7e7b62b0: "skin_oct2023_seance_greatsword", // 2122015408
@@ -21261,6 +21636,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7eb693b0: "playtest_box_water", // 2125894576
     0x7eb9695c: "1hhatchet_nature_mutt5", // 2126080348
     0x7ebc35b1: "1hflaildungeon11t5", // 2126263729
+    0x7ebdaffb: "skin_chest_s8_rank2_leaderboard", // 2126360571
     0x7ec01831: "omega_lighthead_soldier_pvp_a6", // 2126518321
     0x7ec17067: "lightchest_marauderrank2_cleric", // 2126606439
     0x7ec4276c: "0715_0101_salsnailessence", // 2126784364
@@ -21323,6 +21699,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7f15cce1: "2hwarhammercrafteddungeon1t3", // 2132135137
     0x7f186860: "2hgreataxe_nightveil2024_gs700", // 2132306016
     0x7f188a01: "lightlegs_marauderrank2_scholar_v2", // 2132314625
+    0x7f193c5e: "ringdropt5_s8item", // 2132360286
+    0x7f19666e: "entdisplay_skin_2hspear_season8pass", // 2132371054
     0x7f1a4873: "dyea055_mounts", // 2132428915
     0x7f1b78b9: "2hwarhammer_wrathofthesisterst5", // 2132506809
     0x7f1c0342: "heavylegs_syndicaterank3_soldier_v2", // 2132542274
@@ -21446,6 +21824,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x7fcc00e4: "shard_dex_medium_phy_legst5", // 2144076004
     0x7fcd216b: "mediumhands_elitepoi_highwaymant5_v2", // 2144149867
     0x7fcd5662: "flxpac_heavyhands_depths_mutt5", // 2144163426
+    0x7fd04b05: "flail_etherealt5_s1e", // 2144357125
     0x7fd1815a: "playtest_mediumhands_sage_t3", // 2144436570
     0x7fd297bf: "2hspear_tipofthemorningstart3_v2", // 2144507839
     0x7fd2f769: "smeltingt4", // 2144532329
@@ -21546,6 +21925,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x806a65b6: "carneliant3", // 2154456502
     0x806ba058: "1hthrowingaxe_pixiespunishert5", // 2154537048
     0x8070b5cf: "lightchest_ancientelite1t4", // 2154870223
+    0x8072cb0e: "mediumhands_etherealt4_s1e", // 2155006734
     0x8072e966: "2hstafffire_agonyt5_v2", // 2155014502
     0x8074a065: "flxpac_lightlegs_depths_mutt5", // 2155126885
     0x8075783b: "amulet_nimbleeyet5", // 2155182139
@@ -21553,6 +21933,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x807cba8a: "ringdropt5_foc_sandstorm", // 2155657866
     0x807e306b: "dyea028_mounts", // 2155753579
     0x807e6428: "skin_chest_s5_rank2_lb_lbclear_glacialtarn", // 2155766824
+    0x807e7bc3: "bloodbeast_bite", // 2155772867
     0x8081681f: "2hstafflife_lifegivingwaterst2_v2", // 2155964447
     0x8081cf64: "heavyhands_angryearthelite1t4", // 2155990884
     0x80824eab: "dyeb139", // 2156023467
@@ -21705,6 +22086,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8157e100: "2hspear_spearofmalcontentt5", // 2170020096
     0x8158d172: "1hthrowingaxe_aristocratsfinehatchett2", // 2170081650
     0x81597f64: "heavyfeet_knightt3", // 2170126180
+    0x8159c760: "flxpac_mediumlegs_brimstonesands_mutt5_owb", // 2170144608
     0x8159dc68: "fm_loot_item_c_6_05", // 2170149992
     0x815a8eb5: "playtest_lightlegs_scholar_t5", // 2170195637
     0x815c1e44: "2hgreataxeangryeartharenat5", // 2170297924
@@ -21728,6 +22110,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x81781c36: "2hgreataxe_empoweredgreataxet2_v2", // 2172132406
     0x81799745: "2hwarhammer_parabellumt5", // 2172229445
     0x817abd94: "fm_loot_item_c_15_02", // 2172304788
+    0x817c0f41: "roundshield_etherealt5_s1e", // 2172391233
     0x817e3269: "lightchest_angryearth2t4", // 2172531305
     0x817f346b: "2hgreataxepvpdropt4", // 2172597355
     0x81800625: "lightchest_sunsealt5", // 2172651045
@@ -21736,6 +22119,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x81856af0: "lightchest_worldeventpve_2024", // 2173004528
     0x81867700: "skin_chest_s6_rank1_lbclear_brimstone", // 2173073152
     0x8187143b: "2hroundshielddungeon8t5", // 2173113403
+    0x8189001c: "skin_1hrapier_season8pass", // 2173239324
     0x8189d4f1: "skin_syndicateheavy_box", // 2173293809
     0x818fe328: "99f_er_soulwarden_banner", // 2173690664
     0x8191360e: "fm_loot_item_2_11", // 2173777422
@@ -21762,6 +22146,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x81ad7310: "lighthead_drowned1t5", // 2175628048
     0x81ae7ac2: "heavyhands_arenaswampbeast2t5", // 2175695554
     0x81b02a29: "1hgauntletvoid_adeptvoidmaget2_v2", // 2175805993
+    0x81b0ea5c: "flxpac_mediumhead_empyrean_mutt5_owb", // 2175855196
     0x81b21b84: "skin_rangerarchetypelegs", // 2175933316
     0x81b2dfd0: "questrewardisabella5", // 2175983568
     0x81b341de: "questreward_msq2_bw_voidgauntlet", // 2176008670
@@ -21805,6 +22190,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x81ec8c5f: "2hwarhammerdropt5_inferno_leg", // 2179763295
     0x81ee6bf6: "omega_heavyhands_soldier_pvp_a2", // 2179886070
     0x81f0ab02: "sulfurt1", // 2180033282
+    0x81f1d894: "lost_mutatednurse_wisp", // 2180110484
     0x81f260c5: "2hstafffire_anubianwarstafft5_v2", // 2180145349
     0x81f4c5c8: "worldevent_s2_normalbox_minor", // 2180302280
     0x81f72e4e: "heavyhands_worldeventpve_2024", // 2180460110
@@ -21874,6 +22260,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x825c8894: "armamentst5", // 2187102356
     0x825cb332: "2hgreataxe_spitefulreapert4_v2", // 2187113266
     0x825d9781: "lightchest_robe_siege_s7", // 2187171713
+    0x825e3d8c: "dyes2_box_s8", // 2187214220
     0x8261a365: "skin_feet_malachite_m", // 2187436901
     0x8261bc15: "2hblunderbuss_featofengineeringt5", // 2187443221
     0x8264f133: "2hgreataxe_hollowtrunk", // 2187653427
@@ -21982,6 +22369,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x830cd2b0: "legs_courtier2t5", // 2198655664
     0x830e43b7: "animushummingt1", // 2198750135
     0x830f05f1: "campskin_summermedley01_a", // 2198799857
+    0x8310467f: "redguffint2_s8", // 2198881919
     0x8312d90c: "2hbow_heraldssignalfiret5", // 2199050508
     0x831414b3: "lightlegs_farmert5", // 2199131315
     0x8315474c: "2hstafflifelostelitet5", // 2199209804
@@ -22092,6 +22480,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x83a68835: "runestoneformt4c", // 2208729141
     0x83a70c54: "playtest_lighthands_scholar_t2", // 2208762964
     0x83a7747c: "mediumchest_pvp_namedt4", // 2208789628
+    0x83a84ef7: "heavylegs_worldevent_s1_t5_v3", // 2208845559
     0x83aadb01: "2hgreatsword_wodaot5_v2", // 2209012481
     0x83b2f804: "mediumlegs_syndicaterank4_scholar_v2", // 2209544196
     0x83b30774: "2hstafffire_spellstaffoffieryintentt5", // 2209548148
@@ -22217,6 +22606,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x845b9852: "heavyhead_covenantrank4_cleric", // 2220595282
     0x8461096b: "potionfamilywardlostt3", // 2220951915
     0x846323d8: "shard_all_heavychest_platet52", // 2221089752
+    0x8464951b: "skin_2hbow_season8seasonalserver", // 2221184283
     0x84699803: "mediumlegs_summer600t5_foc", // 2221512707
     0x8469d591: "skin_hands_firstlightelvenflowingsilver", // 2221528465
     0x846b9373: "lighthands_gardengenesis_mutt5", // 2221642611
@@ -22259,6 +22649,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8497ab13: "lapislazulicutt4", // 2224532243
     0x849c21fc: "intstrbonust1", // 2224824828
     0x849e918e: "heavyhands_scaledgauntlets", // 2224984462
+    0x84a06c4d: "skin_feet_syndff2025", // 2225105997
     0x84a19f44: "2hblunderbuss_radigaht5_v2", // 2225184580
     0x84a27abf: "mediumhead_riptide", // 2225240767
     0x84a28153: "flxpac_heavyfeet_so_mutextra_t5", // 2225242451
@@ -22331,6 +22722,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x85115b4b: "playtest_shieldkite_dmg_t4", // 2232507211
     0x851189c5: "skeleton_weapon_1h_cutlass", // 2232519109
     0x851512b5: "lighthands_ds_mutextra_t5", // 2232750773
+    0x85161f91: "lightlegs_mushroomwanders", // 2232819601
     0x8517055d: "pattern_primevalhusk_breastplate", // 2232878429
     0x85176599: "1htowershielddarknessbreacht5", // 2232903065
     0x851cd640: "2hstafflife_glowinglifecrystalstafft5", // 2233259584
@@ -22394,6 +22786,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x858430e0: "2hmusketdungeon12t5", // 2240032992
     0x85858a34: "clothingchest_stonecuttert5", // 2240121396
     0x85861e24: "rewardcontainercorruptedl26", // 2240159268
+    0x8586738a: "greenguffint3_s8", // 2240181130
     0x8586fe11: "head_faction3officert3", // 2240216593
     0x85873e4e: "2hgreatsword_branchofderetolet5", // 2240233038
     0x8587b56b: "fm_loot_item_c_1_06", // 2240263531
@@ -22423,6 +22816,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x859bfd04: "earringt5_heartstendriltrinket_v2", // 2241592580
     0x859d5c5a: "mediumlegs_leatherpvpdropt4", // 2241682522
     0x859eb3d8: "flxpac_heavychest_lazarus_mutt5", // 2241770456
+    0x859f89a4: "mutation_box_s8", // 2241825188
     0x85a235f5: "lightchest_arenaangryearth2t5", // 2242000373
     0x85a23e77: "heavyfeet_lostelite1t5", // 2242002551
     0x85a2b184: "ringfoct2", // 2242032004
@@ -22532,6 +22926,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x862a913c: "wcconsumable_mealiewrap", // 2250936636
     0x862ac6e0: "2hgreatsword_lifeknightt4", // 2250950368
     0x862b561f: "darknessrewardcontainerminor2l35", // 2250987039
+    0x862bca39: "flxpac_lightchest_brimstonesands_mutt5_owb", // 2251016761
     0x862bcf49: "1hthrowingaxe_shatterspiket5_v2", // 2251018057
     0x862cd4b0: "heavychest_marauderrank6_2_soldier", // 2251084976
     0x862d20d5: "playtest_box_armorboxcontainer_t5_625", // 2251104469
@@ -22547,6 +22942,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x86364791: "condexbonust1", // 2251704209
     0x863741c9: "playtest_box_armor_soldier_t5_650_trinket", // 2251768265
     0x8639da5f: "mediumfeet_syndicateplaguedoctort5_barbarian", // 2251938399
+    0x863a6580: "heavyhands_etherealt4_s1e", // 2251974016
     0x863ae2a6: "mediumlegs_dungeon13_articvalkyrian", // 2252006054
     0x863b5e2c: "foodjewelcraftert1", // 2252037676
     0x863da916: "overgrown_beetle_claws", // 2252187926
@@ -22570,6 +22966,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8651f67e: "mediumhands_hollykingt3_shop", // 2253518462
     0x86551cd0: "2hbow_wintert2_shop", // 2253724880
     0x86555804: "1hlongsword_marauderrank3", // 2253740036
+    0x86560d56: "combatconsumablest2_s8", // 2253786454
     0x8657a57d: "heavyfeet_marauderrank1_soldier_v2", // 2253890941
     0x865a5a69: "2hwarhammerangryeartht4", // 2254068329
     0x865bdce0: "1hrshield_commandants", // 2254167264
@@ -22592,6 +22989,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x867540b5: "aeternumtrials_week2cache_r", // 2255831221
     0x867554fc: "questreward_msq25_greatsword_covenant", // 2255836412
     0x8675f5a7: "heavyfeet_marauderrank6_ranger", // 2255877543
+    0x86764f36: "weaponst2_s8", // 2255900470
+    0x86766995: "artifact_set2_mediumhead", // 2255907221
     0x867799dd: "1420_0107_twistedstock", // 2255985117
     0x8678d3cf: "1hrapier_worldevent_s1_t5_v2", // 2256065487
     0x867a2333: "ringstrcont4", // 2256151347
@@ -22730,6 +23129,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x874ddb3c: "ring_sqrewardbrimstonet5", // 2270026556
     0x874e478d: "mediumfeet_covenantrank5_scholar_v2", // 2270054285
     0x87500220: "invasionrewardcontainerrarity2l48", // 2270167584
+    0x87543348: "runespinningswordst1", // 2270442312
     0x875938f2: "mediumhandsat2", // 2270771442
     0x875b61a7: "skin_chest_s7_rank2_lbclear_brimstone", // 2270912935
     0x875bb628: "skin_chest_lbclear_forge", // 2270934568
@@ -22754,6 +23154,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x87670c7a: "influencerewardcontainerl64_loser", // 2271677562
     0x876a7f3b: "factionchisel3", // 2271903547
     0x876bba09: "precisiontoolt1_15", // 2271984137
+    0x876e089d: "tskillleveling2_s8", // 2272135325
     0x876e8e1b: "mediumfeet_leathert5", // 2272169499
     0x87756563: "lighthead_syndicaterank5_v2", // 2272617827
     0x87774cf2: "mediumhead_dungeon2t3", // 2272742642
@@ -22866,6 +23267,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x882aaa32: "fempioneer_lightgloves_dropt2", // 2284497458
     0x882ca3b2: "heavyfeet_firstlightrevampt5", // 2284626866
     0x882e28aa: "skin_head_seasons1deluxe", // 2284726442
+    0x882ef3ea: "lightchest_etherealt3_s1e", // 2284778474
     0x882ff41f: "devweapons", // 2284844063
     0x88312eaf: "playtest_box_armor_sentry_t5_675_heavy", // 2284924591
     0x8831ad79: "flxpac_2hgreataxe_nature_mutt5", // 2284957049
@@ -22906,6 +23308,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x88514298: "flxpac_1hroundshield_barnacles_mutt5", // 2287026840
     0x8851c3a6: "heavyhead_lionspawhelmett5", // 2287059878
     0x88525b1a: "amethystcutt3", // 2287098650
+    0x885302e5: "flxpac_lightfeet_barnacles_mutt5_owb", // 2287141605
     0x885306ef: "pvpxp_display", // 2287142639
     0x885437ce: "fm_loot_item_19_03", // 2287220686
     0x8857b7f6: "fm_hunt_item_10_04", // 2287450102
@@ -22959,6 +23362,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x889726e3: "scarab_int_heavy_bal_legst5", // 2291607267
     0x88986ce9: "heavyhands_pvp_prestiget2", // 2291690729
     0x8899f8e9: "playtest_heavyhead_sage_t3", // 2291792105
+    0x889b3495: "dyes5_box_s8", // 2291872917
     0x88a0cfe7: "heavychest_trial_s5_namedt5", // 2292240359
     0x88a1a7a9: "questreward_ef_side_potionpouch", // 2292295593
     0x88a1d7ba: "lighthands_pvpt2", // 2292307898
@@ -23032,6 +23436,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x890992b0: "siege_warcamp_gate_t3", // 2299105968
     0x890a175c: "feet_faction1officert4", // 2299139932
     0x890ac2ee: "lightchest_marauderrank5", // 2299183854
+    0x890e867c: "skin_chest_s8_rank1_lb_invasion", // 2299430524
     0x890f33ab: "questreward_msq25_hatchet_yonas", // 2299474859
     0x89113292: "questrewardweaponsl29", // 2299605650
     0x891212c2: "1hthrowingaxe_solotrialt5", // 2299663042
@@ -23089,6 +23494,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8956a037: "shard_dex_earringsapphiret5", // 2304155703
     0x895794d6: "heavychest_trial_s2_namedt5_strcon", // 2304218326
     0x8958c761: "greataxe_etherealt5", // 2304296801
+    0x8958d010: "campskin_winter03_a_pvp", // 2304299024
     0x8959937e: "gatherable_research_unusual_bait_t3", // 2304349054
     0x895c4dbb: "fishinghafgufat5", // 2304527803
     0x895d8f70: "ringt5_azothcrystal", // 2304610160
@@ -23109,6 +23515,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x896c56e8: "1hrapier_atlaskillert5", // 2305578728
     0x896cd506: "fishlinestrengthfresh3charm", // 2305611014
     0x89701153: "2hmusket_ironbarkblastert5", // 2305823059
+    0x8971a95f: "entdisplay_skin_1hflail_season8pass", // 2305927519
     0x8972b6f5: "2hstafflife_so_mutextra_t5", // 2305996533
     0x89731bf8: "omega_lightchest_ranger_615", // 2306022392
     0x89738d53: "entdisplay_skin_warhammer_season6pass", // 2306051411
@@ -23146,6 +23553,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x89a4e81c: "2hgreataxecrafteddungeon12t5", // 2309285916
     0x89a5a134: "95a_s02_marketstone_item", // 2309333300
     0x89a5c6d8: "heavyfeet_marauderrank4_v2", // 2309342936
+    0x89a7af2d: "campskin_metalfest02_a_pvp", // 2309467949
     0x89a8d052: "1hkshield_marauderrank6", // 2309541970
     0x89a8ee05: "corruptedplant", // 2309549573
     0x89a8f213: "skin_chest_winterwanderer2", // 2309550611
@@ -23156,6 +23564,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x89aeeee6: "1hlongswordinfluencet2", // 2309943014
     0x89b084a6: "mediumhead_mask10_t5", // 2310046886
     0x89b183f6: "entdisplay_skin_1hskinningknife_season7pass", // 2310112246
+    0x89b3a81d: "mediumchest_spring_gs715", // 2310252573
     0x89b5fc20: "lightfeet_marauderrank3_scholar_v2", // 2310405152
     0x89b68b95: "mediumhands_syndicaterank1_ranger_v2", // 2310441877
     0x89b79d57: "amulett4_menofarmsmascot", // 2310511959
@@ -23186,6 +23595,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x89ddd110: "mediumfeet_leatherinfluencet3", // 2313015568
     0x89df5b8b: "heavychest_maraudert4", // 2313116555
     0x89e34ad9: "skin_head_marauderlegatust5_box", // 2313374425
+    0x89e4fcf4: "flxpac_lightfeet_brimstonesands_mutt5_owb", // 2313485556
     0x89e5a288: "playtest_shieldtower_dmg_t5_625", // 2313527944
     0x89e94ca0: "lightlegs_syndicaterank1_v2", // 2313768096
     0x89eb3420: "chest_faction3officert4", // 2313892896
@@ -23206,6 +23616,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8a10f499: "lighthands_summer600t5_int", // 2316367001
     0x8a119cf3: "omega_heavylegs_soldier_617", // 2316410099
     0x8a14653f: "2hblunderbuss_turkeysbanet2", // 2316592447
+    0x8a15ea9a: "flxpac_mediumfeet_dynastyshipyard_mutt5_owb", // 2316692122
     0x8a168766: "heavyhead_ancient2t4", // 2316732262
     0x8a17e2d0: "omega_amulet_sage_pvp", // 2316821200
     0x8a18ebb9: "mediumfeet_syndicaterank1_scholar_v2", // 2316889017
@@ -23281,6 +23692,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8a85d562: "lightfeet_syndicaterank6", // 2324026722
     0x8a87bf4c: "2hgreataxe_tempestt5", // 2324152140
     0x8a8e7824: "2hblunderbuss_cannonadet5", // 2324592676
+    0x8a8fbcf5: "skin_chest_s8_rank1_lb_openworld", // 2324675829
     0x8a914427: "woodt1", // 2324775975
     0x8a920f91: "recipe_foodstrcont5", // 2324828049
     0x8a92ed46: "fm_loot_item_s_2_12", // 2324884806
@@ -23428,6 +23840,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8b5e096a: "feet_faction2officert2", // 2338195818
     0x8b5e2858: "2hmusket_rifleofregrett5_v2", // 2338203736
     0x8b5e5931: "omega_lighthead_ranger_625_3", // 2338216241
+    0x8b5f2c95: "loggingaxe_etherealt5_s1e", // 2338270357
     0x8b6054b4: "skin_chest_s5_rank1_lbscore_crystalclaw", // 2338346164
     0x8b60a2c7: "skin_feet_marauderlegatust5_box", // 2338366151
     0x8b61bce5: "fm_loot_item_c_29_06", // 2338438373
@@ -23444,6 +23857,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8b741ca8: "fishingspeartoothsharksmallt3", // 2339642536
     0x8b774f7e: "mediumhead_ancientelite1t4", // 2339852158
     0x8b775785: "mediumlegs_drownedelite1t4", // 2339854213
+    0x8b7894e4: "skin_1hflail_season8pass", // 2339935460
     0x8b7daa61: "playtest_stafffire_tnk_t5_650", // 2340268641
     0x8b7e94d7: "sandpapert3", // 2340328663
     0x8b7f5ca5: "fm_loot_item_c_12_09", // 2340379813
@@ -23459,6 +23873,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8b92f2c3: "crx_reward_heavyvoidt4_hands", // 2341663427
     0x8b9687e5: "1hgauntletvoid_blackholet5", // 2341898213
     0x8b978f0d: "lighthands_dresspvpreplicat3", // 2341965581
+    0x8b97a21b: "2hbow_worldevent_s1_t5_v3", // 2341970459
     0x8b9a0409: "femheavylegs_crassus_s7", // 2342126601
     0x8b9adc93: "questreward_zq2eg_toxiclove", // 2342182035
     0x8b9b870f: "2hmusketlegacycrassust5", // 2342225679
@@ -23534,6 +23949,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8c06e6d1: "fm_loot_item_c_27_08", // 2349262545
     0x8c08709b: "98_m_q5_beastcoin_02", // 2349363355
     0x8c0a93a7: "heavychest_trial_s2_namedt5_condex", // 2349503399
+    0x8c0b9fad: "mediumlegs_worldevent_s1_t5_v3", // 2349572013
     0x8c0c67f4: "2hbow_depths_mutt5", // 2349623284
     0x8c0c78fc: "fm_loot_item_c_29_02", // 2349627644
     0x8c0e4905: "mediumchest_leatherpvpreplicat2", // 2349746437
@@ -23671,6 +24087,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8cc82d7c: "2hspear_boneshattersthirdarmt4_v2", // 2361929084
     0x8cc8c593: "2hstafflife_gaiaswhimt3", // 2361968019
     0x8cc91621: "lighthandsat3", // 2361988641
+    0x8cc99bbe: "skin_chest_s8_rank1_lb_sirenqueen", // 2362022846
     0x8ccb8c6d: "lightfeet_malekmog", // 2362149997
     0x8cccb330: "heavyhead_worldeventpve_s2_t5", // 2362225456
     0x8cce8f48: "mediumchest_undeadpistoleert3", // 2362347336
@@ -23703,6 +24120,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8cfce022: "2battle_plansbrightwood", // 2365382690
     0x8cfcf6ae: "mediumhead_legiont5", // 2365388462
     0x8cff6d85: "conquerorsxitem_lighthead_soldier_pvp", // 2365549957
+    0x8cff7678: "skinningknife_etherealt3_s1e", // 2365552248
     0x8cfff52b: "2hlifestaff_marauderrank3_v2", // 2365584683
     0x8d00de02: "shard_int_ringdiamondt5", // 2365644290
     0x8d01f81e: "earringt5_ambrosiasburden", // 2365716510
@@ -23794,6 +24212,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8d8b8352: "claimt1_100m_t5", // 2374730578
     0x8d8b842c: "1hlongswordvarangiant5", // 2374730796
     0x8d8ca616: "lighthands_dimensionaltetherpvp_t5", // 2374805014
+    0x8d8e4fe1: "skin_chest_s8_rank1_lbscore_shipyard", // 2374914017
     0x8d902c7b: "shard_lifestaff", // 2375036027
     0x8d90c377: "1hgauntletvoid_mastervoidmaget5", // 2375074679
     0x8d90cfd4: "skin_fatefortune_pickaxe", // 2375077844
@@ -23803,12 +24222,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8d9805c8: "playtest_lightchest_sage_t3", // 2375550408
     0x8d9a86de: "fm_loot_item_c_5_11", // 2375714526
     0x8d9c6fbc: "heavychest_covenantrank1_soldier_v2", // 2375839676
+    0x8da19a93: "entdisplay_skin_1hpickaxe_season8pass", // 2376178323
     0x8da1e371: "amulett3_solafidetoken", // 2376196977
     0x8da3d481: "amulet_barkskintorquet4", // 2376324225
     0x8da441a5: "playtest_standingvial_monarchsbluffs", // 2376352165
     0x8da4b9ac: "skin_musket_egyptiangods_prime", // 2376382892
     0x8da53540: "2hwarhammer_warhammerofthelastonest3", // 2376414528
     0x8da7a543: "1225_0101_truffle", // 2376574275
+    0x8da8ee3c: "heavyhead_firstlightexp_mutt1_owb", // 2376658492
     0x8da90efb: "rewardcontainerlostl52", // 2376666875
     0x8dab50af: "schematic_house_housingitem_pirate_shelf01_a", // 2376814767
     0x8dacc960: "omega_lightfeet_scholar_625", // 2376911200
@@ -23994,6 +24415,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8e9da307: "skin_shieldt_season7pass", // 2392695559
     0x8e9e914b: "heavyhead_covenantrank3_cleric", // 2392756555
     0x8e9f205e: "scarab_int_light_ele_hands_clotht5", // 2392793182
+    0x8e9fa7b1: "campskin_egyptian01_a_pvp", // 2392827825
     0x8ea2f2fd: "lightlegs_drowneddrunkt5", // 2393043709
     0x8ea3a5af: "mutatedexpedition_box_forge", // 2393089455
     0x8ea44003: "1hrshield_covenantrank4", // 2393128963
@@ -24019,6 +24441,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8ec73a33: "amulett4_wardenschain", // 2395421235
     0x8ec7aee3: "2hstafflife_greatstaffofstormsmightt5_v2", // 2395451107
     0x8ec8df2f: "heavylegs_oakkingt4_shop", // 2395529007
+    0x8ec9ea84: "mediumlegs_etherealt5_s1e", // 2395597444
     0x8ecad9f8: "lighthands_spring_gs700", // 2395658744
     0x8ecbf591: "2hbow_hoplite", // 2395731345
     0x8ecc3c02: "heavyfeet_hercyneraid_craftedshard", // 2395749378
@@ -24030,7 +24453,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8ed1c3b9: "1hgauntletvoidancientt5", // 2396111801
     0x8ed306cf: "playtest_shieldround_tnk_t5_585", // 2396194511
     0x8ed314a4: "omega_lightlegs_sentry_625", // 2396198052
+    0x8ed86263: "or_outpost_gate_sol_t2", // 2396545635
     0x8ed8d300: "mediumchest_drowned1t4", // 2396574464
+    0x8ed96f9e: "yellowguffint3_s8", // 2396614558
+    0x8ed98d51: "flxpac_heavylegs_empyrean_mutt5_owb", // 2396622161
     0x8edbcdcb: "mediumchest_syndicaterank2_scholar_v2", // 2396769739
     0x8edc1770: "omega_box_music_mandolinpages", // 2396788592
     0x8edc7dc9: "mediumfeet_angryearth1t5", // 2396814793
@@ -24123,6 +24549,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8f76e1e6: "shard_con_ringcarneliant5", // 2406932966
     0x8f776b1b: "heavylegs_syndicaterank5_ranger_v2", // 2406968091
     0x8f779eb0: "mage_projectile", // 2406981296
+    0x8f789d89: "heavyhead_spring_gs715", // 2407046537
     0x8f7a4660: "lightchest_pvpt4", // 2407155296
     0x8f7aa741: "1hgauntletvoid_viciousdraint4_v2", // 2407180097
     0x8f7ad9f5: "mediumhead_leatherdropt5", // 2407193077
@@ -24151,6 +24578,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x8fa34547: "1hgauntletvoid_ghastlygrieft4", // 2409841991
     0x8fa4b04b: "mediumfeet_questreward_hermit", // 2409934923
     0x8fa83b1e: "scarab_str_heavyfeet_platet52", // 2410167070
+    0x8faa435e: "skin_legs_season8pass", // 2410300254
     0x8faad15f: "fishingcodmediumt2", // 2410336607
     0x8fac14fa: "1hgauntletice_covenantinitiatesicegauntlett2", // 2410419450
     0x8facd763: "1hhatchet_nightveil2024", // 2410469219
@@ -24270,6 +24698,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x90672b75: "1hgauntletvoiddynastyt4", // 2422680437
     0x9067ed5d: "heavyhead_arenaangryearth1t5", // 2422730077
     0x90682ab9: "omega_lightchest_ranger_605", // 2422745785
+    0x9069191d: "skin_feet_coveff2025_box", // 2422806813
+    0x90695b7a: "campt2_pvp", // 2422823802
     0x90713707: "heavychest_eternal_mutt5", // 2423338759
     0x907183c3: "darknessrewardcontainermajor2l48", // 2423358403
     0x9071f05f: "1hthrowingaxe_sqrewardshatteredt5", // 2423386207
@@ -24278,6 +24708,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9075cd1e: "omega_lighthead_soldier_607_2", // 2423639326
     0x9075da12: "playtest_lightlegs_sentry_t5_585", // 2423642642
     0x9076f0ea: "99f_er_tea_leaves", // 2423714026
+    0x90777d95: "skin_head_owb_box", // 2423750037
     0x90781a9c: "invasionrewardcontainerrarity3l32", // 2423790236
     0x9078dd0d: "lightlegs_clothdropt5_con_sandstorm_leg", // 2423840013
     0x9079f228: "1hrapier_starmetallightningrodt4_v2", // 2423910952
@@ -24295,6 +24726,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x908b39e2: "skin_chest_lbscore_shipyard", // 2425043426
     0x908d806f: "lighthead_mask2_t5_v2", // 2425192559
     0x9090bb53: "invasionrewardcontainerrarity2l50", // 2425404243
+    0x9090e223: "skin_feet_owb", // 2425414179
     0x90910e0f: "mtx_reaper_deluxe_chest", // 2425425423
     0x9094b795: "flxpac_mediumfeet_barnacles_mutt5", // 2425665429
     0x9095699d: "ring_etherealt5", // 2425711005
@@ -24313,7 +24745,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x90ab312f: "playtest_warhammer_dmg_t5_625", // 2427138351
     0x90ab32a6: "lighthead_darknessbreacht3", // 2427138726
     0x90ac68d0: "mediumhead_marauderrank3_cleric", // 2427218128
+    0x90ad8a95: "heavyfeet_mushroomwanders", // 2427292309
     0x90ad8b21: "mediumlegs_elitebreacht4", // 2427292449
+    0x90ae6362: "skin_gloves_syndff2025_box", // 2427347810
     0x90af4ece: "1418_0101_rottingleatherstraps", // 2427408078
     0x90b15383: "crx_reward_heavyfemelegantt4_legs", // 2427540355
     0x90b2e4e5: "ck_d6_1hlongsword_t5", // 2427643109
@@ -24403,6 +24837,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x913868a0: "pvparena_foodstrt5", // 2436393120
     0x913939ee: "artifact_wcweaponhatchett5", // 2436446702
     0x913a8638: "1hgauntletvoid_horrificessencet3_v2", // 2436531768
+    0x913b16da: "skin_head_coveff2025_box", // 2436568794
     0x913bf6c3: "heavyhands_summer600t5_str", // 2436626115
     0x913ca325: "shard_str_amuletpearlt5", // 2436670245
     0x913d4b40: "1hgauntletvoid_azothcrystal", // 2436713280
@@ -24453,6 +24888,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9183b5c5: "ringt5_heartofailuros_v2", // 2441328069
     0x9185f25c: "2hmusket_hellfire_mutt5", // 2441474652
     0x91869efe: "1225_0601_giacomoplumbum", // 2441518846
+    0x9187b7cb: "skin_chest_coveff2025", // 2441590731
     0x9189e15d: "mediumlegs_syndicatet2", // 2441732445
     0x918a974c: "lightlegsbt5", // 2441779020
     0x918b4c73: "playtest_shieldround_tnk_t5", // 2441825395
@@ -24461,6 +24897,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x918c8f98: "2hmusket_crystallineflintlockt2", // 2441908120
     0x918d37f1: "2hgreataxe_hugot5_v2", // 2441951217
     0x918dd3e2: "omega_box_armor_sage_600", // 2441991138
+    0x918ed97e: "warhammer_etherealt2_s1e", // 2442058110
     0x919156cd: "mediumhead_marauderrank2_occultist", // 2442221261
     0x9192694e: "1hgauntletvoid_shatteredobelisk_mutt5", // 2442291534
     0x9193a1c0: "2hlifestaff_syndicaterank6", // 2442371520
@@ -24710,6 +25147,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x930d402f: "2hstafffire_ignitiont5", // 2467119151
     0x930e3955: "lighthands_clothinfluencet4", // 2467182933
     0x9310036b: "flxpac_2hblunderbuss_depths_mutt5", // 2467300203
+    0x9310adf5: "flxpac_amulett5_ef_mut_owb", // 2467343861
     0x931220da: "1hlongswordlostt3", // 2467438810
     0x9313543a: "mediumhandsbeastelitet5", // 2467517498
     0x931420d4: "ringonyxt4", // 2467569876
@@ -24822,6 +25260,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x93b70b3b: "darknessrewardcontainermajor2l15", // 2478246715
     0x93ba0e38: "or_powderkeg", // 2478444088
     0x93ba3299: "faction_provisions10_t4", // 2478453401
+    0x93be3594: "miningpick_etherealt5_s1e", // 2478716308
     0x93bee36b: "fishingtreasuremotet3", // 2478760811
     0x93c33cb9: "heavyhands_shatteredobelisk_mutt5", // 2479045817
     0x93c4e269: "femvictorianl_head_dropt3", // 2479153769
@@ -24848,6 +25287,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x93e26095: "perfectsalvage_light_phy_feet_clotht5", // 2481086613
     0x93e2d65f: "engineerresearchnotest51", // 2481116767
     0x93e2e3e3: "1hthrowingaxedrop_siege2024", // 2481120227
+    0x93e42107: "mediumhead_mushroomwanders", // 2481201415
     0x93e9bb39: "dyeb178", // 2481568569
     0x93ea0879: "omega_heavyhead_sage_625", // 2481588345
     0x93eb538a: "crx_itempattern_lighthands_mossborne", // 2481673098
@@ -24937,6 +25377,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9469d751: "skin_chest_s5_rank2_lbscore_lazarusinstrumentality", // 2489964369
     0x946e6124: "skin_chest_s3_rank2_lb_opr", // 2490261796
     0x946e970a: "mediumlegs_dynastyshipyard_mutt5", // 2490275594
+    0x946f642e: "skin_chest_s8_rank1_lbclear_gardengenesis", // 2490328110
     0x9470206d: "workorder_0204_0104_executioner_v2", // 2490376301
     0x947086c4: "lightchest_chitint5_v3", // 2490402500
     0x9471e4a6: "lighthead_arenacorrupted1t5", // 2490492070
@@ -24958,6 +25399,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x94976355: "crx_heavylegs_sandworm_trial", // 2492949333
     0x94985198: "runegraspingvinest4b", // 2493010328
     0x949b308f: "ringdiamondt5", // 2493198479
+    0x949cbfd7: "purpleguffint5_s8", // 2493300695
     0x949ef9f1: "darknessrewardcontainerminor1l35", // 2493446641
     0x94a14f32: "questrewardweaponsl60", // 2493599538
     0x94a2d663: "fm_loot_item_c_16_06", // 2493699683
@@ -25032,6 +25474,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x950d713b: "2hstafffire_immolationt4", // 2500686139
     0x950f68d5: "omega_box_armor_sage_pvp_trinket", // 2500815061
     0x950f7ae0: "mediumhands_hollyking_int", // 2500819680
+    0x950fa1df: "entdisplay_skin_2hgreataxe_season8pass", // 2500829663
     0x951052a2: "1hshield_covenanttemplarsshieldt4a", // 2500874914
     0x95105d52: "2hgreataxe_commadingstrike", // 2500877650
     0x95108be4: "2hmusket_pvp_prestiget3", // 2500889572
@@ -25055,6 +25498,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9535ed80: "earringcont5", // 2503339392
     0x953adb9b: "omega_lighthead_soldier_600_2", // 2503662491
     0x953e076e: "2hstafffire_flaresparkt3_v2", // 2503870318
+    0x953f68bc: "2hfirestaff_worldevent_s1_t5_v3", // 2503960764
     0x9542b603: "crx_rewardcontainert4_headgear_45", // 2504177155
     0x95450ef8: "2hroundshield_ae_mutextra_t5", // 2504331000
     0x954724fd: "mediumchest_elitepoi_harbingerrobest5", // 2504467709
@@ -25115,6 +25559,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x95a98ccf: "fm_loot_item_1611_02", // 2510916815
     0x95aa6e06: "ubertrophy_combat_component", // 2510974470
     0x95ab8584: "lightchest_fishermant3", // 2511046020
+    0x95ac8f89: "heavyhead_mushroomwanders", // 2511114121
     0x95aea126: "kt_ancient_shrine_40313_mi_lostsceptor", // 2511249702
     0x95b088b9: "heavyfeet_covenantrank2_sage_v2", // 2511374521
     0x95b2eaaf: "siege_supplygenerator_t3", // 2511530671
@@ -25131,6 +25576,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x95be4182: "scarab_con_light_bal_legs_clotht5", // 2512273794
     0x95be9423: "2hwarhammer_corruptedcoret5_v2", // 2512294947
     0x95bf0582: "playtest_rapier_tnk_t5_585", // 2512323970
+    0x95c10ebd: "entdisplay_title_season8_battlepass", // 2512457405
     0x95c17743: "omega_box_armor_soldier_605", // 2512484163
     0x95c1b09b: "playtest_box_weapons_tank_t5_675", // 2512498843
     0x95c3f6c5: "pristinewolfclawt1", // 2512647877
@@ -25142,8 +25588,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x95d5d14a: "heavylegs_d_boss_mutt5_v2", // 2513817930
     0x95d7b7b2: "lighthands_clothdropt4", // 2513942450
     0x95d80f2a: "heavyhands_syndicatet3", // 2513964842
+    0x95d82806: "campskin_phoenix01_a_pvp", // 2513971206
     0x95d96e72: "heavylegs_crafteddungeon12t5", // 2514054770
     0x95db0eb8: "2hstafflife_staffofthereawakenert5", // 2514161336
+    0x95dba773: "tskillleveling1_s8", // 2514200435
     0x95dbd2f6: "shardofpridet1", // 2514211574
     0x95de0b63: "itempattern_lightlegs_lostraidert5", // 2514357091
     0x95e02232: "2hwarhammer_pvp_prestiget5", // 2514494002
@@ -25162,6 +25610,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x95f17a2f: "heavychest_syndicaterank4_soldier_v2", // 2515630639
     0x95f1a884: "lightchest_doubloonshopt5", // 2515642500
     0x95f1f347: "heavyhands_d_boss_mutt5_600", // 2515661639
+    0x95f42259: "dyea026_mounts", // 2515804761
     0x95f44a70: "2hgreataxe_unsungherot4", // 2515815024
     0x95f46203: "heavychest_conquerorsbreastplatet5_v2", // 2515821059
     0x95f7bc7d: "1hlongsword_razortrickt5_v2", // 2516040829
@@ -25173,6 +25622,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x960214b9: "mediumhead_leathert4", // 2516718777
     0x96023148: "2hblunderbuss_artillerist", // 2516726088
     0x9602c996: "2hstafflifepvpdropt2", // 2516765078
+    0x96057c31: "flxpac_heavylegs_barnacles_mutt5_owb", // 2516941873
     0x96060c01: "heavyhead_worldeventpve_2024", // 2516978689
     0x960639c3: "1hgauntletvoid_reapingannihilationt2", // 2516990403
     0x96067e93: "omega_mediumfeet_noarmor", // 2517008019
@@ -25200,6 +25650,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x962142ae: "fm_hunt_item_10_10", // 2518762158
     0x9621882f: "heavychest_bs_bossxpac_mutt5", // 2518779951
     0x9622bfb7: "1hhatchet_myrkgard_mutt5", // 2518859703
+    0x9622d417: "heavyfeet_etherealt2_s1e", // 2518864919
     0x96235371: "dropperfirebarrelt2", // 2518897521
     0x9624cb1e: "lightlegs_robet4", // 2518993694
     0x9625a320: "scarab_int_mediumfeet_leathert52", // 2519048992
@@ -25217,6 +25668,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x963cf7d2: "0204_0104_madalchemistscribbles", // 2520578002
     0x963db66b: "fm_pvp_marauders_item_4", // 2520626795
     0x96408d49: "lacingt4_5", // 2520812873
+    0x9641b184: "mediumchest_firstlightexp_mutt1_owb", // 2520887684
     0x964234fe: "invasionrewardcontainerrarity1lowl55", // 2520921342
     0x96440a96: "1hgauntletice_crystalfloet5_v2", // 2521041558
     0x964462e1: "mediumlegs_leatherdropt2", // 2521064161
@@ -25225,6 +25677,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9649e994: "skin_feet_oct2023_seanceheavy", // 2521426324
     0x964a80b2: "skin_warhammer_turkeyterror2023_box", // 2521465010
     0x964a9dc9: "earring_pvp_namedt3", // 2521472457
+    0x964bc49d: "rapier_etherealt4_s1e", // 2521547933
     0x964cc85d: "playtest_box_armor_scholar_t5_585", // 2521614429
     0x964ee8df: "mediumchest_syndicaterank6_2_scholar", // 2521753823
     0x964f0521: "rewardcontainerancientl18", // 2521761057
@@ -25296,6 +25749,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x96b4365c: "1hgauntletice_marauderrank4_v2", // 2528392796
     0x96b4f953: "lightfeet_marauderrank3_brigand", // 2528442707
     0x96b5473b: "omega_blunderbuss_damage", // 2528462651
+    0x96b607d9: "amuletdropt4_s8item", // 2528511961
     0x96b74449: "omega_lightfeet_ranger_pvp", // 2528592969
     0x96b82a64: "2hmusketancientt4", // 2528651876
     0x96bb3846: "lightchest_summert5_int", // 2528852038
@@ -25328,6 +25782,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x96df2b86: "lightlegs_lostelite1t4", // 2531208070
     0x96e40800: "omega_heavyhead_sentry_612", // 2531526656
     0x96e4a000: "mediumfeet_drop_s1_t5", // 2531565568
+    0x96e50a29: "playtest_box_heartgem_runes_t4", // 2531592745
+    0x96e5241b: "mediumfeet_mushroomwanders", // 2531599387
     0x96e807c9: "scarab_int_medium_phy_legst5", // 2531788745
     0x96e966e2: "0230_0203_mccoysweapondesigns", // 2531878626
     0x96eb4b89: "pattern_dryads_roundshield", // 2532002697
@@ -25412,6 +25868,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9768a9dd: "fm_hunt_item_5_06", // 2540218845
     0x976aec14: "crx_questreward_mb_side_greatsword", // 2540366868
     0x9770518c: "skin_maestrohat", // 2540720524
+    0x9770dbd0: "heavyhead_etherealt2_s1e", // 2540755920
     0x9770ed2b: "heavyhead_angryearthelite1t4", // 2540760363
     0x97721fe1: "1hkshield_knighterrantt4", // 2540838881
     0x9772f1a4: "amulet_apexdoubloonshopt5", // 2540892580
@@ -25428,6 +25885,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x97832325: "fm_loot_item_13_06", // 2541953829
     0x97848239: "heavyhands_corruptedelite1t5", // 2542043705
     0x9788032b: "1hgauntleticedropt5_inferno_leg", // 2542273323
+    0x97883d49: "amulett5_fl_xp_mut_owb", // 2542288201
     0x978e0e65: "baitsaltcheeset1", // 2542669413
     0x978e3c59: "1hflail_syndicaterank6_2", // 2542681177
     0x9791db14: "empressweapon", // 2542918420
@@ -25440,6 +25898,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x97980469: "omega_blunderbuss_612", // 2543322217
     0x97997440: "2hspear_longarmofthelawt2", // 2543416384
     0x979aa389: "lightfeet_summer600t5_foc", // 2543494025
+    0x979bb1b2: "flxpac_amulett5_bs_mut_owb", // 2543563186
     0x979c3771: "playtest_stafflife_dmg_t5_675_runeglass1", // 2543597425
     0x979dc365: "fm_loot_item_28_09", // 2543698789
     0x979fd02b: "heavylegs_crafteddungeon11t5", // 2543833131
@@ -25500,6 +25959,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x97f6fc1e: "2hmusket_corruptedheartshott5_v2", // 2549546014
     0x97f9bdd5: "1hrapier_sleightofhandt5_v2", // 2549726677
     0x97fa5c6c: "playtest_intdps_earring_t5_725", // 2549767276
+    0x97fae4fd: "conquerorsitem_rapier_hastewhenfacingtarget_s1e", // 2549802237
     0x97faf0e3: "fm_loot_item_6_12", // 2549805283
     0x97fafbec: "peppercornt1", // 2549808108
     0x97fbee98: "omega_box_armor_scholar_heavy", // 2549870232
@@ -25520,6 +25980,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x980f3be9: "2hblunderbuss_earthboundpiecet5_v2", // 2551135209
     0x980f4493: "2hlifestaff_hatcherywepmog", // 2551137427
     0x9810760a: "omega_spear_625", // 2551215626
+    0x98117e4c: "conquerorsitem_heavylegs_swarmarmor_s1e", // 2551283276
     0x9811e366: "flxpac_1hflail_depths_mutt5", // 2551309158
     0x98132404: "mediumhead_empyrean_mutt5", // 2551391236
     0x98135703: "scarab_str_1hflailt52", // 2551404291
@@ -25534,6 +25995,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x981e112b: "skin_chest_rank1_lbclear_lazarusinstrumentality", // 2552107307
     0x981e32fe: "heavyfeet_corrupted2t4", // 2552115966
     0x981e43bb: "heavylegs_summert5_str", // 2552120251
+    0x981ed9ce: "skin_chest_s8_rank1_lbscore_depths", // 2552158670
     0x9820c1f8: "omega_lighthands_sage_615", // 2552283640
     0x9820fc51: "omega_heavylegs_sage_pvp", // 2552298577
     0x9823724a: "playtest_greatsword_dmg_t5_700", // 2552459850
@@ -25550,6 +26012,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x983472ee: "wallgatet3", // 2553574126
     0x9835faa1: "scarab_int_medium_phy_feett5", // 2553674401
     0x9836cfd7: "1hrapier_adianasfuryt5_v2", // 2553728983
+    0x9837e1ad: "flxpac_heavychest_barnacles_mutt5_owb", // 2553799085
     0x983ae99c: "2hgreataxe_eternal_mutt5", // 2553997724
     0x9842ed29: "fm_loot_item_c_6_15", // 2554522921
     0x98433f98: "heavychest_blazingbreastplatet5", // 2554544024
@@ -25619,6 +26082,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x989a53f2: "2hstafflife_staffofsplendort2", // 2560250866
     0x989c8674: "bountymagict7", // 2560394868
     0x989c8f8c: "ringtopazt3", // 2560397196
+    0x989c9e5b: "1hsword_worldevent_s1_t5_v3", // 2560400987
     0x989d627b: "rewardpostcapfishingt2", // 2560451195
     0x98a0627b: "1hgauntletice_covenantrank3_v2", // 2560647803
     0x98a3f48f: "omega_box_armor_sage_medium", // 2560881807
@@ -25662,6 +26126,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x98de3b22: "mediumfeetct5", // 2564700962
     0x98dfbb53: "bundle_umbralshard_500", // 2564799315
     0x98e3cf51: "omega_mediumhands_soldier_607", // 2565066577
+    0x98e3dbb6: "lightchest_mushroomwanders", // 2565069750
     0x98e6bf31: "lightlegs_dynastyshipyard_mutt5", // 2565259057
     0x98e73022: "chefcharmt2", // 2565287970
     0x98e7aae4: "fm_loot_item_22_10", // 2565319396
@@ -25752,6 +26217,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x99543120: "2hblunderbuss_cavecrawlert4_v2", // 2572431648
     0x9954c5d2: "1hrshield_marauderrank4_v2", // 2572469714
     0x99564b89: "lighthead_spring_roae", // 2572569481
+    0x9958bf0e: "skin_gloves_syndff2025", // 2572730126
     0x9959fec9: "2hstafffire_staffoftheashwoodst4_v2", // 2572811977
     0x995a857e: "2hgreataxe_corruptedbruteswaraxet3_v2", // 2572846462
     0x995cec1c: "skin_head_medievalhistoric_twitch01", // 2573003804
@@ -25948,6 +26414,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9a7873e4: "beachpickup_ww_lifestaff", // 2591585252
     0x9a7be61d: "2hbow_soulofthestormt3_v2", // 2591811101
     0x9a830f9a: "heavyfeet_or1t5", // 2592280474
+    0x9a85c1f5: "flxpac_amulett5_ds_mut_owb", // 2592457205
     0x9a860190: "1432_0102_belongingstrail", // 2592473488
     0x9a86789a: "firstaidsuppliest4", // 2592503962
     0x9a87c9c7: "omega_box_armor_sentry_612_heavy", // 2592590279
@@ -26175,6 +26642,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9bac7ad8: "schematic_house_housingitem_chair_legion_stool_b", // 2611772120
     0x9badec92: "questreward_armorbox_protectivewyrd", // 2611866770
     0x9bae579f: "clothinghands_lumberjackt52", // 2611894175
+    0x9baffaad: "lightchest_spring_gs715", // 2612001453
     0x9bb0cea4: "mediumfeet_pvp_prestige600t5", // 2612055716
     0x9bb0e930: "ring_breacht5", // 2612062512
     0x9bb25503: "playtest_ring_soldier_t5_650", // 2612155651
@@ -26316,6 +26784,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9c6e27fe: "dyes1_box_s7", // 2624464894
     0x9c71147a: "lighthead_elitepoi_firstlightrevampbeastt5_v2", // 2624656506
     0x9c723184: "heavychest_invasion1t4", // 2624729476
+    0x9c730ec0: "amuletdropt3_s8item", // 2624786112
     0x9c73a989: "flxpac_lighthead_d_mutextra_t5", // 2624825737
     0x9c753172: "skin_chest_bfnw2gladiator", // 2624926066
     0x9c75b49f: "playtest_ring_sentry_t4", // 2624959647
@@ -26384,6 +26853,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9cd0823d: "omega_lighthead_sentry_500", // 2630910525
     0x9cd0a680: "1hflail_named1_t4", // 2630919808
     0x9cd24225: "0603_0201_coarsewolfhairs", // 2631025189
+    0x9cd2ade3: "2hloggingaxefuryofthespriggant5", // 2631052771
     0x9cd580a9: "skin_mysticarchetypelegs", // 2631237801
     0x9cd5d4a4: "fm_loot_item_s_29_03", // 2631259300
     0x9cd68b48: "mediumhands_spring_gs700", // 2631306056
@@ -26527,6 +26997,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9db16164: "keymat_foxfire", // 2645647716
     0x9db3aa29: "lightlegs_summer600t5_con", // 2645797417
     0x9db45bcc: "amuletpearlt5", // 2645842892
+    0x9db4f1c7: "skin_chest_s8_rank2_lb_sirenqueen", // 2645881287
     0x9db5591d: "1hrapier_fleshneedlet3", // 2645907741
     0x9db955ea: "2hgreataxe_bunyant5_v2", // 2646169066
     0x9db9c558: "arcaneresearchnotest3", // 2646197592
@@ -26551,10 +27022,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9dccc0de: "femheavyfeet_t5_guaranteerare", // 2647441630
     0x9dcdccd5: "playtest_strdps_warhammer_t5_725", // 2647510229
     0x9dcdd86c: "1hwandoffenset1", // 2647513196
+    0x9dce86e9: "flxpac_mediumfeet_barnacles_mutt5_owb", // 2647557865
     0x9dd0eb6f: "lightlegs_drownedelite1t5", // 2647714671
     0x9dd0f394: "lighthead_ancientelite1t5", // 2647716756
     0x9dd12656: "playtest_heavyhands_sentry_t5_650", // 2647729750
     0x9dd13c61: "1hrapier_winter_str_600", // 2647735393
+    0x9dd2d316: "skin_chest_s8_rank2_lbclear_lazarusinstrumentality", // 2647839510
     0x9dd71469: "skin_soldierarchetypehead", // 2648118377
     0x9dd72fbc: "99b_msq_06_mementoa", // 2648125372
     0x9dd82c6c: "heavyfeet_bovinebootst5_v2", // 2648190060
@@ -26565,6 +27038,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9ddf0455: "2hstafffire_voidburnedspellstafft3_v2", // 2648638549
     0x9de20496: "0831_0109_taintedwyrdcoal", // 2648835222
     0x9de30562: "playtest_mediumfeet_scholar_t5", // 2648900962
+    0x9de35643: "conquerorsitem_hatchet_dodgecorruptionball_s1e", // 2648921667
     0x9de4208f: "corrupted_first_mate_2hanchor", // 2648973455
     0x9de423e0: "questreward_armorbox_shroudedintent", // 2648974304
     0x9de5569f: "amulet_greenswardent4_v2", // 2649052831
@@ -26580,6 +27054,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9df5c0da: "runeglass_gem_opal_fire", // 2650128602
     0x9df8d046: "2hgreatsword_syncretic", // 2650329158
     0x9dfaeac9: "potionfamilywardangryeartht5", // 2650467017
+    0x9dfe3023: "lightfeet_worldevent_s1_t5_v3", // 2650681379
     0x9dff0cd1: "2hstafffirecrafteddungeon9t5", // 2650737873
     0x9dff9a56: "0812_0101_captainspuzzlebox", // 2650774102
     0x9e002fc7: "2hspear_spearofthegreathuntt4", // 2650812359
@@ -26611,6 +27086,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9e27c772: "lightchest_hercyneraid_craftedschematic", // 2653407090
     0x9e2968d2: "2hwarhammer_d_mutextra_t5", // 2653513938
     0x9e2970be: "runecannonblastt2", // 2653515966
+    0x9e2ac33c: "lightfeet_etherealt3_s1e", // 2653602620
     0x9e2b8f4e: "fm_loot_item_28_05", // 2653654862
     0x9e2d5e8c: "mediumchest_marauderrank5_occultist", // 2653773452
     0x9e30d45e: "foodlostt1", // 2654000222
@@ -26737,6 +27213,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9ef573af: "lighthead_trial_s5_namedt5", // 2666886063
     0x9ef643ce: "omega_gauntletvoid_607", // 2666939342
     0x9efa15a0: "flxpac_mediumchest_lazarus_mutt5", // 2667189664
+    0x9efc749e: "flxpac_mediumfeet_empyrean_mutt5_owb", // 2667345054
     0x9f019887: "summermedley_powerfulethervial", // 2667681927
     0x9f041d66: "1333_ancientstonesample", // 2667847014
     0x9f062823: "2hwarhammer_thedarkmault5_v2", // 2667980835
@@ -26811,6 +27288,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9f768c41: "heavyhands_blackknightsgauntletst5", // 2675346497
     0x9f77ea47: "2hstafffire_mnevinstafft5", // 2675436103
     0x9f787651: "2hgreataxe_trial_s2_t5_v2", // 2675471953
+    0x9f78ccfb: "lighthead_etherealt3_s1e", // 2675494139
     0x9f7b02ea: "questreward_wf_side_ring", // 2675639018
     0x9f7d75e3: "mediumfeet_shroudedintentbootst4", // 2675799523
     0x9f7fe500: "scarab_str_light_ele_feet_clotht5", // 2675959040
@@ -26875,6 +27353,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0x9fd0084f: "fishingtadpolessmallt2", // 2681210959
     0x9fd03a57: "lighthands_marauderrank3_scholar_v2", // 2681223767
     0x9fd152af: "1127_primesteak", // 2681295535
+    0x9fd3600c: "mountst3_s8", // 2681430028
     0x9fd3d14e: "2htowershield_tempestuoustshieldt5", // 2681459022
     0x9fd520af: "artifact_set2_lightfeet", // 2681544879
     0x9fdd3f1e: "omega_ring_ranger_610_4", // 2682076958
@@ -26935,6 +27414,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa03123cf: "mi_navigationcompass_8", // 2687574991
     0xa032505c: "lighthands_syndicaterank1_cleric", // 2687651932
     0xa03552d8: "playtest_dexdps_lightlegs_t5_725", // 2687849176
+    0xa038176e: "skin_legs_maraff2025", // 2688030574
     0xa03a2b1f: "itempattern_mediumfeet_lostraidert5", // 2688166687
     0xa03aeacd: "heavyfeet_elitepoi_harbingerrobest5_v2", // 2688215757
     0xa03bea74: "ck_d7_roundshield_t5", // 2688281204
@@ -27040,6 +27520,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa0c25cb5: "2helementalstaff_fire_winter_str", // 2697092277
     0xa0c2cba3: "mediumhead_syndicaterank3_barbarian", // 2697120675
     0xa0c32047: "shard_all_rapiert52", // 2697142343
+    0xa0c4a8ab: "conquerorsitem_greataxe_dodgesuppressant_s1e", // 2697242795
+    0xa0c64822: "entdisplay_dye_sublimebone", // 2697349154
     0xa0c75edb: "05_secret_orders", // 2697420507
     0xa0c7cfe5: "rewardcontainerswampbeastl11", // 2697449445
     0xa0c914b0: "skin_chest_season3basic", // 2697532592
@@ -27064,6 +27546,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa0eb5313: "lightchest_syndicaterank1_sage_v2", // 2699776787
     0xa0eceab7: "fm_loot_item_c_7_06", // 2699881143
     0xa0ed1da0: "heavyfeet_covenantt4a", // 2699894176
+    0xa0ed2c56: "greenguffint5_s8", // 2699897942
     0xa0eef92a: "bagbt5", // 2700015914
     0xa0f00d91: "skin_legs_silentdeath_m", // 2700086673
     0xa0f174f1: "2hmusketdungeon1t3", // 2700178673
@@ -27092,6 +27575,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa12c2754: "schematic_house_housingitem_chair_settler_chair01_c", // 2704025428
     0xa12dbd16: "warrewardcontainerl60", // 2704129302
     0xa12f1a4f: "doublooncratechest_700", // 2704218703
+    0xa1328570: "skin_legs_season8seasonalserver_box", // 2704442736
     0xa132a08f: "flxpac_heavylegs_lazarus_mutt5", // 2704449679
     0xa133ee8c: "onyxt2", // 2704535180
     0xa1348897: "lightlegs_spring_600_str", // 2704574615
@@ -27156,6 +27640,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa1a149e7: "pattern_sprigganbane_medium_boots", // 2711701991
     0xa1a44cc8: "mediumfeet_hollyking_dex", // 2711899336
     0xa1a558d3: "omega_mediumhands_soldier_610_2", // 2711967955
+    0xa1a5a983: "skin_2hfirestaff_season8pass", // 2711988611
     0xa1a7f830: "moonstonet3", // 2712139824
     0xa1a8ba73: "lightchest_lieutenantsshirt", // 2712189555
     0xa1aa0e8a: "mediumchest_syndicaterank6_2_soldier", // 2712276618
@@ -27229,8 +27714,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa1ff5dce: "crx_lightlegs_sandworm_trial", // 2717867470
     0xa1ffe19d: "omega_earring_soldier_605", // 2717901213
     0xa20084f8: "crx_itempattern_mediumfeet_sprigganbane", // 2717943032
+    0xa2014150: "runespinningswordst3a", // 2717991248
     0xa2038eb1: "schematichercyne_mediumlegs", // 2718142129
     0xa2046956: "playtest_box_armor_ranger_t5_585", // 2718198102
+    0xa2055741: "tskillleveling4_s8", // 2718259009
     0xa2056108: "dyea044", // 2718261512
     0xa207a5ba: "heavyfeet_marauderrank2", // 2718410170
     0xa2098e4e: "1hthrowingaxedropt5_inferno", // 2718535246
@@ -27240,6 +27727,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa20fc978: "corruptedclotht1", // 2718943608
     0xa2112ae9: "lightchest_clotht4", // 2719034089
     0xa2129671: "lightlegs_summert5_con", // 2719127153
+    0xa218e54b: "lighthead_etherealt2_s1e", // 2719540555
     0xa2195143: "dyeb105", // 2719568195
     0xa219620d: "artifact_set1_mediumhands", // 2719572493
     0xa21a978c: "2hgreataxe_journeymansmithsbattleaxet2_v2", // 2719651724
@@ -27398,6 +27886,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa31690c6: "skin_monster_mummyhead", // 2736165062
     0xa317eb41: "mediumfeet_syndicaterank3_soldier_v2", // 2736253761
     0xa3181a7f: "playtest_box_armor_sage_t5_625_medium", // 2736265855
+    0xa31d10ea: "weaponst4_s8", // 2736591082
     0xa31d892b: "mediumhead_covenantrank5_ranger_v2", // 2736621867
     0xa3225150: "skin_season7passapparel1_chest", // 2736935248
     0xa324f99e: "2hstafflifecorruptedt5", // 2737109406
@@ -27405,6 +27894,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa3283e83: "2hwarhammer_syndicatealchemistswarhammert5", // 2737323651
     0xa32840a9: "kt_ancient_tower_40218_mi_forlornlocket", // 2737324201
     0xa32a104f: "2hgreatsworddropt5_inferno", // 2737442895
+    0xa32a25e5: "flxpac_mediumhands_dynastyshipyard_mutt5_owb", // 2737448421
     0xa32a7b56: "flxpac_1htowershield_d_mutextra_t5", // 2737470294
     0xa32cc62f: "heavyfeet_platedropt5_foc_inferno", // 2737620527
     0xa32d5748: "heavylegs_syndicaterank6_soldier", // 2737657672
@@ -27419,6 +27909,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa33ae82c: "fm_loot_item_s_7_06", // 2738546732
     0xa33bf105: "2hstafffire_sqrewardshatteredt5", // 2738614533
     0xa33c446a: "fetch_withered_farm_3_mi_homunculitalisman", // 2738635882
+    0xa33d528a: "combatconsumablest4_s8", // 2738705034
     0xa33fad14: "shard_icegauntlet", // 2738859284
     0xa33fc5f1: "rewardpostcaparmoringt2", // 2738865649
     0xa341bd74: "playtest_box_perks_weapon1", // 2738994548
@@ -27427,6 +27918,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa342cf4e: "shard_foc_ringcarneliant5", // 2739064654
     0xa34348ae: "lightchest_covenantrank1_ranger_v2", // 2739095726
     0xa3453999: "2hspear_ancienttidingst5_v2", // 2739222937
+    0xa34aea8c: "lightfeet_etherealt2_s1e", // 2739595916
     0xa34b653d: "kt_abandoned_farm_village_40303_mi_corruptedkeepsake", // 2739627325
     0xa34c0d49: "playtest_lightfeet_sentry_t2", // 2739670345
     0xa34e1371: "2hstafflife_stormcallert4", // 2739802993
@@ -27452,6 +27944,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa3787359: "1hrapier_thebackstabbert3_v2", // 2742580057
     0xa37b31ed: "crx_2hspear_azothimbuedspeart5_v3", // 2742759917
     0xa37ba3c9: "skin_1hroundshield_aeternumtrials_g", // 2742789065
+    0xa37bd57f: "flxpac_heavyhead_dynastyshipyard_mutt5_owb", // 2742801791
     0xa37c2651: "fm_loot_item_c_13_06", // 2742822481
     0xa37c7672: "scarab_con_1hflailt5", // 2742842994
     0xa37d4888: "or_turretballista", // 2742896776
@@ -27585,6 +28078,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa46269a4: "omega_lightchest_soldier_625", // 2757912996
     0xa4641a85: "c10a_q1_ticket_a", // 2758023813
     0xa464a89e: "heavychest_elitepoi_harbingerrobest5", // 2758060190
+    0xa465b5f5: "flxpac_2hblunderbuss_dynastyshipyard_mutt5_owb", // 2758129141
     0xa4660094: "playtest_raidtank_ring_t5_725", // 2758148244
     0xa46830ec: "fm_hunt_item_7_05", // 2758291692
     0xa4683a86: "schematic_house_housingitem_dynasty_cabinet02_d", // 2758294150
@@ -27614,6 +28108,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa48aa401: "fm_hunt_item_16_08", // 2760549377
     0xa48c9623: "2hstafflife_stormlightt3_v2", // 2760676899
     0xa48d8d45: "ring_pvp_namedt5", // 2760740165
+    0xa48dc724: "campskin_silentdeath01_a_pvp", // 2760754980
     0xa48ecd30: "2hspearpvpdropt5", // 2760822064
     0xa48fcd74: "mediumchest_leatherdropt5_dex_inferno_leg", // 2760887668
     0xa4936f44: "heavychest_covenantrank3_scholar_v2", // 2761125700
@@ -27768,6 +28263,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa55be61b: "heavychest_platedropt5_dex_sandstorm_leg", // 2774263323
     0xa55d11fd: "2hbow_nameddryadsbowofthedryadanddryadt4_v2", // 2774340093
     0xa563436c: "omega_amulet_scholar_612", // 2774745964
+    0xa563a252: "combat_box_s8", // 2774770258
     0xa5653d9f: "playtest_ranger_spear_t5_625", // 2774875551
     0xa565c764: "proficiencyboostert3", // 2774910820
     0xa5672127: "downlane_drums_part1_page1", // 2774999335
@@ -27784,6 +28280,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa56dda49: "0718_0102_corruptessence", // 2775439945
     0xa56e138b: "darknessrewardcontainerminor1l48", // 2775454603
     0xa570ae24: "entdisplay_skin_2hvoidgauntletseason5passt5", // 2775625252
+    0xa572f352: "skin_head_syndff2025", // 2775774034
     0xa574955a: "dyeb101", // 2775881050
     0xa575b373: "lighthead_bramblehelmt5_v2", // 2775954291
     0xa577f4eb: "itempattern_2hgreataxeoutpostrusht5", // 2776102123
@@ -27905,6 +28402,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa627f4c5: "ringintt2", // 2787636421
     0xa6284355: "crx_msq2er_mediumhelmet", // 2787656533
     0xa62b02ff: "heavyhead_crafteddungeon1t3", // 2787836671
+    0xa62be00a: "conquerorsitem_blunderbuss_onehitkill_s1e", // 2787893258
     0xa62d51ef: "legion_crassus_1hspear", // 2787987951
     0xa62e84df: "schematic_house_housingitem_dynasty_cabinet01_d", // 2788066527
     0xa62eb7f5: "feet_demonhunter3t5", // 2788079605
@@ -27957,12 +28455,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa6729aaf: "skin_2hazothscepteracademyofhecatet5", // 2792528559
     0xa6736ed0: "skin_chest_s5_rank1_lbclear_crystalclaw", // 2792582864
     0xa6740ff7: "lightfeet_covenantrank6_ranger", // 2792624119
+    0xa677389c: "heartrunest51_s8", // 2792831132
     0xa67812e6: "dungeonshattermtn00_chest02", // 2792887014
     0xa678633b: "schematic_house_housingitem_dynasty_decor_table_dishes04", // 2792907579
     0xa67893c8: "crx_reward_mediumancientt2_chest", // 2792920008
     0xa678bfdc: "lightlegs_worldevent_s1_t5_v2", // 2792931292
     0xa6799c95: "lightlegs_silkylegguardst5_v2", // 2792987797
     0xa67ae9b8: "earringt5_artemisboon_v2", // 2793073080
+    0xa67b19a3: "redguffint4_s8", // 2793085347
     0xa67c4fe5: "2hblunderbuss_covenantrank5_v2", // 2793164773
     0xa67db901: "2hstafffire_joanssoulfiretorcht3_v2", // 2793257217
     0xa67de1fe: "fm_loot_item_s_10_03", // 2793267710
@@ -28005,6 +28505,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa6ad4c4e: "heavyhands_summert5_foc", // 2796375118
     0xa6af64ee: "jaspercutt4", // 2796512494
     0xa6b08ab8: "heavyhead_elitepoi_avengingblacksmitht5", // 2796587704
+    0xa6b0929f: "skin_chest_s8_rank2_lb_darkness", // 2796589727
     0xa6b358dc: "intconbonust1", // 2796771548
     0xa6b3f875: "2hbow_maraudergroundbreakersbowt3", // 2796812405
     0xa6bac0fc: "crx_reward_heavytemplet5_feet", // 2797256956
@@ -28016,6 +28517,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa6bedc0f: "amuletopalt5", // 2797526031
     0xa6c02f71: "rabbitseasontotem", // 2797612913
     0xa6c05288: "artifact_nhnewweapongreatswordt5", // 2797621896
+    0xa6c748a5: "anyartifactcraftingmat", // 2798078117
     0xa6c74912: "recipe_foodstrdext3", // 2798078226
     0xa6c7a5e3: "2hstafflife_taiyingshopet5_v2", // 2798101987
     0xa6c87f72: "omega_mediumhands_ranger_605_2", // 2798157682
@@ -28074,6 +28576,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa7022e76: "lightfeet_bb_boss_mutt5_600", // 2801938038
     0xa702be33: "2hblunderbuss_energizert4_v2", // 2801974835
     0xa70442f2: "skin_chest_rimaaic", // 2802074354
+    0xa7048119: "conquerorsitem_heavychest_holyshield_blocking_s1e", // 2802090265
     0xa7055ccc: "mediumlegs_lost1t5", // 2802146508
     0xa70e8874: "damnfish_guitar_part3_page1", // 2802747508
     0xa711faa2: "mountbuff_empoweredt2", // 2802973346
@@ -28137,6 +28640,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa75a273d: "crx_mediumhead_arenaswampbeast", // 2807703357
     0xa75a866d: "playtest_lightchest_scholar_t5_650", // 2807727725
     0xa75da6e6: "mediumhands_deepriver", // 2807932646
+    0xa75de04f: "entdisplay_dye_smolderingscarlet", // 2807947343
     0xa75e27b4: "omega_lightlegs_scholar_600", // 2807965620
     0xa75f1d8b: "shard_con_heavy_bal_handst5", // 2808028555
     0xa76417cc: "mediumfeet_fur_siege_s7", // 2808354764
@@ -28170,6 +28674,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa78cab75: "pattern_war_mediumhands", // 2811014005
     0xa78d4d0a: "0318_0205_vinesnapheart", // 2811055370
     0xa7908b74: "1hlongsword_symbiotesbrandt4_v2", // 2811267956
+    0xa792352f: "skin_2hskinningknife_season8pass", // 2811376943
     0xa792e1e6: "1hgauntletvoid_darkfeastt5", // 2811421158
     0xa7937b4a: "bot_killradius_predator", // 2811460426
     0xa795609c: "2hmusketpvpreplicat2", // 2811584668
@@ -28340,6 +28845,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xa89d3a17: "crx_heavyfeet_siren", // 2828876311
     0xa89d4261: "lighthead_clothpvpreplicat4", // 2828878433
     0xa89e5469: "2hspear_pikeofthegrandduelistt4", // 2828948585
+    0xa89f199f: "campskin_valkyrie_a_pvp", // 2828999071
     0xa8a1a191: "2hstafflife_oasisoflife_s7", // 2829164945
     0xa8a20ed4: "amulett3_solafidetoken_v2", // 2829192916
     0xa8a37282: "2hspear_callousjavelint5", // 2829283970
@@ -28563,6 +29069,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xaa0a8309: "2hgreataxe_maraudersunderersgreataxet4a", // 2852815625
     0xaa10ddce: "playtest_occultist_gauntletice_t5_700", // 2853232078
     0xaa10e26a: "99e_msq_02_creagcrystala", // 2853233258
+    0xaa10f260: "heavyhead_etherealt3_s1e", // 2853237344
     0xaa110c82: "amulett5_cleansingpod", // 2853244034
     0xaa11fe0f: "1hlongsword_wardenofthewildst5_v2", // 2853305871
     0xaa134cee: "1hgauntletvoid_worldeventpve_s7", // 2853391598
@@ -28659,6 +29166,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xaaadc9a0: "1hlongsword_guardianscharget5_v2", // 2863516064
     0xaab509af: "omega_heavyhead_soldier_625", // 2863991215
     0xaab70b36: "rewardcontainerswampbeastl40", // 2864122678
+    0xaab8c04f: "perkitem_armor_lifestealhealing", // 2864234575
     0xaaba732c: "shard_dex_earringtopazt5", // 2864345900
     0xaabe5c38: "heavyhead_covenantrank1", // 2864602168
     0xaabe6381: "perfectsalvage_medium_ele_chestt5", // 2864604033
@@ -28732,6 +29240,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xab28b8e4: "playtest_box_weapons_tank_t5_700", // 2871572708
     0xab28c079: "omega_lighthands_scholar_622_2", // 2871574649
     0xab28da2c: "itempattern_obeliskpriests_robe", // 2871581228
+    0xab2bed2d: "rapier_etherealt5_s1e", // 2871782701
     0xab2d33e7: "ringdropt5_int_sandstorm_leg", // 2871866343
     0xab309a5c: "skin_blunderbuss_firstlightseason", // 2872089180
     0xab312e1d: "99a_msq_14b_yeticaveitem", // 2872127005
@@ -28741,6 +29250,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xab3ea352: "1hflail_syndicaterank3_v2", // 2873008978
     0xab415d89: "mi_fleam", // 2873187721
     0xab41de38: "itempattern_graverobbers_lifestaff", // 2873220664
+    0xab42fda7: "heavyfeet_etherealt3_s1e", // 2873294247
     0xab44939f: "2hgreatsworddungeon10t5", // 2873398175
     0xab44a4df: "amuletstrfoct5", // 2873402591
     0xab44d602: "topazt3", // 2873415170
@@ -28805,6 +29315,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xab8a2d7a: "questrewardweaponsl15", // 2877959546
     0xab8a8f8e: "2hgreataxe_covenantrank1", // 2877984654
     0xab8bc28b: "1hrapierdropt2", // 2878063243
+    0xab8c07b2: "or_platform", // 2878080946
     0xab8ca6a8: "corruptedskin", // 2878121640
     0xab8e1984: "skin_occultistarchetypechest", // 2878216580
     0xab8e4745: "2hgreataxe_syncretic", // 2878228293
@@ -28835,6 +29346,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xabaaf774: "mediumlegs_leatherdropt5_dex_sandstorm_leg", // 2880108404
     0xabaf1d68: "dyeb109", // 2880380264
     0xabb0ed27: "heavychest_sandworm_trial_t5", // 2880498983
+    0xabb23042: "yellowguffint5_s8", // 2880581698
     0xabb32cdb: "heavyfeetbeastelitet5", // 2880646363
     0xabb32d23: "dyea048", // 2880646435
     0xabb3403c: "claimt1_25m_t5", // 2880651324
@@ -28856,6 +29368,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xabc472ce: "bot_apply10percentdamage", // 2881778382
     0xabc65cef: "95a_s02_voicesofthedesert_song_workorder", // 2881903855
     0xabc66e24: "artifact_nhweaponbowt5", // 2881908260
+    0xabc67306: "skin_gloves_maraff2025_box", // 2881909510
     0xabc7ff1f: "questreward_mb_side07_heavyfeett2", // 2882010911
     0xabc91460: "clawt1", // 2882081888
     0xabc9b10a: "omega_ring_soldier_620_2", // 2882121994
@@ -28894,6 +29407,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xabf75c29: "twitchgenericcache3_container", // 2885114921
     0xabf8ab66: "mediumhead_leatherdropt5_foc_sandstorm_leg", // 2885200742
     0xabf8cc13: "playtest_heavyhead_soldier_t5_585", // 2885209107
+    0xabfb61e3: "cutgemst4_s8", // 2885378531
     0xabfe6f0a: "artifact_nhnewweaponblunderbusst5", // 2885578506
     0xac01ae55: "0831_0103_hardironwoodplank", // 2885791317
     0xac02347b: "fm_hunt_item_6", // 2885825659
@@ -29041,6 +29555,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xace97f52: "mediumhead_summernewt5", // 2900983634
     0xaceb4a30: "lighthead_marauderrank2_barbarian", // 2901101104
     0xaced18d0: "1hflail_named128_t5", // 2901219536
+    0xaceef0ce: "warhammer_etherealt3_s1e", // 2901340366
     0xacf0d576: "heavyhead_covenantrank3_occultist", // 2901464438
     0xacf1343b: "heavychest_syndicaterank3_occultist", // 2901488699
     0xacf1670f: "lighthands_syndicaterank5_scholar_v2", // 2901501711
@@ -29056,6 +29571,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xacff14b7: "heavyhead_marauderrank2_occultist", // 2902398135
     0xad0273e1: "omega_ring_soldier_625_2", // 2902619105
     0xad041edb: "crx_reward_heavyancientt2_chest", // 2902728411
+    0xad0972ca: "campt3_pvp", // 2903077578
     0xad0db5e7: "playtest_lightlegs_soldier_t3", // 2903356903
     0xad0dbb1b: "playtest_box_trophies_t1", // 2903358235
     0xad0e285b: "mediumhands_leatherdropt5_foc_inferno_leg", // 2903386203
@@ -29228,6 +29744,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xae0c33f7: "1hsword_worldeventpve_s2_t5", // 2920035319
     0xae0ddb20: "spiderfanglostt1", // 2920143648
     0xae0e55b7: "dyea043_mounts", // 2920175031
+    0xae0f8a56: "skin_chest_s8_rank1_lbscore_starstone", // 2920254038
     0xae131548: "1hthrowingaxe_bonechoppert5_v2", // 2920486216
     0xae132411: "omega_box_fullset_605", // 2920490001
     0xae140379: "fm_loot_item_c_14_09", // 2920547193
@@ -29355,6 +29872,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xaec900bf: "rewardcontainerangryearthl40", // 2932408511
     0xaecea347: "ringt3_thevalianceroseband", // 2932777799
     0xaecef925: "playtest_tank_flail_t5_625", // 2932799781
+    0xaecfe52f: "skin_mtx_greek_gods_feet", // 2932860207
     0xaed0010e: "2hspeardropt5_sandstorm_leg", // 2932867342
     0xaed218e7: "2hstafflife_harbingerofduskt3", // 2933004519
     0xaed21b34: "flxpac_heavychest_nature_mutt5", // 2933005108
@@ -29368,6 +29886,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xaedcbca8: "playtest_healersupport_lighthands_t5_725", // 2933701800
     0xaedcd95d: "omega_lightlegs_sentry", // 2933709149
     0xaedcfd5a: "mediumlegs_leather_crassus_s7", // 2933718362
+    0xaede1c24: "miningpick_etherealt4_s1e", // 2933791780
     0xaedef3de: "scarab_str_heavyhands_platet52", // 2933847006
     0xaee0efd9: "pattern_femvictorianl_head_t2", // 2933977049
     0xaee1d1bb: "conquerorsitem_greatsword_crescentwave", // 2934034875
@@ -29381,6 +29900,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xaeecaa8f: "msq_shatteredobeliskitem", // 2934745743
     0xaeef39ca: "mediumhands_leatherpvpdropt4", // 2934913482
     0xaeef3f48: "2hstafflife_dyinglightt2", // 2934914888
+    0xaef05821: "skin_2hwarhammer_season8pass", // 2934986785
     0xaef08245: "mediumchest_drownedelite1t4", // 2934997573
     0xaef1d030: "1416_0201_profaneore", // 2935083056
     0xaef27275: "skin_voidgauntlet_wicked", // 2935124597
@@ -29396,6 +29916,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xaf03a664: "omega_ring_soldier_500_4", // 2936252004
     0xaf045189: "dyeb150", // 2936295817
     0xaf08093d: "heavylegs_ancient2t5", // 2936539453
+    0xaf09a551: "flxpac_heavyfeet_brimstonesands_mutt5_owb", // 2936644945
     0xaf09b0a8: "1hthrowingaxe_ultimateclarityt5_v2", // 2936647848
     0xaf0a212d: "heavylegs_platet2", // 2936676653
     0xaf0b373d: "harvestersdream_amulett5", // 2936747837
@@ -29540,12 +30061,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xafef8759: "2hspear_spearofthegreathuntt4_v2", // 2951710553
     0xafefb64e: "2hmusketgraverobbert4", // 2951722574
     0xaff03706: "playtest_lighthands_soldier_t4", // 2951755526
+    0xaff12c5a: "flxpac_heavyhead_barnacles_mutt5_owb", // 2951818330
     0xaff24403: "playtest_box_archetypemasterchest_t5_700", // 2951889923
     0xaff75c70: "lighthands_syndicaterank1_scholar_v2", // 2952223856
     0xaff7e219: "playtest_heavyfeet_ranger_t3", // 2952258073
     0xaff81b90: "mediumfeet_syndicaterank4", // 2952272784
     0xaff822e0: "2hmusket_thundersroart5", // 2952274656
     0xaff9b29a: "fm_loot_item_s_4_12", // 2952376986
+    0xaffa5d53: "flxpac_lighthands_dynastyshipyard_mutt5_owb", // 2952420691
     0xaffd2633: "omega_amulet_scholar", // 2952603187
     0xb000b6ec: "2hgreatsword_breathoftheskyt5_v2", // 2952836844
     0xb0016cef: "minercharmt1", // 2952883439
@@ -29563,7 +30086,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb0217cda: "mediumhands_bb_bossxpac_mutt5", // 2954984666
     0xb021af45: "skin_feet_nightmarestwitch", // 2954997573
     0xb022751c: "influencerewardcontainerl54", // 2955048220
+    0xb022f17e: "earringt5_fl_xp_mut_owb", // 2955080062
     0xb026a356: "mediumlegs_hollykingt4_shop", // 2955322198
+    0xb028f643: "entdisplay_skin_2hloggingaxe_season8pass", // 2955474499
     0xb02bf07f: "artifact_set1_earring2", // 2955669631
     0xb02ee146: "legendarycastgypsum_greataxe", // 2955862342
     0xb02fc8e8: "2hwarhammer_nightveil2024", // 2955921640
@@ -29643,6 +30168,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb09a72d2: "2hblunderbuss_mayhemt5", // 2962911954
     0xb09b2f12: "omega_amulet_sage_607", // 2962960146
     0xb09c52af: "playtest_box_armor_sage_t5_625_light", // 2963034799
+    0xb0a09012: "campskin_love01_a_pvp", // 2963312658
     0xb0a232ae: "2hmusket_crypticmessaget5", // 2963419822
     0xb0a2e425: "2hstafflife_maraudercommanderslifestafft5", // 2963465253
     0xb0a39e2a: "2hspear_renewedfaitht5_v2", // 2963512874
@@ -29663,6 +30189,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb0c5449b: "1hrapier_weightlesssabret5", // 2965718171
     0xb0c548fc: "1hkiteshield_heroicshieldt5", // 2965719292
     0xb0c57aad: "playtest_box_armor_soldier_t5_700_heavy", // 2965732013
+    0xb0c6ac46: "mediumhead_firstlightexp_mutt1_owb", // 2965810246
     0xb0c9cc1b: "2hgreataxe_lambslaughtert2_v2", // 2966015003
     0xb0cb816f: "lighthands_worldeventpve_s7", // 2966126959
     0xb0cce7d4: "heavychest_furlinedt5", // 2966218708
@@ -29731,6 +30258,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb1149692: "lightlegs_flxpac_crafteddungeon1t3", // 2970916498
     0xb116de2a: "2hgreataxe_worldevent_s1_t5_v2", // 2971065898
     0xb1196ec1: "schematichercyne_flail", // 2971233985
+    0xb11dfc3b: "capturetheflagrewardl63", // 2971532347
     0xb11eb34f: "mediumchest_syndicaterank3_cleric", // 2971579215
     0xb11f757d: "playtest_mage_lightlegs_t5_700", // 2971628925
     0xb1200d37: "playtest_box_armor_scholar_t5_585_heavy", // 2971667767
@@ -29821,6 +30349,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb19aad67: "heavychest_drop_s1_t5", // 2979704167
     0xb19bbbea: "gatherable_research_notes_harvesting_t3", // 2979773418
     0xb19ed69e: "darknessrewardcontainermajor2l1", // 2979976862
+    0xb19f5fc8: "skinningknife_etherealt2_s1e", // 2980011976
     0xb1a0b513: "lighthead_doomspeakershelmt5_v2", // 2980099347
     0xb1a0fd84: "1hgauntletvoid_covenantrank6", // 2980117892
     0xb1a1c7be: "heavychest_platedropt2", // 2980169662
@@ -29854,11 +30383,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb1cd2c43: "invasionrewardcontainerrarity2l31", // 2983013443
     0xb1d1208a: "flxpac_1htowershield_ice_mutt5", // 2983272586
     0xb1d2971f: "0411_0414_startstonediadem", // 2983368479
+    0xb1d339bd: "2hmusket_burnweavert5_v3", // 2983410109
     0xb1d49a6d: "factiontinctureblightt2", // 2983500397
     0xb1d60fa2: "skin_mtx_ronin_shinobi_head", // 2983595938
+    0xb1d66d3c: "skin_chest_s8_rank2_lbscore_depths", // 2983619900
     0xb1d73116: "2hspear_pvp_prestiget2", // 2983670038
     0xb1ddf7d2: "fm_loot_item_c_25_03", // 2984114130
     0xb1dfb4a5: "lighthead_flxpac_crafteddungeon5t4", // 2984228005
+    0xb1e2ad63: "skin_chest_s8_rank2_lbscore_brimstone", // 2984422755
     0xb1e2d578: "crx_earring_swampbeast", // 2984433016
     0xb1e4dd62: "1hrshield_spearturnersshieldt4", // 2984566114
     0xb1e58670: "mediumhead_leathert52", // 2984609392
@@ -29874,6 +30406,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb1f1e909: "playtest_healer_lighthands_t5_675", // 2985421065
     0xb1f301f3: "rewardpostcapfishingt3_b", // 2985492979
     0xb1f5df0c: "2hgreataxe_vinewrappedgreataxet2_v2", // 2985680652
+    0xb1f7e00b: "purpleguffint3_s8", // 2985811979
     0xb1fb4134: "doublooncratetrinkets_690cap", // 2986033460
     0xb1fb80c9: "mediumchest_elitepoi_spyt5", // 2986049737
     0xb1fc2d18: "secondcoming_guitar_part1_page2", // 2986093848
@@ -30018,6 +30551,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb2c2dbfe: "skin_mtx_ronin_deluxe_feet", // 2999114750
     0xb2c2dce3: "evil_knight_longsword", // 2999114979
     0xb2c41bfe: "voidsteelt1", // 2999196670
+    0xb2c73c31: "conquerorsitem_heavyhands_swarmarmor_s1e", // 2999401521
     0xb2c8272d: "artifact_nhnewweaponstafffiret5_gs675", // 2999461677
     0xb2c839c4: "2hwarhammersiren_st5", // 2999466436
     0xb2ca4438: "mediumlegs_m_boss600_mutt5_v2", // 2999600184
@@ -30076,6 +30610,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb3127f68: "skin_1hhatchet_aeternumtrials_r", // 3004333928
     0xb312f7c5: "omega_box_weapons_617", // 3004364741
     0xb313c24f: "mediumfeet_covenantt4a", // 3004416591
+    0xb31616ea: "1hthrowingaxe_fireofbattlet5_v2", // 3004569322
     0xb3185886: "skin_occultistarchetype_2hstafffire", // 3004717190
     0xb3188231: "lightchest_robedropt3", // 3004727857
     0xb3188b56: "shard_foc_amuletmoonstonet5", // 3004730198
@@ -30186,6 +30721,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb3a5a292: "lightchest_covenantrank4_soldier_v2", // 3013976722
     0xb3a7da1c: "2hwarhammer_blackguardswarhammert5_v2", // 3014122012
     0xb3a9874d: "schematic_house_housingitem_settler_bookcase02_c", // 3014231885
+    0xb3a9c334: "mediumlegs_etherealt4_s1e", // 3014247220
     0xb3aa599e: "crx_questreward_wf_side_lifestaff", // 3014285726
     0xb3aad620: "flxpac_lightfeet_eternal_mutt5", // 3014317600
     0xb3aaed4f: "artisan_hatchett5", // 3014323535
@@ -30197,6 +30733,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb3b048ed: "dyea054_mounts", // 3014674669
     0xb3b1f464: "fm_loot_item_s_26_02", // 3014784100
     0xb3b29358: "skin_chest_season3deluxe", // 3014824792
+    0xb3b33cc0: "ringdropt4_s8item", // 3014868160
     0xb3b3461a: "mediumlegs_taiyi", // 3014870554
     0xb3b363ef: "elemental_box_s5_premium", // 3014878191
     0xb3b685cc: "1hlongsword_crimsonvowt5", // 3015083468
@@ -30395,6 +30932,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb4e6b900: "earring_blackmetalstudt5_v2", // 3035019520
     0xb4e75b04: "honingstonet5_goldtouched", // 3035060996
     0xb4ed2335: "heavylegs_covenantrank2", // 3035439925
+    0xb4ee0d62: "flxpac_lighthands_barnacles_mutt5_owb", // 3035499874
     0xb4ef081b: "nutmegt1", // 3035564059
     0xb4ef7ef2: "questreward_mb_coin_purse", // 3035594482
     0xb4ef8747: "lightfeet_corruptedelite1t5", // 3035596615
@@ -30449,6 +30987,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb54a7bc6: "lightlegs_clothpvpdropt5", // 3041557446
     0xb54aede9: "playtest_heavylegs_sentry_t5_625", // 3041586665
     0xb54cae2c: "artifact_wcweapongauntleticet5", // 3041701420
+    0xb54eda5a: "lightchest_etherealt2_s1e", // 3041843802
     0xb54f83ae: "fishingmoragt5", // 3041887150
     0xb5512ec1: "fm_loot_item_s_3_05", // 3041996481
     0xb5519f0a: "omega_heavyfeet_soldier_602_3", // 3042025226
@@ -30539,6 +31078,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb5d228a1: "playtest_heavyhead_ranger_t5_625", // 3050449057
     0xb5d2c793: "mediumhead_covenantrank1_soldier_v2", // 3050489747
     0xb5d479cd: "1hlongsword_covenantadjudicatorsst5", // 3050600909
+    0xb5d54b14: "skin_legs_season8seasonalserver", // 3050654484
     0xb5d581e3: "heavyhands_furplatepvpreplicat3", // 3050668515
     0xb5d6b079: "playtest_longsword_dmg_t4", // 3050745977
     0xb5d8ca91: "shard_str_medium_phy_chestt5", // 3050883729
@@ -30562,6 +31102,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb5fb8788: "playtest_mediumfeet_sentry_t5_650", // 3053160328
     0xb5fc2056: "shard_sword", // 3053199446
     0xb5fe64d4: "1hrapier_flashoflightt5_v2", // 3053348052
+    0xb5ffcfc6: "mediumhead_worldevent_s1_t5_v3", // 3053440966
     0xb60258ad: "2hstafffire_acolytescorruptedfirestafft4", // 3053607085
     0xb602d440: "2hgreatsword_hercyneraid_craftedschematic", // 3053638720
     0xb605e983: "mountbuff_cleansingt2", // 3053840771
@@ -30601,9 +31142,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb63b1178: "conquerorsitem_heavyhands_swarmarmor", // 3057324408
     0xb63c9025: "2hwarhammer_guardianswarhammert4_v2", // 3057422373
     0xb63de649: "mediumchest_arenaspriggan1t5", // 3057509961
+    0xb63f0525: "loggingaxe_etherealt4_s1e", // 3057583397
     0xb63f0bef: "fm_hunt_item_15_08", // 3057585135
     0xb63f65c8: "mutatedexpedition_box_s1_depths", // 3057608136
     0xb641ed72: "lightfeet_chitint5_v3", // 3057773938
+    0xb645e81d: "skin_chest_s8_rank2_lb_monoeciouscleft", // 3058034717
     0xb64612c3: "1hlongsword_remorselesswintert4", // 3058045635
     0xb646cb38: "roundshield_etherealt2", // 3058092856
     0xb6484995: "invasionrewardcontainerrarity3l57", // 3058190741
@@ -30622,12 +31165,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb65678d9: "heavyfeet_sandworm_trial_t5", // 3059120345
     0xb6569ba4: "ringt3_demonvengenceband_v2", // 3059129252
     0xb657dcc3: "conquerorsitem_kiteshield_holyshield_blocking", // 3059211459
+    0xb657f09b: "artifact_set2_lightchest", // 3059216539
     0xb6584278: "04aside02_04_guardianazoth", // 3059237496
     0xb658b57b: "2hwarhammerancientt5", // 3059266939
     0xb659af93: "omega_mediumchest_sentry_615", // 3059330963
     0xb65a3e88: "heavychest_syndicaterank5_brigand", // 3059367560
     0xb65ad766: "flxpac_1hgauntletvoid_barnacles_mutt5_fixed", // 3059406694
     0xb65b1493: "flxpac_heavyfeet_shatteredobelisk_mutt5", // 3059422355
+    0xb6609d29: "campskin_season7_a_pvp", // 3059785001
     0xb662eac7: "flxpac_heavylegs_nature_mutt5", // 3059935943
     0xb666a2b8: "1hrapier_clint", // 3060179640
     0xb66998f5: "playtest_earring_ranger_t5", // 3060373749
@@ -30708,6 +31253,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb6e9adaf: "crafting_box_s3_overgrowth", // 3068767663
     0xb6efbd9a: "1hgauntleticeancientt3", // 3069164954
     0xb6f1489f: "1hsword_winter_con", // 3069266079
+    0xb6f1fbed: "skin_chest_s8_rank2_lbclear_barnacles", // 3069311981
     0xb6f31287: "darknessrewardcontainermajor2l5", // 3069383303
     0xb6f59329: "2hfishingpole_legendarystrength", // 3069547305
     0xb6f5dfd4: "crx_reward_heavyfurt2_hands", // 3069566932
@@ -30938,6 +31484,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb838c4c8: "skin_legs_romanpriest", // 3090728136
     0xb83a220a: "lighthead_robe_siege2024", // 3090817546
     0xb83aa54c: "playtest_mage_mediumchest_t5_650", // 3090851148
+    0xb83ada59: "seasonalazothstaffbox", // 3090864729
     0xb83b9e37: "shard_con_earringaquamarinet5", // 3090914871
     0xb840249b: "2hwarhammerelitebreacht3", // 3091211419
     0xb8410c2e: "heavyfeet_elitepoi_corruptedbreachspecialt5_v2", // 3091270702
@@ -30948,6 +31495,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb84bcb43: "itempattern_swashbuckler_gloves", // 3091974979
     0xb84df334: "mediumfeetbeastelitet5", // 3092116276
     0xb84e2f2e: "lightlegs_dungeon2t3", // 3092131630
+    0xb84fb5b0: "campskin_metalfest01_a_pvp", // 3092231600
     0xb85396c0: "hardtackt1", // 3092485824
     0xb853b8ed: "lightfeet_pvp_prestige600bt5", // 3092494573
     0xb855a472: "ringt5_bandoftheblessedstag", // 3092620402
@@ -30973,6 +31521,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb87237ce: "1hthrowingaxe_corruptedremnantt3", // 3094493134
     0xb87343e8: "entdisplay_skin_hands_season3basic", // 3094561768
     0xb8744d81: "skin_legs_metal_h", // 3094629761
+    0xb87539e4: "entdisplay_skin_2hskinningknife_season8pass", // 3094690276
     0xb876da14: "heavychest_trial_s2_namedt5_int", // 3094796820
     0xb87a99b5: "skin_silvercrowsfire_pickaxe", // 3095042485
     0xb87fbf6c: "playtest_box_armor_sentry_t5_700_medium", // 3095379820
@@ -31130,6 +31679,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb9739ede: "perkitem_armor_conditioning_slash", // 3111362270
     0xb97541f4: "dyea053_mounts", // 3111469556
     0xb975ee38: "omega_mediumchest_scholar_pvp", // 3111513656
+    0xb97635d9: "ringdropt3_s8item", // 3111531993
     0xb97c1ee4: "omega_ring_soldier_610_2", // 3111919332
     0xb97c69a4: "itemdisplay_2hbow_trial_s2_t5", // 3111938468
     0xb97c8a33: "shard_dex_amuletmoonstonet5", // 3111946803
@@ -31138,6 +31688,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb9812a83: "mediumchest_arenalost1t4", // 3112249987
     0xb988e0e6: "playtest_healersupport_ring_t5_725", // 3112755430
     0xb98e36d7: "1hsword_dimensionaltetherpve_t5", // 3113105111
+    0xb98fdd7f: "lightfeet_spring_gs715", // 3113213311
     0xb9909e8b: "1hgauntletvoid_hammert5_v2", // 3113262731
     0xb990abd4: "1hflail_named102_t5", // 3113266132
     0xb99113b4: "0721_0101_corrupted_wire", // 3113292724
@@ -31177,6 +31728,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xb9bbf95c: "1hflail_named7_t4", // 3116104028
     0xb9bcfe74: "heavyhands_syndicaterank5", // 3116170868
     0xb9c0c467: "fm_loot_item_c_21_14", // 3116418151
+    0xb9c1e70c: "lighthead_firstlightexp_mutt1_owb", // 3116492556
     0xb9c30323: "skin_oct2023_seance_greataxe", // 3116565283
     0xb9c5e3a3: "invasionrewardcontainerrarity2l6", // 3116753827
     0xb9c63807: "mediumhands_drowned1t2", // 3116775431
@@ -31270,6 +31822,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xba589640: "omega_gauntletice_620", // 3126367808
     0xba59ff64: "heavychest_summert5_shop", // 3126460260
     0xba5b8448: "1hrapier_changelingsrapiert5", // 3126559816
+    0xba5c1e9c: "heavyhead_worldevent_s1_t5_v3", // 3126599324
     0xba5c45f6: "playtest_lighthands_soldier_t5_585", // 3126609398
     0xba5cdc03: "omega_amulet_ranger_622", // 3126647811
     0xba5ef202: "2hwarhammer_sqrewardedengrovet5", // 3126784514
@@ -31320,6 +31873,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xba987d1f: "scarab_dex_2hgreataxet5", // 3130555679
     0xba9b2433: "expedition_box2_s6", // 3130729523
     0xba9b3201: "mediumlegs_worldeventpve_s2_t5", // 3130733057
+    0xba9cb08c: "perkitem_armor_hastepotencyinc", // 3130830988
     0xba9cb8ea: "1helementalgauntlet_ice_winter_int", // 3130833130
     0xba9d0805: "playtest_heavychest_scholar_t5", // 3130853381
     0xba9fdc37: "wcgoldlockboxt1", // 3131038775
@@ -31440,6 +31994,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbb56978c: "1403_0301_blightsample", // 3143014284
     0xbb57dd76: "pvp_potions_large_corruptedt1", // 3143097718
     0xbb596b72: "foodcont4", // 3143199602
+    0xbb5a4c30: "heavyhands_etherealt5_s1e", // 3143257136
     0xbb5a5734: "playtest_tank_earring_t5_700", // 3143259956
     0xbb5e6dda: "flamec_2hmuskett5", // 3143527898
     0xbb5e8616: "chest_courtier1t3", // 3143534102
@@ -31562,6 +32117,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbc19b2c8: "omega_mediumfeet_ranger_500", // 3155800776
     0xbc1aa779: "crx_reward_mediumfemlacet5_head", // 3155863417
     0xbc1b468c: "pvp_potions_small_ancientt1_a", // 3155904140
+    0xbc1c26f1: "roundshield_etherealt4_s1e", // 3155961585
     0xbc1c4c8d: "heavychest_d_boss_mutt5_v2", // 3155971213
     0xbc1cd99f: "entdisplay_skin_shieldt_firstlightseason", // 3156007327
     0xbc1e8720: "skin_chest_s4_rank2_lb_lbclear_glacialtarn", // 3156117280
@@ -31578,9 +32134,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbc347d1b: "mediumlegs_trial_s2_rimat5_confoc", // 3157556507
     0xbc37a553: "earring_ecnelovelamsyvnet5_v2", // 3157763411
     0xbc37f03d: "skin_2hblunderbuss_aeternumtrials_g", // 3157782589
+    0xbc3904c0: "jewelryt51_s8", // 3157853376
     0xbc3a4449: "swamp_dryad_staff", // 3157935177
     0xbc3db422: "omega_mediumchest_ranger_602", // 3158160418
     0xbc3dd576: "2hmuskett5", // 3158168950
+    0xbc3eefda: "skin_chest_season8pass", // 3158241242
     0xbc3f9a0e: "1hrshield_marauderrank2_v2", // 3158284814
     0xbc41d1a4: "2hspear_azothcrystal", // 3158430116
     0xbc42404a: "1hlongsword_pvp_prestiget5", // 3158458442
@@ -31729,9 +32287,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbd0eb246: "2hmusket_maraudersunderersmuskett4", // 3171856966
     0xbd0ec532: "2hbow_pvp_prestige600bt5", // 3171861810
     0xbd1143c9: "omega_shieldtower_pvp", // 3172025289
+    0xbd12e2be: "mediumhands_etherealt5_s1e", // 3172131518
     0xbd14cf0a: "rewardpostcapweavingt2", // 3172257546
     0xbd15f5c7: "2hstafflifedropt5_s2", // 3172332999
     0xbd19f609: "questrewardweaponsl7", // 3172595209
+    0xbd1b7126: "ss8_ch2_reward_box", // 3172692262
     0xbd1b8219: "lightfeet_spring_600_int", // 3172696601
     0xbd1c89af: "1hgauntletice_covenantrank4", // 3172764079
     0xbd1d010b: "2hblunderbuss_sporelight", // 3172794635
@@ -31758,6 +32318,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbd48ca61: "diamondt2", // 3175664225
     0xbd4c1d74: "fm_loot_item_s_7_12", // 3175882100
     0xbd4d4711: "ring_questl38", // 3175958289
+    0xbd4ddccd: "flxpac_mediumhands_barnacles_mutt5_owb", // 3175996621
     0xbd4fb80a: "2hstafflife_baneofimpurityt3_v2", // 3176118282
     0xbd517a6e: "2hmusket_hercyneraid_craftedschematic", // 3176233582
     0xbd528cae: "omega_heavyfeet_ranger_605", // 3176303790
@@ -31770,6 +32331,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbd563326: "mediumhead_syndicaterank4_sage_v2", // 3176543014
     0xbd598c03: "lightchest_clothinfluencet3", // 3176762371
     0xbd5bfe31: "entdisplay_emote_wormdance", // 3176922673
+    0xbd5da5ee: "skin_chest_s8_rank1_lb_territory", // 3177031150
     0xbd5fa565: "playtest_heavychest_soldier_t5_700", // 3177162085
     0xbd5fbefd: "1hgauntleticeancientelitet5", // 3177168637
     0xbd61553b: "heavylegs_heavyt5_guaranteeepic", // 3177272635
@@ -31878,6 +32440,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbe063831: "1hlongsword_firstcontactt2_v2", // 3188078641
     0xbe075649: "1hgauntletvoid_pvp_namedt3", // 3188151881
     0xbe078796: "omega_heavyhead_sage_pvp_a1", // 3188164502
+    0xbe08be14: "flxpac_earringt5_bb_mut_owb", // 3188243988
     0xbe0a89f5: "skin_monster_loggingaxe", // 3188361717
     0xbe0b191a: "amulet_etherealt4", // 3188398362
     0xbe0da92f: "1hgauntletvoiddynastyelitet5", // 3188566319
@@ -32114,6 +32677,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbf7263d4: "omega_ring_sentry_612_2", // 3211944916
     0xbf72ab09: "itempattern_femlacem_gloves_t5", // 3211963145
     0xbf7737e9: "04aside05_03_laundry", // 3212261353
+    0xbf77bd2c: "campskin_egyptian02_a_pvp", // 3212295468
     0xbf780644: "strconbonust2", // 3212314180
     0xbf78850f: "omega_lighthands_scholar_625", // 3212346639
     0xbf7aeb23: "heavylegs_crafteddungeon4t4", // 3212503843
@@ -32173,6 +32737,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xbfdc19dd: "faction_provisions04_t3", // 3218872797
     0xbfdd15e4: "2hgreataxe_limbsplittert2_v2", // 3218937316
     0xbfdd40a1: "2hwarhammer_forgottenexperimentt4_v2", // 3218948257
+    0xbfde9cbf: "mediumhead_spring_gs715", // 3219037375
     0xbfe3a20e: "mediumhands_pvp_namedt51", // 3219366414
     0xbfe577b6: "omega_lightlegs_ranger_617_2", // 3219486646
     0xbfe63beb: "1hrshield_maatsscalet5_v2", // 3219536875
@@ -32276,12 +32841,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc074ffe5: "potionhasteftw", // 3228893157
     0xc07956bb: "skin_feet_firstlightelventwitch", // 3229177531
     0xc07cd39c: "fm_loot_item_s_14_05", // 3229406108
+    0xc07d873b: "campskin_hexedcanopy_a_pvp", // 3229452091
     0xc080e234: "heavyhands_ancient2t4", // 3229671988
     0xc0839507: "questreward_ef_side01_01_1hkiteshieldt3", // 3229848839
     0xc084af6d: "shard_str_2hwarhammert5", // 3229921133
     0xc084d602: "omega_box_armor_sentry_625_light", // 3229931010
     0xc0871a16: "1hrapier_wickedwatchersrapiert4", // 3230079510
     0xc0877d7a: "kt_cave_40248_mi_jarofleeches", // 3230104954
+    0xc08a20c4: "mediumfeet_worldevent_s1_t5_v3", // 3230277828
     0xc08b5323: "heavyfeetbt3", // 3230356259
     0xc08cc5ca: "heavyfeet_spring_600_str", // 3230451146
     0xc08d1f50: "seasoningspicy", // 3230474064
@@ -32300,6 +32867,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc09ddea4: "lightfeet_fishermant2", // 3231571620
     0xc09ee312: "mediumchest_covenantrank1_soldier_v2", // 3231638290
     0xc09f0128: "playtest_bruiser_hatchet_t5_625", // 3231645992
+    0xc09f539c: "campskin_fortune01_a_pvp", // 3231667100
     0xc0a088be: "omega_heavyhands_soldier_602_3", // 3231746238
     0xc0a295a4: "questreward_ww_pants_heavy", // 3231880612
     0xc0a4da84: "mediumchest_covenantrank6_2_scholar", // 3232029316
@@ -32329,6 +32897,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc0c3454e: "chest_officert4", // 3234022734
     0xc0c6806a: "mediumchest_marauderrank2_soldier_v2", // 3234234474
     0xc0c855ba: "1hgauntletvoid_soulshroud", // 3234354618
+    0xc0c89da7: "playtest_box_survivalpotions_t5", // 3234373031
     0xc0ca0d5a: "2hblunderbuss_azothcrystal", // 3234467162
     0xc0cde149: "2hblunderbusslegiont5", // 3234718025
     0xc0cefa78: "lightningbeetlewingst1", // 3234790008
@@ -32377,6 +32946,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc1045542: "mediumchest_hollyking_foc_600", // 3238286658
     0xc1059e8b: "mediumfeet_legionelitet5", // 3238370955
     0xc105d223: "mediumchest_hollyking_700", // 3238384163
+    0xc106c570: "amulet_etherealt5_s1e", // 3238446448
     0xc1082ff4: "pattern_opr_mediumfeet", // 3238539252
     0xc1095423: "lodestoneairt1", // 3238614051
     0xc10b73d3: "1hrapier_covenantrank5_v2", // 3238753235
@@ -32408,8 +32978,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc12ff63c: "ring_sirent5", // 3241145916
     0xc130f25c: "lightfeet_trial_s5_t5", // 3241210460
     0xc131256c: "fm_loot_item_12_04", // 3241223532
+    0xc131462d: "mediumchest_mushroomwanders", // 3241231917
     0xc135116a: "bundle_corruptward_3", // 3241480554
     0xc1370e65: "playtest_gauntletvoid_tnk_t5", // 3241610853
+    0xc13c8035: "skin_chest_s8_rank2_lb_territory", // 3241967669
     0xc13d6ce3: "2hstafflife_staffofthethronet5", // 3242028259
     0xc13df8af: "skin_legs_femnobletwitch_l", // 3242064047
     0xc13f1494: "flxpac_mediumchest_shatteredobelisk_mutt5", // 3242136724
@@ -32422,6 +32994,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc1449a7e: "omega_ring_scholar_620_4", // 3242498686
     0xc1459166: "playtest_lightchest_sage_t5_585", // 3242561894
     0xc145a696: "09a_m1_seedcontainer", // 3242567318
+    0xc145de9f: "skin_chest_s8_rank1_lbscore_barnacles", // 3242581663
     0xc145e128: "omega_earring_sage_622", // 3242582312
     0xc1462049: "1hrapier_worldeventpve_s7", // 3242598473
     0xc146dde4: "lightfeet_chitint5_v2", // 3242647012
@@ -32484,6 +33057,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc1ad13c4: "omega_box_armor_scholar_612", // 3249345476
     0xc1af4eb7: "runeglass_gem_ruby_ice", // 3249491639
     0xc1b2d870: "omega_box_armor_sentry_600_heavy", // 3249723504
+    0xc1b57271: "hatchet_etherealt3_s1e", // 3249894001
     0xc1b7035d: "fm_loot_item_c_25_06", // 3249996637
     0xc1b72706: "shard_int_heavy_bal_feett5", // 3250005766
     0xc1b92f39: "2hspear_flxpac_crafteddungeon2t3", // 3250138937
@@ -32538,6 +33112,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc1fe2e37: "femheavylegs_dropt2", // 3254660663
     0xc1ff93be: "06a_b_01_softlionfur", // 3254752190
     0xc1fff10e: "2hmusket_feathermanesbanet5", // 3254776078
+    0xc2019f1f: "flxpac_heavylegs_brimstonesands_mutt5_owb", // 3254886175
     0xc2030fd7: "mediumfeet_lostelite1t4", // 3254980567
     0xc204bca2: "playtest_standingvial_everfall", // 3255090338
     0xc204fa6d: "1hgauntleticevarangiant5", // 3255106157
@@ -32639,6 +33214,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc28b7798: "1hrapier_syndicaterank2_v2", // 3263920024
     0xc28c87cc: "omega_amulet_ranger_pvp", // 3263989708
     0xc28d9b87: "skin_legs_egyptiangods_2", // 3264060295
+    0xc293fa5c: "campskin_reaper01_a_pvp", // 3264477788
     0xc2949f27: "mediumlegs_arenaswampbeast2t5", // 3264519975
     0xc2967db6: "mediumhead_crafteddungeon10t5", // 3264642486
     0xc296f61b: "fm_loot_item_20_06", // 3264673307
@@ -32648,6 +33224,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc299d7de: "heavyhead_mask2_t5", // 3264862174
     0xc29a6281: "schematic_house_housingitem_pirate_bookcase02_c", // 3264897665
     0xc29c57a4: "1hthrowingaxe_questl23", // 3265025956
+    0xc29d7ca4: "conquerorsitem_lifestaff_holyshield_blocking_s1e", // 3265100964
     0xc2a053e9: "mediumhands_lost2t5", // 3265287145
     0xc2a1625a: "playtest_earring_ranger_t5_650", // 3265356378
     0xc2a550a2: "questreward_mb_side14_mediumfeett2", // 3265613986
@@ -32695,11 +33272,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc2d180ef: "playtest_longsword_dmg_t5", // 3268509935
     0xc2d1aa0c: "omega_heavyhands_scholar_pvp", // 3268520460
     0xc2d2b175: "heavyhands_furplatepvpreplicat2", // 3268587893
+    0xc2d35d5f: "stafffire_etherealt4_s1e", // 3268631903
     0xc2d47a59: "playtest_box_armor_scholar_t5_650_trinket", // 3268704857
     0xc2d73e45: "shard_foc_medium_ele_legst5", // 3268886085
     0xc2d95ac7: "skin_greatsword_jan2023", // 3269024455
+    0xc2d9df46: "2hlifestaff_worldevent_s1_t5_v3", // 3269058374
     0xc2dc0540: "omega_mediumhands_soldier_625_3", // 3269199168
     0xc2dee9bd: "omega_mediumhead_scholar_620", // 3269388733
+    0xc2df1b57: "skin_mtx_coquette_feet", // 3269401431
     0xc2e46d36: "heavyhead_platepvpreplicat5", // 3269750070
     0xc2e4b5dd: "skin_hands_metal_h", // 3269768669
     0xc2e79482: "2hgreataxe_earthbatteredaxet2_v2", // 3269956738
@@ -32713,6 +33293,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc2f02920: "omega_earring_sentry_622", // 3270519072
     0xc2f10203: "playtest_stafffire_dmg_t5_650", // 3270574595
     0xc2f1844a: "lightchest_elitepoi_firstlightrevampbeastt5_v2", // 3270607946
+    0xc2f2a7d1: "heavylegs_etherealt2_s1e", // 3270682577
     0xc2f7338b: "heavyfeet_platedropt5_dex_inferno", // 3270980491
     0xc2f8ff50: "mediumhead_worldevent_s1_t5_v2", // 3271098192
     0xc2fabea5: "skin_head_firstlightelventwitch", // 3271212709
@@ -32783,6 +33364,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc350790f: "1hlongsword_woodgrain", // 3276830991
     0xc35087c6: "2hwarhammer_stercusmault3", // 3276834758
     0xc350f8b4: "1hflail_named122_t5", // 3276863668
+    0xc351b01a: "lightfeet_firstlightexp_mutt1_owb", // 3276910618
     0xc351bef7: "lightchest_boneriddledrobest2_v2", // 3276914423
     0xc35216eb: "2hstafflife_tempestuouslifestafft5", // 3276936939
     0xc353ad58: "mediumfeet_or1t5", // 3277040984
@@ -32810,6 +33392,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc3759558: "lightlegs_syndicaterank1_occultist", // 3279263064
     0xc3761a8f: "1hflail_named30_t4", // 3279297167
     0xc376afb6: "2helementalstaff_firet4", // 3279335350
+    0xc377c335: "skin_chest_s8_rank1_leaderboard", // 3279405877
     0xc377e30b: "skin_flail_firstlightseason", // 3279414027
     0xc378034a: "omega_box_weapons_612", // 3279422282
     0xc37c6c58: "playtest_lightlegs_sentry_t3", // 3279711320
@@ -33034,6 +33617,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc4b4622f: "skin_monster_rapier", // 3300155951
     0xc4b62e95: "mediumhands_marauderrank2_cleric", // 3300273813
     0xc4b6c4f2: "fm_loot_item_s_26_03", // 3300312306
+    0xc4b96adb: "skin_legs_coveff2025_box", // 3300485851
     0xc4ba973d: "scarab_foc_2hmuskett5", // 3300562749
     0xc4bc5adf: "fm_loot_item_s_28_09", // 3300678367
     0xc4bc6176: "playtest_mediumchest_scholar_t4", // 3300680054
@@ -33054,6 +33638,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc4ccb2af: "skin_chest_s5_rank2_lbclear_barnacles", // 3301749423
     0xc4cf2e4f: "2hmusket_beastsdemiset5", // 3301912143
     0xc4d24212: "1hgauntletvoid_handofraget3", // 3302113810
+    0xc4d2bd8c: "flxpac_lightlegs_barnacles_mutt5_owb", // 3302145420
     0xc4d391ea: "mediumchest_covenantrank2", // 3302199786
     0xc4d51688: "1hgauntletvoid_rottenlimbt5", // 3302299272
     0xc4d52e63: "lightlegs_marauderrank5_ranger_v2", // 3302305379
@@ -33121,6 +33706,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc53394ab: "pattern_lostraider_light_chest", // 3308491947
     0xc535058e: "mediumhead_leatherpvpdropt4", // 3308586382
     0xc53aceaa: "scarab_str_light_phy_feet_clotht5", // 3308965546
+    0xc53ba35e: "longsword_etherealt4_s1e", // 3309019998
     0xc53c2bf1: "0525_hearta", // 3309054961
     0xc53c4bdb: "skin_chest_rank2_lbscore_barnacles", // 3309063131
     0xc53c7101: "heavyhead_pvp_namedt51", // 3309072641
@@ -33160,6 +33746,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc56cd0a9: "amulet_amuletofremembrancet2", // 3312242857
     0xc56eff77: "runeglass_gem_malachite_arcane", // 3312385911
     0xc56fe859: "lighthands_legiont5", // 3312445529
+    0xc5734780: "heavychest_worldevent_s1_t5_v3", // 3312666496
     0xc575286f: "2hstafffirepvpdropt3", // 3312789615
     0xc5771e35: "1hflail_marauderrank3_v2", // 3312918069
     0xc578fb75: "lighthands_breach1t3", // 3313040245
@@ -33244,10 +33831,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc60d08ce: "2hgreataxe_hercyneraid_craftedshard", // 3322742990
     0xc60fc6ea: "playtest_mediumchest_soldier_t5_625", // 3322922730
     0xc6113ad3: "1htshield_portentt5", // 3323017939
+    0xc611eebc: "2hgreataxe_worldevent_s1_t5_v3", // 3323063996
     0xc6127a77: "doublooncrate1hmelee_700", // 3323099767
     0xc6188480: "flxpac_heavylegs_ice_mutt5", // 3323495552
+    0xc619af01: "flxpac_lighthead_empyrean_mutt5_owb", // 3323571969
     0xc619e2f4: "playtest_earring_sage_t5_585", // 3323585268
     0xc619f65a: "playtest_heavyfeet_sentry_t5_675", // 3323590234
+    0xc61accad: "capturetheflagrewardl62", // 3323645101
     0xc61ca406: "scarab_dex_medium_ele_handst5", // 3323765766
     0xc61dca62: "2hstafffire_greatstaffoftheroyaltorturert5", // 3323841122
     0xc61f999e: "flxpac_mediumchest_ae_mutextra_t5", // 3323959710
@@ -33266,6 +33856,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc62b2445: "darknessrewardcontainermajor2l28", // 3324716101
     0xc6305973: "playtest_mediumhead_ranger_t5_600", // 3325057395
     0xc630932f: "2hgreatsword_flameofprogresst5", // 3325072175
+    0xc632871f: "bow_etherealt5_s1e", // 3325200159
     0xc6335b1c: "omega_mediumchest_sentry_610", // 3325254428
     0xc633dd1f: "2hstafflifeangryearthelitet5", // 3325287711
     0xc6344485: "mediumhands_or1t5", // 3325314181
@@ -33290,6 +33881,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc650a2e7: "potionencumbrancet1", // 3327173351
     0xc650a455: "questrewardweaponsl59", // 3327173717
     0xc6563139: "1hroundshield_trial_s2_t5_v2", // 3327537465
+    0xc6568811: "skin_chest_s8_rank1_lbclear_brimstone", // 3327559697
     0xc657b332: "heavyhead_platedropt5_foc_sandstorm_leg", // 3327636274
     0xc659e3d9: "flxpac_heavylegs_dynastyshipyard_mutt5", // 3327779801
     0xc659f40d: "skin_mtx_wintermerc_medic_hands", // 3327783949
@@ -33383,6 +33975,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc6d4aab4: "lightchest_flxpac_crafteddungeon8t5", // 3335826100
     0xc6d52615: "clothinghead_tannert3", // 3335857685
     0xc6d54cb1: "recipe_rapier_hastewhenfacingtarget", // 3335867569
+    0xc6d78792: "perkitem_armor_exhaustpotencyred", // 3336013714
     0xc6dac744: "fm_loot_item_c_25_02", // 3336226628
     0xc6deb587: "runeglass_gem_carnelian_lightning", // 3336484231
     0xc6e06d4c: "vesselt1_6", // 3336596812
@@ -33503,6 +34096,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc78c35f9: "factionpotionmanat4", // 3347854841
     0xc78f5895: "omega_ring_scholar_625_4", // 3348060309
     0xc7906f41: "crx_reward_heavyetherealt5_hands", // 3348131649
+    0xc792218b: "owbrewardcontainerbonus_admiral", // 3348242827
     0xc7927852: "2hstafffirecorruptedt4", // 3348265042
     0xc792c032: "heavyhead_covenantinquisitort5_soldier_v2", // 3348283442
     0xc79313c5: "omega_mediumhands_soldier_622_3", // 3348304837
@@ -33534,6 +34128,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc7d45e17: "heavyfeet_platedropt5_dex_sandstorm_leg", // 3352583703
     0xc7d5008d: "flxpac_2hbow_so_mutextra_t5", // 3352625293
     0xc7d848fa: "2hblunderbuss_cavecrawlert5", // 3352840442
+    0xc7d9529e: "conquerorsitem_hatchet_combustiblecombustion_s1e", // 3352908446
     0xc7d9f9a3: "1hhatchetinvasiont5", // 3352951203
     0xc7dcee5a: "1hflail_stringentfatet5", // 3353144922
     0xc7e00f4f: "mediumchest_lostelite1t3", // 3353349967
@@ -33589,6 +34184,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc81b058e: "fm_loot_item_s_2", // 3357214094
     0xc81e65d8: "flxpac_2hwarhammer_lazarus_mutt5", // 3357435352
     0xc81eb90e: "skin_legs_metal_m", // 3357456654
+    0xc82014a8: "blueguffint4_s8", // 3357545640
     0xc823c49b: "2hfirestaff_syndicaterank5_v2", // 3357787291
     0xc824403e: "fetch_undead_bastion_30126_mi_eartrumpet", // 3357818942
     0xc826d0ae: "1hlongsword_primordialedget5_v2", // 3357986990
@@ -33638,6 +34234,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc866881c: "beach_chest1_armor1", // 3362162716
     0xc8669358: "heavychest_syndicaterank1_scholar_v2", // 3362165592
     0xc8694636: "2hmuskett2damned", // 3362342454
+    0xc86b927b: "flxpac_heavychest_dynastyshipyard_mutt5_owb", // 3362493051
     0xc86bbfee: "crx_heavyhands_sandworm_trial", // 3362504686
     0xc86bc66a: "lightfeet_sqrewardreekwatert5", // 3362506346
     0xc86ce3bf: "fm_hunt_item_4_08", // 3362579391
@@ -33683,6 +34280,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc8a38b0e: "scrapextractmetalt2", // 3366161166
     0xc8a4e10e: "95_s01_07_luminoussolvent", // 3366248718
     0xc8a5dce4: "playtest_heavyhead_ranger_t5_675", // 3366313188
+    0xc8a7be24: "ringt5_fl_xp_mut_owb", // 3366436388
     0xc8a8ee4e: "omega_mediumhead_sage_605", // 3366514254
     0xc8ab7bec: "entdisplay_skin_2hloggingaxeacademyofhecatet5", // 3366681580
     0xc8adaf35: "omega_heavyhead_sage_610", // 3366825781
@@ -33749,6 +34347,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc90c298c: "amulet_etherealt5", // 3373017484
     0xc90f50fb: "shard_str_amuletonyxt5", // 3373224187
     0xc914f59a: "fm_loot_item_1619_01", // 3373594010
+    0xc9154355: "entdisplay_skin_head_season8pass", // 3373613909
     0xc91799c4: "flxpac_lightchest_gardengenesis_mutt5", // 3373767108
     0xc917ea64: "2hspear_spearofvolcanicresolvet3", // 3373787748
     0xc9180081: "skin_chest_lbclear_shipyard", // 3373793409
@@ -33879,6 +34478,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xc9cd09d5: "2hspear_irreverentedget4", // 3385657813
     0xc9ce7999: "honingstonet4", // 3385751961
     0xc9d0c1f9: "playtest_mediumhands_sentry_t5_675", // 3385901561
+    0xc9d2e061: "mountattachmentitem_skin_egyptcat", // 3386040417
     0xc9da357d: "questrewardarmorl12", // 3386520957
     0xc9ddb33f: "0826_0801_dynastykeys", // 3386749759
     0xc9de2f88: "ragehidet1", // 3386781576
@@ -33930,6 +34530,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xca3262cf: "omega_gauntletice_625", // 3392299727
     0xca33ef21: "runeglass_gem_topaz_arcane", // 3392401185
     0xca345678: "2hstafflife_soulwardenslifestafft5_v2", // 3392427640
+    0xca345852: "skin_chest_s8_rank1_lbscore_forge", // 3392428114
     0xca35c3ab: "2hblunderbussinfluencet5", // 3392521131
     0xca3b65ec: "heavylegs_crafteddungeon7t5", // 3392890348
     0xca3d0bb7: "lighthead_clothdropt5_int_inferno", // 3392998327
@@ -33943,11 +34544,15 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xca492576: "heavylegs_syndicaterank6_2_scholar", // 3393791350
     0xca4a1101: "playtest_lightlegs_scholar_t5_585", // 3393851649
     0xca4b2de2: "fm_loot_item_s_7_13", // 3393924578
+    0xca4eab2b: "s8_twitch_container_box", // 3394153259
     0xca4ffaf7: "diamondt3", // 3394239223
     0xca513dfe: "feet_officert5", // 3394321918
     0xca5141b5: "lighthead_brimstonesands_mutt5", // 3394322869
     0xca52481d: "mediumhands_rescuert4", // 3394390045
     0xca53ffb8: "fm_pvp_marauders_item_13", // 3394502584
+    0xca56fb50: "mediumfeet_firstlightexp_mutt1_owb", // 3394698064
+    0xca57b404: "artifactst5_s8", // 3394745348
+    0xca5882c5: "lighthands_firstlightexp_mutt1_owb", // 3394798277
     0xca5ae695: "crx_reward_heavyfemelegantt4_head", // 3394954901
     0xca5ebc95: "lightchest_clothinfluencet2", // 3395206293
     0xca61a639: "playtest_blunderbuss_dmg_t5_675_runeglass2", // 3395397177
@@ -33973,8 +34578,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xca7b5eb2: "playtest_shieldtower_dmg_t5_700", // 3397082802
     0xca7ccaef: "heavyhead_dimensionaltetherpvp_t5", // 3397176047
     0xca7d1e33: "0610_0102_stolenspices3", // 3397197363
+    0xca80b4ad: "kiteshield_etherealt4_s1e", // 3397432493
     0xca827475: "2hbowcrafteddungeon12t5", // 3397547125
+    0xca829ded: "musket_etherealt4_s1e", // 3397557741
     0xca84be28: "heavychest_marauderrank2_brigand", // 3397697064
+    0xca85a3d6: "ss8_ch1_reward_box", // 3397755862
     0xca86c3b3: "2hbowdungeon10t5", // 3397829555
     0xca875396: "scarab_con_muskett52", // 3397866390
     0xca8b55e4: "entdisplay_skin_warhammer_eternalfrost", // 3398129124
@@ -33990,6 +34598,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xca98899d: "twitchpiratechest", // 3398994333
     0xca989ea5: "1hhatchet_winter_int_600", // 3398999717
     0xca99bcb7: "lighthead_pvp_prestiget4", // 3399072951
+    0xca9bbf33: "jewelryt5_s8", // 3399204659
     0xca9d5446: "heavyfeet_platepvpreplicat2", // 3399308358
     0xca9fbbc3: "fm_loot_item_11_14", // 3399465923
     0xcaa00e2c: "2hwarhammer_hoplite", // 3399487020
@@ -34004,6 +34613,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcaaa2f01: "skin_rapier_season6pass", // 3400150785
     0xcaac4820: "darknessrewardcontainerminor2l18", // 3400288288
     0xcaad9e7f: "1hgauntletvoid_flxpac_crafteddungeon8t5", // 3400375935
+    0xcaae2ea2: "flxpac_heavyhands_brimstonesands_mutt5_owb", // 3400412834
     0xcab06e54: "flxpac_heavyhands_hellfire_mutt5", // 3400560212
     0xcab0f52d: "2hbow_athenascharget5_v2", // 3400594733
     0xcab11d3d: "ringrubyt5", // 3400604989
@@ -34016,12 +34626,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcabf3eb3: "mediumchest_spring_600_int", // 3401531059
     0xcabfdce7: "playtest_bruiser_amulet_t5_650", // 3401571559
     0xcac2a878: "glyphstone_strength", // 3401754744
+    0xcac37425: "towershield_etherealt5_s1e", // 3401806885
     0xcac4224c: "lightfeet_dressinfluencet3", // 3401851468
     0xcac7059c: "skin_monster_greatsword", // 3402040732
     0xcac788e3: "rewardcontainercorruptedl56", // 3402074339
     0xcac84735: "1hgauntletice_rigormortist5", // 3402123061
     0xcacc942d: "springtidecoinbaglvl10", // 3402404909
     0xcacca256: "runeglass_gem_amber_lightning", // 3402408534
+    0xcacd518d: "conquerorsitem_rapier_dodgecorruptionball_s1e", // 3402453389
     0xcacf1178: "ringpearlt3", // 3402568056
     0xcad148e8: "foodintstrt5", // 3402713320
     0xcad2b619: "clothingchest_weavert5", // 3402806809
@@ -34038,6 +34650,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcae6c756: "entdisplay_title_season1_journeychallenge2", // 3404121942
     0xcaed049b: "rarebaitsnailt4", // 3404530843
     0xcaee1030: "shard_all_blunderbusst52", // 3404599344
+    0xcafab0fa: "lightlegs_etherealt3_s1e", // 3405426938
     0xcafae0d0: "mediumlegs_flxpac_crafteddungeon7t5", // 3405439184
     0xcb0093c7: "1hrapier_voidbringersrapiert5", // 3405812679
     0xcb00a3bd: "forgerssignetring_purple_makegoodcontainer", // 3405816765
@@ -34069,6 +34682,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcb3438f7: "omega_ring_soldier_617_3", // 3409197303
     0xcb363e00: "2hstafffire_blackguardsfirestafft5", // 3409329664
     0xcb36aaeb: "playtest_mediumhead_scholar_t4", // 3409357547
+    0xcb37a0a4: "heavychest_mushroomwanders", // 3409420452
     0xcb388ae7: "mediumlegs_flxpac_crafteddungeon6t5", // 3409480423
     0xcb39608a: "amulett5_li_mut", // 3409535114
     0xcb39a8f3: "wheatt1", // 3409553651
@@ -34098,6 +34712,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcb568b66: "2hgreataxe_reclusesgreataxet5", // 3411446630
     0xcb57546e: "grow_azothflute_part1_page1", // 3411498094
     0xcb5a7ce2: "shard_rapier", // 3411705058
+    0xcb5b9f84: "conquerorsitem_stafffire_burnaura_s1e", // 3411779460
     0xcb60a827: "heavychest_syndicaterank5_scholar_v2", // 3412109351
     0xcb62a568: "heavychest_crafteddungeon8t5", // 3412239720
     0xcb631790: "runebeastmodet2", // 3412268944
@@ -34241,6 +34856,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcc126c08: "2hwarhammer_mountainshakert5", // 3423759368
     0xcc1286a2: "omega_amulet_scholar_607", // 3423766178
     0xcc13fdf8: "skin_legs_victorian_spring", // 3423862264
+    0xcc14824c: "owbrewardcontainernormal_naga", // 3423896140
     0xcc1699e0: "0609_0101_corruptedore", // 3424033248
     0xcc18ab45: "schematic_house_housingitem_bed_pirate_bed01_d", // 3424168773
     0xcc1960df: "dyea055", // 3424215263
@@ -34313,6 +34929,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcc8570fd: "2hstafffire_blackfiret4", // 3431297277
     0xcc861d4c: "playtest_healer_lighthands_t5_625", // 3431341388
     0xcc8886e4: "1hrapier_energizedancientrapiert5", // 3431499492
+    0xcc88a8bd: "campskin_nightmare01_a_pvp", // 3431508157
     0xcc8b9c6f: "1420_0102_goldenflintlock", // 3431701615
     0xcc8be5ee: "99e_msq_05_artoriusshield", // 3431720430
     0xcc8c6e2c: "mediumhead_maraudert4a", // 3431755308
@@ -34354,6 +34971,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xccbe10ae: "schematic_veilpiercert5", // 3435008174
     0xccbf892a: "fm_loot_item_s_17_11", // 3435104554
     0xccc0d817: "skin_feet_marauderlegatust6_box", // 3435190295
+    0xccc10d8a: "conquerorsitem_heavyfeet_swarmarmor_s1e", // 3435203978
     0xccc1c635: "fm_loot_item_c_19_06", // 3435251253
     0xccc1f728: "2hgreatsword_pvp_namedt4", // 3435263784
     0xccc3e791: "mtx_battlemage_blindfold_chest", // 3435390865
@@ -34383,6 +35001,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcce02743: "2hwarhammer_balanceofpowert4_v2", // 3437242179
     0xcce02e1f: "fishingbluefishmediumt1", // 3437243935
     0xcce11457: "0321_0107_wyrdheartwood", // 3437302871
+    0xcce1fe43: "trophiest4_s8", // 3437362755
     0xcce2b33b: "lighthands_ancient1t5", // 3437409083
     0xcce47d8e: "mediumhands_daichimog", // 3437526414
     0xcce4a2bc: "1hthrowingaxe_syndicaterank5", // 3437535932
@@ -34473,6 +35092,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcd78c5b8: "1hlongsword_thosewhoremaint3_v2", // 3447244216
     0xcd7b23e4: "1hgauntletvoid_piercingcoldt3", // 3447399396
     0xcd7b25ee: "workorder_faction_provisions05_t2", // 3447399918
+    0xcd7f93c3: "earringdropt5_s8item", // 3447690179
     0xcd802c46: "skin_feet_winterconv2022_1", // 3447729222
     0xcd841457: "shard_str_heavy_bal_handst5", // 3447985239
     0xcd85baea: "darknessrewardcontainermajor1l38", // 3448093418
@@ -34490,6 +35110,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcd8da03b: "1hlongsword_isabellaschosent5_v2", // 3448610875
     0xcd915805: "mediumlegs_empyrean_mutt5", // 3448854533
     0xcd91d6a3: "2hkiteshielddungeon8t5", // 3448886947
+    0xcd93024d: "conquerorsitem_heavyhead_swarmarmor_s1e", // 3448963661
     0xcd932ca7: "lightfeet_snakeskinbootst5_v2", // 3448974503
     0xcd9399f8: "head_inquisitort2", // 3449002488
     0xcd942d43: "omega_mediumlegs_ranger_600", // 3449040195
@@ -34556,6 +35177,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcdeaa5ee: "lightlegs_covenantrank2_soldier_v2", // 3454707182
     0xcdec662d: "lightchest_covenantt2", // 3454821933
     0xcdede02a: "heavyhands_covenantrank3_occultist", // 3454918698
+    0xcdf09715: "flail_etherealt2_s1e", // 3455096597
     0xcdf0ca4d: "mediumchest_marauderrank6_ranger", // 3455109709
     0xcdf1956e: "broken_weapon_2h_pitchfork", // 3455161710
     0xcdf275b9: "faction_armaments07_t3", // 3455219129
@@ -34578,6 +35200,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xce08c2cf: "2hbowangryeartht2", // 3456680655
     0xce0b2999: "mediumhands_depths_mutt5", // 3456838041
     0xce0bd940: "shard_foc_medium_bal_legst5", // 3456883008
+    0xce0be5ff: "skin_gloves_maraff2025", // 3456886271
     0xce0d065b: "02a_side08_shieldpieceb", // 3456960091
     0xce0d2277: "omega_heavyhead_scholar_607_2", // 3456967287
     0xce0e13df: "schematic_house_housingitem_table_legion_table01_c", // 3457029087
@@ -34774,6 +35397,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcf25e599: "lightchest_syndicaterank1_v2", // 3475367321
     0xcf2707d2: "flamec_1hgauntletvoidt5", // 3475441618
     0xcf28ec92: "playtest_box_patterns_e_sprigganbane", // 3475565714
+    0xcf29f19e: "heavyfeet_worldevent_s1_t5_v3", // 3475632542
     0xcf2aca7b: "mediumchest_etherealt4", // 3475688059
     0xcf2de034: "2hwarhammer_corruptedresistancet3", // 3475890228
     0xcf2e57f4: "omega_lightfeet_sentry_605", // 3475920884
@@ -34879,6 +35503,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xcfe884f1: "1hflail_winter_foc_600", // 3488122097
     0xcfe9f6c9: "lighthead_covenantrank3_soldier_v2", // 3488216777
     0xcfeaa60f: "omega_stafffire_612", // 3488261647
+    0xcfed038b: "perkitem_chest_healthstam_synergy", // 3488416651
     0xcfee1098: "shard_int_amuletemeraldt5", // 3488485528
     0xcfee6957: "lighthead_elitepoi_invasionassassint5_v2", // 3488508247
     0xcfee9d61: "focstrbonust4", // 3488521569
@@ -34951,6 +35576,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd05d5a61: "lightchest_syndicaterank3_ranger_v2", // 3495778913
     0xd0604852: "1hhatchet_hatcherywepmog", // 3495970898
     0xd0612ac0: "playtest_spear_dmg_t5_585", // 3496028864
+    0xd06205d2: "campskin_igloo_a_pvp", // 3496084946
     0xd062fa80: "doubloonalgae04", // 3496147584
     0xd069aaae: "omega_mediumhands_soldier_615_3", // 3496585902
     0xd06bc432: "spider_fangs", // 3496723506
@@ -35006,6 +35632,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd0a5bfb0: "omega_lightlegs_soldier_pvp", // 3500523440
     0xd0a5e85c: "turret_t1_ballista_projectile", // 3500533852
     0xd0a64596: "earring_foreststalkersearringt5", // 3500557718
+    0xd0a7d33a: "conquerorsitem_bow_poisonshot_poisoncloud_s1e", // 3500659514
     0xd0a826e7: "beeswaxt1", // 3500680935
     0xd0ab1d82: "lightfeetat5", // 3500875138
     0xd0ab2b94: "mediumhands_knightt3", // 3500878740
@@ -35068,6 +35695,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd108a517: "omega_heavyfeet_sentry", // 3507004695
     0xd1092eeb: "omega_box_runeglassmoonstone", // 3507039979
     0xd10aa5a6: "invasionrewardcontainerrarity2l28", // 3507135910
+    0xd10acf9c: "conquerorsitem_musket_limbdebilitation_s1e", // 3507146652
     0xd10ad5ab: "amulett4_menofarmsmascot_v2", // 3507148203
     0xd10b1d66: "99e_msq_03_blightedsap", // 3507166566
     0xd10c0f7c: "questrewardweaponst5", // 3507228540
@@ -35120,12 +35748,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd14b2b58: "heavyhead_platet5_guaranteerare", // 3511364440
     0xd14d2557: "prospect_preciousore_t4", // 3511493975
     0xd14dd7ed: "1hgauntletvoid_unstoppabledecayt5_v2", // 3511539693
+    0xd14f3980: "flxpac_mediumlegs_barnacles_mutt5_owb", // 3511630208
     0xd14fba16: "gatherable_research_unusual_hide_t3", // 3511663126
     0xd152ddd9: "fm_loot_item_r0902", // 3511868889
     0xd154bbf7: "heavyhead_invasion1t4", // 3511991287
     0xd1563bbf: "omega_heavylegs_soldier_622", // 3512089535
     0xd157562c: "2hgreataxe_bearbonegreataxet5", // 3512161836
     0xd15a031a: "heavyfeet_lazarus_mutt5", // 3512337178
+    0xd15a260d: "trophiest51_s8", // 3512346125
     0xd15ba33b: "2hmusket_pvp_namedt5", // 3512443707
     0xd15befec: "artifact_wcarmormediumchestt5", // 3512463340
     0xd15d274f: "2hbow_patiencet5_v2", // 3512543055
@@ -35143,6 +35773,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd17f1ce1: "amulett4_aliyahsamulet ", // 3514768609
     0xd17f2270: "dungeonshattermtn00_chest03", // 3514770032
     0xd17f46a3: "heavychest_marauderlegatust5_ranger_v2", // 3514779299
+    0xd17f8f4a: "lightlegs_worldevent_s1_t5_v3", // 3514797898
     0xd1803bb2: "mysticarchetype_2hstafflife", // 3514842034
     0xd1827807: "1hrapier_encroachingcorruption", // 3514988551
     0xd1835085: "fencestone", // 3515043973
@@ -35188,6 +35819,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd1b9ec99: "amuletopalt4", // 3518622873
     0xd1bab8c7: "1hgauntletice_pvp_namedt3", // 3518675143
     0xd1bd672a: "2hroundshieldcrafteddungeon8t5", // 3518850858
+    0xd1bff075: "skin_mtx_coquette_2hvoidgauntlet", // 3519017077
     0xd1c3b561: "1hflail_named33_t4", // 3519264097
     0xd1c6446e: "playtest_amulet_sentry_t5_700", // 3519431790
     0xd1c72113: "mediumhead_covenantrank6_2_soldier", // 3519488275
@@ -35229,6 +35861,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd1f48301: "heavyfeet_plate_siege2024", // 3522462465
     0xd1f56256: "99d_msq_09_medicine", // 3522519638
     0xd1f58c0a: "1hrshield_governesst5", // 3522530314
+    0xd1f666fa: "skin_mtx_ninja_kitsune_chest", // 3522586362
     0xd1f89d4f: "greatermastery_loggingxp_display", // 3522731343
     0xd1fa0663: "playtest_box_armor_sentry_t5_625_light", // 3522823779
     0xd1fab6d9: "92_08_protectivewyrd_chest_questitem", // 3522868953
@@ -35253,6 +35886,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd21d14f3: "pattern_graverobbers_lifestaff", // 3525121267
     0xd21dcff0: "shard_blunderbuss", // 3525169136
     0xd22222d9: "omega_mediumhead_ranger_620_2", // 3525452505
+    0xd223048f: "1hgauntletice_taiyingsheartt5_v3", // 3525510287
     0xd2244a67: "heavychest_angryearthelite1t4", // 3525593703
     0xd2248c91: "invasionrewardcontainerrarity3l17", // 3525610641
     0xd225102b: "skin_chest_s3_rank1_lb_sirenqueen", // 3525644331
@@ -35281,6 +35915,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd244d203: "mediumlegs_lost2t4", // 3527725571
     0xd2453e1a: "skin_warhammer_wicked", // 3527753242
     0xd245e4a8: "mediumhead_marauderrank1_ranger_v2", // 3527795880
+    0xd24612df: "skin_2hbow_season8seasonalserver_box", // 3527807711
     0xd246de82: "lighthands_firstlightrevampt5", // 3527859842
     0xd24741a5: "omega_box_armor_ranger_heavy", // 3527885221
     0xd24bfcfa: "pattern_femlacel_gloves_t5", // 3528195322
@@ -35310,6 +35945,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd2703660: "2hwarhammerdungeon8t5", // 3530569312
     0xd271038b: "heavyfeet_covenantrank6_sage", // 3530621835
     0xd2711572: "lightfeet_cloth_siege2024", // 3530626418
+    0xd27283e5: "lighthead_bramblehelmt5_v3", // 3530720229
     0xd273a5cc: "dyeb100", // 3530794444
     0xd274410d: "rarebaitclamt4", // 3530834189
     0xd2753680: "lodestonelifet1", // 3530897024
@@ -35343,11 +35979,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd2a48d09: "omega_longsword_605", // 3533999369
     0xd2a5e107: "1hgauntletvoid_graspofammitt5", // 3534086407
     0xd2a6ba0d: "mediumfeet_ancient1t2", // 3534141965
+    0xd2a6f8a8: "heavychest_etherealt2_s1e", // 3534157992
     0xd2a7a75a: "fm_loot_item_18", // 3534202714
     0xd2a7cdfe: "1hkiteshield_pvp_prestiget3", // 3534212606
     0xd2a8598b: "itempattern_primevalhusk_helm", // 3534248331
     0xd2a87875: "mediumhead_syndicate_skin", // 3534256245
     0xd2aab9c0: "mediumfeet_hollyking_foc", // 3534404032
+    0xd2ac62f6: "soulwarden_blunderbuss", // 3534512886
     0xd2ad530d: "feet_demonhunter1t4", // 3534574349
     0xd2adc86e: "ringt5_theringoftheforgerssignet_purple", // 3534604398
     0xd2ae687a: "playtest_blunderbuss_dmg_t5_650", // 3534645370
@@ -35375,6 +36013,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd2cbfedd: "2hspear_heavensplittert5", // 3536584413
     0xd2d0bc07: "flxpac_mediumfeet_dynastyshipyard_mutt5", // 3536894983
     0xd2d5d040: "1hgauntletice_marauderrank5", // 3537227840
+    0xd2d8eba8: "welcome_box_s8", // 3537431464
     0xd2dc0e7c: "playtest_earring_sentry_t4", // 3537636988
     0xd2e0b8cb: "mediumchest_summer600t5_dex", // 3537942731
     0xd2e8c344: "2hspeardungeon9t5", // 3538469700
@@ -35388,11 +36027,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd2f6037d: "rewardpostcapharvestingt3", // 3539338109
     0xd2f7a722: "playtest_warhammer_dmg_t5_600", // 3539445538
     0xd2f7ce87: "lighthands_syndicaterank5_ranger_v2", // 3539455623
+    0xd2f8a3f8: "skin_1hpickaxe_season8pass", // 3539510264
     0xd2f8e21e: "2hstafflife_staffofpeerlesswhisperst5_v2", // 3539526174
     0xd2f9c5f4: "flxpac_lighthead_depths_mutt5", // 3539584500
     0xd2ff41e3: "mediumfeet_undeadofficert2", // 3539943907
     0xd302acb3: "fm_loot_item_c_26_06", // 3540167859
     0xd303aa48: "2hbow_soulofthestormt3", // 3540232776
+    0xd304514f: "greataxe_etherealt4_s1e", // 3540275535
     0xd3051577: "lighthead_medleyfaire2024_gs700", // 3540325751
     0xd3054e1b: "shard_dex_heavy_phy_headt5", // 3540340251
     0xd3066b96: "playtest_mediumchest_sentry_t5_625", // 3540413334
@@ -35416,6 +36057,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd3233961: "perfectsalvage_earringdiamondt5", // 3542301025
     0xd323b37e: "mediumfeet_trial_s5_namedt5", // 3542332286
     0xd326af66: "heavylegs_marauderrank2_brigand", // 3542527846
+    0xd326cf81: "entdisplay_skin_2hazothscepter_season8pass", // 3542536065
     0xd3292e39: "mediumlegs_shroudedintentpantst5a", // 3542691385
     0xd32a91be: "lightfeet_syndicaterank2_soldier_v2", // 3542782398
     0xd32aa973: "2hspeardungeon8t5", // 3542788467
@@ -35515,6 +36157,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd3b4cddd: "lightlegs_drowned1t5", // 3551841757
     0xd3b63cb5: "npc_weapon_handsaw", // 3551935669
     0xd3b752d8: "heavyhands_angryearth2t4", // 3552006872
+    0xd3b89971: "owbrewardcontainernormal_admiral", // 3552090481
     0xd3b90d60: "playtest_tank_flail_t5_675", // 3552120160
     0xd3bc7845: "heavyhead_platepvpdropt5", // 3552344133
     0xd3bef4fa: "rewardcontainerangryearthl10", // 3552507130
@@ -35555,6 +36198,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd3f0202d: "omega_heavyhead_sage_500", // 3555729453
     0xd3f13590: "omega_ring_scholar_610_4", // 3555800464
     0xd3f1545a: "heavychest_drownedelite1t5", // 3555808346
+    0xd3f336bc: "skin_feet_maraff2025", // 3555931836
     0xd3f378d7: "omega_heavyfeet_soldier_pvp_a5", // 3555948759
     0xd3f77438: "ringt3_colonelsedenring", // 3556209720
     0xd3fa77b2: "mediumfeet_syndicate_skin", // 3556407218
@@ -35573,12 +36217,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd40aba45: "omega_box_armor_sage_605_heavy", // 3557472837
     0xd40b67df: "amulett5_thechainofzane_v2", // 3557517279
     0xd40ba596: "lightlegs_corruptedelite1t4", // 3557533078
+    0xd40c1467: "skin_chest_owb_box", // 3557561447
     0xd40c86bf: "playtest_lighthands_sentry_t5_700", // 3557590719
     0xd40cc687: "2hwarhammer_earthensmashert2", // 3557607047
     0xd40dfad5: "skin_chest_s4_rank2_lb_invasion", // 3557685973
     0xd40fcc8a: "2hbow_steelamalgamationt2", // 3557805194
     0xd41127b5: "fm_loot_item_s_28_15", // 3557894069
     0xd413cd72: "skin_hands_season3deluxe", // 3558067570
+    0xd41d7682: "skin_chest_s8_rank1_lbclear_shipyard", // 3558700674
     0xd4234960: "omega_heavyfeet_ranger_610", // 3559082336
     0xd423c908: "2hstafflifecorruptedt4", // 3559115016
     0xd427213a: "2hmusket_marauderrank6_2", // 3559334202
@@ -35591,6 +36237,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd4386240: "heavyhands_covenantinquisitort5_brigand", // 3560464960
     0xd438f567: "rewardpostcaparmoringt3", // 3560502631
     0xd439b9b6: "1hgauntletice_crystallinecurset5_v2", // 3560552886
+    0xd43a1384: "gauntletice_etherealt4_s1e", // 3560575876
     0xd43b0e69: "crx_reward_mediumleathert4_feet", // 3560640105
     0xd43da6fe: "fm_loot_item_c_2", // 3560810238
     0xd43dd8ba: "fm_loot_item_s_7_07", // 3560822970
@@ -35647,6 +36294,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd49e8bab: "darknessrewardcontainermajor1l28", // 3567160235
     0xd49ebcce: "omega_heavyfeet_soldier_pvp_a1", // 3567172814
     0xd4a226b0: "pattern_graverobbers_firestaff", // 3567396528
+    0xd4a2f007: "sickle_etherealt2_s1e", // 3567448071
     0xd4a2f363: "ringdropt5_dex_inferno_leg", // 3567448931
     0xd4a44d88: "2hgreatsword_hercyneraid", // 3567537544
     0xd4a6b68d: "kt_undead_bastion_30127_mi_chaliceofdoom", // 3567695501
@@ -35698,6 +36346,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd4eaad7c: "lightchest_covenantrank2_barbarian", // 3572149628
     0xd4ec975a: "emeraldt4", // 3572275034
     0xd4ee1b37: "omega_mediumhead_soldier_612", // 3572374327
+    0xd4ee5626: "mediumchest_etherealt2_s1e", // 3572389414
     0xd4ee8fe8: "greatsword_apexdoubloonshopt5", // 3572404200
     0xd4f08b12: "0333_0104_creepypoppet", // 3572534034
     0xd4f5861d: "heavyhead_plate_siege2024", // 3572860445
@@ -35807,6 +36456,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd5998edd: "2hpickt5_makegood", // 3583610589
     0xd59aa202: "2hblunderbuss_covenantrank5", // 3583681026
     0xd59d068c: "omega_mediumhands_soldier_pvp_a4", // 3583837836
+    0xd59d59f7: "entdisplay_campskin_season8_a", // 3583859191
     0xd5a0a634: "heavylegs_oakking_foc_600", // 3584075316
     0xd5a11eaa: "trinket_box_s1_inferno", // 3584106154
     0xd5a15ec6: "skin_chest_fatefortunetellerl", // 3584122566
@@ -35834,6 +36484,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd5cf50e9: "lighthands_clothpvpreplicat5", // 3587133673
     0xd5cf72e9: "earringt4_theblessedwyrdwoodearring_v2", // 3587142377
     0xd5cff226: "2hmusket_marauderrank1_v2", // 3587174950
+    0xd5d0a08c: "blunderbuss_etherealt3_s1e", // 3587219596
     0xd5d23652: "shard_int_2helementalstaff_firet5", // 3587323474
     0xd5d4a720: "trialseals2_soldier", // 3587483424
     0xd5d4afb3: "1hgauntletice_brineofthefrostyshoret4", // 3587485619
@@ -35884,6 +36535,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd62b376f: "skin_legendarystrength_loggingaxe", // 3593156463
     0xd62c4f53: "1hkshield_priscillasshieldt5_600_v2", // 3593228115
     0xd62d4bb0: "1hflail_named108_t5", // 3593292720
+    0xd62e1e4b: "2hspear_blazingbushhookt5_v3", // 3593346635
     0xd62ea7a0: "rewardpostcapskinningt2", // 3593381792
     0xd62fb64d: "mediumchest_angryearth1t3", // 3593451085
     0xd6303ca8: "1hlongsword_corallasht5_v2", // 3593485480
@@ -35897,6 +36549,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd636fac9: "2hmusket_weaverofwarst5", // 3593927369
     0xd6393184: "2hblunderbuss_agedmetalt4", // 3594072452
     0xd639d564: "shard_all_lightchest_clotht52", // 3594114404
+    0xd63c23a1: "armort3_s8", // 3594265505
     0xd63d7cd5: "skin_lifestaff_feb2023", // 3594353877
     0xd63f19c0: "fm_loot_item_r0906", // 3594459584
     0xd64092e0: "bundle_corruptcoating_3", // 3594556128
@@ -35927,6 +36580,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd66a23b7: "sep2023_container", // 3597280183
     0xd66a6e8d: "mediumlegs_marauderrank4_occultist", // 3597299341
     0xd66aab49: "mediumlegs_ancient1t3", // 3597314889
+    0xd66d89f9: "ring_etherealt4_s1e", // 3597502969
     0xd66e83ac: "mediumchest_sqrewardebonscalet5", // 3597566892
     0xd66f43a1: "heavyfeet_marauderrank2_occultist", // 3597616033
     0xd66f5f62: "skinnercharmt2", // 3597623138
@@ -36103,6 +36757,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd7523c84: "schematic_house_housingitem_settler_decor_garden_wheelbarrow02", // 3612490884
     0xd753731e: "mediumfeet_leathert5_guaranteerare", // 3612570398
     0xd754da86: "omega_ring_ranger_pvp_2", // 3612662406
+    0xd7557d0c: "skin_chest_coveff2025_box", // 3612704012
     0xd757d369: "flxpac_lighthands_lazarus_mutt5", // 3612857193
     0xd75891b5: "13_summer_08_questreward", // 3612905909
     0xd759b85f: "1hthrowingaxe_hoplite", // 3612981343
@@ -36143,6 +36798,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd78f88a0: "artifact_nhweaponrshieldt5_gs600", // 3616508064
     0xd790cdec: "skin_hands_medievalhistoric_darkhorns", // 3616591340
     0xd795477d: "omega_mediumchest_soldier_610", // 3616884605
+    0xd799a884: "mediumhands_worldevent_s1_t5_v3", // 3617171588
     0xd799c610: "2hstafffire_pvp_prestiget2", // 3617179152
     0xd79c7928: "squasht1", // 3617356072
     0xd79d2696: "playtest_box_weapons_tank_t5_650", // 3617400470
@@ -36173,8 +36829,11 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd7c5b559: "musicresearchnotes", // 3620058457
     0xd7c723b7: "artifact_smnewarmor675heavychest", // 3620152247
     0xd7c75a02: "weapon_box_s2", // 3620166146
+    0xd7c921aa: "campt1_pvp", // 3620282794
     0xd7cd666e: "2hbow_oiljar", // 3620562542
     0xd7cd8c61: "schematic_house_housingitem_legion_decor_thronegod01_a", // 3620572257
+    0xd7ce5db2: "toolst5_s8", // 3620625842
+    0xd7d12524: "dyea024_mounts", // 3620807972
     0xd7d224ce: "omega_mediumhands_scholar_500", // 3620873422
     0xd7d330b6: "lightchest_farmert4", // 3620942006
     0xd7d37b58: "2hgreataxe_marauderrank4_v2", // 3620961112
@@ -36384,6 +37043,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd92c715d: "2hwarhammerdungeon7t5", // 3643568477
     0xd92d5ef3: "12a_side_14_mistwine", // 3643629299
     0xd932292e: "2helementalstaff_fire_halloweennewt5", // 3643943214
+    0xd932b28f: "greatsword_etherealt2_s1e", // 3643978383
     0xd9333a70: "skin_greataxe_classicrpg", // 3644013168
     0xd933657b: "2hspear_marauderrank1_v2", // 3644024187
     0xd933cc5e: "evil_knight_lifestaff_icevariant", // 3644050526
@@ -36414,6 +37074,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd9510d2d: "1hgauntletvoid_immortalabysst5_v2", // 3645967661
     0xd953b0d2: "influencerewardcontainerl41", // 3646140626
     0xd9543681: "omega_lumberaxe_t5", // 3646174849
+    0xd95531c3: "flxpac_lightfeet_empyrean_mutt5_owb", // 3646239171
     0xd9584d87: "omega_mediumchest_ranger_607_2", // 3646442887
     0xd95b7738: "skin_chest_malachite_m", // 3646650168
     0xd95f0b57: "1hrapier_rapierofforgottenqueenst4", // 3646884695
@@ -36473,6 +37134,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd9a7c8cb: "2hblunderbuss_potshott5_v2", // 3651651787
     0xd9a8a687: "omega_box_armor_scholar_605_medium", // 3651708551
     0xd9ac7d71: "rewardcontainercorruptedl17", // 3651960177
+    0xd9aceacd: "skin_head_season8seasonalserver_box", // 3651988173
     0xd9ad24c1: "mediumhead_syndicaterank5", // 3652003009
     0xd9b0a09f: "playtest_tank_heavyhands_t5_650", // 3652231327
     0xd9b324c3: "mediumlegs_syndicaterank4_v2", // 3652396227
@@ -36484,6 +37146,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xd9b88d9c: "mediumlegs_so_bossxpac_mutt5", // 3652750748
     0xd9b89dc9: "shard_foc_bowt52", // 3652754889
     0xd9b9b2f3: "heavylegs_pvp_namedt5_v2", // 3652825843
+    0xd9bbaf24: "skin_chest_s8_rank2_lbclear_starstone", // 3652955940
     0xd9bc4c9c: "ringt3_fortunacrystalsignet", // 3652996252
     0xd9bc9139: "heavyhead_platedropt5_foc_inferno", // 3653013817
     0xd9bdb1a2: "1hrapierdungeon10t5", // 3653087650
@@ -36559,6 +37222,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xda18ace9: "heavyfeet_oakkingt4_shop", // 3659050217
     0xda18ea4d: "1hrapiercrafteddungeon10t5", // 3659065933
     0xda1914c7: "concealedvaultlvl50", // 3659076807
+    0xda199942: "mediumfeet_etherealt5_s1e", // 3659110722
     0xda1b5aa4: "skin_head_bfnw2gladiator", // 3659225764
     0xda1c4f86: "omega_mediumhead_noarmor", // 3659288454
     0xda1d6498: "lightfeet_ds_boss_mutt5_v2", // 3659359384
@@ -36568,6 +37232,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xda231f79: "itempattern_lieutenants_legguards", // 3659734905
     0xda2411e9: "schematic_house_housingitem_chair_finechair_a", // 3659796969
     0xda261c4b: "1hgauntletvoid_vastanguisht4", // 3659930699
+    0xda27a249: "skin_chest_s8_rank2_lbclear_depths", // 3660030537
     0xda2be987: "earringemeraldt2", // 3660310919
     0xda2bf8f6: "1hgauntletvoid_tortuousinfernost5_v2", // 3660314870
     0xda2d7228: "playtest_lightchest_scholar_t5_600", // 3660411432
@@ -36586,6 +37251,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xda38b653: "1hgauntletvoid_pvp_namedt51", // 3661149779
     0xda3965cc: "1hrapierdungeon12t5", // 3661194700
     0xda3bfbf5: "2hbow_wardensanswert5", // 3661364213
+    0xda3c08e7: "1hgauntletvoid_forestsshadowt5_v3", // 3661367527
     0xda3c7aec: "amulett5_maatsblessing_v2", // 3661396716
     0xda3ed0cc: "mountbuff_customc_t1", // 3661549772
     0xda3fd196: "2hstafflifeancient2ancestralt5", // 3661615510
@@ -36613,6 +37279,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xda63320b: "omega_box_weapons_602", // 3663933963
     0xda635cd4: "workorder_faction_armorset02_t3", // 3663944916
     0xda682827: "lightlegs_summert5_foc", // 3664259111
+    0xda69e40b: "2hspear_worldevent_s1_t5_v3", // 3664372747
     0xda6a0b61: "omega_lightchest_sage_612", // 3664382817
     0xda6e86a5: "faction_provisions07_t2", // 3664676517
     0xda6e8d93: "2hblunderbuss_thelandt5", // 3664678291
@@ -36634,6 +37301,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xda840eac: "mountattachmentitem_skin_conquistadorskull", // 3666087596
     0xda844824: "2hgreataxelostt2", // 3666102308
     0xda847bc5: "skin_legs_nightmares_2", // 3666115525
+    0xda84c358: "flxpac_heavyfeet_barnacles_mutt5_owb", // 3666133848
     0xda8786f5: "omega_box_armor_ranger_610", // 3666314997
     0xda87e2b2: "skin_monster_skeletonhands", // 3666338482
     0xda8806c4: "hercyneraidinductor", // 3666347716
@@ -36762,15 +37430,18 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdb409a86: "lightlegs_syndicaterank6_2_soldier", // 3678444166
     0xdb42afe2: "lighthead_marauderrank1_ranger_v2", // 3678580706
     0xdb47178c: "2hspearelitebreacht3", // 3678869388
+    0xdb49322b: "skin_chest_s8_rank2_lbscore_forge", // 3679007275
     0xdb495563: "skin_feet_bfnw2gladiator", // 3679016291
     0xdb4a0d2b: "heavyfeet_dungeon7t5", // 3679063339
     0xdb4aa32e: "heavyhead_oakkingt4_shop", // 3679101742
+    0xdb4b9685: "mediumhead_etherealt5_s1e", // 3679164037
     0xdb4c6471: "heavychest_syndicaterank6_2_scholar", // 3679216753
     0xdb4d2f16: "fm_loot_item_s_3_14", // 3679268630
     0xdb4d853c: "heavyhead_covenantrank6_2_scholar", // 3679290684
     0xdb4f6732: "platformrepeatert2", // 3679414066
     0xdb4f8438: "earringt4_trinketoftheodora _v2", // 3679421496
     0xdb510523: "1hkshield_toleranthoundt5", // 3679520035
+    0xdb565ac9: "skin_chest_s8_rank2_lb_opr", // 3679869641
     0xdb574c5f: "glowingcapt1", // 3679931487
     0xdb59ae92: "skin_rangerarchetypehead", // 3680087698
     0xdb604cb9: "2hmusket_syncretic", // 3680521401
@@ -36814,6 +37485,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdb9e5385: "mediumchest_chitint5", // 3684586373
     0xdb9f7502: "recipe_foodcont5", // 3684660482
     0xdb9f8649: "intfocbonust1", // 3684664905
+    0xdb9ff899: "stafflife_etherealt4_s1e", // 3684694169
     0xdba1204a: "shard_dex_2hspeart5", // 3684769866
     0xdba34c53: "2hgreataxeancientelitet5", // 3684912211
     0xdba51ffc: "mediumfeet_syndicaterank6_2_ranger", // 3685031932
@@ -36824,6 +37496,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdba9f9a0: "1hthrowingaxe_concubinet4", // 3685349792
     0xdbaa6d64: "1hflail_named96_t5", // 3685379428
     0xdbab6669: "lighthands_syndicaterank6_2_ranger", // 3685443177
+    0xdbab8411: "earring_etherealt2_s1e", // 3685450769
     0xdbacb5ce: "heavyhands_enchanteddryadglovest5_v2", // 3685529038
     0xdbacbcb7: "artisan_muskett5", // 3685530807
     0xdbad471c: "1hkiteshielddrownedelitet5", // 3685566236
@@ -36862,6 +37535,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdbe248d9: "2hstafflife_abominationsstafft3", // 3689040089
     0xdbe483b2: "2hmusketinvasiont5", // 3689186226
     0xdbe5b1f2: "fm_loot_item_s_18", // 3689263602
+    0xdbe5bac2: "flxpac_heavylegs_dynastyshipyard_mutt5_owb", // 3689265858
     0xdbe787f8: "2hgreatsword_roughedget5_v2", // 3689383928
     0xdbeabf39: "flxpac_lightlegs_barnacles_mutt5", // 3689594681
     0xdbec0afe: "shard_dex_amulettopazt5", // 3689679614
@@ -36941,6 +37615,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdc43e694: "topazt2", // 3695437460
     0xdc46b8cc: "2hmusketbondsmant5", // 3695622348
     0xdc4701ce: "lighthands_legionelitet5", // 3695641038
+    0xdc48ed21: "expedition_box_s8", // 3695766817
     0xdc495a3b: "hands_faction2officert5", // 3695794747
     0xdc4a58f7: "2hmusket_winter_dex", // 3695859959
     0xdc4b560b: "crx_repeatablereward_brimstone", // 3695924747
@@ -36966,10 +37641,12 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdc603077: "1hrapier_marauderrank6_2", // 3697291383
     0xdc652df9: "1303_1311_burnishedbuckles", // 3697618425
     0xdc662572: "fm_loot_item_c_17_10", // 3697681778
+    0xdc685f7b: "flxpac_ringt5_bb_mut_owb", // 3697827707
     0xdc68c0f4: "fm_hunt_item_3", // 3697852660
     0xdc6a246c: "1hgauntletvoiddropt5_guaranteerare", // 3697943660
     0xdc6a291f: "hatchet_doubloonshopt5", // 3697944863
     0xdc6d350e: "1hgauntletice_touchoffrostt2", // 3698144526
+    0xdc6d4c80: "skin_feet_owb_box", // 3698150528
     0xdc725b1f: "fm_loot_item_c_22_15", // 3698481951
     0xdc726f5d: "schematic_house_housingitem_legion_decor_statuegoddess01_a", // 3698487133
     0xdc729b5f: "2hfirestaff_marauderrank2", // 3698498399
@@ -37022,8 +37699,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdcaf001a: "2hgreatsword_barnacles_mutt5", // 3702456346
     0xdcb0e17a: "beach_chest2_hat2", // 3702579578
     0xdcb21810: "skin_chest_s6_rank2_lb_monoeciouscleft", // 3702659088
+    0xdcb26ec2: "lighthands_etherealt5_s1e", // 3702681282
     0xdcb2ab2f: "darknessrewardcontainerminor1l41", // 3702696751
     0xdcb2b425: "earring_invasiont5", // 3702699045
+    0xdcb3a3f6: "gauntletvoid_etherealt5_s1e", // 3702760438
     0xdcb41db5: "dyea049", // 3702791605
     0xdcb470aa: "claimt1_25m_t4", // 3702812842
     0xdcb4e439: "artifact_nhweapongreataxet5", // 3702842425
@@ -37107,6 +37786,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdd351521: "schematic_house_housingitem_chair_dynasty_chair02_a", // 3711243553
     0xdd35e48b: "tincturecorruptiont2", // 3711296651
     0xdd374828: "skin_chest_s6_rank2_lbclear_gardengenesis", // 3711387688
+    0xdd386325: "entdisplay_skin_1hrapier_season8pass", // 3711460133
     0xdd38ddf4: "dailyarenacachel35", // 3711491572
     0xdd391f5b: "2hgreatsword_dimensionaltetherpvp_t5", // 3711508315
     0xdd3cf2d3: "1hgauntletvoid_syndicaterank4", // 3711759059
@@ -37124,6 +37804,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdd4b7cdd: "fm_loot_item_24_09", // 3712711901
     0xdd4df642: "2hbow_steelsixt5_v2", // 3712874050
     0xdd4f8d01: "lightfeet_trial_s2_sharift5_v2", // 3712978177
+    0xdd5038f0: "campskin_ronin_01_pvp", // 3713022192
     0xdd51e067: "2hspear_syndicaterank4_v2", // 3713130599
     0xdd525c9a: "heavyhands_brimstonesands_mutt5", // 3713162394
     0xdd57947b: "heavyfeet_furplateinfluencet5", // 3713504379
@@ -37207,6 +37888,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xddb08d58: "2hbow_forgottensongt3", // 3719335256
     0xddb44375: "food_box_s1_inferno", // 3719578485
     0xddb46704: "playtest_heavyhands_soldier_t5_585", // 3719587588
+    0xddb77eaa: "artifact_set2_1hlongsword", // 3719790250
     0xddba9939: "2hmusket_moonwalkersriflet5", // 3719993657
     0xddbb7690: "schematic_house_housingitem_dynasty_dresser01_c", // 3720050320
     0xddbba1ad: "entdisplay_skin_head_season3basic", // 3720061357
@@ -37242,6 +37924,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xddf17c9f: "2hstafflifedungeon4t4", // 3723590815
     0xddf2a046: "2hgreataxe_pvp_prestiget4", // 3723665478
     0xddf52389: "alchemyt4", // 3723830153
+    0xddf5f818: "heavylegs_spring_gs715", // 3723884568
     0xddf86160: "lighthead_robe_crassus_s7", // 3724042592
     0xddf8a14e: "heavyhands_summert5_shop", // 3724058958
     0xddf9bd07: "mediumfeet_corrupted1t5", // 3724131591
@@ -37273,6 +37956,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xde251173: "mediumlegs_syndicaterank1_soldier_v2", // 3726971251
     0xde251760: "mediumhead_nightveil2024", // 3726972768
     0xde28776c: "1510_1507_westernrunestone", // 3727193964
+    0xde2a97ef: "spear_etherealt2_s1e", // 3727333359
     0xde2b2f47: "lighthands_gog_boss600_mutt5", // 3727372103
     0xde2b79a7: "2hbow_purefiret5_v2", // 3727391143
     0xde2e7a02: "scarab_con_heavy_ele_chestt5", // 3727587842
@@ -37400,6 +38084,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdef61930: "mediumlegsdt5", // 3740670256
     0xdef6549e: "1htshield_girdleofgebt5", // 3740685470
     0xdefa759c: "2htowershield_ae_mutextra_t5", // 3740956060
+    0xdf00429b: "1hkiteshield_worldevent_s1_t5_v3", // 3741336219
     0xdf01ff81: "skin_legendaryazoth_azothscepter", // 3741450113
     0xdf0374fd: "entdisplay_campskin_season6_a", // 3741545725
     0xdf082c7f: "claimt1_30m_t4", // 3741854847
@@ -37446,6 +38131,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xdf43f226: "1hthrowingaxe_hercyneraid_craftedshard", // 3745772070
     0xdf43f684: "lighthead_covenantt2", // 3745773188
     0xdf43f947: "lightlegs_wedding_con_600", // 3745773895
+    0xdf463e4e: "potiongritt5", // 3745922638
     0xdf46e2b3: "2hwarhammer_azothcrystal", // 3745964723
     0xdf47d034: "fm_loot_item_12_10", // 3746025524
     0xdf47da57: "faction_armaments04_t3", // 3746028119
@@ -37626,7 +38312,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe045c74e: "dyeb120", // 3762669390
     0xe045ce40: "flxpac_2hstafflife_so_mutextra_t5", // 3762671168
     0xe0473bc5: "mediumlegs_summert5_int", // 3762764741
+    0xe04844f2: "flxpac_mediumchest_brimstonesands_mutt5_owb", // 3762832626
     0xe04b2956: "2hbow_westernwindt5_v2", // 3763022166
+    0xe052eda3: "soulwarden_heavy_sword", // 3763531171
     0xe0550f5a: "2hgreataxe_maulersaxet5", // 3763670874
     0xe0597f1f: "playtest_heavylegs_scholar_t2", // 3763961631
     0xe059dfc9: "campskin_winter03_a", // 3763986377
@@ -37837,6 +38525,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe1889678: "rewardcontainerangryearthl30", // 3783825016
     0xe18b6569: "lightfeet_clothdropt3", // 3784009065
     0xe18df574: "lightfeet_etherealt5", // 3784177012
+    0xe18e9791: "skin_gloves_season8seasonalserver_box", // 3784218513
     0xe18fb5df: "2hblunderbusspvpreplicat4", // 3784291807
     0xe19197aa: "mediumfeet_covenantrank4_cleric", // 3784415146
     0xe195539d: "lighthead_summer600t5_dex", // 3784659869
@@ -37872,7 +38561,9 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe1cd03c1: "playtest_heavychest_soldier_t2", // 3788309441
     0xe1ce0f4f: "1hkiteshieldlegacycrassust5_fixed", // 3788377935
     0xe1cec4c2: "playtest_amulet_sage_t5_650", // 3788424386
+    0xe1d24772: "lighthands_etherealt4_s1e", // 3788654450
     0xe1d290ba: "1hkiteshield_brimstonesands_mutt5", // 3788673210
+    0xe1d38a46: "gauntletvoid_etherealt4_s1e", // 3788737094
     0xe1d3c160: "questreward_99e_msq_09_guardianssatchel", // 3788751200
     0xe1d4487d: "1hthrowingaxe_corruptedchoppert5_v2", // 3788785789
     0xe1d460bb: "skin_chest_rank1_lbclear_forge", // 3788791995
@@ -38002,6 +38693,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe28763a0: "heavyhead_d_boss_mutt5_v2", // 3800523680
     0xe28823c4: "1hshielda_nightveil2024", // 3800572868
     0xe289cb99: "mediumfeet_rescuert4", // 3800681369
+    0xe28a5d13: "skin_chest_s8_rank2_lbclear_gardengenesis", // 3800718611
     0xe28ebd4f: "rewardcontainerancientl44", // 3801005391
     0xe2904e50: "gatherers_mandolin_part1_page1", // 3801108048
     0xe292143e: "skin_mtx_easter_feet", // 3801224254
@@ -38065,6 +38757,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe2f8aa09: "turretrepeatert1", // 3807947273
     0xe2f912d0: "skin_hands_daichiaic", // 3807974096
     0xe2fd3047: "heavyhands_ds_mutextra_t5", // 3808243783
+    0xe2fe3d63: "heavylegs_mushroomwanders", // 3808312675
     0xe2ffb899: "playtest_mystic_ring_t5_700", // 3808409753
     0xe3002315: "shard_dex_1hgauntletvoidt5", // 3808437013
     0xe300f74d: "lighthead_trial_s2_sharift5_foccon", // 3808491341
@@ -38075,6 +38768,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe305f8f0: "omega_mediumhead_sentry", // 3808819440
     0xe306fe00: "artifact_smnewarmormediumlegs", // 3808886272
     0xe3093e1e: "workorder_faction_armaments03_t3", // 3809033758
+    0xe3098d34: "skin_mtx_ninja_kitsune_feet", // 3809054004
     0xe30b43f1: "06_hallowed_candle", // 3809166321
     0xe30b54ca: "12a_side_07_nabisnotes", // 3809170634
     0xe30bfb30: "1hshieldd_winter_int", // 3809213232
@@ -38117,6 +38811,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe346e207: "1hthrowingaxe_neverendingwintert3_v2", // 3813073415
     0xe3478b65: "omega_heavychest_soldier_607", // 3813116773
     0xe34a1f54: "2hgreatswordlegacycrassust5", // 3813285716
+    0xe34abe5f: "spear_etherealt3_s1e", // 3813326431
     0xe34be118: "playtest_lighthead_sage_t2", // 3813400856
     0xe34d41a6: "2hspear_lastlightt3", // 3813491110
     0xe34d6b0d: "lightchest_surgeonsgownt4_v2", // 3813501709
@@ -38212,6 +38907,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe3f3105a: "crx_1hgauntleticesirenarena", // 3824357466
     0xe3f458f7: "2hspear_chaosspeart5", // 3824441591
     0xe3f7e754: "mediumhead_undeadberserkert3", // 3824674644
+    0xe3f96fe6: "skin_mtx_ninja_2hgreatsword", // 3824775142
     0xe3f97d41: "skin_chest_lbclear_starstone", // 3824778561
     0xe3fc38bd: "mediumlegs_leathert52", // 3824957629
     0xe3ff262d: "pvparena_potionmanat4", // 3825149485
@@ -38284,6 +38980,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe4508246: "2hmusket_overflowingpowert5", // 3830481478
     0xe4525a10: "amulett5_protectorsfortunecharm", // 3830602256
     0xe4527b33: "amulet_pvpt2", // 3830610739
+    0xe4529b3f: "greatsword_etherealt3_s1e", // 3830618943
     0xe452a5cb: "foodarmorert4", // 3830621643
     0xe455ff98: "omega_mediumlegs_ranger", // 3830841240
     0xe45616c8: "1035_0201_chopped_dates", // 3830847176
@@ -38349,6 +39046,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe4b59ec9: "mediumhands_ds_mutextra_t5", // 3837107913
     0xe4b66df3: "fm_loot_item_s_18_14", // 3837160947
     0xe4b6841c: "mediumfeet_covenantt3", // 3837166620
+    0xe4b693ed: "mediumlegs_mushroomwanders", // 3837170669
     0xe4b73940: "influencerewardcontainerl62_loser", // 3837212992
     0xe4b7a1b1: "schematic_house_housingitem_settler_cabinet02_c", // 3837239729
     0xe4b94f2d: "heavylegs_syndicaterank2_soldier_v2", // 3837349677
@@ -38399,6 +39097,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe4e9c6e6: "playtest_greatsword_dmg_t5_675_runeglass1", // 3840526054
     0xe4eb4310: "fm_loot_item_c_5_04", // 3840623376
     0xe4ec5d86: "heavyfeet_marauderrank4_ranger_v2", // 3840695686
+    0xe4ecc6ba: "flxpac_lightlegs_brimstonesands_mutt5_owb", // 3840722618
     0xe4edabe5: "2hwarhammer_earthshakert2", // 3840781285
     0xe4edb18a: "mediumhands_marauderrank1_occultist", // 3840782730
     0xe4ee8baf: "dyeb179", // 3840838575
@@ -38441,6 +39140,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe516c94c: "campskin_winter04_a", // 3843475788
     0xe5176cc6: "2htowershielddungeon11t5", // 3843517638
     0xe5178c40: "fm_loot_item_s_12_05", // 3843525696
+    0xe5186e7d: "skin_chest_s8_rank2_lb_sandworm", // 3843583613
     0xe5197919: "1hlongsworddungeon1t3", // 3843651865
     0xe51acc0e: "flxpac_lightlegs_so_mutextra_t5", // 3843738638
     0xe51f9e09: "2hblunderbuss_brutishpowdert5", // 3844054537
@@ -38506,6 +39206,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe57b07d8: "playtest_stafflife_dmg_t4", // 3850045400
     0xe57c659b: "omega_lightlegs_ranger_pvp", // 3850134939
     0xe57d16c7: "2hgreataxe_icestrikert3", // 3850180295
+    0xe57e3191: "campskin_rpg01_a_pvp", // 3850252689
     0xe57e5b8d: "earringdropt5_con_sandstorm_leg", // 3850263437
     0xe57e7ba5: "dailyarenacachel44", // 3850271653
     0xe5801b56: "schematic_house_housingitem_table_settler_bedsidetable_d", // 3850378070
@@ -38582,6 +39283,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe5e3f019: "lightlegs_angryearth1t4", // 3856920601
     0xe5e5493f: "invasion_cowlauncher_projectile", // 3857008959
     0xe5e8b2dc: "fm_hunt_item_13", // 3857232604
+    0xe5ea9361: "entdisplay_barbershop_token", // 3857355617
     0xe5eb822b: "1hgauntletvoid_leevshandt3", // 3857416747
     0xe5ec4ff5: "skin_chest_s4_rank1_lbscore_crystalclaw", // 3857469429
     0xe5ed008e: "1hrapier_brigandsbladet2", // 3857514638
@@ -38630,6 +39332,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe62a424b: "femshaman_lightlegs_siege2024", // 3861529163
     0xe62a8483: "1002_0104_essenceofshadow", // 3861546115
     0xe62b56cb: "doublooncrateresourcest5", // 3861599947
+    0xe62bbf35: "mediumhead_etherealt4_s1e", // 3861626677
     0xe62db6b3: "kt_alphawolf_den_40118_mi_corruptedmoss", // 3861755571
     0xe631d866: "omega_lighthead_scholar_pvp", // 3862026342
     0xe635be02: "0333_0102_firebrightruby", // 3862281730
@@ -38702,6 +39405,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe6a6b2fb: "heavyhead_li_boss600_mutt5", // 3869684475
     0xe6a74c3c: "omega_lighthands_ranger_pvp_a4", // 3869723708
     0xe6aaf133: "heavyfeet_covenantrank4_sage_v2", // 3869962547
+    0xe6ac1085: "campskin_floral01_a_pvp", // 3870036101
     0xe6acf948: "2hstafffire_staffofignitedconflictt5_v2", // 3870095688
     0xe6aed1bb: "mediumhead_spring_600_foc", // 3870216635
     0xe6b05f37: "fm_loot_item_s_20_07", // 3870318391
@@ -38721,6 +39425,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe6c5a146: "playtest_ring_soldier_t5_600", // 3871711558
     0xe6ca44d4: "1hflail_named86_t5", // 3872015572
     0xe6cb5d86: "heavyfeet_syndicaterank6_2_ranger", // 3872087430
+    0xe6cbada1: "earring_etherealt3_s1e", // 3872107937
     0xe6cbb890: "mediumchest_nightveil2024", // 3872110736
     0xe6cd8bdd: "clothinghead_lumberjackt5", // 3872230365
     0xe6ce1849: "2hspearinfluencet4", // 3872266313
@@ -38764,8 +39469,10 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe6fc5c28: "1htowershieldlegiont5", // 3875298344
     0xe6fdd066: "1htshield_covenantrank3", // 3875393638
     0xe6fe3d43: "heavyhead_kingofthejunglet5_v2", // 3875421507
+    0xe6ffd129: "stafflife_etherealt5_s1e", // 3875524905
     0xe7025d52: "fm_hunt_item_5_03", // 3875691858
     0xe70290cc: "heavychest_platet5", // 3875705036
+    0xe7043b87: "skin_feet_season8pass", // 3875814279
     0xe704cd2b: "heavychest_heavy_siege2024", // 3875851563
     0xe70576fd: "shard_int_2hspeart5", // 3875895037
     0xe707cb71: "playtest_ring_soldier_t5_700", // 3876047729
@@ -38791,6 +39498,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe728bd93: "mediumhands_covenantt5", // 3878206867
     0xe72b417d: "2hblunderbuss_tremendousshoutt3_v2", // 3878371709
     0xe72d68c7: "lighthead_marauderrank5_brigand", // 3878512839
+    0xe72f1f2e: "owbrewardcontainerbonus_empress", // 3878625070
     0xe7319f8b: "ringdexcont5", // 3878789003
     0xe7339739: "perfectsalvage_1hshieldkitet5", // 3878917945
     0xe734e5fd: "2hbow_covenantrank3", // 3879003645
@@ -38816,6 +39524,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe74fcded: "lightlegsct4", // 3880766957
     0xe751d29f: "2htowershielddungeon12t5", // 3880899231
     0xe75591cc: "entdisplay_title_season7_battlepass", // 3881144780
+    0xe75761a4: "wolfgrant_s8", // 3881263524
     0xe758ee0a: "fm_loot_item_c_2_03", // 3881365002
     0xe759ae3b: "ringt5_gash_v2", // 3881414203
     0xe75a4afe: "playtest_musket_dmg_t5_650", // 3881454334
@@ -38843,6 +39552,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe774994a: "omega_ring_sage_600_1", // 3883178314
     0xe776b355: "darknessrewardcontainermajor2l49", // 3883316053
     0xe779260e: "mediumchest_furlinedtundraguardsarmort5", // 3883476494
+    0xe779b0f2: "mediumfeet_etherealt4_s1e", // 3883512050
     0xe77b6e20: "1hgauntletice_glacialsorrowt5", // 3883626016
     0xe77b8ff6: "fm_loot_item_c_11_04", // 3883634678
     0xe77d8da6: "earringt5_warriorsenergy", // 3883765158
@@ -38882,6 +39592,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe7b900fa: "1hrapiercrafteddungeon6t5", // 3887661306
     0xe7ba1058: "campskin_nightmare02_a", // 3887730776
     0xe7ba9ba9: "2hwarhammercrafteddungeon4t4", // 3887766441
+    0xe7bb1c36: "lighthands_spring_gs715", // 3887799350
     0xe7bc17a5: "turret_t1_admiralbrute_projectile", // 3887863717
     0xe7c07a9d: "omega_mediumfeet_soldier_pvp_a6", // 3888151197
     0xe7c10114: "2hwarhammer_sarcosanctt5", // 3888185620
@@ -39042,6 +39753,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe889b65c: "mediumhead_pvp_prestiget2", // 3901339228
     0xe88a2960: "omega_mediumfeet_soldier_602_3", // 3901368672
     0xe88b3d11: "ringt5", // 3901439249
+    0xe88bdf21: "lighthead_worldevent_s1_t5_v3", // 3901480737
     0xe88c3525: "fetch_military_camp_40405_mi_eartrumpet", // 3901502757
     0xe88ccad6: "fm_pvp_marauders_item_9", // 3901541078
     0xe88d19f6: "1hgauntletvoid_hellfire_mutt5", // 3901561334
@@ -39055,6 +39767,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe8990e1d: "1hroundshielddrownedt5", // 3902344733
     0xe8992006: "fm_loot_item_17_10", // 3902349318
     0xe8992a65: "faction_armaments01_t3", // 3902351973
+    0xe899b637: "skin_2hloggingaxe_season8pass", // 3902387767
     0xe89a2559: "lightchest_gossamerscorpioneggrobet5", // 3902416217
     0xe89aeacd: "2hspear_sunrisespeart5", // 3902466765
     0xe89bcff0: "rivetedmailt3", // 3902525424
@@ -39065,6 +39778,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe8a3dcb4: "omega_ring_soldier_600_4", // 3903052980
     0xe8a4640e: "crx_2hstafffire_elegantlamplightert5_v3", // 3903087630
     0xe8ad683a: "heavyfeet_lny2024t5", // 3903678522
+    0xe8b0893c: "blunderbuss_etherealt2_s1e", // 3903883580
     0xe8b0b87d: "2hspear_poseidonstridentt5_v2", // 3903895677
     0xe8b644de: "playtest_box_weapons_tank_t5_625", // 3904259294
     0xe8b700e4: "darkmatterlarge_premium_box_s7", // 3904307428
@@ -39072,6 +39786,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe8ba7101: "lightchest_bewitchedtunict5", // 3904532737
     0xe8ba8e23: "mi_corruptedaura", // 3904540195
     0xe8bae398: "scarab_foc_light_bal_feet_clotht5", // 3904562072
+    0xe8bb69eb: "flxpac_mediumhead_barnacles_mutt5_owb", // 3904596459
     0xe8bc7ade: "lightlegs_marauderrank1", // 3904666334
     0xe8bcdc5a: "1hgauntletice_rejectedsacrificet4_v2", // 3904691290
     0xe8bd9126: "2hbowmistwalkert5", // 3904737574
@@ -39172,6 +39887,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe957855d: "0831_0108_orichalcumrivets", // 3914827101
     0xe957f926: "1hlongsword_brilliantrefractiont4_v2", // 3914856742
     0xe958e56c: "fetch_abandoned_village_40210_mi_ouroboroscharm", // 3914917228
+    0xe95a3a34: "gauntletice_etherealt5_s1e", // 3915004468
     0xe95e101c: "0802_0104_firedragonstatuette", // 3915255836
     0xe95ef3dd: "skin_chest_s3_rank2_lbclear_gardengenesis", // 3915314141
     0xe95f6b6c: "mediumhead_syndicateplaguedoctort5_occultist", // 3915344748
@@ -39203,6 +39919,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe9872504: "2hlifestaff_covenantrank1", // 3917948164
     0xe98b2a75: "lightfeet_arcaniststreadst5_v2", // 3918211701
     0xe98e5441: "mediumfeet_elitebreacht5", // 3918419009
+    0xe98e7f96: "mediumchest_etherealt3_s1e", // 3918430102
     0xe98ed55a: "0721_0101_tf_item6", // 3918452058
     0xe98f5f30: "playtest_box_armor_sage_t5_675_medium", // 3918487344
     0xe9903153: "scarab_con_medium_bal_feett5", // 3918541139
@@ -39225,6 +39942,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe9a36bce: "mediumfeet_spring_foc", // 3919801294
     0xe9a4085d: "playtest_box_armor_soldier_t3_heavy", // 3919841373
     0xe9a46019: "bearheartcorruptedt1", // 3919863833
+    0xe9aaab4f: "lighthands_worldevent_s1_t5_v3", // 3920276303
     0xe9ad3b67: "darknessrewardcontainermajor2l41", // 3920444263
     0xe9ae5faf: "heavyhead_mask2_t5_v2", // 3920519087
     0xe9ae9acd: "trinket_chaint4", // 3920534221
@@ -39241,6 +39959,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xe9c0a89b: "fm_loot_item_s_24_14", // 3921717403
     0xe9c179ed: "2hspear_icewroughtpiket4", // 3921770989
     0xe9c2b6b6: "skin_feet_medievalhistoric_twitch02", // 3921852086
+    0xe9c2d9b7: "sickle_etherealt3_s1e", // 3921861047
     0xe9c2e188: "foodstrfoct3", // 3921863048
     0xe9c471bf: "2hlifestaff_syndicaterank2_v2", // 3921965503
     0xe9c471fe: "schematic_house_housingitem_pirate_decor_curtain02_b", // 3921965566
@@ -39387,6 +40106,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xea85fcd7: "lighthead_mask1_t3", // 3934649559
     0xea87418e: "ancienttextst1", // 3934732686
     0xea87a439: "1hrapier_assassinationbladet5", // 3934757945
+    0xea88e52a: "campskin_winter05_a_pvp", // 3934840106
     0xea88e634: "omega_mediumchest_scholar_612", // 3934840372
     0xea8a7f01: "2hspear_spearoftheouterislest5", // 3934945025
     0xea8aba88: "runedetonatet4a", // 3934960264
@@ -39472,6 +40192,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xeb0921cf: "shard_str_light_phy_feet_clotht5", // 3943244239
     0xeb0b1323: "playtest_swordbearer_greatsword_t5_700", // 3943371555
     0xeb0bed36: "heavylegs_covenantrank5_occultist", // 3943427382
+    0xeb0da049: "ring_etherealt5_s1e", // 3943538761
     0xeb0ec01a: "mediumfeet_covenantrank3_occultist", // 3943612442
     0xeb0efd0e: "omega_mediumfeet_soldier_600_3", // 3943628046
     0xeb0f784e: "lighthands_marauderrank2_occultist", // 3943659598
@@ -39668,6 +40389,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xec4f1e51: "1hgauntletvoid_sinistermalicet2_v2", // 3964608081
     0xec4fb21c: "omega_box_fullset_620", // 3964645916
     0xec505c26: "heavylegs_syndicaterank2", // 3964689446
+    0xec51fd2e: "flxpac_mediumfeet_brimstonesands_mutt5_owb", // 3964796206
     0xec53fba4: "lightfeet_carnival_var01t2", // 3964926884
     0xec57acd9: "amulett3_amuletofspiritforce", // 3965168857
     0xec5901a9: "2hstafflifeancientt4", // 3965256105
@@ -39696,6 +40418,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xec73d0cf: "mutatorrewardcontainerdiff5t3", // 3967013071
     0xec74437d: "crx_reward_lighttemplet5_head", // 3967042429
     0xec749d56: "1hflail_named93_t5", // 3967065430
+    0xec766451: "flxpac_lightfeet_dynastyshipyard_mutt5_owb", // 3967181905
     0xec7670d8: "heavyhands_trial_s2_namedt5_constr", // 3967185112
     0xec776600: "2hwarhammer_myrkgard_mutt5", // 3967247872
     0xec779bce: "lightfeet_fisherman_dropt3", // 3967261646
@@ -39745,6 +40468,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xecb22781: "heavyfeet_lost1t5", // 3971098497
     0xecb318af: "mediumhands_covenantrank5_scholar_v2", // 3971160239
     0xecb48c03: "1hrapier_glassforgedrapiert2", // 3971255299
+    0xecb5db60: "heavyhands_firstlightexp_mutt1_owb", // 3971341152
     0xecb5fb26: "1hthrowingaxe_newfoundhopet4", // 3971349286
     0xecb66cdd: "heavyhead_ae_mutextra_t5", // 3971378397
     0xecb7d9a6: "ring_breacht4", // 3971471782
@@ -39850,6 +40574,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xed4051d8: "mtx_nutcracker_apparel1_head", // 3980415448
     0xed409a1e: "amulett5_hercyneraid_craftedschematic", // 3980433950
     0xed40a989: "omega_stafflife_622", // 3980437897
+    0xed40d797: "runespinningswordst4a", // 3980449687
     0xed40f272: "schematic_house_housingitem_table_logtablestump", // 3980456562
     0xed4186c7: "2hgreatsword_rendingslicert4", // 3980494535
     0xed42a94d: "questreward_zq2eg_poisonousprick", // 3980568909
@@ -39860,6 +40585,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xed44f7cf: "dyea034", // 3980720079
     0xed489b47: "2hfirestaff_syndicaterank3_v2", // 3980958535
     0xed48c8ca: "2hblunderbuss_clawingcoldt4", // 3980970186
+    0xed4b4b74: "blueguffint2_s8", // 3981134708
     0xed4b832b: "skin_hatchet_frontierwastelander", // 3981148971
     0xed4e9e53: "wcconsumable_convergencecake", // 3981352531
     0xed4fafa9: "heavyhead_conquerorshelmt5", // 3981422505
@@ -39868,6 +40594,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xed507d99: "omega_musket_600", // 3981475225
     0xed50ab88: "amulet_invasiont4", // 3981486984
     0xed52fd99: "blacksmitharm_urbass_part1_page2", // 3981639065
+    0xed53f92e: "mediumlegs_spring_gs715", // 3981703470
     0xed564931: "1hthrowingaxe_ultimateclarityt5", // 3981855025
     0xed57828e: "mushroomflaskt2", // 3981935246
     0xed58c784: "dyeb175", // 3982018436
@@ -39944,6 +40671,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xedcd0384: "flxpac_2hfirestaff_brimstonesands_mutt5", // 3989635972
     0xedce5026: "mediumlegs_syndicaterank1_cleric", // 3989721126
     0xedce6cb6: "entdisplay_skin_2hfishingpole_season6pass", // 3989728438
+    0xedce83ed: "msq_heartgem_v2", // 3989734381
     0xedceada7: "2hmusket_gutshotmusketst5", // 3989745063
     0xedd0322b: "perfectsalvage_ringcarneliant5", // 3989844523
     0xedd39753: "2hwarhammer_persuadert5_v2", // 3990067027
@@ -40029,6 +40757,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xee5aa9b5: "lny_giftsack_bundle", // 3998919093
     0xee5e29c6: "0720_0108_blesseddryadwood", // 3999148486
     0xee62c36a: "lighthands_covenantrank3_brigand", // 3999449962
+    0xee6478ff: "greataxe_etherealt5_s1e", // 3999561983
     0xee65df85: "99f_er_panacea_incense", // 3999653765
     0xee669a8b: "scarab_foc_heavy_ele_feett5", // 3999701643
     0xee671f86: "omega_lightfeet_ranger_622", // 3999735686
@@ -40077,6 +40806,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xeea63348: "2hgreataxe_glacial_mutt5", // 4003869512
     0xeea80fe6: "rewardcontainerlostl16", // 4003991526
     0xeea8a7d9: "shard_int_earringjaspert5", // 4004030425
+    0xeea96a52: "skin_2hazothscepter_season8pass", // 4004080210
     0xeea9bb64: "fetch_brightwoodsisle_40221_mi_redsherring", // 4004100964
     0xeeab9cc4: "lighthands_marauderrank5", // 4004224196
     0xeeabd63b: "mtx_barbarian_apparel1_legs", // 4004238907
@@ -40225,6 +40955,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xef8eec78: "lightfeet_sunkenfishermant5", // 4019121272
     0xef8fe577: "itempattern_2hlifestaffwart5", // 4019185015
     0xef90888f: "femshaman_lighthead_legacycrassust5", // 4019226767
+    0xef91e7cf: "owbrewardcontainernormal_mammoth", // 4019316687
     0xef92c63f: "mediumchest_sorchuntert2", // 4019373631
     0xef92cd03: "scarab_foc_light_ele_hands_clotht5", // 4019375363
     0xef92e0fe: "heavyhead_glacial_mutt5", // 4019380478
@@ -40257,6 +40988,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xefc0dc12: "earringt4_thebonedusttrinket_v2", // 4022393874
     0xefc2d8bf: "lightchest_soulwardensspiritualrobest5", // 4022524095
     0xefc4e30b: "99f_er_elemental_ingredient_earth", // 4022657803
+    0xefc6d118: "heavychest_etherealt3_s1e", // 4022784280
     0xefc9be3f: "flxpac_2hmusket_hellfire_mutt5", // 4022976063
     0xefc9d128: "mediumfeet_apexdoubloonshopt5", // 4022980904
     0xefca0704: "heavyfeet_platedropt5", // 4022994692
@@ -40286,6 +41018,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xefef1859: "heavyfeet_marauderlegatust5", // 4025423961
     0xefef3c9e: "heavyfeet_bovinebootst5", // 4025433246
     0xefef3fb6: "earringshatteredmountaint5", // 4025434038
+    0xeff0e0ef: "jewelryt3_s8", // 4025540847
     0xeff142ce: "artifact_smarmormediumhands", // 4025565902
     0xeff4e41f: "fm_loot_item_17_14", // 4025803807
     0xeff690b1: "craterswitch1", // 4025913521
@@ -40387,12 +41120,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf087a0a0: "omega_lighthands_soldier_605_3", // 4035420320
     0xf088156d: "schematic_house_housingitem_singleshelf_a", // 4035450221
     0xf088f605: "mediumfeet_marauderrank5_scholar_v2", // 4035507717
+    0xf0890637: "conquerorsitem_spear_dodgecorruptionball_s1e", // 4035511863
     0xf089a35c: "heavychest_trial_s2_namedt5_str", // 4035552092
     0xf089b984: "lightlegs_syndicaterank1_scholar_v2", // 4035557764
     0xf08c630b: "99b_msq_06_transportorders", // 4035732235
     0xf08e01fc: "flxpac_heavychest_shatteredobelisk_mutt5", // 4035838460
     0xf08efa82: "mediumhead_hollykingt4_shop", // 4035902082
     0xf0901215: "runeglass_gem_amethyst_melee", // 4035973653
+    0xf090bea5: "flail_etherealt3_s1e", // 4036017829
     0xf091ff84: "heavyhands_arenaangryearth1t4", // 4036099972
     0xf09438c5: "mediumfeet_leatherdropt5_str_sandstorm", // 4036245701
     0xf094ad3a: "crx_questreward_ef_side_flail", // 4036275514
@@ -40552,12 +41287,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf16fc0cc: "2hblunderbussdungeon8t5", // 4050632908
     0xf17531b4: "omega_heavyfeet_soldier_500_3", // 4050989492
     0xf177059d: "potionfamiliywardancientt5", // 4051109277
+    0xf1774901: "campskin_fortune02_a_pvp", // 4051126529
     0xf178ada8: "playtest_amulet_soldier_t5_600", // 4051217832
     0xf17a0c76: "1hgauntletvoid_ds_mutextra_t5", // 4051307638
     0xf17a105d: "legs_demonhunter1t5", // 4051308637
     0xf17a3bd6: "heavyhands_arenaancient1t4", // 4051319766
     0xf17af217: "0831_0106_azothreceiver", // 4051366423
     0xf17d13a5: "ringstrcont5", // 4051506085
+    0xf17fe359: "1hrapier_worldevent_s1_t5_v3", // 4051690329
     0xf181e7a7: "questrewardweaponcase2", // 4051822503
     0xf182c1ca: "lighthead_marauderrank6", // 4051878346
     0xf186ed46: "heavyfeet_arenacorrupted1t5", // 4052151622
@@ -40600,6 +41337,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf1bd5274: "artifact_nhnewweaponblunderbusst5_gs675", // 4055716468
     0xf1bec5c1: "2hbow_driftwoodrecurvet3", // 4055811521
     0xf1c09c3b: "heavychest_furplate_crassus_s7", // 4055931963
+    0xf1c0e7f9: "campskin_season7_b_pvp", // 4055951353
     0xf1c1c4c9: "schematic_house_housingitem_table_legion_smalltable_d", // 4056007881
     0xf1c3164a: "2hgreatsword_heavenlypunishment", // 4056094282
     0xf1c454ab: "playtest_musketeer_amulet_t5_700", // 4056175787
@@ -40667,6 +41405,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf21ae815: "lighthead_wanderinghelm", // 4061849621
     0xf21be6d6: "2hstafflife_glowinglifecrystalstafft4", // 4061914838
     0xf2205ec9: "fm_loot_item_c_11", // 4062207689
+    0xf221a9a3: "skin_head_maraff2025", // 4062292387
     0xf221b0bf: "lightfeet_lost2t5", // 4062294207
     0xf222e0ca: "malachitecutt3", // 4062372042
     0xf223c025: "rewardcontainerancientl58", // 4062429221
@@ -40685,6 +41424,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf23f7081: "2hspear_pestillentshortspeart5_v2", // 4064243841
     0xf242ac7e: "2hbow_patientjudgementt4", // 4064455806
     0xf242bb8b: "schematic_regimentt4", // 4064459659
+    0xf244ad7b: "lighthead_mushroomwanders", // 4064587131
     0xf244d8a3: "shard_foc_ringjaspert5", // 4064598179
     0xf2466109: "omega_greatsword_605", // 4064698633
     0xf2486f9b: "fm_loot_item_5_13", // 4064833435
@@ -40740,6 +41480,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf2a073f4: "heavychest_platedropt5_con_inferno", // 4070601716
     0xf2a2efb1: "heavyfeet_li_boss600_mutt5", // 4070764465
     0xf2a44089: "1hrapier_cherishedmemoryt4_v2", // 4070850697
+    0xf2a5026e: "toolst3_s8", // 4070900334
     0xf2a50ee1: "heavyfeet_lostelite1t4", // 4070903521
     0xf2a58112: "ringfoct3", // 4070932754
     0xf2a5fcd6: "or_bulwark", // 4070964438
@@ -40755,6 +41496,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf2aebd5a: "2hblunderbuss_syndicaterank4", // 4071538010
     0xf2afb042: "dwellingt3", // 4071600194
     0xf2b250f4: "lighthead_breach1t5", // 4071772404
+    0xf2b396f2: "conquerorsitem_blunderbuss_dodgecorruptionball_s1e", // 4071855858
     0xf2b516f4: "1hkiteshieldsiren_st5", // 4071954164
     0xf2b60177: "1hgauntletice_grippingrimet5_v2", // 4072014199
     0xf2b79a6c: "fm_loot_item_c_27_05", // 4072118892
@@ -40804,6 +41546,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf3022045: "lightchest_provisionervar2t5", // 4077002821
     0xf30374ce: "omega_lighthands_soldier_607_3", // 4077089998
     0xf305304f: "1208_0101_azothoil", // 4077203535
+    0xf305a7d4: "owbrewardcontainernormal_empress", // 4077234132
     0xf308af8d: "mediumlegs_daichimog", // 4077432717
     0xf30982ed: "heavychest_marauderrank1_brigand", // 4077486829
     0xf309d508: "heavyhead_syndicaterank3_cleric", // 4077507848
@@ -40859,6 +41602,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf3507dd1: "2hstafffire_syndicatealchemistsfirestafft5", // 4082138577
     0xf3518a46: "or_weaponsmith_t1", // 4082207302
     0xf3520d6e: "heavyhead_covenantrank5_sage_v2", // 4082240878
+    0xf3577c7d: "armort5_s8", // 4082596989
     0xf35d3b02: "factiontincturecorruptiont3", // 4082973442
     0xf35db555: "lighthead_mask4_t5_v2", // 4083004757
     0xf35ed843: "2hspear_covenanttemplarsspeart4a", // 4083079235
@@ -40946,6 +41690,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf3edce67: "2hbow_overgrowtht4", // 4092448359
     0xf3ee7cb2: "lightfeet_war1t5", // 4092492978
     0xf3eec143: "perfectsalvage_ringtopazt5", // 4092510531
+    0xf3ef16bb: "skin_chest_s8_rank1_lbclear_depths", // 4092532411
     0xf3f17ecf: "shard_con_ringmalachitet5", // 4092690127
     0xf3f3323e: "1hflail_named64_t5", // 4092801598
     0xf3f3503e: "skin_hands_jun2023_frontwastetwitch", // 4092809278
@@ -41033,6 +41778,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf484c798: "mediumfeet_marauderrank1", // 4102342552
     0xf4883230: "lighthead_covenantrank1_barbarian", // 4102566448
     0xf488f3fe: "schematic_house_housingitem_legion_bookcase01_d", // 4102616062
+    0xf4891e50: "conquerorsitem_bow_dodgecorruptionball_s1e", // 4102626896
     0xf4898eef: "runeglass_gem_sapphire_ice", // 4102655727
     0xf489be4f: "15_battle_plans", // 4102667855
     0xf48a0b86: "1hgauntletvoidpvpdropt3", // 4102687622
@@ -41139,6 +41885,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf529c756: "omega_ring_scholar_600_3", // 4113155926
     0xf52f2e08: "crx_lightfeet_sandworm_trial", // 4113509896
     0xf52feba4: "sounds_guitar_part1_page2", // 4113558436
+    0xf5302d6e: "skin_chest_s8_rank2_lbscore_lazarusinstrumentality", // 4113575278
     0xf531e1b9: "mediumhands_syndicateplaguedoctort5_soldier_v2", // 4113686969
     0xf535d371: "onyxcutt1", // 4113945457
     0xf535e17f: "mediumlegs_doubloonshopt3", // 4113949055
@@ -41198,6 +41945,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf593851a: "omega_earring_scholar_612", // 4120085786
     0xf594beaf: "playtest_bruiser_amulet_t5_625", // 4120166063
     0xf597b818: "skin_feet_rpgranger", // 4120360984
+    0xf5985c51: "campskin_hecate01_a_pvp", // 4120403025
     0xf599cd04: "skin_blunderbuss_metal", // 4120497412
     0xf59a7037: "mediumhead_pvp_namedt51", // 4120539191
     0xf59cdcef: "1hrapier_rapierofthegrandchampiont5_v2", // 4120698095
@@ -41205,6 +41953,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf5a27d22: "1hthrowingaxedungeon9t5", // 4121066786
     0xf5a40b6e: "schematic_house_housingitem_bed_legion_bed02_c", // 4121168750
     0xf5a464b5: "proficiencyboostert5_goldtouched", // 4121191605
+    0xf5a74e86: "mediumhands_spring_gs715", // 4121382534
     0xf5a8059a: "darknessrewardcontainerminor1l3", // 4121429402
     0xf5a806b6: "1hthrowingaxelostt3", // 4121429686
     0xf5aabf83: "schematic_house_housingitem_chair_legion_chair01_b", // 4121608067
@@ -41289,6 +42038,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf6248864: "2hlifestaff_marauderrank5", // 4129589348
     0xf6259a4b: "1hkiteshieldancientt5", // 4129659467
     0xf6288fee: "playtest_healer_lightfeet_t5_650", // 4129853422
+    0xf628ed4d: "entdisplay_dye_crushedberry", // 4129877325
     0xf62a4828: "dyes5_box_s5", // 4129966120
     0xf62a738d: "2hstafflifelostt4", // 4129977229
     0xf62bf242: "mi_finefur", // 4130075202
@@ -41330,6 +42080,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf64d5025: "scarab_dex_2hcelestialstaff_lifet5", // 4132261925
     0xf64d5c7f: "legs_courtier1t4", // 4132265087
     0xf64e9a8e: "2hstafffire_firebindert5_v2", // 4132346510
+    0xf6510c34: "rw_pveresource_tokenrare", // 4132506676
     0xf651aaa3: "foodjewelcraftert4", // 4132547235
     0xf65344cb: "omega_lightchest_ranger_620_2", // 4132652235
     0xf65550fe: "skin_hands_feb2023_omenswinterowl", // 4132786430
@@ -41368,6 +42119,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf67abd47: "99f_er_mountain_incense", // 4135238983
     0xf67d8d02: "fm_loot_item_c_15_03", // 4135423234
     0xf67de11a: "2hgreataxe_nature_mutt5", // 4135444762
+    0xf681f587: "may2025_twitchprime_box", // 4135712135
     0xf6831b8d: "foodminert4", // 4135787405
     0xf686fe5e: "1hrapier_agelessbladet4", // 4136042078
     0xf6883ba9: "1hlongsword_piratescutlass", // 4136123305
@@ -41428,6 +42180,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf6ea2432: "fetch_undead_bastion_40207_mi_ironcompass", // 4142539826
     0xf6ea282f: "heavylegs_platedropt5_con_inferno", // 4142540847
     0xf6eb0a7d: "schematic_house_housingitem_legion_shelf01_b", // 4142598781
+    0xf6ee992e: "skin_chest_s8_rank2_lb_openworld", // 4142831918
     0xf6ef05d3: "lighthead_marauderrank2", // 4142859731
     0xf6ef0736: "entdisplay_skin_drum_season6pass", // 4142860086
     0xf6ef0a49: "2hblunderbussdungeon12t5", // 4142860873
@@ -41484,12 +42237,14 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf7316c46: "sbconsumable_springtidedram", // 4147211334
     0xf735b2e1: "rewardpostcapstonecuttingt2_b", // 4147491553
     0xf738a760: "crx_2hmusketangryeartharena", // 4147685216
+    0xf738b92a: "heavyfeet_firstlightexp_mutt1_owb", // 4147689770
     0xf7394de9: "2hmusketcrafteddungeon13t5", // 4147727849
     0xf739c986: "playtest_mediumhands_sentry_t5_700", // 4147759494
     0xf73a1341: "skin_head_abyssal", // 4147778369
     0xf7403cd1: "mediumchest_covenantrank6_2_soldier", // 4148182225
     0xf74422c7: "2hblunderbussdrownedelitet5", // 4148437703
     0xf7442cb7: "2hspear_pvp_namedt51", // 4148440247
+    0xf745a867: "lightfeet_mushroomwanders", // 4148537447
     0xf7461c5c: "pvparena_foodintt4", // 4148567132
     0xf748970d: "lightlegs_spring_foc", // 4148729613
     0xf74c4c7e: "itempattern_femlacel_head_t4", // 4148972670
@@ -41507,6 +42262,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf7681352: "playtest_tank_heavyleg_t5_675", // 4150793042
     0xf7686f79: "shard_foc_heavy_ele_chestt5", // 4150816633
     0xf76a9164: "fetch_abandoned_village_40259_mi_ornatepuzzlebox", // 4150956388
+    0xf76b4d9f: "skin_legs_syndff2025", // 4151004575
     0xf76bca47: "ringt5_m_mut", // 4151036487
     0xf76bd69a: "1hgauntletvoid_souldraint5", // 4151039642
     0xf76c8c42: "schematichercyne_heavyhands", // 4151086146
@@ -41536,6 +42292,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf799e250: "mediumhead_pvp_prestiget5_v2", // 4154057296
     0xf79a2e3c: "mediumlegs_drop_s2_t5", // 4154076732
     0xf79a33e2: "pvp_potions_medium_ancientt3_b", // 4154078178
+    0xf79a994a: "lightlegs_etherealt2_s1e", // 4154104138
     0xf79ba352: "mediumchestct5", // 4154172242
     0xf79e38d6: "lightchest_clothpvpdropt5", // 4154341590
     0xf79e4d0d: "faction_armorset01_t2", // 4154346765
@@ -41544,6 +42301,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf7a0e47d: "2hgreataxe_breachersbattleaxet3_v2", // 4154516605
     0xf7a223ae: "fm_loot_item_s_11_05", // 4154598318
     0xf7a3001e: "1hflail_deepriver", // 4154654750
+    0xf7a35d95: "towershield_etherealt4_s1e", // 4154678677
     0xf7a4c087: "invasionrewardcontainerrarity1highl42", // 4154769543
     0xf7a5308d: "lightchest_barnacles_mutt5", // 4154798221
     0xf7a64366: "heavyhands_corrupted2t5", // 4154868582
@@ -41584,6 +42342,8 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf7dd2c1b: "playtest_healer_stafflife_t5_675", // 4158467099
     0xf7dd2f71: "recipe_foodintstrt4", // 4158467953
     0xf7dfda8b: "consecratediront2", // 4158642827
+    0xf7e09d1d: "kiteshield_etherealt5_s1e", // 4158692637
+    0xf7e2b45d: "musket_etherealt5_s1e", // 4158829661
     0xf7e3272f: "itempattern_1hrapierwart5", // 4158859055
     0xf7e7f9aa: "omega_lighthead_sentry_615", // 4159175082
     0xf7ec01da: "schematic_house_housingitem_chair_legion_chair02_b", // 4159439322
@@ -41658,11 +42418,13 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf85103b5: "amuletdropt5_str_sandstorm", // 4166058933
     0xf85125db: "femheavyfeet_crassus_s7", // 4166067675
     0xf8563687: "2hstafffire_depths_mutt5", // 4166399623
+    0xf856a810: "skin_mtx_greek_gods_gloves", // 4166428688
     0xf85798ad: "2hwarhammer_arcanecrackert2", // 4166490285
     0xf857a6ee: "lighthead_carnival_var01t2", // 4166493934
     0xf857d4ba: "mediumhead_mask9_t5_v2", // 4166505658
     0xf8588bd2: "playtest_stafffire_tnk_t4", // 4166552530
     0xf85a6e39: "1hgauntletice_fimbulvetrt3_v2", // 4166676025
+    0xf85b8aee: "longsword_etherealt5_s1e", // 4166748910
     0xf85d67ce: "omega_heavyhands_scholar_607", // 4166870990
     0xf85e06fc: "shard_all_1hgauntletvoidt52", // 4166911740
     0xf85e3529: "invasionrewardcontainerrarity1lowl44", // 4166923561
@@ -41875,6 +42637,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf972bfe5: "ringt3_kappacrestedband_v2", // 4185047013
     0xf9775339: "flxpac_mediumchest_d_mutextra_t5", // 4185346873
     0xf97ad029: "lightlegs_clotht52", // 4185575465
+    0xf97e78b6: "mountattachmentitem_skin_journal", // 4185815222
     0xf97eae1a: "fm_loot_item_s_24", // 4185828890
     0xf97f8c82: "meatgamet1", // 4185885826
     0xf97fc923: "scarab_str_medium_bal_handst5", // 4185901347
@@ -41943,6 +42706,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xf9d7f2f1: "mediumhands_pvp_prestiget3", // 4191679217
     0xf9d8760d: "playtest_earring_soldier_t5_585", // 4191712781
     0xf9db4d5f: "mediumfeet_angryearth1t4", // 4191898975
+    0xf9df52f5: "or_outpost_gate_sol_t3", // 4192162549
     0xf9dfe396: "mediumchest_drowned1t5", // 4192199574
     0xf9e0b538: "1hrapier_renaissancet5_v2", // 4192253240
     0xf9e17e9d: "invasionrewardcontainerrarity2l45", // 4192304797
@@ -42150,6 +42914,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfb30d42a: "flamec_1hflailt5", // 4214281258
     0xfb3161d5: "demeterboonpotiond1_t1", // 4214317525
     0xfb3172d7: "chest_avengingblacksmitht2", // 4214321879
+    0xfb32dea9: "campskin_thetower_a_pvp", // 4214415017
     0xfb3503e0: "2hstafffire_questl39", // 4214555616
     0xfb36e327: "runeglass_gem_carnelian_void", // 4214678311
     0xfb398836: "diamondcutt2", // 4214851638
@@ -42168,6 +42933,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfb504689: "dyea051_mounts", // 4216342153
     0xfb50fa03: "mediumhead_covenantrank6", // 4216388099
     0xfb51708e: "playtest_box_tankloadout_t5_700", // 4216418446
+    0xfb52aeaf: "bow_etherealt4_s1e", // 4216499887
     0xfb54d6e6: "perfectsalvage_amuletopalt5", // 4216641254
     0xfb54e172: "lightlegs_syndicatet2", // 4216643954
     0xfb58a3a4: "2hspear_oversizedwandt2_v2", // 4216890276
@@ -42233,6 +42999,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfbb5f5dc: "amuletdropt5_con_inferno", // 4223006172
     0xfbb7d995: "mediumchest_m_bossxpac_mutt5", // 4223130005
     0xfbb97149: "heavyhands_marauderrank1_cleric", // 4223234377
+    0xfbbb5f35: "owbrewardcontainerbonus_mammoth", // 4223360821
     0xfbbd2e2a: "lighthead_syndicaterank3", // 4223479338
     0xfbbd70cb: "2hspear_yuanqi", // 4223496395
     0xfbbdb608: "1hthrowingaxe_imbuedhatchett5_v2", // 4223514120
@@ -42254,6 +43021,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfbd010a3: "heavyhands_covenantrank4_v2", // 4224716963
     0xfbd7d931: "fetch_ancient_buttress_40120_mi_tarot", // 4225227057
     0xfbdb276a: "scarab_int_warhammert52", // 4225443690
+    0xfbdb7ffc: "wardenbox", // 4225466364
     0xfbdf1bfa: "heavyhead_covenantrank6_2_sage", // 4225702906
     0xfbe2e4be: "heavylegs_dungeon10t5", // 4225950910
     0xfbe5d379: "omega_mediumfeet_ranger_pvp_a4", // 4226143097
@@ -42348,6 +43116,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfc6466dc: "lightfeet_summert5_str", // 4234438364
     0xfc654ae4: "dailyarenacachel54", // 4234496740
     0xfc668c73: "fm_loot_item_c_29_07", // 4234579059
+    0xfc66ecc0: "amulet_etherealt4_s1e", // 4234603712
     0xfc6719c0: "evil_knight_warhammer_ice", // 4234615232
     0xfc689ff5: "animust1", // 4234715125
     0xfc693bf3: "heavychest_oakking_foc_600", // 4234755059
@@ -42427,6 +43196,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfccb6a05: "mi_ancientcasket", // 4241189381
     0xfccf6891: "heavychest_breach1t3", // 4241451153
     0xfcd31d7f: "omega_box_armor_scholar_622_heavy", // 4241694079
+    0xfcd55bc1: "hatchet_etherealt2_s1e", // 4241841089
     0xfcd78319: "heavyfeet_breach1t5", // 4241982233
     0xfcd87b1f: "mediumlegs_syndicaterank2_v2", // 4242045727
     0xfcd8be54: "mediumhands_marauderrank6_2_soldier", // 4242062932
@@ -42479,6 +43249,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfd22923f: "crx_questreward_ef_head_medium", // 4246901311
     0xfd23b656: "foodintdext5", // 4246976086
     0xfd241302: "omega_lighthands_scholar_600", // 4246999810
+    0xfd26ede7: "flxpac_lighthead_barnacles_mutt5_owb", // 4247186919
     0xfd280e6d: "ring_goldbandofthehighheraldt5_v2", // 4247260781
     0xfd2961c6: "scarab_foc_medium_phy_chestt5", // 4247347654
     0xfd2b4081: "playtest_mediumhead_ranger_t4", // 4247470209
@@ -42526,6 +43297,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfd5be4f0: "1hgauntletvoid_obsidianterrort5_v2", // 4250658032
     0xfd5ed575: "2hbow_barnacles_mutt5", // 4250850677
     0xfd60a909: "lighthands_covenant_skin", // 4250970377
+    0xfd60b220: "campskin_nightmare02_a_pvp", // 4250972704
     0xfd614b2f: "playtest_box_soldierarchetype_t5_700", // 4251011887
     0xfd625483: "heavyhead_covenantinquisitort5", // 4251079811
     0xfd65a570: "heavylegs_heavyt5", // 4251297136
@@ -42569,6 +43341,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfda26ce5: "heavyfeet_syndicaterank2_brigand", // 4255280357
     0xfda72f8a: "influencerewardcontainerl50_loser", // 4255592330
     0xfda76c5a: "1418_0101_ensouledwoodenbase", // 4255607898
+    0xfda9de3a: "conquerorsitem_lightlegs_dodgecorruptionball_s1e", // 4255768122
     0xfdaac109: "fm_hunt_item_2_14", // 4255826185
     0xfdac71c0: "skin_legs_aug2023_balancemedium", // 4255936960
     0xfdad5cb2: "fm_loot_item_s_18_04", // 4255997106
@@ -42707,6 +43480,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfe5ff7f7: "greataxe_etherealt4", // 4267702263
     0xfe60896f: "1010_0101_swampys_stewpots", // 4267739503
     0xfe60beb7: "fm_loot_item_c_11_14", // 4267753143
+    0xfe6191bd: "worldevent_s1_normalbox_s8", // 4267807165
     0xfe629877: "entdisplay_title_season2_journeychallenge9", // 4267874423
     0xfe62a319: "2hstafffire_spellstaffofheroicsacrificet5", // 4267877145
     0xfe6320cb: "rewardcontainerangryearthl2", // 4267909323
@@ -42747,6 +43521,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfe8741da: "2hbow_whisperoffaitht2", // 4270277082
     0xfe8804d5: "conquerorsitem_greataxe_dodgesuppressant", // 4270326997
     0xfe8b352d: "fm_loot_item_6_07", // 4270535981
+    0xfe8b8e68: "conquerorsitem_warhammer_dodgesuppressant_s1e", // 4270558824
     0xfe8cba84: "invasionrewardcontainerrarity2l41", // 4270635652
     0xfe8f9dd0: "skin_hands_rpgbarbarian", // 4270824912
     0xfe909dea: "wolfessencet1", // 4270890474
@@ -42777,6 +43552,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfeb53c41: "2hgreatsword_putrefactiont5_v2", // 4273290305
     0xfeb74cd4: "0825_0802_bisonmeat", // 4273425620
     0xfeb763ef: "artisan_skinningknifet5", // 4273431535
+    0xfeb883f0: "skin_legs_owb", // 4273505264
     0xfeb9e02b: "omega_lightlegs_sentry_620", // 4273594411
     0xfeba6f77: "lightfeet_arenalost1t5", // 4273631095
     0xfebb83c2: "itempattern_primalhusk_coat", // 4273701826
@@ -42824,6 +43600,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xfefc45dc: "2hcelestialstaff_lifet3", // 4277945820
     0xfefe3a1f: "1hthrowingaxedungeon6t5", // 4278073887
     0xfeff2953: "crx_reward_heavyfemwarriort5_legs", // 4278135123
+    0xff012907: "1hgauntletvoid_worldevent_s1_t5_v3", // 4278266119
     0xff0172ad: "mediumhead_m_boss_mutt5", // 4278284973
     0xff0466af: "heavychest_trial_s2_namedt5_confoc", // 4278478511
     0xff051790: "heavyhands_marauderrank6_scholar", // 4278523792
@@ -42945,6 +43722,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xff8e6da6: "fooddexfoct3", // 4287524262
     0xff8f59ef: "lightchestat4", // 4287584751
     0xff912846: "04aside03_0201_ancientscroll", // 4287703110
+    0xff928e61: "heavylegs_etherealt3_s1e", // 4287794785
     0xff95cdce: "omega_heavyhead_sentry_607", // 4288007630
     0xff96bc83: "2hbow_angelswingst5_v2", // 4288068739
     0xff97dec1: "mediumchest_leatherdropt5_dex_sandstorm", // 4288143041
@@ -42967,6 +43745,7 @@ var hashMasterItemDefinitionsItemID = map[uint32]string{
     0xffb0f987: "pvp_potions_small_beastt1_a", // 4289788295
     0xffb1aaaa: "2hbowpvpreplicat2", // 4289833642
     0xffb2138d: "fm_hunt_item_1_08", // 4289860493
+    0xffb374ef: "stafffire_etherealt5_s1e", // 4289950959
     0xffb3d868: "darknessrewardcontainermajor1l18", // 4289976424
     0xffb46360: "playtest_bruiser_hatchet_t5_650", // 4290012000
     0xffb4bad2: "lightchest_clothdropt5_foc_inferno_leg", // 4290034386

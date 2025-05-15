@@ -7,6 +7,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x038799b6: "siege_fortgate_m_t2", // 59218358
     0x03e68b89: "campskin_firelight01_b", // 65440649
     0x03ff708a: "munitionspilet5", // 67072138
+    0x04837a88: "campskin_summermedley01_a_pvp", // 75725448
     0x04f73176: "fencestonecorner", // 83308918
     0x058f6eac: "campskin_spring01_a", // 93286060
     0x05bb37c1: "engineeringt5", // 96155585
@@ -18,10 +19,12 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x0951cf62: "claimt1_50m_t4", // 156356450
     0x0af91a6b: "defend_sapling", // 184097387
     0x0b593e47: "or_armorsmith_t2", // 190398023
+    0x0b633ab8: "campskin_sovereignsrest_a_pvp", // 191052472
     0x0cf6cb25: "turretrepeatert3", // 217500453
     0x0d635334: "craterlight3", // 224613172
     0x0ef425c4: "claimt3", // 250881476
     0x0f2a02cb: "dropperfirebarrelt1", // 254411467
+    0x1017969d: "campskin_season6_a_pvp", // 269981341
     0x1021c985: "carpentryt2", // 270649733
     0x1173f105: "dev", // 292811013
     0x11a1286f: "claimt1_60m_t3", // 295774319
@@ -35,10 +38,12 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x167f7cca: "cauldront5", // 377453770
     0x16bff764: "wallxshapet1", // 381679460
     0x1789394e: "turretballistat2", // 394869070
+    0x17d133d9: "or_outpost_gate_sol_t1", // 399586265
     0x1808d18a: "or_outpost_gate_lg_t1", // 403231114
     0x1a27c4cc: "bastiont4", // 438813900
     0x1a7134d9: "storaget4", // 443626713
     0x1a83b98e: "campskin_rpg01_a", // 444840334
+    0x1b113c47: "campskin_darkfae01_a_pvp", // 454114375
     0x1b8fce3a: "or_turretcannon", // 462409274
     0x1badbdf5: "campt5", // 464371189
     0x1bb7befa: "rampartstairt4", // 465026810
@@ -47,18 +52,23 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x1cc079ec: "campt1", // 482376172
     0x1d5feb6a: "or_weaponsmith_t3", // 492825450
     0x1e82e4db: "seedangelfungust1", // 511894747
+    0x1ec7c139: "campskin_winter01_a_pvp", // 516407609
+    0x1f29aeda: "campt4_pvp", // 522825434
     0x1f2fa799: "lightpostt1", // 523216793
     0x20a1785c: "supporthornofresiliencet3", // 547453020
     0x215f2f3f: "kniferestt3", // 559886143
     0x2232af69: "siege_fortgate_l_t1", // 573747049
     0x2238565f: "defend_powderkeg", // 574117471
+    0x2249876a: "campt5_pvp", // 575244138
     0x2294063d: "platformfirelaunchert2", // 580126269
+    0x23a70ff4: "campskin_firelight01_b_pvp", // 598151156
     0x262e266c: "outfittingt5", // 640558700
     0x27722c36: "turretexplosivet1", // 661793846
     0x27ade9fb: "wallcornert3", // 665709051
     0x287ed8d3: "or_commandpost_t3", // 679401683
     0x2a48e8a0: "siege_fortgate_s_t1", // 709421216
     0x2a6feab4: "seedherbt1", // 711977652
+    0x2af926da: "campskin_darkfae02_a_pvp", // 720971482
     0x2b6eb9f2: "claimt1_40m_t2", // 728676850
     0x2bab491f: "claimt1_80m_t3", // 732645663
     0x2c379178: "platformrepeatert3autobuild", // 741839224
@@ -67,9 +77,11 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x2e59bc80: "campskin_silvercrowsfire01_a", // 777632896
     0x2eb68522: "windmillt2", // 783713570
     0x2ef689c1: "claimt1_25m", // 787909057
+    0x2f2fdba4: "campskin_winter02_a_pvp", // 791665572
     0x2f89570d: "seedwheatt1", // 797529869
     0x3085daac: "or_outpost_gate_t2", // 814078636
     0x337f10ee: "campskin_bloodsand01_a", // 863965422
+    0x34173b61: "campskin_season8_a", // 873937761
     0x349686bc: "alchemyt2", // 882280124
     0x35d7d59f: "claimt1_25m_t2", // 903337375
     0x36189ac5: "tradingpostt2", // 907582149
@@ -85,6 +97,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x3faf0cb1: "turkeycoopt2", // 1068436657
     0x3fb7da1b: "tanningt2", // 1069013531
     0x3fc0c4b0: "rampartcornerint2", // 1069597872
+    0x4028edc0: "campskin_season8_a_pvp", // 1076424128
     0x4110e22b: "walltshapet1", // 1091625515
     0x416cb9dc: "claimt1_30m_t3", // 1097644508
     0x42463688: "platformrepeatert1", // 1111897736
@@ -93,6 +106,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x446c0b52: "seedpumpkint1", // 1147931474
     0x4511a185: "or_turretrepeater", // 1158783365
     0x458ef36a: "wellt2", // 1166996330
+    0x463e3768: "campskin_spring01_a_pvp", // 1178482536
     0x4782ea3a: "or_outpost_gate_t3", // 1199761978
     0x4899363f: "fencewood", // 1218000447
     0x48a83c27: "turkeycoopt3", // 1218984999
@@ -102,13 +116,16 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x4a0b99f9: "wallstraightt4", // 1242274297
     0x4cd4d2db: "seedturkeyt1", // 1289016027
     0x4cd6bad7: "masonryt2", // 1289140951
+    0x4cffee9e: "campskin_winter04_a_pvp", // 1291841182
     0x4fde6e34: "campskin_sovereignsrest_a", // 1339977268
     0x50899fb5: "farmt1", // 1351196597
     0x50aad96d: "wallcornert2", // 1353374061
     0x512916fa: "outfittingt4", // 1361647354
     0x524317b3: "claimt1_30m", // 1380128691
+    0x5289c9cf: "campskin_firstlighttwitch_a_pvp", // 1384761807
     0x53817d84: "claimt1_20m", // 1400995204
     0x5488d558: "claimt1_60m", // 1418253656
+    0x552d211d: "campskin_firstlightelven_02_pvp", // 1429020957
     0x559336ab: "platformfirelaunchert3", // 1435711147
     0x55d92c0b: "repairstationt5", // 1440295947
     0x56581fa9: "kniferestt2", // 1448615849
@@ -117,9 +134,11 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x570c0136: "claimt1_40m", // 1460404534
     0x57a648ca: "supporthornofresiliencet2", // 1470515402
     0x58820efe: "platformcannont1", // 1484918526
+    0x59095d69: "campskin_silvercrowsfire01_a_pvp", // 1493785961
     0x59301940: "seedmorninggloryt1", // 1496324416
     0x59968d7a: "siege_supplywagon", // 1503038842
     0x5a200204: "claimt1_15m_t4", // 1512047108
+    0x5b17b994: "campskin_nightmare03_a_pvp", // 1528281492
     0x5c698964: "claimt1_40m_t3", // 1550420324
     0x5cac7989: "claimt1_80m_t2", // 1554807177
     0x5e16f852: "claimt1_80m", // 1578563666
@@ -132,11 +151,15 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x63214d00: "cookingt3", // 1663126784
     0x6353cf4c: "claimt1_20m_t5", // 1666436940
     0x63b9f98a: "platformcannont3autobuild", // 1673132426
+    0x64077524: "campskin_firelight01_a_pvp", // 1678210340
     0x64b2b70c: "fencewoodcorner", // 1689433868
     0x64e82667: "claimt1_100m_t3", // 1692935783
+    0x65e9fdba: "campt6_pvp", // 1709833658
+    0x66a3ab18: "campskin_seance01_a_pvp", // 1722002200
     0x66a618f9: "claimt1_60m_t2", // 1722161401
     0x6707f39c: "siege_warcamp_gate_t1", // 1728574364
     0x6726f913: "carpentryt3", // 1730607379
+    0x677a882a: "campskin_firstlightelven_a_pvp", // 1736083498
     0x67e51ec2: "campskin_hecate01_a", // 1743068866
     0x6a1bc056: "storaget1", // 1780203606
     0x6a58dbfc: "or_weaponsmith_t2", // 1784208380
@@ -177,6 +200,8 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x890992b0: "siege_warcamp_gate_t3", // 2299105968
     0x891bd2b9: "combatdummy", // 2300302009
     0x8928983f: "carpentryt1", // 2301139007
+    0x8958d010: "campskin_winter03_a_pvp", // 2304299024
+    0x89a7af2d: "campskin_metalfest02_a_pvp", // 2309467949
     0x8a1dfa6f: "campskin_floral01_a", // 2317220463
     0x8a306a79: "claimt1_20m_t3", // 2318428793
     0x8a42e835: "cookingt5", // 2319640629
@@ -188,8 +213,11 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x8d7d16cc: "seedsquasht1", // 2373785292
     0x8d8b8352: "claimt1_100m_t5", // 2374730578
     0x8e8068f4: "turretballistat1", // 2390780148
+    0x8e9fa7b1: "campskin_egyptian01_a_pvp", // 2392827825
+    0x8ed86263: "or_outpost_gate_sol_t2", // 2396545635
     0x8fb6a6de: "wallxshapet2", // 2411112158
     0x8fc5bdcc: "claimt1_60m_t4", // 2412101068
+    0x90695b7a: "campt2_pvp", // 2422823802
     0x9169ebaf: "season_01_spriggan_event_flame_brazier", // 2439637935
     0x91a419bd: "or_armory_t1", // 2443450813
     0x92506ffd: "or_armorsmith_t1", // 2454745085
@@ -197,6 +225,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x942395fe: "campskin_darkfae01_a", // 2485360126
     0x95931502: "outhouset2", // 2509444354
     0x95b2eaaf: "siege_supplygenerator_t3", // 2511530671
+    0x95d82806: "campskin_phoenix01_a_pvp", // 2513971206
     0x96235371: "dropperfirebarrelt2", // 2518897521
     0x96652ba7: "campskin_darkfae02_a", // 2523212711
     0x9693a5cd: "rampartcorneroutt4", // 2526258637
@@ -215,6 +244,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xa3683ccc: "wallstraightt2", // 2741517516
     0xa37d4888: "or_turretballista", // 2742896776
     0xa3aed4f0: "seedcarrott1", // 2746143984
+    0xa48dc724: "campskin_silentdeath01_a_pvp", // 2760754980
     0xa58fd8ae: "campskin_thetower_a", // 2777667758
     0xa5b51fe2: "masonryt4", // 2780110818
     0xa6422de6: "campskin_season7_b", // 2789354982
@@ -222,21 +252,28 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xa80f1ce9: "claimt1_30m_t5", // 2819562729
     0xa83b654b: "fenceloggate", // 2822464843
     0xa87237b7: "siege_claim", // 2826057655
+    0xa89f199f: "campskin_valkyrie_a_pvp", // 2828999071
     0xa98c8b16: "or_outpost_gate_t1", // 2844560150
     0xaaf2131f: "alchemyt5", // 2867991327
+    0xab8c07b2: "or_platform", // 2878080946
     0xab90c390: "seedazaleat1", // 2878391184
     0xabb3403c: "claimt1_25m_t5", // 2880651324
     0xac4857a4: "platformrepeatert3", // 2890422180
+    0xad0972ca: "campt3_pvp", // 2903077578
     0xad9fd706: "alchemyt1", // 2912933638
     0xaf1e8307: "walltshapet3", // 2938012423
+    0xb0a09012: "campskin_love01_a_pvp", // 2963312658
     0xb341b91a: "siege_fortgate_s_t2", // 3007428890
     0xb343a731: "claimt1_15m_t2", // 3007555377
     0xb50a2c51: "claimt1_40m_t5", // 3037342801
     0xb5cfdcbc: "claimt1_80m_t4", // 3050298556
+    0xb6609d29: "campskin_season7_a_pvp", // 3059785001
     0xb67c7057: "rampartstraightt2", // 3061608535
     0xb68c6fd2: "platformcannont3", // 3062656978
     0xb84ab3cf: "outfittingt2", // 3091903439
+    0xb84fb5b0: "campskin_metalfest01_a_pvp", // 3092231600
     0xb9c97c58: "wallcornert4", // 3116989528
+    0xb9f29a9d: "campskin_frontierwaste01_a_pvp", // 3119684253
     0xbac7456e: "seedsunflowert1", // 3133621614
     0xbb3bfed3: "siege_fortgate_l_t2", // 3141271251
     0xbb9d5787: "platformfirelaunchert1", // 3147650951
@@ -246,11 +283,15 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xbe7b7d8c: "turretexplosivet2", // 3195764108
     0xbedcb3f5: "campskin_metalfest01_a", // 3202135029
     0xbf6f3771: "siege_armory", // 3211736945
+    0xbf77bd2c: "campskin_egyptian02_a_pvp", // 3212295468
     0xbfccfaca: "campskin_firstlighttwitch_a", // 3217881802
     0xbff68c5c: "campskin_egyptian02_a", // 3220606044
+    0xc07d873b: "campskin_hexedcanopy_a_pvp", // 3229452091
+    0xc09f539c: "campskin_fortune01_a_pvp", // 3231667100
     0xc17b40c1: "rampartstraightt3", // 3246080193
     0xc18b5f44: "platformcannont2", // 3247136580
     0xc20d1cc7: "claimt1_40m_t4", // 3255639239
+    0xc293fa5c: "campskin_reaper01_a_pvp", // 3264477788
     0xc2c8ec2a: "claimt1_80m_t5", // 3267947562
     0xc3f5fa46: "platformrepeatert2autobuild", // 3287677510
     0xc44497a7: "claimt1_15m_t3", // 3292829607
@@ -263,12 +304,15 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xc97c4d1a: "turretexplosivet3", // 3380366618
     0xc980ce0f: "farmt2", // 3380661775
     0xc9a388d7: "wallcornert1", // 3382937815
+    0xc9dd8014: "campskin_firstlight01_a_pvp", // 3386736660
     0xcc3cce45: "siege_fortgate_l_t3", // 3426537029
+    0xcc88a8bd: "campskin_nightmare01_a_pvp", // 3431508157
     0xcdd02d7f: "campskin_valkyrie_a", // 3452972415
     0xcdfe0e48: "or_azothdeposit", // 3455979080
     0xceaf0548: "campskin_reaper01_a", // 3467576648
     0xceaf1970: "supporthornofresiliencet1", // 3467581808
     0xcf4d8359: "outfittingt3", // 3477963609
+    0xd06205d2: "campskin_igloo_a_pvp", // 3496084946
     0xd07d0b8d: "campskin_fortune01_a", // 3497855885
     0xd1835085: "fencestone", // 3515043973
     0xd23bb5d4: "campskin_fortune02_a", // 3527128532
@@ -278,10 +322,12 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xd6a36185: "rampartcornerint4", // 3601031557
     0xd6d47f2e: "tanningt4", // 3604250414
     0xd7b18eba: "seedbarleyt1", // 3618737850
+    0xd7c921aa: "campt1_pvp", // 3620282794
     0xd819b391: "walltshapet2", // 3625563025
     0xdb0c38a8: "seedasterplantt1", // 3675011240
     0xdb4f6732: "platformrepeatert2", // 3679414066
     0xdcb470aa: "claimt1_25m_t4", // 3702812842
+    0xdd5038f0: "campskin_ronin_01_pvp", // 3713022192
     0xddf52389: "alchemyt4", // 3723830153
     0xdf082c7f: "claimt1_30m_t4", // 3741854847
     0xe0326a57: "claimt1_50m_t2", // 3761400407
@@ -296,14 +342,17 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xe3dd0ba7: "campskin_winter01_a", // 3822914471
     0xe4d4a37b: "campskin_winter05_a", // 3839140731
     0xe516c94c: "campskin_winter04_a", // 3843475788
+    0xe57e3191: "campskin_rpg01_a_pvp", // 3850252689
     0xe5fcae01: "campskin_nightmare01_a", // 3858542081
     0xe6787a6f: "campskin_nightmare03_a", // 3866655343
+    0xe6ac1085: "campskin_floral01_a_pvp", // 3870036101
     0xe7ba1058: "campskin_nightmare02_a", // 3887730776
     0xe7d66b40: "or_protection_ward", // 3889589056
     0xe80111b0: "fencewoodgate", // 3892384176
     0xe81f3b6e: "seedstrawberryt1", // 3894360942
     0xe8cd2a94: "animalpent2", // 3905759892
     0xe8e2d733: "campskin_firstlightelven_a", // 3907180339
+    0xea88e52a: "campskin_winter05_a_pvp", // 3934840106
     0xea9089a7: "campskin_hexedcanopy_a", // 3935340967
     0xecba28ad: "weavingt3", // 3971623085
     0xecd892f4: "engineeringt3", // 3973616372
@@ -313,6 +362,9 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xefedddea: "blacksmitht2", // 4025343466
     0xeff690b1: "craterswitch1", // 4025913521
     0xf121c6b5: "lightpostt3", // 4045522613
+    0xf1774901: "campskin_fortune02_a_pvp", // 4051126529
+    0xf1c0e7f9: "campskin_season7_b_pvp", // 4055951353
+    0xf24a96a0: "campskin_bloodsand01_a_pvp", // 4064974496
     0xf29140e8: "seedsquirtberryt1", // 4069605608
     0xf2a5fcd6: "or_bulwark", // 4070964438
     0xf2afb042: "dwellingt3", // 4071600194
@@ -320,17 +372,21 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0xf2d41bcf: "rampartstairt2", // 4073987023
     0xf31291ec: "storaget2", // 4078080492
     0xf3518a46: "or_weaponsmith_t1", // 4082207302
+    0xf5985c51: "campskin_hecate01_a_pvp", // 4120403025
     0xf606b0a6: "or_outpost_gate_lg_t3", // 4127633574
     0xf82585c2: "or_turretfire", // 4163208642
     0xf8b19648: "wallxshapet3", // 4172387912
     0xf8c28d5a: "claimt1_60m_t5", // 4173499738
     0xf9426cb0: "carpentryt4", // 4181879984
     0xf98a6bb6: "cookingkitt1", // 4186598326
+    0xf9df52f5: "or_outpost_gate_sol_t3", // 4192162549
     0xfa8cb3c4: "claimt1_100m_t4", // 4203525060
+    0xfb32dea9: "campskin_thetower_a_pvp", // 4214415017
     0xfb3c9d03: "azurewellt1", // 4215053571
     0xfcd2978b: "commandtentt5", // 4241659787
     0xfd375aef: "claimt1_20m_t2", // 4248263407
     0xfd45d8a3: "cookingt4", // 4249213091
+    0xfd60b220: "campskin_nightmare02_a_pvp", // 4250972704
     0xfe0ea226: "siege_warcamp_gate_t2", // 4262371878
     0xfe67ad7f: "invasion_claim", // 4268207487
     0xff85ee75: "deployablefeastt5", // 4286967413

@@ -7,8 +7,11 @@ var hashVitalsModifierDataVitalsModifiersCategoryId = map[uint32]string{
     0x14d9bba1: "elite+", // 349813665
     0x198fe96f: "raid10miniboss", // 428861807
     0x1d5adc54: "raid20boss", // 492493908
+    0x1dd43171: "catacombsboss", // 500445553
     0x1e871cd9: "dungeon+_nocurrency", // 512171225
     0x1f99399e: "eliteminiboss", // 530135454
+    0x2736ba35: "catacombs", // 657898037
+    0x282ae454: "catacombs+", // 673899604
     0x3225b842: "named_solo+", // 841332802
     0x34666e73: "solo+_starterbeach", // 879128179
     0x34b9957c: "outpostrushsolo+", // 884577660
@@ -20,6 +23,7 @@ var hashVitalsModifierDataVitalsModifiersCategoryId = map[uint32]string{
     0x51ef942c: "boss-", // 1374655532
     0x5306f7ff: "raid10+", // 1392965631
     0x5b954ee4: "solo_starterbeach", // 1536511716
+    0x616efb56: "catacombsminiboss", // 1634663254
     0x67eddaa3: "dungeon-", // 1743641251
     0x7d458c26: "outpostrushgroup+", // 2101709862
     0x8e8e7f96: "dungeon+", // 2391703446
@@ -33,6 +37,7 @@ var hashVitalsModifierDataVitalsModifiersCategoryId = map[uint32]string{
     0xb88c3119: "boss+", // 3096195353
     0xba0ebfff: "raid10", // 3121528831
     0xba6552ca: "raid10-", // 3127202506
+    0xc1494161: "catacombs-", // 3242803553
     0xcca425c5: "solo-_starterbeach", // 3433309637
     0xccf147d9: "dungeonboss", // 3438364633
     0xd03fcd8d: "spell", // 3493842317
