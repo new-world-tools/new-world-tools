@@ -16,6 +16,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 	"sync"
@@ -46,6 +47,7 @@ var (
 	debugLog         string
 	assetMap         map[string]*asset.AssetInfo
 	pr               *profiler.Profiler
+	excludeRe        *regexp.Regexp
 )
 
 type DebugData struct {
@@ -73,6 +75,7 @@ func main() {
 	debugLogPtr := flag.String("debug-log", ".\\debug.log", "debug log path")
 	formatPtr := flag.String("format", "json", "yml or json")
 	assetCatalogInputPtr := flag.String("asset-catalog", "", "assetcatalog.catalog path")
+	excludePtr := flag.String("exclude", "", "regexp")
 	flag.Parse()
 
 	format := *formatPtr
@@ -93,6 +96,14 @@ func main() {
 	debug = *debugPtr
 	debugLog = *debugLogPtr
 	assetCatalogInput := *assetCatalogInputPtr
+
+	if *excludePtr != "" {
+		re, err := regexp.Compile(*excludePtr)
+		if err != nil {
+			log.Fatalf("regexp.Compile: %s", err)
+		}
+		excludeRe = re
+	}
 
 	inputDir, err := filepath.Abs(filepath.Clean(*inputDirPtr))
 	if err != nil {
@@ -172,6 +183,10 @@ func main() {
 		path, err = filepath.Abs(filepath.Clean(path))
 		if err != nil {
 			return err
+		}
+
+		if !match(path) {
+			return nil
 		}
 
 		isAzcsFile, isCompressed, err := azcs.IsAzcsFile(path)
@@ -434,4 +449,12 @@ func storeDebug(debugLog string) error {
 	}
 
 	return nil
+}
+
+func match(filePath string) bool {
+	if excludeRe == nil {
+		return true
+	}
+
+	return !excludeRe.MatchString(filePath)
 }
