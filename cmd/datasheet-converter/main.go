@@ -188,13 +188,16 @@ func main() {
 
 		f.Close()
 
-		key := fmt.Sprintf("%s.%s", meta.Type, meta.UniqueId)
-		_, ok := keys[key]
-		if ok {
-			log.Printf("duplicate key: %q (%s)", key, file.GetPath())
-			continue
+		if !keepStructure {
+			key := fmt.Sprintf("%s.%s", meta.Type, meta.UniqueId)
+			_, ok := keys[key]
+			if ok {
+				log.Printf("duplicate key: %q (%s)", key, file.GetPath())
+				continue
+			}
+			keys[key] = true
 		}
-		keys[key] = true
+
 		id++
 		addTask(id, file)
 	}
