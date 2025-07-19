@@ -68,6 +68,10 @@ func (store *Store) GetByType(typ string) ([]*DataSheetFile, error) {
 func (store *Store) GetAll() []*DataSheetFile {
 	keys := store.store.GetKeys()
 
+	sort.Slice(keys, func(i, j int) bool {
+		return keys[i] < keys[j]
+	})
+
 	dsFiles := make([]*DataSheetFile, len(keys))
 	for i, key := range keys {
 		dsFile := store.store.Get(key)
