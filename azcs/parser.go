@@ -10,6 +10,7 @@ import (
 	azcsReader "github.com/new-world-tools/new-world-tools/reader/azcs"
 	"io"
 	"os"
+	"path/filepath"
 )
 
 const streamTag uint8 = 0x00
@@ -200,7 +201,15 @@ func readElement(r io.Reader, stream *Stream) (*Element, error) {
 	return nil, errors.New("unexpected end")
 }
 
+var blackListExts = map[string]bool{
+	".cgfheap": true,
+}
+
 func IsAzcsFile(path string) (bool, bool, error) {
+	if blackListExts[filepath.Ext(path)] {
+		return false, false, nil
+	}
+
 	f, err := os.Open(path)
 	if err != nil {
 		return false, false, err
