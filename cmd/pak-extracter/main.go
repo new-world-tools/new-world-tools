@@ -7,20 +7,23 @@ import (
 	"crypto/sha1"
 	"flag"
 	"fmt"
-	"github.com/new-world-tools/new-world-tools/hash"
-	"github.com/new-world-tools/new-world-tools/pak"
-	"github.com/new-world-tools/new-world-tools/profiler"
-	"github.com/new-world-tools/new-world-tools/reader"
-	"github.com/new-world-tools/new-world-tools/reader/azcs"
-	workerpool "github.com/zelenin/go-worker-pool"
 	"io"
 	"log"
 	"os"
 	"path/filepath"
 	"regexp"
+	"runtime"
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/new-world-tools/new-world-tools/hash"
+	"github.com/new-world-tools/new-world-tools/pak"
+	"github.com/new-world-tools/new-world-tools/profiler"
+	"github.com/new-world-tools/new-world-tools/reader"
+	"github.com/new-world-tools/new-world-tools/reader/azcs"
+	"github.com/zelenin/go-texconv"
+	workerpool "github.com/zelenin/go-worker-pool"
 )
 
 var rePak = regexp.MustCompile(`.pak$`)
@@ -36,6 +39,7 @@ var (
 	outputDir      string
 	hashSumFile    string
 	decompressAzcs bool
+	convertDdsTo   string
 	fixLuac        bool
 	hashRegistry   *hash.Registry
 	pr             *profiler.Profiler
@@ -47,6 +51,12 @@ var (
 	includePriority bool
 )
 
+var supportedFormatsForDdsConverting = map[string]bool{
+	"jpg": true,
+	"png": true,
+	//"webp": true,
+}
+
 func main() {
 	pr = profiler.New()
 
@@ -57,6 +67,7 @@ func main() {
 	threadsPtr := flag.Int64("threads", defaultThreads, fmt.Sprintf("1-%d", maxThreads))
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
 	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "decompress AZCS (Amazon Object Stream)")
+	convertDdsToPtr := flag.String("convert-dds-to", "", "convert .dds to (supported formats: jpg, png, webp)")
 	fixLuacPtr := flag.Bool("fix-luac", false, "fix .luac header for unluac")
 	excludePtr := flag.String("exclude", "", "regexp")
 	includePtr := flag.String("include", "", "regexp")
@@ -114,6 +125,10 @@ func main() {
 	}
 
 	decompressAzcs = *decompressAzcsPtr
+	convertDdsTo = *convertDdsToPtr
+	if convertDdsTo != "" && !supportedFormatsForDdsConverting[convertDdsTo] {
+		log.Fatalf("Unsupported format for converting: %s", convertDdsTo)
+	}
 	fixLuac = *fixLuacPtr
 
 	err = os.MkdirAll(outputDir, 0755)
@@ -292,6 +307,40 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 		err = os.Chtimes(fpath, time.Now(), file.GetModifiedTime())
 		if err != nil {
 			return err
+		}
+
+		if convertDdsTo != "" && filepath.Ext(file.Name) == ".dds" {
+			ddsPath := fpath
+			// texconv does not accept absolute linux paths
+			if runtime.GOOS == "linux" {
+				curDir, err := os.Getwd()
+				if err != nil {
+					return err
+				}
+
+				relPath, err := filepath.Rel(curDir, fpath)
+				if err != nil {
+					return err
+				}
+				ddsPath = relPath
+			}
+
+			args := []string{
+				"-ft",
+				convertDdsTo,
+				"-f",
+				"rgba",
+				"-srgb",
+				"-y",
+				"-o",
+				filepath.Dir(ddsPath),
+				ddsPath,
+			}
+
+			_, err := texconv.Texconv(args, false, true, true)
+			if err == nil {
+				os.Remove(fpath)
+			}
 		}
 
 		return nil

@@ -33,6 +33,7 @@ Optional:
 ```powershell
     -threads 3 `
     -decompress-azcs `
+    -convert-dds-to png `
     -fix-luac `
     -hash ".\extract\files.sha1"
 ```
