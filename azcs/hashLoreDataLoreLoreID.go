@@ -2,6 +2,7 @@ package azcs
 
 var hashLoreDataLoreLoreID = map[uint32]string{
     0x002226d8: "13_weaversfen_title_11_05", // 2238168
+    0x0047ab80: "inferiorman_title_01_04", // 4696960
     0x006fc3d7: "14_edengrove_title_06_02", // 7324631
     0x009d9a05: "excavation_chapter_01", // 10328581
     0x00f2baab: "00_aeternum_title_14_01", // 15907499
@@ -60,6 +61,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x099d277b: "05_reekwater_title_07_01", // 161294203
     0x09c9c372: "11_mourningdale_title_08_04", // 164217714
     0x09d311d1: "14_edengrove_title_08_04", // 164827601
+    0x09f1e7ab: "inferiorman_title_01_08", // 166848427
     0x09ffce33: "00_aeternum_title_06_06", // 167759411
     0x0a27d041: "hunterscabin_title_01_09", // 170381377
     0x0a35cb9d: "02_brightwood_title_08_03", // 171297693
@@ -180,6 +182,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x1d817810: "06_windsward_title_21_02", // 495024144
     0x1e1fa02e: "09a_firstlight_title_05_02", // 505389102
     0x1e2b61ce: "talesofexpeditions_title_05_01", // 506159566
+    0x1e315ed8: "inferiorman_title_01_10", // 506552024
     0x1e464049: "factionintro_covenant_title_01_01", // 507920457
     0x1ea17b46: "15_restlessshore_title_01_04", // 513899334
     0x1eca9b00: "04_everfall_title_03_02", // 516594432
@@ -611,6 +614,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x68ea8fbb: "12_monarchsbluffs_chapter_24", // 1760202683
     0x68f1d100: "05_reekwater_title_03_03", // 1760678144
     0x69219bf1: "06_windsward_title_13_01", // 1763810289
+    0x69366e4e: "inferiorman_title_01_11", // 1765174862
     0x6944cca5: "tales_of_brimstone_sands_title_29_01", // 1766116517
     0x699a35eb: "deathandrebirthlore4d", // 1771714027
     0x69a39b44: "12_monarchsbluffs_title_03_01", // 1772329796
@@ -651,6 +655,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x6f874ba2: "12_monarchsbluffs_chapter_20", // 1871137698
     0x6fc560db: "threefactions_chapter_02", // 1875206363
     0x70169603: "grenville_chapter_02", // 1880528387
+    0x702d5f0f: "inferiorman_title_01_01", // 1882021647
     0x702d9b2d: "99_msq_title_01_03", // 1882037037
     0x704b01f2: "05_reekwater_title_09_02", // 1883963890
     0x708c3049: "00_aeternum_title_21_01", // 1888235593
@@ -696,6 +701,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x76b0a936: "04_everfall_chapter_21", // 1991289142
     0x76bf678e: "04_everfall_title_20_02", // 1992255374
     0x7725164e: "13_weaversfen_title_11_04", // 1998919246
+    0x77409b16: "inferiorman_title_01_05", // 2000722710
     0x77442ca3: "00_aeternum_title_08_01", // 2000956579
     0x7768f341: "14_edengrove_title_06_03", // 2003366721
     0x7790940d: "fisher_regent_chapter_01", // 2005963789
@@ -751,6 +757,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x7e8a6bd8: "07_shatteredmountain_title_03_01", // 2123000792
     0x7eb44639: "fivefarms_title_01_14", // 2125743673
     0x7ed42147: "14_edengrove_title_08_05", // 2127831367
+    0x7ef6d73d: "inferiorman_title_01_09", // 2130106173
     0x7ef8fea5: "00_aeternum_title_06_07", // 2130247333
     0x7f01d6a0: "10_cutlasskeys_title_08_17", // 2130826912
     0x7f064868: "talesofthesilvercrows_title_01_01", // 2131118184
@@ -910,6 +917,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x992b7762: "13_weaversfen_title_11_06", // 2569762658
     0x994a7e8f: "chaptertradingpost", // 2571796111
     0x994e3e18: "99_msq_title_01_05", // 2572041752
+    0x994efa3a: "inferiorman_title_01_07", // 2572089914
     0x995bf13a: "mechanics_crime", // 2572939578
     0x9966926d: "14_edengrove_title_06_01", // 2573636205
     0x997c40ce: "11_mourningdale_title_06_01", // 2575057102
@@ -936,6 +944,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x9ded8c38: "02_brightwood_title_06_02", // 2649590840
     0x9df509c9: "hunterscabin_title_01_02", // 2650081737
     0x9e1ce7ba: "topic_99a_msq_soulwardenintro", // 2652694458
+    0x9e233e23: "inferiorman_title_01_03", // 2653109795
     0x9e23fa01: "99_msq_title_01_01", // 2653157889
     0x9e46b37b: "13_weaversfen_title_11_02", // 2655433595
     0x9f248cb1: "06_windsward_title_05_03", // 2669972657
@@ -1223,6 +1232,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xcae5a845: "tales_of_brimstone_sands_title_10_02", // 3404048453
     0xcb04d54c: "99_msq_chapter_01", // 3406091596
     0xcb97845b: "00_aeternum_title_12_03", // 3415704667
+    0xcbc0f74e: "inferiorman_chapter_01", // 3418421070
     0xcbd956d9: "factionintro_covenant_chapter_01", // 3420018393
     0xcc32c87d: "06_windsward_chapter_23", // 3425880189
     0xcc52b606: "varangianknights_title_08_01", // 3427972614
@@ -1409,6 +1419,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe8edb1f5: "03_greatcleave_title_10_04", // 3907891701
     0xe8f74ded: "tales_of_brimstone_sands_title_23_03", // 3908521453
     0xe8f88efa: "winterconvergence_title_02_01", // 3908603642
+    0xe9240eb5: "inferiorman_title_01_02", // 3911454389
     0xe94183ed: "13_weaversfen_title_11_03", // 3913384941
     0xe9425048: "05_reekwater_title_09_01", // 3913437256
     0xe98561f3: "00_aeternum_title_21_02", // 3917832691
@@ -1438,6 +1449,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xeddf7a7a: "06_arch_01_09", // 3990846074
     0xee47e334: "00_aeternum_title_06_08", // 3997688628
     0xee490e8e: "99_msq_title_01_04", // 3997765262
+    0xee49caac: "inferiorman_title_01_06", // 3997813420
     0xee4d7d19: "00_aeternum_title_08_02", // 3998055705
     0xee75659d: "memorials_title_01_01", // 4000671133
     0xeec5b581: "ridersraces_title_01_02", // 4005934465
@@ -1521,6 +1533,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xfb31faef: "tidebattle_title_01_09", // 4214356719
     0xfb5570e7: "99_msq_aeternum_chapter_2", // 4216680679
     0xfb58d1d4: "11_mourningdale_chapter_05", // 4216902100
+    0xfb87b8ca: "topic_inferiorman", // 4219975882
     0xfbf42c03: "13_weaversfen_title_12_03", // 4227083267
     0xfc3515cd: "11_mourningdale_chapter_01", // 4231337421
     0xfc4b9375: "00_aeternum_chapter_29", // 4232811381

@@ -97,5 +97,6 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0xfd2e84f2: "quest+", // 4247684338
     0xfd62930e: "solo-", // 4251095822
     0xfdba1e94: "elite-", // 4256833172
+    0xfe442bd2: "allyobjective", // 4265880530
     0xff792448: "solo_quest", // 4286129224
 }

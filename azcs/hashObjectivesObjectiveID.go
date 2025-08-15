@@ -452,8 +452,10 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x2c0626f6: "fm_10_h_03_objective", // 738600694
     0x2c1ad46f: "c10a_q6_citadel", // 739955823
     0x2c663f8d: "cm_explorer_acquire_x_items_poitag_territory", // 744898445
+    0x2c6c3b33: "objective_artifact_set3_2hwarhammer", // 745290547
     0x2c7f7ed0: "9902_0049_recipeforfailure", // 746553040
     0x2c877454: "fm_c_1568_objective", // 747074644
+    0x2cad71f2: "quest_08016", // 749564402
     0x2cc92b95: "fm_1001_objective", // 751381397
     0x2ce29539: "fm_s_0561_objective", // 753046841
     0x2d0563aa: "factionintro_marauders_recruitment", // 755327914
@@ -689,6 +691,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0x42759c57: "13a_sq_13_spousereunion", // 1115003991
     0x42c0f469: "12a_msq_15_defeatnavigator", // 1119941737
     0x42d2d9e2: "fm_98_03_exp_01_objective", // 1121114594
+    0x42dde243: "quest_03193", // 1121837635
     0x42e04e50: "12a_msq_25_crownregent_mystic", // 1121996368
     0x42f5e0c4: "fm_s_0866_objective", // 1123410116
     0x42f62ba8: "06a_p_01_recovertools", // 1123429288
@@ -1727,6 +1730,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xab7461bf: "fm_1110_objective", // 2876531135
     0xaba39ce7: "fm_13_pvp_poachspot_covenant_objective", // 2879626471
     0xaba60395: "fm_12_h_03_objective", // 2879783829
+    0xabbe4776: "quest_03195", // 2881374070
     0xabbefb4e: "1403_0201_gates", // 2881420110
     0xabcb4ad7: "fm_s_1369_objective", // 2882226903
     0xabe0f47b: "fm_0609_objective", // 2883646587
@@ -1818,6 +1822,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xb52b4d94: "fm_1002_objective", // 3039514004
     0xb53bb936: "06_pillageship_destroyer", // 3040590134
     0xb55acd29: "pvp_fetch_location", // 3042626857
+    0xb5a42048: "quest_08015", // 3047432264
     0xb5a9df36: "09a_s12_traverselioncave", // 3047808822
     0xb5ae9ec7: "1414_0101_toreekwater", // 3048120007
     0xb5cd4c62: "12a_msq_06_tomiclot", // 3050130530
@@ -1925,6 +1930,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xbeae0187: "98_s_01b_fenscholar", // 3199074695
     0xbec2c068: "fm_15_pvp_spyspot_marauder_objective", // 3200434280
     0xbec9d7ec: "fm_c_1208_objective", // 3200899052
+    0xbf0854b7: "objective_artifact_set3_mediumhead", // 3204994231
     0xbf2c1db0: "02a_side04_03_masterpiece", // 3207339440
     0xbf42b7bc: "fm_c_0901_objective", // 3208820668
     0xbf7f8092: "fm_c_1567_objective", // 3212804242
@@ -2014,6 +2020,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xc8aae9ab: "objective_artifact_set1_2hmusket", // 3366644139
     0xc8af09b3: "objective_artifact_set1_1hthrowingaxe", // 3366914483
     0xc8b371ea: "factionintro_marauders_02", // 3367203306
+    0xc8dc4dba: "objective_artifact_set3_2hgreatsword", // 3369881018
     0xc8de780c: "1225_0201_majorpurchase", // 3370022924
     0xc90f3392: "1434_0101_destroyblooms", // 3373216658
     0xc9444036: "fm_s_0663_objective", // 3376693302
@@ -2120,6 +2127,7 @@ var hashObjectivesObjectiveID = map[uint32]string{
     0xd48ff060: "fm_c_1004_objective", // 3566202976
     0xd4bfc0ba: "12a_side_06_gatherjewels", // 3569336506
     0xd4ef3c29: "12a_msq_08_destroyrune", // 3572448297
+    0xd50f3bcb: "quest_03198", // 3574545355
     0xd525333c: "1225_0601_closingcost", // 3575984956
     0xd52c41c2: "02a_side04_02_reflection", // 3576447426
     0xd55c4673: "fm_s_0762_objective", // 3579594355

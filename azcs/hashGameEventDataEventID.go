@@ -194,6 +194,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x092a0331: "1624_0302_ritualspearhead_interact", // 153748273
     0x093e440e: "09a_s8_pylon2_interact", // 155075598
     0x095e0dd4: "0332_0102_fabulousfurs_success", // 157158868
+    0x095e9209: "90_ss2_quest10_success", // 157192713
     0x0961993b: "faction++v2_18", // 157391163
     0x0965d40b: "cmission_success_crafting_geart5_med", // 157668363
     0x097ca3bd: "06a_msq_20_losttribute_success", // 159163325
@@ -1396,6 +1397,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x4a0dc6e9: "12a_msq_24_defeatgawain_success", // 1242416873
     0x4a1f53f6: "read_lauras_lorenote", // 1243567094
     0x4a30217f: "0829_0801_luckyred_success", // 1244668287
+    0x4a3f4f6c: "90_ss2_quest09_success", // 1245663084
     0x4a40eb45: "99b_msq_02_lorenote_umberto3_interact", // 1245768517
     0x4a4f0a86: "faction-v2_21", // 1246694022
     0x4a530f41: "9905_0043_foragoodcause_success", // 1246957377
@@ -1750,6 +1752,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0x5d2dba0f: "99a_msq_06_corruptiontincture_success", // 1563277839
     0x5d2eb07a: "cmission_success_kill_rabbit_med", // 1563340922
     0x5d373ee2: "94_cage_interact1", // 1563901666
+    0x5d445b2f: "90_ss2_quest08_success", // 1564760879
     0x5d700755: "pvp_coinlarge1", // 1567622997
     0x5d756212: "cmission_success_kill_lynx_med", // 1567973906
     0x5d824553: "azothstaff_13_success", // 1568818515
@@ -3835,6 +3838,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xcb7906cf: "0222_0001_cleavevector_success", // 3413706447
     0xcbb079b9: "99g_msq_sm_reconnecthive_notes_interact", // 3417340345
     0xcbbba05d: "cmission_success_quest_restlessshore_15", // 3418071133
+    0xcbbd4e59: "catacombskillevent", // 3418181209
     0xcbf27a63: "1403a_06a01_blightroots_success", // 3421665891
     0xcc169875: "95_s01_06_franktrail2_interact", // 3424032885
     0xcc2a6caa: "95a_s02_opencavesong_interact", // 3425332394
@@ -4317,6 +4321,7 @@ var hashGameEventDataEventID = map[uint32]string{
     0xe5059b1e: "cmission_failure_masonryprojectid2", // 3842349854
     0xe509b9eb: "99g_msq_sm_freeprisoner_tracks_01_interact", // 3842619883
     0xe5198e8f: "9907_0053_blessingofearth_snap_success", // 3843657359
+    0xe51e9b63: "award_title_season8ss_journeychapter1_box", // 3843988323
     0xe52d87f1: "0332_0101_aspotofluxury_success", // 3844966385
     0xe5476af5: "1126_0102_atoast_success", // 3846662901
     0xe54f1847: "pvp_factiontokenssmall_20", // 3847166023

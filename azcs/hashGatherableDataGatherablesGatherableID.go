@@ -364,6 +364,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x35746f0f: "99a_msq_01_02_armor", // 896823055
     0x35a782be: "wintertreelarge", // 900170430
     0x35e263aa: "dungeonshattermtn00_lockcellar", // 904029098
+    0x36080ac0: "catacombs_shirkingblessingchest", // 906496704
     0x361f7bef: "99b_msq_06_mementoplacec", // 908033007
     0x363913fc: "99c_msq2_corpsetorche", // 909710332
     0x365e5abc: "farmspikecapfungus", // 912153276
@@ -756,7 +757,9 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x6ab05756: "95a_s02_geyser_puzzle_boulderpile", // 1789941590
     0x6ab0abb7: "msq_salvagepile_a", // 1789963191
     0x6ac74bf6: "0507_ancientrubble", // 1791446006
+    0x6b44d760: "lootbattleroyale", // 1799673696
     0x6b6f7a34: "cursed10ws_peacock", // 1802467892
+    0x6ba11a0f: "costbasedgatherable_test", // 1805720079
     0x6bc972c1: "cactus_bush_pricklypear_small", // 1808364225
     0x6bf4b698: "farmsquash", // 1811199640
     0x6c154f3f: "95_s01_07_temp_possibilitiesoffire", // 1813335871
@@ -1815,6 +1818,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0xfd04aa3c: "treerunewoodmedium", // 4244941372
     0xfd510c6d: "turkeyvulture", // 4249947245
     0xfd5207dc: "mb_msq2_rescueminer_rescue02", // 4250011612
+    0xfd690da9: "torch_throwable", // 4251520425
     0xfdbcd879: "95_s01_01_corruptedcampsupplies3", // 4257011833
     0xfdcd8205: "99c_msq2_ancientshielddevice2", // 4258103813
     0xfdd55751: "darknesspylondt3", // 4258617169

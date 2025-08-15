@@ -193,6 +193,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x26940c01: "09a_ranger_ep_m", // 647236609
     0x27038157: "06_fudehinode", // 654541143
     0x271a082a: "95_skyecamp_p01", // 656017450
+    0x2721e838: "npc_08012", // 656533560
     0x2764e3b9: "1525_angryearth", // 660923321
     0x281a6101: "99e_sun_p3", // 672817409
     0x2822f0e6: "95_s04_zander_p01i", // 673378534
@@ -431,6 +432,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x4f774b77: "99g_russo_02", // 1333218167
     0x4fcb40d2: "06_medea01", // 1338720466
     0x500c0a11: "1672_alchemist2", // 1342966289
+    0x5026d8ae: "npc_08013", // 1344723118
     0x508b1268: "12_flcrier1", // 1351291496
     0x50d5d707: "09a_rangerguard_f", // 1356191495
     0x51597bbf: "9814_beyza", // 1364818879

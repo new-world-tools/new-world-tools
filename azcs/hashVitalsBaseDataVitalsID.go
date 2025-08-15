@@ -338,6 +338,7 @@ var hashVitalsBaseDataVitalsID = map[uint32]string{
     0x0cb68cad: "bear_corrupted_dt5", // 213290157
     0x0cbdf536: "invasion_voiddestroyer_eye", // 213775670
     0x0cbe75fe: "wolf_minion_11", // 213808638
+    0x0cd8db77: "siegeweaponlarge_allybossbar", // 215538551
     0x0ce25081: "damned_priest_dg_shattermtn_00", // 216158337
     0x0ce5b2b2: "dryad_prowler_46", // 216380082
     0x0cf8324c: "wolf_black_59", // 217592396
