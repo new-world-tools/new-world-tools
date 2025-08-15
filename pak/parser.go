@@ -43,13 +43,13 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 	var err error
 
 	switch file.zipFile.Method {
-	case 0x00:
+	case zip.Store:
 		rc, err = file.zipFile.Open()
 		if err != nil {
 			return nil, err
 		}
 
-	case 0x08:
+	case zip.Deflate:
 		r, err = file.zipFile.OpenRaw()
 		if err != nil {
 			return nil, err
@@ -104,6 +104,10 @@ func (file *File) Decompress() (io.ReadCloser, error) {
 
 func (file *File) GetModifiedTime() time.Time {
 	return file.zipFile.Modified
+}
+
+func (file *File) GetCompressionMethod() uint16 {
+	return file.zipFile.Method
 }
 
 type zlibHeader struct {
