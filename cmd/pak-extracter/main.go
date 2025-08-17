@@ -340,6 +340,22 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			_, err := texconv.Texconv(args, false, true, true)
 			if err == nil {
 				os.Remove(fpath)
+				if hashSumFile != "" {
+					hasher := sha1.New()
+					f, err := os.Open(strings.TrimSuffix(fpath, ".dds") + convertDdsTo)
+					if err != nil {
+						return err
+					}
+					_, err = io.Copy(hasher, f)
+					if err != nil {
+						return err
+					}
+
+					f.Close()
+
+					hashRegistry.Add(strings.TrimSuffix(file.Name, ".dds")+convertDdsTo, hasher.Sum(nil))
+					hashRegistry.Remove(file.Name)
+				}
 			}
 		}
 
