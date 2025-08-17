@@ -342,7 +342,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 				os.Remove(fpath)
 				if hashSumFile != "" {
 					hasher := sha1.New()
-					f, err := os.Open(strings.TrimSuffix(fpath, ".dds") + convertDdsTo)
+					f, err := os.Open(strings.TrimSuffix(fpath, ".dds") + "." + convertDdsTo)
 					if err != nil {
 						return err
 					}
