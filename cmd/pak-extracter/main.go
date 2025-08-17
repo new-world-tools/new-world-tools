@@ -353,7 +353,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 					f.Close()
 
-					hashRegistry.Add(strings.TrimSuffix(file.Name, ".dds")+convertDdsTo, hasher.Sum(nil))
+					hashRegistry.Add(strings.TrimSuffix(file.Name, ".dds")+"."+convertDdsTo, hasher.Sum(nil))
 					hashRegistry.Remove(file.Name)
 				}
 			}
