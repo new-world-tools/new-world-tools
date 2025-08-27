@@ -4,13 +4,14 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
+	"math"
+	"reflect"
+	"strconv"
+
 	"github.com/gofrs/uuid"
 	"github.com/new-world-tools/new-world-tools/asset"
 	"github.com/new-world-tools/new-world-tools/reader"
 	"github.com/new-world-tools/new-world-tools/structure"
-	"math"
-	"reflect"
-	"strconv"
 )
 
 const (
@@ -540,6 +541,8 @@ func resolveNode(element *Element, typeResolver TypeResolver, hashResolver HashR
 		"31d79e49-9cd5-51bf-8403-f9a16bedecf5",
 		"3b1d6fe2-1ca5-51ed-a0b2-99392b9ae7d1",
 		"6d152bfe-ec46-52d0-9f1a-24dd1151f86b",
+		"6c824c4e-87cd-5d89-81e6-0415b098268b",
+		"233c4def-0ebf-58c4-9a69-7d5efc602339",
 		"9c719dd5-f8d3-59d3-b55b-627422922a43":
 		values := make([]any, len(element.Elements))
 		for i, element := range element.Elements {
