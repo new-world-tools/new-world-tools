@@ -311,6 +311,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 		if convertDdsTo != "" && filepath.Ext(file.Name) == ".dds" {
 			ddsPath := fpath
+
 			// texconv does not accept absolute linux paths
 			if runtime.GOOS == "linux" {
 				curDir, err := os.Getwd()
@@ -329,8 +330,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 				"-ft",
 				convertDdsTo,
 				"-f",
-				"rgba",
-				"-srgb",
+				"R8G8B8A8_UNORM_SRGB",
 				"-y",
 				"-o",
 				filepath.Dir(ddsPath),
