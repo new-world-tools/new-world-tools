@@ -235,6 +235,8 @@ func newTaskError(pak string, path string, err error) *TaskError {
 	}
 }
 
+var wemSig = []byte("RIFF")
+
 func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 	pool.AddTask(func(ctx context.Context) error {
 		var err error
@@ -382,6 +384,16 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 					return err
 				}
 
+				buf := bufio.NewReaderSize(rs, 1024*1024)
+				sample, err := buf.Peek(4)
+				if err != nil {
+					return err
+				}
+
+				if !bytes.Equal(wemSig, sample) {
+					continue
+				}
+
 				fileName := filepath.ToSlash(path.Join(filepath.Dir(file.Name), buildWemName(filepath.Base(fpath), i, wemCount, bf.FileID(i))))
 				wemPath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), fileName)))
 
@@ -391,13 +403,13 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 				}
 
 				if hashSumFile == "" {
-					_, err = io.Copy(dest, rs)
+					_, err = io.Copy(dest, buf)
 					if err != nil {
 						return newTaskError(pakFile.GetPath(), fileName, err)
 					}
 				} else {
 					hasher := sha1.New()
-					reader := io.TeeReader(rs, hasher)
+					reader := io.TeeReader(buf, hasher)
 
 					_, err = io.Copy(dest, reader)
 					if err != nil {
@@ -460,5 +472,8 @@ func match(fileName string) bool {
 
 func buildWemName(fileName string, index int, maxIndex int, wemId uint32) string {
 	width := len(fmt.Sprint(maxIndex))
+	if width < 2 {
+		width = 2
+	}
 	return fmt.Sprintf("%s-%0*d-%d.wem", strings.TrimSuffix(fileName, filepath.Ext(fileName)), width, index+1, wemId)
 }
