@@ -10,6 +10,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"path"
 	"path/filepath"
 	"regexp"
 	"runtime"
@@ -22,6 +23,7 @@ import (
 	"github.com/new-world-tools/new-world-tools/profiler"
 	"github.com/new-world-tools/new-world-tools/reader"
 	"github.com/new-world-tools/new-world-tools/reader/azcs"
+	"github.com/xypwn/filediver/wwise"
 	"github.com/zelenin/go-texconv"
 	workerpool "github.com/zelenin/go-worker-pool"
 )
@@ -40,6 +42,7 @@ var (
 	hashSumFile    string
 	decompressAzcs bool
 	convertDdsTo   string
+	extractWem     bool
 	fixLuac        bool
 	hashRegistry   *hash.Registry
 	pr             *profiler.Profiler
@@ -68,6 +71,7 @@ func main() {
 	hashSumFilePtr := flag.String("hash", "", "hash sum path")
 	decompressAzcsPtr := flag.Bool("decompress-azcs", false, "decompress AZCS (Amazon Object Stream)")
 	convertDdsToPtr := flag.String("convert-dds-to", "", "convert .dds to (supported formats: jpg, png, webp)")
+	extractWemPtr := flag.Bool("extract-wem", false, "extract WEM from BNK")
 	fixLuacPtr := flag.Bool("fix-luac", false, "fix .luac header for unluac")
 	excludePtr := flag.String("exclude", "", "regexp")
 	includePtr := flag.String("include", "", "regexp")
@@ -129,6 +133,7 @@ func main() {
 	if convertDdsTo != "" && !supportedFormatsForDdsConverting[convertDdsTo] {
 		log.Fatalf("Unsupported format for converting: %s", convertDdsTo)
 	}
+	extractWem = *extractWemPtr
 	fixLuac = *fixLuacPtr
 
 	err = os.MkdirAll(outputDir, 0755)
@@ -359,6 +364,60 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			}
 		}
 
+		if extractWem && filepath.Ext(file.Name) == ".bnk" {
+			f, err := os.Open(fpath)
+			if err != nil {
+				return err
+			}
+
+			bf, err := wwise.OpenBnk(f, nil)
+			if err != nil {
+				return err
+			}
+
+			wemCount := bf.NumFiles()
+			for i := range wemCount {
+				rs, err := bf.OpenFile(i)
+				if err != nil {
+					return err
+				}
+
+				fileName := filepath.ToSlash(path.Join(filepath.Dir(file.Name), buildWemName(filepath.Base(fpath), i, wemCount, bf.FileID(i))))
+				wemPath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), fileName)))
+
+				dest, err := os.Create(wemPath)
+				if err != nil {
+					return err
+				}
+
+				if hashSumFile == "" {
+					_, err = io.Copy(dest, rs)
+					if err != nil {
+						return newTaskError(pakFile.GetPath(), fileName, err)
+					}
+				} else {
+					hasher := sha1.New()
+					reader := io.TeeReader(rs, hasher)
+
+					_, err = io.Copy(dest, reader)
+					if err != nil {
+						return newTaskError(pakFile.GetPath(), fileName, err)
+					}
+
+					hashRegistry.Add(fileName, hasher.Sum(nil))
+				}
+
+				dest.Close()
+			}
+
+			if wemCount > 0 {
+				os.Remove(fpath)
+				hashRegistry.Remove(file.Name)
+			}
+
+			f.Close()
+		}
+
 		return nil
 	})
 }
@@ -397,4 +456,9 @@ func match(fileName string) bool {
 	} else {
 		return !excludeRe.MatchString(fileName) && includeRe.MatchString(fileName)
 	}
+}
+
+func buildWemName(fileName string, index int, maxIndex int, wemId uint32) string {
+	width := len(fmt.Sprint(maxIndex))
+	return fmt.Sprintf("%s-%0*d-%d.wem", strings.TrimSuffix(fileName, filepath.Ext(fileName)), width, index+1, wemId)
 }
