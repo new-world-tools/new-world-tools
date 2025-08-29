@@ -410,12 +410,12 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 				dest.Close()
 			}
 
+			f.Close()
+
 			if wemCount > 0 {
 				os.Remove(fpath)
 				hashRegistry.Remove(file.Name)
 			}
-
-			f.Close()
 		}
 
 		return nil
