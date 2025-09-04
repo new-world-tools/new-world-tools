@@ -246,13 +246,14 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			basePath = filepath.Dir(inputPath)
 		}
 
-		fpath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), file.Name)))
-		err = os.MkdirAll(filepath.Dir(fpath), 0755)
+		relFilePath := filepath.ToSlash(filepath.Join(strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), file.Name))
+		fullFilePath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, relFilePath)))
+		err = os.MkdirAll(filepath.Dir(fullFilePath), 0755)
 		if err != nil {
 			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
 
-		dest, err := os.Create(fpath)
+		dest, err := os.Create(fullFilePath)
 		if err != nil {
 			return newTaskError(pakFile.GetPath(), file.Name, err)
 		}
@@ -306,18 +307,18 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 				return newTaskError(pakFile.GetPath(), file.Name, err)
 			}
 
-			hashRegistry.Add(file.Name, hasher.Sum(nil))
+			hashRegistry.Add(relFilePath, hasher.Sum(nil))
 		}
 
 		dest.Close()
 
-		err = os.Chtimes(fpath, time.Now(), file.GetModifiedTime())
+		err = os.Chtimes(fullFilePath, time.Now(), file.GetModifiedTime())
 		if err != nil {
 			return err
 		}
 
 		if convertDdsTo != "" && filepath.Ext(file.Name) == ".dds" {
-			ddsPath := fpath
+			ddsPath := fullFilePath
 
 			// texconv does not accept absolute linux paths
 			if runtime.GOOS == "linux" {
@@ -326,7 +327,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 					return err
 				}
 
-				relPath, err := filepath.Rel(curDir, fpath)
+				relPath, err := filepath.Rel(curDir, fullFilePath)
 				if err != nil {
 					return err
 				}
@@ -346,10 +347,10 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 			_, err := texconv.Texconv(args, false, true, true)
 			if err == nil {
-				os.Remove(fpath)
+				os.Remove(fullFilePath)
 				if hashSumFile != "" {
 					hasher := sha1.New()
-					f, err := os.Open(strings.TrimSuffix(fpath, ".dds") + "." + convertDdsTo)
+					f, err := os.Open(strings.TrimSuffix(fullFilePath, ".dds") + "." + convertDdsTo)
 					if err != nil {
 						return err
 					}
@@ -360,14 +361,14 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 
 					f.Close()
 
-					hashRegistry.Add(strings.TrimSuffix(file.Name, ".dds")+"."+convertDdsTo, hasher.Sum(nil))
-					hashRegistry.Remove(file.Name)
+					hashRegistry.Add(strings.TrimSuffix(relFilePath, ".dds")+"."+convertDdsTo, hasher.Sum(nil))
+					hashRegistry.Remove(relFilePath)
 				}
 			}
 		}
 
 		if extractWem && filepath.Ext(file.Name) == ".bnk" {
-			f, err := os.Open(fpath)
+			f, err := os.Open(fullFilePath)
 			if err != nil {
 				return err
 			}
@@ -394,7 +395,7 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 					continue
 				}
 
-				fileName := filepath.ToSlash(path.Join(filepath.Dir(file.Name), buildWemName(filepath.Base(fpath), i, wemCount, bf.FileID(i))))
+				fileName := filepath.ToSlash(path.Join(filepath.Dir(relFilePath), buildWemName(filepath.Base(relFilePath), i, wemCount, bf.FileID(i))))
 				wemPath := filepath.ToSlash(filepath.Clean(filepath.Join(outputDir, strings.ReplaceAll(filepath.Dir(pakFile.GetPath()), basePath, ""), fileName)))
 
 				dest, err := os.Create(wemPath)
@@ -425,8 +426,8 @@ func addTask(id int64, pakFile *pak.Pak, file *pak.File) {
 			f.Close()
 
 			if wemCount > 0 {
-				os.Remove(fpath)
-				hashRegistry.Remove(file.Name)
+				os.Remove(fullFilePath)
+				hashRegistry.Remove(relFilePath)
 			}
 		}
 
