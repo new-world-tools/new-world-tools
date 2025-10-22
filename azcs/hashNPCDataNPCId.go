@@ -209,6 +209,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x2764e3b9: "1525_angryearth", // 660923321
     0x281a6101: "99e_sun_p3", // 672817409
     0x2822f0e6: "95_s04_zander_p01i", // 673378534
+    0x2863e12f: "npc_04289", // 677634351
     0x2873c573: "0230a_ranger_1", // 678675827
     0x2877a30a: "npc_18032", // 678929162
     0x288e06e3: "1643_gaius", // 680396515
@@ -317,6 +318,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x38707be1: "99g_russo_03", // 946895841
     0x3888e796: "1606_ambrosius", // 948496278
     0x38bac104: "99g_samir_01", // 951763204
+    0x38ce9c45: "npc_04295", // 953064517
     0x38fa9a81: "0439a_anwirhughes_02", // 955947649
     0x396305d8: "0307_commander", // 962790872
     0x398d549f: "0713_watcher_03", // 965563551
@@ -356,6 +358,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x3e98c017: "99g_buhawi_01", // 1050198039
     0x3f02b88c: "1660_paubastis", // 1057142924
     0x3f6fe7f7: "9536_noraroggeveen", // 1064298487
+    0x3fa3585c: "npc_04291", // 1067669596
     0x3fc81a2f: "13a_antiquarian_00", // 1070078511
     0x3fe2ce3c: "01_urdamb_01", // 1071828540
     0x400401a5: "1033_treasurehunter", // 1074004389
@@ -410,6 +413,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x481a8f6e: "99g_russo_06", // 1209700206
     0x4823139d: "09a_kim_sc", // 1210258333
     0x484d8327: "99f_grace_08a", // 1213039399
+    0x48a468ca: "npc_04290", // 1218734282
     0x48b0bae0: "1427_cultmother", // 1219541728
     0x48cf2ab9: "13a_antiquarian_01", // 1221536441
     0x48eb59b9: "09a_yoon_b", // 1223383481
@@ -454,6 +458,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x4f129a2d: "1010_barkeep", // 1326619181
     0x4f65d04c: "06_yelenapajitnova01", // 1332072524
     0x4f774b77: "99g_russo_02", // 1333218167
+    0x4fc9acd3: "npc_04294", // 1338617043
     0x4fcb40d2: "06_medea01", // 1338720466
     0x500c0a11: "1672_alchemist2", // 1342966289
     0x5026d8ae: "npc_08013", // 1344723118
@@ -550,6 +555,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0x5f48fcf8: "95_s04_zander_p04", // 1598618872
     0x5f521b9b: "1433_aedog_01", // 1599216539
     0x5f58dcb6: "0337_ranger", // 1599659190
+    0x5f64d1b9: "npc_04288", // 1600442809
     0x5f70939c: "npc_18033", // 1601213340
     0x5f7576fb: "06_graceww_01", // 1601533691
     0x5f7e9059: "12_mb_grace_01a", // 1602130009
@@ -930,6 +936,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xa16546e6: "0718_ranger", // 2707769062
     0xa16bb160: "06_yelenapajitnova03", // 2708189536
     0xa1c521fe: "06_medea03", // 2714051070
+    0xa1c7cdff: "npc_04296", // 2714226175
     0xa1f3cb3b: "0439a_anwirhughes_01", // 2717109051
     0xa20927e7: "99e_sun_p6v3", // 2718509031
     0xa23dc7c9: "9802_lethold", // 2721957833
@@ -957,6 +964,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xa614ee42: "99g_russo_04", // 2786389570
     0xa61a77e7: "9904c_msq_theophrastus", // 2786752487
     0xa62b539a: "1679_tomash_sm", // 2787857306
+    0xa6aa09e6: "npc_04292", // 2796161510
     0xa6be4bc3: "npc_18029", // 2797489091
     0xa6c14b95: "13a_antiquarian_03", // 2797685653
     0xa79191ad: "99g_buhawi_02", // 2811335085
@@ -1219,6 +1227,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xd113ded4: "99g_russo_05", // 3507740372
     0xd122f813: "7504_overseer", // 3508729875
     0xd13ffb2e: "1599_nekumanesh_2", // 3510631214
+    0xd1ad3970: "npc_04293", // 3517790576
     0xd1b97b55: "npc_18028", // 3518593877
     0xd1c67b03: "13a_antiquarian_02", // 3519445763
     0xd1e20803: "09a_yoon_a", // 3521251331
@@ -1250,6 +1259,7 @@ var hashNPCDataNPCId = map[uint32]string{
     0xd66dec66: "99d_phandackien_a", // 3597528166
     0xd67e1acd: "99g_russo_01", // 3598588621
     0xd6a4d205: "95a_rima_s02_08", // 3601125893
+    0xd6c0fd69: "npc_04297", // 3602972009
     0xd6c21168: "06_medea02", // 3603042664
     0xd6c2e7e9: "1505_artificer", // 3603097577
     0xd6f0fc2c: "1310_barkeep", // 3606117420

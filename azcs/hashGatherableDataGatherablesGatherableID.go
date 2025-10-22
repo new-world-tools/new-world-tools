@@ -40,6 +40,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x05a8bf58: "springtide_wispybloom", // 94945112
     0x05be3ec5: "cattaillarge", // 96353989
     0x05e3b369: "95_s01_01_crow_gracelessrequest", // 98808681
+    0x05e3de07: "siren_cannonball_cannonball", // 98819591
     0x05f11ce1: "hotspot_rare_47", // 99687649
     0x060ef446: "hotspot_broad_15", // 101643334
     0x064479ce: "pigdomestic", // 105150926
@@ -1101,6 +1102,7 @@ var hashGatherableDataGatherablesGatherableID = map[uint32]string{
     0x9b121c41: "0300_epicweapons_periville", // 2601655361
     0x9b651a78: "1524_doubloona", // 2607094392
     0x9b958942: "hotspot_rare_40", // 2610268482
+    0x9bcb03d0: "siren_cannonball_place", // 2613773264
     0x9bd3f485: "1625_0903_ambientgroupb", // 2614359173
     0x9be2af3d: "98_syndicate_03_well_a", // 2615324477
     0x9bf2da9b: "nightveil_stage_t3", // 2616384155

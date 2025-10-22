@@ -636,6 +636,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x12c04bd0: "legion_axethrower_m-f_63", // 314592208
     0x12c128ea: "rabbit_snowshoe_20", // 314648810
     0x12c5f05f: "dunwood_undead_cryptkeeper_towerdevil", // 314962015
+    0x12d78a47: "undead_pirate_brute_70_elite_rw", // 316115527
     0x12dfaba4: "turkey_50", // 316648356
     0x12e09e62: "skeleton_2h_sword_33", // 316710498
     0x12e0d85c: "evil_knight_mace_dg_greatcleave_00_00", // 316725340
@@ -1420,6 +1421,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x2a183513: "rabbit_spotted_13wf06", // 706229523
     0x2a1ddac8: "dryad_shaman_named_02", // 706599624
     0x2a23a1da: "desert_scorpion_small_16bs04b", // 706978266
+    0x2a3dae2b: "swamp_dryad_beast_arena_boss_v2", // 708685355
     0x2a43891b: "legion_villager_kitchenknife_16bs07", // 709069083
     0x2a4d0f88: "skeleton_1h_sword_41", // 709693320
     0x2a602bfc: "dynasty_musketeer_08qp06", // 710945788
@@ -1488,6 +1490,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x2c2a646d: "fl_anubianguardian_reaver", // 740975725
     0x2c2f52ed: "ck_boar_spectral_10ws08", // 741298925
     0x2c3d507a: "damned_rifleman_m-f_11md00g", // 742215802
+    0x2c3dddeb: "rw_siege_pool_blightedwall", // 742252011
     0x2c436d4a: "elk_doe_11md06", // 742616394
     0x2c463e02: "corruption_heavy_07sm02_elite", // 742800898
     0x2c55bdaf: "drowned_sailor_1h_sword_10ws08", // 743816623
@@ -1796,6 +1799,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x34f17be3: "rabbit_snowshoe_45", // 888241123
     0x34fc7ba4: "skeleton_mage_09fl08", // 888961956
     0x3503743b: "dunwood_varlaamlibrary_consort", // 889418811
+    0x35207194: "undead_shaman_named_elite_rw", // 891318676
     0x3523cb86: "risen_regurgitator_14", // 891538310
     0x352d9dd1: "lost_undead_naga_catacombs", // 892181969
     0x352e8c74: "hostile", // 892243060
@@ -2316,6 +2320,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x445ce64f: "timeless", // 1146938959
     0x446566a1: "ghost_starved_13wf", // 1147496097
     0x447379d9: "fl_alligator_elite_09fl01", // 1148418521
+    0x4479fb42: "ghost_shackled_named_elite_rw", // 1148844866
     0x4480f51d: "undead_javelineer_29", // 1149302045
     0x44850c22: "turkey_30", // 1149570082
     0x4486117e: "withered_grunt_13wf08", // 1149636990
@@ -3949,6 +3954,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0x746553fa: "alligator_strange_named_08qp03", // 1952797690
     0x7467a105: "sand_elemental_soldier_16bs01", // 1952948485
     0x74688857: "anubianguardian_reaver_12bs10a", // 1953007703
+    0x747526bd: "undead_pirate_brute_named_elite_rw_02", // 1953834685
     0x747feaf2: "upyr_10221c", // 1954540274
     0x7480a78f: "bear_black_13wf05", // 1954588559
     0x749645e9: "ghost_shipwrecked_10ws03", // 1956005353
@@ -7615,6 +7621,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xe1e026f2: "legion_axethrower_16bs02a", // 3789563634
     0xe1e14acc: "damned_hound_03gc09_named_elite", // 3789638348
     0xe1e3a346: "dunwood_blackgoat", // 3789792070
+    0xe1e5ec13: "bearelemental_named_elite_05wc10_invulnerable", // 3789941779
     0xe1e6f987: "ck_mountain_lion_spectral_10ws06", // 3790010759
     0xe1eeed21: "wolf_timber_9", // 3790531873
     0xe1fd4ccf: "legion_legionnaire_16bs02", // 3791473871
@@ -7996,6 +8003,7 @@ var hashVitalsCategoryDataVitalsCategoriesVitalsCategoryID = map[uint32]string{
     0xed55ba50: "damned_pistoleer_m-f_07sm06a_elite", // 3981818448
     0xed61d9ed: "anubianguardian_reaver_12bs10b", // 3982612973
     0xed6ef0bf: "sand_elemental_soldier_16bs02", // 3983470783
+    0xed7c7707: "undead_pirate_brute_named_elite_rw_01", // 3984357127
     0xed83d852: "sulfur_dragon_16bs09", // 3984840786
     0xed871fa9: "dryad_soldier_14ac09a", // 3985055657
     0xeda63ec9: "barbary_lion_64", // 3987095241

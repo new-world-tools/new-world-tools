@@ -73,6 +73,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x4869a8e3: "bleed", // 1214884067
     0x495b9367: "knockbackdmg", // 1230738279
     0x4a198fba: "sprintdelaycombat", // 1243189178
+    0x4be05598: "stealth", // 1272993176
     0x4df4d6a1: "resisttincture", // 1307891361
     0x4ecd8e99: "stanceoffense", // 1322094233
     0x4f5056b9: "petrified", // 1330665145
@@ -108,6 +109,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x6ad0de1a: "timer", // 1792073242
     0x6b09fda0: "manarate", // 1795816864
     0x6b4075c6: "iceroot", // 1799386566
+    0x6be9326b: "daggerbuff", // 1810444907
     0x725130ba: "carryspear", // 1917923514
     0x7271d4f5: "dodgesuppress", // 1920062709
     0x72cbd1b6: "sporeoffense", // 1925960118
@@ -121,6 +123,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x7969dc93: "essencerupturet2", // 2036980883
     0x7a4af000: "warhammer", // 2051731456
     0x7bbd9903: "frostbite", // 2076023043
+    0x7cb851d3: "frenziedslashesperk", // 2092454355
     0x7e4f5998: "meshoverrides", // 2119129496
     0x7fd16d73: "admiralbruteresistdispell", // 2144431475
     0x8045b257: "teamwipecat", // 2152051287
@@ -149,6 +152,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0x96240334: "nondispellableslow", // 2518942516
     0x963ebda8: "luck", // 2520694184
     0x9724b39f: "nondispellableenergized", // 2535764895
+    0x97a698cc: "ambush", // 2544277708
     0x9821eb23: "ai_neutral", // 2552359715
     0x98c692d4: "bblastchance", // 2563150548
     0x9a65fe8e: "flamekeeperdebuff", // 2590375566
@@ -239,6 +243,7 @@ var hashStatusEffectDataEffectCategories = map[uint32]string{
     0xe09fc154: "unflinching", // 3768566100
     0xe0d029a8: "abscapped90percent", // 3771738536
     0xe1f52948: "unclampedarmorrend", // 3790940488
+    0xe347114f: "daggercc", // 3813085519
     0xe493e3cb: "uninterruptible", // 3834897355
     0xe5c58441: "coatingboost", // 3854926913
     0xe702b4b1: "carrycannonball", // 3875714225
