@@ -135,8 +135,8 @@ func main() {
 	}
 
 	resolveContext = &ResolveContext{
-		CharacterLevel:      65,
-		GearScore:           700,
+		CharacterLevel:      70,
+		GearScore:           800,
 		StatusEffectPotency: make(map[string]float64),
 		ConsumablePotency:   make(map[string]float64),
 		PerkScaling:         make(map[string]*expr2.Scaling),
