@@ -114,6 +114,7 @@ var hashBlueprintItemDefinitionsBlueprintBlueprintID = map[uint32]string{
     0x48c7f426: "rampartcornerint3", // 1221063718
     0x493f569f: "fenceironwood", // 1228887711
     0x4a0b99f9: "wallstraightt4", // 1242274297
+    0x4b5fc2c5: "defend_varlaam", // 1264566981
     0x4cd4d2db: "seedturkeyt1", // 1289016027
     0x4cd6bad7: "masonryt2", // 1289140951
     0x4cffee9e: "campskin_winter04_a_pvp", // 1291841182

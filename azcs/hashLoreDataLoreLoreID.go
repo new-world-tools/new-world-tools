@@ -1,11 +1,14 @@
 package azcs
 
 var hashLoreDataLoreLoreID = map[uint32]string{
+    0x00062d00: "topic_17_nighthaven_title_04_12", // 404736
     0x002226d8: "13_weaversfen_title_11_05", // 2238168
     0x0047ab80: "inferiorman_title_01_04", // 4696960
     0x006fc3d7: "14_edengrove_title_06_02", // 7324631
     0x009d9a05: "excavation_chapter_01", // 10328581
+    0x00b78b9e: "topic_17_nighthaven_title_18_13", // 12028830
     0x00f2baab: "00_aeternum_title_14_01", // 15907499
+    0x01166a2d: "topic_17_nighthaven_title_12_02", // 18246189
     0x01401912: "06_windsward_title_05_04", // 20977938
     0x0161de9e: "elysianwilds_title_01_01", // 23191198
     0x018e14c0: "03_greatcleave_title_10_02", // 26088640
@@ -13,26 +16,31 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x01b85718: "04_everfall_title_20_03", // 28858136
     0x01c219a7: "12_monarchsbluffs_title_15_04", // 29497767
     0x01d667ca: "12_monarchsbluffs_title_20_01", // 30828490
+    0x021461a9: "topic_17_nighthaven_title_09_04", // 34890153
     0x021e4e46: "springtidebloom_chapter_01", // 35540550
     0x0238a8c1: "09_firstlight_title_10_03", // 37267649
     0x024fd83f: "talesofexpeditions_title_08_03", // 38787135
     0x0251509c: "00_aeternum_title_05_16", // 38883484
     0x02a02da7: "gettingstarted_outposts", // 44051879
+    0x02a5c737: "topic_17_nighthaven_title_15_05", // 44418871
     0x0305c01c: "tales_of_brimstone_sands_title_13_24", // 50708508
     0x030e7025: "tales_of_brimstone_sands_chapter_14", // 51277861
     0x034117b1: "00_aeternum_title_13_06", // 54597553
     0x0389199b: "02_brightwood_title_06_05", // 59316635
     0x03919c6a: "hunterscabin_title_01_05", // 59874410
+    0x03b5801a: "topic_17_nighthaven_title_03_15", // 62226458
     0x04017d7d: "wildmancutlasskeys_title_01_04", // 67206525
     0x042cd3a8: "00_aeternum_title_13_02", // 70046632
     0x0463b43c: "tales_of_brimstone_sands_chapter_10", // 73643068
     0x04680405: "tales_of_brimstone_sands_title_13_20", // 73925637
     0x04ab7877: "11_mourningdale_title_01_01", // 78346359
     0x04b4bd3f: "backtsorylore9", // 78953791
+    0x04d84403: "topic_17_nighthaven_title_03_11", // 81282051
     0x04e4dd82: "02_brightwood_title_06_01", // 82107778
     0x04fc5873: "hunterscabin_title_01_01", // 83646579
     0x053c9485: "00_aeternum_title_05_12", // 87856261
     0x055effb6: "tales_of_brimstone_sands_title_11_03", // 90111926
+    0x05c8032e: "topic_17_nighthaven_title_15_01", // 96994094
     0x060c1a87: "elysianwilds_title_01_05", // 101456519
     0x064d4efc: "fisher_regent_title_01_02", // 105729788
     0x066f36a2: "10_cutlasskeys_chapter_02", // 107951778
@@ -46,8 +54,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x072aabbb: "99_msq_title_01_02", // 120236987
     0x074c3164: "05_reekwater_title_09_03", // 122433892
     0x074fe2c1: "13_weaversfen_title_11_01", // 122675905
+    0x076be919: "topic_17_nighthaven_title_04_16", // 124512537
     0x07a610b4: "ridersraces_title_01_04", // 128323764
     0x07ca72a0: "06_windsward_chapter_19", // 130708128
+    0x07da4f87: "topic_17_nighthaven_title_18_17", // 131747719
     0x0806e636: "10_cutlasskeys_title_08_16", // 134669878
     0x0840a723: "talesofexpeditions_title_01_02", // 138454819
     0x087466c3: "09a_firstlight_title_01_01", // 141846211
@@ -63,6 +73,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x09d311d1: "14_edengrove_title_08_04", // 164827601
     0x09f1e7ab: "inferiorman_title_01_08", // 166848427
     0x09ffce33: "00_aeternum_title_06_06", // 167759411
+    0x0a03cc31: "topic_17_nighthaven_title_03_19", // 168021041
     0x0a27d041: "hunterscabin_title_01_09", // 170381377
     0x0a35cb9d: "02_brightwood_title_08_03", // 171297693
     0x0a3ef654: "07_shatteredmountain_title_04_07", // 171898452
@@ -72,12 +83,17 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x0b540ca5: "09a_firstlight_chapter_06", // 190057637
     0x0b5f6655: "expedition_chapter_01", // 190801493
     0x0b7ad028: "eastburn_chapter_01", // 192598056
+    0x0ba22d82: "topic_17_nighthaven_title_09_08", // 195177858
+    0x0ba8b3af: "topic_17_nighthaven_title_07_02", // 195605423
     0x0bd649dc: "95a_bloodofthesands_chapter_01", // 198592988
+    0x0bf21141: "topic_17_nighthaven_chapter_17", // 200413505
     0x0c14d4a8: "15_restlessshore_title_02_04", // 202691752
     0x0c39c8bc: "09a_firstlight_chapter_02", // 205113532
     0x0c538b2e: "tales_of_brimstone_sands_title_03_04", // 206801710
     0x0c9ece20: "talesofexpeditions_title_06_01", // 211734048
+    0x0c9fd558: "topic_17_nighthaven_chapter_13", // 211801432
     0x0caa0fc0: "09a_firstlight_title_06_02", // 212471744
+    0x0cc577b6: "topic_17_nighthaven_title_07_06", // 214267830
     0x0d0a9364: "06_arch_01_03", // 218796900
     0x0d38f7ea: "varangianknights_title_07_02", // 221837290
     0x0d53324d: "07_shatteredmountain_title_04_03", // 223556173
@@ -88,6 +104,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x0df9f072: "deathandrebirthlore3", // 234483826
     0x0e32b00f: "09_firstlight_chapter_10", // 238202895
     0x0e55fd0b: "springtidebloom_title_01_04", // 240516363
+    0x0e669d81: "topic_17_nighthaven_title_16_11", // 241606017
     0x0e6cbd8c: "03_greatcleave_chapter_10", // 242007436
     0x0e7c3e8b: "06_windsward_chapter_15", // 243023499
     0x0e9aaa13: "topic_07_shatteredmountain", // 245017107
@@ -101,6 +118,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x0fcc99f4: "04_everfall_title_07_05", // 265066996
     0x0fd08802: "99a_msq_soulwardenintro_title_01_02", // 265324546
     0x0feaf96b: "13_weaversfen_chapter_11", // 267057515
+    0x101068d9: "topic_17_nighthaven_title_16_05", // 269510873
     0x102a97df: "combat_equipload", // 271226847
     0x1041c2d9: "talesofwinter_title_04_02", // 272745177
     0x10444557: "09_firstlight_chapter_04", // 272909655
@@ -121,11 +139,16 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x11f4b85f: "00_aeternum_title_10_06", // 301250655
     0x123b74e1: "11_mourningdale_chapter_03", // 305886433
     0x12471545: "00_aeternum_title_17_01", // 306648389
+    0x12b382ee: "topic_17_nighthaven_title_07_12", // 313754350
     0x12b6d61e: "backstorylore6", // 313972254
+    0x12b91cc3: "topic_17_nighthaven_title_09_18", // 314121411
     0x12c0be9a: "11_mourningdale_title_05_02", // 314621594
+    0x12e92000: "topic_17_nighthaven_chapter_07", // 317267968
+    0x1318fd70: "topic_17_nighthaven_title_03_09", // 320404848
     0x133bbb2e: "03_greatcleave_title_13_02", // 322681646
     0x13849fc5: "tales_of_brimstone_sands_title_09_01", // 327458757
     0x13a30d4f: "tales_of_brimstone_sands_chapter_08", // 329452879
+    0x13a3c5c3: "topic_17_nighthaven_title_11_02", // 329500099
     0x13c3c043: "15_restlessshore_title_08_01", // 331595843
     0x13c689c2: "topicftueisland", // 331778498
     0x14000a6b: "progression_respec", // 335546987
@@ -136,20 +159,25 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x1486685e: "expedition_title_01_03", // 344352862
     0x1495b84c: "talesofexpeditions_title_10_01", // 345356364
     0x149fabda: "talesofwinter_title_03_01", // 346008538
+    0x14ce01da: "topic_17_nighthaven_title_11_06", // 349045210
     0x14e2c8b2: "09_firstlight_title_08_01", // 350406834
     0x14edc1ae: "deathandrebirthlore1d", // 351125934
     0x14fc52fa: "topic_talesofthesilvercrows", // 352080634
     0x1556b0f8: "11_mourningdale_chapter_07", // 358002936
+    0x1584e419: "topic_17_nighthaven_chapter_03", // 361030681
     0x1598e5aa: "topicsettlers", // 362341802
     0x15db1207: "backstorylore2", // 366678535
+    0x15de46f7: "topic_17_nighthaven_title_07_16", // 366888695
     0x15fa4d2f: "13_weaversfen_title_12_01", // 368725295
     0x161ed799: "11_mourningdale_title_02_01", // 371120025
+    0x1641dac2: "factionfest_title_01_01", // 373414594
     0x1670136e: "10_cutlasskeys_title_08_02", // 376443758
     0x1675f220: "talesofwinter_chapter_05", // 376828448
     0x16997c46: "00_aeternum_title_10_02", // 379157574
     0x16f1c82a: "13_weaversfen_chapter_01", // 384944170
     0x16fb950e: "05_reekwater_title_11_05", // 385586446
     0x17670fca: "06_windsward_chapter_05", // 392630218
+    0x177dacc0: "topic_17_nighthaven_title_16_01", // 394112192
     0x17bda127: "12_monarchsbluffs_title_24_02", // 398303527
     0x17c583f7: "fivefarms_title_01_01", // 398820343
     0x17e5d22d: "03_greatcleave_title_14_01", // 400937517
@@ -157,34 +185,45 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x187e6718: "11_mourningdale_title_10_02", // 410937112
     0x18807b34: "12_monarchsbluffs_chapter_21", // 411073332
     0x18f9ccc7: "00_aeternum_title_02_01", // 419024071
+    0x191d1c41: "topic_17_nighthaven_title_04_02", // 421338177
     0x191e0bc5: "fivefarms_title_01_09", // 421399493
     0x198562ac: "03_greatcleave_title_06_02", // 428171948
+    0x19a624f2: "topic_17_nighthaven_title_16_09", // 430318834
     0x19ac04ff: "03_greatcleave_chapter_08", // 430703871
+    0x19acbadf: "topic_17_nighthaven_title_18_03", // 430750431
     0x19f0c164: "deathandrebirthlore4a", // 435208548
     0x19f2097c: "09_firstlight_chapter_08", // 435292540
     0x1a14f203: "04_everfall_title_04_01", // 437580291
     0x1a154164: "tales_of_brimstone_sands_chapter_04", // 437600612
     0x1a2c33ae: "tales_of_brimstone_sands_title_32_02", // 439104430
     0x1a4964fa: "06_windsward_title_08_02", // 441017594
+    0x1a7a6b57: "topic_madnessinthemaws", // 444230487
+    0x1a9ad24a: "madnessinthemaws_chapter_01", // 446353994
+    0x1aaeb15b: "topic_17_nighthaven_title_03_05", // 447656283
     0x1ac1c92d: "09a_firstlight_title_02_01", // 448907565
     0x1acb644f: "12_monarchsbluffs_title_18_02", // 449537103
     0x1af508cd: "talesofexpeditions_title_02_02", // 452266189
     0x1af8c264: "06_windsward_title_14_03", // 452510308
+    0x1b0f50e8: "topic_17_nighthaven_title_09_14", // 453988584
     0x1b288895: "05_reekwater_title_04_01", // 455641237
     0x1b4a61dd: "00_aeternum_title_05_06", // 457859549
     0x1b533107: "varangianknights_title_03_01", // 458436871
     0x1be413f1: "tidebattle_title_01_03", // 467932145
     0x1bf3be72: "00_aeternum_chapter_27", // 468958834
+    0x1c6294f1: "topic_17_nighthaven_title_09_10", // 476222705
     0x1c89d7e8: "tidebattle_title_01_07", // 478795752
     0x1c9e7a6b: "00_aeternum_chapter_23", // 480148075
     0x1d5589da: "tales_of_brimstone_sands_title_07_03", // 492145114
     0x1d6527ec: "99a_msq_soulwardenintro_title_02_02", // 493168620
     0x1d817810: "06_windsward_title_21_02", // 495024144
+    0x1dc37542: "topic_17_nighthaven_title_03_01", // 499348802
     0x1e1fa02e: "09a_firstlight_title_05_02", // 505389102
     0x1e2b61ce: "talesofexpeditions_title_05_01", // 506159566
     0x1e315ed8: "inferiorman_title_01_10", // 506552024
     0x1e464049: "factionintro_covenant_title_01_01", // 507920457
+    0x1e70d858: "topic_17_nighthaven_title_04_06", // 510711896
     0x1ea17b46: "15_restlessshore_title_01_04", // 513899334
+    0x1ec17ec6: "topic_17_nighthaven_title_18_07", // 515997382
     0x1eca9b00: "04_everfall_title_03_02", // 516594432
     0x1f0b33b4: "bookofshadows_title_01_03", // 520827828
     0x1f4494ad: "13_weaversfen_title_07_01", // 524588205
@@ -196,12 +235,14 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x20635115: "12_monarchsbluffs_title_21_02", // 543379733
     0x20796179: "winterconvergence_chapter_03", // 544825721
     0x2087572a: "13_weaversfen_title_06_16", // 545740586
+    0x20a35cf2: "topic_17_nighthaven_title_13_01", // 547577074
     0x20ba8545: "08_ebonscalereach_title_02_03", // 549094725
     0x21478c74: "00_aeternum_title_15_02", // 558337140
     0x216ed6d0: "malleusmortuis_title_01_06", // 560912080
     0x21754da7: "chaptercommission", // 561335719
     0x21956fcd: "tales_of_brimstone_sands_chapter_28", // 563441613
     0x219edff4: "tales_of_brimstone_sands_title_13_18", // 564060148
+    0x21b31bdf: "topic_17_nighthaven_title_05_11", // 565386207
     0x21c027ab: "11_mourningdale_title_07_01", // 566241195
     0x21dabb92: "summermedleyfaire_chapter_02", // 567982994
     0x21daf508: "14_edengrove_title_07_01", // 567997704
@@ -215,19 +256,25 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x232bb5f5: "10_cutlasskeys_title_08_26", // 590067189
     0x2380bc0e: "weavers_title_01_03", // 595639310
     0x2392731d: "tales_of_brimstone_sands_title_25_01", // 596800285
+    0x23a15776: "topic_17_nighthaven_title_08_07", // 597776246
     0x242b46ce: "06_windsward_title_03_04", // 606815950
     0x24414251: "04_everfall_chapter_18", // 608256593
     0x244671ec: "10_cutlasskeys_title_08_22", // 608596460
     0x24740600: "twinfalls_title_02_03", // 611583488
+    0x247d35f1: "topic_17_nighthaven_title_14_02", // 612185585
     0x24972af9: "talesofexpeditions_title_09_04", // 613886713
     0x24b3b86c: "greatbridge_title_01_04", // 615757932
     0x24bd3816: "12_monarchsbluffs_title_26_01", // 616380438
+    0x24c60d42: "topic_17_nighthaven_title_06_09", // 616959298
+    0x24cc936f: "topic_17_nighthaven_title_08_03", // 617386863
     0x24ed7817: "weavers_title_01_07", // 619542551
     0x25516d48: "06_windsward_chapter_25", // 626093384
     0x2551eb5d: "02_brightwood_title_07_02", // 626125661
     0x2599e577: "00_aeternum_title_12_01", // 630842743
+    0x25d64a6f: "topic_17_nighthaven_title_10_19", // 634800751
     0x260312c9: "malleusmortuis_title_01_02", // 637735625
     0x269beef3: "00_aeternum_title_09_07", // 647753459
+    0x26dedfc6: "topic_17_nighthaven_title_05_15", // 652140486
     0x26fad41e: "13_weaversfen_title_10_02", // 653972510
     0x271aeb61: "12_monarchsbluffs_title_14_03", // 656075617
     0x27294d4a: "06_windsward_title_18_02", // 657018186
@@ -236,9 +283,11 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x2774dbb3: "04_everfall_title_14_01", // 661969843
     0x277aa052: "threefactions_title_02_03", // 662347858
     0x279f32eb: "talesofwinter_title_01_02", // 664744683
+    0x27ce98eb: "topic_17_nighthaven_title_13_05", // 667850987
     0x27ea9333: "13_weaversfen_title_06_12", // 669684531
     0x2812315a: "10_cutlasskeys_title_03_04", // 672280922
     0x282323e6: "tales_of_brimstone_sands_chapter_24", // 673391590
+    0x28257f0c: "topic_17_iq_title_01_02", // 673545996
     0x282811a4: "05_reekwater_title_06_02", // 673714596
     0x282893df: "tales_of_brimstone_sands_title_13_14", // 673747935
     0x283446bd: "summermedleyfaire_title_02_03", // 674514621
@@ -251,17 +300,21 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x292caa9f: "tales_of_brimstone_sands_title_30_01", // 690793119
     0x29504c4c: "topicsurvivalguide", // 693128268
     0x2952b26d: "azothtree_title_01_03", // 693285485
+    0x29ae286a: "topic_17_nighthaven_title_01_06", // 699279466
     0x29c5dcf0: "00_aeternum_chapter_07", // 700833008
     0x29cad6f0: "kubikirisburden_title_01_01", // 701159152
+    0x2a1d8570: "topic_17_nighthaven_title_06_01", // 706577776
     0x2a5f8822: "06_windsward_title_24_02", // 710903842
     0x2a9aca63: "04_everfall_chapter_10", // 714787427
     0x2a9c538b: "07_shatteredmountain_chapter_06", // 714888075
     0x2ac9f6fa: "12_monarchsbluffs_title_01_07", // 717879034
+    0x2b0dc25d: "topic_17_nighthaven_title_10_11", // 722322013
     0x2b47cbea: "08_ebonscalereach_chapter_04", // 726125546
     0x2b8f9dc5: "15_restlessshore_chapter_05", // 730832325
     0x2ba19c40: "10_cutlasskeys_title_04_03", // 732011584
     0x2c440d9c: "13_weaversfen_title_05_02", // 742657436
     0x2c55cf1e: "talesofthesea_chapter_01", // 743821086
+    0x2c600644: "topic_17_nighthaven_title_10_15", // 744490564
     0x2c8dc135: "varangianknights_title_06_01", // 747487541
     0x2ca443e3: "alchemist_title_01_11", // 748962787
     0x2ccc5859: "10_cutlasskeys_title_04_07", // 751589465
@@ -270,19 +323,24 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x2d1f391f: "09a_firstlight_title_07_01", // 757020959
     0x2d263256: "06_windsward_title_11_03", // 757477974
     0x2d2bf8ff: "talesofexpeditions_title_07_02", // 757856511
+    0x2d704169: "topic_17_nighthaven_title_06_05", // 762331497
     0x2dca0231: "04_everfall_title_01_01", // 768213553
     0x2ddbddaf: "12_monarchsbluffs_chapter_05", // 769383855
     0x2ded2e9f: "09_firstlight_title_03_03", // 770518687
     0x2df19792: "07_shatteredmountain_chapter_02", // 770807698
     0x2df70e7a: "04_everfall_chapter_14", // 771165818
+    0x2e78d4c0: "topic_17_nighthaven_title_13_09", // 779670720
     0x2e81e121: "06_windsward_title_23_01", // 780263713
     0x2ea818e9: "00_aeternum_chapter_03", // 782768361
+    0x2ec3ec73: "topic_17_nighthaven_title_01_02", // 784591987
     0x2ee4b675: "tales_of_brimstone_sands_title_19_01", // 786740853
     0x2f1131b4: "11_mourningdale_title_09_03", // 789655988
     0x2f273cf5: "00_aeternum_title_07_01", // 791100661
     0x2f4557c6: "tales_of_brimstone_sands_title_13_10", // 793073606
     0x2f4ee7ff: "tales_of_brimstone_sands_chapter_20", // 793700351
     0x2f55a988: "07_shatteredmountain_title_02_07", // 794143112
+    0x2f6893ed: "topic_17_nighthaven_title_05_19", // 795382765
+    0x2ff517c0: "topic_17_nighthaven_title_03_21", // 804591552
     0x302367c8: "05_reekwater_title_10_02", // 807626696
     0x30deedb1: "00_aeternum_chapter_17", // 819916209
     0x3109bce1: "grenville_title_02_04", // 822721761
@@ -290,18 +348,22 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x311f1d5e: "04_everfall_title_10_02", // 824122718
     0x3127dcf3: "tales_of_brimstone_sands_title_26_01", // 824696051
     0x3133a29e: "tales_of_brimstone_sands_title_13_04", // 825467550
+    0x31a55e06: "topic_17_nighthaven_title_17_06", // 832921094
     0x31f4f406: "talesofwinter_title_05_01", // 838136838
     0x320f2aab: "08_ebonscalereach_title_01_03", // 839854763
     0x321116f6: "topic_varangianknights", // 839980790
+    0x3216f31c: "topic_17_nighthaven_title_10_01", // 840364828
     0x3231a91a: "tales_of_brimstone_sands_title_08_02", // 842115354
     0x3276f69c: "15_restlessshore_title_09_02", // 846657180
     0x328e8df1: "03_greatcleave_title_12_01", // 848203249
     0x32d2b6bb: "alchemist_title_01_05", // 852670139
+    0x3306b431: "topic_17_nighthaven_title_06_11", // 856077361
     0x336f5ae6: "14_edengrove_title_04_01", // 862935782
     0x33758845: "11_mourningdale_title_04_01", // 863340613
     0x3375be5c: "varangianknights_chapter_03", // 863354460
     0x34029eff: "14_edengrove_title_04_05", // 872587007
     0x34187a45: "varangianknights_chapter_07", // 874019397
+    0x346b7028: "topic_17_nighthaven_title_06_15", // 879456296
     0x3486b759: "varangianknights_title_10_01", // 881243993
     0x34987049: "topic_11_mourningdale", // 882405449
     0x34c0ecee: "12_monarchsbluffs_chapter_15", // 885058798
@@ -311,6 +373,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x352d443a: "06_windsward_title_07_03", // 892159034
     0x35313eb2: "08_ebonscalereach_chapter_10", // 892419762
     0x3557fe6d: "09_firstlight_title_09_02", // 894959213
+    0x357b3705: "topic_17_nighthaven_title_10_05", // 897267461
     0x35967c89: "06_windsward_title_15_08", // 899054729
     0x35af448f: "12_monarchsbluffs_title_17_03", // 900678799
     0x35bf72a2: "alchemist_title_01_01", // 901739170
@@ -323,8 +386,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x360897f8: "12_monarchsbluffs_title_25_01", // 906532856
     0x3655d6be: "tales_of_brimstone_sands_chapter_30", // 911595198
     0x3660831b: "drownedpages_title_01_02", // 912294683
+    0x3673a2ac: "topic_17_nighthaven_title_05_09", // 913547948
     0x36c1a9ee: "twinfalls_title_01_03", // 918661614
     0x36c4ef0a: "elysianwilds_chapter_01", // 918875914
+    0x36c89a1f: "topic_17_nighthaven_title_17_02", // 919116319
     0x36e1426c: "03_greatcleave_title_09_03", // 920732268
     0x372c4a99: "00_aeternum_title_11_01", // 925649561
     0x373834f4: "00_aeternum_title_24_04", // 926430452
@@ -338,9 +403,11 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x3861caaa: "outpost_weaverspost", // 945932970
     0x3885eeb5: "tales_of_brimstone_sands_title_13_08", // 948301493
     0x388a9de6: "topic_fisher_regent", // 948608486
+    0x38a82a9e: "topic_17_nighthaven_title_05_01", // 950545054
     0x38ed1bab: "00_aeternum_title_09_13", // 955063211
     0x38f828bf: "talesofexpeditions_chapter_02", // 955787455
     0x399c666b: "13_weaversfen_title_06_06", // 966551147
+    0x39b86db3: "topic_17_nighthaven_title_13_11", // 968388019
     0x39cb51c7: "11_mourningdale_title_11_01", // 969626055
     0x3a2fcb71: "13_weaversfen_title_01_01", // 976210801
     0x3a324069: "eastburn_title_01_03", // 976371817
@@ -359,10 +426,13 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x3bdd9eb6: "mechanics_combat", // 1004379830
     0x3c2030a2: "06_windsward_title_15_04", // 1008742562
     0x3c344ecf: "06_windsward_title_20_01", // 1010061007
+    0x3ccd7b2e: "topic_17_nighthaven_title_10_09", // 1020099374
     0x3cd01133: "99a_msq_soulwardenintro_title_03_01", // 1020268851
     0x3ceb2c6b: "09_firstlight_title_07_04", // 1022045291
     0x3d5a7310: "04_everfall_chapter_08", // 1029337872
     0x3d76a0c5: "12_monarchsbluffs_chapter_19", // 1031184581
+    0x3dd7a22e: "topic_17_nighthaven_title_08_13", // 1037541934
+    0x3ddd3c03: "topic_17_nighthaven_title_06_19", // 1037908995
     0x3de9ce56: "05_reekwater_chapter_06", // 1038732886
     0x3e386edb: "varangianknights_title_05_01", // 1043885787
     0x3e43d749: "05_reekwater_title_02_01", // 1044633417
@@ -373,6 +443,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x3f95eca6: "talesofexpeditions_chapter_06", // 1066790054
     0x3f9e5711: "talesofexpeditions_title_04_02", // 1067341585
     0x3faa96f1: "09a_firstlight_title_04_01", // 1068144369
+    0x3fc5ee87: "topic_17_nighthaven_title_05_05", // 1069936263
     0x3ff6caec: "tales_of_brimstone_sands_title_28_03", // 1073138412
     0x40691ba4: "topic_95a_bloodofthesands", // 1080630180
     0x40b4193e: "00_aeternum_chapter_12", // 1085544766
@@ -382,13 +453,16 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x41595611: "tales_of_brimstone_sands_title_13_01", // 1096373777
     0x4163486e: "grenville_title_02_01", // 1097025646
     0x4167b38d: "drownedpages_title_01_03", // 1097315213
+    0x4174923a: "topic_17_nighthaven_title_05_08", // 1098158650
     0x41c69978: "twinfalls_title_01_02", // 1103534456
+    0x41cfaa89: "topic_17_nighthaven_title_17_03", // 1104128649
     0x41d6733e: "08_ebonscalereach_title_06_01", // 1104573246
     0x41e672fa: "03_greatcleave_title_09_02", // 1105621754
     0x4227be05: "talesofexpeditions_title_11_03", // 1109900805
     0x422a74ac: "06_windsward_title_07_02", // 1110078636
     0x42360e24: "08_ebonscalereach_chapter_11", // 1110838820
     0x4250cefb: "09_firstlight_title_09_03", // 1112592123
+    0x427c0793: "topic_17_nighthaven_title_10_04", // 1115424659
     0x42914c1f: "06_windsward_title_15_09", // 1116818463
     0x42a87419: "12_monarchsbluffs_title_17_02", // 1118336025
     0x42c83f2a: "threefactions_title_01_02", // 1120419626
@@ -399,9 +473,11 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x4305ae69: "14_edengrove_title_04_04", // 1124445801
     0x431f4ad3: "varangianknights_chapter_06", // 1126124243
     0x431f7cca: "11_mourningdale_title_04_04", // 1126137034
+    0x436c40be: "topic_17_nighthaven_title_06_14", // 1131167934
     0x43c17619: "chapterdeathandrebirth", // 1136752153
     0x43c7dc78: "12_monarchsbluffs_chapter_14", // 1137171576
     0x43eb0fad: "04_everfall_chapter_05", // 1139478445
+    0x440184a7: "topic_17_nighthaven_title_06_10", // 1140950183
     0x44728eca: "varangianknights_chapter_02", // 1148358346
     0x4486cbb4: "04_everfall_chapter_01", // 1149684660
     0x45081a3d: "08_ebonscalereach_title_01_02", // 1158158909
@@ -422,6 +498,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x4892dc30: "talesofexpeditions_chapter_07", // 1217584176
     0x4894ad2e: "06_windsward_title_12_02", // 1217703214
     0x48996787: "talesofexpeditions_title_04_03", // 1218013063
+    0x48c2de11: "topic_17_nighthaven_title_05_04", // 1220730385
     0x48f1fa7a: "tales_of_brimstone_sands_title_28_02", // 1223817850
     0x4925a71f: "outpost_monarchstation", // 1227204383
     0x49549bea: "07_shatteredmountain_title_06_01", // 1230281706
@@ -431,10 +508,13 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x4a5d4386: "04_everfall_chapter_09", // 1247626118
     0x4a719053: "12_monarchsbluffs_chapter_18", // 1248956499
     0x4a9d825f: "chaptercompanies", // 1251836511
+    0x4ad092b8: "topic_17_nighthaven_title_08_12", // 1255183032
+    0x4ada0c95: "topic_17_nighthaven_title_06_18", // 1255804053
     0x4aeefec0: "05_reekwater_chapter_07", // 1257176768
     0x4b270034: "06_windsward_title_15_05", // 1260847156
     0x4b68aabc: "08_ebonscalereach_title_13_01", // 1265150652
     0x4ba0d015: "15_restlessshore_title_07_01", // 1268830229
+    0x4bca4bb8: "topic_17_nighthaven_title_10_08", // 1271548856
     0x4be78f93: "tales_of_brimstone_sands_title_06_01", // 1273466771
     0x4bf3f1fe: "tales_of_brimstone_sands_title_33_04", // 1274278398
     0x4c1752d4: "04_everfall_title_19_02", // 1276596948
@@ -454,6 +534,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x4e2923c6: "05_reekwater_title_02_04", // 1311318982
     0x4e886fe3: "twinfalls_chapter_01", // 1317564387
     0x4e9b56fd: "13_weaversfen_title_06_07", // 1318803197
+    0x4ebf5d25: "topic_17_nighthaven_title_13_10", // 1321164069
     0x4f076521: "08_ebonscalereach_title_08_03", // 1325884705
     0x4f39e690: "tales_of_brimstone_sands_title_01_02", // 1329194640
     0x4f82de23: "tales_of_brimstone_sands_title_13_09", // 1333976611
@@ -468,18 +549,24 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x5098027d: "talesofwinter_title_01_03", // 1352139389
     0x509fdb42: "06_windsward_title_04_02", // 1352653634
     0x50c24dbb: "04_everfall_title_08_01", // 1354911163
+    0x50c9a87d: "topic_17_nighthaven_title_13_04", // 1355393149
     0x50eda3a5: "13_weaversfen_title_06_13", // 1357751205
     0x5104225f: "malleusmortuis_title_01_03", // 1359225439
     0x519cde65: "00_aeternum_title_09_06", // 1369235045
+    0x51d9ef50: "topic_17_nighthaven_title_05_14", // 1373237072
     0x51fde488: "13_weaversfen_title_10_03", // 1375593608
     0x51fe372d: "05_reekwater_title_08_01", // 1375614765
     0x52565dde: "06_windsward_chapter_24", // 1381391838
+    0x52d17af9: "topic_17_nighthaven_title_10_18", // 1389460217
     0x5341417a: "10_cutlasskeys_title_08_23", // 1396785530
     0x534672c7: "04_everfall_chapter_19", // 1397125831
     0x5363dcd0: "08_ebonscalereach_title_05_01", // 1399053520
     0x536aa112: "12_monarchsbluffs_chapter_08", // 1399496978
     0x53733696: "twinfalls_title_02_02", // 1400059542
+    0x537a0567: "topic_17_nighthaven_title_14_03", // 1400505703
     0x53b488fa: "greatbridge_title_01_05", // 1404340474
+    0x53c13dd4: "topic_17_nighthaven_title_06_08", // 1405173204
+    0x53cba3f9: "topic_17_nighthaven_title_08_02", // 1405854713
     0x53ea4881: "weavers_title_01_06", // 1407862913
     0x53ecf9ff: "tales_of_brimstone_sands_title_10_01", // 1408039423
     0x542c8563: "10_cutlasskeys_title_08_27", // 1412203875
@@ -487,6 +574,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x54878c98: "weavers_title_01_02", // 1418169496
     0x548aae88: "09_firstlight_title_11_01", // 1418374792
     0x54a3f9c7: "threefactions_title_05_01", // 1420032455
+    0x54a667e0: "topic_17_nighthaven_title_08_06", // 1420191712
     0x54c3b2f4: "12_monarchsbluffs_title_13_01", // 1422111476
     0x54d94ce3: "greatbridge_title_01_01", // 1423527139
     0x54fdde76: "talesofexpeditions_title_09_01", // 1425923702
@@ -503,10 +591,12 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x56925f5b: "tales_of_brimstone_sands_chapter_29", // 1452433243
     0x5699ef62: "tales_of_brimstone_sands_title_13_19", // 1452928866
     0x569b71df: "outpost_trueduncanswatch", // 1453027807
+    0x56b42b49: "topic_17_nighthaven_title_05_10", // 1454648137
     0x56dd8b04: "summermedleyfaire_chapter_03", // 1457359620
     0x56f11a7c: "00_aeternum_title_09_02", // 1458641532
     0x56fb8451: "00_aeternum_title_07_08", // 1459323985
     0x570a5151: "04_everfall_title_21_01", // 1460293969
+    0x575edb4b: "topic_topic_17_nighthaven", // 1465834315
     0x57646183: "12_monarchsbluffs_title_21_03", // 1466196355
     0x577e51ef: "winterconvergence_chapter_02", // 1467896303
     0x578067bc: "13_weaversfen_title_06_17", // 1468032956
@@ -516,26 +606,33 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x58426750: "tales_of_brimstone_sands_title_13_11", // 1480746832
     0x5849d769: "tales_of_brimstone_sands_chapter_21", // 1481234281
     0x5852991e: "07_shatteredmountain_title_02_06", // 1481808158
+    0x586fa37b: "topic_17_nighthaven_title_05_18", // 1483711355
     0x5878c5d5: "10_cutlasskeys_title_03_01", // 1484309973
     0x588aa582: "topic_elysianwilds", // 1485481346
+    0x58f22756: "topic_17_nighthaven_title_03_20", // 1492264790
     0x59157ffb: "15_restlessshore_title_04_01", // 1494581243
     0x59324beb: "95a_bloodofthesands_title_04_01", // 1496468459
     0x59465e10: "tales_of_brimstone_sands_title_30_04", // 1497783824
     0x5952207d: "tales_of_brimstone_sands_title_05_01", // 1498554493
+    0x597fe456: "topic_17_nighthaven_title_13_08", // 1501553750
     0x59a0227f: "kubikirisburden_title_01_04", // 1503666815
     0x59af287f: "00_aeternum_chapter_02", // 1504651391
+    0x59c4dce5: "topic_17_nighthaven_title_01_03", // 1506073829
     0x59dd0552: "08_ebonscalereach_title_10_01", // 1507657042
     0x5a2102c0: "06_windsward_title_11_02", // 1512112832
     0x5a2cc869: "talesofexpeditions_title_07_03", // 1512884329
+    0x5a7771ff: "topic_17_nighthaven_title_06_04", // 1517777407
     0x5adced39: "12_monarchsbluffs_chapter_04", // 1524428089
     0x5aea1e09: "09_firstlight_title_03_02", // 1525292553
     0x5af03eec: "04_everfall_chapter_15", // 1525694188
     0x5af6a704: "07_shatteredmountain_chapter_03", // 1526114052
     0x5b2d3f65: "08_ebonscalereach_chapter_01", // 1529692005
+    0x5b6736d2: "topic_17_nighthaven_title_10_14", // 1533490898
     0x5ba37375: "alchemist_title_01_10", // 1537438581
     0x5bcb68cf: "10_cutlasskeys_title_04_06", // 1540057295
     0x5be13404: "07_shatteredmountain_title_05_01", // 1541485572
     0x5bf1856c: "topic_08_ebonscalereach", // 1542554988
+    0x5c0af2cb: "topic_17_nighthaven_title_10_10", // 1544221387
     0x5c1a4101: "99a_msq_soulwardenintro_chapter_01", // 1545224449
     0x5c40fb7c: "08_ebonscalereach_chapter_05", // 1547762556
     0x5c88ad53: "15_restlessshore_chapter_04", // 1552461139
@@ -551,14 +648,17 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x5e5582fb: "azothtree_title_01_02", // 1582662395
     0x5e662b06: "topic_summermedleyfaire", // 1583753990
     0x5e7d6b76: "12_monarchsbluffs_title_06_01", // 1585277814
+    0x5ea918fc: "topic_17_nighthaven_title_01_07", // 1588140284
     0x5eff6bc3: "06_windsward_title_16_01", // 1593797571
     0x5f1501cc: "10_cutlasskeys_title_03_05", // 1595212236
+    0x5f224f9a: "topic_17_iq_title_01_03", // 1596084122
     0x5f241370: "tales_of_brimstone_sands_chapter_25", // 1596199792
     0x5f2fa349: "tales_of_brimstone_sands_title_13_15", // 1596957513
     0x5f33762b: "summermedleyfaire_title_02_02", // 1597208107
     0x5f3f5d07: "07_shatteredmountain_title_02_02", // 1597988103
     0x5f4dc87a: "00_aeternum_title_07_04", // 1598933114
     0x5f769637: "gettingstarted_levelingup", // 1601607223
+    0x5f9fe34f: "topic_17_nighthaven_title_03_24", // 1604313935
     0x5faefc73: "outpost_auroraaeternae", // 1605303411
     0x5fbc537d: "02_brightwood_chapter_07", // 1606177661
     0x602eb1d8: "09_firstlight_chapter_01", // 1613672920
@@ -574,6 +674,8 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x61fca598: "05_reekwater_title_11_04", // 1643947416
     0x62399fa7: "00_aeternum_title_22_01", // 1647943591
     0x6251806e: "11_mourningdale_chapter_06", // 1649508462
+    0x6283d48f: "topic_17_nighthaven_chapter_02", // 1652806799
+    0x62d97661: "topic_17_nighthaven_title_07_17", // 1658418785
     0x62dc2291: "backstorylore3", // 1658593937
     0x631692b3: "06_arch_01_12", // 1662423731
     0x631d42c6: "12_monarchsbluffs_title_16_01", // 1662862022
@@ -582,15 +684,22 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x63737214: "04_everfall_title_16_03", // 1668510228
     0x638158c8: "expedition_title_01_02", // 1669421256
     0x639f4273: "06_windsward_title_06_01", // 1671381619
+    0x63c9314c: "topic_17_nighthaven_title_11_07", // 1674129740
+    0x641fcde6: "topic_17_nighthaven_title_03_08", // 1679805926
     0x6429b4b7: "winterconvergence_title_01_06", // 1680454839
     0x643209cd: "tales_of_brimstone_sands_title_15_01", // 1681000909
     0x64873521: "deathandrebirthlore1a", // 1686582561
     0x64883c3d: "09_firstlight_title_08_04", // 1686649917
     0x64a43dd9: "tales_of_brimstone_sands_chapter_09", // 1688485337
+    0x64a4f555: "topic_17_nighthaven_title_11_03", // 1688532309
+    0x65246edd: "madnessinthemaws_title_02_01", // 1696886493
     0x653c4477: "11_mourningdale_chapter_02", // 1698448503
     0x6582ea42: "crafting_rarity", // 1703078466
     0x65b1e688: "backstorylore7", // 1706157704
+    0x65b4b278: "topic_17_nighthaven_title_07_13", // 1706340984
+    0x65be2c55: "topic_17_nighthaven_title_09_19", // 1706962005
     0x65c78e0c: "11_mourningdale_title_05_03", // 1707576844
+    0x65ee1096: "topic_17_nighthaven_chapter_06", // 1710100630
     0x661ae7e1: "10_cutlasskeys_title_08_07", // 1713039329
     0x66539dac: "anonymousmanuscripts_title_05_02", // 1716755884
     0x66742316: "11_mourningdale_title_02_04", // 1718887190
@@ -598,6 +707,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x66bd5c3a: "04_everfall_title_07_10", // 1723685946
     0x66e7f6a4: "00_aeternum_title_25_02", // 1726477988
     0x66f388c9: "00_aeternum_title_10_07", // 1727236297
+    0x6717584f: "topic_17_nighthaven_title_16_04", // 1729583183
     0x671d7842: "03_greatcleave_chapter_05", // 1729984578
     0x674375c1: "09_firstlight_chapter_05", // 1732474305
     0x6746f24f: "talesofwinter_title_04_03", // 1732702799
@@ -616,8 +726,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x69219bf1: "06_windsward_title_13_01", // 1763810289
     0x69366e4e: "inferiorman_title_01_11", // 1765174862
     0x6944cca5: "tales_of_brimstone_sands_title_29_01", // 1766116517
+    0x6977e8ce: "topic_17_nighthaven_title_04_07", // 1769466062
     0x699a35eb: "deathandrebirthlore4d", // 1771714027
     0x69a39b44: "12_monarchsbluffs_title_03_01", // 1772329796
+    0x69c64e50: "topic_17_nighthaven_title_18_06", // 1774603856
     0x69d67377: "06_windsward_chapter_08", // 1775661943
     0x69ddfd1c: "tidebattle_chapter_01", // 1776155932
     0x69ea8738: "09_firstlight_title_01_01", // 1776977720
@@ -627,8 +739,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x6a7fb5eb: "tales_of_brimstone_sands_chapter_01", // 1786754539
     0x6a864886: "06_windsward_title_21_03", // 1787185286
     0x6add9c63: "08_ebonscalereach_title_12_02", // 1792908387
+    0x6b65a467: "topic_17_nighthaven_title_09_11", // 1801823335
     0x6b8ee77e: "tidebattle_title_01_06", // 1804527486
     0x6b994afd: "00_aeternum_chapter_22", // 1805208317
+    0x6c08607e: "topic_17_nighthaven_title_09_15", // 1812488318
     0x6c4d514b: "00_aeternum_title_05_07", // 1817006411
     0x6ce32367: "tidebattle_title_01_02", // 1826825063
     0x6cf48ee4: "00_aeternum_chapter_26", // 1827966692
@@ -637,18 +751,23 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x6d34ee3b: "09_firstlight_title_06_02", // 1832185403
     0x6d7df247: "12_monarchsbluffs_title_04_02", // 1836970567
     0x6da2640b: "04_everfall_title_18_01", // 1839358987
+    0x6da981cd: "topic_17_nighthaven_title_03_04", // 1839825357
     0x6dbe8829: "outpost_weaversstation", // 1841203241
     0x6dcc54d9: "12_monarchsbluffs_title_18_03", // 1842107609
     0x6df032f1: "topic_99_msq", // 1844458225
     0x6df2385b: "talesofexpeditions_title_02_03", // 1844590683
     0x6dfff2f2: "06_windsward_title_14_02", // 1845490418
     0x6e193b53: "fivefarms_title_01_08", // 1847147347
+    0x6e1a2cd7: "topic_17_nighthaven_title_04_03", // 1847209175
     0x6e8c8a96: "chapteroutpost", // 1854704278
+    0x6ea11464: "topic_17_nighthaven_title_16_08", // 1856050276
     0x6ea728db: "combat_afflictions", // 1856448731
     0x6eab3469: "03_greatcleave_chapter_09", // 1856713833
+    0x6eab8a49: "topic_17_nighthaven_title_18_02", // 1856735817
     0x6ecb8fc9: "15_restlessshore_title_01_01", // 1858834377
     0x6eecbbd9: "95a_bloodofthesands_title_01_01", // 1861008345
     0x6ef539ea: "09_firstlight_chapter_09", // 1861564906
+    0x6f2cd764: "topic_17_nighthaven_title_06_20", // 1865209700
     0x6f2d708e: "13_weaversfen_chapter_08", // 1865248910
     0x6f61c73b: "bookofshadows_title_01_06", // 1868678971
     0x6f79578e: "11_mourningdale_title_10_03", // 1870223246
@@ -658,10 +777,12 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x702d5f0f: "inferiorman_title_01_01", // 1882021647
     0x702d9b2d: "99_msq_title_01_03", // 1882037037
     0x704b01f2: "05_reekwater_title_09_02", // 1883963890
+    0x706cd98f: "topic_17_nighthaven_title_04_17", // 1886181775
     0x708c3049: "00_aeternum_title_21_01", // 1888235593
     0x70984e24: "00_aeternum_title_14_04", // 1889029668
     0x709cc886: "topic_bookofshadows", // 1889323142
     0x70cd4236: "06_windsward_chapter_18", // 1892500022
+    0x70dd7f11: "topic_17_nighthaven_title_18_16", // 1893564177
     0x710b2a11: "elysianwilds_title_01_04", // 1896557073
     0x712aed9d: "06_windsward_title_05_01", // 1898638749
     0x7134f726: "expedition_title_02_02", // 1899296550
@@ -676,35 +797,45 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x71f1df40: "winterconvergence_title_02_02", // 1911676736
     0x723ba413: "00_aeternum_title_05_13", // 1916511251
     0x7259cf20: "tales_of_brimstone_sands_title_11_02", // 1918488352
+    0x727e9526: "topic_17_nighthaven_title_09_01", // 1920898342
     0x72d6ea0f: "08_ebonscalereach_title_04_02", // 1926687247
     0x73064deb: "wildmancutlasskeys_title_01_05", // 1929793003
     0x732be33e: "00_aeternum_title_13_03", // 1932256062
     0x736484aa: "tales_of_brimstone_sands_chapter_11", // 1935967402
     0x736f3493: "tales_of_brimstone_sands_title_13_21", // 1936667795
+    0x73df7495: "topic_17_nighthaven_title_03_10", // 1944024213
     0x7402f08a: "tales_of_brimstone_sands_title_13_25", // 1946349706
     0x740940b3: "tales_of_brimstone_sands_chapter_15", // 1946763443
     0x743b9dda: "curseddoubloons_chapter_01", // 1950064090
     0x746b89f2: "wildmancutlasskeys_title_01_01", // 1953204722
     0x748e290d: "02_brightwood_title_06_04", // 1955473677
     0x7496acfc: "hunterscabin_title_01_04", // 1956031740
+    0x74b2b08c: "topic_17_nighthaven_title_03_14", // 1957867660
     0x74eed163: "varangianknights_title_09_01", // 1961808227
+    0x7513513f: "topic_17_nighthaven_title_09_05", // 1964200255
     0x753882b0: "topic_drownedpages", // 1966637744
     0x753f9857: "09_firstlight_title_10_02", // 1967102039
     0x7548e8a9: "talesofexpeditions_title_08_02", // 1967712425
     0x7556600a: "00_aeternum_title_05_17", // 1968594954
     0x7576842b: "12_monarchsbluffs_title_12_02", // 1970701355
     0x757c2949: "09a_firstlight_title_08_01", // 1971071305
+    0x75a2f7a1: "topic_17_nighthaven_title_15_04", // 1973614497
     0x7608830c: "08_ebonscalereach_title_03_01", // 1980269324
+    0x76115abb: "topic_17_nighthaven_title_12_03", // 1980848827
     0x76472984: "06_windsward_title_05_05", // 1984375172
     0x7687a623: "tales_of_brimstone_sands_title_16_01", // 1988601379
     0x76892456: "03_greatcleave_title_10_03", // 1988699222
     0x76b0a936: "04_everfall_chapter_21", // 1991289142
     0x76bf678e: "04_everfall_title_20_02", // 1992255374
+    0x77011d96: "topic_17_nighthaven_title_04_13", // 1996561814
     0x7725164e: "13_weaversfen_title_11_04", // 1998919246
+    0x7727a108: "topic_17_nighthaven_title_10_20", // 1999085832
     0x77409b16: "inferiorman_title_01_05", // 2000722710
     0x77442ca3: "00_aeternum_title_08_01", // 2000956579
     0x7768f341: "14_edengrove_title_06_03", // 2003366721
     0x7790940d: "fisher_regent_chapter_01", // 2005963789
+    0x7791c133: "madnessinthemaws_title_01_01", // 2006040883
+    0x77b0bb08: "topic_17_nighthaven_title_18_12", // 2008070920
     0x77cce43b: "ridersraces_title_01_01", // 2009916475
     0x781e924c: "09a_firstlight_title_01_04", // 2015269452
     0x7868338d: "08_ebonscalereach_title_11_02", // 2020094861
@@ -717,6 +848,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x78edc9fd: "13_weaversfen_chapter_10", // 2028849661
     0x79358099: "09_firstlight_chapter_11", // 2033549465
     0x7952cd9d: "springtidebloom_title_01_05", // 2035469725
+    0x7961ad17: "topic_17_nighthaven_title_16_10", // 2036444439
     0x796b8d1a: "03_greatcleave_chapter_11", // 2037091610
     0x797b0e1d: "06_windsward_chapter_14", // 2038107677
     0x79953abc: "00_aeternum_title_06_03", // 2039823036
@@ -735,19 +867,26 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x7b2baea8: "topicwindsward", // 2066460328
     0x7b3ef82a: "09a_firstlight_chapter_03", // 2067724330
     0x7b5f28d6: "09_firstlight_title_02_01", // 2069833942
+    0x7b98e5ce: "topic_17_nighthaven_chapter_12", // 2073617870
     0x7bad3f56: "09a_firstlight_title_06_03", // 2074951510
     0x7bbcbd53: "95a_bloodofthesands_chapter_04", // 2075966803
+    0x7bc24720: "topic_17_nighthaven_title_07_07", // 2076329760
     0x7c37fdd4: "03_greatcleave_title_05_03", // 2084044244
     0x7c397fa1: "tales_of_brimstone_sands_title_03_01", // 2084143009
     0x7c533c33: "09a_firstlight_chapter_07", // 2085829683
     0x7c591437: "95a_bloodofthesands_title_02_01", // 2086212663
     0x7c7e2027: "15_restlessshore_title_02_01", // 2088640551
+    0x7ca51d14: "topic_17_nighthaven_title_09_09", // 2091195668
+    0x7caf8339: "topic_17_nighthaven_title_07_03", // 2091877177
     0x7cf43aaf: "talesofexpeditions_title_06_04", // 2096380591
+    0x7cf521d7: "topic_17_nighthaven_chapter_16", // 2096439767
+    0x7d04fca7: "topic_17_nighthaven_title_03_18", // 2097478823
     0x7d139a09: "10_cutlasskeys_title_05_01", // 2098436617
     0x7d20e0d7: "hunterscabin_title_01_08", // 2099306711
     0x7d32fb0b: "02_brightwood_title_08_02", // 2100493067
     0x7d39c6c2: "07_shatteredmountain_title_04_06", // 2100938434
     0x7d42038e: "combat_statuseffects", // 2101478286
+    0x7d99788a: "topic_17_nighthaven_title_05_20", // 2107209866
     0x7d9bcfcc: "13_weaversfen_title_04_04", // 2107363276
     0x7dbf0c98: "tales_of_brimstone_sands_chapter_19", // 2109672600
     0x7e064903: "03_greatcleave_chapter_15", // 2114341123
@@ -767,6 +906,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x7f9eacd6: "tales_of_brimstone_sands_title_31_03", // 2141105366
     0x7fb5f837: "topic_factionintro_covenant", // 2142631991
     0x7fc967e5: "tradingpost_overview", // 2143905765
+    0x80144dfb: "topic_17_nighthaven_title_04_01", // 2148814331
     0x808c3316: "03_greatcleave_title_06_01", // 2156671766
     0x80be0d10: "topic_hunterscabin", // 2159938832
     0x80c5eee5: "15_restlessshore_title_01_03", // 2160455397
@@ -777,21 +917,29 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x81892a8e: "12_monarchsbluffs_chapter_22", // 2173250190
     0x81a2cae6: "10_cutlasskeys_title_08_09", // 2174929638
     0x81f09d7d: "00_aeternum_title_02_02", // 2180029821
+    0x82060152: "topic_17_nighthaven_title_09_17", // 2181431634
     0x8221d92f: "05_reekwater_title_04_02", // 2183256367
     0x82433067: "00_aeternum_title_05_05", // 2185441383
+    0x82563d91: "topic_17_nighthaven_chapter_08", // 2186689937
     0x825a60bd: "varangianknights_title_03_02", // 2186961085
     0x82faefc8: "00_aeternum_chapter_24", // 2197483464
     0x831c10de: "tales_of_brimstone_sands_chapter_07", // 2199654622
     0x831da3b9: "04_everfall_title_04_02", // 2199757753
     0x83256214: "tales_of_brimstone_sands_title_32_01", // 2200265236
     0x83403540: "06_windsward_title_08_01", // 2202023232
+    0x839383f0: "madnessinthemaws_chapter_02", // 2207482864
+    0x83a7e0e1: "topic_17_nighthaven_title_03_06", // 2208817377
     0x83c235f5: "12_monarchsbluffs_title_18_01", // 2210543093
     0x83fc5977: "talesofexpeditions_title_02_01", // 2214353271
     0x8448a60d: "tales_of_brimstone_sands_title_32_05", // 2219353613
     0x846c7656: "99a_msq_soulwardenintro_title_02_01", // 2221700694
+    0x84711c4b: "topic_17_nighthaven_title_11_09", // 2222005323
     0x8471d4c7: "tales_of_brimstone_sands_chapter_03", // 2222052551
     0x848829aa: "06_windsward_title_21_01", // 2223516074
     0x848ffb13: "companies_siege", // 2224028435
+    0x84ca24f8: "topic_17_nighthaven_title_03_02", // 2227840248
+    0x85615b66: "topic_17_nighthaven_title_07_19", // 2237750118
+    0x856bc54b: "topic_17_nighthaven_title_09_13", // 2238432587
     0x85808652: "tidebattle_title_01_04", // 2239792722
     0x85972bd1: "00_aeternum_chapter_20", // 2241276881
     0x85e9ad69: "11_mourningdale_chapter_08", // 2246684009
@@ -806,7 +954,9 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x872099bb: "chaptercombat", // 2267060667
     0x87223074: "talesofexpeditions_title_05_02", // 2267164788
     0x874f11f3: "factionintro_covenant_title_01_02", // 2270106099
+    0x877989e2: "topic_17_nighthaven_title_04_05", // 2272889314
     0x87c3caba: "04_everfall_title_03_01", // 2277755578
+    0x87c82f7c: "topic_17_nighthaven_title_18_04", // 2278043516
     0x87e4e614: "09_firstlight_title_01_03", // 2279925268
     0x87f0f338: "curseddoubloons_title_01_01", // 2280715064
     0x88116783: "talesofwinter_chapter_02", // 2282841987
@@ -816,6 +966,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x889f00ad: "05_reekwater_title_11_02", // 2292121773
     0x88fde9e5: "00_aeternum_title_10_05", // 2298341861
     0x8913196e: "03_greatcleave_chapter_07", // 2299730286
+    0x89193963: "topic_17_nighthaven_title_16_06", // 2300131683
     0x89489363: "talesofwinter_title_04_01", // 2303234915
     0x894d14ed: "09_firstlight_chapter_07", // 2303530221
     0x899bbb96: "tales_of_brimstone_sands_title_27_01", // 2308684694
@@ -827,34 +978,44 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x8a753786: "06_arch_01_14", // 2322937734
     0x8a89540d: "deathandrebirthlore1c", // 2324255757
     0x8a8dce7f: "tales_of_brimstone_sands_title_09_02", // 2324549247
+    0x8aaa9479: "topic_17_nighthaven_title_11_01", // 2326434937
     0x8aca91f9: "15_restlessshore_title_08_02", // 2328531449
+    0x8b2a0ff1: "madnessinthemaws_title_02_03", // 2334789617
     0x8b4ca3e3: "00_aeternum_chapter_28", // 2337055715
     0x8b70bdbd: "greatbridge_chapter_01", // 2339421629
+    0x8bbad354: "topic_17_nighthaven_title_07_11", // 2344276820
     0x8bbf87a4: "backstorylore5", // 2344585124
     0x8bc9ef20: "11_mourningdale_title_05_01", // 2345266976
     0x8bd33d83: "14_edengrove_title_05_01", // 2345876867
+    0x8be071ba: "topic_17_nighthaven_chapter_04", // 2346742202
     0x8bf57c4c: "00_aeternum_title_05_09", // 2348121164
     0x8c36ca79: "tidebattle_title_01_08", // 2352401017
     0x8c3ad03c: "varangianknights_title_11_01", // 2352664636
     0x8c58a2f2: "companies_territories", // 2354619122
     0x8c5fe142: "11_mourningdale_chapter_04", // 2355093826
     0x8cd243bd: "backstorylore1", // 2362590141
+    0x8cd7174d: "topic_17_nighthaven_title_07_15", // 2362906445
     0x8cf31c95: "13_weaversfen_title_12_02", // 2364742805
     0x8d18f39f: "06_arch_01_10", // 2367222687
     0x8d45d295: "tales_of_brimstone_sands_title_20_02", // 2370163349
     0x8d5a3f96: "09_firstlight_title_14_03", // 2371501974
     0x8d7d1338: "04_everfall_title_16_01", // 2373784376
     0x8d9ce9f6: "talesofexpeditions_title_10_02", // 2375870966
+    0x8dc75060: "topic_17_nighthaven_title_11_05", // 2378649696
     0x8deb9908: "09_firstlight_title_08_02", // 2381027592
     0x8e20d0f4: "09_firstlight_chapter_03", // 2384515316
     0x8e51d484: "topic_wildmancutlasskeys", // 2387727492
     0x8e6e5e70: "06_windsward_chapter_06", // 2389597808
+    0x8e74fd7a: "topic_17_nighthaven_title_16_02", // 2390031738
+    0x8e7e6357: "topic_17_nighthaven_title_18_08", // 2390647639
     0x8eb4f09d: "12_monarchsbluffs_title_24_01", // 2394222749
     0x8eccd24d: "fivefarms_title_01_02", // 2395787853
+    0x8ecfc5c9: "topic_17_nighthaven_title_04_09", // 2395981257
     0x8ee9928c: "09_firstlight_title_13_04", // 2397672076
     0x8eec8397: "03_greatcleave_title_14_02", // 2397864855
     0x8ef516ac: "houseofgiacomo_title_01_02", // 2398426796
     0x8f178623: "11_mourningdale_title_02_02", // 2400683555
+    0x8f488b78: "factionfest_title_01_02", // 2403896184
     0x8f7942d4: "10_cutlasskeys_title_08_01", // 2407088852
     0x8f845391: "00_aeternum_title_25_04", // 2407814033
     0x8f902dfc: "00_aeternum_title_10_01", // 2408590844
@@ -879,8 +1040,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x925d5d1f: "09a_firstlight_chapter_05", // 2455592223
     0x9270410b: "15_restlessshore_title_02_03", // 2456830219
     0x929db37a: "combat_overview", // 2459808634
+    0x92a1e215: "topic_17_nighthaven_title_07_01", // 2460082709
     0x92ce9a63: "09a_firstlight_title_06_05", // 2463013475
     0x92df1866: "95a_bloodofthesands_chapter_02", // 2464094310
+    0x92fb40fb: "topic_17_nighthaven_chapter_14", // 2465939707
     0x9337a7ee: "07_shatteredmountain_title_04_04", // 2469898222
     0x933b8cc2: "summermedleyfaire_title_04_04", // 2470153410
     0x936e06c7: "06_arch_01_04", // 2473461447
@@ -890,8 +1053,10 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x94f86af9: "13_weaversfen_title_04_02", // 2499308281
     0x95309906: "09a_firstlight_chapter_01", // 2502990086
     0x955458e1: "03_greatcleave_title_05_05", // 2505332961
+    0x959684e2: "topic_17_nighthaven_chapter_10", // 2509669602
     0x95979f9a: "talesofexpeditions_title_06_02", // 2509741978
     0x95a35e7a: "09a_firstlight_title_06_01", // 2510511738
+    0x95cc260c: "topic_17_nighthaven_title_07_05", // 2513184268
     0x963d8644: "06_windsward_title_22_01", // 2520614468
     0x9658d110: "tales_of_brimstone_sands_title_18_01", // 2522403088
     0x96627395: "10_cutlasskeys_title_08_11", // 2523034517
@@ -901,19 +1066,23 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x96d9d9b8: "99a_msq_soulwardenintro_title_01_01", // 2530859448
     0x96e3a8d1: "13_weaversfen_chapter_12", // 2531502289
     0x975cacb1: "springtidebloom_title_01_07", // 2539433137
+    0x97655216: "topic_17_nighthaven_title_18_18", // 2539999766
     0x9765ec36: "03_greatcleave_chapter_13", // 2540039222
     0x97756f31: "06_windsward_chapter_16", // 2541055793
     0x979f77da: "legendaryclimbs_chapter_01", // 2543810522
     0x97ad56d1: "11_mourningdale_title_08_03", // 2544719569
     0x97b78472: "14_edengrove_title_08_03", // 2545386610
+    0x97d4f488: "topic_17_nighthaven_title_04_19", // 2547315848
     0x97d7e30c: "fivefarms_title_01_12", // 2547507980
     0x980ba301: "10_cutlasskeys_chapter_05", // 2550899457
+    0x981f3b97: "topic_17_nighthaven_title_12_01", // 2552183703
     0x98688f24: "elysianwilds_title_01_02", // 2556989220
     0x9887457a: "03_greatcleave_title_10_01", // 2559001978
     0x98aa26e1: "companies_treasury", // 2561287905
     0x98b142be: "chapterarchaeologist", // 2561753790
     0x98b9fba7: "10_cutlasskeys_title_08_19", // 2562325415
     0x98df3670: "12_monarchsbluffs_title_20_02", // 2564765296
+    0x990f7cba: "topic_17_nighthaven_title_04_11", // 2567929018
     0x992b7762: "13_weaversfen_title_11_06", // 2569762658
     0x994a7e8f: "chaptertradingpost", // 2571796111
     0x994e3e18: "99_msq_title_01_05", // 2572041752
@@ -921,6 +1090,8 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x995bf13a: "mechanics_crime", // 2572939578
     0x9966926d: "14_edengrove_title_06_01", // 2573636205
     0x997c40ce: "11_mourningdale_title_06_01", // 2575057102
+    0x999fa01f: "madnessinthemaws_title_01_03", // 2577375263
+    0x99beda24: "topic_17_nighthaven_title_18_10", // 2579421732
     0x99c28517: "ridersraces_title_01_03", // 2579662103
     0x99fbeb11: "00_aeternum_title_14_02", // 2583423761
     0x9a07219f: "tales_of_brimstone_sands_chapter_17", // 2584158623
@@ -929,17 +1100,25 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x9a804821: "02_brightwood_title_06_06", // 2592098337
     0x9a81ebc5: "07_shatteredmountain_title_04_08", // 2592205765
     0x9a98cdd0: "hunterscabin_title_01_06", // 2593705424
+    0x9abcd1a0: "topic_17_nighthaven_title_03_16", // 2596065696
+    0x9b1d3013: "topic_17_nighthaven_title_09_07", // 2602381331
     0x9b2e1478: "tales_of_brimstone_sands_title_24_01", // 2603488376
+    0x9b4d0cd0: "topic_17_nighthaven_chapter_18", // 2605518032
     0x9b580126: "00_aeternum_title_05_15", // 2606235942
+    0x9bac968d: "topic_17_nighthaven_title_15_06", // 2611779213
     0x9bdb15e8: "tradingpost_myorders", // 2614826472
     0x9bf6730a: "tidebattle_title_01_10", // 2616619786
     0x9c015f73: "12_monarchsbluffs_title_27_01", // 2617335667
     0x9c35c53f: "00_aeternum_title_05_11", // 2620769599
+    0x9c70f40a: "topic_17_nighthaven_title_09_03", // 2624648202
+    0x9c7a6a27: "topic_17_nighthaven_title_07_09", // 2625268263
     0x9c8c1a90: "00_aeternum_chapter_30", // 2626427536
+    0x9cc15294: "topic_17_nighthaven_title_15_02", // 2629915284
     0x9d258212: "00_aeternum_title_13_01", // 2636481042
     0x9d6155bf: "tales_of_brimstone_sands_title_13_23", // 2640401855
     0x9d6ae586: "tales_of_brimstone_sands_chapter_13", // 2641028486
     0x9da229cd: "11_mourningdale_title_01_02", // 2644650445
+    0x9dd115b9: "topic_17_nighthaven_title_03_12", // 2647725497
     0x9de71215: "02_brightwood_title_08_08", // 2649166357
     0x9ded8c38: "02_brightwood_title_06_02", // 2649590840
     0x9df509c9: "hunterscabin_title_01_02", // 2650081737
@@ -947,10 +1126,13 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0x9e233e23: "inferiorman_title_01_03", // 2653109795
     0x9e23fa01: "99_msq_title_01_01", // 2653157889
     0x9e46b37b: "13_weaversfen_title_11_02", // 2655433595
+    0x9e62b8a3: "topic_17_nighthaven_title_04_15", // 2657269923
+    0x9ed31e3d: "topic_17_nighthaven_title_18_14", // 2664635965
     0x9f248cb1: "06_windsward_title_05_03", // 2669972657
     0x9f3b0e69: "14_edengrove_chapter_08", // 2671447657
     0x9f441f46: "fisher_regent_title_01_01", // 2672041798
     0x9f52a0b1: "99_msq_aeternum_title_2_03", // 2672992433
+    0x9f72ff8e: "topic_17_nighthaven_title_12_05", // 2675113870
     0x9f741f32: "kubikirisburden_chapter_01", // 2675187506
     0x9f952a2f: "06_windsward_title_19_02", // 2677353007
     0x9fa68c04: "12_monarchsbluffs_title_15_03", // 2678492164
@@ -965,6 +1147,8 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xa109040d: "08_ebonscalereach_title_08_01", // 2701722637
     0xa13905c9: "03_greatcleave_title_07_02", // 2704868809
     0xa145f93e: "gettingstarted_sanctuaries", // 2705717566
+    0xa17ef094: "factionfest_chapter_01", // 2709450900
+    0xa1a17b24: "topic_17_nighthaven_title_05_02", // 2711714596
     0xa1e44a11: "00_aeternum_title_09_10", // 2716092945
     0xa1f17905: "talesofexpeditions_chapter_01", // 2716956933
     0xa244a501: "06_windsward_title_15_03", // 2722407681
@@ -975,9 +1159,11 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xa29054cb: "tales_of_brimstone_sands_title_33_02", // 2727367883
     0xa2a89566: "04_everfall_title_05_01", // 2728957286
     0xa2f332a6: "topic_03_greatcleave", // 2733847206
+    0xa30f68e0: "topic_topic_17_iq", // 2735696096
     0xa3269acb: "13_weaversfen_title_01_02", // 2737216203
     0xa38d5bf5: "05_reekwater_chapter_01", // 2743950325
     0xa394eff0: "05_reekwater_title_05_01", // 2744446960
+    0xa3b3378d: "topic_17_nighthaven_title_08_14", // 2746431373
     0xa3ef5662: "varangianknights_title_02_01", // 2750371426
     0xa456d5ca: "eastburn_title_01_04", // 2757154250
     0xa46b4cd1: "progression_attributes", // 2758495441
@@ -985,18 +1171,21 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xa49bc2a1: "00_aeternum_title_04_02", // 2761671329
     0xa4a767d4: "varangianknights_chapter_08", // 2762434516
     0xa4d664f8: "crafting_recipes", // 2765513976
+    0xa4def394: "topic_17_nighthaven_title_08_10", // 2766074772
     0xa4e09fec: "05_reekwater_chapter_05", // 2766184428
     0xa4e57cf0: "summermedleyfaire_title_01_04", // 2766503152
     0xa4e957dc: "07_shatteredmountain_title_01_04", // 2766755804
     0xa515768c: "topic_memorials", // 2769647244
     0xa5296118: "06_windsward_title_15_07", // 2770952472
     0xa53d1f75: "06_windsward_title_20_02", // 2772246389
+    0xa57f1227: "topic_17_nighthaven_title_02_01", // 2776568359
     0xa58f7ffc: "topic_threefactions", // 2777645052
     0xa5d94089: "99a_msq_soulwardenintro_title_03_02", // 2782478473
     0xa664c014: "08_ebonscalereach_title_08_05", // 2791620628
     0xa6898e08: "00_aeternum_title_09_14", // 2794032648
     0xa69706ab: "talesofexpeditions_title_04_01", // 2794915499
     0xa69cbd1c: "talesofexpeditions_chapter_05", // 2795289884
+    0xa6ccbf3d: "topic_17_nighthaven_title_05_06", // 2798436157
     0xa6e9c960: "thethingintheswamp_chapter_01", // 2800339296
     0xa7313f61: "varangianknights_title_05_02", // 2805022561
     0xa74a86f3: "05_reekwater_title_02_02", // 2806679283
@@ -1008,6 +1197,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xa85d99ce: "combat_grit", // 2824706510
     0xa885d7cf: "03_greatcleave_title_09_04", // 2827343823
     0xa8a53c4d: "twinfalls_title_01_04", // 2829401165
+    0xa8ac0fbc: "topic_17_nighthaven_title_17_05", // 2829848508
     0xa8fda5bc: "talesofwinter_title_05_02", // 2835195324
     0xa9237bfa: "13_weaversfen_title_06_09", // 2837675002
     0xa92a3672: "05_reekwater_title_10_01", // 2838115954
@@ -1016,18 +1206,21 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xa9d7bc0b: "00_aeternum_chapter_14", // 2849487883
     0xa9e8ca5f: "anonymousmanuscripts_title_04_03", // 2850605663
     0xa9f03bf7: "mechanics_fooddrink", // 2851093495
+    0xaa0fe58b: "topic_17_nighthaven_title_06_12", // 2853168523
     0xaa660b5c: "14_edengrove_title_04_02", // 2858814300
     0xaa7cd9ff: "11_mourningdale_title_04_02", // 2860308991
     0xaa88aa98: "04_everfall_chapter_03", // 2861083288
     0xaaa4794d: "12_monarchsbluffs_chapter_12", // 2862905677
     0xaaadc16a: "companies_overview", // 2863513962
     0xab1511cd: "hunterscabin_chapter_01", // 2870284749
+    0xab1fa2a6: "topic_17_nighthaven_title_10_02", // 2870977190
     0xab38f8a0: "tales_of_brimstone_sands_title_08_01", // 2872637600
     0xab49d199: "06_windsward_title_07_04", // 2873741721
     0xab61563e: "topic_azothtree", // 2875283006
     0xab7fa726: "15_restlessshore_title_09_01", // 2877269798
     0xab87dc4b: "03_greatcleave_title_12_02", // 2877807691
     0xabab9a1f: "threefactions_title_01_04", // 2880150047
+    0xabace570: "topic_17_iq_chapter_01", // 2880234864
     0xabcbd12c: "12_monarchsbluffs_title_17_04", // 2882261292
     0xabdbe701: "alchemist_title_01_06", // 2883315457
     0xabdfaf41: "12_monarchsbluffs_title_22_01", // 2883563329
@@ -1036,12 +1229,14 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xac29df29: "talesofexpeditions_title_11_01", // 2888425257
     0xac5eafd7: "09_firstlight_title_09_01", // 2891886551
     0xac6bbf08: "08_ebonscalereach_title_01_04", // 2892742408
+    0xac7266bf: "topic_17_nighthaven_title_10_06", // 2893178559
     0xac967bfe: "thethingintheswamp_title_01_01", // 2895543294
     0xacb62318: "alchemist_title_01_02", // 2897617688
     0xacc825e7: "04_everfall_title_17_02", // 2898798055
     0xacf0e44a: "tales_of_brimstone_sands_title_21_01", // 2901468234
     0xad112bff: "varangianknights_chapter_04", // 2903583743
     0xad56d3c7: "05_reekwater_chapter_09", // 2908148679
+    0xad622192: "topic_17_nighthaven_title_06_16", // 2908889490
     0xadc9bd54: "12_monarchsbluffs_chapter_16", // 2915679572
     0xade56e81: "04_everfall_chapter_07", // 2917494401
     0xae251b23: "00_aeternum_title_11_02", // 2921667363
@@ -1058,22 +1253,29 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xaf69d2a1: "drownedpages_title_01_01", // 2942948001
     0xaf6d2942: "grenville_title_02_03", // 2943166786
     0xaf9df742: "crafting_stations", // 2946365250
+    0xafc1cba5: "topic_17_nighthaven_title_17_01", // 2948713381
     0xafca8525: "topic_anonymousmanuscripts", // 2949285157
     0xb01d3a88: "04_everfall_title_06_01", // 2954705544
     0xb025fb25: "tales_of_brimstone_sands_title_30_02", // 2955279141
     0xb0384abb: "13_weaversfen_title_06_19", // 2956479163
     0xb09753d6: "topic_10_cutlasskeys", // 2962707414
+    0xb0a779d0: "topic_17_nighthaven_title_01_05", // 2963765712
     0xb0c3874a: "kubikirisburden_title_01_02", // 2965604170
     0xb0f10aef: "06_windsward_title_16_03", // 2968586991
     0xb121401e: "05_reekwater_title_06_01", // 2971746334
     0xb121c265: "tales_of_brimstone_sands_title_13_17", // 2971779685
     0xb12a725c: "tales_of_brimstone_sands_chapter_27", // 2972349020
+    0xb12c2eb6: "topic_17_iq_title_01_01", // 2972462774
     0xb143a956: "00_aeternum_title_07_06", // 2974001494
     0xb15af98c: "varangianknights_title_01_01", // 2975529356
     0xb1933525: "13_weaversfen_title_02_02", // 2979214629
+    0xb20493e7: "topic_17_nighthaven_title_10_12", // 2986644455
     0xb214202d: "99a_msq_soulwardenintro_chapter_03", // 2987663405
     0xb24e9a50: "08_ebonscalereach_chapter_07", // 2991495760
     0xb286cc7f: "15_restlessshore_chapter_06", // 2995178623
+    0xb29389e7: "topic_17_nighthaven_title_18_20", // 2996013543
+    0xb314d4ca: "topic_17_nighthaven_title_06_02", // 3004486858
+    0xb31e4ae7: "topic_17_nighthaven_title_08_08", // 3005106919
     0xb356d998: "06_windsward_title_24_01", // 3008813464
     0xb367dea7: "varangianknights_chapter_10", // 3009928871
     0xb389bb3c: "09_firstlight_title_03_04", // 3012148028
@@ -1082,6 +1284,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xb41668a5: "09a_firstlight_title_07_02", // 3021367461
     0xb422a945: "talesofexpeditions_title_07_01", // 3022170437
     0xb4526586: "weavers_title_01_08", // 3025298822
+    0xb47910d3: "topic_17_nighthaven_title_06_06", // 3027833043
     0xb4c3538b: "04_everfall_title_01_02", // 3032699787
     0xb4cc3a36: "topic_legacy", // 3033283126
     0xb4d28c15: "12_monarchsbluffs_chapter_06", // 3033697301
@@ -1093,6 +1296,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xb53818a6: "00_aeternum_title_29_01", // 3040352422
     0xb54d5c26: "13_weaversfen_title_05_01", // 3041745958
     0xb55c9ea4: "talesofthesea_chapter_02", // 3042746020
+    0xb56957fe: "topic_17_nighthaven_title_10_16", // 3043579902
     0xb584908f: "varangianknights_title_06_02", // 3045363855
     0xb5ad1259: "alchemist_title_01_12", // 3048018521
     0xb5c509e3: "10_cutlasskeys_title_04_04", // 3049589219
@@ -1101,35 +1305,43 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xb5ff291d: "05_reekwater_title_01_02", // 3053398301
     0xb624f362: "00_aeternum_title_09_08", // 3055874914
     0xb62e6d4f: "00_aeternum_title_07_02", // 3056495951
+    0xb641eaaf: "topic_17_iq_title_01_05", // 3057773231
     0xb647b645: "tales_of_brimstone_sands_chapter_23", // 3058153029
     0xb64c067c: "tales_of_brimstone_sands_title_13_13", // 3058435708
     0xb65cf832: "07_shatteredmountain_title_02_04", // 3059546162
     0xb676a4f9: "10_cutlasskeys_title_03_03", // 3061228793
+    0xb6fc467a: "topic_17_nighthaven_title_03_22", // 3069986426
     0xb73627ce: "azothtree_title_01_04", // 3073779662
     0xb75c4151: "tales_of_brimstone_sands_title_05_03", // 3076276561
     0xb77ad920: "topic_grenville", // 3078281504
     0xb788b09b: "06_windsward_title_23_02", // 3079188635
+    0xb7cabdc9: "topic_17_nighthaven_title_01_01", // 3083517385
     0xb7ede7cf: "tales_of_brimstone_sands_title_19_02", // 3085821903
     0xb84eddce: "00_aeternum_title_15_01", // 3092176334
     0xb867876a: "malleusmortuis_title_01_05", // 3093792618
     0xb87bb112: "combat_attacktypes", // 3095114002
     0xb880ef68: "topic_tales_of_brimstone_sands", // 3095457640
+    0xb8ba4a65: "topic_17_nighthaven_title_05_12", // 3099216485
     0xb8c97611: "11_mourningdale_title_07_02", // 3100210705
     0xb8d3a4b2: "14_edengrove_title_07_02", // 3100878002
     0xb8d3ea28: "summermedleyfaire_chapter_01", // 3100895784
     0xb8ea4844: "talesofexpeditions_chapter_11", // 3102361668
+    0xb91135fb: "topic_17_nighthaven_title_01_09", // 3104912891
     0xb93273a5: "03_greatcleave_title_11_02", // 3107091365
     0xb9607b99: "gettingstarted_startinglocation", // 3110108057
     0xb963e16a: "topic_15_restlessshore", // 3110330730
     0xb96a00af: "12_monarchsbluffs_title_21_01", // 3110731951
     0xb97ac161: "00_aeternum_chapter_08", // 3111829857
     0xb98e0690: "13_weaversfen_title_06_15", // 3113092752
+    0xb9aa0d48: "topic_17_nighthaven_title_13_02", // 3114929480
+    0xb9ec793b: "topic_factionfest", // 3119282491
     0xba22e44f: "10_cutlasskeys_title_08_25", // 3122848847
     0xba4fd36d: "06_windsward_title_03_03", // 3125793645
     0xba76eb6b: "12_monarchsbluffs_title_01_08", // 3128355691
     0xba84cfa4: "09_firstlight_title_11_03", // 3129266084
     0xba966ab4: "05_reekwater_chapter_11", // 3130419892
     0xbaa3e30a: "04_everfall_title_13_01", // 3131302666
+    0xbaa806cc: "topic_17_nighthaven_title_08_04", // 3131573964
     0xbad72dcf: "greatbridge_title_01_03", // 3134664143
     0xbb1106f1: "topic_00_aeternum", // 3138455281
     0xbb35f8eb: "06_windsward_chapter_22", // 3140876523
@@ -1141,6 +1353,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xbd4f2056: "10_cutlasskeys_title_08_21", // 3176079446
     0xbd681706: "chaptergettingstarted", // 3177715462
     0xbd6dbdfc: "08_ebonscalereach_title_05_03", // 3178085884
+    0xbd74644b: "topic_17_nighthaven_title_14_01", // 3178521675
     0xbde429ad: "weavers_title_01_04", // 3185846701
     0xbe201cf0: "06_windsward_title_18_01", // 3189775600
     0xbe454ba4: "tales_of_brimstone_sands_title_22_01", // 3192212388
@@ -1148,12 +1361,14 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xbe5fb7bc: "03_greatcleave_title_11_06", // 3193943996
     0xbe966351: "talesofwinter_title_01_01", // 3197526865
     0xbea21c45: "12_monarchsbluffs_title_08_01", // 3198295109
+    0xbec7c951: "topic_17_nighthaven_title_13_06", // 3200764241
     0xbede10e6: "08_ebonscalereach_title_02_04", // 3202224358
     0xbee3c289: "13_weaversfen_title_06_11", // 3202597513
     0xbf0a4373: "malleusmortuis_title_01_01", // 3205120883
     0xbf2319d7: "00_aeternum_title_15_05", // 3206748631
     0xbf92bf49: "00_aeternum_title_09_04", // 3214065481
     0xbfb027ae: "topic_09_firstlight", // 3215992750
+    0xbfd78e7c: "topic_17_nighthaven_title_05_16", // 3218574972
     0xbff05601: "05_reekwater_title_08_03", // 3220198913
     0xbff385a4: "13_weaversfen_title_10_01", // 3220407716
     0xc00a325a: "outpost_weaverspeak", // 3221893722
@@ -1169,20 +1384,26 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xc123c3f4: "00_aeternum_title_09_09", // 3240346612
     0xc1295dd9: "00_aeternum_title_07_03", // 3240713689
     0xc14086d3: "tales_of_brimstone_sands_chapter_22", // 3242231507
+    0xc146da39: "topic_17_iq_title_01_04", // 3242646073
     0xc14b36ea: "tales_of_brimstone_sands_title_13_12", // 3242931946
     0xc15bc8a4: "07_shatteredmountain_title_02_05", // 3244017828
     0xc171946f: "10_cutlasskeys_title_03_02", // 3245446255
+    0xc1fb76ec: "topic_17_nighthaven_title_03_23", // 3254482668
     0xc2246edf: "08_ebonscalereach_chapter_02", // 3257167583
+    0xc26e6768: "topic_17_nighthaven_title_10_17", // 3262015336
     0xc2aa22cf: "alchemist_title_01_13", // 3265929935
     0xc2c23975: "10_cutlasskeys_title_04_05", // 3267508597
     0xc2e865be: "07_shatteredmountain_title_05_02", // 3270010302
     0xc2ec38f0: "15_restlessshore_chapter_03", // 3270260976
     0xc328537a: "06_windsward_title_11_01", // 3274199930
     0xc33c2d17: "06_windsward_title_24_04", // 3275500823
+    0xc37e2045: "topic_17_nighthaven_title_06_07", // 3279822917
     0xc3c13e54: "topic_expedition", // 3284221524
     0xc3d5bc83: "12_monarchsbluffs_chapter_07", // 3285564547
     0xc3e34fb3: "09_firstlight_title_03_01", // 3286454195
     0xc3f96f56: "04_everfall_chapter_16", // 3287904086
+    0xc413e45c: "topic_17_nighthaven_title_06_03", // 3289637980
+    0xc4197a71: "topic_17_nighthaven_title_08_09", // 3290004081
     0xc460ee31: "varangianknights_chapter_11", // 3294686769
     0xc4624f25: "12_monarchsbluffs_title_28_01", // 3294777125
     0xc48518c4: "tales_of_brimstone_sands_title_02_01", // 3297056964
@@ -1193,7 +1414,9 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xc4c24742: "15_restlessshore_title_03_01", // 3301066562
     0xc4c797d6: "12_monarchsbluffs_title_01_05", // 3301414870
     0xc4e57352: "95a_bloodofthesands_title_03_01", // 3303371602
+    0xc503a371: "topic_17_nighthaven_title_10_13", // 3305350001
     0xc51310bb: "99a_msq_soulwardenintro_chapter_02", // 3306361019
+    0xc5251fef: "topic_17_nighthaven_title_04_20", // 3307544559
     0xc549aac6: "08_ebonscalereach_chapter_06", // 3309939398
     0xc581fce9: "15_restlessshore_chapter_07", // 3313630441
     0xc5affd6c: "10_cutlasskeys_title_04_01", // 3316645228
@@ -1210,17 +1433,20 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xc75cd341: "azothtree_title_01_01", // 3344749377
     0xc7743acc: "12_monarchsbluffs_title_06_02", // 3346283212
     0xc79222d5: "houseofgiacomo_chapter_01", // 3348243157
+    0xc7a04946: "topic_17_nighthaven_title_01_04", // 3349170502
     0xc7c4b7dc: "kubikirisburden_title_01_03", // 3351558108
     0xc7f63a79: "06_windsward_title_16_02", // 3354802809
     0xc8242941: "00_aeternum_title_15_04", // 3357813057
     0xc830572c: "00_aeternum_title_20_01", // 3358611244
     0xc8958fdf: "00_aeternum_title_09_05", // 3365244895
     0xc8b91ea7: "summermedleyfaire_chapter_04", // 3367575207
+    0xc8d0beea: "topic_17_nighthaven_title_05_17", // 3369123562
     0xc8f76697: "05_reekwater_title_08_02", // 3371656855
     0xc9148a4d: "12_monarchsbluffs_title_14_01", // 3373566541
     0xc94db825: "winterconvergence_title_03_02", // 3377313829
     0xc974c17e: "threefactions_title_02_01", // 3379872126
     0xc9968af8: "06_windsward_title_04_01", // 3382086392
+    0xc9c0f9c7: "topic_17_nighthaven_title_13_07", // 3384867271
     0xc9cb1c01: "04_everfall_title_08_02", // 3385531393
     0xc9e0a6f8: "99_msq_aeternum_title_3_01", // 3386943224
     0xc9e4f21f: "13_weaversfen_title_06_10", // 3387224607
@@ -1228,6 +1454,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xca6a8d6a: "08_ebonscalereach_title_05_02", // 3395980650
     0xca7a672c: "twinfalls_title_02_01", // 3397019436
     0xcabdd940: "greatbridge_title_01_06", // 3401439552
+    0xcac2f243: "topic_17_nighthaven_title_08_01", // 3401773635
     0xcae3193b: "weavers_title_01_05", // 3403880763
     0xcae5a845: "tales_of_brimstone_sands_title_10_02", // 3404048453
     0xcb04d54c: "99_msq_chapter_01", // 3406091596
@@ -1237,6 +1464,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xcc32c87d: "06_windsward_chapter_23", // 3425880189
     0xcc52b606: "varangianknights_title_08_01", // 3427972614
     0xccee3e2f: "00_aeternum_title_27_02", // 3438165551
+    0xcd1e90c4: "topic_17_nighthaven_title_14_04", // 3441332420
     0xcd25d4d9: "10_cutlasskeys_title_08_24", // 3441808601
     0xcd48e3fb: "06_windsward_title_03_02", // 3444106235
     0xcd4dc549: "outpost_lordeveretts", // 3444426057
@@ -1244,20 +1472,24 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xcd83ff32: "09_firstlight_title_11_02", // 3447979826
     0xcd8edd22: "weavers_title_01_01", // 3448692002
     0xcd915a22: "05_reekwater_chapter_10", // 3448855074
+    0xcdaf365a: "topic_17_nighthaven_title_08_05", // 3450811994
     0xcdd01d59: "greatbridge_title_01_02", // 3452968281
     0xcdf48fcc: "talesofexpeditions_title_09_02", // 3455356876
     0xce0300eb: "04_everfall_title_21_02", // 3456303339
+    0xce16056d: "topic_17_nighthaven_title_01_08", // 3457549677
     0xce2fbf2b: "tales_of_brimstone_sands_title_22_04", // 3459235627
     0xce354333: "03_greatcleave_title_11_03", // 3459597107
     0xce3bc146: "tales_of_brimstone_sands_title_17_01", // 3460022598
     0xce770055: "winterconvergence_chapter_01", // 3463905365
     0xce7df1f7: "00_aeternum_chapter_09", // 3464360439
     0xce893606: "13_weaversfen_title_06_14", // 3465098758
+    0xcead3dde: "topic_17_nighthaven_title_13_03", // 3467460062
     0xceb4e469: "08_ebonscalereach_title_02_01", // 3467961449
     0xcf034eec: "02_brightwood_chapter_08", // 3473100524
     0xcf1fc6d2: "topic_ridersraces", // 3474966226
     0xcf218237: "topic_springtidebloom", // 3475079735
     0xcf60b7fc: "malleusmortuis_title_01_04", // 3479222268
+    0xcfbd7af3: "topic_17_nighthaven_title_05_13", // 3485301491
     0xcfce4687: "11_mourningdale_title_07_03", // 3486402183
     0xcfd49424: "14_edengrove_title_07_03", // 3486815268
     0xcfed78d2: "talesofexpeditions_chapter_10", // 3488446674
@@ -1269,6 +1501,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xd18ebe9e: "00_aeternum_title_09_15", // 3515793054
     0xd19b8d8a: "talesofexpeditions_chapter_04", // 3516632458
     0xd19dfc94: "06_windsward_title_12_01", // 3516791956
+    0xd1cb8fab: "topic_17_nighthaven_title_05_07", // 3519778731
     0xd1f8abc0: "tales_of_brimstone_sands_title_28_01", // 3522735040
     0xd22e518e: "06_windsward_title_15_06", // 3526250894
     0xd23a2fe3: "06_windsward_title_20_03", // 3527028707
@@ -1280,12 +1513,14 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xd351e55c: "eastburn_title_01_05", // 3545359708
     0xd3a05742: "varangianknights_chapter_09", // 3550500674
     0xd3a72342: "mechanics_technical", // 3550946114
+    0xd3d9c302: "topic_17_nighthaven_title_08_11", // 3554263810
     0xd3e7af7a: "05_reekwater_chapter_04", // 3555176314
     0xd3ee674a: "07_shatteredmountain_title_01_05", // 3555616586
     0xd43c2145: "eastburn_title_01_01", // 3560710469
     0xd44049a3: "progression_tradeskills", // 3560982947
     0xd483a353: "07_shatteredmountain_title_01_01", // 3565396819
     0xd48f887f: "summermedleyfaire_title_01_01", // 3566176383
+    0xd4b4071b: "topic_17_nighthaven_title_08_15", // 3568568091
     0xd51e036e: "04_everfall_title_19_01", // 3575513966
     0xd5439597: "06_windsward_title_15_02", // 3577976215
     0xd54e5f3e: "talesofexpeditions_title_03_03", // 3578683198
@@ -1296,9 +1531,11 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xd5b0c6be: "weavers_chapter_01", // 3585132222
     0xd630b72a: "tales_of_brimstone_sands_title_01_01", // 3593516842
     0xd63bb619: "crafting_gather", // 3594237465
+    0xd6a64bb2: "topic_17_nighthaven_title_05_03", // 3601222578
     0xd6e37a87: "00_aeternum_title_09_11", // 3605232263
     0xd766c0b6: "00_aeternum_chapter_19", // 3613835446
     0xd7813e59: "twinfalls_chapter_02", // 3615571545
+    0xd790b001: "topic_17_nighthaven_title_07_20", // 3616583681
     0xd7920747: "13_weaversfen_title_06_04", // 3616671559
     0xd7c530eb: "11_mourningdale_title_11_03", // 3620024555
     0xd82dc1a1: "talesofexpeditions_chapter_08", // 3626877345
@@ -1317,23 +1554,27 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xda161b69: "varangianknights_chapter_05", // 3658881897
     0xda235324: "topic_kubikirisburden", // 3659748132
     0xda51e351: "05_reekwater_chapter_08", // 3662799697
+    0xda651104: "topic_17_nighthaven_title_06_17", // 3664056580
     0xda85f8c2: "00_aeternum_title_23_01", // 3666213058
     0xdace8dc2: "12_monarchsbluffs_chapter_17", // 3670969794
     0xdae25e17: "04_everfall_chapter_06", // 3672268311
     0xdb1553a9: "15_restlessshore_title_09_04", // 3675607977
     0xdb232516: "06_windsward_title_07_01", // 3676513558
     0xdb3f5f9e: "08_ebonscalereach_chapter_12", // 3678363550
+    0xdb755629: "topic_17_nighthaven_title_10_07", // 3681900073
     0xdba125a3: "12_monarchsbluffs_title_17_01", // 3684771235
     0xdbb1138e: "alchemist_title_01_03", // 3685815182
     0xdbc16e90: "threefactions_title_01_01", // 3686887056
     0xdbcf1571: "04_everfall_title_17_03", // 3687781745
     0xdbe839df: "09_firstlight_title_15_01", // 3689429471
     0xdc014b87: "08_ebonscalereach_title_01_01", // 3691072391
+    0xdc189230: "topic_17_nighthaven_title_10_03", // 3692597808
     0xdc3e3640: "topic_malleusmortuis", // 3695064640
     0xdc432ba6: "talesofexpeditions_title_11_04", // 3695389606
     0xdc8e6ea8: "tales_of_brimstone_sands_title_14_01", // 3700321960
     0xdcacaa89: "threefactions_title_01_05", // 3702303369
     0xdcdcd797: "alchemist_title_01_07", // 3705460631
+    0xdd08d51d: "topic_17_nighthaven_title_06_13", // 3708343581
     0xdd613bca: "14_edengrove_title_04_03", // 3714137034
     0xdd7bdf70: "varangianknights_chapter_01", // 3715882864
     0xdd7be969: "11_mourningdale_title_04_03", // 3715885417
@@ -1351,17 +1592,20 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xdf3dc3b2: "tales_of_brimstone_sands_title_13_06", // 3745366962
     0xdf82e759: "03_greatcleave_title_09_05", // 3749898073
     0xdfa20cdb: "twinfalls_title_01_05", // 3751939291
+    0xdfab3f2a: "topic_17_nighthaven_title_17_04", // 3752541994
     0xdffa952a: "talesofwinter_title_05_03", // 3757741354
     0xe02977f4: "topic_05_reekwater", // 3760814068
     0xe02ea407: "talesofthesilvercrows_chapter_01", // 3761153031
     0xe03cd123: "09_firstlight_chapter_12", // 3762082083
     0xe05b9c27: "springtidebloom_title_01_06", // 3764100135
+    0xe0626280: "topic_17_nighthaven_title_18_19", // 3764544128
     0xe062dca0: "03_greatcleave_chapter_12", // 3764575392
     0xe0725fa7: "06_windsward_chapter_17", // 3765591975
     0xe0aa6647: "11_mourningdale_title_08_02", // 3769263687
     0xe0b0b4e4: "14_edengrove_title_08_02", // 3769677028
     0xe0c4a2b0: "10_cutlasskeys_title_02_01", // 3770983088
     0xe0d0d39a: "fivefarms_title_01_13", // 3771782042
+    0xe0d3c41e: "topic_17_nighthaven_title_04_18", // 3771974686
     0xe1616237: "08_ebonscalereach_title_11_01", // 3781255735
     0xe1654303: "10_cutlasskeys_title_08_10", // 3781509891
     0xe18a72d4: "14_edengrove_chapter_05", // 3783946964
@@ -1374,6 +1618,8 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe2536877: "03_greatcleave_title_05_04", // 3797117047
     0xe256796c: "09_firstlight_title_02_02", // 3797317996
     0xe290af0c: "talesofexpeditions_title_06_03", // 3801132812
+    0xe291b474: "topic_17_nighthaven_chapter_11", // 3801199732
+    0xe2cb169a: "topic_17_nighthaven_title_07_04", // 3804960410
     0xe3022389: "topic_fivefarms", // 3808568201
     0xe304f248: "06_arch_01_01", // 3808752200
     0xe31bb59c: "mechanics_vitals", // 3810243996
@@ -1384,6 +1630,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe4309778: "07_shatteredmountain_title_04_05", // 3828389752
     0xe43baab1: "02_brightwood_title_08_01", // 3829115569
     0xe4693651: "06_arch_01_05", // 3832100433
+    0xe4b695ae: "topic_17_nighthaven_title_11_10", // 3837171118
     0xe52e248c: "11_mourningdale_chapter_11", // 3845006476
     0xe5302e1b: "tales_of_brimstone_sands_title_03_02", // 3845139995
     0xe55a6d89: "09a_firstlight_chapter_04", // 3847908745
@@ -1391,6 +1638,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe5c9aaf5: "09a_firstlight_title_06_04", // 3855198965
     0xe5d828f0: "95a_bloodofthesands_chapter_03", // 3856148720
     0xe5e97d9b: "00_aeternum_title_05_18", // 3857284507
+    0xe5fc706d: "topic_17_nighthaven_chapter_15", // 3858526317
     0xe608871a: "10_cutlasskeys_title_08_14", // 3859318554
     0xe6216b75: "progression_xp", // 3860949877
     0xe6430ca6: "06_windsward_title_17_01", // 3863153830
@@ -1413,6 +1661,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe83c3eff: "14_edengrove_chapter_09", // 3896262399
     0xe83da69c: "expedition_title_02_01", // 3896354460
     0xe8559027: "99_msq_aeternum_title_2_02", // 3897921575
+    0xe875cf18: "topic_17_nighthaven_title_12_04", // 3900034840
     0xe87e2ade: "04_everfall_title_09_01", // 3900582622
     0xe8921ab9: "06_windsward_title_19_03", // 3901889209
     0xe8a1bc92: "12_monarchsbluffs_title_15_02", // 3902913682
@@ -1422,17 +1671,24 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xe9240eb5: "inferiorman_title_01_02", // 3911454389
     0xe94183ed: "13_weaversfen_title_11_03", // 3913384941
     0xe9425048: "05_reekwater_title_09_01", // 3913437256
+    0xe9658835: "topic_17_nighthaven_title_04_14", // 3915745333
     0xe98561f3: "00_aeternum_title_21_02", // 3917832691
+    0xe9d42eab: "topic_17_nighthaven_title_18_15", // 3922996907
     0xea666529: "tales_of_brimstone_sands_title_13_22", // 3932579113
     0xea6dd510: "tales_of_brimstone_sands_chapter_12", // 3933066512
     0xeaa5195b: "11_mourningdale_title_01_03", // 3936688475
+    0xead6252f: "topic_17_nighthaven_title_03_13", // 3939902767
     0xeae02283: "02_brightwood_title_08_09", // 3940557443
     0xeaeabcae: "02_brightwood_title_06_03", // 3941252270
     0xeaf2395f: "hunterscabin_title_01_03", // 3941742943
     0xeb32f5a9: "00_aeternum_title_05_10", // 3945985449
     0xeb509e9a: "tales_of_brimstone_sands_title_11_01", // 3947929242
+    0xeb77c49c: "topic_17_nighthaven_title_09_02", // 3950494876
+    0xeb7d5ab1: "topic_17_nighthaven_title_07_08", // 3950860977
     0xeb8b2a06: "00_aeternum_chapter_31", // 3951766022
+    0xebc66202: "topic_17_nighthaven_title_15_03", // 3955646978
     0xebdfbbb5: "08_ebonscalereach_title_04_01", // 3957308341
+    0xec1a0085: "topic_17_nighthaven_title_09_06", // 3961127045
     0xec1f9ea2: "threefactions_title_04_01", // 3961495202
     0xec36c9ed: "09_firstlight_title_10_01", // 3963013613
     0xec41b913: "talesofexpeditions_title_08_01", // 3963730195
@@ -1446,12 +1702,16 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xed5b08f0: "00_aeternum_title_26_01", // 3982166256
     0xed62d848: "wildmancutlasskeys_title_01_02", // 3982678088
     0xed9ffd46: "hunterscabin_title_01_07", // 3986685254
+    0xedbbe136: "topic_17_nighthaven_title_03_17", // 3988513078
     0xeddf7a7a: "06_arch_01_09", // 3990846074
+    0xee084c2c: "topic_17_nighthaven_title_04_10", // 3993521196
     0xee47e334: "00_aeternum_title_06_08", // 3997688628
     0xee490e8e: "99_msq_title_01_04", // 3997765262
     0xee49caac: "inferiorman_title_01_06", // 3997813420
     0xee4d7d19: "00_aeternum_title_08_02", // 3998055705
     0xee75659d: "memorials_title_01_01", // 4000671133
+    0xee989089: "madnessinthemaws_title_01_02", // 4002975881
+    0xeeb9eab2: "topic_17_nighthaven_title_18_11", // 4005161650
     0xeec5b581: "ridersraces_title_01_02", // 4005934465
     0xeefcdb87: "00_aeternum_title_14_03", // 4009548679
     0xef01d2b6: "08_ebonscalereach_title_03_02", // 4009874102
@@ -1466,13 +1726,17 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xefd806e6: "12_monarchsbluffs_title_20_03", // 4023912166
     0xf02500e2: "talesofexpeditions_title_05_03", // 4028956898
     0xf0482165: "factionintro_covenant_title_01_03", // 4031258981
+    0xf07eb974: "topic_17_nighthaven_title_04_04", // 4034836852
     0xf0aacafe: "12_monarchsbluffs_title_03_02", // 4037724926
+    0xf0cf1fea: "topic_17_nighthaven_title_18_05", // 4040105962
     0xf0e3d682: "09_firstlight_title_01_02", // 4041463426
     0xf1055298: "bookofshadows_title_01_01", // 4043657880
     0xf1305973: "mechanics_reporting", // 4046477683
     0xf182c340: "topic_greatbridge", // 4051878720
     0xf1a1f578: "threefactions_chapter_05", // 4053923192
     0xf1e3de01: "12_monarchsbluffs_chapter_27", // 4058242561
+    0xf2666bf0: "topic_17_nighthaven_title_07_18", // 4066798576
+    0xf26cf5dd: "topic_17_nighthaven_title_09_12", // 4067227101
     0xf287b6c4: "tidebattle_title_01_05", // 4068980420
     0xf2901b47: "00_aeternum_chapter_21", // 4069530439
     0xf2986276: "00_aeternum_title_19_01", // 4070072950
@@ -1480,17 +1744,22 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xf31cb770: "15_restlessshore_title_06_01", // 4078745456
     0xf34f969b: "tales_of_brimstone_sands_title_32_04", // 4082079387
     0xf35be8f6: "tales_of_brimstone_sands_title_07_01", // 4082886902
+    0xf3762cdd: "topic_17_nighthaven_title_11_08", // 4084608221
     0xf376e451: "tales_of_brimstone_sands_chapter_02", // 4084655185
     0xf3c14aec: "combat_healing", // 4089531116
+    0xf3cd146e: "topic_17_nighthaven_title_03_03", // 4090303598
     0xf3d4cdd9: "08_ebonscalereach_title_12_01", // 4090809817
     0xf41b2048: "tales_of_brimstone_sands_chapter_06", // 4095418440
     0xf43dbf81: "09_firstlight_title_06_01", // 4097687425
     0xf474a3fd: "12_monarchsbluffs_title_04_01", // 4101284861
+    0xf4a0d077: "topic_17_nighthaven_title_03_07", // 4104179831
     0xf4ab35b1: "04_everfall_title_18_02", // 4104861105
     0xf4f6a348: "06_windsward_title_14_01", // 4109804360
+    0xf50131c4: "topic_17_nighthaven_title_09_16", // 4110496196
     0xf50efb19: "backstorylore8", // 4111399705
     0xf54400f1: "00_aeternum_title_05_04", // 4114874609
     0xf5507e9c: "00_aeternum_title_30_01", // 4115693212
+    0xf5510d07: "topic_17_nighthaven_chapter_09", // 4115729671
     0xf55d502b: "varangianknights_title_03_03", // 4116533291
     0xf5ea72dd: "tidebattle_title_01_01", // 4125782749
     0xf5fddf5e: "00_aeternum_chapter_25", // 4127055710
@@ -1501,9 +1770,11 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xf6cc3161: "threefactions_chapter_01", // 4140577121
     0xf6f7adeb: "00_aeternum_title_02_03", // 4143427051
     0xf76fc649: "memorials_chapter_01", // 4151297609
+    0xf7a2dbf3: "topic_17_nighthaven_title_18_01", // 4154645491
     0xf7c2de73: "15_restlessshore_title_01_02", // 4156743283
     0xf7fea048: "deathandrebirthlore4c", // 4160659528
     0xf810b6b5: "11_mourningdale_title_02_03", // 4161844917
+    0xf84fbbee: "factionfest_title_01_03", // 4165975022
     0xf8836307: "00_aeternum_title_25_05", // 4169360135
     0xf88dafb2: "chapterprogression", // 4170035122
     0xf8f5f422: "05_reekwater_title_11_07", // 4176868386
@@ -1513,6 +1784,9 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xf95a159f: "03_greatcleave_title_08_02", // 4183430559
     0xf9696ee6: "06_windsward_chapter_07", // 4184436454
     0xf96a145b: "08_ebonscalereach_title_07_01", // 4184478811
+    0xf973cdec: "topic_17_nighthaven_title_16_03", // 4185116140
+    0xf97953c1: "topic_17_nighthaven_title_18_09", // 4185478081
+    0xf9c8f55f: "topic_17_nighthaven_title_04_08", // 4190696799
     0xf9cbe2db: "fivefarms_title_01_03", // 4190888667
     0xf9e53174: "tales_of_brimstone_sands_title_12_01", // 4192547188
     0xf9ebb301: "03_greatcleave_title_14_03", // 4192973569
@@ -1529,15 +1803,21 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xfa880972: "expedition_title_01_01", // 4203219314
     0xfa9613c9: "06_windsward_title_06_02", // 4204139465
     0xfa9bd960: "talesofexpeditions_title_10_03", // 4204517728
+    0xfac060f6: "topic_17_nighthaven_title_11_04", // 4206911734
     0xfaeca99e: "09_firstlight_title_08_03", // 4209813918
     0xfb31faef: "tidebattle_title_01_09", // 4214356719
     0xfb5570e7: "99_msq_aeternum_chapter_2", // 4216680679
     0xfb58d1d4: "11_mourningdale_chapter_05", // 4216902100
     0xfb87b8ca: "topic_inferiorman", // 4219975882
+    0xfb8a8535: "topic_17_nighthaven_chapter_01", // 4220159285
+    0xfbd027db: "topic_17_nighthaven_title_07_14", // 4224722907
     0xfbf42c03: "13_weaversfen_title_12_03", // 4227083267
+    0xfc2d3f67: "madnessinthemaws_title_02_02", // 4230823783
     0xfc3515cd: "11_mourningdale_chapter_01", // 4231337421
     0xfc4b9375: "00_aeternum_chapter_29", // 4232811381
     0xfcb8b732: "backstorylore4", // 4239963954
+    0xfcbde3c2: "topic_17_nighthaven_title_07_10", // 4240303042
+    0xfce7412c: "topic_17_nighthaven_chapter_05", // 4243013932
     0xfcea5905: "topic_06_windsward", // 4243216645
     0xfcf24cda: "00_aeternum_title_05_08", // 4243737818
     0xfcf7c9b8: "topic_twinfalls", // 4244097464
@@ -1551,6 +1831,7 @@ var hashLoreDataLoreLoreID = map[uint32]string{
     0xfdcda16f: "15_restlessshore_title_08_03", // 4258111855
     0xfe04aaff: "06_windsward_chapter_03", // 4261718783
     0xfe1429f8: "03_greatcleave_chapter_06", // 4262734328
+    0xfe1e09f5: "topic_17_nighthaven_title_16_07", // 4263381493
     0xfe4a247b: "09_firstlight_chapter_06", // 4266271867
     0xfe56c3d5: "fivefarms_chapter_01", // 4267099093
     0xfe836603: "09_firstlight_title_13_01", // 4270024195

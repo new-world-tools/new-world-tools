@@ -25,6 +25,7 @@ var hashRewardModifierDataRewardModifiersModifiers = map[uint32]string{
     0x348ae692: "capturetheflag_t2", // 881518226
     0x34b9957c: "outpostrushsolo+", // 884577660
     0x39236a62: "project+", // 958622306
+    0x3b05606c: "affinitymissionbonus", // 990208108
     0x3efe663a: "boss", // 1056859706
     0x3ffa1f90: "dungeon", // 1073356688
     0x41ede38d: "soloboss", // 1106109325
